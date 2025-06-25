@@ -1,27 +1,21 @@
 package eux.acl.v43;
 
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_A;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_DA;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_F;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_H;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_M;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_P;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_R;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_S;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_U;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_X;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.wnameless.json.flattener.JsonFlattener;
 import com.github.wnameless.json.unflattener.JsonUnflattener;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+
+import eux.acl.generator.SedType;
 import org.apache.commons.io.FileUtils;
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import static eux.acl.v43.ACLv43Test.*;
 
 
 public class AclV43TestdataTest {
@@ -42,7 +36,7 @@ public class AclV43TestdataTest {
   @Test
   @Ignore
   public void lagerSederPopulertMedTestdataV43_A() {
-    SEDTYPER_A.stream().forEach(s -> lagSedMedTestdata(s, "A", "legislationapplicable", 1));
+    SedType.A.forEach(s -> lagSedMedTestdata(s, "A", "legislationapplicable", 1));
   }
 
   @Test
@@ -152,7 +146,7 @@ public class AclV43TestdataTest {
       String euPathValueJson = JsonUnflattener.unflatten(euPathValueFlatJson);
       ObjectMapper om = new ObjectMapper();
       JsonNode euPathValueNode = om.readTree(euPathValueJson);
-      JsonNode json = om.readValue(euPathValueNode, JsonNode.class);
+      JsonNode json = euPathValueNode; // om.readValue(euPathValueNode, JsonNode.class);
       String euPathValuePrettyJson = om.writerWithDefaultPrettyPrinter().writeValueAsString(json);
       FileUtils.writeStringToFile(
         new File(MAPPE_TESTDATA + "/" + templateSektor + "/" + sedType + "-EU.json"),

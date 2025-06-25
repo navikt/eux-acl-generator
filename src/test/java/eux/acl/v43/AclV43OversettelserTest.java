@@ -1,11 +1,10 @@
 package eux.acl.v43;
 
+import static eux.acl.v43.ACLv43Test.*;
+import static eux.acl.v43.AclV43TestdataTest.*;
 import static java.util.Arrays.asList;
-import static no.nav.eux.acl.v43.ACLv43Test.*;
-import static no.nav.eux.acl.v43.AclV43TestdataTest.MAPPE_CDM_V43_META;
-import static no.nav.eux.acl.v43.AclV43TestdataTest.OVERSETTELSER_CDM_FIL;
-import static no.nav.eux.acl.v43.AclV43TestdataTest.OVERSETTELSER_ID_TEKST_SEDTYPE_FIL;
-import static no.nav.eux.acl.v43.AclV43TestdataTest.OVERSETTELSER_MAPPE;
+
+import eux.acl.generator.pdf.MalLinjeDeler;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -14,18 +13,9 @@ import com.github.wnameless.json.flattener.JsonFlattener;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
-import java.util.TreeMap;
-import no.nav.eux.convert.eused.pdf.MalLinjeDeler;
-import org.apache.commons.collections15.map.LinkedMap;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.assertj.core.api.Assertions;
@@ -148,15 +138,15 @@ public class AclV43OversettelserTest {
 
   private void skrivOversettelserTilFil(List<String> sedTyper, Map<String, String> tekstIdVsTekst) {
     sedTyper.forEach(sedType -> {
-      LinkedMap<String, Object> sedCdm43Flattened = getSedCdm43Flattened(sedType);
-      LinkedMap<String, String> cdmStiVsIndeks = cdmReader.lagCdmStiVsIndeks(sedCdm43Flattened);
+      LinkedHashMap<String, Object> sedCdm43Flattened = getSedCdm43Flattened(sedType);
+      LinkedHashMap<String, String> cdmStiVsIndeks = cdmReader.lagCdmStiVsIndeks(sedCdm43Flattened);
       Map<String, String> cdmStiVsTekst = cdmReader.lagCdmStiVsTekst(sedCdm43Flattened,
                                                                      tekstIdVsTekst);
       Map<String, String> cdmStiVsType = cdmReader.lagCdmStiVsType(sedCdm43Flattened);
       Map<String, TreeMap<String, String>> cdmStiVsKoderVsKodenavn = cdmReader
         .lagCdmStiVsKoderOgKodenavn(sedCdm43Flattened, tekstIdVsTekst);
       Map<String, String> cdmStiVsAclSti = lagCdmStiVsAclSti(sedCdm43Flattened);
-      LinkedMap<String, MalLinjeDeler> cdmStiVsIndeksTekstTypeEnum = new LinkedMap<>();
+      LinkedHashMap<String, MalLinjeDeler> cdmStiVsIndeksTekstTypeEnum = new LinkedHashMap<>();
       cdmStiVsIndeks.forEach((cdmSti, v) -> {
         MalLinjeDeler linje = MalLinjeDeler.builder()
           .index(v)
@@ -165,7 +155,7 @@ public class AclV43OversettelserTest {
           .codework(cdmStiVsKoderVsKodenavn.get(cdmSti)).build();
         cdmStiVsIndeksTekstTypeEnum.put(cdmSti, linje);
       });
-      LinkedMap<String, MalLinjeDeler> aclStiVsIndeksOgTekstOgEnum = new LinkedMap<>();
+      LinkedHashMap<String, MalLinjeDeler> aclStiVsIndeksOgTekstOgEnum = new LinkedHashMap<>();
       cdmStiVsIndeksTekstTypeEnum
         .forEach((cdmSti, v) -> aclStiVsIndeksOgTekstOgEnum.put(cdmStiVsAclSti.get(cdmSti)
                                                                   .replace(".value[0]", ""), v));
@@ -183,7 +173,7 @@ public class AclV43OversettelserTest {
     FileUtils.writeStringToFile(new File(filStiNavn), landkoderJson, "UTF-8");
   }
 
-  private void skrivMapWithMapsTilJsonFil(LinkedMap<String, MalLinjeDeler> sedFlatstiVsVerdi,
+  private void skrivMapWithMapsTilJsonFil(LinkedHashMap<String, MalLinjeDeler> sedFlatstiVsVerdi,
                                           String filStiNavn) {
     try {
       ObjectMapper om = new ObjectMapper();
@@ -257,14 +247,14 @@ public class AclV43OversettelserTest {
     }
   }
 
-  private LinkedMap<String, Object> getSedCdm43Flattened(String sedType) {
+  private LinkedHashMap<String, Object> getSedCdm43Flattened(String sedType) {
     String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
     String cdmSedFilnavn = MAPPE_CDM_V43_META + "/" + cdmSektor + "/" + sedType + ".json";
     try {
       String cdmSedJson = FileUtils.readFileToString(new File(cdmSedFilnavn), UTF_8);
       // Leses som tekst for å beholde (indeks)rekkefølgen
       String cdmSedFlattenedJson = JsonFlattener.flatten(cdmSedJson);
-      LinkedMap<String, Object> cdmStiVsVerdi = new LinkedMap<>();
+      LinkedHashMap<String, Object> cdmStiVsVerdi = new LinkedHashMap<>();
       Arrays.stream(cdmSedFlattenedJson.
                       replace("{", "")
                       .replace("}", "")

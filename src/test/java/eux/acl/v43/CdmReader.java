@@ -1,11 +1,11 @@
 package eux.acl.v43;
 
-import static java.util.Arrays.asList;
+
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
-import org.apache.commons.collections15.map.LinkedMap;
-import org.apache.commons.lang3.StringUtils;
+import static java.util.Arrays.asList;
 
 
 public class CdmReader {
@@ -268,9 +268,9 @@ public class CdmReader {
     return cdmStiVsTekst;
   }
 
-  public LinkedMap<String, String> lagCdmStiVsIndeks(
-    LinkedMap<String, Object> cdmMalFlattened) {
-    LinkedMap<String, String> cdmStiVsIndeks = new LinkedMap<>();
+  public LinkedHashMap<String, String> lagCdmStiVsIndeks(
+          LinkedHashMap<String, Object> cdmMalFlattened) {
+    LinkedHashMap<String, String> cdmStiVsIndeks = new LinkedHashMap<>();
     cdmMalFlattened.forEach((k, v) -> {
       if (k.endsWith(".context.inputs.label[0].prefix")) {
         String cdmSti = k.replace(".context.inputs.label[0].prefix", "");

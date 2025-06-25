@@ -1,15 +1,16 @@
 package eux.acl.v43;
 
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_A;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_DA;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_F;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_H;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_P;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_P3000;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_R;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_S;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_U;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_X;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_A;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_DA;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_F;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_H;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_P;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_P3000;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_R;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_S;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_U;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_X;
+
 
 import com.github.wnameless.json.flattener.JsonFlattener;
 import java.io.File;

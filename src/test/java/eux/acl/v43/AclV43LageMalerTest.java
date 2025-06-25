@@ -1,19 +1,22 @@
 package eux.acl.v43;
 
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_A;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_DA;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_F;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_H;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_M;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_P;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_R;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_S;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_U;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_X;
-import static no.nav.eux.acl.v43.AclV43BasismalerTest.JUSTERINGER_FILNAVN_ENDE;
-import static no.nav.eux.acl.v43.AclV43BasismalerTest.MAPPE_ACLv43_MELLOMBELS;
-import static no.nav.eux.acl.v43.AclV43BasismalerTest.UENDRET_FILNAVN_ENDE;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_A;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_DA;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_F;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_H;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_M;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_P;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_R;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_S;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_U;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_X;
+import static eux.acl.v43.AclV43BasismalerTest.JUSTERINGER_FILNAVN_ENDE;
+import static eux.acl.v43.AclV43BasismalerTest.MAPPE_ACLv43_MELLOMBELS;
+import static eux.acl.v43.AclV43BasismalerTest.UENDRET_FILNAVN_ENDE;
 
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.wnameless.json.unflattener.JsonUnflattener;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
@@ -22,8 +25,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import org.apache.commons.io.FileUtils;
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.map.ObjectMapper;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -122,7 +124,7 @@ public class AclV43LageMalerTest {
       String euPathNavPathJson = JsonUnflattener.unflatten(euPathNavPathFlatJson);
       ObjectMapper om = new ObjectMapper();
       JsonNode euPathNavPathNode = om.readTree(euPathNavPathJson);
-      JsonNode json = om.readValue(euPathNavPathNode, JsonNode.class);
+      JsonNode json = euPathNavPathNode; //om.readValue(euPathNavPathNode, JsonNode.class);
       String euPathNavPathPrettyJson = om.writerWithDefaultPrettyPrinter().writeValueAsString(json);
       FileUtils.writeStringToFile(
         new File(MAPPE_ACLv43_MALER + "/" + templateSector + "/" + sedType + "_v4.3.json"),

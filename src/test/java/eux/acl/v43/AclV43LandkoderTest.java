@@ -1,15 +1,15 @@
 package eux.acl.v43;
 
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_A;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_DA;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_F;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_H;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_M;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_P;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_R;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_S;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_U;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_X;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_A;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_DA;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_F;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_H;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_M;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_P;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_R;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_S;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_U;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_X;
 
 
 import com.github.wnameless.json.flattener.JsonFlattener;
@@ -96,7 +96,7 @@ public class AclV43LandkoderTest {
   @Test
   @Ignore
   public void landkodesettV43_X() {
-    SEDTYPER_X.stream().forEach(s -> finnStiVsLandkodesett(s, "X", "administrative"));
+    SEDTYPER_X.forEach(s -> finnStiVsLandkodesett(s, "X", "administrative"));
   }
 
   private void finnStiVsLandkodesett(String sedType, String cdmSektor, String aclSector) {

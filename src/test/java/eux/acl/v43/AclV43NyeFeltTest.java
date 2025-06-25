@@ -1,15 +1,16 @@
 package eux.acl.v43;
 
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_A;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_DA;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_F;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_H;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_M;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_P;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_R;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_S;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_U;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_X;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_A;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_DA;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_F;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_H;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_M;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_P;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_R;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_S;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_U;
+import static eux.acl.v43.ACLv43Test.SEDTYPER_X;
+
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,7 +22,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import no.nav.eux.convert.eused.pdf.MalLinjeDeler;
+
+import eux.acl.generator.pdf.MalLinjeDeler;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Ignore;

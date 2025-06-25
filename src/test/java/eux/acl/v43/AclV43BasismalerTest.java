@@ -1,15 +1,6 @@
 package eux.acl.v43;
 
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_A;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_DA;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_F;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_H;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_M;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_P;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_R;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_S;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_U;
-import static no.nav.eux.acl.v43.ACLv43Test.SEDTYPER_X;
+
 
 import com.github.wnameless.json.flattener.JsonFlattener;
 import java.io.File;
@@ -19,10 +10,14 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import eux.acl.generator.SedType;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import static eux.acl.v43.ACLv43Test.*;
 
 public class AclV43BasismalerTest {
 
@@ -45,62 +40,61 @@ public class AclV43BasismalerTest {
   @Test
   @Ignore
   public void malutgangspunktForV43_A() {
-    SEDTYPER_A.stream()
-      .forEach(s -> lagUtgangspunktForV43Mal(s, "A", "legislationapplicable"));
+    SedType.A.forEach(s -> lagUtgangspunktForV43Mal(s, "A", "legislationapplicable"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_DA() {
-    SEDTYPER_DA.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "DA", "awod"));
+    SedType.DA.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "DA", "awod"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_F() {
-    SEDTYPER_F.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "F", "family"));
+    SedType.F.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "F", "family"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_H() {
-    SEDTYPER_H.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "H", "horizontal"));
+    SedType.H.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "H", "horizontal"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_M() {
-    SEDTYPER_M.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "M", "miscellaneous"));
+    SedType.M.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "M", "miscellaneous"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_P() {
-    SEDTYPER_P.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "P", "pension"));
+    SedType.P.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "P", "pension"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_R() {
-    SEDTYPER_R.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "R", "recovery"));
+    SedType.R.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "R", "recovery"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_S() {
-    SEDTYPER_S.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "S", "sickness"));
+    SedType.S.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "S", "sickness"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_U() {
-    SEDTYPER_U.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "U", "unemployment"));
+    SedType.U.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "U", "unemployment"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_X() {
-    SEDTYPER_X.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "X", "administrative"));
+    SedType.X.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "X", "administrative"));
   }
 
   private void lagUtgangspunktForV43Mal(String sedType, String cdmSektor, String aclSector) {
