@@ -1,0 +1,206 @@
+{
+  "F022" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "PeriodsAtCurrentRegisteredInstitution" : {
+      "Institution" : {
+        "institutionID" : "$familie.bruker.registrertnaa.institusjon.id",
+        "institutionName" : "$familie.bruker.registrertnaa.institusjon.navn"
+      },
+      "InsuranceResidencePeriods" : {
+        "InsuranceResidencePeriod" : [ {
+          "Period" : {
+            "FixedPeriod" : {
+              "endDate" : "$familie.bruker.registrertnaa.institusjon.periode[x].fastperiode.sluttdato",
+              "startDate" : "$familie.bruker.registrertnaa.institusjon.periode[x].fastperiode.startdato"
+            },
+            "OpenPeriod" : {
+              "startDate" : "$familie.bruker.registrertnaa.institusjon.periode[x].aapenperiode.startdato",
+              "typeOpenPeriod" : {
+                "value" : [ "$familie.bruker.registrertnaa.institusjon.periode[x].aapenperiode.type" ]
+              }
+            }
+          },
+          "typePeriod" : {
+            "value" : [ "$familie.bruker.registrertnaa.institusjon.periode[x].type43" ]
+          }
+        } ]
+      }
+    },
+    "PeriodsAtInstitutionInPlaceResidence" : {
+      "Institution" : {
+        "institutionID" : "$familie.bruker.bosted.institusjon.id",
+        "institutionName" : "$familie.bruker.bosted.institusjon.navn"
+      },
+      "InsuranceResidencePeriods" : {
+        "InsuranceResidencePeriod" : [ {
+          "Period" : {
+            "FixedPeriod" : {
+              "endDate" : "$familie.bruker.bosted.institusjon.periode[x].fastperiode.sluttdato",
+              "startDate" : "$familie.bruker.bosted.institusjon.periode[x].fastperiode.startdato"
+            },
+            "OpenPeriod" : {
+              "startDate" : "$familie.bruker.bosted.institusjon.periode[x].aapenperiode.startdato",
+              "typeOpenPeriod" : {
+                "value" : [ "$familie.bruker.bosted.institusjon.periode[x].aapenperiode.type" ]
+              }
+            }
+          },
+          "typePeriod" : {
+            "value" : [ "$familie.bruker.bosted.institusjon.periode[x].type43" ]
+          }
+        } ]
+      }
+    },
+    "PeriodsAtLastRegisteredInstitution" : {
+      "Institution" : {
+        "institutionID" : "$familie.bruker.registrertsist.institusjon.id",
+        "institutionName" : "$familie.bruker.registrertsist.institusjon.navn"
+      },
+      "InsuranceResidencePeriods" : {
+        "InsuranceResidencePeriod" : [ {
+          "Period" : {
+            "FixedPeriod" : {
+              "endDate" : "$familie.bruker.registrertsist.institusjon.periode[x].fastperiode.sluttdato",
+              "startDate" : "$familie.bruker.registrertsist.institusjon.periode[x].fastperiode.startdato"
+            },
+            "OpenPeriod" : {
+              "startDate" : "$familie.bruker.registrertsist.institusjon.periode[x].aapenperiode.startdato",
+              "typeOpenPeriod" : {
+                "value" : [ "$familie.bruker.registrertsist.institusjon.periode[x].aapenperiode.type" ]
+              }
+            }
+          },
+          "typePeriod" : {
+            "value" : [ "$familie.bruker.registrertsist.institusjon.periode[x].type43" ]
+          }
+        } ]
+      }
+    },
+    "Person" : {
+      "AdditionalInformationAboutNationality" : {
+        "Nationalities" : [ {
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          },
+          "since" : "$nav.bruker.person.statsborgerskap[x].siden"
+        } ]
+      },
+      "AddressesPerson" : {
+        "AddressPerson" : [ {
+          "Address" : {
+            "buildingName" : "$nav.bruker.adresse[x].bygning",
+            "country" : {
+              "value" : [ "$nav.bruker.adresse[x].land" ]
+            },
+            "postalCode" : "$nav.bruker.adresse[x].postnummer",
+            "region" : "$nav.bruker.adresse[x].region",
+            "street" : "$nav.bruker.adresse[x].gate",
+            "town" : "$nav.bruker.adresse[x].by"
+          },
+          "typeAddress" : {
+            "value" : [ "$nav.bruker.adresse[x].type" ]
+          }
+        } ]
+      },
+      "ContactDetails" : {
+        "EmailAddresses" : {
+          "EmailAddress" : [ {
+            "email" : "$nav.bruker.person.kontakt.email[x].adresse"
+          } ]
+        },
+        "TelephoneNumbers" : {
+          "TelephoneNumber" : [ {
+            "number" : "$nav.bruker.person.kontakt.telefon[x].nummer",
+            "type" : {
+              "value" : [ "$nav.bruker.person.kontakt.telefon[x].type" ]
+            }
+          } ]
+        }
+      },
+      "CoverageBySocialSecurityScheme" : {
+        "PeriodsCoveredBySecuritySchemeInSendingMember" : {
+          "Period" : [ {
+            "endDate" : "$familie.bruker.dekketavtrygd.periode[x].sluttdato",
+            "startDate" : "$familie.bruker.dekketavtrygd.periode[x].startdato"
+          } ]
+        },
+        "PeriodsEntitlement" : {
+          "EntitlementFamilyBenefitsDoesNotExist" : {
+            "otherReason" : "$familie.bruker.ikkeretttilytelser.grunn.annen",
+            "reason" : {
+              "value" : [ "$familie.bruker.ikkeretttilytelser.grunn.type" ]
+            }
+          },
+          "EntitlementFamilyBenefitsExists" : {
+            "PeriodEntitlementFamilyBenefits" : {
+              "PeriodEntitlementFamilyBenefit" : [ {
+                "endDate" : "$familie.bruker.retttilytelser.periode[x].sluttdato",
+                "startDate" : "$familie.bruker.retttilytelser.periode[x].startdato"
+              } ]
+            }
+          }
+        },
+        "PeriodsNotCovered" : {
+          "PeriodNotCovered" : [ {
+            "endDate" : "$familie.bruker.ikkedekketavtrygd.periode[x].sluttdato",
+            "startDate" : "$familie.bruker.ikkedekketavtrygd.periode[x].startdato"
+          } ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "ProvideWithInformationPeriodsInsuranceEmployment" : {
+      "FixedPeriod" : {
+        "endDate" : "$familie.anmodningominformasjon.periode.fastperiode.sluttdato",
+        "startDate" : "$familie.anmodningominformasjon.periode.fastperiode.startdato"
+      },
+      "OpenPeriod" : {
+        "startDate" : "$familie.anmodningominformasjon.periode.aapenperiode.startdato",
+        "typeOpenPeriod" : {
+          "value" : [ "$familie.anmodningominformasjon.periode.aapenperiode.type" ]
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

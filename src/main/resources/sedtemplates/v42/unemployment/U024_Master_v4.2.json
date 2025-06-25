@@ -1,0 +1,44 @@
+{
+  "U024_Master": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "LocalCaseNumbers": {
+      "LocalCaseNumber": [
+        {
+          "country": {
+            "value": [
+              "$nav.eessisak[x].land"
+            ]
+          },
+          "caseNumber": "$nav.eessisak[x].saksnummer",
+          "Institution": {
+            "institutionID": "$nav.eessisak[x].institusjonsid",
+            "institutionName": "$nav.eessisak[x].institusjonsnavn"
+          }
+        }
+      ]
+    },
+    "GeneralInformation": {
+      "reimbursementRequestID": "$dagpenger.refusjonskrav.id",
+      "reimbursementPaymentNotificationID": "$dagpenger.refusjonskrav.tilbakebetaling.id"
+    },
+    "AmountReimbursed": {
+      "Amount": {
+        "amount": "$dagpenger.refusjonskrav.tilbakebetaling.beloep",
+        "currency": {
+          "value": [
+            "$dagpenger.refusjonskrav.tilbakebetaling.valuta"
+          ]
+        }
+      },
+      "datePayment": "$dagpenger.refusjonskrav.tilbakebetaling.utbetalingsdato"
+    },
+    "BankInformation": {
+      "SEPABankDetails": {
+        "IBAN": "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.iban",
+        "BICSWIFT": "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.swift"
+      },
+      "bankTransferSubjectOrTransactionReference": "$dagpenger.refusjonskrav.tilbakebetaling.bank.overfoering.emneellerreferanse"
+    }
+  }
+}

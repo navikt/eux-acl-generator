@@ -1,0 +1,866 @@
+{
+  "F001.PurposeThisSED.purposeThisSED" : {
+    "prompt" : "  Formålet med denne SED-en ",
+    "codesetName" : "SpecialPurposeSEDMultipleType",
+    "codeset" : {
+      "01" : " Mottak av søknad om familieytelser ",
+      "02" : " Informasjon om endrede forhold ",
+      "03" : " Anmodning om kontroll eller årlig kontroll ",
+      "04" : " Vedtak ",
+      "05" : " Motregning ",
+      "06" : " Refusjon i henhold til artikkel 58 i forordning (EF) nr. 987/2009 ",
+      "07" : " Anmodning om informasjon "
+    }
+  },
+  "F001.ReceiptApplicationForFamilyBenefits.RequestForPeriodInformation[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.ReceiptApplicationForFamilyBenefits.typeClaim" : {
+    "prompt" : "  Type krav ",
+    "codesetName" : "FTypeClaimNewChangeType",
+    "codeset" : {
+      "01" : " Nytt krav ",
+      "02" : " Endrede omstendigheter "
+    }
+  },
+  "F001.ReceiptApplicationForFamilyBenefits.informationApplication" : {
+    "prompt" : "  Informasjon om søknaden ",
+    "codesetName" : "FInformationApplicationRequestMultipleType",
+    "codeset" : {
+      "01" : " Vi bekrefter leverte opplysninger ",
+      "02" : " Gi oss punktvise opplysninger "
+    }
+  },
+  "F001.InformationAboutChangeInCircumstances.changeCircumstanceFor" : {
+    "prompt" : "  Endrede omstendigheter for ",
+    "codesetName" : "FCircsumstancesChangeMultipleType",
+    "codeset" : {
+      "01" : " Hele familien ",
+      "02" : " Søker ",
+      "03" : " Ektefelle/partner ",
+      "04" : " Annen person ",
+      "05" : " Barn "
+    }
+  },
+  "F001.Decision.DecisionRegardingAllChildrenMentionedInThisSED.DecisionRegardingAllChildrenMentionedInThisSED" : {
+    "prompt" : "  Vedtak angående alle barn som er oppgitt i denne SED-en. ",
+    "codesetName" : "EESSIYesNoFixedYesType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.Decision.DecisionWhichDoesNotConcernAllChildren.DecisionRegardingAllChildrenMentionedInThisSED" : {
+    "prompt" : "  Vedtak angående alle barn som er oppgitt i denne SED-en. ",
+    "codesetName" : "EESSIYesNoFixedNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.Decision.Periods.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Decision.typeDecision" : {
+    "prompt" : "  Type vedtak ",
+    "codesetName" : "FDecisionProvisionalOnCompetenceType",
+    "codeset" : {
+      "01" : " Midlertidig vedtak ",
+      "02" : " Vedtak om kompetanse "
+    }
+  },
+  "F001.Decision.DecisionsPrimaryCompetenceWithArticle68Regulation.Decision[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Decision.DecisionsPrimaryCompetenceWithArticle68Regulation.Decision[0].paymentBenefitIndicator" : {
+    "prompt" : "  Utbetaling av ytelser ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.Decision.DecisionSecondaryCompetenceWithArticle68.Decision[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Decision.DecisionSecondaryCompetenceWithArticle68.Decision[0].paymentBenefitIndicator" : {
+    "prompt" : "  Utbetaling av ytelser ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.Decision.DecisionPrimaryCompetenceWithArticle58Regulation.Decision[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Decision.DecisionSecondaryCompetenceWithArticle58.Decision[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.PersonIdentification.sex" : {
+    "prompt" : "  Kjønn ",
+    "codesetName" : "EESSISexType",
+    "codeset" : {
+      "01" : " Mann ",
+      "02" : " Kvinne ",
+      "98" : " Ukjent "
+    }
+  },
+  "F001.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIEUEFTACountryType"
+  },
+  "F001.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "prompt" : "  Sektor ",
+    "codesetName" : "EESSISectorsType",
+    "codeset" : {
+      "01" : " Yrkesskade og yrkessykdom ",
+      "02" : " Familieytelser ",
+      "03" : " Alle ",
+      "04" : " Pensjoner ",
+      "05" : " Tilbakekreving ",
+      "06" : " Sykdom ",
+      "07" : " Dagpenger "
+    }
+  },
+  "F001.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryHistoricType"
+  },
+  "F001.Claimant.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "prompt" : "  Nasjonalitet ",
+    "codesetName" : "EESSINationalityType"
+  },
+  "F001.Claimant.AddressesPerson.AddressPerson[0].typeAddress" : {
+    "prompt" : "  Type adresse ",
+    "codesetName" : "EESSIAddressType",
+    "codeset" : {
+      "01" : " Bostedsland ",
+      "02" : " Oppholdsland ",
+      "03" : " Personens kontaktadresse "
+    }
+  },
+  "F001.Claimant.AddressesPerson.AddressPerson[0].Address.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryType"
+  },
+  "F001.Claimant.ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "prompt" : "  Type ",
+    "codesetName" : "EESSITelephoneNumberType",
+    "codeset" : {
+      "01" : " Hjem ",
+      "02" : " Mobil ",
+      "03" : " Arbeid "
+    }
+  },
+  "F001.Claimant.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason" : {
+    "prompt" : " null",
+    "codesetName" : "FReasonEntitlementType",
+    "codeset" : {
+      "01" : " Krav ikke framsatt ",
+      "02" : " For høy inntekt ",
+      "03" : null,
+      "04" : null,
+      "05" : null,
+      "99" : null
+    }
+  },
+  "F001.Claimant.FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].familyRelationship" : {
+    "prompt" : "  Familierelasjon ",
+    "codesetName" : "FFamilyRelationshipType",
+    "codeset" : {
+      "01" : " Gift ",
+      "02" : " Samboer ",
+      "03" : " Registrert partnerskap ",
+      "04" : " Skilt ",
+      "05" : " Aleneforelder ",
+      "99" : " Annet "
+    }
+  },
+  "F001.Claimant.FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].wasClaimantAMemberSameHouseholdPersonInQuestionIndicator" : {
+    "prompt" : "  Bor søkeren i samme husstand som den aktuelle personen ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.Claimant.StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.Employments.Employment[0].typeEmployment" : {
+    "prompt" : "  Type arbeidsforhold ",
+    "codesetName" : "FTypeEmploymentType",
+    "codeset" : {
+      "01" : " Ansatt ",
+      "02" : " Selvstendig næringsdrivende ",
+      "03" : " Personen mottar lønn eller ytelser, unntatt pensjon, i en periode med opphør i aktivitet for ansatt eller selvstendig næringsdrivende på grunn av sykdom, omsorg for barn, arbeidsulykke, yrkessykdom eller arbeidsledighet. ",
+      "04" : " Personen har permisjon med lønn, er i streik eller lockout. ",
+      "05" : " Personen har permisjon uten lønn på grunn av omsorg for barn eller en tilsvarende periode i samsvar med lovgivningen i avsenderlandet "
+    }
+  },
+  "F001.Claimant.StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.Employments.Employment[0].PeriodsEmployment.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.StatusPerson.Statuses.Status[0].PersonRegardedANonActivePerson.TypesNonActivity.TypeNoActivity[0].typeNonActivePerson" : {
+    "prompt" : "  Inaktiv person ",
+    "codesetName" : "FActivePersonType",
+    "codeset" : {
+      "01" : " Personen er inaktiv ",
+      "02" : " Personen er inaktiv og har rett til familieytelser ",
+      "99" : " Annet "
+    }
+  },
+  "F001.Claimant.StatusPerson.Statuses.Status[0].PersonRegardedANonActivePerson.TypesNonActivity.TypeNoActivity[0].PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.StatusPerson.Statuses.Status[0].NoInformationAboutActivityPerson.PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.StatusPerson.PeriodsPensionReceivedInSendingMemberState.PeriodPensionReceivedInSendingMemberState[0].typePension" : {
+    "prompt" : "  Type pensjon ",
+    "codesetName" : "EESSIPensionType",
+    "codeset" : {
+      "01" : " Alderspensjon ",
+      "02" : " Uførhet ",
+      "03" : " Enkepensjon/enkemannspensjon ",
+      "04" : " Barnepensjon ",
+      "05" : " Etterlattepensjon (andre mottakere) "
+    }
+  },
+  "F001.Claimant.StatusPerson.PeriodsPensionReceivedInSendingMemberState.PeriodPensionReceivedInSendingMemberState[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.StatusPerson.InsurancePeriodsInSendingMemberState.InsurancePeriod[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.Claimant.StatusPerson.GroundsForResidence.DurationsTerritory.DurationTerritory[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.PersonIdentification.sex" : {
+    "prompt" : "  Kjønn ",
+    "codesetName" : "EESSISexType",
+    "codeset" : {
+      "01" : " Mann ",
+      "02" : " Kvinne ",
+      "98" : " Ukjent "
+    }
+  },
+  "F001.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIEUEFTACountryType"
+  },
+  "F001.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "prompt" : "  Sektor ",
+    "codesetName" : "EESSISectorsType",
+    "codeset" : {
+      "01" : " Yrkesskade og yrkessykdom ",
+      "02" : " Familieytelser ",
+      "03" : " Alle ",
+      "04" : " Pensjoner ",
+      "05" : " Tilbakekreving ",
+      "06" : " Sykdom ",
+      "07" : " Dagpenger "
+    }
+  },
+  "F001.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryHistoricType"
+  },
+  "F001.InformationSpouseOrPartner.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "prompt" : "  Nasjonalitet ",
+    "codesetName" : "EESSINationalityType"
+  },
+  "F001.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].typeAddress" : {
+    "prompt" : "  Type adresse ",
+    "codesetName" : "EESSIAddressType",
+    "codeset" : {
+      "01" : " Bostedsland ",
+      "02" : " Oppholdsland ",
+      "03" : " Personens kontaktadresse "
+    }
+  },
+  "F001.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryType"
+  },
+  "F001.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "prompt" : "  Type ",
+    "codesetName" : "EESSITelephoneNumberType",
+    "codeset" : {
+      "01" : " Hjem ",
+      "02" : " Mobil ",
+      "03" : " Arbeid "
+    }
+  },
+  "F001.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason" : {
+    "prompt" : " null",
+    "codesetName" : "FReasonEntitlementType",
+    "codeset" : {
+      "01" : " Krav ikke framsatt ",
+      "02" : " For høy inntekt ",
+      "03" : null,
+      "04" : null,
+      "05" : null,
+      "99" : null
+    }
+  },
+  "F001.InformationSpouseOrPartner.FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].familyRelationship" : {
+    "prompt" : "  Familierelasjon ",
+    "codesetName" : "FFamilyRelationshipType",
+    "codeset" : {
+      "01" : " Gift ",
+      "02" : " Samboer ",
+      "03" : " Registrert partnerskap ",
+      "04" : " Skilt ",
+      "05" : " Aleneforelder ",
+      "99" : " Annet "
+    }
+  },
+  "F001.InformationSpouseOrPartner.FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].wasClaimantAMemberSameHouseholdPersonInQuestionIndicator" : {
+    "prompt" : "  Bor søkeren i samme husstand som den aktuelle personen ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.Employments.Employment[0].typeEmployment" : {
+    "prompt" : "  Type arbeidsforhold ",
+    "codesetName" : "FTypeEmploymentType",
+    "codeset" : {
+      "01" : " Ansatt ",
+      "02" : " Selvstendig næringsdrivende ",
+      "03" : " Personen mottar lønn eller ytelser, unntatt pensjon, i en periode med opphør i aktivitet for ansatt eller selvstendig næringsdrivende på grunn av sykdom, omsorg for barn, arbeidsulykke, yrkessykdom eller arbeidsledighet. ",
+      "04" : " Personen har permisjon med lønn, er i streik eller lockout. ",
+      "05" : " Personen har permisjon uten lønn på grunn av omsorg for barn eller en tilsvarende periode i samsvar med lovgivningen i avsenderlandet "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.Employments.Employment[0].PeriodsEmployment.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.Statuses.Status[0].PersonRegardedANonActivePerson.TypesNonActivity.TypeNoActivity[0].typeNonActivePerson" : {
+    "prompt" : "  Inaktiv person ",
+    "codesetName" : "FActivePersonType",
+    "codeset" : {
+      "01" : " Personen er inaktiv ",
+      "02" : " Personen er inaktiv og har rett til familieytelser ",
+      "99" : " Annet "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.Statuses.Status[0].PersonRegardedANonActivePerson.TypesNonActivity.TypeNoActivity[0].PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.Statuses.Status[0].NoInformationAboutActivityPerson.PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.PeriodsPensionReceivedInSendingMemberState.PeriodPensionReceivedInSendingMemberState[0].typePension" : {
+    "prompt" : "  Type pensjon ",
+    "codesetName" : "EESSIPensionType",
+    "codeset" : {
+      "01" : " Alderspensjon ",
+      "02" : " Uførhet ",
+      "03" : " Enkepensjon/enkemannspensjon ",
+      "04" : " Barnepensjon ",
+      "05" : " Etterlattepensjon (andre mottakere) "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.PeriodsPensionReceivedInSendingMemberState.PeriodPensionReceivedInSendingMemberState[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.InsurancePeriodsInSendingMemberState.InsurancePeriod[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationSpouseOrPartner.StatusPerson.GroundsForResidence.DurationsTerritory.DurationTerritory[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.sex" : {
+    "prompt" : "  Kjønn ",
+    "codesetName" : "EESSISexType",
+    "codeset" : {
+      "01" : " Mann ",
+      "02" : " Kvinne ",
+      "98" : " Ukjent "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIEUEFTACountryType"
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "prompt" : "  Sektor ",
+    "codesetName" : "EESSISectorsType",
+    "codeset" : {
+      "01" : " Yrkesskade og yrkessykdom ",
+      "02" : " Familieytelser ",
+      "03" : " Alle ",
+      "04" : " Pensjoner ",
+      "05" : " Tilbakekreving ",
+      "06" : " Sykdom ",
+      "07" : " Dagpenger "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryHistoricType"
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "prompt" : "  Nasjonalitet ",
+    "codesetName" : "EESSINationalityType"
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].typeAddress" : {
+    "prompt" : "  Type adresse ",
+    "codesetName" : "EESSIAddressType",
+    "codeset" : {
+      "01" : " Bostedsland ",
+      "02" : " Oppholdsland ",
+      "03" : " Personens kontaktadresse "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].Address.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryType"
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "prompt" : "  Type ",
+    "codesetName" : "EESSITelephoneNumberType",
+    "codeset" : {
+      "01" : " Hjem ",
+      "02" : " Mobil ",
+      "03" : " Arbeid "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason" : {
+    "prompt" : " null",
+    "codesetName" : "FReasonEntitlementType",
+    "codeset" : {
+      "01" : " Krav ikke framsatt ",
+      "02" : " For høy inntekt ",
+      "03" : null,
+      "04" : null,
+      "05" : null,
+      "99" : null
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].familyRelationship" : {
+    "prompt" : "  Familierelasjon ",
+    "codesetName" : "FFamilyRelationshipType",
+    "codeset" : {
+      "01" : " Gift ",
+      "02" : " Samboer ",
+      "03" : " Registrert partnerskap ",
+      "04" : " Skilt ",
+      "05" : " Aleneforelder ",
+      "99" : " Annet "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipClaimantSpouseOrOtherPerson.Relationships.FamilyRelationship[0].wasClaimantAMemberSameHouseholdPersonInQuestionIndicator" : {
+    "prompt" : "  Bor søkeren i samme husstand som den aktuelle personen ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.Employments.Employment[0].typeEmployment" : {
+    "prompt" : "  Type arbeidsforhold ",
+    "codesetName" : "FTypeEmploymentType",
+    "codeset" : {
+      "01" : " Ansatt ",
+      "02" : " Selvstendig næringsdrivende ",
+      "03" : " Personen mottar lønn eller ytelser, unntatt pensjon, i en periode med opphør i aktivitet for ansatt eller selvstendig næringsdrivende på grunn av sykdom, omsorg for barn, arbeidsulykke, yrkessykdom eller arbeidsledighet. ",
+      "04" : " Personen har permisjon med lønn, er i streik eller lockout. ",
+      "05" : " Personen har permisjon uten lønn på grunn av omsorg for barn eller en tilsvarende periode i samsvar med lovgivningen i avsenderlandet "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.Employments.Employment[0].PeriodsEmployment.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].PersonRegardedANonActivePerson.TypesNonActivity.TypeNoActivity[0].typeNonActivePerson" : {
+    "prompt" : "  Inaktiv person ",
+    "codesetName" : "FActivePersonType",
+    "codeset" : {
+      "01" : " Personen er inaktiv ",
+      "02" : " Personen er inaktiv og har rett til familieytelser ",
+      "99" : " Annet "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].PersonRegardedANonActivePerson.TypesNonActivity.TypeNoActivity[0].PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].NoInformationAboutActivityPerson.PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.PeriodsPensionReceivedInSendingMemberState.PeriodPensionReceivedInSendingMemberState[0].typePension" : {
+    "prompt" : "  Type pensjon ",
+    "codesetName" : "EESSIPensionType",
+    "codeset" : {
+      "01" : " Alderspensjon ",
+      "02" : " Uførhet ",
+      "03" : " Enkepensjon/enkemannspensjon ",
+      "04" : " Barnepensjon ",
+      "05" : " Etterlattepensjon (andre mottakere) "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.PeriodsPensionReceivedInSendingMemberState.PeriodPensionReceivedInSendingMemberState[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.InsurancePeriodsInSendingMemberState.InsurancePeriod[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationOtherPersons.InformationOtherPerson[0].StatusPerson.GroundsForResidence.DurationsTerritory.DurationTerritory[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryType"
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].ChildDetails.sex" : {
+    "prompt" : "  Kjønn ",
+    "codesetName" : "EESSISexType",
+    "codeset" : {
+      "01" : " Mann ",
+      "02" : " Kvinne ",
+      "98" : " Ukjent "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIEUEFTACountryType"
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "prompt" : "  Sektor ",
+    "codesetName" : "EESSISectorsType",
+    "codeset" : {
+      "01" : " Yrkesskade og yrkessykdom ",
+      "02" : " Familieytelser ",
+      "03" : " Alle ",
+      "04" : " Pensjoner ",
+      "05" : " Tilbakekreving ",
+      "06" : " Sykdom ",
+      "07" : " Dagpenger "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryHistoricType"
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "prompt" : "  Nasjonalitet ",
+    "codesetName" : "EESSINationalityType"
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].AddressesChild.AddressPerson[0].typeAddress" : {
+    "prompt" : "  Type adresse ",
+    "codesetName" : "EESSIAddressType",
+    "codeset" : {
+      "01" : " Bostedsland ",
+      "02" : " Oppholdsland ",
+      "03" : " Personens kontaktadresse "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].AddressesChild.AddressPerson[0].Address.country" : {
+    "prompt" : "  Land ",
+    "codesetName" : "EESSIWorldCountryType"
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].relationshipWith" : {
+    "prompt" : "  Relasjon med ",
+    "codesetName" : "FDisagreementGroundsType",
+    "codeset" : {
+      "01" : " Søker ",
+      "02" : " Ektefelle/partner ",
+      "03" : " Avdød ",
+      "04" : " Annen person "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].type" : {
+    "prompt" : "  Type ",
+    "codesetName" : "FChildRelationshipEnchancedType",
+    "codeset" : {
+      "01" : " Daglig omsorg for barnet ",
+      "02" : " Barn født i ekteskap ",
+      "03" : " Eget barn ",
+      "04" : " Adoptert barn ",
+      "05" : " Barn født utenfor ekteskap ",
+      "06" : " Barn av ektefelle i husstanden ",
+      "07" : " Barnebarn, bror eller søster, nevø eller niese som den aktuelle personen har i sin husstand ",
+      "08" : " Fosterbarn "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].jointCustodyIndicator" : {
+    "prompt" : "  Delt foreldreansvar ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdClaimantIndicator" : {
+    "prompt" : "  Bor barnet i samme husstand som søkeren ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdSpousePartnerInQuestionIndicator" : {
+    "prompt" : "  Bor barnet i samme husstand som ektefellen/partneren ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdOtherPersonInQuestionIndicator" : {
+    "prompt" : "  Bor barnet i samme husstand som den andre aktuelle personen ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].RelationshipsClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildInInstitutionIndicator" : {
+    "prompt" : "  Bor barnet i institusjonen ",
+    "codesetName" : "EESSIYesNoType",
+    "codeset" : {
+      "0" : " Nei ",
+      "1" : " Ja "
+    }
+  },
+  "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].GroundsForResidence.DurationsTerritory.DurationTerritory[0].OpenPeriod.typeOpenPeriod" : {
+    "prompt" : "  Type åpen periode ",
+    "codesetName" : "EESSIOpenPeriodType",
+    "codeset" : {
+      "01" : " Periode med åpen sluttdato ",
+      "98" : " Ukjent sluttdato for perioden "
+    }
+  },
+  "F001.AmountsNamesCurrenciesForFamilyBenefitsChildren.AmountNameCurrencyForFamilyBenefitsForAChild[0].FamilyBenefitDetails.Amount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  },
+  "F001.AmountsFamilyBenefitForEntireFamily.AmountFamilyBenefit[0].FamilyBenefitDetails.Amount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  },
+  "F001.RequestForOffsettingFamilyBenefitsForChildren.RequestForOffsettingFamilyBenefitsForAChild[0].FamilyBenefitDetails.Amount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  },
+  "F001.RequestForOffsettingFamilyBenefitsForChildren.TotalAmountOfFamilyBenefits.TotalAmount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  },
+  "F001.RequestForOffsettingFamilyBenefitsForEntireFamily.RequestForOffsettingFamilyBenefitForEntireFamily[0].FamilyBenefitDetails.Amount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  },
+  "F001.RequestForOffsettingFamilyBenefitsForEntireFamily.TotalAmountOfFamilyBenefits.TotalAmount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  },
+  "F001.ClaimForReimbursementWithArticle58RegulationNo987.ClaimDetails.ClaimDetail[0].Amount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  },
+  "F001.ClaimForReimbursementWithArticle58RegulationNo987.TotalClaimsAmount.TotalAmount.currency" : {
+    "prompt" : "  Valuta ",
+    "codesetName" : "EESSIEUEFTACurrencyType"
+  }
+}

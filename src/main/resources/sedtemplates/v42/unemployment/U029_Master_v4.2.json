@@ -1,0 +1,35 @@
+{
+  "U029_Master": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "LocalCaseNumbers": {
+      "LocalCaseNumber": [
+        {
+          "country": {
+            "value": [
+              "$nav.eessisak[x].land"
+            ]
+          },
+          "caseNumber": "$nav.eessisak[x].saksnummer",
+          "Institution": {
+            "institutionID": "$nav.eessisak[x].institusjonsid",
+            "institutionName": "$nav.eessisak[x].institusjonsnavn"
+          }
+        }
+      ]
+    },
+    "GeneralInformation": {
+      "reimbursementRequestID": "$dagpenger.refusjonskrav.id",
+      "reimbursementContestationID": "$dagpenger.refusjonskrav.bestridelse.id",
+      "amendedReimbursementRequestID": "$dagpenger.refusjonskrav.endret.id",
+      "UpdatedTotalAmountRequested": {
+        "amount": "$dagpenger.refusjonskrav.anmodnettotalbeloep.oppdatert.beloep",
+        "currency": {
+          "value": [
+            "$dagpenger.refusjonskrav.anmodnettotalbeloep.oppdatert.valuta"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "H005": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "Person": {
+      "PersonIdentification": {
+        "familyName": "$nav.bruker.person.etternavn",
+        "forename": "$nav.bruker.person.fornavn",
+        "dateBirth": "$nav.bruker.person.foedselsdato",
+        "sex": {
+          "value": [
+            "$nav.bruker.person.kjoenn"
+          ]
+        },
+        "familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution": {
+          "PersonalIdentificationNumber": [
+            {
+              "country": {
+                "value": [
+                  "$nav.bruker.person.pin[x].land"
+                ]
+              },
+              "personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+              "sector": {
+                "value": [
+                  "$nav.bruker.person.pin[x].sektor"
+                ]
+              },
+              "Institution": {
+                "institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+                "institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+              }
+            }
+          ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+          "PlaceBirth": {
+            "town": "$nav.bruker.person.foedested.by",
+            "region": "$nav.bruker.person.foedested.region",
+            "country": {
+              "value": [
+                "$nav.bruker.person.foedested.land"
+              ]
+            }
+          },
+          "fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather": "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother": "$nav.bruker.mor.person.fornavn"
+        }
+      },
+      "AdditionalInformationPerson": {
+        "nationality": {
+          "value": [
+            "$nav.bruker.person.statsborgerskap[x].land"
+          ]
+        }
+      }
+    },
+    "RequestForInformation": {
+      "detailsRequest": "$horisontal.anmodningominformasjon.detaljer"
+    },
+    "ElementsDetermineResidence": {
+      "Addresses": [
+        {
+          "typeAddress": {
+            "value": [
+              "$horisontal.anmodningominformasjon.fastslaabosted.bruker.adresse[x].type"
+            ]
+          },
+          "Address": {
+            "street": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.adresse[x].gate",
+            "buildingName": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.adresse[x].bygning",
+            "town": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.adresse[x].by",
+            "postalCode": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.adresse[x].postnummer",
+            "region": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.adresse[x].region",
+            "country": {
+              "value": [
+                "$horisontal.anmodningominformasjon.fastslaabosted.bruker.adresse[x].land"
+              ]
+            }
+          },
+          "durationPresence": "$horisontal.anmodningominformasjon.fastslaabosted.oppholdetsvarighet",
+          "continuityPresence": "$horisontal.anmodningominformasjon.fastslaabosted.varighetuavbruttopphold"
+        }
+      ],
+      "statusPerson": {
+        "value": [
+          "$horisontal.anmodningominformasjon.aktivitet.status.id"
+        ]
+      },
+      "PleaseFillInIfStatusPersonOther": {
+        "other": "$horisontal.anmodningominformasjon.aktivitet.status.annet"
+      },
+      "DescriptionNatureSpecificCharacteristicsActivity": [
+        {
+          "typeActivity": {
+            "value": [
+              "$horisontal.anmodningominformasjon.aktivitet.type"
+            ]
+          },
+          "descriptionActivity": "$horisontal.anmodningominformasjon.aktivitet.beskrivelse",
+          "locationActivity": "$horisontal.anmodningominformasjon.aktivitet.sted",
+          "durationActivity": "$horisontal.anmodningominformasjon.aktivitet.varighet",
+          "natureActivity": "$horisontal.anmodningominformasjon.aktivitet.art"
+        }
+      ],
+      "sourceIncomeStudents": "$horisontal.anmodningominformasjon.inntektskilde.studenter",
+      "housingSituationInParticularHowPermanentItIs": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.hvorpermanent",
+      "residenceForTaxPurposes": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.permanentoppholdskattemessig",
+      "FamilyStatus": {
+        "familyMemberSpouse": "$horisontal.anmodningominformasjon.familiestatus.ektefelle.familiemedlem",
+        "placeResidenceSpouse": "$horisontal.anmodningominformasjon.familiestatus.ektefelle.bosted",
+        "familyMemberChildren": "$horisontal.anmodningominformasjon.familiestatus.barn.familiemedlem",
+        "placeResidenceChildren": "$horisontal.anmodningominformasjon.familiestatus.barn.bosted",
+        "placeSchoolChildren": "$horisontal.anmodningominformasjon.familiestatus.barn.skolekrets"
+      },
+      "intentionPersonConcernedReasonsMove": "$horisontal.anmodningominformasjon.fastslaabosted.bruker.grunnforflytting"
+    },
+    "AdditionalInformation": {
+      "additionalInformation": "$nav.ytterligereinformasjon"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "U027": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "LocalCaseNumbers": {
+      "LocalCaseNumber": [
+        {
+          "country": {
+            "value": [
+              "$nav.eessisak[x].land"
+            ]
+          },
+          "caseNumber": "$nav.eessisak[x].saksnummer",
+          "Institution": {
+            "institutionID": "$nav.eessisak[x].institusjonsid",
+            "institutionName": "$nav.eessisak[x].institusjonsnavn"
+          }
+        }
+      ]
+    },
+    "InformationChargingInterest": {
+      "reimbursementRequestID": "$dagpenger.refusjonskrav.id"
+    },
+    "ChargingInterestAccepted": {
+      "chargingInterestAccepted": {
+        "value": [
+          "$dagpenger.refusjonskrav.svar.rentebetaling.erakseptert.type"
+        ]
+      },
+      "PleaseFillInFollowingIfChargingInterestAcceptedNo": {
+        "specifyReasonForNonAcceptance": {
+          "value": [
+            "$dagpenger.refusjonskrav.svar.rentebetaling.ikkeakseptert.grunn.type[x]"
+          ]
+        },
+        "PleaseFillInFollowingIfChargingInterestAccepted": {
+          "additionalInformation": "$dagpenger.refusjonskrav.svar.rentebetaling.ikkeakseptert.grunn.annen"
+        }
+      }
+    },
+    "PleaseFillInFollowingIfChargingInterest2": {
+      "IndividualClaimWhichCannotSubjectedInterest": [
+        {
+          "sequentialNumberIndividualClaim": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.loepenummer",
+          "Person": {
+            "familyName": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.etternavn",
+            "forename": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.fornavn",
+            "dateBirth": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.foedselsdato",
+            "sex": {
+              "value": [
+                "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.kjoenn"
+              ]
+            }
+          },
+          "specifyReason": {
+            "value": [
+              "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.grunn.type"
+            ]
+          },
+          "PleaseFillInFollowingIfSpecifyReason3Other": {
+            "pleaseSpecifyOther": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.grunn.annen"
+          }
+        }
+      ]
+    }
+  }
+}

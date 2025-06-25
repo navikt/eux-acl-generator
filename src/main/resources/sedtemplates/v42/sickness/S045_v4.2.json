@@ -1,0 +1,91 @@
+{
+  "S045": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "Person": {
+      "PersonIdentification": {
+        "familyName": "$nav.bruker.person.etternavn",
+        "forename": "$nav.bruker.person.fornavn",
+        "dateBirth": "$nav.bruker.person.foedselsdato",
+        "sex": {
+          "value": [
+            "$nav.bruker.person.kjoenn"
+          ]
+        },
+        "familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution": {
+          "PersonalIdentificationNumber": [
+            {
+              "country": {
+                "value": [
+                  "$nav.bruker.person.pin[x].land"
+                ]
+              },
+              "personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+              "sector": {
+                "value": [
+                  "$nav.bruker.person.pin[x].sektor"
+                ]
+              },
+              "Institution": {
+                "institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+                "institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+              }
+            }
+          ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+          "PlaceBirth": {
+            "town": "$nav.bruker.person.foedested.by",
+            "region": "$nav.bruker.person.foedested.region",
+            "country": {
+              "value": [
+                "$nav.bruker.person.foedested.land"
+              ]
+            }
+          },
+          "fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather": "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother": "$nav.bruker.mor.person.fornavn"
+        }
+      },
+      "AdditionalInformationPerson": {
+        "nationality": {
+          "value": [
+            "$nav.bruker.person.statsborgerskap[x].land"
+          ]
+        }
+      }
+    },
+    "AddressOfPersonForWhomAnEntitlementDocumentIssued": {
+      "street": "$sykdom.anmodningomdokumenter.svar.personensadresse.gate",
+      "buildingName": "$sykdom.anmodningomdokumenter.svar.personensadresse.bygning",
+      "town": "$sykdom.anmodningomdokumenter.svar.personensadresse.by",
+      "postalCode": "$sykdom.anmodningomdokumenter.svar.personensadresse.postnummer",
+      "region": "$sykdom.anmodningomdokumenter.svar.personensadresse.region",
+      "country": {
+        "value": [
+          "$sykdom.anmodningomdokumenter.personensadresse.land"
+        ]
+      }
+    },
+    "InfoEntitlement": {
+      "PeriodEntitlement": {
+        "startDate": "$sykdom.anmodningomdokumenter.svar.retttilytelser.periode.startdato",
+        "endDate": "$sykdom.anmodningomdokumenter.svar.retttilytelser.periode.sluttdato"
+      }
+    },
+    "InfoNonEntitlement": {
+      "infoNonEntitlement": {
+        "value": [
+          "$sykdom.anmodningomdokumenter.svar.ikkrretttilytelser.grunn.type"
+        ]
+      },
+      "FillInIfInfoNonEntitlementOther": {
+        "reason": "$sykdom.anmodningomdokumenter.svar.ikkrretttilytelser.grunn.annen"
+      }
+    }
+  }
+}

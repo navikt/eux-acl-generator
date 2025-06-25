@@ -1,0 +1,66 @@
+{
+  "U024": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "LocalCaseNumbers": {
+      "LocalCaseNumber": [
+        {
+          "country": {
+            "value": [
+              "$nav.eessisak[x].land"
+            ]
+          },
+          "caseNumber": "$nav.eessisak[x].saksnummer",
+          "Institution": {
+            "institutionID": "$nav.eessisak[x].institusjonsid",
+            "institutionName": "$nav.eessisak[x].institusjonsnavn"
+          }
+        }
+      ]
+    },
+    "GeneralInformation": {
+      "reimbursementRequestID": "$dagpenger.refusjonskrav.id",
+      "reimbursementPaymentNotificationID": "$dagpenger.refusjonskrav.tilbakebetaling.id"
+    },
+    "AmountReimbursed": {
+      "Amount": {
+        "amount": "$dagpenger.refusjonskrav.tilbakebetaling.beloep",
+        "currency": {
+          "value": [
+            "$dagpenger.refusjonskrav.tilbakebetaling.valuta"
+          ]
+        }
+      },
+      "datePayment": "$dagpenger.refusjonskrav.tilbakebetaling.utbetalingsdato"
+    },
+    "BankInformation": {
+      "SEPABankDetails": {
+        "IBAN": "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.iban",
+        "BICSWIFT": "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.swift"
+      },
+      "bankTransferSubjectOrTransactionReference": "$dagpenger.refusjonskrav.tilbakebetaling.bank.overfoering.emneellerreferanse"
+    },
+    "IndividualClaimsWhichPaymentRelates": {
+      "IndividualClaimWhichPaymentRelates": [
+        {
+          "reimbursementRequestID": "$dagpenger.refusjonskrav.enkeltkrav[x].id",
+          "reimbursementPaymentNotificationID": "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravtilbakebetalingid",
+          "sequentialNumberIndividualClaim": "$dagpenger.refusjonskrav.enkeltkrav[x].loepenummer",
+          "contestedIndividualClaimID": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.id",
+          "amendedContestedIndividualClaimID": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.endret.id",
+          "individualClaimPaymentNotificationID": "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.melding.id",
+          "Person": {
+            "familyName": "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.etternavn",
+            "forename": "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.fornavn",
+            "dateBirth": "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.foedselsdato",
+            "sex": {
+              "value": [
+                "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.kjoenn"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

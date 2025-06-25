@@ -1,0 +1,229 @@
+{
+  "H001" : {
+    "NotificationRequestForInformation" : {
+      "Employer" : {
+        "AdditionalInformationChangeInCircumstances" : {
+          "additionalInformationChangeInCircumstances" : "$horisontal.arbeidsgiver.ytterligereinfo",
+          "notificationRequestForAdditionalInformation" : {
+            "value" : [ "$horisontal.arbeidsgiver.ytterligereinfotype" ]
+          }
+        },
+        "Employer" : {
+          "Address" : {
+            "buildingName" : "$nav.arbeidsgiver.adresse.bygning",
+            "country" : {
+              "value" : [ "$nav.arbeidsgiver.adresse.land" ]
+            },
+            "postalCode" : "$nav.arbeidsgiver.adresse.postnummer",
+            "region" : "$nav.arbeidsgiver.adresse.region",
+            "street" : "$nav.arbeidsgiver.adresse.gate",
+            "town" : "$nav.arbeidsgiver.adresse.by"
+          },
+          "IdentificationNumbers" : {
+            "IdentificationNumber" : [ {
+              "number" : "$nav.arbeidsgiver.identifikator[x].id",
+              "type" : {
+                "value" : [ "$nav.arbeidsgiver.identifikator[x].type42" ]
+              }
+            } ]
+          },
+          "name" : "$nav.arbeidsgiver.navn"
+        },
+        "PleaseFindAttachedFollowingDocuments" : {
+          "OtherDocumentsAttached" : {
+            "OtherDocument" : [ {
+              "document" : "$horisontal.arbeidsgiver.vedlegg.andredokumenttyper[x]"
+            } ]
+          },
+          "predefinedDocuments" : {
+            "value" : [ "$horisontal.arbeidsgiver.vedlegg.dokumenttyper[x]" ]
+          }
+        },
+        "RequestForInformation" : {
+          "PleaseProvide" : {
+            "document" : "$horisontal.arbeidsgiver.anmodning.dokumenter",
+            "followingSED" : "$horisontal.arbeidsgiver.anmodning.sed",
+            "information" : "$horisontal.arbeidsgiver.anmodning.info"
+          },
+          "dateRequest" : "$horisontal.arbeidsgiver.anmodning.dato"
+        }
+      },
+      "Person" : {
+        "AdditionalInformationChangeInCircumstances" : {
+          "additionalInformationChangeInCircumstances" : "$horisontal.bruker.ytterligereinfo",
+          "notificationRequestForAdditionalInformation" : {
+            "value" : [ "$horisontal.bruker.ytterligereinfotype" ]
+          }
+        },
+        "AddressPerson" : {
+          "AddressesPerson" : [ {
+            "NotificationAddress" : {
+              "NotificationAddress" : [ {
+                "Address" : {
+                  "buildingName" : "$nav.bruker.meldinger[x].adresser[x].bygning",
+                  "country" : {
+                    "value" : [ "$nav.bruker.meldinger[x].adresser[x].land" ]
+                  },
+                  "postalCode" : "$nav.bruker.meldinger[x].adresser[x].postnummer",
+                  "region" : "$nav.bruker.meldinger[x].adresser[x].region",
+                  "street" : "$nav.bruker.meldinger[x].adresser[x].gate",
+                  "town" : "$nav.bruker.meldinger[x].adresser[x].by"
+                },
+                "typeAddress" : {
+                  "value" : [ "$nav.bruker.meldinger[x].adresser[x].type" ]
+                }
+              }
+              ]
+            },
+            "RequestAddress" : {
+              "typeAddress" : {
+                "value" : [ "$nav.bruker.meldinger[x].anmodet.adresse.type" ]
+              }
+            }
+          }
+          ]
+        },
+        "NotificationChangeInCircumstances" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$horisontal.bruker.identifisering.personinfo.foedested.land" ]
+            },
+            "region" : "$horisontal.bruker.identifisering.personinfo.foedested.region",
+            "town" : "$horisontal.bruker.identifisering.personinfo.foedested.by"
+          },
+          "dateBirth" : "$horisontal.bruker.identifisering.personinfo.foedselsdato",
+          "familyName" : "$horisontal.bruker.identifisering.personinfo.etternavn",
+          "familyNameAtBirth" : "$horisontal.bruker.identifisering.personinfo.etternavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$horisontal.bruker.identifisering.far.person.etternavnvedfoedsel",
+          "forename" : "$horisontal.bruker.identifisering.personinfo.fornavn",
+          "forenameAtBirth" : "$horisontal.bruker.identifisering.personinfo.fornavnvedfoedsel",
+          "forenameFather" : "$horisontal.bruker.identifisering.far.person.fornavn",
+          "forenameMother" : "$horisontal.bruker.identifisering.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$horisontal.bruker.identifisering.mor.person.etternavnvedfoedsel",
+          "nationality" : {
+            "value" : [ "$horisontal.bruker.identifisering.personinfo.statsborgerskap[x].land" ]
+          },
+          "other" : "$horisontal.bruker.identifisering.personinfo.annet",
+          "previousFamilyName" : "$horisontal.bruker.identifisering.personinfo.tidligereetternavn",
+          "previousForename" : "$horisontal.bruker.identifisering.personinfo.tidligerefornavn",
+          "sex" : {
+            "value" : [ "$horisontal.bruker.identifisering.personinfo.kjoenn" ]
+          }
+        },
+        "PersonIdentification" : {
+          "AdditionalInformationPerson" : {
+            "PleaseFillInIfStatusPersonOther" : {
+              "other" : "$horisontal.bruker.status.annet"
+            },
+            "nationality" : {
+              "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+            },
+            "statusPerson" : {
+              "value" : [ "$horisontal.bruker.status.id[x]" ]
+            }
+          },
+          "PersonIdentification" : {
+            "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+              "PlaceBirth" : {
+                "country" : {
+                  "value" : [ "$nav.bruker.person.foedested.land" ]
+                },
+                "region" : "$nav.bruker.person.foedested.region",
+                "town" : "$nav.bruker.person.foedested.by"
+              },
+              "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+              "forenameFather" : "$nav.bruker.far.person.fornavn",
+              "forenameMother" : "$nav.bruker.mor.person.fornavn",
+              "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+            },
+            "PINPersonInEachInstitution" : {
+              "PersonalIdentificationNumber" : [ {
+                "Institution" : {
+                  "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+                  "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+                },
+                "country" : {
+                  "value" : [ "$nav.bruker.person.pin[x].land" ]
+                },
+                "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+                "sector" : {
+                  "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+                }
+              } ]
+            },
+            "dateBirth" : "$nav.bruker.person.foedselsdato",
+            "familyName" : "$nav.bruker.person.etternavn",
+            "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+            "forename" : "$nav.bruker.person.fornavn",
+            "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+            "sex" : {
+              "value" : [ "$nav.bruker.person.kjoenn" ]
+            }
+          }
+        },
+        "PleaseFindAttachedFollowingDocuments" : {
+          "OtherDocumentsAttached" : {
+            "OtherDocument" : [ {
+              "document" : "$horisontal.bruker.vedlegg.andredokumenttyper[x]"
+            } ]
+          },
+          "predefinedDocuments" : {
+            "value" : [ "$horisontal.bruker.vedlegg.dokumenttyper[x]" ]
+          }
+        },
+        "RequestForInformation" : {
+          "PleaseProvide" : {
+            "document" : "$horisontal.bruker.anmodning.dokumenter",
+            "followingSED" : "$horisontal.bruker.anmodning.sed",
+            "information" : "$horisontal.bruker.anmodning.info"
+          },
+          "dateRequest" : "$horisontal.bruker.anmodning.dato"
+        },
+        "RequestForInformationForIdentificationPerson" : {
+          "Person" : {
+            "typeInformation" : {
+              "value" : [ "$horisontal.bruker.anmodning.personinfo.identifikasjonsinformasjon.type[x]" ]
+            }
+          }
+        },
+        "RequestForSectorPINPersonInReceivingInstitution" : {
+          "otherSectorPIN" : "$horisontal.bruker.anmodning.personinfo.pin.sektor.annen",
+          "sectorPINReceivingInstitution" : {
+            "value" : [ "$horisontal.bruker.anmodning.personinfo.pin.sektor.id" ]
+          }
+        }
+      },
+      "ReimbursementBulkSED" : {
+        "AdditionalInformationChangeInCircumstances" : {
+          "additionalInformationChangeInCircumstances" : "$horisontal.tilbakebetaling.ytterligereinfo",
+          "notificationRequestForAdditionalInformation" : {
+            "value" : [ "$horisontal.tilbakebetaling.ytterligereinfotype" ]
+          }
+        },
+        "PleaseFindAttachedFollowingDocuments" : {
+          "OtherDocumentsAttached" : {
+            "OtherDocument" : [ {
+              "document" : "$horisontal.tilbakebetaling.vedlegg.andredokumenttyper[x]"
+            } ]
+          },
+          "predefinedDocuments" : {
+            "value" : [ "$horisontal.tilbakebetaling.vedlegg.dokumenttyper[x]" ]
+          }
+        },
+        "ReimbursementIdentification" : {
+          "reimbursementRequestID" : "$nav.tilbakebetaling.identifikasjon"
+        },
+        "RequestForInformation" : {
+          "PleaseProvide" : {
+            "document" : "$horisontal.tilbakebetaling.anmodning.dokumenter",
+            "followingSED" : "$horisontal.tilbakebetaling.anmodning.sed",
+            "information" : "$horisontal.tilbakebetaling.anmodning.info"
+          },
+          "dateRequest" : "$horisontal.tilbakebetaling.anmodning.dato"
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

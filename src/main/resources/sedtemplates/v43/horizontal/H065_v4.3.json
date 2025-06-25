@@ -1,0 +1,113 @@
+{
+  "H065" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "AdditionalInformationConcerning" : {
+      "AdditionalInformationConcerning" : {
+        "FillInIfClaimDocumentInformation" : {
+          "otherBenefits" : "$horisontal.overfoeringinfo.informasjonangaarytelse.andre"
+        },
+        "claimDocumentInformationConcerns" : {
+          "value" : [ "$horisontal.overfoeringinfo.informasjonangaarytelse.type" ]
+        }
+      },
+      "OtherCorrespondence" : {
+        "PleaseFillInFollowingIfOtherCorrespondenceOther" : {
+          "typeCorrespondence" : "$horisontal.overfoeringinfo.annenkorresponanse.andre"
+        },
+        "otherInformation" : {
+          "value" : [ "$horisontal.overfoeringinfo.annenkorresponanse.type" ]
+        }
+      },
+      "TransferClaimDocumentInformationTo" : {
+        "institutionCode" : "$horisontal.overfoeringinfo.til.institusjon.id",
+        "institutionName" : "$horisontal.overfoeringinfo.til.institusjon.navn",
+        "transferClaimDocumentInformationTo" : {
+          "value" : [ "$horisontal.overfoeringinfo.til.type" ]
+        }
+      },
+      "dateReceiptClaimDocumentInformation" : "$horisontal.overfoeringinfo.mottaksdato",
+      "thePersonClaimantIndicator" : {
+        "value" : [ "$horisontal.overfoeringinfo.erbrukersoekeren" ]
+      }
+    },
+    "AddressPerson" : {
+      "AddressPerson" : [ {
+        "Address" : {
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "postalCode" : "$nav.bruker.adresse[x].postnummer",
+          "region" : "$nav.bruker.adresse[x].region",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "town" : "$nav.bruker.adresse[x].by"
+        },
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "PleaseFindAttachedFollowingDocuments" : {
+      "OtherDocumentsAttached" : {
+        "OtherDocument" : [ {
+          "document" : "$horisontal.overfoeringinfo.dokumentervedlagt.annet[x]"
+        } ]
+      },
+      "predefinedDocuments" : {
+        "value" : [ "$horisontal.overfoeringinfo.dokumentervedlagt.type[x]" ]
+      }
+    },
+    "ReasonsForTransmission" : {
+      "reasons" : "$horisontal.overfoeringinfo.grunnerforoverfoering"
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

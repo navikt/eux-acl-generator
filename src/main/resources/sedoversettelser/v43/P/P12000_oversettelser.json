@@ -1,0 +1,711 @@
+{
+  "P12000.sedTitle" : {
+    "index" : "P12000",
+    "prompt" : "P12000 - Informasjon om pensjonsbeløp",
+    "valuetype" : "_rinaRoot"
+  },
+  "P12000.LocalCaseNumbers" : {
+    "index" : "1.",
+    "prompt" : " Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : " Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "index" : "1.1.1.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "index" : "1.1.2.",
+    "prompt" : " Saksnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3.",
+    "prompt" : " Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "index" : "1.1.3.1.",
+    "prompt" : " Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "index" : "1.1.3.2.",
+    "prompt" : " Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P12000.InsuredPerson" : {
+    "index" : "2.",
+    "prompt" : " Forsikret person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.PersonIdentification" : {
+    "index" : "2.1.",
+    "prompt" : " Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.PersonIdentification.familyName" : {
+    "index" : "2.1.1.",
+    "prompt" : " Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.forename" : {
+    "index" : "2.1.2.",
+    "prompt" : " Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.dateBirth" : {
+    "index" : "2.1.3.",
+    "prompt" : " Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.sex" : {
+    "index" : "2.1.4.",
+    "prompt" : " Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    }
+  },
+  "P12000.InsuredPerson.PersonIdentification.familyNameAtBirth" : {
+    "index" : "2.1.5.",
+    "prompt" : " Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.forenameAtBirth" : {
+    "index" : "2.1.6.",
+    "prompt" : " Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7.",
+    "prompt" : " PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : " Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "2.1.7.1.1.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "2.1.7.1.2.",
+    "prompt" : " Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "2.1.7.1.3.",
+    "prompt" : " Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    }
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4.",
+    "prompt" : " Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "2.1.7.1.4.1.",
+    "prompt" : " Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "2.1.7.1.4.2.",
+    "prompt" : " Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8.",
+    "prompt" : " Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1.",
+    "prompt" : " Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "2.1.8.1.1.",
+    "prompt" : " By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "2.1.8.1.2.",
+    "prompt" : " Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "2.1.8.1.3.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "2.1.8.2.",
+    "prompt" : " Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "2.1.8.3.",
+    "prompt" : " Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "2.1.8.4.",
+    "prompt" : " Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "2.1.8.5.",
+    "prompt" : " Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.",
+    "prompt" : " Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.1.",
+    "prompt" : " Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "index" : "2.2.1.1.",
+    "prompt" : " Nasjonalitet",
+    "valuetype" : "_uxMultiSelect"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "index" : "2.2.1.2.",
+    "prompt" : " Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "index" : "2.2.1.3.",
+    "prompt" : " Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "index" : "2.2.2.",
+    "prompt" : " Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.Address.street" : {
+    "index" : "2.2.2.1.",
+    "prompt" : " Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
+    "index" : "2.2.2.2.",
+    "prompt" : " Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.Address.town" : {
+    "index" : "2.2.2.3.",
+    "prompt" : " By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
+    "index" : "2.2.2.4.",
+    "prompt" : " Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.Address.region" : {
+    "index" : "2.2.2.5.",
+    "prompt" : " Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.Address.country" : {
+    "index" : "2.2.2.6.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson" : {
+    "index" : "2.2.3.",
+    "prompt" : " Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "2.2.3.1.",
+    "prompt" : " Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "2.2.3.1.1",
+    "prompt" : " Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "2.2.3.1.1.1.",
+    "prompt" : " Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    }
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "2.2.3.1.1.2.",
+    "prompt" : " Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "index" : "2.2.3.2.",
+    "prompt" : " E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "2.2.3.2.1",
+    "prompt" : " E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "2.2.3.2.1.1.",
+    "prompt" : " E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension" : {
+    "index" : "3.",
+    "prompt" : " Mottaker av etterlattepensjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification" : {
+    "index" : "3.1.",
+    "prompt" : " Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.familyName" : {
+    "index" : "3.1.1.",
+    "prompt" : " Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.forename" : {
+    "index" : "3.1.2.",
+    "prompt" : " Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.dateBirth" : {
+    "index" : "3.1.3.",
+    "prompt" : " Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.sex" : {
+    "index" : "3.1.4.",
+    "prompt" : " Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    }
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.familyNameAtBirth" : {
+    "index" : "3.1.5.",
+    "prompt" : " Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.forenameAtBirth" : {
+    "index" : "3.1.6.",
+    "prompt" : " Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.7.",
+    "prompt" : " PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.1.7.1",
+    "prompt" : " Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "3.1.7.1.1.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "3.1.7.1.2.",
+    "prompt" : " Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "3.1.7.1.3.",
+    "prompt" : " Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    }
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.7.1.4.",
+    "prompt" : " Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "3.1.7.1.4.1.",
+    "prompt" : " Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "3.1.7.1.4.2.",
+    "prompt" : " Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.8.",
+    "prompt" : " Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.8.1.",
+    "prompt" : " Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "3.1.8.1.1.",
+    "prompt" : " By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "3.1.8.1.2.",
+    "prompt" : " Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "3.1.8.1.3.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "3.1.8.2.",
+    "prompt" : " Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "3.1.8.3.",
+    "prompt" : " Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "3.1.8.4.",
+    "prompt" : " Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "3.1.8.5.",
+    "prompt" : " Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson" : {
+    "index" : "3.2.",
+    "prompt" : " Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "3.2.1.",
+    "prompt" : " Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "index" : "3.2.1.1.",
+    "prompt" : " Nasjonalitet",
+    "valuetype" : "_uxMultiSelect"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "index" : "3.2.1.2.",
+    "prompt" : " Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "index" : "3.2.1.3.",
+    "prompt" : " Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.Address" : {
+    "index" : "3.2.2.",
+    "prompt" : " Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.Address.street" : {
+    "index" : "3.2.2.1.",
+    "prompt" : " Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.Address.buildingName" : {
+    "index" : "3.2.2.2.",
+    "prompt" : " Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.Address.town" : {
+    "index" : "3.2.2.3.",
+    "prompt" : " By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.Address.postalCode" : {
+    "index" : "3.2.2.4.",
+    "prompt" : " Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.Address.region" : {
+    "index" : "3.2.2.5.",
+    "prompt" : " Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.Address.country" : {
+    "index" : "3.2.2.6.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson" : {
+    "index" : "3.2.3.",
+    "prompt" : " Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "3.2.3.1.",
+    "prompt" : " Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "3.2.3.1.1",
+    "prompt" : " Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "3.2.3.1.1.1.",
+    "prompt" : " Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    }
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "3.2.3.1.1.2.",
+    "prompt" : " Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "index" : "3.2.3.2.",
+    "prompt" : " E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "3.2.3.2.1",
+    "prompt" : " E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "3.2.3.2.1.1.",
+    "prompt" : " E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.ReferencePerson" : {
+    "index" : "4.",
+    "prompt" : " Referanse til personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.ReferencePerson.thisReplyMadeWithReferencePersonNamedIn" : {
+    "index" : "4.1.",
+    "prompt" : " Denne informasjonen er gitt med henvisning til personen navngitt i",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "del 2",
+      "02" : "Del 3"
+    }
+  },
+  "P12000.InformationPension" : {
+    "index" : "5.",
+    "prompt" : " Informasjon om pensjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InformationPension.DetailsPayment[0]" : {
+    "index" : "5.1",
+    "prompt" : " Betalingsinformasjon",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.InformationPension.DetailsPayment[0].typePensionInSendingInstitution" : {
+    "index" : "5.1.1.",
+    "prompt" : " Type pensjon i avsenderinstitusjonens",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Alderspensjon",
+      "02" : "Uførhet",
+      "03" : "Etterlatte"
+    }
+  },
+  "P12000.InformationPension.DetailsPayment[0].payableFrom" : {
+    "index" : "5.1.2.",
+    "prompt" : " Utbetales fra",
+    "valuetype" : "_uxDateInput"
+  },
+  "P12000.InformationPension.DetailsPayment[0].payableTo" : {
+    "index" : "5.1.3.",
+    "prompt" : " Utbetales til",
+    "valuetype" : "_uxDateInput"
+  },
+  "P12000.InformationPension.DetailsPayment[0].Amount" : {
+    "index" : "5.1.4.",
+    "prompt" : " Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InformationPension.DetailsPayment[0].Amount.amount" : {
+    "index" : "5.1.4.1.",
+    "prompt" : " Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InformationPension.DetailsPayment[0].Amount.currency" : {
+    "index" : "5.1.4.2.",
+    "prompt" : " Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "P12000.InformationPension.DetailsPayment[0].Amount.amountEffectiveSince" : {
+    "index" : "5.1.4.3.",
+    "prompt" : " Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P12000.InformationPension.DetailsPayment[0].Amount.paymentFrequency" : {
+    "index" : "5.1.4.4.",
+    "prompt" : " Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    }
+  },
+  "P12000.InformationPension.DetailsPayment[0].Amount.PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "5.1.4.5.",
+    "prompt" : " Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InformationPension.DetailsPayment[0].Amount.PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "5.1.4.5.1.",
+    "prompt" : " Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InformationPension.DetailsPayment[0].ThePensionReceivedBasedOn" : {
+    "index" : "5.1.5.",
+    "prompt" : " Pensjonen mottas basert på",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.InformationPension.DetailsPayment[0].ThePensionReceivedBasedOn.thePensionReceivedBasedOn" : {
+    "index" : "5.1.5.1.",
+    "prompt" : " Pensjonen mottas basert på",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Botid",
+      "02" : "I arbeid"
+    }
+  },
+  "P12000.InformationPension.DetailsPayment[0].ThePensionReceivedBasedOn.totalAmountResidenceBasedPension" : {
+    "index" : "5.1.5.2.",
+    "prompt" : " Totalbeløp for bostedsbasert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InformationPension.DetailsPayment[0].ThePensionReceivedBasedOn.totalAmountWorkRelatedPension" : {
+    "index" : "5.1.5.3.",
+    "prompt" : " Totalbeløp for arbeidsrelatert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P12000.InformationPension.supplementsAdditionalFrequentPaymentsPension" : {
+    "index" : "5.2.",
+    "prompt" : " Tilleggsytelser og andre regelmessige utbetalinger i tillegg til pensjonen",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P12000.InformationPension.PensionSuspension[0]" : {
+    "index" : "5.3",
+    "prompt" : " Midlertidig stans i pensjon",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.InformationPension.PensionSuspension[0].typePensionInSendingInstitution" : {
+    "index" : "5.3.1.",
+    "prompt" : " Type pensjon i avsenderinstitusjonens",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Alderspensjon",
+      "02" : "Uførhet",
+      "03" : "Etterlatte"
+    }
+  },
+  "P12000.InformationPension.PensionSuspension[0].reasonForPensionSuspension" : {
+    "index" : "5.3.2.",
+    "prompt" : " Begrunnelse for stans i pensjonen",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P12000.InformationPension.PensionRejection[0]" : {
+    "index" : "5.4",
+    "prompt" : " Avslag på pensjon",
+    "valuetype" : "_rinaArray"
+  },
+  "P12000.InformationPension.PensionRejection[0].typePensionInSendingInstitution" : {
+    "index" : "5.4.1.",
+    "prompt" : " Type pensjon i avsenderinstitusjonens",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Alderspensjon",
+      "02" : "Uførhet",
+      "03" : "Etterlatte"
+    }
+  },
+  "P12000.InformationPension.PensionRejection[0].reasonForPensionRejection" : {
+    "index" : "5.4.2.",
+    "prompt" : " Grunn til avslag på pensjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P12000.RequestForP13000" : {
+    "index" : "6.",
+    "prompt" : " Krav om P13000",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.RequestForP13000.pleaseSendP13000Indicator" : {
+    "index" : "6.1.",
+    "prompt" : " Send oss P13000",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    }
+  },
+  "P12000.AdditionalInformation" : {
+    "index" : "7.",
+    "prompt" : " Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P12000.AdditionalInformation.additionalInformation" : {
+    "index" : "7.1.",
+    "prompt" : " Ytterligere informasjon",
+    "valuetype" : "_uxTextAreaInput"
+  }
+}

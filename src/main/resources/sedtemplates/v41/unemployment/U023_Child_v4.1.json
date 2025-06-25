@@ -1,0 +1,57 @@
+{
+  "U023_Child": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "IndividualClaimContested": {
+      "reimbursementRequestID": "$dagpenger.refusjonskrav.enkeltkrav.refusjonskravid",
+      "reimbursementContestationID": "$dagpenger.refusjonskrav.enkeltkrav.refusjonskravbestridelseid",
+      "sequentialNumberIndividualClaim": "$dagpenger.refusjonskrav.enkeltkrav.loepenummer",
+      "contestedIndividualClaimID": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.id",
+      "Person": {
+        "familyName": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.bruker.person.etternavn",
+        "forename": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.bruker.person.fornavn",
+        "dateBirth": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.bruker.person.foedselsdato",
+        "sex": {
+          "value": [
+            "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.bruker.person.kjoenn"
+          ]
+        }
+      },
+      "ContestationType": {
+        "NonAcceptanceIndividualClaim": {
+          "reasonForNonAcceptance": {
+            "value": [
+              "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.manglendeaksept.grunn.type[x]"
+            ]
+          },
+          "FillInIfReasonForNonAcceptance": {
+            "informationAboutOtherReasonOrAdditionalInformation": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.manglendeaksept.grunn.annen"
+          }
+        },
+        "PartialAcceptanceIndividualClaim": {
+          "reasonForPartialNonAcceptance": {
+            "value": [
+              "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.delvismanglendeaksept.grunn.type[x]"
+            ]
+          },
+          "PartialAcceptanceDueCeiling": {
+            "AmountIntendedReimbursed": {
+              "amount": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.delvismanglendeaksept.tiltenkt.refusjon.beloep",
+              "currency": {
+                "value": [
+                  "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.delvismanglendeaksept.tiltenkt.refusjon.valuta"
+                ]
+              }
+            }
+          },
+          "PartialNonAcceptanceReimbursementIncomplete": {
+            "informationMissingData": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.delvismanglendeaksept.manglendeinformasjon"
+          },
+          "PartialNonAcceptanceOtherReason": {
+            "additionalInformation": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.delvismanglendeaksept.ytterligereinformasjon"
+          }
+        }
+      }
+    }
+  }
+}

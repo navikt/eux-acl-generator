@@ -1,0 +1,91 @@
+{
+	"S048": {
+		"sedGVer": "$sedGVer",
+		"sedVer": "$sedVer",
+		"Person": {
+			"PersonIdentification": {
+				"familyName": "$nav.bruker.person.etternavn",
+				"forename": "$nav.bruker.person.fornavn",
+				"dateBirth": "$nav.bruker.person.foedselsdato",
+				"sex": {
+					"value": [
+						"$nav.bruker.person.kjoenn"
+					]
+				},
+				"familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+				"forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+				"PINPersonInEachInstitution": {
+					"PersonalIdentificationNumber": [
+						{
+							"country": {
+								"value": [
+									"$nav.bruker.person.pin[x].land"
+								]
+							},
+							"personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+							"sector": {
+								"value": [
+									"$nav.bruker.person.pin[x].sektor"
+								]
+							},
+							"Institution": {
+								"institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+								"institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+							}
+						}
+					]
+				},
+				"IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+					"PlaceBirth": {
+						"town": "$nav.bruker.person.foedested.by",
+						"region": "$nav.bruker.person.foedested.region",
+						"country": {
+							"value": [
+								"$nav.bruker.person.foedested.land"
+							]
+						}
+					},
+					"fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+					"forenameFather": "$nav.bruker.far.person.fornavn",
+					"motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+					"forenameMother": "$nav.bruker.mor.person.fornavn"
+				}
+			},
+			"AdditionalInformationPerson": {
+				"nationality": {
+					"value": [
+						"$nav.bruker.person.statsborgerskap[x].land"
+					]
+				}
+			}
+		},
+    "PersonAddress": {
+      "street": "$nav.bruker.bostedsadresse.gate",
+      "buildingName": "$nav.bruker.bostedsadresse.bygning",
+      "town": "$nav.bruker.bostedsadresse.by",
+      "postalCode": "$nav.bruker.bostedsadresse.postnummer",
+      "region": "$nav.bruker.bostedsadresse.region",
+      "country": {
+        "value": [
+          "$nav.bruker.bostedsadresse.land"
+        ]
+      }
+    },
+		"WeInformAbout": {
+			"typeInformation": {
+				"value": [
+					"$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.type[x]"
+				]
+			},
+			"TheLastDayIncapacityForWorkPersonConcerned": {
+				"theLastDayIncapacityForWorkPersonConcerned": "$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.sistemottaksdato"
+			},
+			"OtherCrucialInformation": {
+				"otherCrucialInformationOrAnyAdditionalInformation": "$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.tilleggsinformasjon"
+			}
+		},
+		"Attachments": {
+			"document": "$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.dokumentervedlagt"
+		}
+	}
+}

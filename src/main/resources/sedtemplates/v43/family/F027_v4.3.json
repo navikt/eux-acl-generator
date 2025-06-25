@@ -1,0 +1,375 @@
+{
+  "F027" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "DateAttendanceAtSchoolCollegeTrainingUnemployed" : {
+      "Period" : [ {
+        "FixedPeriod" : {
+          "endDate" : "$familie.anmodningommerinformasjon.svar.deltakelsepaautdanning[x].periode.fastperiode.sluttdato",
+          "startDate" : "$familie.anmodningommerinformasjon.svar.deltakelsepaautdanning[x].periode.fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "startDate" : "$familie.anmodningommerinformasjon.svar.deltakelsepaautdanning[x].periode.aapenperiode.startdato",
+          "typeOpenPeriod" : {
+            "value" : [ "$familie.anmodningommerinformasjon.svar.deltakelsepaautdanning[x].periode.aapenperiode.type" ]
+          }
+        }
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationAboutNationality" : {
+        "Nationalities" : [ {
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          },
+          "since" : "$nav.bruker.person.statsborgerskap[x].siden"
+        } ]
+      },
+      "AddressesPerson" : {
+        "AddressPerson" : [ {
+          "Address" : {
+            "buildingName" : "$nav.bruker.adresse[x].bygning",
+            "country" : {
+              "value" : [ "$nav.bruker.adresse[x].land" ]
+            },
+            "postalCode" : "$nav.bruker.adresse[x].postnummer",
+            "region" : "$nav.bruker.adresse[x].region",
+            "street" : "$nav.bruker.adresse[x].gate",
+            "town" : "$nav.bruker.adresse[x].by"
+          },
+          "typeAddress" : {
+            "value" : [ "$nav.bruker.adresse[x].type" ]
+          }
+        } ]
+      },
+      "ContactDetails" : {
+        "EmailAddresses" : {
+          "EmailAddress" : [ {
+            "email" : "$nav.bruker.person.kontakt.email[x].adresse"
+          } ]
+        },
+        "TelephoneNumbers" : {
+          "TelephoneNumber" : [ {
+            "number" : "$nav.bruker.person.kontakt.telefon[x].nummer",
+            "type" : {
+              "value" : [ "$nav.bruker.person.kontakt.telefon[x].type" ]
+            }
+          } ]
+        }
+      },
+      "CoverageBySocialSecurityScheme" : {
+        "PeriodsCoveredBySecuritySchemeInSendingMember" : {
+          "Period" : [ {
+            "endDate" : "$familie.bruker.dekketavtrygd.periode[x].sluttdato",
+            "startDate" : "$familie.bruker.dekketavtrygd.periode[x].startdato"
+          } ]
+        },
+        "PeriodsEntitlement" : {
+          "EntitlementFamilyBenefitsDoesNotExist" : {
+            "otherReason" : "$familie.bruker.ikkeretttilytelser.grunn.annen",
+            "reason" : {
+              "value" : [ "$familie.bruker.ikkeretttilytelser.grunn.vedtak.type43" ]
+            }
+          },
+          "EntitlementFamilyBenefitsExists" : {
+            "PeriodEntitlementFamilyBenefits" : {
+              "PeriodEntitlementFamilyBenefit" : [ {
+                "endDate" : "$familie.bruker.retttilytelser.periode[x].sluttdato",
+                "startDate" : "$familie.bruker.retttilytelser.periode[x].startdato"
+              } ]
+            }
+          }
+        },
+        "PeriodsNotCovered" : {
+          "PeriodNotCovered" : [ {
+            "endDate" : "$familie.bruker.ikkedekketavtrygd.periode[x].sluttdato",
+            "startDate" : "$familie.bruker.ikkedekketavtrygd.periode[x].startdato"
+          } ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "ReplyAdoptionRequests" : {
+      "additionalInformationConcerningAdoption" : "$familie.anmodningommerinformasjon.svar.adopsjon.ytterligereinformasjon",
+      "dateWhenAdoptedChildHasBeenTakenIntoCareAdoptiveParents" : "$familie.anmodningommerinformasjon.svar.adopsjon.adoptivforeldre.omsorgfradato",
+      "dateWhenAdoptionActTranscribedCivilRegistry" : "$familie.anmodningommerinformasjon.svar.adopsjon.bevillingen.registreringsdato",
+      "documentsVerifyingLegalityAdoption" : "$familie.anmodningommerinformasjon.svar.adopsjon.dokumentasjon.adopsjonerlovlig"
+    },
+    "ReplyAttendanceAtSchoolCollegeTrainingUnemployed" : {
+      "SpecifyDetailsAttendance" : {
+        "ActualAttendance" : {
+          "hoursPer" : {
+            "value" : [ "$familie.anmodningommerinformasjon.svar.utdanning.timerpr" ]
+          },
+          "numberHours" : "$familie.anmodningommerinformasjon.svar.utdanning.timer"
+        },
+        "additionalRequestInformation" : "$familie.anmodningommerinformasjon.svar.utdanning.ytterligereinformasjon",
+        "typeAttendance" : {
+          "value" : [ "$familie.anmodningommerinformasjon.svar.utdanning.typedeltakelse" ]
+        }
+      },
+      "isTheChildAttending" : {
+        "value" : [ "$familie.anmodningommerinformasjon.svar.utdanning.type" ]
+      }
+    },
+    "ReplyIncomeRequests" : {
+      "AmountAnnualIncome" : {
+        "amount" : "$familie.anmodningommerinformasjon.svar.inntekt.aarlig.beloep",
+        "currency" : {
+          "value" : [ "$familie.anmodningommerinformasjon.svar.inntekt.aarlig.valuta" ]
+        }
+      },
+      "PleaseFillInIfSourceIncomeOther" : {
+        "other" : "$familie.anmodningommerinformasjon.svar.inntekt.kilde.annen"
+      },
+      "ThePeriodFromtoForWhichDataRequired" : {
+        "endDate" : "$familie.anmodningommerinformasjon.svar.inntekt.periode.sluttdato",
+        "startDate" : "$familie.anmodningommerinformasjon.svar.inntekt.periode.startdato"
+      },
+      "additionalInformationIncome" : "$familie.anmodningommerinformasjon.svar.inntekt.ytterligereinformasjon",
+      "sourceIncome" : {
+        "value" : [ "$familie.anmodningommerinformasjon.svar.inntekt.inntektskilde" ]
+      }
+    },
+    "ReplyOrphansBenefitsRequests" : {
+      "IdentificationChildrenConcerned" : {
+        "dateBirth" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.foedselsdato",
+        "familyName" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.etternavn",
+        "forename" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.fornavn"
+      },
+      "IdentificationDeceasedPerson" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.foedested.land" ]
+            },
+            "region" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.foedested.region",
+            "town" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.far.etternavnvedfoedsel",
+          "forenameFather" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.far.fornavn",
+          "forenameMother" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.mor.fornavn",
+          "motherFamilyNameAtBirth" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.mor.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.pin[x].institusjonsid",
+              "institutionName" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.foedselsdato",
+        "familyName" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.etternavn",
+        "familyNameAtBirth" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.etternavnvedfoedsel",
+        "forename" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.fornavn",
+        "forenameAtBirth" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.avdoede.kjoenn" ]
+        }
+      },
+      "IdentificationOtherPersons" : {
+        "dateBirth" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.annenperson.foedselsdato",
+        "familyName" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.annenperson.etternavn",
+        "forename" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.identifisering.annenperson.fornavn"
+      },
+      "IncomeOrphanchild" : {
+        "amount" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.inntekt.beloep",
+        "currency" : {
+          "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.inntekt.valuta" ]
+        }
+      },
+      "PlaceResidenceOrphanchild" : {
+        "buildingName" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.adresse.bygning",
+        "country" : {
+          "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.adresse.land" ]
+        },
+        "postalCode" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.adresse.postnummer",
+        "region" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.adresse.region",
+        "street" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.adresse.gate",
+        "town" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.adresse.by"
+      },
+      "RelationshipBetweenOrphanchildDeceasedPerson" : {
+        "RelationshipPerChild" : [ {
+          "ChildrenHousehold" : {
+            "isChildAMemberSameHouseholdClaimantIndicator" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.borisammehusstandsomkravstiller" ]
+            },
+            "isChildAMemberSameHouseholdOtherPersonInQuestionIndicator" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.borisammehusstandsomannenperson" ]
+            },
+            "isChildAMemberSameHouseholdSpousePartnerInQuestionIndicator" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.borisammehusstandsomektefelle" ]
+            },
+            "isChildInInstitutionIndicator" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.borpaainstitusjon" ]
+            }
+          },
+          "PeriodRelationship" : {
+            "FixedPeriod" : {
+              "endDate" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.periode.fastperiode.sluttdato",
+              "startDate" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.periode.fastperiode.startdato"
+            },
+            "OpenPeriod" : {
+              "startDate" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.periode.aapenperiode.startdato",
+              "typeOpenPeriod" : {
+                "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.periode.aapenperiode.type" ]
+              }
+            }
+          },
+          "jointCustodyIndicator" : {
+            "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.fellesomsorg" ]
+          },
+          "relationshipWith" : {
+            "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.relasjontilperson" ]
+          },
+          "type" : {
+            "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barn[x].relasjontilavdoede.typerelasjon" ]
+          }
+        } ]
+      },
+      "RelationshipBetweenOtherPersonDeceasedPerson" : {
+        "Relationships" : {
+          "FamilyRelationship" : [ {
+            "Period" : {
+              "FixedPeriod" : {
+                "endDate" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].periode.fastperiode.sluttdato",
+                "startDate" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].periode.fastperiode.startdato"
+              },
+              "OpenPeriod" : {
+                "startDate" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].periode.aapenperiode.startdato",
+                "typeOpenPeriod" : {
+                  "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].periode.aapenperiode.type" ]
+                }
+              }
+            },
+            "dateRelationship" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].relasjonsstartdato",
+            "familyRelationship" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].familierelasjonstype" ]
+            },
+            "namePerson" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].personnavn",
+            "other" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].annenperson",
+            "otherRelationship" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].annenrelasjon",
+            "wasClaimantAMemberSameHouseholdPersonInQuestionIndicator" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.annenperson.relasjontilavdoede[x].varkravstillerisammehushold" ]
+            }
+          } ]
+        }
+      },
+      "disability" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.ufoerhet",
+      "occupationOrphanChild" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.aktivitet",
+      "replyRequestConcerningOrphansBenefits" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.ytelser",
+      "school" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.skole",
+      "training" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.opplaering",
+      "unemployment" : "$familie.anmodningommerinformasjon.svar.ytelsetilforeldreloese.barnet.arbeidsledighet"
+    },
+    "ReplyOtherInformationRelatedChildRequests" : {
+      "KindergardenDetails" : {
+        "PleaseFillInIfIsChildAttendingKindergartenYes" : {
+          "TheNumberHoursChildAttendsKindergarten" : {
+            "hoursPer" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.barnehage.timerpr" ]
+            },
+            "numberHours" : "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.barnehage.timer"
+          },
+          "isItFinancedByStateOrCommunityFundsIndicator" : {
+            "value" : [ "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.barnehage.mottaroffentligstoette" ]
+          }
+        },
+        "isChildAttendingKindergartenIndicator" : {
+          "value" : [ "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.barnehage.gaaribarnehage" ]
+        }
+      },
+      "dateChangeInCircumstances" : "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.datoendredeforhold",
+      "isChildAdoptedIndicator" : {
+        "value" : [ "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.eradoptert" ]
+      },
+      "isChildMaintainedByPublicFundsIndicator" : {
+        "value" : [ "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.forsoergesavdetoffentlige" ]
+      },
+      "replyRequestConcerningOtherInformationRelatedChild" : "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.ytterligereinformasjon",
+      "theMaritalStatusChild" : {
+        "value" : [ "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.sivilstand" ]
+      },
+      "whoHasCustodyChild" : "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.dagligomsorg",
+      "whoHasParentalAuthorityChild" : "$familie.anmodningommerinformasjon.svar.anneninformasjonbarnet.foreldreansvar"
+    },
+    "ReplyRequestedInformation" : {
+      "claimOrReplyClaim" : {
+        "value" : [ "$familie.erkravellersvarpaakrav" ]
+      },
+      "dateClaim" : "$familie.krav.dato"
+    },
+    "ReplySchoolUniversityEstablishmentHigherEducation" : {
+      "SchoolUniversityEstablishmentHigherEducation" : {
+        "Address" : {
+          "buildingName" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.adresse.bygning",
+          "country" : {
+            "value" : [ "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.adresse.land" ]
+          },
+          "postalCode" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.adresse.postnummer",
+          "region" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.adresse.region",
+          "street" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.adresse.gate",
+          "town" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.identifikator[x].id",
+            "type" : {
+              "value" : [ "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.navn"
+      },
+      "additionalReplyRequest" : "$familie.anmodningommerinformasjon.svar.utdanningsinstitusjon.ytterligereinformasjon"
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "H020" : {
+    "Claim" : {
+      "Person" : {
+        "PersonIdentificationNumber" : {
+          "pINPersonInCompetentMemberState" : "$nav.bruker.person.pin.identifikator",
+          "pINPersonInMemberStateStayOrResidence" : "$nav.bruker.person.oppholdsland.pin"
+        },
+        "PersonInformation" : {
+          "dateBirth" : "$nav.bruker.person.foedselsdato",
+          "familyName" : "$nav.bruker.person.etternavn",
+          "forename" : "$nav.bruker.person.fornavn",
+          "sex" : {
+            "value" : [ "$nav.bruker.person.kjoenn" ]
+          }
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel"
+      },
+      "Reimbursement" : [ {
+        "InvoiceAmountInCurrencyCreditorInstitution" : {
+          "amount" : "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.beloep",
+          "currency" : {
+            "value" : [ "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.valuta" ]
+          }
+        },
+        "inReferenceYour" : {
+          "value" : [ "$horisontal.refusjonskrav.refusjon[x].henvisningtil" ]
+        },
+        "invoiceNumberCreditorInstitution" : "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.fakturanummer",
+        "issuedOn" : "$horisontal.refusjonskrav.refusjon[x].utstedelsesdato"
+      } ]
+    },
+    "GlobalClaim" : {
+      "BankDetails" : {
+        "BICSWIFT" : "$horisontal.refusjonskrav.bank.konto.sepa.swift",
+        "IBAN" : "$horisontal.refusjonskrav.bank.konto.sepa.iban"
+      },
+      "CreditorInstitution" : {
+        "institutionID" : "$horisontal.refusjonskrav.kreditorinstitusjon.id",
+        "institutionName" : "$horisontal.refusjonskrav.kreditorinstitusjon.navn"
+      },
+      "DebtorInstitution" : {
+        "institutionID" : "$horisontal.refusjonskrav.debitorinstitusjon.id",
+        "institutionName" : "$horisontal.refusjonskrav.debitorinstitusjon.navn"
+      },
+      "TotalClaimAmountInCurrencyCreditorInstitution" : {
+        "amount" : "$horisontal.refusjonskrav.kreditorinstitusjon.krav.totalbeloep",
+        "currency" : {
+          "value" : [ "$horisontal.refusjonskrav.kreditorinstitusjon.krav.valuta" ]
+        },
+        "paymentDueOn" : "$horisontal.refusjonskrav.kreditorinstitusjon.krav.forfallsdato"
+      },
+      "globalReferenceSetByCreditorInstitution" : "$horisontal.refusjonskrav.kreditorinstitusjon.globalreferanse",
+      "totalNumberInvoices" : "$horisontal.refusjonskrav.totaltantallfakturaer"
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

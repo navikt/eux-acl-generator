@@ -1,0 +1,140 @@
+{
+  "DA041": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "Person": {
+      "PersonIdentification": {
+        "familyName": "$nav.bruker.person.etternavn",
+        "forename": "$nav.bruker.person.fornavn",
+        "dateBirth": "$nav.bruker.person.foedselsdato",
+        "sex": {
+          "value": [
+            "$nav.bruker.person.kjoenn"
+          ]
+        },
+        "familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution": {
+          "PersonalIdentificationNumber": [
+            {
+              "country": {
+                "value": [
+                  "$nav.bruker.person.pin[x].land"
+                ]
+              },
+              "personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+              "sector": {
+                "value": [
+                  "$nav.bruker.person.pin[x].sektor"
+                ]
+              },
+              "Institution": {
+                "institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+                "institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+              }
+            }
+          ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+          "PlaceBirth": {
+            "town": "$nav.bruker.person.foedested.by",
+            "region": "$nav.bruker.person.foedested.region",
+            "country": {
+              "value": [
+                "$nav.bruker.person.foedested.land"
+              ]
+            }
+          },
+          "fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather": "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother": "$nav.bruker.mor.person.fornavn"
+        }
+      },
+      "AdditionalInformationPerson": {
+        "nationality": {
+          "value": [
+            "$nav.bruker.person.statsborgerskap[x].land"
+          ]
+        },
+        "previousFamilyName": "$nav.bruker.person.tidligereetternavn",
+        "previousForename": "$nav.bruker.person.tidligerefornavn"
+      }
+    },
+    "AddressesPerson": {
+      "AddressPerson": [
+        {
+          "typeAddress": {
+            "value": [
+              "$nav.bruker.adresse[x].type[x]"
+            ]
+          },
+          "Address": {
+            "street": "$nav.bruker.adresse[x].gate",
+            "buildingName": "$nav.bruker.adresse[x].bygning",
+            "town": "$nav.bruker.adresse[x].by",
+            "postalCode": "$nav.bruker.adresse[x].postnummer",
+            "region": "$nav.bruker.adresse[x].region",
+            "country": {
+              "value": [
+                "$nav.bruker.adresse[x].land"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ThisSEDRelatedTo": {
+      "typeOfSED": {
+        "value": [
+          "$arbeidsulykkeyrkessykdom.sedrelaterttil.sedtype"
+        ]
+      },
+      "date": "$arbeidsulykkeyrkessykdom.sedrelaterttil.dato",
+      "code": "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kode",
+      "codingSystem": "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kodingssystem",
+      "description": "$arbeidsulykkeyrkessykdom.sedrelaterttil.konsekvensellerbeskrivelse",
+      "statusPerson": {
+        "value": [
+          "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.id"
+        ]
+      },
+      "PleaseFillInFollowingIfStatusPersonOther": {
+        "statusPersonIfOther": "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.annet"
+      }
+    },
+    "Employer": {
+      "name": "$nav.arbeidsgiver.navn",
+      "IdentificationNumbers": {
+        "IdentificationNumber": [
+          {
+            "number": "$nav.arbeidsgiver.identifikator[x].id",
+            "type": {
+              "value": [
+                "$nav.arbeidsgiver.identifikator[x].type"
+              ]
+            }
+          }
+        ]
+      },
+      "Address": {
+        "street": "$nav.arbeidsgiver.adresse.gate",
+        "buildingName": "$nav.arbeidsgiver.adresse.bygning",
+        "town": "$nav.arbeidsgiver.adresse.by",
+        "postalCode": "$nav.arbeidsgiver.adresse.postnummer",
+        "region": "$nav.arbeidsgiver.adresse.region",
+        "country": {
+          "value": [
+            "$nav.arbeidsgiver.adresse.land"
+          ]
+        }
+      }
+    },
+    "LastDayIncapacityForWork": {
+      "date": "$arbeidsulykkeyrkessykdom.informasjonomytelse.arbeidsufoerhet.sistedag.dato"
+    },
+    "AdditionalInformation": {
+      "additionalInformation": "$nav.ytterligereinformasjon"
+    }
+  }
+}

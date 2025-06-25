@@ -1,0 +1,525 @@
+{
+  "M051" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "MemberFamilyOtherThanSpousepartnerIncomeReceived" : {
+      "MemberFamilyOtherThanSpousepartnerIncomeReceived" : [ {
+        "IncomeReceivedDuringPeriodInRespectInformation" : [ {
+          "IncomeReceivedDuringPeriodInRespectInformation" : {
+            "amount" : "$diverse.annenperson[x].anmodningominformasjon.inntekt[x].beloep",
+            "currency" : {
+              "value" : [ "$diverse.annenperson[x].anmodningominformasjon.inntekt[x].valuta" ]
+            },
+            "endDate" : "$diverse.annenperson[x].anmodningominformasjon.inntekt[x].sluttdato",
+            "startDate" : "$diverse.annenperson[x].anmodningominformasjon.inntekt[x].startdato"
+          },
+          "PleaseFillInFollowingIfTypeIncomeReceived" : {
+            "socialSecurityBenefit" : {
+              "value" : [ "$diverse.annenperson[x].anmodningominformasjon.inntekt[x].trygdeytelser" ]
+            }
+          },
+          "typeIncomeReceived" : {
+            "value" : [ "$diverse.annenperson[x].anmodningominformasjon.inntekt[x].type" ]
+          }
+        } ],
+        "InformationEnclosedStatementIncomeIfFail" : [ {
+          "PleaseFillInFollowingIfPersonSubmitted" : {
+            "otherIncome" : "$diverse.annenperson[x].anmodningominformasjon.harlevertselvangivelse[x].anneninntekt"
+          },
+          "personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome" : {
+            "value" : [ "$diverse.annenperson[x].anmodningominformasjon.harlevertselvangivelse[x].inntekt.type43" ]
+          }
+        } ],
+        "InformationFixedAssetsDuringPeriodInRespect" : [ {
+          "PropertyInRespectPersonOwnerOrHolder" : {
+            "AddressInCountryWhereThesePropertiesFixedAssets" : [ {
+              "buildingName" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].adresse[x].bygning",
+              "country" : {
+                "value" : [ "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].adresse[x].land" ]
+              },
+              "postalCode" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].adresse[x].postnummer",
+              "region" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].adresse[x].region",
+              "street" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].adresse[x].gate",
+              "town" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].adresse[x].by"
+            } ],
+            "PleaseFillInFollowingIfThePersonNamed" : {
+              "TaxableIncomeDwellingOccupied" : {
+                "amount" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].boligmedretttilavkastning.inntekt.beloep",
+                "currency" : {
+                  "value" : [ "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].boligmedretttilavkastning.inntekt.valuta" ]
+                }
+              }
+            },
+            "PresentValueThesePropertiesFixedAssets" : {
+              "amount" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].verdi.beloep",
+              "currency" : {
+                "value" : [ "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].verdi.valuta" ]
+              }
+            },
+            "TaxableIncomeFromEachThesePropertiesFixedAssets" : {
+              "amount" : "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].inntekt.beloep",
+              "currency" : {
+                "value" : [ "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].inntekt.valuta" ]
+              }
+            },
+            "thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator" : {
+              "value" : [ "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].boriboligmedretttilavkastning" ]
+            },
+            "typeOwnership" : {
+              "value" : [ "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].typeeierskap[x]" ]
+            },
+            "typeProperty" : {
+              "value" : [ "$diverse.annenperson[x].anmodningominformasjon.eiendom[x].type[x]" ]
+            }
+          }
+        } ],
+        "InformationTransferredPropertyDuringPeriod" : [ {
+          "IsPersonNamedInThisSectionInPossession" : [ {
+            "PleaseFillInFollowingIfAnswerYes" : {
+              "Details" : {
+                "WhatAmountInvolved" : {
+                  "amount" : "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].avkastning[x].avkastning[x].inntekt.beloep",
+                  "currency" : {
+                    "value" : [ "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].avkastning[x].avkastning[x].inntekt.valuta" ]
+                  }
+                },
+                "whatNatureTheseProceeds" : "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].avkastning[x].inntekt.type"
+              }
+            },
+            "answerIndicator" : {
+              "value" : [ "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].avkastning[x].eiesavpersonen" ]
+            }
+          } ],
+          "PropertyHasBeenTransferredEitherInReturnFor" : {
+            "ValuePropertyAtTimeTransfer" : {
+              "amount" : "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].overdragelse.verdi.beloep",
+              "currency" : {
+                "value" : [ "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].overdragelse.verdi.valuta" ]
+              }
+            },
+            "dateTransfer" : "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].overdragelse.dato",
+            "typeProperty" : {
+              "value" : [ "$diverse.annenperson[x].anmodningominformasjon.overdratteiendom[x].type" ]
+            }
+          }
+        } ],
+        "MemberFamilyOtherThanSpousepartner" : {
+          "AdditionalInformationPerson" : {
+            "AddressPerson" : [ {
+              "Address" : {
+                "buildingName" : "$nav.annenperson[x].adresse[x].bygning",
+                "country" : {
+                  "value" : [ "$nav.annenperson[x].adresse[x].land" ]
+                },
+                "postalCode" : "$nav.annenperson[x].adresse[x].postnummer",
+                "region" : "$nav.annenperson[x].adresse[x].region",
+                "street" : "$nav.annenperson[x].adresse[x].gate",
+                "town" : "$nav.annenperson[x].adresse[x].by"
+              },
+              "typeAddress" : {
+                "value" : [ "$nav.annenperson[x].adresse[x].type" ]
+              }
+            } ],
+            "nationality" : {
+              "value" : [ "$nav.annenperson[x].person.statsborgerskap[x].land" ]
+            },
+            "otherRelative" : "$nav.annenperson[x].barnetsrelasjontilbrukeren.annen",
+            "pursuesAProfessionalOrTradeActivityIndicator" : {
+              "value" : [ "$nav.annenperson[x].utoeverprofesjonellforretningsvirksomhet" ]
+            },
+            "relationshipPersonNamedInSection1" : {
+              "value" : [ "$nav.annenperson[x].barnetsrelasjontilbrukeren.type" ]
+            }
+          },
+          "PersonIdentification" : {
+            "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+              "PlaceBirth" : {
+                "country" : {
+                  "value" : [ "$nav.annenperson[x].person.foedested.land" ]
+                },
+                "region" : "$nav.annenperson[x].person.foedested.region",
+                "town" : "$nav.annenperson[x].person.foedested.by"
+              },
+              "fatherFamilyNameAtBirth" : "$nav.annenperson[x].far.person.etternavnvedfoedsel",
+              "forenameFather" : "$nav.annenperson[x].far.person.fornavn",
+              "forenameMother" : "$nav.annenperson[x].mor.person.fornavn",
+              "motherFamilyNameAtBirth" : "$nav.annenperson[x].mor.person.etternavnvedfoedsel"
+            },
+            "PINPersonInEachInstitution" : {
+              "PersonalIdentificationNumber" : [ {
+                "Institution" : {
+                  "institutionID" : "$nav.annenperson[x].person.pin[x].institusjonsid",
+                  "institutionName" : "$nav.annenperson[x].person.pin[x].institusjonsnavn"
+                },
+                "country" : {
+                  "value" : [ "$nav.annenperson[x].person.pin[x].land" ]
+                },
+                "personalIdentificationNumber" : "$nav.annenperson[x].person.pin[x].identifikator",
+                "sector" : {
+                  "value" : [ "$nav.annenperson[x].person.pin[x].sektor" ]
+                }
+              } ]
+            },
+            "dateBirth" : "$nav.annenperson[x].person.foedselsdato",
+            "familyName" : "$nav.annenperson[x].person.etternavn",
+            "familyNameAtBirth" : "$nav.annenperson[x].person.etternavnvedfoedsel",
+            "forename" : "$nav.annenperson[x].person.fornavn",
+            "forenameAtBirth" : "$nav.annenperson[x].person.fornavnvedfoedsel",
+            "sex" : {
+              "value" : [ "$nav.annenperson[x].person.kjoenn" ]
+            }
+          }
+        }
+      } ]
+    },
+    "PersonIncomeReceived" : {
+      "IncomeReceivedDuringPeriodInRespectInformation" : [ {
+        "IncomeReceivedDuringPeriodInRespectInformation" : {
+          "amount" : "$diverse.bruker.anmodningominformasjon.inntekt[x].beloep",
+          "currency" : {
+            "value" : [ "$diverse.bruker.anmodningominformasjon.inntekt[x].valuta" ]
+          },
+          "endDate" : "$diverse.bruker.anmodningominformasjon.inntekt[x].sluttdato",
+          "startDate" : "$diverse.bruker.anmodningominformasjon.inntekt[x].startdato"
+        },
+        "PleaseFillInFollowingIfTypeIncomeReceived" : {
+          "socialSecurityBenefit" : {
+            "value" : [ "$diverse.bruker.anmodningominformasjon.inntekt[x].trygdeytelser" ]
+          }
+        },
+        "typeIncomeReceived" : {
+          "value" : [ "$diverse.bruker.anmodningominformasjon.inntekt[x].type" ]
+        }
+      } ],
+      "InformationEnclosedStatementIncomeIfFailProvide" : [ {
+        "PleaseFillInFollowingIfPersonSubmitted" : {
+          "otherIncome" : "$diverse.bruker.anmodningominformasjon.harlevertselvangivelse[x].anneninntekt"
+        },
+        "personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome" : {
+          "value" : [ "$diverse.bruker.anmodningominformasjon.harlevertselvangivelse[x].inntekt.type43" ]
+        }
+      } ],
+      "InformationFixedAssetsDuringPeriodInRespect" : [ {
+        "PropertyInRespectPersonOwnerOrHolder" : {
+          "AddressInCountryWhereThesePropertiesFixedAssets" : [ {
+            "buildingName" : "$diverse.bruker.anmodningominformasjon.eiendom[x].adresse[x].bygning",
+            "country" : {
+              "value" : [ "$diverse.bruker.anmodningominformasjon.eiendom[x].adresse[x].land" ]
+            },
+            "postalCode" : "$diverse.bruker.anmodningominformasjon.eiendom[x].adresse[x].postnummer",
+            "region" : "$diverse.bruker.anmodningominformasjon.eiendom[x].adresse[x].region",
+            "street" : "$diverse.bruker.anmodningominformasjon.eiendom[x].adresse[x].gate",
+            "town" : "$diverse.bruker.anmodningominformasjon.eiendom[x].adresse[x].by"
+          } ],
+          "PleaseFillInFollowingIfThePersonNamed" : {
+            "TaxableIncomeDwellingOccupied" : {
+              "amount" : "$diverse.bruker.anmodningominformasjon.eiendom[x].boligmedretttilavkastning.inntekt.beloep",
+              "currency" : {
+                "value" : [ "$diverse.bruker.anmodningominformasjon.eiendom[x].boligmedretttilavkastning.inntekt.valuta" ]
+              }
+            }
+          },
+          "PresentValueThesePropertiesFixedAssets" : {
+            "amount" : "$diverse.bruker.anmodningominformasjon.eiendom[x].verdi.beloep",
+            "currency" : {
+              "value" : [ "$diverse.bruker.anmodningominformasjon.eiendom[x].verdi.valuta" ]
+            }
+          },
+          "TaxableIncomeFromEachThesePropertiesFixedAssets" : {
+            "amount" : "$diverse.bruker.anmodningominformasjon.eiendom[x].inntekt.beloep",
+            "currency" : {
+              "value" : [ "$diverse.bruker.anmodningominformasjon.eiendom[x].inntekt.valuta" ]
+            }
+          },
+          "thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator" : {
+            "value" : [ "$diverse.bruker.anmodningominformasjon.eiendom[x].boriboligmedretttilavkastning" ]
+          },
+          "typeOwnership" : {
+            "value" : [ "$diverse.bruker.anmodningominformasjon.eiendom[x].typeeierskap[x]" ]
+          },
+          "typeProperty" : {
+            "value" : [ "$diverse.bruker.anmodningominformasjon.eiendom[x].type[x]" ]
+          }
+        }
+      } ],
+      "InformationTransferredPropertyDuringPeriod" : [ {
+        "IsPersonNamedInThisSectionInPossession" : [ {
+          "PleaseFillInFollowingIfAnswerYes" : {
+            "Details" : {
+              "WhatAmountInvolved" : {
+                "amount" : "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].avkastning[x].inntekt.beloep",
+                "currency" : {
+                  "value" : [ "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].avkastning[x].inntekt.valuta" ]
+                }
+              },
+              "whatNatureTheseProceeds" : "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].avkastning[x].inntekt.type"
+            }
+          },
+          "answerIndicator" : {
+            "value" : [ "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].avkastning[x].eiesavpersonen" ]
+          }
+        } ],
+        "PropertyHasBeenTransferredEitherInReturnFor" : {
+          "ValuePropertyAtTimeTransfer" : {
+            "amount" : "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].overdragelse.verdi.beloep",
+            "currency" : {
+              "value" : [ "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].overdragelse.verdi.valuta" ]
+            }
+          },
+          "dateTransfer" : "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].overdragelse.dato",
+          "typeProperty" : {
+            "value" : [ "$diverse.bruker.anmodningominformasjon.overdratteiendom[x].type" ]
+          }
+        }
+      } ],
+      "Person" : {
+        "AdditionalInformationPerson" : {
+          "AddressPerson" : {
+            "Address" : {
+              "buildingName" : "$nav.bruker.bostedsadresse.bygning",
+              "country" : {
+                "value" : [ "$nav.bruker.bostedsadresse.land" ]
+              },
+              "postalCode" : "$nav.bruker.bostedsadresse.postnummer",
+              "region" : "$nav.bruker.bostedsadresse.region",
+              "street" : "$nav.bruker.bostedsadresse.gate",
+              "town" : "$nav.bruker.bostedsadresse.by"
+            },
+            "typeAddress" : {
+              "value" : [ "$nav.bruker.bostedsadresse.type" ]
+            }
+          },
+          "PleaseFillInFollowingIfStatusPersonOther" : {
+            "otherStatus" : "$diverse.bruker.status.annet"
+          },
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          },
+          "pursuesAProfessionalOrTradeActivityIndicator" : {
+            "value" : [ "$nav.bruker.utoeverprofesjonellforretningsvirksomhet" ]
+          },
+          "statusPerson" : {
+            "value" : [ "$diverse.bruker.status.id" ]
+          }
+        },
+        "PersonIdentification" : {
+          "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+            "PlaceBirth" : {
+              "country" : {
+                "value" : [ "$nav.bruker.person.foedested.land" ]
+              },
+              "region" : "$nav.bruker.person.foedested.region",
+              "town" : "$nav.bruker.person.foedested.by"
+            },
+            "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+            "forenameFather" : "$nav.bruker.far.person.fornavn",
+            "forenameMother" : "$nav.bruker.mor.person.fornavn",
+            "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+          },
+          "PINPersonInEachInstitution" : {
+            "PersonalIdentificationNumber" : [ {
+              "Institution" : {
+                "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+                "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+              },
+              "country" : {
+                "value" : [ "$nav.bruker.person.pin[x].land" ]
+              },
+              "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+              "sector" : {
+                "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+              }
+            } ]
+          },
+          "dateBirth" : "$nav.bruker.person.foedselsdato",
+          "familyName" : "$nav.bruker.person.etternavn",
+          "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+          "forename" : "$nav.bruker.person.fornavn",
+          "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+          "sex" : {
+            "value" : [ "$nav.bruker.person.kjoenn" ]
+          }
+        }
+      }
+    },
+    "PleaseFindAttachedFollowingDocument" : {
+      "attachedDocument" : {
+        "value" : [ "$diverse.overfoeringinfo.dokumentervedlagt.type[x]" ]
+      },
+      "otherDocument" : "$diverse.overfoeringinfo.dokumentervedlagt.annentype"
+    },
+    "SpousePartnerIncomeReceived" : {
+      "IncomeReceivedDuringPeriodInRespectInformation" : [ {
+        "IncomeReceivedDuringPeriodInRespectInformation" : {
+          "amount" : "$diverse.ektefelle.anmodningominformasjon.inntekt[x].beloep",
+          "currency" : {
+            "value" : [ "$diverse.ektefelle.anmodningominformasjon.inntekt[x].valuta" ]
+          },
+          "endDate" : "$diverse.ektefelle.anmodningominformasjon.inntekt[x].sluttdato",
+          "startDate" : "$diverse.ektefelle.anmodningominformasjon.inntekt[x].startdato"
+        },
+        "PleaseFillInFollowingIfTypeIncomeReceived" : {
+          "socialSecurityBenefit" : {
+            "value" : [ "$diverse.ektefelle.anmodningominformasjon.inntekt[x].trygdeytelser" ]
+          }
+        },
+        "typeIncomeReceived" : {
+          "value" : [ "$diverse.ektefelle.anmodningominformasjon.inntekt[x].type" ]
+        }
+      } ],
+      "InformationEnclosedStatementIncomeIfFail" : [ {
+        "PleaseFillInFollowingIfPersonSubmitted" : {
+          "otherIncome" : "$diverse.ektefelle.anmodningominformasjon.harlevertselvangivelse[x].anneninntekt"
+        },
+        "personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome" : {
+          "value" : [ "$diverse.ektefelle.anmodningominformasjon.harlevertselvangivelse[x].inntekt.type43" ]
+        }
+      } ],
+      "InformationFixedAssetsDuringPeriodInRespect" : [ {
+        "PropertyInRespectPersonOwnerOrHolder" : {
+          "AddressInCountryWhereThesePropertiesFixedAssets" : [ {
+            "buildingName" : "$diverse.ektefelle.anmodningominformasjon.eiendom[x].adresse[x].bygning",
+            "country" : {
+              "value" : [ "$diverse.ektefelle.anmodningominformasjon.eiendom[x].adresse[x].land" ]
+            },
+            "postalCode" : "$diverse.ektefelle.anmodningominformasjon.eiendom[x].adresse[x].postnummer",
+            "region" : "$diverse.ektefelle.anmodningominformasjon.eiendom[x].adresse[x].region",
+            "street" : "$diverse.ektefelle.anmodningominformasjon.eiendom[x].adresse[x].gate",
+            "town" : "$diverse.person.anmodningominformasjon.eiendom[x].adresse[x].by"
+          } ],
+          "PleaseFillInFollowingIfThePersonNamed" : {
+            "TaxableIncomeDwellingOccupied" : {
+              "amount" : "$diverse.ektefelle.anmodningominformasjon.eiendom[x].boligmedretttilavkastning.inntekt.beloep",
+              "currency" : {
+                "value" : [ "$diverse.ektefelle.anmodningominformasjon.eiendom[x].boligmedretttilavkastning.inntekt.valuta" ]
+              }
+            }
+          },
+          "PresentValueThesePropertiesFixedAssets" : {
+            "amount" : "$diverse.ektefelle.anmodningominformasjon.eiendom[x].verdi.beloep",
+            "currency" : {
+              "value" : [ "$diverse.ektefelle.anmodningominformasjon.eiendom[x].verdi.valuta" ]
+            }
+          },
+          "TaxableIncomeFromEachThesePropertiesFixedAssets" : {
+            "amount" : "$diverse.ektefelle.anmodningominformasjon.eiendom[x].inntekt.beloep",
+            "currency" : {
+              "value" : [ "$diverse.ektefelle.anmodningominformasjon.eiendom[x].inntekt.valuta" ]
+            }
+          },
+          "thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator" : {
+            "value" : [ "$diverse.ektefelle.anmodningominformasjon.eiendom[x].boriboligmedretttilavkastning" ]
+          },
+          "typeOwnership" : {
+            "value" : [ "$diverse.ektefelle.anmodningominformasjon.eiendom[x].typeeierskap[x]" ]
+          },
+          "typeProperty" : {
+            "value" : [ "$diverse.ektefelle.anmodningominformasjon.eiendom[x].type[x]" ]
+          }
+        }
+      } ],
+      "InformationTransferredPropertyDuringPeriod" : [ {
+        "IsPersonNamedInThisSectionInPossession" : [ {
+          "PleaseFillInFollowingIfAnswerYes" : {
+            "Details" : {
+              "WhatAmountInvolved" : {
+                "amount" : "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].avkastning[x].inntekt.beloep",
+                "currency" : {
+                  "value" : [ "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].avkastning[x].inntekt.valuta" ]
+                }
+              },
+              "whatNatureTheseProceeds" : "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].avkastning[x].inntekt.type"
+            }
+          },
+          "answerIndicator" : {
+            "value" : [ "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].avkastning[x].eiesavpersonen" ]
+          }
+        } ],
+        "PropertyHasBeenTransferredEitherInReturnFor" : {
+          "ValuePropertyAtTimeTransfer" : {
+            "amount" : "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].overdragelse.verdi.beloep",
+            "currency" : {
+              "value" : [ "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].overdragelse.verdi.valuta" ]
+            }
+          },
+          "dateTransfer" : "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].overdragelse.dato",
+          "typeProperty" : {
+            "value" : [ "$diverse.ektefelle.anmodningominformasjon.overdratteiendom[x].type" ]
+          }
+        }
+      } ],
+      "SpousePartner" : {
+        "AdditionalInformationPerson" : {
+          "AddressPerson" : [ {
+            "Address" : {
+              "buildingName" : "$nav.ektefelle.adresse[x].bygning",
+              "country" : {
+                "value" : [ "$nav.ektefelle.adresse[x].land" ]
+              },
+              "postalCode" : "$nav.ektefelle.adresse[x].postnummer",
+              "region" : "$nav.ektefelle.adresse[x].region",
+              "street" : "$nav.ektefelle.adresse[x].gate",
+              "town" : "$nav.ektefelle.adresse[x].by"
+            },
+            "typeAddress" : {
+              "value" : [ "$nav.ektefelle.adresse[x].type" ]
+            }
+          } ],
+          "FillInIfRelationshipPersonNamedIn" : {
+            "other" : "$nav.ektefelle.relasjontilbruker.annen"
+          },
+          "nationality" : {
+            "value" : [ "$nav.ektefelle.person.statsborgerskap.land" ]
+          },
+          "pursuesAProfessionalOrTradeActivityIndicator" : {
+            "value" : [ "$nav.ektefelle.utoeverprofesjonellforretningsvirksomhet" ]
+          },
+          "relationshipPersonNamedInSection1" : {
+            "value" : [ "$nav.ektefelle.relasjontilbruker.type" ]
+          }
+        },
+        "PersonIdentification" : {
+          "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+            "PlaceBirth" : {
+              "country" : {
+                "value" : [ "$nav.ektefelle.person.foedested.land" ]
+              },
+              "region" : "$nav.ektefelle.person.foedested.region",
+              "town" : "$nav.ektefelle.person.foedested.by"
+            },
+            "fatherFamilyNameAtBirth" : "$nav.ektefelle.far.person.etternavnvedfoedsel",
+            "forenameFather" : "$nav.ektefelle.far.person.fornavn",
+            "forenameMother" : "$nav.ektefelle.mor.person.fornavn",
+            "motherFamilyNameAtBirth" : "$nav.ektefelle.mor.person.etternavnvedfoedsel"
+          },
+          "PINPersonInEachInstitution" : {
+            "PersonalIdentificationNumber" : [ {
+              "Institution" : {
+                "institutionID" : "$nav.ektefelle.person.pin[x].institusjonsid",
+                "institutionName" : "$nav.ektefelle.person.pin[x].institusjonsnavn"
+              },
+              "country" : {
+                "value" : [ "$nav.ektefelle.person.pin[x].land" ]
+              },
+              "personalIdentificationNumber" : "$nav.ektefelle.person.pin[x].identifikator",
+              "sector" : {
+                "value" : [ "$nav.ektefelle.person.pin[x].sektor" ]
+              }
+            } ]
+          },
+          "dateBirth" : "$nav.ektefelle.person.foedselsdato",
+          "familyName" : "$nav.ektefelle.person.etternavn",
+          "familyNameAtBirth" : "$nav.ektefelle.person.etternavnvedfoedsel",
+          "forename" : "$nav.ektefelle.person.fornavn",
+          "forenameAtBirth" : "$nav.ektefelle.person.fornavnvedfoedsel",
+          "sex" : {
+            "value" : [ "$nav.ektefelle.person.kjoenn" ]
+          }
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

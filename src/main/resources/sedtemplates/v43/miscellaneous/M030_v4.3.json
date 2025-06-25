@@ -1,0 +1,244 @@
+{
+  "M030" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "AdditionalInformationClaimForDeathGrant" : {
+      "DetailsDeath" : {
+        "deathDateDeceasedPerson" : "$nav.bruker.doedsdato",
+        "placeDeath" : {
+          "value" : [ "$nav.bruker.doedssted.land" ]
+        }
+      },
+      "claimant" : {
+        "value" : [ "$diverse.krav.soeker.type" ]
+      },
+      "dateClaim" : "$diverse.krav.dato",
+      "legislationSendingInstitution" : {
+        "value" : [ "$diverse.krav.avsenderinstitusjon.lovgigning" ]
+      },
+      "theClaimant" : {
+        "value" : [ "$diverse.krav.soeker.hardekketbegravelsetype" ]
+      }
+    },
+    "Claimant" : {
+      "AdditionalInformationClaimant" : {
+        "PleaseFillInFollowingIfStatusClaimantOther" : {
+          "otherStatus" : "$diverse.soeker.status.annet"
+        },
+        "PreviousName" : {
+          "previousFamilyName" : "$nav.soeker.person.tidligereetternavn",
+          "previousForename" : "$nav.soeker.person.tidligerefornavn"
+        },
+        "RelationshipDeceasedPerson" : {
+          "FillInIfRelationshipDeceasedPerson" : {
+            "otherRelationship" : "$diverse.soeker.familierelasjon.avdoed.annentype"
+          },
+          "relationshipDeceasedPerson" : {
+            "value" : [ "$diverse.soeker.familierelasjon.avdoed.type" ]
+          },
+          "theClaimantDependantDeceasedPersonIndicator" : {
+            "value" : [ "$diverse.soeker.bleforsoergetavbruker" ]
+          },
+          "theDeceasedPersonDependantClaimantIndicator" : {
+            "value" : [ "$diverse.soeker.forsoergetbruker" ]
+          }
+        },
+        "nationality" : {
+          "value" : [ "$nav.soeker.person.statsborgerskap[x].land" ]
+        },
+        "status" : {
+          "value" : [ "$nav.soeker.status.hosinstitusjon.type[x]" ]
+        },
+        "statusClaimant" : {
+          "value" : [ "$diverse.soeker.status.id[x]" ]
+        }
+      },
+      "Address" : {
+        "buildingName" : "$nav.soeker.bostedsadresse.bygning",
+        "country" : {
+          "value" : [ "$nav.soeker.bostedsadresse.land" ]
+        },
+        "postalCode" : "$nav.soeker.bostedsadresse.postnummer",
+        "region" : "$nav.soeker.bostedsadresse.region",
+        "street" : "$nav.soeker.bostedsadresse.gate",
+        "town" : "$nav.soeker.bostedsadresse.by"
+      },
+      "OtherClaimant" : {
+        "NamePersonEntitledRepresentLegalPersonUndertaker" : {
+          "familyName" : "$diverse.annensoeker.person.etternavn",
+          "forename" : "$diverse.annensoeker.person.fornavn"
+        },
+        "PleaseFillIn" : {
+          "IdentificationLegalPersonUndertaker" : {
+            "fiscalNumber" : "$diverse.annensoeker.begravelsesbyraa.juridiskperson.skattenummer",
+            "registrationNumber" : "$diverse.annensoeker.begravelsesbyraa.juridiskperson.registreringsnummer",
+            "socialSecurityNumber" : "$diverse.annensoeker.begravelsesbyraa.juridiskperson.personnummer"
+          },
+          "nameLegalPersonUndertaker" : "$diverse.annensoeker.begravelsesbyraa.navn"
+        },
+        "ifClaimantIs" : {
+          "value" : [ "$diverse.annensoeker.type" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.soeker.person.foedested.land" ]
+            },
+            "region" : "$nav.soeker.person.foedested.region",
+            "town" : "$nav.soeker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.soeker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.soeker.far.person.fornavn",
+          "forenameMother" : "$nav.soeker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.soeker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.soeker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.soeker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.soeker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.soeker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.soeker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.soeker.person.foedselsdato",
+        "familyName" : "$nav.soeker.person.etternavn",
+        "familyNameAtBirth" : "$nav.soeker.person.etternavnvedfoedsel",
+        "forename" : "$nav.soeker.person.fornavn",
+        "forenameAtBirth" : "$nav.soeker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.soeker.person.kjoenn" ]
+        }
+      }
+    },
+    "DeceasedPerson" : {
+      "AdditionalInformationDeceasedPerson" : {
+        "AddressDeceasedPersonBeforeDeath" : {
+          "buildingName" : "$nav.bruker.adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse.land" ]
+          },
+          "postalCode" : "$nav.bruker.adresse.postnummer",
+          "region" : "$nav.bruker.adresse.region",
+          "street" : "$nav.bruker.adresse.gate",
+          "town" : "$nav.bruker.adresse.by"
+        },
+        "FillInIfStatusDeceasedPersonBefore" : {
+          "otherStatus" : "$nav.bruker.status.foerdoed.annen"
+        },
+        "PreviousName" : {
+          "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+          "previousForename" : "$nav.bruker.person.tidligerefornavn"
+        },
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "status" : {
+          "value" : [ "$nav.bruker.status.hosinstitusjon.type[x]" ]
+        },
+        "statusDeceasedPersonBeforeDeath" : {
+          "value" : [ "$nav.bruker.status.foerdoed.type[x]" ]
+        }
+      },
+      "DeceasedPerson" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "InformationPayment" : {
+      "BankDetails" : {
+        "NonSEPAAccount" : {
+          "BICSWIFT" : "$nav.soeker.bank.ikkesepa.konto.swift",
+          "BankAddress" : {
+            "buildingName" : "$nav.soeker.bank.ikkesepa.adresse.bygning",
+            "country" : {
+              "value" : [ "$nav.soeker.bank.ikkesepa.adresse.land" ]
+            },
+            "postalCode" : "$nav.soeker.bank.ikkesepa.adresse.postkode",
+            "region" : "$nav.soeker.bank.ikkesepa.adresse.region",
+            "street" : "$nav.soeker.bank.ikkesepa.adresse.gate",
+            "town" : "$nav.soeker.bank.ikkesepa.adresse.by"
+          },
+          "accountNumber" : "$nav.soeker.bank.ikkesepa.konto.nummer",
+          "bankName" : "$nav.soeker.bank.ikkesepa.navn"
+        },
+        "SEPAAccount" : {
+          "BICSWIFT" : "$nav.soeker.bank.sepa.konto.swift",
+          "IBAN" : "$nav.soeker.bank.sepa.konto.iban"
+        }
+      },
+      "paymentTo" : {
+        "value" : [ "$nav.soeker.bank.konto.innehaver.type" ]
+      }
+    },
+    "InformationRepresentativeLegalGuardian" : {
+      "InformationRepresentativeLegalGuardian" : {
+        "Address" : {
+          "buildingName" : "$nav.verge.adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.verge.adresse.land" ]
+          },
+          "postalCode" : "$nav.verge.adresse.postnummer",
+          "region" : "$nav.verge.adresse.region",
+          "street" : "$nav.verge.adresse.gate",
+          "town" : "$nav.verge.adresse.by"
+        },
+        "name" : "$nav.verge.person.navn"
+      },
+      "status" : {
+        "value" : [ "$nav.verge.status" ]
+      }
+    },
+    "PleaseFindAttachedFollowingDocument" : {
+      "attachedDocument" : {
+        "value" : [ "$diverse.overfoeringinfo.dokumentervedlagt.type[x]" ]
+      },
+      "otherDocument" : "$diverse.overfoeringinfo.dokumentervedlagt.annentype"
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "R006.sedTitle" : {
+    "index" : "R006",
+    "prompt" : "R006 - Svar på anmodning om trekk i etterbetalinger",
+    "valuetype" : "_rinaRoot"
+  },
+  "R006.LocalCaseNumbers" : {
+    "index" : "1.",
+    "prompt" : " Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : " Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "R006.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "index" : "1.1.1.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "R006.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "index" : "1.1.2.",
+    "prompt" : " Saksnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3.",
+    "prompt" : " Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "index" : "1.1.3.1.",
+    "prompt" : " Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "index" : "1.1.3.2.",
+    "prompt" : " Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "R006.Persons" : {
+    "index" : "2.",
+    "prompt" : " Personer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0]" : {
+    "index" : "2.1",
+    "prompt" : " Person",
+    "valuetype" : "_rinaArray"
+  },
+  "R006.Persons.Person[0].PersonIdentification" : {
+    "index" : "2.1.1.",
+    "prompt" : " Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].PersonIdentification.familyName" : {
+    "index" : "2.1.1.1.",
+    "prompt" : " Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.forename" : {
+    "index" : "2.1.1.2.",
+    "prompt" : " Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.dateBirth" : {
+    "index" : "2.1.1.3.",
+    "prompt" : " Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.sex" : {
+    "index" : "2.1.1.4.",
+    "prompt" : " Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    }
+  },
+  "R006.Persons.Person[0].PersonIdentification.familyNameAtBirth" : {
+    "index" : "2.1.1.5.",
+    "prompt" : " Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.forenameAtBirth" : {
+    "index" : "2.1.1.6.",
+    "prompt" : " Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.1.7.",
+    "prompt" : " PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.7.1",
+    "prompt" : " Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "2.1.1.7.1.1.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "2.1.1.7.1.2.",
+    "prompt" : " Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "2.1.1.7.1.3.",
+    "prompt" : " Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    }
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.1.7.1.4.",
+    "prompt" : " Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "2.1.1.7.1.4.1.",
+    "prompt" : " Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "2.1.1.7.1.4.2.",
+    "prompt" : " Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.1.8.",
+    "prompt" : " Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.1.8.1.",
+    "prompt" : " Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "2.1.1.8.1.1.",
+    "prompt" : " By",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "2.1.1.8.1.2.",
+    "prompt" : " Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "2.1.1.8.1.3.",
+    "prompt" : " Land",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "2.1.1.8.2.",
+    "prompt" : " Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "2.1.1.8.3.",
+    "prompt" : " Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "2.1.1.8.4.",
+    "prompt" : " Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "2.1.1.8.5.",
+    "prompt" : " Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson" : {
+    "index" : "2.1.2.",
+    "prompt" : " Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.statusPerson" : {
+    "index" : "2.1.2.1.",
+    "prompt" : " Personens status",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Debitor",
+      "02" : "Forsikret person",
+      "03" : "Enke eller enkemann",
+      "04" : "Registrert partner",
+      "05" : "Foreldreløs",
+      "06" : "Annen etterlatt",
+      "07" : "Avdød mottaker av ytelser",
+      "08" : "Arbeidstaker",
+      "09" : "Forvalter",
+      "10" : "Bobestyrer",
+      "11" : "Tredjepart med formuesgoder",
+      "12" : "Arving eller testamentfullbyrder",
+      "99" : "Annet"
+    }
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PleaseFillInFollowingIfStatusPersonOther" : {
+    "index" : "2.1.2.2.",
+    "prompt" : " Fyll ut hvis «Personens status» = «Annet»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PleaseFillInFollowingIfStatusPersonOther.otherStatusPerson" : {
+    "index" : "2.1.2.2.1.",
+    "prompt" : " Annen personstatus",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.nationality" : {
+    "index" : "2.1.2.3.",
+    "prompt" : " Nasjonalitet",
+    "valuetype" : "_uxMultiSelect"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PreviousFamilyNames" : {
+    "index" : "2.1.2.4.",
+    "prompt" : " Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PreviousFamilyNames.PreviousFamilyName[0]" : {
+    "index" : "2.4.1",
+    "prompt" : " Tidligere etternavn",
+    "valuetype" : "_rinaArray"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PreviousFamilyNames.PreviousFamilyName[0].previousFamilyName" : {
+    "index" : "2.1.2.4.1.1.",
+    "prompt" : " Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.1.2.5.",
+    "prompt" : " Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.5.1",
+    "prompt" : " Tidligere fornavn",
+    "valuetype" : "_rinaArray"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
+    "index" : "2.1.2.5.1.1.",
+    "prompt" : " Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.currentFamilyStatus" : {
+    "index" : "2.1.2.6.",
+    "prompt" : " Sivilstatus",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Enslig",
+      "02" : "Gift",
+      "03" : "Registrert partnerskap",
+      "04" : "Samboer",
+      "05" : "Skilt",
+      "06" : "Skilt fra registrert partnerskap",
+      "07" : "Separert",
+      "08" : "Enke/enkemann"
+    }
+  },
+  "R006.Persons.Person[0].AdditionalInformationAboutPerson.dateDeath" : {
+    "index" : "2.1.2.7.",
+    "prompt" : " Dødsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "R006.InformationThereAreArrears" : {
+    "index" : "3.",
+    "prompt" : " Informasjon om at det finnes etterbetalinger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.InformationThereAreArrears.informationThereAreArrearsIndicator" : {
+    "index" : "3.1.",
+    "prompt" : " Informasjon om at det finnes etterbetalinger",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    }
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears" : {
+    "index" : "3.2.",
+    "prompt" : " Fyll ut hvis «Informasjon om at det finnes etterbetalinger» = «Ja»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.entitlementCorrespondingBenefitIndicator" : {
+    "index" : "3.2.1.",
+    "prompt" : " Rett til tilsvarende ytelse",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    }
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding" : {
+    "index" : "3.2.2.",
+    "prompt" : " Fyll ut hvis «Rett til tilsvarende ytelse» = «Ja»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.arrearsHaveAlreadyBeenPaidOutIndicator" : {
+    "index" : "3.2.2.1.",
+    "prompt" : " Etterbetalinger er allerede utbetalt.",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    }
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid" : {
+    "index" : "3.2.2.2.",
+    "prompt" : " Fyll ut hvis «Etterbetalinger er allerede utbetalt» = «Nei»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid.ArrearsDetails" : {
+    "index" : "3.2.2.2.1.",
+    "prompt" : " Etterbetalingsdetaljer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid.ArrearsDetails.ArrearsPeriod" : {
+    "index" : "3.2.2.2.1.1.",
+    "prompt" : " Etterbetalingsperiode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid.ArrearsDetails.ArrearsPeriod.startDate" : {
+    "index" : "3.2.2.2.1.1.1.",
+    "prompt" : " Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid.ArrearsDetails.ArrearsPeriod.endDate" : {
+    "index" : "3.2.2.2.1.1.2.",
+    "prompt" : " Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid.ArrearsDetails.ArrearsTotalAmount" : {
+    "index" : "3.2.2.2.1.2.",
+    "prompt" : " Etterbetalingsbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid.ArrearsDetails.ArrearsTotalAmount.amount" : {
+    "index" : "3.2.2.2.1.2.1.",
+    "prompt" : " Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "R006.InformationThereAreArrears.FillInFollowingIfInformationThereAreArrears.FillInFollowingIfEntitlementCorresponding.PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid.ArrearsDetails.ArrearsTotalAmount.currency" : {
+    "index" : "3.2.2.2.1.2.2.",
+    "prompt" : " Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput"
+  }
+}

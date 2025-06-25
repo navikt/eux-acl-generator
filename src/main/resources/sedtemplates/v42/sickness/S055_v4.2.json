@@ -1,0 +1,139 @@
+{
+	"S055": {
+		"sedGVer": "$sedGVer",
+		"sedVer": "$sedVer",
+		"Person": {
+			"PersonIdentification": {
+				"familyName": "$nav.bruker.person.etternavn",
+				"forename": "$nav.bruker.person.fornavn",
+				"dateBirth": "$nav.bruker.person.foedselsdato",
+				"sex": {
+					"value": [
+						"$nav.bruker.person.kjoenn"
+					]
+				},
+				"familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+				"forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+				"PINPersonInEachInstitution": {
+					"PersonalIdentificationNumber": [
+						{
+							"country": {
+								"value": [
+									"$nav.bruker.person.pin[x].land"
+								]
+							},
+							"personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+							"sector": {
+								"value": [
+									"$nav.bruker.person.pin[x].sektor"
+								]
+							},
+							"Institution": {
+								"institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+								"institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+							}
+						}
+					]
+				},
+				"IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+					"PlaceBirth": {
+						"town": "$nav.bruker.person.foedested.by",
+						"region": "$nav.bruker.person.foedested.region",
+						"country": {
+							"value": [
+								"$nav.bruker.person.foedested.land"
+							]
+						}
+					},
+					"fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+					"forenameFather": "$nav.bruker.far.person.fornavn",
+					"motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+					"forenameMother": "$nav.bruker.mor.person.fornavn"
+				}
+			},
+			"AdditionalInformationPerson": {
+				"nationality": {
+					"value": [
+						"$nav.bruker.person.statsborgerskap[x].land"
+					]
+				}
+			}
+		},
+    "PersonAddress": {
+      "street": "$nav.bruker.bostedsadresse.gate",
+      "buildingName": "$nav.bruker.bostedsadresse.bygning",
+      "town": "$nav.bruker.bostedsadresse.by",
+      "postalCode": "$nav.bruker.bostedsadresse.postnummer",
+      "region": "$nav.bruker.bostedsadresse.region",
+      "country": {
+        "value": [
+          "$nav.bruker.bostedsadresse.land"
+        ]
+      }
+    },
+		"CertificateIncapacityWork": {
+			"thePersonMentionedAboveAppliedForCashBenefitsOn": "$sykdom.soeknad.kontantytelse.soeknadsdato",
+			"typeBenefit": {
+				"value": [
+					"$sykdom.soeknad.kontantytelse.ytelse.type"
+				]
+			},
+			"pleaseFindAttached": {
+				"value": [
+					"$sykdom.soeknad.kontantytelse.vedlegg.type"
+				]
+			},
+			"FillInIfPleaseFindAttachedOther": {
+				"otherDocument": "$sykdom.soeknad.kontantytelse.vedlegg.annen"
+			},
+			"AccordingDocumentMentionedAbovePersonIncapable": {
+				"FixedPeriod": {
+					"startDate": "$sykdom.soeknad.kontantytelse.ytelse.periode.fastperiode.startdato",
+					"endDate": "$sykdom.soeknad.kontantytelse.ytelse.periode.fastperiode.sluttdato"
+				},
+				"OpenPeriod": {
+					"typeOpenPeriod": {
+						"value": [
+							"$sykdom.soeknad.kontantytelse.ytelse.periode.aapenperiode.type"
+						]
+					},
+					"startDate": "$sykdom.soeknad.kontantytelse.ytelse.periode.aapenperiode.startdato"
+				}
+			},
+			"ChildBirth": {
+				"expectedDateDelivery": "$sykdom.soeknad.kontantytelse.barn.foedsel.termindato",
+				"dateChildBirth": "$sykdom.soeknad.kontantytelse.barn.foedsel.dato"
+			}
+		},
+		"Employer": {
+			"name": "$nav.arbeidsgiver.navn",
+			"IdentificationNumbers": {
+				"IdentificationNumber": [
+					{
+						"number": "$nav.arbeidsgiver.identifikator[x].id",
+						"type": {
+							"value": [
+								"$nav.arbeidsgiver.identifikator[x].type"
+							]
+						}
+					}
+				]
+			},
+			"Address": {
+				"street": "$nav.arbeidsgiver.adresse.gate",
+				"buildingName": "$nav.arbeidsgiver.adresse.bygning",
+				"town": "$nav.arbeidsgiver.adresse.by",
+				"postalCode": "$nav.arbeidsgiver.adresse.postnummer",
+				"region": "$nav.arbeidsgiver.adresse.region",
+				"country": {
+					"value": [
+						"$nav.arbeidsgiver.adresse.land"
+					]
+				}
+			}
+		},
+		"AdditionalInformation": {
+			"additionalInformation": "$nav.ytterligereinformasjon"
+		}
+	}
+}

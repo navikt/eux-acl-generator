@@ -1,0 +1,307 @@
+{
+	"R001": {
+		"sedGVer": "$sedGVer",
+		"sedVer": "$sedVer",
+		"LocalCaseNumbers": {
+			"LocalCaseNumber": [
+				{
+					"country": {
+						"value": [
+							"$nav.eessisak[x].land"
+						]
+					},
+					"caseNumber": "$nav.eessisak[x].saksnummer",
+					"Institution": {
+						"institutionID": "$nav.eessisak[x].institusjonsid",
+						"institutionName": "$nav.eessisak[x].institusjonsnavn"
+					}
+				}
+			]
+		},
+		"Persons": {
+			"Person": [
+				{
+					"PersonIdentification": {
+						"familyName": "$nav.brukere[x].person.etternavn",
+						"forename": "$nav.brukere[x].person.fornavn",
+						"dateBirth": "$nav.brukere[x].person.foedselsdato",
+						"sex": {
+							"value": [
+								"$nav.brukere[x].person.kjoenn"
+							]
+						},
+						"familyNameAtBirth": "$nav.brukere[x].person.etternavnvedfoedsel",
+						"forenameAtBirth": "$nav.brukere[x].person.fornavnvedfoedsel",
+						"PINPersonInEachInstitution": {
+							"PersonalIdentificationNumber": [
+								{
+									"country": {
+										"value": [
+											"$nav.brukere[x].person.pin[x].land"
+										]
+									},
+									"personalIdentificationNumber": "$nav.brukere[x].person.pin[x].identifikator",
+									"sector": {
+										"value": [
+											"$nav.brukere[x].person.pin[x].sektor"
+										]
+									},
+									"Institution": {
+										"institutionID": "$nav.brukere[x].person.pin[x].institusjonsid",
+										"institutionName": "$nav.brukere[x].person.pin[x].institusjonsnavn"
+									}
+								}
+							]
+						},
+						"IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+							"PlaceBirth": {
+								"town": "$nav.brukere[x].person.foedested.by",
+								"region": "$nav.brukere[x].person.foedested.region",
+								"country": {
+									"value": [
+										"$nav.brukere[x].person.foedested.land"
+									]
+								}
+							},
+							"fatherFamilyNameAtBirth": "$nav.brukere[x].far.person.etternavnvedfoedsel",
+							"forenameFather": "$nav.brukere[x].far.person.fornavn",
+							"motherFamilyNameAtBirth": "$nav.brukere[x].mor.person.etternavnvedfoedsel",
+							"forenameMother": "$nav.brukere[x].mor.person.fornavn"
+						}
+					},
+					"AdditionalInformationAboutPerson": {
+						"statusPerson": {
+							"value": [
+								"$nav.brukere[x].tilbakekreving.status.type"
+							]
+						},
+						"PleaseFillInFollowingIfStatusPersonOther": {
+							"otherStatusPerson": "$nav.brukere[x].tilbakekreving.status.annen"
+						},
+						"nationality": {
+							"value": [
+								"$nav.brukere[x].person.statsborgerskap[x].land"
+							]
+						},
+						"PreviousFamilyNames": {
+							"PreviousFamilyName": [
+								{
+									"previousFamilyName": "$tilbakekreving.bruker[x].person.tidligereetternavn[x].navn"
+								}
+							]
+						},
+						"PreviousForenames": {
+							"PreviousForename": [
+								{
+									"previousForename": "$tilbakekreving.bruker[x].person.tidligerefornavn[x].navn"
+								}
+							]
+						},
+						"currentFamilyStatus": {
+							"value": [
+								"$tilbakekreving.bruker[x].person.tilbakekrevingsivilstand.status"
+							]
+						},
+						"dateDeath": "$nav.brukere[x].person.doedsdato"
+					},
+					"PersonLastKnownAddresses": {
+						"PersonLastKnownAddressDetails": [
+							{
+								"typeAddress": {
+									"value": [
+										"$tilbakekreving.bruker[x].sistekjenteadresse[x].type"
+									]
+								},
+								"PleaseFillInFollowingIfTypeAddressOther": {
+									"specifyOtherType": "$tilbakekreving.bruker[x].sistekjenteadresse[x].annen"
+								},
+								"AddressDetail": {
+									"street": "$tilbakekreving.bruker[x].sistekjenteadresse[x].gate",
+									"buildingName": "$tilbakekreving.bruker[x].sistekjenteadresse[x].bygning",
+									"town": "$tilbakekreving.bruker[x].sistekjenteadresse[x].by",
+									"postalCode": "$tilbakekreving.bruker[x].sistekjenteadresse[x].postkode",
+									"region": "$tilbakekreving.bruker[x].sistekjenteadresse[x].region",
+									"country": {
+										"value": [
+											"$tilbakekreving.bruker[x].sistekjenteadresse[x].land"
+										]
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		"TypeRequest": {
+			"typeRequest": {
+				"value": [
+					"$tilbakekreving.anmodning.type"
+				]
+			}
+		},
+		"BenefitsReceivedUnduly": {
+			"typeBenefit": {
+				"value": [
+					"$tilbakekreving.urettmessigmottatteytelse.type"
+				]
+			},
+			"PleaseFillInFollowingIfTypeBenefitOtherBenefit": {
+				"typeOtherBenefit": "$tilbakekreving.urettmessigmottatteytelse.annen"
+			}
+		},
+		"PleaseFillInFollowingIfTypeRequestFinal": {
+			"OverpaymentPeriods": {
+				"OverpaymentPeriod": [
+					{
+						"Period": {
+							"startDate": "$tilbakekreving.feilutbetaling.periode[x].startdato",
+							"endDate": "$tilbakekreving.feilutbetaling.periode[x].sluttdato"
+						},
+						"dateDecision": "$tilbakekreving.feilutbetaling.periode[x].vedtak.dato",
+						"reasonForOverpayment": {
+							"value": [
+								"$tilbakekreving.feilutbetaling.periode[x].aarsak.type"
+							]
+						},
+						"PleaseFillInFollowingIfReasonForOverpaymentOther": {
+							"otherReason": "$tilbakekreving.feilutbetaling.periode[x].aarsak.annen"
+						}
+					}
+				]
+			},
+			"PaymentAmount": {
+				"OverpaidAmountForWholePeriod": {
+					"amount": "$tilbakekreving.feilutbetaling.samletforperioden.beloep",
+					"currency": {
+						"value": [
+							"$tilbakekreving.feilutbetaling.samletforperioden.valuta"
+						]
+					}
+				},
+				"DetailedInformationAboutOverpaidAmounts": {
+					"DetailedInformationAboutOverpaidAmount": [
+						{
+							"startDate": "$tilbakekreving.feilutbetaling.naermereinformasjon[x].startdato",
+							"Details": {
+								"frequency": {
+									"value": [
+										"$tilbakekreving.feilutbetaling.naermereinformasjon[x].hyppighet.type"
+									]
+								},
+								"PleaseFillInFollowingIfFrequencyOther": {
+									"otherFrequency": "$tilbakekreving.feilutbetaling.naermereinformasjon[x].hyppighet.annen"
+								},
+								"numberPeriodicUnits": "$tilbakekreving.feilutbetaling.naermereinformasjon[x].antallperiodeenheter",
+								"AmountPerUnit": {
+									"amount": "$tilbakekreving.feilutbetaling.naermereinformasjon[x].utbetalingperperiode.beloep",
+									"currency": {
+										"value": [
+											"$tilbakekreving.feilutbetaling.naermereinformasjon[x].utbetalingperperiode.valuta"
+										]
+									}
+								}
+							}
+						}
+					]
+				}
+			},
+			"BenefitDeduction": {
+				"typeBenefit": {
+					"value": [
+						"$tilbakekreving.feilutbetaling.motregning.ytelser.type"
+					]
+				},
+				"PleaseFillInFollowingIfTypeBenefitOtherBenefit": {
+					"typeOtherBenefit": "$tilbakekreving.feilutbetaling.motregning.ytelser.annen"
+				}
+			},
+			"DeductionFromArrears": {
+				"deductionFromArrearsPossibleIndicator": {
+					"value": [
+						"$tilbakekreving.feilutbetaling.motregning.etterbetalingerermulig"
+					]
+				},
+				"FillInIfDeductionFromArrears": {
+					"DetailedInformationAboutDeductionsFromArrears": {
+						"DetailedInformationAboutDeductionFromArrears": [
+							{
+								"startDate": "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].startdato",
+								"Details": {
+									"frequency": {
+										"value": [
+											"$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].hyppighet.type"
+										]
+									},
+									"PleaseFillInFollowingIfFrequencyOther": {
+										"otherFrequency": "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].hyppighet.annen"
+									},
+									"numberPeriodicUnits": "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].antallperiodeenheter",
+									"AmountPerUnit": {
+										"amount": "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].utbetalingperperiode.beloep",
+										"currency": {
+											"value": [
+												"$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].utbetalingperperiode.valuta"
+											]
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			"DeductionFromOngoingPayments": {
+				"deductionInGeneralPossibleIndicator": {
+					"value": [
+						"$tilbakekreving.feilutbetaling.motregning.loependeytelser.ermulig"
+					]
+				},
+				"DetailedInformationAboutDeductionFromOngoing": {
+					"frequency": {
+						"value": [
+							"$tilbakekreving.feilutbetaling.motregning.loependeytelser.hyppighet.type"
+						]
+					},
+					"PleaseFillInFollowingIfFrequencyOther": {
+						"otherFrequency": "$tilbakekreving.feilutbetaling.motregning.loependeytelser.hyppighet.annen"
+					},
+					"numberPeriodicUnits": "$tilbakekreving.feilutbetaling.motregning.loependeytelser.antallperiodeenheter",
+					"AmountPerUnit": {
+						"amount": "$tilbakekreving.feilutbetaling.motregning.loependeytelser.utbetalingperperiode.beloep",
+						"currency": {
+							"value": [
+								"$tilbakekreving.feilutbetaling.motregning.loependeytelser.utbetalingperperiode.valuta"
+							]
+						}
+					}
+				}
+			}
+		},
+		"AdditionalInformation": {
+			"additionalInformation": "$nav.ytterligereinformasjon"
+		},
+		"PleaseFillInFollowingIfTypeRequestFinal02": {
+			"BankDetails": {
+				"SEPABankDetails": {
+					"IBAN": "$tilbakekreving.anmodningommotregning.bank.konto.sepa.iban",
+					"BICSWIFT": "$tilbakekreving.anmodningommotregning.bank.konto.sepa.swift"
+				},
+				"accountHolderName": "$tilbakekreving.anmodningommotregning.bank.konto.innehaver.navn",
+				"paymentReference": "$tilbakekreving.anmodningommotregning.bank.konto.betalingsreferanse",
+				"ReceivingBankAddress": {
+					"street": "$tilbakekreving.anmodningommotregning.bank.adresse.gate",
+					"buildingName": "$tilbakekreving.anmodningommotregning.bank.adresse.bygning",
+					"town": "$tilbakekreving.anmodningommotregning.bank.adresse.by",
+					"postalCode": "$tilbakekreving.anmodningommotregning.bank.adresse.postkode",
+					"region": "$tilbakekreving.anmodningommotregning.bank.adresse.region",
+					"country": {
+						"value": [
+							"$tilbakekreving.anmodningommotregning.bank.adresse.land"
+						]
+					}
+				}
+			}
+		}
+	}
+}

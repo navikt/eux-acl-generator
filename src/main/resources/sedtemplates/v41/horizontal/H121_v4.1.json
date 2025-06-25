@@ -1,0 +1,115 @@
+{
+  "H121": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "Person": {
+      "PersonIdentification": {
+        "familyName": "$nav.bruker.person.etternavn",
+        "forename": "$nav.bruker.person.fornavn",
+        "dateBirth": "$nav.bruker.person.foedselsdato",
+        "sex": {
+          "value": [
+            "$nav.bruker.person.kjoenn"
+          ]
+        },
+        "familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution": {
+          "PersonalIdentificationNumber": [
+            {
+              "country": {
+                "value": [
+                  "$nav.bruker.person.pin[x].land"
+                ]
+              },
+              "personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+              "sector": {
+                "value": [
+                  "$nav.bruker.person.pin[x].sektor"
+                ]
+              },
+              "Institution": {
+                "institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+                "institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+              }
+            }
+          ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+          "PlaceBirth": {
+            "town": "$nav.bruker.person.foedested.by",
+            "region": "$nav.bruker.person.foedested.region",
+            "country": {
+              "value": [
+                "$nav.bruker.person.foedested.land"
+              ]
+            }
+          },
+          "fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather": "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother": "$nav.bruker.mor.person.fornavn"
+        }
+      },
+      "AdditionalInformationPerson": {
+        "previousFamilyName": "$nav.endredeforhold.bruker.person.tidligereetternavn",
+        "previousForename": "$nav.endredeforhold.bruker.person.tidligerefornavn",
+        "nationality": {
+          "value": [
+            "$nav.bruker.person.statsborgerskap[x].land"
+          ]
+        }
+      }
+    },
+    "ReplyRequestForEstimatedCostsMedicalEvidence": {
+      "ReplyRequestForEstimatedCostsMedicalEvidence": {
+        "replyForEstimatedCostsForMedicalEvidenceExamination": "$horisontal.anmodningmedisinskinformasjon.svar.undersoekelse.estimat.kostnader.beloep",
+        "currency": {
+          "value": [
+            "$horisontal.anmodningmedisinskinformasjon.svar.undersoekelse.estimat.kostnader.valuta"
+          ]
+        }
+      }
+    },
+    "ReplyRequestForMedicalExaminationReport": {
+      "ReplyRequestForMedicalExaminationReport": {
+        "inReplyRequestConcerningMedicalExaminationInformIt": {
+          "value": [
+            "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.undersoekelse.type"
+          ]
+        },
+        "FillInIfReasonForNotCarryingOut": {
+          "otherReason": "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.undersoekelse.ikkegjennomfoert.grunn.annen"
+        },
+        "reasonForNotCarryingOutMedicalExamination": {
+          "value": [
+            "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.undersoekelse.ikkegjennomfoert.grunn.type"
+          ]
+        }
+      }
+    },
+    "ReplyRequestForMedicalEvidence": {
+      "ReplyRequestForMedicalEvidence": {
+        "replyAttachedRequestedMedicalEvidenceIndicator": {
+          "value": [
+            "$horisontal.anmodningmedisinskinformasjon.svar.erdokumentasjonsvedlagt"
+          ]
+        },
+        "reasonsForNotSendingRequestedMedicalEvidence": "$horisontal.anmodningmedisinskinformasjon.svar.dokumentasjonikkevedlagt.grunn"
+      }
+    },
+    "NotificationMedicalInformation": {
+      "NotificationMedicalInformation": {
+        "pleaseFindAttached": {
+          "value": [
+            "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.informasjon.type[x]"
+          ]
+        },
+        "otherMedicalInformation": "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.informasjon.annen"
+      }
+    },
+    "AdditionalInformation": {
+      "additionalInformation": "$nav.ytterligereinformasjon"
+    }
+  }
+}

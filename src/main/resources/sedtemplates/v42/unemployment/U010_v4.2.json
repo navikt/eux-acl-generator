@@ -1,0 +1,114 @@
+{
+  "U010": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "LocalCaseNumbers": {
+      "LocalCaseNumber": [
+        {
+          "country": {
+            "value": [
+              "$nav.eessisak[x].land"
+            ]
+          },
+          "caseNumber": "$nav.eessisak[x].saksnummer",
+          "Institution": {
+            "institutionID": "$nav.eessisak[x].institusjonsid",
+            "institutionName": "$nav.eessisak[x].institusjonsnavn"
+          }
+        }
+      ]
+    },
+    "Person": {
+      "PersonIdentification": {
+        "familyName": "$nav.bruker.person.etternavn",
+        "forename": "$nav.bruker.person.fornavn",
+        "dateBirth": "$nav.bruker.person.foedselsdato",
+        "sex": {
+          "value": [
+            "$nav.bruker.person.kjoenn"
+          ]
+        },
+        "familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution": {
+          "PersonalIdentificationNumber": [
+            {
+              "country": {
+                "value": [
+                  "$nav.bruker.person.pin[x].land"
+                ]
+              },
+              "personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+              "sector": {
+                "value": [
+                  "$nav.bruker.person.pin[x].sektor"
+                ]
+              },
+              "Institution": {
+                "institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+                "institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+              }
+            }
+          ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+          "PlaceBirth": {
+            "town": "$nav.bruker.person.foedested.by",
+            "region": "$nav.bruker.person.foedested.region",
+            "country": {
+              "value": [
+                "$nav.bruker.person.foedested.land"
+              ]
+            }
+          },
+          "fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather": "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother": "$nav.bruker.mor.person.fornavn"
+        }
+      },
+      "AdditionalInformationPerson": {
+        "nationality": {
+          "value": [
+            "$nav.bruker.person.statsborgerskap[x].land"
+          ]
+        }
+      }
+    },
+    "Circumstance": {
+      "Period": {
+        "FixedPeriod": {
+          "startDate": "$dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.fastperiode.startdato",
+          "endDate": "$dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.fastperiode.sluttdato"
+        },
+        "OpenPeriod": {
+          "typeOpenPeriod": {
+            "value": [
+              "$dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.aapenperiode.type"
+            ]
+          },
+          "startDate": "$dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.aapenperiode.startdato"
+        }
+      },
+      "circumstances": {
+        "value": [
+          "$dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.type[x].id"
+        ]
+      },
+      "FillInFollowingIfCircumstancesIsOther": {
+        "OtherCircumstanceSpecification": [
+          {
+            "circumstance": "$dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.annentype[x].beskrivelse"
+          }
+        ]
+      }
+    },
+    "FollowUpRequested": {
+      "followUpRequestedIndicator": {
+        "value": [
+          "$dagpenger.bruker.retttilytelser.oenskeraabliinformertomkonsekvenser"
+        ]
+      }
+    }
+  }
+}

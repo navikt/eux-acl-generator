@@ -1,0 +1,139 @@
+{
+	"S041": {
+		"sedGVer": "$sedGVer",
+		"sedVer": "$sedVer",
+		"Person": {
+			"PersonIdentification": {
+				"familyName": "$nav.bruker.person.etternavn",
+				"forename": "$nav.bruker.person.fornavn",
+				"dateBirth": "$nav.bruker.person.foedselsdato",
+				"sex": {
+					"value": [
+						"$nav.bruker.person.kjoenn"
+					]
+				},
+				"familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+				"forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+				"PINPersonInEachInstitution": {
+					"PersonalIdentificationNumber": [
+						{
+							"country": {
+								"value": [
+									"$nav.bruker.person.pin[x].land"
+								]
+							},
+							"personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+							"sector": {
+								"value": [
+									"$nav.bruker.person.pin[x].sektor"
+								]
+							},
+							"Institution": {
+								"institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+								"institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+							}
+						}
+					]
+				},
+				"IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+					"PlaceBirth": {
+						"town": "$nav.bruker.person.foedested.by",
+						"region": "$nav.bruker.person.foedested.region",
+						"country": {
+							"value": [
+								"$nav.bruker.person.foedested.land"
+							]
+						}
+					},
+					"fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+					"forenameFather": "$nav.bruker.far.person.fornavn",
+					"motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+					"forenameMother": "$nav.bruker.mor.person.fornavn"
+				}
+			},
+			"AdditionalInformationPerson": {
+				"nationality": {
+					"value": [
+						"$nav.bruker.person.statsborgerskap[x].land"
+					]
+				}
+			}
+		},
+    "PersonAddress": {
+      "Address": {
+        "street": "$nav.bruker.bostedsadresse.gate",
+        "buildingName": "$nav.bruker.bostedsadresse.bygning",
+        "town": "$nav.bruker.bostedsadresse.by",
+        "postalCode": "$nav.bruker.bostedsadresse.postnummer",
+        "region": "$nav.bruker.bostedsadresse.region",
+        "country": {
+          "value": [
+            "$nav.bruker.bostedsadresse.land"
+          ]
+        }
+      },
+      "residenceInThisCountrySince": "$nav.bruker.botidilandet.startdato"
+    },
+		"Reply": {
+			"inReplyS040": {
+				"value": [
+					"$sykdom.forespoerselomperioder.svar.type"
+				]
+			}
+		},
+		"ReplyRequestForPeriods": {
+			"InsurancePeriods": {
+				"InsurancePeriod": [
+					{
+						"Period": {
+							"FixedPeriod": {
+								"startDate": "$sykdom.bruker.medlemskap.periode[x].fastperiode.startdato",
+								"endDate": "$sykdom.bruker.medlemskap.periode[x].fastperiode.sluttdato"
+							},
+							"OpenPeriod": {
+								"typeOpenPeriod": {
+									"value": [
+										"$sykdom.bruker.medlemskap.periode[x].aapenperiode.type"
+									]
+								},
+								"startDate": "$sykdom.bruker.medlemskap.periode[x].aapenperiode.startdato"
+							}
+						},
+						"insurance": {
+							"value": [
+								"$sykdom.bruker.medlemskap.periode[x].forsikring.type"
+							]
+						}
+					}
+				]
+			},
+			"EmploymentPeriods": {
+				"EmploymentPeriod": [
+					{
+						"startDate": "$sykdom.arbeidsgiver.periode[x].startdato",
+						"endDate": "$sykdom.arbeidsgiver.periode[x].sluttdato"
+					}
+				]
+			},
+			"SelfEmploymentPeriods": {
+				"SelfEmploymentPeriod": [
+					{
+						"startDate": "$sykdom.selvstendig.arbeidsgiver.periode[x].startdato",
+						"endDate": "$sykdom.selvstendig.arbeidsgiver.periode[x].sluttdato"
+					}
+				]
+			},
+			"ResidencePeriods": {
+				"ResidencePeriod": [
+					{
+						"startDate": "$sykdom.bruker.bosted.periode[x].startdato",
+						"endDate": "$sykdom.bruker.bosted.periode[x].sluttdato"
+					}
+				]
+			}
+		},
+		"AdditionalInformation": {
+			"additionalInformation": "$nav.ytterligereinformasjon"
+		}
+	}
+}

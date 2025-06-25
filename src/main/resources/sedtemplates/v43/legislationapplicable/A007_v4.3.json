@@ -1,0 +1,159 @@
+{
+  "A007" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "Addresses" : {
+      "Address" : [ {
+        "Address" : {
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "postalCode" : "$nav.bruker.adresse[x].postnummer",
+          "region" : "$nav.bruker.adresse[x].region",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "town" : "$nav.bruker.adresse[x].by"
+        },
+        "type" : {
+          "value" : [ "$nav.bruker.adresse[x].type" ]
+        }
+      } ]
+    },
+    "CompetentInstitutionIfDiffersFromSending" : {
+      "institutionID" : "$nav.eessisak.institusjonsid",
+      "institutionName" : "$nav.eessisak.institusjonsnummer"
+    },
+    "Employer" : {
+      "Employer" : [ {
+        "Address" : {
+          "buildingName" : "$nav.arbeidsgiver[x].adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.arbeidsgiver[x].adresse.land" ]
+          },
+          "postalCode" : "$nav.arbeidsgiver[x].adresse.postnummer",
+          "region" : "$nav.arbeidsgiver[x].adresse.region",
+          "street" : "$nav.arbeidsgiver[x].adresse.gate",
+          "town" : "$nav.arbeidsgiver[x].adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.arbeidsgiver[x].identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.arbeidsgiver[x].identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.arbeidsgiver[x].navn"
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "PlaceWork" : {
+      "CountriesWork" : [ {
+        "PlaceWork" : {
+          "PlaceWork" : [ {
+            "Address" : {
+              "buildingName" : "$nav.arbeidsland[x].arbeidssted[x].adresse.bygning",
+              "postalCode" : "$nav.arbeidsland[x].arbeidssted[x].adresse.postnummer",
+              "region" : "$nav.arbeidsland[x].arbeidssted[x].adresse.region",
+              "street" : "$nav.arbeidsland[x].arbeidssted[x].adresse.gate",
+              "town" : "$nav.arbeidsland[x].arbeidssted[x].adresse.by"
+            },
+            "companyNameVesselName" : "$nav.arbeidsland[x].arbeidssted[x].navn",
+            "flagStatehomeBase" : "$nav.arbeidsland[x].arbeidssted[x].hjemmebase"
+          } ]
+        },
+        "countryWork" : {
+          "value" : [ "$nav.arbeidsland[x].land" ]
+        }
+      } ],
+      "aFixedPlaceWorkExistsIndicator" : {
+        "value" : [ "$nav.harfastarbeidssted" ]
+      }
+    },
+    "ProvisionalDecisionApplicableLegislation" : {
+      "dateRequestAccording61c" : "$medlemskap.midlertidigvedtak.amnodningsdatoisamsvarmed61c",
+      "determinationAccordingTo" : {
+        "value" : [ "$medlemskap.midlertidigvedtak.isamsvarmedartikkel" ]
+      },
+      "memberStateWhichLegislationApplies" : {
+        "value" : [ "$medlemskap.midlertidigvedtak.gjeldenelovgivning.land" ]
+      },
+      "startingDate" : "$medlemskap.midlertidigvedtak.startdato"
+    },
+    "SelfEmployment" : {
+      "SelfEmployment" : [ {
+        "Address" : {
+          "buildingName" : "$nav.selvstendig.arbeidsgiver[x].adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.selvstendig.arbeidsgiver[x].adresse.land" ]
+          },
+          "postalCode" : "$nav.selvstendig.arbeidsgiver[x].adresse.postnummer",
+          "region" : "$nav.selvstendig.arbeidsgiver[x].adresse.region",
+          "street" : "$nav.selvstendig.arbeidsgiver[x].adresse.gate",
+          "town" : "$nav.selvstendig.arbeidsgiver[x].adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.selvstendig.arbeidsgiver[x].identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.selvstendig.arbeidsgiver[x].identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.selvstendig.arbeidsgiver[x].navn"
+      } ]
+    },
+    "StatusPerson" : {
+      "statusPerson" : {
+        "value" : [ "$medlemskap.bruker.status" ]
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

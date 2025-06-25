@@ -1,0 +1,51 @@
+{
+  "X001" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "Address" : {
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          },
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate",
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn"
+      },
+      "PersonContext" : {
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato",
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn",
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        }
+      },
+      "ReimbursementContext" : {
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id",
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav"
+      }
+    },
+    "InformationAboutClose" : {
+      "close" : {
+        "value" : [ "$nav.sak.anmodning.avslutning.type" ]
+      },
+      "closeDate" : "$nav.sak.anmodning.avslutning.dato",
+      "pleaseProvideMoreDetailsIf99OtherSelected" : "$nav.sak.anmodning.avslutning.aarsak.annet",
+      "reasonForClosing" : {
+        "value" : [ "$nav.sak.anmodning.avslutning.aarsak.type" ]
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

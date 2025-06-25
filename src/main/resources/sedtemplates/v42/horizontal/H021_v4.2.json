@@ -1,0 +1,104 @@
+{
+  "H021": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "GlobalClaim": {
+      "CreditorInstitution": {
+        "institutionID": "$horisontal.refusjonskrav.kreditorinstitusjon.id",
+        "institutionName": "$horisontal.refusjonskrav.kreditorinstitusjon.navn"
+      },
+      "globalReferenceSetByCreditorInstitution": "$horisontal.refusjonskrav.kreditorinstitusjon.globalreferanse",
+      "globalReferenceSetByDebtorInstitution": "$horisontal.refusjonskrav.debitorinstitusjon.globalreferanse",
+      "totalNumberInvoices": "$horisontal.refusjonskrav.totaltantallfakturaer",
+      "Payment": {
+        "TotalClaimAmountInCurrencyCreditorInstitution": {
+          "amount": "$horisontal.refusjonskrav.kreditorinstitusjon.krav.totalbeloep",
+          "currency": {
+            "value": [
+              "$horisontal.refusjonskrav.kreditorinstitusjon.krav.valuta"
+            ]
+          }
+        },
+        "TotalClaimAmountRejectedInCreditorCurrency": {
+          "amount": "$horisontal.refusjonskrav.kreditorinstitusjon.krav.avvist.totalbeloep",
+          "currency": {
+            "value": [
+              "$horisontal.refusjonskrav.kreditorinstitusjon.krav.avvist.valuta"
+            ]
+          }
+        },
+        "TotalPaymentInCreditorCurrency": {
+          "amount": "$horisontal.refusjonskrav.kreditorinstitusjon.utbetaling.totalbeloep",
+          "currency": {
+            "value": [
+              "$horisontal.refusjonskrav.kreditorinstitusjon.utbetaling.valuta"
+            ]
+          }
+        },
+        "paymentReferenceForTransferCreditorInstitution": "$horisontal.refusjonskrav.kreditorinstitusjon.betalingsreferanse"
+      }
+    },
+    "Claim": {
+      "Person": {
+        "PersonInformation": {
+          "familyName": "$nav.bruker.person.etternavn",
+          "forename": "$nav.bruker.person.fornavn",
+          "dateBirth": "$nav.bruker.person.foedselsdato",
+          "sex": {
+            "value": [
+              "$nav.bruker.person.kjoenn"
+            ]
+          }
+        },
+        "familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+        "PersonIdentificationNumber": {
+          "pINPersonInCompetentMemberState": "$nav.bruker.person.pinland.kompetenteuland",
+          "pINPersonInMemberStateStayOrResidence": "$nav.bruker.person.pinland.oppholdsland"
+        }
+      },
+      "Reimbursement": [
+        {
+          "inReferenceOur": {
+            "value": [
+              "$horisontal.refusjonskrav.refusjon[x].henvisningtil"
+            ]
+          },
+          "issuedOn": "$horisontal.refusjonskrav.refusjon[x].utstedelsesdato",
+          "invoiceNumberCreditorInstitution": "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.fakturanummer",
+          "InvoiceAmountInCurrencyCreditorInstitution": {
+            "amount": "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.beloep",
+            "currency": {
+              "value": [
+                "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.valuta"
+              ]
+            }
+          },
+          "rejection": {
+            "value": [
+              "$horisontal.refusjonskrav.refusjon[x].avslag.type.id"
+            ]
+          },
+          "DetailPartialFullRejection": {
+            "InvoiceAmountRejectedInCurrencyCreditor": {
+              "amount": "$horisontal.refusjonskrav.refusjon[x].avslag.beloep",
+              "currency": {
+                "value": [
+                  "$horisontal.refusjonskrav.refusjon[x].avslag.valuta"
+                ]
+              }
+            }
+          },
+          "rejectionReason": {
+            "value": [
+              "$horisontal.refusjonskrav.refusjon[x].avslag.grunn.type"
+            ]
+          },
+          "PleaseFillInFollowingIfRejectionReasonOther": {
+            "other": "$horisontal.refusjonskrav.refusjon[x].avslag.grunn.annet"
+          }
+        }
+      ]
+    }
+  }
+}

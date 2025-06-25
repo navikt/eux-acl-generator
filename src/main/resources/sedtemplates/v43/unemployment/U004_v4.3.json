@@ -1,0 +1,114 @@
+{
+  "U004" : {
+    "EmploymentOrSelfEmploymentInformation" : {
+      "EmploymentOrSelfEmploymentInformation" : [ {
+        "EarningsDetails" : {
+          "EarningsDetail" : [ {
+            "Earnings" : {
+              "amount" : "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].inntekt[x].beloep",
+              "currency" : {
+                "value" : [ "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].inntekt[x].valuta" ]
+              }
+            },
+            "PleaseFillInFollowingIfEarningsTypeOtherPayment" : {
+              "informationAboutOtherCompensation" : "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].inntekt[x].type.annen"
+            },
+            "earningsType" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].inntekt[x].type.id" ]
+            }
+          } ]
+        },
+        "Period" : {
+          "FixedPeriod" : {
+            "endDate" : "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].periode.fastperiode.sluttdato",
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].periode.fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].periode.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].periode.aapenperiode.type" ]
+            }
+          }
+        },
+        "RequestedAdditionalDetails" : {
+          "numberDaysWorked" : "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].antallarbeidsdager",
+          "numberHoursWorked" : "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].antallarbeidstimer"
+        },
+        "periodOf" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.svar.loennsopplysninger[x].ansettelsestype" ]
+        }
+      } ]
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "ReferencePeriod" : {
+      "FixedPeriod" : {
+        "endDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.fastperiode.sluttdato",
+        "startDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.fastperiode.startdato"
+      },
+      "OpenPeriod" : {
+        "startDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.aapenperiode.startdato",
+        "typeOpenPeriod" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.anmodningsperiode.aapenperiode.type" ]
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

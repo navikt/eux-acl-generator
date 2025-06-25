@@ -1,0 +1,42 @@
+{
+  "U026" : {
+    "IndividualClaimsWhichInterestApplies" : {
+      "IndividualClaimWhichInterestApplies" : [ {
+        "Person" : {
+          "dateBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].rentebetaling.bruker.person.foedselsdato",
+          "familyName" : "$dagpenger.refusjonskrav.enkeltkrav[x].rentebetaling.bruker.person.etternavn",
+          "forename" : "$dagpenger.refusjonskrav.enkeltkrav[x].rentebetaling.bruker.person.fornavn",
+          "sex" : {
+            "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].rentebetaling.bruker.person.kjoenn" ]
+          }
+        },
+        "sequentialNumberIndividualClaim" : "$dagpenger.refusjonskrav.enkeltkrav[x].rentebetaling.loepenummer"
+      } ]
+    },
+    "InformationChargingInterest" : {
+      "TotalAmountOutstandingClaims" : {
+        "amount" : "$dagpenger.refusjonskrav.beloep.totalbeloep",
+        "currency" : {
+          "value" : [ "$dagpenger.refusjonskrav.beloep.valuta" ]
+        }
+      },
+      "dueDate" : "$dagpenger.refusjonskrav.forfallsdato",
+      "interestRate" : "$dagpenger.refusjonskrav.rentebetaling.rentesats",
+      "reimbursementRequestID" : "$dagpenger.refusjonskrav.id"
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

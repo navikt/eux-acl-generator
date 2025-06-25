@@ -1,0 +1,181 @@
+{
+  "R002" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "DeductionPossibleFrom" : {
+      "arrearsIndicator" : {
+        "value" : [ "$tilbakekreving.feilutbetaling.motregning.restanser.ermulig" ]
+      },
+      "ongoingPaymentsIndicator" : {
+        "value" : [ "$tilbakekreving.feilutbetaling.motregning.loependeutbetalinger.ermulig" ]
+      }
+    },
+    "FillInIfTypeRequestFinalOngoing" : {
+      "DeductionFromOngoingPayments" : {
+        "AmountPerUnit" : {
+          "amount" : "$tilbakekreving.feilutbetaling.motregning.loependeytelser.utbetalingperperiode.beloep",
+          "currency" : {
+            "value" : [ "$tilbakekreving.feilutbetaling.motregning.loependeytelser.utbetalingperperiode.valuta" ]
+          }
+        },
+        "PleaseFillInFollowingIfFrequencyOther" : {
+          "otherFrequency" : "$tilbakekreving.feilutbetaling.motregning.loependeytelser.hyppighet.annen"
+        },
+        "frequency" : {
+          "value" : [ "$tilbakekreving.feilutbetaling.motregning.loependeytelser.hyppighet.type" ]
+        },
+        "numberPeriodicUnits" : "$tilbakekreving.feilutbetaling.motregning.loependeytelser.antallperiodeenheter"
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "Persons" : {
+      "Person" : [ {
+        "AdditionalInformationAboutPerson" : {
+          "PleaseFillInFollowingIfStatusPersonOther" : {
+            "otherStatusPerson" : "$nav.brukere[x].tilbakekreving.status.annen"
+          },
+          "PreviousFamilyNames" : {
+            "PreviousFamilyName" : [ {
+              "previousFamilyName" : "$tilbakekreving.bruker[x].person.tidligereetternavn[x].navn"
+            } ]
+          },
+          "PreviousForenames" : {
+            "PreviousForename" : [ {
+              "previousForename" : "$tilbakekreving.bruker[x].person.tidligerefornavn[x].navn"
+            } ]
+          },
+          "currentFamilyStatus" : {
+            "value" : [ "$tilbakekreving.bruker[x].person.tilbakekrevingsivilstand.status" ]
+          },
+          "dateDeath" : "$nav.brukere[x].person.doedsdato",
+          "nationality" : {
+            "value" : [ "$nav.brukere[x].person.statsborgerskap[x].land" ]
+          },
+          "statusPerson" : {
+            "value" : [ "$nav.brukere[x].tilbakekreving.status.type" ]
+          }
+        },
+        "PersonIdentification" : {
+          "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+            "PlaceBirth" : {
+              "country" : {
+                "value" : [ "$nav.brukere[x].person.foedested.land" ]
+              },
+              "region" : "$nav.brukere[x].person.foedested.region",
+              "town" : "$nav.brukere[x].person.foedested.by"
+            },
+            "fatherFamilyNameAtBirth" : "$nav.brukere[x].far.person.etternavnvedfoedsel",
+            "forenameFather" : "$nav.brukere[x].far.person.fornavn",
+            "forenameMother" : "$nav.brukere[x].mor.person.fornavn",
+            "motherFamilyNameAtBirth" : "$nav.brukere[x].mor.person.etternavnvedfoedsel"
+          },
+          "PINPersonInEachInstitution" : {
+            "PersonalIdentificationNumber" : [ {
+              "Institution" : {
+                "institutionID" : "$nav.brukere[x].person.pin[x].institusjonsid",
+                "institutionName" : "$nav.brukere[x].person.pin[x].institusjonsnavn"
+              },
+              "country" : {
+                "value" : [ "$nav.brukere[x].person.pin[x].land" ]
+              },
+              "personalIdentificationNumber" : "$nav.brukere[x].person.pin[x].identifikator",
+              "sector" : {
+                "value" : [ "$nav.brukere[x].person.pin[x].sektor" ]
+              }
+            } ]
+          },
+          "dateBirth" : "$nav.brukere[x].person.foedselsdato",
+          "familyName" : "$nav.brukere[x].person.etternavn",
+          "familyNameAtBirth" : "$nav.brukere[x].person.etternavnvedfoedsel",
+          "forename" : "$nav.brukere[x].person.fornavn",
+          "forenameAtBirth" : "$nav.brukere[x].person.fornavnvedfoedsel",
+          "sex" : {
+            "value" : [ "$nav.brukere[x].person.kjoenn" ]
+          }
+        }
+      } ]
+    },
+    "PleaseFillInFollowingIfTypeRequestFinalArrearsYes" : {
+      "DeductionFromArrears" : {
+        "DeductionFromArrearsAmount" : {
+          "amount" : "$tilbakekreving.feilutbetaling.motregning.etterbetaling.beloep",
+          "currency" : {
+            "value" : [ "$tilbakekreving.feilutbetaling.motregning.etterbetaling.valuta" ]
+          }
+        },
+        "FillInIfOverpaymentCanDeducted" : {
+          "DetailedInformationAboutArrearsAtDisposal" : [ {
+            "Details" : {
+              "AmountPerUnit" : {
+                "amount" : "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].utbetalingperperiode.beloep",
+                "currency" : {
+                  "value" : [ "$tilbakekreving.feilutbetaling.motregning.etterbetalingers[x].utbetalingperperiode.valuta" ]
+                }
+              },
+              "PleaseFillInFollowingIfFrequencyOther" : {
+                "otherFrequency" : "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].hyppighet.annen"
+              },
+              "frequency" : {
+                "value" : [ "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].hyppighet.type" ]
+              },
+              "numberPeriodicUnits" : "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].antallperiodeenheter"
+            },
+            "startDate" : "$tilbakekreving.feilutbetaling.motregning.etterbetalinger[x].startdato"
+          } ]
+        },
+        "overpaymentCanDeductedCompletelyFromArrearsIndicator" : {
+          "value" : [ "$tilbakekreving.feilutbetaling.motregning.etterbetaling.kanmotregnesisinhelhet" ]
+        }
+      }
+    },
+    "ReplyOriginalRequest" : {
+      "PleaseFillInFollowingIfTypeRequestProvisional" : {
+        "AmountBenefits" : {
+          "AmountBenefit" : [ {
+            "AmountPerUnit" : {
+              "amount" : "$tilbakekreving.anmodning.svar.ytelsesbeloep[x].utbetalingperperiode.beloep",
+              "currency" : {
+                "value" : [ "$tilbakekreving.anmodning.svar.ytelsesbeloep[x].utbetalingperperiode.valuta" ]
+              }
+            },
+            "PleaseFillInFollowingIfFrequencyOther" : {
+              "otherFrequency" : "$tilbakekreving.anmodning.svar.ytelsesbeloep[x].hyppighet.annen"
+            },
+            "frequency" : {
+              "value" : [ "$tilbakekreving.anmodning.svar.ytelsesbeloep[x].hyppighet.type" ]
+            },
+            "numberPeriodicUnits" : "$tilbakekreving.fanmodning.svar.ytelsesbeloep[x].antallperiodeenheter"
+          } ]
+        },
+        "StartDateEntitlementBenefit" : {
+          "startDateEntitlementBenefit" : "$tilbakekreving.anmodning.svar.rettilytelse.startdato"
+        }
+      },
+      "typeRequest" : {
+        "value" : [ "$tilbakekreving.anmodning.type" ]
+      }
+    },
+    "TypeBenefit" : {
+      "PleaseFillInFollowingIfTypeBenefitOtherBenefit" : {
+        "typeOtherBenefit" : "$tilbakekreving.ytelse.annen"
+      },
+      "typeBenefit" : {
+        "value" : [ "$tilbakekreving.ytelse.type43" ]
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

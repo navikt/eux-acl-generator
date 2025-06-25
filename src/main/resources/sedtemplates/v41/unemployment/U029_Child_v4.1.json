@@ -1,0 +1,106 @@
+{
+  "U029_Child": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "IndividualClaim": {
+      "reimbursementRequestID": "$dagpenger.refusjonskrav.enkeltkrav.refusjonskravid",
+      "reimbursementContestationID": "$dagpenger.refusjonskrav.enkeltkrav.refusjonskravbestridelseid",
+      "amendedReimbursementRequestID": "$dagpenger.refusjonskrav.enkeltkrav.refusjonskravendetid",
+      "sequentialNumberIndividualClaim": "$dagpenger.refusjonskrav.enkeltkrav.loepenummer",
+      "contestedIndividualClaimID": "$dagpenger.refusjonskrav.enkeltkrav.bestridelse.id",
+      "amendedContestedIndividualClaimID": "$dagpenger.refusjonskrav.enkeltkrav.endring.id",
+      "IndividualClaimStatus": {
+        "status": {
+          "value": [
+            "$dagpenger.refusjonskrav.enkeltkrav.status.id"
+          ]
+        },
+        "PleaseFillInFollowingIfStatus6UnderDispute": {
+          "reasoning": "$dagpenger.refusjonskrav.enkeltkrav.status.omtvistet"
+        }
+      },
+      "Person": {
+        "PersonIdentification": {
+          "familyName": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.etternavn",
+          "forename": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.fornavn",
+          "dateBirth": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.foedselsdato",
+          "sex": {
+            "value": [
+              "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.kjoenn"
+            ]
+          },
+          "familyNameAtBirth": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.etternavnvedfoedsel",
+          "forenameAtBirth": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.fornavnvedfoedsel",
+          "PINPersonInEachInstitution": {
+            "PersonalIdentificationNumber": [
+              {
+                "country": {
+                  "value": [
+                    "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.pin[x].land"
+                  ]
+                },
+                "personalIdentificationNumber": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.pin[x].identifikator",
+                "sector": {
+                  "value": [
+                    "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.pin[x].sektor"
+                  ]
+                },
+                "Institution": {
+                  "institutionID": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.pin[x].institusjonsid",
+                  "institutionName": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.pin[x].institusjonsnavn"
+                }
+              }
+            ]
+          },
+          "IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+            "PlaceBirth": {
+              "town": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.foedested.by",
+              "region": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.foedested.region",
+              "country": {
+                "value": [
+                  "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.foedested.land"
+                ]
+              }
+            },
+            "fatherFamilyNameAtBirth": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.far.person.etternavnvedfoedsel",
+            "forenameFather": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.far.person.fornavn",
+            "motherFamilyNameAtBirth": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.mor.person.etternavnvedfoedsel",
+            "forenameMother": "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.mor.person.fornavn"
+          }
+        },
+        "AdditionalInformationPerson": {
+          "nationality": {
+            "value": [
+              "$dagpenger.refusjonskrav.enkeltkrav.endring.bruker.person.statsborgerskap[x].land"
+            ]
+          }
+        }
+      },
+      "InstitutionWhichCertifiedInsuranceRecord": {
+        "institutionID": "$dagpenger.refusjonskrav.enkeltkrav.endring.attestererhistorikk.institusjon.id",
+        "institutionName": "$dagpenger.refusjonskrav.enkeltkrav.endring.attestererhistorikk.institusjon.navn"
+      },
+      "WorkingPeriodsConsidered": {
+        "WorkingPeriodConsidered": [
+          {
+            "startDate": "$dagpenger.refusjonskrav.enkeltkrav.endring.arbeidsperiode[x].startdato",
+            "endDate": "$dagpenger.refusjonskrav.enkeltkrav.endring.arbeidsperiode[x].sluttdato"
+          }
+        ]
+      },
+      "ReimbursementPeriod": {
+        "startDate": "$dagpenger.refusjonskrav.enkeltkrav.endring.refusjonsperiode.startdato",
+        "endDate": "$dagpenger.refusjonskrav.enkeltkrav.endring.refusjonsperiode.sluttdato"
+      },
+      "lastPaymentDate": "$dagpenger.refusjonskrav.enkeltkrav.endring.sisteutbetalingsdato",
+      "RequestedAmountForReimbursement": {
+        "amount": "$dagpenger.refusjonskrav.enkeltkrav.endring.anmodnetrefusjonsbeloep.beloep",
+        "currency": {
+          "value": [
+            "$dagpenger.refusjonskrav.enkeltkrav.endring.anmodnetrefusjonsbeloep.valuta"
+          ]
+        }
+      }
+    }
+  }
+}

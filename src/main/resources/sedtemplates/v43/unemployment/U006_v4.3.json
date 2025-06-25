@@ -1,0 +1,151 @@
+{
+  "U006" : {
+    "FamilyMembers" : {
+      "FamilyMember" : [ {
+        "FillInFollowingIfTheFamilyMemberConcerned" : {
+          "BenefitsOrOtherEarningsInformation" : {
+            "BenefitOrOtherEarningsInformation" : [ {
+              "BenefitsOrOtherEarnings" : {
+                "amount" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].ytelserellerdagpenger[x].beloep",
+                "currency" : {
+                  "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].ytelserellerdagpenger[x].valuta" ]
+                }
+              },
+              "benefitsOrOtherEarningsDetails" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].ytelserellerdagpenger[x].opplysninger"
+            } ]
+          },
+          "otherEntitledPersonIndicator" : {
+            "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].ermedregnetienannenpersonsdagpenger" ]
+          }
+        },
+        "IdentificationFamilyMember" : {
+          "AdditionalInformationPerson" : {
+            "nationality" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.statsborgerskap[x].land" ]
+            }
+          },
+          "PersonIdentification" : {
+            "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+              "PlaceBirth" : {
+                "country" : {
+                  "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.foedested.land" ]
+                },
+                "region" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.foedested.region",
+                "town" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.foedested.by"
+              },
+              "fatherFamilyNameAtBirth" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].far.person.etternavnvedfoedsel",
+              "forenameFather" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].far.person.fornavn",
+              "forenameMother" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].mor.person.fornavn",
+              "motherFamilyNameAtBirth" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].mor.person.etternavnvedfoedsel"
+            },
+            "PINPersonInEachInstitution" : {
+              "PersonalIdentificationNumber" : [ {
+                "Institution" : {
+                  "institutionID" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.pin[x].institusjonsid",
+                  "institutionName" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.pin[x].institusjonsnavn"
+                },
+                "country" : {
+                  "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.pin[x].land" ]
+                },
+                "personalIdentificationNumber" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.pin[x].identifikator",
+                "sector" : {
+                  "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.pin[x].sektor" ]
+                }
+              } ]
+            },
+            "dateBirth" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.foedselsdato",
+            "familyName" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.etternavn",
+            "familyNameAtBirth" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.etternavnvedfoedsel",
+            "forename" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.fornavn",
+            "forenameAtBirth" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.fornavnvedfoedsel",
+            "sex" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].person.kjoenn" ]
+            }
+          }
+        },
+        "Period" : {
+          "FixedPeriod" : {
+            "endDate" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].fastperiode.sluttdato",
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].aapenperiode.type" ]
+            }
+          }
+        },
+        "PleaseFillInFollowingIfFamilyMemberChild" : {
+          "underEducationIndicator" : {
+            "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].erbarnetiutdanning" ]
+          }
+        },
+        "familyMember" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].type" ]
+        },
+        "familyMemberResidesInReceivingStateDataAvailableIndicator" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.svar.familieopplysninger.familiemedlem[x].boriutstederlandetogdatafinnes" ]
+        }
+      } ]
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

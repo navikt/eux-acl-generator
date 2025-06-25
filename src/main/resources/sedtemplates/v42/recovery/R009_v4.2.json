@@ -1,0 +1,209 @@
+{
+	"R009": {
+		"sedGVer": "$sedGVer",
+		"sedVer": "$sedVer",
+		"LocalCaseNumbers": {
+			"LocalCaseNumber": [
+				{
+					"country": {
+						"value": [
+							"$nav.eessisak[x].land"
+						]
+					},
+					"caseNumber": "$nav.eessisak[x].saksnummer",
+					"Institution": {
+						"institutionID": "$nav.eessisak[x].institusjonsid",
+						"institutionName": "$nav.eessisak[x].institusjonsnavn"
+					}
+				}
+			]
+		},
+		"Persons": {
+			"Person": [
+				{
+					"PersonIdentification": {
+						"familyName": "$nav.brukere[x].person.etternavn",
+						"forename": "$nav.brukere[x].person.fornavn",
+						"dateBirth": "$nav.brukere[x].person.foedselsdato",
+						"sex": {
+							"value": [
+								"$nav.brukere[x].person.kjoenn"
+							]
+						},
+						"familyNameAtBirth": "$nav.brukere[x].person.etternavnvedfoedsel",
+						"forenameAtBirth": "$nav.brukere[x].person.fornavnvedfoedsel",
+						"PINPersonInEachInstitution": {
+							"PersonalIdentificationNumber": [
+								{
+									"country": {
+										"value": [
+											"$nav.brukere[x].person.pin[x].land"
+										]
+									},
+									"personalIdentificationNumber": "$nav.brukere[x].person.pin[x].identifikator",
+									"sector": {
+										"value": [
+											"$nav.brukere[x].person.pin[x].sektor"
+										]
+									},
+									"Institution": {
+										"institutionID": "$nav.brukere[x].person.pin[x].institusjonsid",
+										"institutionName": "$nav.brukere[x].person.pin[x].institusjonsnavn"
+									}
+								}
+							]
+						},
+						"IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+							"PlaceBirth": {
+								"town": "$nav.brukere[x].person.foedested.by",
+								"region": "$nav.brukere[x].person.foedested.region",
+								"country": {
+									"value": [
+										"$nav.brukere[x].person.foedested.land"
+									]
+								}
+							},
+							"fatherFamilyNameAtBirth": "$nav.brukere[x].far.person.etternavnvedfoedsel",
+							"forenameFather": "$nav.brukere[x].far.person.fornavn",
+							"motherFamilyNameAtBirth": "$nav.brukere[x].mor.person.etternavnvedfoedsel",
+							"forenameMother": "$nav.brukere[x].mor.person.fornavn"
+						}
+					},
+					"AdditionalInformationAboutPerson": {
+						"statusPerson": {
+							"value": [
+                "$nav.brukere[x].tilbakekreving.status.type"
+							]
+						},
+						"PleaseFillInFollowingIfStatusPersonOther": {
+							"otherStatusPerson": "$nav.brukere[x].tilbakekreving.status.annen"
+						},
+						"nationality": {
+							"value": [
+								"$nav.brukere[x].person.statsborgerskap[x].land"
+							]
+						},
+						"PreviousFamilyNames": {
+							"PreviousFamilyName": [
+								{
+									"previousFamilyName": "$tilbakekreving.bruker[x].person.tidligereetternavn[x].navn"
+								}
+							]
+						},
+						"PreviousForenames": {
+							"PreviousForename": [
+								{
+									"previousForename": "$tilbakekreving.bruker[x].person.tidligerefornavn[x].navn"
+								}
+							]
+						},
+						"currentFamilyStatus": {
+							"value": [
+								"$tilbakekreving.bruker[x].person.tilbakekrevingsivilstand.status"
+							]
+						},
+						"dateDeath": "$nav.brukere[x].person.doedsdato"
+					}
+				}
+			]
+		},
+		"EntitlementBenefits": {
+			"entitlementBenefitsIndicator": {
+				"value": [
+					"$tilbakekreving.retttilytelser.harretttilytelser"
+				]
+			},
+			"requestHasBeenMadeWithin3MonthsPeriodIndicator": {
+				"value": [
+					"$tilbakekreving.retttilytelser.anmodning.erfremsattinnentremaaneder"
+				]
+			}
+		},
+		"FillInIfEntitlementBenefitsYes": {
+			"entitlementArrearsACorrespondingBenefitIndicator": {
+				"value": [
+					"$tilbakekreving.retttilytelser.harretttiletterbetalingfrasammenlignbareytelser"
+				]
+			},
+			"FillInIfEntitlementArrears": {
+				"PayableArrearsPeriod": {
+					"startDate": "$tilbakekreving.retttilytelser.etterbetaling.periode.startdato",
+					"endDate": "$tilbakekreving.retttilytelser.etterbetaling.periode.sluttdato"
+				},
+				"ArrearsTotalAmount": {
+					"amount": "$tilbakekreving.retttilytelser.etterbetaling.beloep",
+					"currency": {
+						"value": [
+							"$tilbakekreving.retttilytelser.etterbetaling.valuta"
+						]
+					}
+				},
+				"amountArrearsCoversFullAmountProvisionalPaymentIndicator": {
+					"value": [
+						"$tilbakekreving.retttilytelser.etterbetaling.dekkerhelebeloepet"
+					]
+				}
+			}
+		},
+		"FillInIfEntitlementArrears": {
+			"deductionPossiblePeriodicRatesFromOngoingPaymentsIndicator": {
+				"value": [
+					"$tilbakekreving.retttilytelser.harretttilmotregningiloependeutbetalinger"
+				]
+			},
+			"PleaseFillInFollowingIfDeductionYes": {
+				"TypeBenefitsFromWhichDeductionPossible": [
+					{
+						"TypeBenefitFromWhichDeductionFromOngoing": {
+							"typeBenefit": {
+								"value": [
+									"$tilbakekreving.retttilytelser.motregning.ytelse[x].type"
+								]
+							},
+							"PleaseFillInFollowingIfTypeBenefitOtherBenefit": {
+								"typeOtherBenefit": "$tilbakekreving.retttilytelser.motregning.ytelse[x].annen"
+							}
+						},
+						"institutionCompetentForDeductionFromOngoingPayment": {
+							"value": [
+								"$tilbakekreving.retttilytelser.motregning.ytelse[x].institusjon.type[x]"
+							]
+						},
+						"PeriodicAmount": {
+							"frequency": {
+								"value": [
+									"$tilbakekreving.retttilytelser.motregning.ytelse[x].hyppighet.type"
+								]
+							},
+							"PleaseFillInFollowingIfFrequencyOther": {
+								"otherFrequency": "$tilbakekreving.retttilytelser.motregning.ytelse[x].hyppighet.annen"
+							},
+							"numberPeriodicUnits": "$tilbakekreving.retttilytelser.motregning.ytelse[x].antallperiodeenheter",
+							"AmountPerUnit": {
+								"amount": "$tilbakekreving.retttilytelser.motregning.ytelse[x].utbetalingperperiode.beloep",
+								"currency": {
+									"value": [
+										"$tilbakekreving.retttilytelser.motregning.ytelse[x].utbetalingperperiode.valuta"
+									]
+								}
+							}
+						},
+						"FillInIfInstitutionCompetentFor": {
+							"OtherInstitutionsCompetentForOngoingPayment": {
+								"OtherInstitutionCompetentForOngoingPayment": [
+									{
+										"institutionID": "$tilbakekreving.retttilytelser.motregning.ytelse[x].annenkompetentinstitusjon[x].institusjonsid",
+										"institutionName": "$tilbakekreving.retttilytelser.motregning.ytelse[x].annenkompetentinstitusjon[x].institusjonsnavn"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		"AdditionalInformation": {
+			"additionalInformation": "$nav.ytterligereinformasjon"
+		}
+	}
+}

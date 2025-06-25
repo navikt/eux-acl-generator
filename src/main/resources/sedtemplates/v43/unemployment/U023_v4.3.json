@@ -1,0 +1,67 @@
+{
+  "U023" : {
+    "GeneralInformation" : {
+      "reimbursementContestationID" : "$dagpenger.refusjonskrav.bestridelse.id",
+      "reimbursementRequestID" : "$dagpenger.refusjonskrav.id"
+    },
+    "IndividualClaimsContested" : {
+      "IndividualClaimContested" : [ {
+        "ContestationType" : {
+          "NonAcceptanceIndividualClaim" : {
+            "FillInIfReasonForNonAcceptance" : {
+              "informationAboutOtherReasonOrAdditionalInformation" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.manglendeaksept.grunn.annen"
+            },
+            "reasonForNonAcceptance" : {
+              "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.manglendeaksept.grunn.type[x]" ]
+            }
+          },
+          "PartialAcceptanceIndividualClaim" : {
+            "PartialAcceptanceDueCeiling" : {
+              "AmountIntendedReimbursed" : {
+                "amount" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.tiltenkt.refusjon.beloep",
+                "currency" : {
+                  "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.tiltenkt.refusjon.valuta" ]
+                }
+              }
+            },
+            "PartialNonAcceptanceOtherReason" : {
+              "additionalInformation" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.ytterligereinformasjon"
+            },
+            "PartialNonAcceptanceReimbursementIncomplete" : {
+              "informationMissingData" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.manglendeinformasjon"
+            },
+            "reasonForPartialNonAcceptance" : {
+              "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.grunn.type[x]" ]
+            }
+          }
+        },
+        "Person" : {
+          "dateBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.foedselsdato",
+          "familyName" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.etternavn",
+          "forename" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.fornavn",
+          "sex" : {
+            "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.kjoenn" ]
+          }
+        },
+        "contestedIndividualClaimID" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.id",
+        "reimbursementContestationID" : "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravbestridelseid",
+        "reimbursementRequestID" : "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravid",
+        "sequentialNumberIndividualClaim" : "$dagpenger.refusjonskrav.enkeltkrav[x].loepenummer"
+      } ]
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

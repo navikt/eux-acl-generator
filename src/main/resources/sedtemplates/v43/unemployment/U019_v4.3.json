@@ -1,0 +1,137 @@
+{
+  "U019" : {
+    "Appointments" : {
+      "Appointment" : [ {
+        "appointmentDate" : "$dagpenger.bruker.avtale.dato"
+      } ]
+    },
+    "InformationAboutTraining" : {
+      "TrainingPeriod" : [ {
+        "FixedPeriod" : {
+          "endDate" : "$dagpenger.bruker.opplaeringsperiode[x].fastperiode.sluttdato",
+          "startDate" : "$dagpenger.bruker.opplaeringsperiode[x].fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "startDate" : "$dagpenger.bruker.opplaeringsperiode[x].aapenperiode.startdato",
+          "typeOpenPeriod" : {
+            "value" : [ "$dagpenger.bruker.opplaeringsperiode[x].aapenperiode.type" ]
+          }
+        }
+      } ]
+    },
+    "JobApplication" : {
+      "jobApplicationNumber" : "$dagpenger.bruker.jobbsoeking.jobbsoeknadsnummer"
+    },
+    "Jobs" : {
+      "Job" : [ {
+        "FixedPeriod" : {
+          "endDate" : "$dagpenger.bruker.jobbperiode[x].fastperiode.sluttdato",
+          "startDate" : "$dagpenger.bruker.jobbperiode[x].fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "startDate" : "$dagpenger.bruker.jobbperiode[x].aapenperiode.startdato",
+          "typeOpenPeriod" : {
+            "value" : [ "$dagpenger.bruker.jobbperiode[x].aapenperiode.type" ]
+          }
+        }
+      } ]
+    },
+    "JobseekerNotAvailable" : {
+      "JobseekerUnavailablePeriod" : [ {
+        "FixedPeriod" : {
+          "endDate" : "$dagpenger.bruker.utilgjengeligperiode[x].fastperiode.sluttdato",
+          "startDate" : "$dagpenger.bruker.utilgjengeligperiode[x].fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "startDate" : "$dagpenger.bruker.utilgjengeligperiode[x].aapenperiode.startdato",
+          "typeOpenPeriod" : {
+            "value" : [ "$dagpenger.bruker.utilgjengeligperiode[x].aapenperiode.type" ]
+          }
+        }
+      } ]
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "PeriodRegistration" : {
+      "FixedPeriod" : {
+        "endDate" : "$dagpenger.registreringsperiode.fastperiode.sluttdato",
+        "startDate" : "$dagpenger.registreringsperiode.fastperiode.startdato"
+      },
+      "OpenPeriod" : {
+        "startDate" : "$dagpenger.registreringsperiode.aapenperiode.startdato",
+        "typeOpenPeriod" : {
+          "value" : [ "$dagpenger.registreringsperiode.aapenperiode.type" ]
+        }
+      }
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "ReferencePeriod" : {
+      "FixedPeriod" : {
+        "endDate" : "$dagpenger.referanseperiode.fastperiode.sluttdato",
+        "startDate" : "$dagpenger.referanseperiode.fastperiode.startdato"
+      },
+      "OpenPeriod" : {
+        "startDate" : "$dagpenger.referanseperiode.aapenperiode.startdato",
+        "typeOpenPeriod" : {
+          "value" : [ "$dagpenger.referanseperiode.aapenperiode.type" ]
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "P14000" : {
+    "ChangeInPersonalCircumstances" : {
+      "ChangeInAddress" : {
+        "Address" : {
+          "buildingName" : "$nav.bruker.endringer.adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.endringer.adresse.land" ]
+          },
+          "postalCode" : "$nav.bruker.endringer.adresse.postnummer",
+          "region" : "$nav.bruker.endringer.adresse.region",
+          "street" : "$nav.bruker.endringer.adresse.gate",
+          "town" : "$nav.bruker.endringer.adresse.by"
+        },
+        "dateChangeAddress" : "$nav.bruker.endringer.adresse.startdato",
+        "thePersonHasMovedOutCountryIndicator" : {
+          "value" : [ "$nav.bruker.endringer.utvandret" ]
+        }
+      },
+      "ChangeInFamilyStatus" : {
+        "dateChange" : "$nav.bruker.endringer.sivilstand.startdato",
+        "newFamilyStatus" : {
+          "value" : [ "$nav.bruker.endringer.sivilstand.verdi" ]
+        }
+      },
+      "ChangeInGender" : {
+        "dateChangingAGender" : "$nav.bruker.endringer.kjoenn.startdato",
+        "newGender" : {
+          "value" : [ "$nav.bruker.endringer.kjoenn.verdi" ]
+        }
+      },
+      "ChangeInLivingArrangements" : {
+        "dateChange" : "$nav.bruker.endringer.livsforhold.startdato",
+        "newLivingArrangements" : {
+          "value" : [ "$nav.bruker.endringer.livsforhold.verdi" ]
+        }
+      },
+      "ChangeInNationality" : {
+        "dateChangeNationality" : "$nav.bruker.endringer.startdato",
+        "newNationality" : {
+          "value" : [ "$nav.bruker.endringer.statsborgerskap.land" ]
+        }
+      },
+      "ChangeInPersonalIdentificationNumberInformation" : {
+        "newPersonalIdentificationNumber" : "$nav.bruker.endringer.personpinendringer.nytt",
+        "oldPersonalIdentificationNumber" : "$nav.bruker.endringer.personpinendringer.gammelt"
+      },
+      "dateDeath" : "$nav.bruker.endringer.doedsdato",
+      "previousFamilyName" : "$nav.bruker.endringer.gammeltetternavn",
+      "previousForename" : "$nav.bruker.endringer.gammeltfornavn"
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "AdditionalInformationPerson" : {
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          },
+          "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+          "previousForename" : "$nav.bruker.person.tidligerefornavn"
+        },
+        "Address" : {
+          "buildingName" : "$nav.bruker.adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse.land" ]
+          },
+          "postalCode" : "$nav.bruker.adresse.postnummer",
+          "region" : "$nav.bruker.adresse.region",
+          "street" : "$nav.bruker.adresse.gate",
+          "town" : "$nav.bruker.adresse.by"
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

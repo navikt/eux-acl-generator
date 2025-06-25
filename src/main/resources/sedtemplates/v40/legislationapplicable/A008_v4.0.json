@@ -1,0 +1,141 @@
+{
+  "A008": {
+    "sedGVer": "$sedGVer",
+    "sedVer": "$sedVer",
+    "Person": {
+      "PersonIdentification": {
+        "familyName": "$nav.bruker.person.etternavn",
+        "forename": "$nav.bruker.person.fornavn",
+        "dateBirth": "$nav.bruker.person.foedselsdato",
+        "sex": {
+          "value": [
+            "$nav.bruker.person.kjoenn"
+          ]
+        },
+        "familyNameAtBirth": "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth": "$nav.bruker.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution": {
+          "PersonalIdentificationNumber": [
+            {
+              "country": {
+                "value": [
+                  "$nav.bruker.person.pin[x].land"
+                ]
+              },
+              "personalIdentificationNumber": "$nav.bruker.person.pin[x].identifikator",
+              "sector": {
+                "value": [
+                  "$nav.bruker.person.pin[x].sektor"
+                ]
+              },
+              "Institution": {
+                "institutionID": "$nav.bruker.person.pin[x].institusjonsid",
+                "institutionName": "$nav.bruker.person.pin[x].institusjonsnavn"
+              }
+            }
+          ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+          "PlaceBirth": {
+            "town": "$nav.bruker.person.foedested.by",
+            "region": "$nav.bruker.person.foedested.region",
+            "country": {
+              "value": [
+                "$nav.bruker.person.foedested.land"
+              ]
+            }
+          },
+          "fatherFamilyNameAtBirth": "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather": "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth": "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother": "$nav.bruker.mor.person.fornavn"
+        }
+      },
+      "AdditionalInformationPerson": {
+        "nationality": {
+          "value": [
+            "$nav.bruker.person.statsborgerskap[x].land"
+          ]
+        }
+      }
+    },
+    "CompetentInstitutionIfDiffersFromSending": {
+      "institutionID": "$nav.eessisak.institusjonsid",
+      "institutionName": "$nav.eessisak.institusjonsnummer"
+    },
+    "NotificationChangesInRelevantData": {
+      "Person": {
+        "familyName": "$medlemskap.endring.bruker.etternavn",
+        "forename": "$medlemskap.endring.bruker.fornavn"
+      },
+      "Address": {
+        "street": "$medlemskap.endring.adresse.gate",
+        "town": "$medlemskap.endring.adresse.by",
+        "postalCode": "$medlemskap.endring.adresse.postnummer",
+        "region": "$medlemskap.endring.adresse.region",
+        "country": {
+          "value": [
+            "$medlemskap.endring.adresse.land"
+          ]
+        }
+      },
+      "PlaceWorkInHostCountry": {
+        "companyNameVesselName": "$medlemskap.endring.arbeidssted.navn",
+        "Address": {
+          "street": "$medlemskap.endring.arbeidssted.gate",
+          "town": "$medlemskap.endring.arbeidssted.by",
+          "postalCode": "$medlemskap.endring.arbeidssted.postnummer",
+          "region": "$medlemskap.endring.arbeidssted.region",
+          "country": {
+            "value": [
+              "$medlemskap.endring.arbeidssted.land"
+            ]
+          }
+        }
+      },
+      "changeEffectiveFrom": "$medlemskap.endring.trerikraftfra",
+      "ChangeInPeriod": {
+        "periodChange": {
+          "value": [
+            "$medlemskap.endring.periode"
+          ]
+        },
+        "actualStartingDate": "$medlemskap.endring.startdato",
+        "actualEndDate": "$medlemskap.endring.sluttdato"
+      }
+    },
+    "InformationWorkingInTwoOrMoreMemberStates": {
+      "stateResidence": {
+        "value": [
+          "$medlemskap.bruker.arbeidiflereland.bosted.land"
+        ]
+      },
+      "startDateActivities": "$medlemskap.bruker.arbeidiflereland.yrkesaktivitet.startdato"
+    },
+    "PlaceWork": {
+      "PlaceWork": [
+        {
+          "companyNameVesselName": "$nav.arbeidssted[x].navn",
+          "flagStateHomeBase": "$nav.arbeidssted[x].hjemmebase",
+          "Address": {
+            "street": "$nav.arbeidssted[x].adresse.gate",
+            "buildingName": "$nav.arbeidssted[x].adresse.bygning",
+            "town": "$nav.arbeidssted[x].adresse.by",
+            "postalCode": "$nav.arbeidssted[x].adresse.postnummer",
+            "region": "$nav.arbeidssted[x].adresse.region",
+            "country": {
+              "value": [
+                "$nav.arbeidssted[x].adresse.land"
+              ]
+            }
+          },
+          "noFixedAddressInStateWorkIndicator": {
+            "value": [
+              "$nav.arbeidssted[x].erikkefastadresse"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
