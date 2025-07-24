@@ -17,4 +17,4 @@ Dette er med på å hindre at manuelle redigeringer blir overskrevet ved et uhel
 3. basisfiler -> mal
 <h3> Lage ny versjon av malene som brukes for å generere pdf</h3>
 1. Cdm filer -> uttrekk med oversettelser og div annet.
-2. mm
+
