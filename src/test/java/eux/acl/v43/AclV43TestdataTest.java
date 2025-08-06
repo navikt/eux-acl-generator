@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-import eux.acl.generator.SedType;
+import eux.acl.generator.SedTyper;
 import org.apache.commons.io.FileUtils;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -36,7 +36,7 @@ public class AclV43TestdataTest {
   @Test
   @Ignore
   public void lagerSederPopulertMedTestdataV43_A() {
-    SedType.A.forEach(s -> lagSedMedTestdata(s, "A", "legislationapplicable", 1));
+    SedTyper.A.forEach(s -> lagSedMedTestdata(s, "A", "legislationapplicable", 1));
   }
 
   @Test

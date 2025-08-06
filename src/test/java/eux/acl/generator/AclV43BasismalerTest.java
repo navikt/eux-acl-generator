@@ -37,62 +37,62 @@ public class AclV43BasismalerTest {
   @Test
 //  @Ignore
   public void malutgangspunktForV43_A() {
-    SedType.A.stream()
+    SedTyper.A.stream()
       .forEach(s -> lagUtgangspunktForV43Mal(s, "A", "legislationapplicable"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_DA() {
-    SedType.DA.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "DA", "awod"));
+    SedTyper.DA.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "DA", "awod"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_F() {
-    SedType.F.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "F", "family"));
+    SedTyper.F.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "F", "family"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_H() {
-    SedType.H.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "H", "horizontal"));
+    SedTyper.H.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "H", "horizontal"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_M() {
-    SedType.M.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "M", "miscellaneous"));
+    SedTyper.M.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "M", "miscellaneous"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_P() {
-    SedType.P.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "P", "pension"));
+    SedTyper.P.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "P", "pension"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_R() {
-    SedType.R.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "R", "recovery"));
+    SedTyper.R.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "R", "recovery"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_S() {
-    SedType.S.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "S", "sickness"));
+    SedTyper.S.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "S", "sickness"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_U() {
-    SedType.U.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "U", "unemployment"));
+    SedTyper.U.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "U", "unemployment"));
   }
 
   @Test
   @Ignore
   public void malutgangspunktForV43_X() {
-    SedType.X.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "X", "administrative"));
+    SedTyper.X.stream().forEach(s -> lagUtgangspunktForV43Mal(s, "X", "administrative"));
   }
 
   private void lagUtgangspunktForV43Mal(String sedType, String cdmSektor, String aclSector) {

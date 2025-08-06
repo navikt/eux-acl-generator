@@ -1,9 +1,13 @@
 package eux.acl.generator.facade;
 
+import eux.acl.generator.modell.CdmSedFundament;
 import eux.acl.generator.modell.CdmUttrekk;
+import eux.acl.generator.modell.CdmUttrekkFundament;
+import eux.acl.generator.modell.EnumkodeFundament;
 import eux.acl.generator.service.FilService;
+import eux.acl.generator.service.OversettelserService;
 import eux.acl.generator.service.UttrekkFraCdmMetaService;
-import eux.acl.generator.service.UttrekkFraLogiskModell;
+import eux.acl.generator.service.LogiskModellService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -15,36 +19,140 @@ import static eux.acl.generator.service.FilService.V43;
 public class CdmMetaFacade {
     private final FilService filService;
     private final UttrekkFraCdmMetaService cdmMetaService;
-    private final UttrekkFraLogiskModell logiskModellService;
+    private final LogiskModellService logiskModellService;
+    private final OversettelserService oversettelserService;
+    private final static String OVERSETTELSE_V44 = "4.4";
+    private final static String OVERSETTELSE_V43 = "4.3";
 
     public CdmMetaFacade() {
         this.filService = new FilService();
         this.cdmMetaService = new UttrekkFraCdmMetaService();
-        this.logiskModellService = new UttrekkFraLogiskModell();
+        this.logiskModellService = new LogiskModellService();
+        this.oversettelserService = new OversettelserService();
     }
 
-    public void lesCdmMetaOgLagCdmSedOgSkrivDenTilFil(String sedType, String cdmVersjon) {
+    public void trekkUtEnumsettOgSkrivTilFil(List<String> sedTyper, String cdmVersjon) {
         String lmXml = filService.lesCdmLogiskModellXmlFil(cdmVersjon);
         Map<String, String> tekstIdVsEnumtype = logiskModellService.uttrekkFraLogiskModell(lmXml);
-        Map<String, String> tekstIdVsTekst = filService.lesOversettelsesfil(cdmVersjon);
+        String oversettelser = filService.lesOversettelsesfil(cdmVersjon);
+        Map<String, String> tekstIdVsTekst = oversettelserService.lagOversettelser(oversettelser, cdmVersjon);
+        Set<String> enumtyperPrSed = new HashSet<>();
+        Set<String> enumtyper = new HashSet<>();
+        sedTyper.forEach(sedType -> {
+                    Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
+                    CdmUttrekkFundament cdmUttrekkFundament = cdmMetaService.lagCdmUttrekkFundament(
+                            cdmMetaSed, tekstIdVsTekst, tekstIdVsEnumtype);
+                    Map<String, TreeMap<Integer, EnumkodeFundament>> enumtypeVsEnumInnhold = new HashMap<>();
+                    cdmMetaService.opprettEnumtypene(enumtypeVsEnumInnhold, cdmUttrekkFundament);
+                    cdmMetaService.fyllInnEnumkodeId(enumtypeVsEnumInnhold, cdmUttrekkFundament);
+                    cdmMetaService.fyllInnEnumkodeBeskrivelse(enumtypeVsEnumInnhold, cdmUttrekkFundament);
+                    cdmMetaService.fyllInnEnumkoderMedBeskrivelser(enumtypeVsEnumInnhold);
+                    enumtypeVsEnumInnhold.forEach((enumtype, enuminnhold) -> {
+                        filService.skrivBasisKodeverkTilFil(enumtype, enuminnhold, sedType, cdmVersjon);
+                        enumtyperPrSed.add(enumtype + ": " + sedType);
+                        enumtyper.add(enumtype);
+                    });
+                }
+        );
+        filService.skrivEnumNavnTilFil(enumtyperPrSed, "enumPrSedListe.txt", cdmVersjon);
+        filService.skrivEnumNavnTilFil(enumtyper, "enumListe.txt", cdmVersjon);
+    }
 
-        Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
-        CdmUttrekk cdmUttrekk = cdmMetaService.uttrekkFraCdmMetaFil(cdmMetaSed, sedType);
-        cdmMetaService.settInnCdmStiVsEnumtype(cdmUttrekk, tekstIdVsEnumtype);
+    public void trekkUtEuSedFundamentOgSkrivTilFil(List<String> sedTyper, String cdmVersjon) {
+        String lmXml = filService.lesCdmLogiskModellXmlFil(cdmVersjon);
+        Map<String, String> tekstIdVsEnumtype = logiskModellService.uttrekkFraLogiskModell(lmXml);
+        String oversettelser = filService.lesOversettelsesfil(cdmVersjon);
+        Map<String, String> tekstIdVsTekst = oversettelserService.lagOversettelser(oversettelser, cdmVersjon);
+        sedTyper.forEach(sedType -> {
+                    Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
 
-        // lagEnumFiler - les alle SEDer - sjekk om samme verdi skal srives over -> feil hvis ikke.
+                    CdmUttrekkFundament cdmUttrekkFundament = cdmMetaService.lagCdmUttrekkFundament(
+                            cdmMetaSed, tekstIdVsTekst, tekstIdVsEnumtype);
+
+                    List<String> euSedFlattened = cdmMetaService.lagEuSed(cdmUttrekkFundament);
+
+                    // lag euSed-sti  - opprett objekt
+                    TreeMap<String, CdmSedFundament> enumtypeVsEnumInnhold = new TreeMap<>();
+                    cdmUttrekkFundament.getCdmStiVsIndeks().forEach((cdmSti, indeks) -> {
+                                //lag euSti
+                                // cdmSti -> type
+                                //
+
+                            }
+                    );
+
+
+                    CdmSedFundament cdmSedFundament = CdmSedFundament.builder()
+
+                            .build();
+//                    cdmMetaService.opprettEnumtypene(enumtypeVsEnumInnhold, cdmUttrekkFundament);
+//                    cdmMetaService.fyllInnEnumkodeId(enumtypeVsEnumInnhold, cdmUttrekkFundament);
+//                    cdmMetaService.fyllInnEnumkodeBeskrivelse(enumtypeVsEnumInnhold, cdmUttrekkFundament);
+//                    enumtypeVsEnumInnhold.forEach((enumtype, enuminnhold) -> {
+//                        filService.skrivBasisKodeverkTilFil(enumtype, enuminnhold, sedType, cdmVersjon);
+//                    });
+                }
+        );
+
+        // 3: Uttrekk fra CDM
+
+        // lagEnumFiler -
+        // Sett sammen til basis for ACL,
+        // Pdf
+        // openAPI -
+        // objekter(fjern 'nav' og 'familie')?
+        //
+        // les alle SEDer - sjekk om samme verdi skal srives over -> feil hvis ikke.
         // cdmStiTilEnum vs enum[#].verdi
         // hva med ledetekster?
         // enumNavn vs enumEuVerdiVsTekst
 
-        List<String> cdmSedFlattened =  cdmMetaService.lagCdmSed(cdmUttrekk);
-        filService.skrivCdmSedTilFil(cdmSedFlattened, sedType, cdmVersjon);
+//        cdmMetaService.lagCdmStiVsEnumtype(cdmUttrekk, tekstIdVsEnumtype);
+//        filService.skrivCdmSedTilFil(cdmSedFlattened, sedType, cdmVersjon);
+    }
+
+
+    public void lesCdmMetaOgLagCdmSedOgSkrivDenTilFil(String sedType, String cdmVersjon) {
+        // 1: Uttrekk fra logisk modell
+        String lmXml = filService.lesCdmLogiskModellXmlFil(cdmVersjon);
+        Map<String, String> tekstIdVsEnumtype = logiskModellService.uttrekkFraLogiskModell(lmXml);
+        // 2: Uttrekk fra oversettelsene
+        String oversettelser = filService.lesOversettelsesfil(cdmVersjon);
+        Map<String, String> tekstIdVsTekst = oversettelserService.lagOversettelser(oversettelser, cdmVersjon);
+        // 3: Uttrekk fra CDM
+        Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
+        CdmUttrekk cdmUttrekk = cdmMetaService.uttrekkFraCdmMetaSed(cdmMetaSed);
+
+        CdmUttrekkFundament cdmUttrekkBehandlet = CdmUttrekkFundament.builder()
+                .cdmStiVsMalTagnavn(cdmUttrekk.getCdmStiVsMalTagnavn())
+                .cdmStiVsTagtype(cdmUttrekk.getCdmStiVsTagtype())
+                .cdmStiVsIndeks(cdmUttrekk.getCdmStiVsIndeks())
+                .cdmStiVsLedetekst(cdmMetaService.lagCdmStiVsLedetekst(cdmUttrekk, tekstIdVsTekst))
+                .cdmStiVsEnumtype(cdmMetaService.lagCdmStiVsEnumtype(cdmUttrekk, tekstIdVsEnumtype))
+                .cdmStiVsEnumkodeId(cdmUttrekk.getCdmStiVsEnumkodeId())
+                .cdmStiVsEnumkodeTekst(cdmMetaService.lagCdmStiVsEnumkodeTekst(cdmUttrekk, tekstIdVsTekst))
+                .build();
+
+        // lagEnumFiler -
+        // Sett sammen til basis for ACL,
+        // Pdf
+        // openAPI -
+        // objekter(fjern 'nav' og 'familie')?
+        //
+        // les alle SEDer - sjekk om samme verdi skal srives over -> feil hvis ikke.
+        // cdmStiTilEnum vs enum[#].verdi
+        // hva med ledetekster?
+        // enumNavn vs enumEuVerdiVsTekst
+
+//        List<String> cdmSedFlattened = cdmMetaService.lagEuSed(cdmUttrekkFundament);
+        cdmMetaService.lagCdmStiVsEnumtype(cdmUttrekk, tekstIdVsEnumtype);
+//        filService.skrivCdmSedTilFil(cdmSedFlattened, sedType, cdmVersjon);
     }
 
     public void lesAclMalOgSkrivDenTilFil(String sedType, String cdmVersjon) {
         Map<String, Object> aclMal = filService.lesAclMal(sedType, cdmVersjon);
         List<String> cdmStierVsNavStierListe = aclMal.keySet().stream()
-                .filter(k-> !k.contains("sedGVer") && !k.contains("sedVer"))
+                .filter(k -> !k.contains("sedGVer") && !k.contains("sedVer"))
                 .map(k -> k + ": " + aclMal.get(k))
                 .toList();
         filService.skrivAclSedTilFil(cdmStierVsNavStierListe, sedType, cdmVersjon);
@@ -85,7 +193,7 @@ public class CdmMetaFacade {
             }
         });
         filService.skrivCdmEndringerTilFil(uendredeStierListe, sedType, cdmNyVersjon, FilService.FIL_UENDREDE_STIER);
-        filService.skrivCdmEndringerTilFil( nyeStierListe, sedType, cdmNyVersjon, FilService.FIL_NYE_STIER);
+        filService.skrivCdmEndringerTilFil(nyeStierListe, sedType, cdmNyVersjon, FilService.FIL_NYE_STIER);
         filService.skrivCdmEndringerTilFil(utgaatteStierListe, sedType, cdmNyVersjon, FilService.FIL_UTGAATTE_STIER);
     }
 
@@ -97,7 +205,7 @@ public class CdmMetaFacade {
         }
         Map<String, String> aclSedStiVsNavSedSti = new HashMap<>();
         aclMalListe.forEach(l -> {
-            String[] linje = l.split(": ") ;
+            String[] linje = l.split(": ");
             aclSedStiVsNavSedSti.put(linje[0].trim(), linje[1].trim());
         });
         List<String> aclUtgaatteStier = new ArrayList<>();
@@ -126,14 +234,14 @@ public class CdmMetaFacade {
         List<String> aclMalerMed2Kolon = aclMaler.stream()
                 .map(l -> l.replaceFirst("\\.", ":"))
                 .toList();
-        filService.skrivAclMalerTilFil(aclMalerMed2Kolon, "F", "alle.txt", V43);
+        filService.skrivAclMalerTilFil(aclMalerMed2Kolon, "H", "alle.txt", V43);
     }
 
     public void lagEiFilMedUnikeNyeCdmStier(List<String> sedTyper, String cdmVersjon, String filnavn) {
         List<String> altNyttPrSedType = new ArrayList<>();
-                sedTyper.forEach(sedType ->
-                        altNyttPrSedType.addAll(filService.lesNyeStierFraTarget(sedType, cdmVersjon)));
-        List<String>  nye = altNyttPrSedType.stream()
+        sedTyper.forEach(sedType ->
+                altNyttPrSedType.addAll(filService.lesNyeStierFraTarget(sedType, cdmVersjon)));
+        List<String> nye = altNyttPrSedType.stream()
                 .map(s -> StringUtils.substringAfter(s, ".")).toList();
         List<String> uniktNytt = new HashSet<>(nye).stream().sorted().toList();
 
@@ -143,10 +251,10 @@ public class CdmMetaFacade {
     public void lagEiFilMedUnikeUtgaatteAclStier(List<String> sedTyper, String cdmVersjon, String filnavn) {
         List<String> utgaattPrSedType = new ArrayList<>();
         sedTyper.forEach(sedType -> {
-            List<String>  utgaatteStierAcl = filService.lesUtgaatteStierFraTarget(sedType, cdmVersjon);
+            List<String> utgaatteStierAcl = filService.lesUtgaatteStierFraTarget(sedType, cdmVersjon);
             utgaattPrSedType.addAll(utgaatteStierAcl);
         });
-        List<String>  nye = utgaattPrSedType.stream()
+        List<String> nye = utgaattPrSedType.stream()
                 .map(s -> StringUtils.substringAfter(s, ".")).toList();
         List<String> uniktNytt = new HashSet<>(nye).stream().sorted().toList();
 

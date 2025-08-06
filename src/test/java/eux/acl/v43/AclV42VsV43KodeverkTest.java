@@ -1,7 +1,7 @@
 package eux.acl.v43;
 
 import com.github.wnameless.json.flattener.JsonFlattener;
-import eux.acl.generator.SedType;
+import eux.acl.generator.SedTyper;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Ignore;
@@ -13,7 +13,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
 
-import static eux.acl.v43.ACLv43Test.*;
 import static eux.acl.v43.AclV43BasismalerTest.MAPPE_ACLv43_MELLOMBELS;
 import static eux.acl.v43.AclV43TestdataTest.MAPPE_CDM_V42_META;
 import static eux.acl.v43.AclV43TestdataTest.MAPPE_CDM_V43_META;
@@ -31,7 +30,7 @@ public class AclV42VsV43KodeverkTest {
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_A() {
-      for (String s : SedType.A) {
+      for (String s : SedTyper.A) {
           sammenlikneCdmKodeverk(s, "A");
       }
   }
@@ -39,61 +38,61 @@ public class AclV42VsV43KodeverkTest {
   @Test
   @Disabled
   public void sammenliknerV42_DA() {
-    SedType.DA.stream().forEach(s -> sammenlikneCdmKodeverk(s, "DA"));
+    SedTyper.DA.stream().forEach(s -> sammenlikneCdmKodeverk(s, "DA"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_F() {
-    SedType.F.stream().forEach(s -> sammenlikneCdmKodeverk(s, "F"));
+    SedTyper.F.stream().forEach(s -> sammenlikneCdmKodeverk(s, "F"));
   }
 
   @Test
   @Ignore
   public void sammenliknerCdmKodeverk_H() {
-    SedType.H.stream().forEach(s -> sammenlikneCdmKodeverk(s, "H"));
+    SedTyper.H.stream().forEach(s -> sammenlikneCdmKodeverk(s, "H"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_M() {
-    SedType.M.stream().forEach(s -> sammenlikneCdmKodeverk(s, "M"));
+    SedTyper.M.stream().forEach(s -> sammenlikneCdmKodeverk(s, "M"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_P() {
-    SedType.P.stream().forEach(s -> sammenlikneCdmKodeverk(s, "P"));
+    SedTyper.P.stream().forEach(s -> sammenlikneCdmKodeverk(s, "P"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_P3000() {
-    SedType.P3000.stream().forEach(s -> sammenlikneCdmKodeverk(s, "P"));
+    SedTyper.P3000.stream().forEach(s -> sammenlikneCdmKodeverk(s, "P"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_R() {
-    SedType.R.stream().forEach(s -> sammenlikneCdmKodeverk(s, "R"));
+    SedTyper.R.stream().forEach(s -> sammenlikneCdmKodeverk(s, "R"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_S() {
-    SedType.S.stream().forEach(s -> sammenlikneCdmKodeverk(s, "S"));
+    SedTyper.S.stream().forEach(s -> sammenlikneCdmKodeverk(s, "S"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_U() {
-    SedType.U.stream().forEach(s -> sammenlikneCdmKodeverk(s, "U"));
+    SedTyper.U.stream().forEach(s -> sammenlikneCdmKodeverk(s, "U"));
   }
 
   @Test
   @Disabled
   public void sammenliknerCdmKodeverk_X() {
-    SedType.X.stream().forEach(s -> sammenlikneCdmKodeverk(s, "X"));
+    SedTyper.X.stream().forEach(s -> sammenlikneCdmKodeverk(s, "X"));
   }
 
   private void sammenlikneCdmKodeverk(String sedType, String cdmSektor) {

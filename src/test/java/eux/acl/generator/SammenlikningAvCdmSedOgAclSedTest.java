@@ -49,11 +49,55 @@ public class SammenlikningAvCdmSedOgAclSedTest {
         return sedtyper;
     }
 
+    /**
+     * Trekker ut enum-er fra cdm-meta-filer og lager ei fil pr unike enum med info som seinere kan brukes til å
+     * generere kodeverksfiler.
+     * Genererer ei fil om viser sedtype -> enum-navn
+     * Genererer ei fil med unike enum-er
+     *
+     */
+    @Test
+    public void enum_lagFundament_v44() {
+        CdmMetaFacade aclMalFacade = new CdmMetaFacade();
+        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_F_H_S_U(), V44);
+    }
+
+    /**
+     * euSED-sti til: (pdf-generator)
+     * -> type: enum/tekst/..
+     * -> ledetekst
+     * -> indeks
+     * ->
+     *
+     */
+    @Test
+    public void euSed_lagFundament_v44_ikkeACL  () {
+        CdmMetaFacade aclMalFacade = new CdmMetaFacade();
+                aclMalFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_F, V44);
+    }
+
+
     @Test
     public void enSed_hentUttrekkFraCdmOgLagCdmSedOgSkrivTilFil_v44() {
         CdmMetaFacade aclMalFacade = new CdmMetaFacade();
         List.of("F001").forEach(sedType -> aclMalFacade.lesCdmMetaOgLagCdmSedOgSkrivDenTilFil(sedType, V44));
     }
+
+
+
+
+    /**
+     * Genererer SEDer basert på CDMen. Sammenlikner dem med eksisterende ACL-SEDer.
+     * Hvis disse er like antar vi at koden som gerererer SEDer basert på CDMen er korrekt.
+     * Vi kan da - i neste runde - bruke denne koden til å generere de nye SEDene - basert på ny versjon av CDMen.
+     */
+    @Test
+    public void aclSed_lesSedMalerOgSkrivTilFil_v43() {
+        CdmMetaFacade aclMalFacade = new CdmMetaFacade();
+        SEDTYPER_F_H_S_U().forEach(sedType -> aclMalFacade.lesAclMalOgSkrivDenTilFil(sedType, V43));
+    }
+
+
 
     @Test
     public void enSed_hentUttrekkFraCdmOgLagCdmSedOgSkrivTilFil_v43() {
@@ -73,11 +117,7 @@ public class SammenlikningAvCdmSedOgAclSedTest {
         SEDTYPER_F_H_S_U().forEach(sedType -> aclMalFacade.lesCdmMetaOgLagCdmSedOgSkrivDenTilFil(sedType, V43));
     }
 
-    @Test
-    public void aclSed_lesSedMalerOgSkrivTilFil_v43() {
-        CdmMetaFacade aclMalFacade = new CdmMetaFacade();
-        SEDTYPER_F_H_S_U().forEach(sedType -> aclMalFacade.lesAclMalOgSkrivDenTilFil(sedType, V43));
-    }
+
 
     @Test
     public void sammenlikneSammeVersjonerAvAclSedMedCdmSed_v43() {
@@ -89,7 +129,7 @@ public class SammenlikningAvCdmSedOgAclSedTest {
      * Lager CDM-SED-maler for v4.4 - brukes som grunnlag for å sammenlikne CDM v4.3 og CDM v4.4
      */
 
-    @Test
+    @Test // OK
     public void cdmSed_hentUttrekkLagCdmSedOgSkrivTilFil_v44() {
         CdmMetaFacade aclMalFacade = new CdmMetaFacade();
         SEDTYPER_F_H_S_U().forEach(sedType -> aclMalFacade.lesCdmMetaOgLagCdmSedOgSkrivDenTilFil(sedType, V44));
@@ -120,7 +160,7 @@ public class SammenlikningAvCdmSedOgAclSedTest {
     @Test
     public void alleAclSedBasisMalerTilSammeFil_kolon_etter_sedtype() {
         CdmMetaFacade aclMalFacade = new CdmMetaFacade();
-        aclMalFacade.skrivBasisForNyeAclMalerTilSammeFil(SEDTYPER_F, V44, V44);
+        aclMalFacade.skrivBasisForNyeAclMalerTilSammeFil(SEDTYPER_H, V44, V44);
     }
 
     /**

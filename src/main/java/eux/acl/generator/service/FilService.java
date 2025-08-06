@@ -1,16 +1,16 @@
 package eux.acl.generator.service;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.github.wnameless.json.flattener.JsonFlattener;
+import eux.acl.generator.modell.EnumkodeFundament;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -21,6 +21,7 @@ public class FilService {
     public static final String MAPPE_TARGET_CDM_SED = "target/cdmSed";
     public static final String MAPPE_TARGET_CDM_DIFF = "target/cdmDiff";
     public static final String MAPPE_TARGET_ACL_SED = "target/aclMaler";
+    public static final String MAPPE_TARGET_KODEVERK_BASIS = "target/kodeverkFundament";
     public static final String MAPPE_TARGET_ACL_DIFF = "target/aclDiff";
     public static final String MAPPE_CDM_META = "src/main/resources/input/cdm-meta";
     public static final String MAPPE_CDM_LOGISK_MODELL = "src/main/resources/input/cdm-logisk-modell";
@@ -85,8 +86,8 @@ public class FilService {
                 throw new RuntimeException("Sedtype mismatch. " + sedType + " vs " + cdmMetaSedType);
             }
             if (!cdmVersjon.equals(cdmMetaSedGVer + "." + cdmMetaSedVer)) {
-                log.error("Cdmversjon mismatch. Oppgitt versjon={}, Cdminnhold versjon={} ", sedType, cdmMetaSedType);
-                throw new RuntimeException("Cdmversjon mismatch. " + cdmVersjon + " vs " + "v" + cdmMetaSedGVer + cdmMetaSedVer);
+                log.error("Cdmversjon mismatch. Oppgitt versjon={}, Cdm-innhold versjon={} ", sedType, cdmMetaSedType);
+                throw new RuntimeException("Cdm-versjon mismatch. " + cdmVersjon + " vs " + "v" + cdmMetaSedGVer + cdmMetaSedVer);
             }
             return cdmMalFlattened;
         } catch (IOException e) {
@@ -196,6 +197,35 @@ public class FilService {
         }
     }
 
+    public void skrivBasisKodeverkTilFil(String enumtype
+            , TreeMap<Integer, EnumkodeFundament> enumInnhold
+            , String sedType
+            , String cdmVersjon) {
+        String kodeverksfilJson = new JsonMapper().convertValue(enumInnhold, JsonNode.class).toPrettyString();
+        String sektor = StringUtils.splitByCharacterType(sedType)[0];
+        String fil = sektor + "/" + enumtype + ".json";
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filnavnSti = MAPPE_TARGET_KODEVERK_BASIS + "/" + cdmVersjonTilpasset + "/" + fil;
+        try {
+            FileUtils.writeStringToFile(new File(filnavnSti), kodeverksfilJson, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
+            //            throw new RuntimeException(e);
+        }
+    }
+
+    public void skrivEnumNavnTilFil(Set<String> enumnavn, String filnavn, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filnavnSti = MAPPE_TARGET_KODEVERK_BASIS + "/" + cdmVersjonTilpasset + "_" + filnavn;
+        String cdmSedStierFlattened = StringUtils.join(enumnavn.stream().sorted().toList(), "\n");
+        try {
+            FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
+            //            throw new RuntimeException(e);
+        }
+    }
+
     public void skrivNyeUnikeStierTilFil(List<String> unikeNyeCdmStier, String filnavn, String cdmVersjonNy) {
         String cdmVersjonTilpasset = "v" + cdmVersjonNy.replace(".", "");
         String filnavnSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + filnavn;
@@ -264,22 +294,12 @@ public class FilService {
         return null;
     }
 
-    public Map<String, String> lesOversettelsesfil(String cdmVersjon) {
+    public String lesOversettelsesfil(String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filsti = MAPPE_OVERSETTELSER + "/" + cdmVersjonTilpasset + "/" + FIL_OVERSETTELSER;
         Map<String, String> tekstIdVsTekst = new HashMap<>();
         try {
-            String oversettelser = FileUtils.readFileToString(new File(filsti), UTF_8);
-            List<String> oversatteLinjer = Arrays.asList(oversettelser.split("\n"));
-            oversatteLinjer.forEach(line -> {
-                        if (line.contains("\"" + cdmVersjon)) {
-                            String tekstId = line.split("_")[1];
-                            String tekst = line.split(":")[1].replace("\"", "").trim();
-                            tekstIdVsTekst.put(tekstId, tekst);
-                        }
-                    }
-            );
-            return tekstIdVsTekst;
+            return FileUtils.readFileToString(new File(filsti), UTF_8);
         } catch (IOException e) {
             log.error("Fant ikke fil med oversettelser. fil={}", filsti);
             //            throw new RuntimeException(e);
