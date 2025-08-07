@@ -10,7 +10,7 @@ import java.util.Map;
 @Builder
 @Setter
 @Getter
-public class CdmUttrekkFundament {
+public class UttrekkFundament {
 
     private Map<String, String> cdmStiVsMalTagnavn;
     private Map<String, String> cdmStiVsTagtype;

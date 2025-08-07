@@ -1,9 +1,12 @@
 package eux.acl.generator.service;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.github.wnameless.json.flattener.JsonFlattener;
 import eux.acl.generator.modell.EnumkodeFundament;
+import eux.acl.generator.modell.EuSedFundament;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -18,7 +21,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class FilService {
     public static final String V43 = "4.3";
     public static final String V44 = "4.4";
-    public static final String MAPPE_TARGET_CDM_SED = "target/cdmSed";
+    public static final String MAPPE_TARGET_CDM_SED = "target/cdmEuSed";
     public static final String MAPPE_TARGET_CDM_DIFF = "target/cdmDiff";
     public static final String MAPPE_TARGET_ACL_SED = "target/aclMaler";
     public static final String MAPPE_TARGET_KODEVERK_BASIS = "target/kodeverkFundament";
@@ -60,8 +63,8 @@ public class FilService {
             , "P3000_NO", "P3000_PL", "P3000_PT", "P3000_RO", "P3000_SE", "P3000_SI", "P3000_SK"
             , "P3000_UK");
 
-    public static final List<String> SEDTYPER_R = List.of("R001", "R002", "R003", "R004", "R005", "R006"
-            , "R008", "R009");
+    public static final List<String> SEDTYPER_R = List.of("R001", "R002",
+            "R003", "R004", "R005", "R006", "R008", "R009");
     public static final List<String> SEDTYPER_S = List.of("S001", "S003", "S005", "S040"
             , "S041", "S044", "S045", "S046", "S047", "S048", "S055", "S056", "S057");
     public static final List<String> SEDTYPER_U = List.of("U001", "U001CB", "U002", "U003"
@@ -90,6 +93,8 @@ public class FilService {
                 throw new RuntimeException("Cdm-versjon mismatch. " + cdmVersjon + " vs " + "v" + cdmMetaSedGVer + cdmMetaSedVer);
             }
             return cdmMalFlattened;
+        } catch (JsonParseException e) {
+            log.error("Json-feil i fil. fil={}, cdmVersjon={}", cdmMetaSedFilSti, cdmVersjon);
         } catch (IOException e) {
             log.error("Fil mangler. fil={}, cdmVersjon={}", cdmMetaSedFilSti, cdmVersjon);
 //            throw new RuntimeException(e);
@@ -97,16 +102,18 @@ public class FilService {
         return null;
     }
 
-    public void skrivCdmSedTilFil(List<String> cdmSedFlattened, String sedType, String cdmVersjon) {
-        if (cdmSedFlattened == null) {
+    public void skrivEuSedFundamentTilFil(TreeMap<String, EuSedFundament> euSedFundament, String sedType, String cdmVersjon) {
+        if (euSedFundament == null) {
             return;
         }
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String cdmSedFilSti = MAPPE_TARGET_CDM_SED + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".txt";
-        String cdmSedStierFlattened = StringUtils.join(cdmSedFlattened, "\n");
+        String cdmSedFilSti = MAPPE_TARGET_CDM_SED + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".json";
         try {
-            FileUtils.writeStringToFile(new File(cdmSedFilSti), cdmSedStierFlattened, "UTF-8");
+            String euSedJson = new JsonMapper().convertValue(euSedFundament, JsonNode.class).toPrettyString();
+            FileUtils.writeStringToFile(new File(cdmSedFilSti), euSedJson, "UTF-8");
+        } catch (JsonProcessingException e) {
+            log.error("kunne ikke konvertere euSedFundament til Json. sedType={} ", sedType);
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", cdmSedFilSti);
             //            throw new RuntimeException(e);
@@ -172,7 +179,7 @@ public class FilService {
         return null;
     }
 
-    public void skrivCdmEndringerTilFil(List<String> cdmSedStierListe, String sedType, String cdmVersjonNy, String filnavn) {
+    public void skrivDiffTilFil(List<String> cdmSedStierListe, String sedType, String cdmVersjonNy, String filnavn) {
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjonNy.replace(".", "");
         String filnavnSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + "/" + filnavn;

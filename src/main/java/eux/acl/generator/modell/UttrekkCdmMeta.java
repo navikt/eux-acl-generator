@@ -11,7 +11,7 @@ import java.util.Map;
 @Setter
 @Getter
 @NoArgsConstructor
-public class CdmUttrekk {
+public class UttrekkCdmMeta {
 
     private Map<String, String> cdmStiVsMalTagnavn = new HashMap<>();
     private Map<String, String> cdmStiVsTagtype = new HashMap<>();

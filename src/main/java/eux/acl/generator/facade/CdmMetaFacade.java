@@ -1,9 +1,6 @@
 package eux.acl.generator.facade;
 
-import eux.acl.generator.modell.CdmSedFundament;
-import eux.acl.generator.modell.CdmUttrekk;
-import eux.acl.generator.modell.CdmUttrekkFundament;
-import eux.acl.generator.modell.EnumkodeFundament;
+import eux.acl.generator.modell.*;
 import eux.acl.generator.service.FilService;
 import eux.acl.generator.service.OversettelserService;
 import eux.acl.generator.service.UttrekkFraCdmMetaService;
@@ -40,12 +37,12 @@ public class CdmMetaFacade {
         Set<String> enumtyper = new HashSet<>();
         sedTyper.forEach(sedType -> {
                     Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
-                    CdmUttrekkFundament cdmUttrekkFundament = cdmMetaService.lagCdmUttrekkFundament(
+                    UttrekkFundament uttrekkFundament = cdmMetaService.lagCdmUttrekkFundament(
                             cdmMetaSed, tekstIdVsTekst, tekstIdVsEnumtype);
                     Map<String, TreeMap<Integer, EnumkodeFundament>> enumtypeVsEnumInnhold = new HashMap<>();
-                    cdmMetaService.opprettEnumtypene(enumtypeVsEnumInnhold, cdmUttrekkFundament);
-                    cdmMetaService.fyllInnEnumkodeId(enumtypeVsEnumInnhold, cdmUttrekkFundament);
-                    cdmMetaService.fyllInnEnumkodeBeskrivelse(enumtypeVsEnumInnhold, cdmUttrekkFundament);
+                    cdmMetaService.opprettEnumtypene(enumtypeVsEnumInnhold, uttrekkFundament);
+                    cdmMetaService.fyllInnEnumkodeId(enumtypeVsEnumInnhold, uttrekkFundament);
+                    cdmMetaService.fyllInnEnumkodeBeskrivelse(enumtypeVsEnumInnhold, uttrekkFundament);
                     cdmMetaService.fyllInnEnumkoderMedBeskrivelser(enumtypeVsEnumInnhold);
                     enumtypeVsEnumInnhold.forEach((enumtype, enuminnhold) -> {
                         filService.skrivBasisKodeverkTilFil(enumtype, enuminnhold, sedType, cdmVersjon);
@@ -65,90 +62,88 @@ public class CdmMetaFacade {
         Map<String, String> tekstIdVsTekst = oversettelserService.lagOversettelser(oversettelser, cdmVersjon);
         sedTyper.forEach(sedType -> {
                     Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
-
-                    CdmUttrekkFundament cdmUttrekkFundament = cdmMetaService.lagCdmUttrekkFundament(
-                            cdmMetaSed, tekstIdVsTekst, tekstIdVsEnumtype);
-
-                    List<String> euSedFlattened = cdmMetaService.lagEuSed(cdmUttrekkFundament);
-
-                    // lag euSed-sti  - opprett objekt
-                    TreeMap<String, CdmSedFundament> enumtypeVsEnumInnhold = new TreeMap<>();
-                    cdmUttrekkFundament.getCdmStiVsIndeks().forEach((cdmSti, indeks) -> {
-                                //lag euSti
-                                // cdmSti -> type
-                                //
-
-                            }
-                    );
-
-
-                    CdmSedFundament cdmSedFundament = CdmSedFundament.builder()
-
-                            .build();
-//                    cdmMetaService.opprettEnumtypene(enumtypeVsEnumInnhold, cdmUttrekkFundament);
-//                    cdmMetaService.fyllInnEnumkodeId(enumtypeVsEnumInnhold, cdmUttrekkFundament);
-//                    cdmMetaService.fyllInnEnumkodeBeskrivelse(enumtypeVsEnumInnhold, cdmUttrekkFundament);
-//                    enumtypeVsEnumInnhold.forEach((enumtype, enuminnhold) -> {
-//                        filService.skrivBasisKodeverkTilFil(enumtype, enuminnhold, sedType, cdmVersjon);
-//                    });
+                    UttrekkFundament uttrekkFundament = cdmMetaService.lagCdmUttrekkFundament(cdmMetaSed, tekstIdVsTekst, tekstIdVsEnumtype);
+                    TreeMap<String, EuSedFundament> euSedFundament = cdmMetaService.lagEuSedFundament(uttrekkFundament);
+                    filService.skrivEuSedFundamentTilFil(euSedFundament, sedType, cdmVersjon);
                 }
         );
-
-        // 3: Uttrekk fra CDM
-
-        // lagEnumFiler -
-        // Sett sammen til basis for ACL,
-        // Pdf
-        // openAPI -
-        // objekter(fjern 'nav' og 'familie')?
-        //
-        // les alle SEDer - sjekk om samme verdi skal srives over -> feil hvis ikke.
-        // cdmStiTilEnum vs enum[#].verdi
-        // hva med ledetekster?
-        // enumNavn vs enumEuVerdiVsTekst
-
-//        cdmMetaService.lagCdmStiVsEnumtype(cdmUttrekk, tekstIdVsEnumtype);
-//        filService.skrivCdmSedTilFil(cdmSedFlattened, sedType, cdmVersjon);
     }
 
-
-    public void lesCdmMetaOgLagCdmSedOgSkrivDenTilFil(String sedType, String cdmVersjon) {
-        // 1: Uttrekk fra logisk modell
-        String lmXml = filService.lesCdmLogiskModellXmlFil(cdmVersjon);
-        Map<String, String> tekstIdVsEnumtype = logiskModellService.uttrekkFraLogiskModell(lmXml);
-        // 2: Uttrekk fra oversettelsene
-        String oversettelser = filService.lesOversettelsesfil(cdmVersjon);
-        Map<String, String> tekstIdVsTekst = oversettelserService.lagOversettelser(oversettelser, cdmVersjon);
-        // 3: Uttrekk fra CDM
+    public List<String> lagEuSedFraCdmMeta(String sedType, String cdmVersjon) {
         Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
-        CdmUttrekk cdmUttrekk = cdmMetaService.uttrekkFraCdmMetaSed(cdmMetaSed);
-
-        CdmUttrekkFundament cdmUttrekkBehandlet = CdmUttrekkFundament.builder()
-                .cdmStiVsMalTagnavn(cdmUttrekk.getCdmStiVsMalTagnavn())
-                .cdmStiVsTagtype(cdmUttrekk.getCdmStiVsTagtype())
-                .cdmStiVsIndeks(cdmUttrekk.getCdmStiVsIndeks())
-                .cdmStiVsLedetekst(cdmMetaService.lagCdmStiVsLedetekst(cdmUttrekk, tekstIdVsTekst))
-                .cdmStiVsEnumtype(cdmMetaService.lagCdmStiVsEnumtype(cdmUttrekk, tekstIdVsEnumtype))
-                .cdmStiVsEnumkodeId(cdmUttrekk.getCdmStiVsEnumkodeId())
-                .cdmStiVsEnumkodeTekst(cdmMetaService.lagCdmStiVsEnumkodeTekst(cdmUttrekk, tekstIdVsTekst))
-                .build();
-
-        // lagEnumFiler -
-        // Sett sammen til basis for ACL,
-        // Pdf
-        // openAPI -
-        // objekter(fjern 'nav' og 'familie')?
-        //
-        // les alle SEDer - sjekk om samme verdi skal srives over -> feil hvis ikke.
-        // cdmStiTilEnum vs enum[#].verdi
-        // hva med ledetekster?
-        // enumNavn vs enumEuVerdiVsTekst
-
-//        List<String> cdmSedFlattened = cdmMetaService.lagEuSed(cdmUttrekkFundament);
-        cdmMetaService.lagCdmStiVsEnumtype(cdmUttrekk, tekstIdVsEnumtype);
-//        filService.skrivCdmSedTilFil(cdmSedFlattened, sedType, cdmVersjon);
+        UttrekkCdmMeta uttrekkCdmMeta = cdmMetaService.lagUttrekkFraCdmMeta(cdmMetaSed);
+        return cdmMetaService.lagEuSedFraCdm(uttrekkCdmMeta);
     }
 
+    public List<String> lagEuSedFraAclMal(String sedType, String cdmVersjon) {
+        Map<String, Object> aclMal = filService.lesAclMal(sedType, cdmVersjon);
+        return aclMal.keySet().stream()
+                .filter(k -> !k.contains("sedGVer") && !k.contains("sedVer"))
+                .sorted().toList();
+    }
+
+    public void sammenlikneEuSedFraCdmMedEuSedFraFraAcl(String sedType, String cdmVersjon) {
+        var cdmSedListe = lagEuSedFraCdmMeta(sedType, cdmVersjon);
+        var aclSedListe = lagEuSedFraAclMal(sedType, cdmVersjon);
+        for (int nr = 0; nr < aclSedListe.size(); nr++) {
+            if (!aclSedListe.get(nr).equals(cdmSedListe.get(nr))) {
+                log.error(sedType + ": mismatch. \nAcl={}\nCdm={}", aclSedListe.get(nr), cdmSedListe.get(nr));
+                return;
+            }
+        }
+        if (cdmSedListe.size() != aclSedListe.size()) {
+            log.error(sedType + ": mismatch. Ulikt linjeantall. Acl={}, Cdm={}"
+                    , aclSedListe.size(), cdmSedListe.size());
+        } else {
+            log.info(sedType + ": OK");
+        }
+    }
+
+    public EuSedCdmVersjonsdiff diffMellomUlikeCdmSedVersjoner(String sedType, String cdmGammelVersjon, String cdmNyVersjon) {
+        List<String> cdmNyVersjonListe = lagEuSedFraCdmMeta(sedType, cdmNyVersjon);
+        List<String> cdmGammelVersjonListe = lagEuSedFraCdmMeta(sedType, cdmGammelVersjon);
+        if (cdmNyVersjonListe == null || cdmGammelVersjonListe == null) {
+            return null;
+        }
+        List<String> uendredeStierListe = new ArrayList<>();
+        List<String> nyeStierListe = new ArrayList<>();
+        List<String> utgaatteStierListe = new ArrayList<>();
+        cdmNyVersjonListe.forEach(l -> {
+            if (cdmGammelVersjonListe.contains(l)) {
+                uendredeStierListe.add(l);
+            } else {
+                nyeStierListe.add(l);
+            }
+        });
+        cdmGammelVersjonListe.forEach(l -> {
+            if (!uendredeStierListe.contains(l)) {
+                utgaatteStierListe.add(l);
+            }
+        });
+        return new EuSedCdmVersjonsdiff(uendredeStierListe, nyeStierListe, utgaatteStierListe);
+
+    }
+
+    public void sammenlikneCdmSedVersjonerOgSkrivDiffTilFiler(List<String> sedTyper, String cdmGammelVersjon, String cdmNyVersjon) {
+        Map<String, List<String>> sektorVsNytt = new HashMap<>();
+        sedTyper.forEach(sedType -> {
+            EuSedCdmVersjonsdiff diff = diffMellomUlikeCdmSedVersjoner(sedType, cdmGammelVersjon, cdmNyVersjon);
+            filService.skrivDiffTilFil(diff.getUendredeStierListe(), sedType, cdmNyVersjon, FilService.FIL_UENDREDE_STIER);
+            filService.skrivDiffTilFil(diff.getNyeStierListe(), sedType, cdmNyVersjon, FilService.FIL_NYE_STIER);
+            filService.skrivDiffTilFil(diff.getUtgaatteStierListe(), sedType, cdmNyVersjon, FilService.FIL_UTGAATTE_STIER);
+
+            String sektor = StringUtils.splitByCharacterType(sedType)[0];
+            if (!sektorVsNytt.containsKey(sektor)) {
+                sektorVsNytt.put(sektor, new ArrayList<>());
+            }
+            sektorVsNytt.get(sektor).addAll(diff.getNyeStierListe());
+        });
+        sektorVsNytt.forEach((sektor, nyttListe) -> {
+            filService.skrivDiffTilFil(nyttListe, sektor + "-nytt", cdmNyVersjon, FilService.FIL_NYE_STIER);
+        });
+    }
+
+    // ---
     public void lesAclMalOgSkrivDenTilFil(String sedType, String cdmVersjon) {
         Map<String, Object> aclMal = filService.lesAclMal(sedType, cdmVersjon);
         List<String> cdmStierVsNavStierListe = aclMal.keySet().stream()
@@ -158,44 +153,18 @@ public class CdmMetaFacade {
         filService.skrivAclSedTilFil(cdmStierVsNavStierListe, sedType, cdmVersjon);
     }
 
-    public void sammenlikneSedFraAclOgSedFraCdm(String sedType, String cdmVersjon) {
-        List<String> aclMalListe = filService.lesAclMalFraTarget(sedType, cdmVersjon);
-        List<String> cdmSedListe = filService.lesCdmSedFraTarget(sedType, cdmVersjon);
-        List<String> aclSedListe = aclMalListe.stream().map(l -> l.split(":")[0]).toList();
-        for (int nr = 0; nr < aclMalListe.size(); nr++) {
-            if (!aclSedListe.get(nr).equals(cdmSedListe.get(nr))) {
-                log.error(sedType + ": mismatch. Acl={}, Cdm={}", aclSedListe.get(nr), cdmSedListe.get(nr));
-                return;
-            }
-        }
-        log.info(sedType + ": OK");
-    }
-
-    public void sammenlikneCdmSedVersjonerOgSkriveDiffTilFiler(String sedType, String cdmNyVersjon, String cdmGammelVersjon) {
-        List<String> cdmSedNyListe = filService.lesCdmSedFraTarget(sedType, cdmNyVersjon);
-        List<String> cdmSedGammelListe = filService.lesCdmSedFraTarget(sedType, cdmGammelVersjon);
-        if (cdmSedNyListe == null || cdmSedGammelListe == null) {
-            return;
-        }
-        List<String> uendredeStierListe = new ArrayList<>();
-        List<String> nyeStierListe = new ArrayList<>();
-        List<String> utgaatteStierListe = new ArrayList<>();
-        cdmSedNyListe.forEach(l -> {
-            if (cdmSedGammelListe.contains(l)) {
-                uendredeStierListe.add(l);
-            } else {
-                nyeStierListe.add(l);
-            }
-        });
-        cdmSedGammelListe.forEach(l -> {
-            if (!uendredeStierListe.contains(l)) {
-                utgaatteStierListe.add(l);
-            }
-        });
-        filService.skrivCdmEndringerTilFil(uendredeStierListe, sedType, cdmNyVersjon, FilService.FIL_UENDREDE_STIER);
-        filService.skrivCdmEndringerTilFil(nyeStierListe, sedType, cdmNyVersjon, FilService.FIL_NYE_STIER);
-        filService.skrivCdmEndringerTilFil(utgaatteStierListe, sedType, cdmNyVersjon, FilService.FIL_UTGAATTE_STIER);
-    }
+//    public void sammenlikneSedFraAclOgSedFraCdm(String sedType, String cdmVersjon) {
+//        List<String> aclMalListe = filService.lesAclMalFraTarget(sedType, cdmVersjon);
+//        List<String> cdmSedListe = filService.lesCdmSedFraTarget(sedType, cdmVersjon);
+//        List<String> aclSedListe = aclMalListe.stream().map(l -> l.split(":")[0]).toList();
+//        for (int nr = 0; nr < aclMalListe.size(); nr++) {
+//            if (!aclSedListe.get(nr).equals(cdmSedListe.get(nr))) {
+//                log.error(sedType + ": mismatch. Acl={}, Cdm={}", aclSedListe.get(nr), cdmSedListe.get(nr));
+//                return;
+//            }
+//        }
+//        log.info(sedType + ": OK");
+//    }
 
     public void sammenliknerGammelAclSedMedNyCdmVersjonOgSkriverDiffTilFil(String sedType, String nyCdmVersjon, String aclVersjon) {
         List<String> nyCdmSedListe = filService.lesCdmSedFraTarget(sedType, nyCdmVersjon);
@@ -217,8 +186,8 @@ public class CdmMetaFacade {
                 aclUtgaatteStier.add(s + ": " + aclSedStiVsNavSedSti.get(s));
             }
         });
-        filService.skrivCdmEndringerTilFil(aclUendredeStier, sedType, nyCdmVersjon, FilService.FIL_UENDREDE_ACL_STIER);
-        filService.skrivCdmEndringerTilFil(aclUtgaatteStier, sedType, nyCdmVersjon, FilService.FIL_UTGAATTE_ACL_STIER);
+        filService.skrivDiffTilFil(aclUendredeStier, sedType, nyCdmVersjon, FilService.FIL_UENDREDE_ACL_STIER);
+        filService.skrivDiffTilFil(aclUtgaatteStier, sedType, nyCdmVersjon, FilService.FIL_UTGAATTE_ACL_STIER);
     }
 
     public void skrivBasisForNyeAclMalerTilSammeFil(List<String> sedTyper, String cdmVersjon, String aclVersjon) {

@@ -4,17 +4,13 @@ package eux.acl.generator.modell;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-import java.util.HashMap;
-import java.util.Map;
-
+@Getter
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CdmSedFundament {
+public class EuSedFundament {
 
-    private String type;
+    private String verdiType;
     private String indeks;
     private String ledetekst;
     private String enumNavn;
