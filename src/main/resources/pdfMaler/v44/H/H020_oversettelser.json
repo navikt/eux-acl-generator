@@ -1,0 +1,135 @@
+{
+  "H020.Claim.Person.PersonIdentificationNumber.pINPersonInCompetentMemberState" : {
+    "index" : "2.1.4.1. ",
+    "prompt" : "Personens PIN i kompetent EU-land",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Person.PersonIdentificationNumber.pINPersonInMemberStateStayOrResidence" : {
+    "index" : "2.1.4.2. ",
+    "prompt" : "Personens PIN i oppholds- eller bostedslandet i EU",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Person.PersonInformation.dateBirth" : {
+    "index" : "2.1.1.3. ",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "H020.Claim.Person.PersonInformation.familyName" : {
+    "index" : "2.1.1.1. ",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Person.PersonInformation.forename" : {
+    "index" : "2.1.1.2. ",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Person.PersonInformation.sex.value[0]" : {
+    "index" : "2.1.1.4. ",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "H020.Claim.Person.familyNameAtBirth" : {
+    "index" : "2.1.2. ",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Person.forenameAtBirth" : {
+    "index" : "2.1.3. ",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution.amount" : {
+    "index" : "2.2.4.1. ",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution.currency.value[0]" : {
+    "index" : "2.2.4.2. ",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "H020.Claim.Reimbursement[0].inReferenceYour.value[0]" : {
+    "index" : "2.2.1. ",
+    "prompt" : "Med henvisning til deres",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Anmodning om administrativ kontroll",
+      "02" : "Anmodning om legeundersøkelse"
+    },
+    "enumName" : "HReferenceListType"
+  },
+  "H020.Claim.Reimbursement[0].invoiceNumberCreditorInstitution" : {
+    "index" : "2.2.3. ",
+    "prompt" : "Kredittinstitusjonens fakturanummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.Claim.Reimbursement[0].issuedOn" : {
+    "index" : "2.2.2. ",
+    "prompt" : "Utstedelsesdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "H020.GlobalClaim.BankDetails.BICSWIFT" : {
+    "index" : "1.6.2. ",
+    "prompt" : "BIC-SWIFT",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.GlobalClaim.BankDetails.IBAN" : {
+    "index" : "1.6.1. ",
+    "prompt" : "Oppgi IBAN til bankkonto som pengenes skal overføres til. IBAN er det internasjonale systemet for å identifisere bankkonti over landegrensene.",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.GlobalClaim.CreditorInstitution.institutionID" : {
+    "index" : "1.1.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.GlobalClaim.CreditorInstitution.institutionName" : {
+    "index" : "1.1.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "H020.GlobalClaim.DebtorInstitution.institutionID" : {
+    "index" : "1.5.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.GlobalClaim.DebtorInstitution.institutionName" : {
+    "index" : "1.5.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.amount" : {
+    "index" : "1.4.1. ",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.currency.value[0]" : {
+    "index" : "1.4.2. ",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.paymentDueOn" : {
+    "index" : "1.4.3. ",
+    "prompt" : "Betalingen forfaller",
+    "valuetype" : "_uxDateInput"
+  },
+  "H020.GlobalClaim.globalReferenceSetByCreditorInstitution" : {
+    "index" : "1.2. ",
+    "prompt" : "Global RPY_COC_CLA_IMO-referanse til kreditorinstitusjonens forbindelsesorgan",
+    "valuetype" : "_uxTextInput"
+  },
+  "H020.GlobalClaim.totalNumberInvoices" : {
+    "index" : "1.3. ",
+    "prompt" : "Totalt antall fakturaer",
+    "valuetype" : "_uxTextInput"
+  }
+}

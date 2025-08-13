@@ -2,11 +2,13 @@ package eux.acl.generator.service;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.github.wnameless.json.flattener.JsonFlattener;
 import eux.acl.generator.modell.EnumkodeFundament;
 import eux.acl.generator.modell.EuSedFundament;
+import eux.acl.generator.modell.pdf.PdfSedElement;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -24,12 +26,16 @@ public class FilService {
     public static final String MAPPE_TARGET_CDM_SED = "target/cdmEuSed";
     public static final String MAPPE_TARGET_CDM_DIFF = "target/cdmDiff";
     public static final String MAPPE_TARGET_ACL_SED = "target/aclMaler";
-    public static final String MAPPE_TARGET_KODEVERK_BASIS = "target/kodeverkFundament";
+    public static final String MAPPE_TARGET_FUNDAMENT_KODEVERK = "target/fundament/kodeverk";
+    public static final String MAPPE_TARGET_FUNDAMENT_SEDMALER = "target/fundament/sedmaler";
+    public static final String MAPPE_TARGET_PDF_SED_MAL = "target/sedmaler/pdf";
     public static final String MAPPE_TARGET_ACL_DIFF = "target/aclDiff";
     public static final String MAPPE_CDM_META = "src/main/resources/input/cdm-meta";
     public static final String MAPPE_CDM_LOGISK_MODELL = "src/main/resources/input/cdm-logisk-modell";
     public static final String MAPPE_OVERSETTELSER = "src/main/resources/input/cdm-oversettelser";
     public static final String MAPPE_ACL = "src/main/resources/acl";
+    public static final String MAPPE_FUNDAMENT_MALER = "src/main/resources/fundament/maler";
+    public static final String MAPPE_FUNDAMENT_KODEVERK = "src/main/resources/fundament/kodeverk";
     public static final String FIL_NYE_STIER = "nytt.txt";
     public static final String FIL_UENDREDE_STIER = "uendret.txt";
     public static final String FIL_UTGAATTE_STIER = "utgaatt.txt";
@@ -74,13 +80,14 @@ public class FilService {
     public static final List<String> SEDTYPER_X = List.of("X001", "X002", "X003", "X004"
             , "X005", "X006", "X007", "X008", "X009", "X010", "X011", "X012", "X013", "X050", "X100");
 
+    // les resources/meta
     public Map<String, Object> lesCdmMetaFilForEnSed(String sedType, String cdmVersjon) {
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String cdmMetaSedFilSti = MAPPE_CDM_META + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".json";
         try {
             String cdmMetaSedJson = FileUtils.readFileToString(new File(cdmMetaSedFilSti), UTF_8);
-            Map<String, Object> cdmMalFlattened = JsonFlattener.flattenAsMap(cdmMetaSedJson);
+            Map<String, Object> cdmMalFlattened = JsonFlattener.flattenAsMap(cdmMetaSedJson.replace("\ufeff", ""));
             String cdmMetaSedGVer = cdmMalFlattened.get("context.inputs.sedGVer").toString();
             String cdmMetaSedVer = cdmMalFlattened.get("context.inputs.sedVer").toString();
             String cdmMetaSedType = cdmMalFlattened.get("context.inputs.sedName").toString();
@@ -102,13 +109,14 @@ public class FilService {
         return null;
     }
 
-    public void skrivEuSedFundamentTilFil(TreeMap<String, EuSedFundament> euSedFundament, String sedType, String cdmVersjon) {
+    // til target
+    public void skrivEuSedMalFundamentTilFil(TreeMap<String, EuSedFundament> euSedFundament, String sedType, String cdmVersjon) {
         if (euSedFundament == null) {
             return;
         }
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String cdmSedFilSti = MAPPE_TARGET_CDM_SED + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".json";
+        String cdmSedFilSti = MAPPE_TARGET_FUNDAMENT_SEDMALER + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".json";
         try {
             String euSedJson = new JsonMapper().convertValue(euSedFundament, JsonNode.class).toPrettyString();
             FileUtils.writeStringToFile(new File(cdmSedFilSti), euSedJson, "UTF-8");
@@ -119,7 +127,6 @@ public class FilService {
             //            throw new RuntimeException(e);
         }
     }
-
 
     public Map<String, Object> lesAclMal(String sedType, String cdmVersjon) {
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
@@ -204,29 +211,52 @@ public class FilService {
         }
     }
 
-    public void skrivBasisKodeverkTilFil(String enumtype
+    public void skrivKodeverksfundamentTilFil(String enumtype
             , TreeMap<Integer, EnumkodeFundament> enumInnhold
             , String sedType
             , String cdmVersjon) {
         String kodeverksfilJson = new JsonMapper().convertValue(enumInnhold, JsonNode.class).toPrettyString();
         String sektor = StringUtils.splitByCharacterType(sedType)[0];
-        String fil = sektor + "/" + enumtype + ".json";
+        String filPrSektor = sektor + "/" + enumtype + ".json";
+        String filerSamlet = enumtype + ".json";
+
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_KODEVERK_BASIS + "/" + cdmVersjonTilpasset + "/" + fil;
+        String filnavnStiPrSektor = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filPrSektor;
+        String filnavnStiFells = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filerSamlet;
         try {
-            FileUtils.writeStringToFile(new File(filnavnSti), kodeverksfilJson, "UTF-8");
+            FileUtils.writeStringToFile(new File(filnavnStiPrSektor), kodeverksfilJson, "UTF-8");
         } catch (IOException e) {
-            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnStiPrSektor);
+            //            throw new RuntimeException(e);
+        }
+        try {
+            FileUtils.writeStringToFile(new File(filnavnStiFells), kodeverksfilJson, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnStiFells);
             //            throw new RuntimeException(e);
         }
     }
 
     public void skrivEnumNavnTilFil(Set<String> enumnavn, String filnavn, String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_KODEVERK_BASIS + "/" + cdmVersjonTilpasset + "_" + filnavn;
+        String filnavnSti = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "_" + filnavn;
         String cdmSedStierFlattened = StringUtils.join(enumnavn.stream().sorted().toList(), "\n");
         try {
             FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
+            //            throw new RuntimeException(e);
+        }
+    }
+
+    public void skrivPdfSedMalTilFil(TreeMap<String, PdfSedElement> euSedStiVsPdfSedElement, String sedType, String cdmVersjon) {
+        String sektor = StringUtils.splitByCharacterType(sedType)[0];
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filnavnSti = MAPPE_TARGET_PDF_SED_MAL + "/"
+                +  cdmVersjonTilpasset + "/" + sektor + "/"  + sedType +"_oversettelser.json";
+        String pdfSedMalJson = new JsonMapper().convertValue(euSedStiVsPdfSedElement, JsonNode.class).toPrettyString();
+        try {
+            FileUtils.writeStringToFile(new File(filnavnSti), pdfSedMalJson, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
             //            throw new RuntimeException(e);
@@ -309,6 +339,40 @@ public class FilService {
             return FileUtils.readFileToString(new File(filsti), UTF_8);
         } catch (IOException e) {
             log.error("Fant ikke fil med oversettelser. fil={}", filsti);
+            //            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+    public TreeMap<String, EuSedFundament> lesEuSedFundamentFil(String sedType, String cdmVersjon) {
+        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_FUNDAMENT_MALER + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".json";
+        try {
+            String euSedFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
+            TreeMap<String, EuSedFundament> ff = new JsonMapper().readValue(euSedFundamentJson, new TypeReference<>() {
+            });
+            return ff;
+        } catch (JsonProcessingException e) {
+            log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
+        } catch (IOException e) {
+            log.error("Fant ikke fil. filsti={}", filsti);
+            //            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+    public TreeMap<Integer, EnumkodeFundament> lesEnumFundamentFil(String enumFilnavn, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + enumFilnavn + ".json";
+        try {
+            String euSedFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
+            return new JsonMapper().readValue(euSedFundamentJson, new TypeReference<>() {
+            });
+        } catch (JsonProcessingException e) {
+            log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
+        } catch (IOException e) {
+            log.error("Fant ikke fil. filsti={}", filsti);
             //            throw new RuntimeException(e);
         }
         return null;

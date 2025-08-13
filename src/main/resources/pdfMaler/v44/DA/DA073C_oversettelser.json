@@ -1,0 +1,156 @@
+{
+  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.amount" : {
+    "index" : "1.4.1. ",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.currency.value[0]" : {
+    "index" : "1.4.2. ",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "DA073C.GlobalNoteCOCIO.dateSubmission" : {
+    "index" : "1.5. ",
+    "prompt" : "Datoen nåværende SED er sendt",
+    "valuetype" : "_uxDateInput"
+  },
+  "DA073C.GlobalNoteCOCIO.globalCOCIOReferenceLiaisonBody" : {
+    "index" : "1.2. ",
+    "prompt" : "Unike saksnummer for innsigelsen på IOen som gjør at innsigelsen kan identifiseres i neste steg av utvekslingen, samt i annen fremtidig kommunikasjon (lenker til SEDen). Saksnummeret er unikt for denne innsigelsen og skal brukes som referansenummer i alle etterfølgende SEDer",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.GlobalNoteCOCIO.globalIOReferenceLiaisonBody" : {
+    "index" : "1.1. ",
+    "prompt" : "Global IO referanse til forbindelsesorganet",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.GlobalNoteCOCIO.totalNumberIndividualContestations" : {
+    "index" : "1.3. ",
+    "prompt" : "Summert antall innsigelser på identifiserte feilutbetalinger som skal være lik nummer av individuelle deler i DA073C",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.ContestationReasons0299.requestedAdditionalInformation" : {
+    "index" : "2.1.7.2.1. ",
+    "prompt" : "Etterspurt tilleggsinformasjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.contestationReasons.value[0]" : {
+    "index" : "2.1.7.1. ",
+    "prompt" : "Svar",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Vi aksepterer ikke den identifiserte feilutbetalingen",
+      "02" : "Vi aksepterer ikke den identifiserte feilutbetalingen og ber om mer informasjon",
+      "99" : "Annet"
+    },
+    "enumName" : "AccidentDiseaseReplyCodeType"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDCreditorInstitution.institutionID" : {
+    "index" : "2.1.1.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDCreditorInstitution.institutionName" : {
+    "index" : "2.1.1.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDDebtorInstitution.institutionID" : {
+    "index" : "2.1.2.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDDebtorInstitution.institutionName" : {
+    "index" : "2.1.2.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInCompetentMemberState" : {
+    "index" : "2.1.4.4.1. ",
+    "prompt" : "Personens PIN i kompetent EU-land",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInMemberStateStayOrResidence" : {
+    "index" : "2.1.4.4.2. ",
+    "prompt" : "Personens PIN i oppholds- eller bostedslandet i EU",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.dateBirth" : {
+    "index" : "2.1.4.1.3. ",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.familyName" : {
+    "index" : "2.1.4.1.1. ",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.forename" : {
+    "index" : "2.1.4.1.2. ",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.sex.value[0]" : {
+    "index" : "2.1.4.1.4. ",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.familyNameAtBirth" : {
+    "index" : "2.1.4.2. ",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.forenameAtBirth" : {
+    "index" : "2.1.4.3. ",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.globalCOCIOReferenceLiaisonBody" : {
+    "index" : "2.1.3.2. ",
+    "prompt" : "Unikt saksnummer for innsigelsen på IOen hentet fra den globale delen i DA073C, saksnummeret gjør at den individuelle innsigelsen i IOen (DA073C) kan knyttes til den globale delen i IOen DA073C og saksnummeret skal kopieres uten noen endringer",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.globalIOReferenceLiaisonBody" : {
+    "index" : "2.1.3.1. ",
+    "prompt" : "Global IO referanse til forbindelsesorganet",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.individualCOCIONumberLiaisonBody" : {
+    "index" : "2.1.3.4. ",
+    "prompt" : "Individuelt COC_IO nummer til forbindelsesorganet",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.individualIONumberLiaisonBody" : {
+    "index" : "2.1.3.3. ",
+    "prompt" : "Individuelt IO nummer til forbindelsesorganet",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.amount" : {
+    "index" : "2.1.6.1. ",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.currency.value[0]" : {
+    "index" : "2.1.6.2. ",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod.endDate" : {
+    "index" : "2.1.5.2. ",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod.startDate" : {
+    "index" : "2.1.5.1. ",
+    "prompt" : "Angi startdato for perioden.",
+    "valuetype" : "_uxDateInput"
+  }
+}

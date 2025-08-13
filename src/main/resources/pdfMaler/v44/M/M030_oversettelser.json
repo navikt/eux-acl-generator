@@ -1,0 +1,577 @@
+{
+  "M030.AdditionalInformation.additionalInformation" : {
+    "index" : "6.1. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "M030.AdditionalInformationClaimForDeathGrant.DetailsDeath.deathDateDeceasedPerson" : {
+    "index" : "3.1.1. ",
+    "prompt" : "Dødsdatoen til avdøde",
+    "valuetype" : "_uxDateInput"
+  },
+  "M030.AdditionalInformationClaimForDeathGrant.DetailsDeath.placeDeath.value[0]" : {
+    "index" : "3.1.2. ",
+    "prompt" : "Dødssted",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "M030.AdditionalInformationClaimForDeathGrant.claimant.value[0]" : {
+    "index" : "3.4. ",
+    "prompt" : "Søkeren",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "har søkt om eller mottatt gravferdsstønad fra et annet EU-land",
+      "02" : "har ikke krav på gravferdsstønad i samsvar med avsenderinstitusjonens lovgivning på grunn av dødsfallet til trygdede avdøde"
+    },
+    "enumName" : "DeathGrantClaimantOptionsType"
+  },
+  "M030.AdditionalInformationClaimForDeathGrant.dateClaim" : {
+    "index" : "3.2. ",
+    "prompt" : "Kravets dato",
+    "valuetype" : "_uxDateInput"
+  },
+  "M030.AdditionalInformationClaimForDeathGrant.legislationSendingInstitution.value[0]" : {
+    "index" : "3.3. ",
+    "prompt" : "Avsenderinstitusjonens lovgivning",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Gir gravferdsstønad",
+      "02" : "Gir ikke gravferdsstønad"
+    },
+    "enumName" : "DoesSendingInstitutionProvideDeathGrantsType"
+  },
+  "M030.AdditionalInformationClaimForDeathGrant.theClaimant.value[0]" : {
+    "index" : "3.5. ",
+    "prompt" : "Søkeren",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Har dekket deler av eller alle begravelseskostnadene",
+      "02" : "Har ikke dekket deler av eller alle begravelseskostnadene"
+    },
+    "enumName" : "HasCoveredClaimantFuneralFullyOrPartlyType"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.PleaseFillInFollowingIfStatusClaimantOther.otherStatus" : {
+    "index" : "2.2.4.1. ",
+    "prompt" : "Annen status",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.PreviousName.previousFamilyName" : {
+    "index" : "2.2.2.1. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.PreviousName.previousForename" : {
+    "index" : "2.2.2.2. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.RelationshipDeceasedPerson.FillInIfRelationshipDeceasedPerson.otherRelationship" : {
+    "index" : "2.2.6.2.1. ",
+    "prompt" : "Annen relasjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.RelationshipDeceasedPerson.relationshipDeceasedPerson.value[0]" : {
+    "index" : "2.2.6.1. ",
+    "prompt" : "Relasjon til avdøde",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Ektefelle",
+      "02" : "Partner",
+      "03" : "Barn",
+      "04" : "Forelder",
+      "99" : "Annet"
+    },
+    "enumName" : "RelationshipDeceasedPersonType"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.RelationshipDeceasedPerson.theClaimantDependantDeceasedPersonIndicator.value[0]" : {
+    "index" : "2.2.6.4. ",
+    "prompt" : "Søkeren var forsørget av avdøde",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.RelationshipDeceasedPerson.theDeceasedPersonDependantClaimantIndicator.value[0]" : {
+    "index" : "2.2.6.3. ",
+    "prompt" : "Avdøde var forsørget av søkeren",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.nationality.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.status.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.AdditionalInformationClaimant.statusClaimant.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.Address.buildingName" : {
+    "index" : "2.4.2. ",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.Address.country.value[0]" : {
+    "index" : "2.4.6. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "M030.Claimant.Address.postalCode" : {
+    "index" : "2.4.4. ",
+    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.Address.region" : {
+    "index" : "2.4.5. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.Address.street" : {
+    "index" : "2.4.1. ",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.Address.town" : {
+    "index" : "2.4.3. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.OtherClaimant.NamePersonEntitledRepresentLegalPersonUndertaker.familyName" : {
+    "index" : "2.3.3.1. ",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.OtherClaimant.NamePersonEntitledRepresentLegalPersonUndertaker.forename" : {
+    "index" : "2.3.3.2. ",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.OtherClaimant.PleaseFillIn.IdentificationLegalPersonUndertaker.fiscalNumber" : {
+    "index" : "2.3.2.2.3. ",
+    "prompt" : "Skattenummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.OtherClaimant.PleaseFillIn.IdentificationLegalPersonUndertaker.registrationNumber" : {
+    "index" : "2.3.2.2.1. ",
+    "prompt" : "Registreringsnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.OtherClaimant.PleaseFillIn.IdentificationLegalPersonUndertaker.socialSecurityNumber" : {
+    "index" : "2.3.2.2.2. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.OtherClaimant.PleaseFillIn.nameLegalPersonUndertaker" : {
+    "index" : "2.3.2.1. ",
+    "prompt" : "Navn på juridisk person / initiativtaker",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.OtherClaimant.ifClaimantIs.value[0]" : {
+    "index" : "2.3.1. ",
+    "prompt" : "Hvis søkeren er",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Begravelsesbyrå eller agent eller representant for et begravelsesbyrå",
+      "02" : "Juridisk person som, på grunnlag av forsikringskontrakten, har dekket deler av eller alle kostnadene"
+    },
+    "enumName" : "OtherClaimantCategoryType"
+  },
+  "M030.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+    "index" : "2.1.8.1.3. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "M030.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "2.1.8.1.2. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "2.1.8.1.1. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "2.1.8.2. ",
+    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "2.1.8.3. ",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "2.1.8.5. ",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "2.1.8.4. ",
+    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "2.1.7.1.4.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "2.1.7.1.4.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "M030.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+    "index" : "2.1.7.1.1. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "M030.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "2.1.7.1.2. ",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+    "index" : "2.1.7.1.3. ",
+    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "M030.Claimant.PersonIdentification.dateBirth" : {
+    "index" : "2.1.3. ",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "M030.Claimant.PersonIdentification.familyName" : {
+    "index" : "2.1.1. ",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.familyNameAtBirth" : {
+    "index" : "2.1.5. ",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.forename" : {
+    "index" : "2.1.2. ",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.forenameAtBirth" : {
+    "index" : "2.1.6. ",
+    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.Claimant.PersonIdentification.sex.value[0]" : {
+    "index" : "2.1.4. ",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.AddressDeceasedPersonBeforeDeath.buildingName" : {
+    "index" : "1.2.3.2. ",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.AddressDeceasedPersonBeforeDeath.country.value[0]" : {
+    "index" : "1.2.3.6. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.AddressDeceasedPersonBeforeDeath.postalCode" : {
+    "index" : "1.2.3.4. ",
+    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.AddressDeceasedPersonBeforeDeath.region" : {
+    "index" : "1.2.3.5. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.AddressDeceasedPersonBeforeDeath.street" : {
+    "index" : "1.2.3.1. ",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.AddressDeceasedPersonBeforeDeath.town" : {
+    "index" : "1.2.3.3. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.FillInIfStatusDeceasedPersonBefore.otherStatus" : {
+    "index" : "1.2.5.1. ",
+    "prompt" : "Annen status",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.PreviousName.previousFamilyName" : {
+    "index" : "1.2.2.1. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.PreviousName.previousForename" : {
+    "index" : "1.2.2.2. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.nationality.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.status.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.statusDeceasedPersonBeforeDeath.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+    "index" : "1.1.8.1.3. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "1.1.8.1.2. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "1.1.8.1.1. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "1.1.8.2. ",
+    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "1.1.8.3. ",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "1.1.8.5. ",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "1.1.8.4. ",
+    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "1.1.7.1.4.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "1.1.7.1.4.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+    "index" : "1.1.7.1.1. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "1.1.7.1.2. ",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+    "index" : "1.1.7.1.3. ",
+    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.dateBirth" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.familyName" : {
+    "index" : "1.1.1. ",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.familyNameAtBirth" : {
+    "index" : "1.1.5. ",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.forename" : {
+    "index" : "1.1.2. ",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.forenameAtBirth" : {
+    "index" : "1.1.6. ",
+    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.DeceasedPerson.DeceasedPerson.sex.value[0]" : {
+    "index" : "1.1.4. ",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.BICSWIFT" : {
+    "index" : "5.2.2.2. ",
+    "prompt" : "BIC-SWIFT",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.buildingName" : {
+    "index" : "5.2.2.4.2. ",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.country.value[0]" : {
+    "index" : "5.2.2.4.6. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.postalCode" : {
+    "index" : "5.2.2.4.4. ",
+    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.region" : {
+    "index" : "5.2.2.4.5. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.street" : {
+    "index" : "5.2.2.4.1. ",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.town" : {
+    "index" : "5.2.2.4.3. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.accountNumber" : {
+    "index" : "5.2.2.1. ",
+    "prompt" : "Kontonummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.NonSEPAAccount.bankName" : {
+    "index" : "5.2.2.3. ",
+    "prompt" : "Bankens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.SEPAAccount.BICSWIFT" : {
+    "index" : "5.2.1.2. ",
+    "prompt" : "BIC-SWIFT",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.BankDetails.SEPAAccount.IBAN" : {
+    "index" : "5.2.1.1. ",
+    "prompt" : "Oppgi IBAN til bankkonto som pengenes skal overføres til. IBAN er det internasjonale systemet for å identifisere bankkonti over landegrensene.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationPayment.paymentTo.value[0]" : {
+    "index" : "5.1. ",
+    "prompt" : "Utbetaling til",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søker",
+      "02" : "Representant/verge"
+    },
+    "enumName" : "EESSIClaimantRepresentativeType"
+  },
+  "M030.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.buildingName" : {
+    "index" : "4.2.2.2. ",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.country.value[0]" : {
+    "index" : "4.2.2.6. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "M030.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.postalCode" : {
+    "index" : "4.2.2.4. ",
+    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.region" : {
+    "index" : "4.2.2.5. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.street" : {
+    "index" : "4.2.2.1. ",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.town" : {
+    "index" : "4.2.2.3. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.name" : {
+    "index" : "4.2.1. ",
+    "prompt" : "Representantens navn, dvs. navnet på personen, eller navnet på en myndighet, for eksempel en overformynder som representerer søkeren.",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "M030.InformationRepresentativeLegalGuardian.status.value[0]" : {
+    "index" : "4.1. ",
+    "prompt" : "Status",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Representant",
+      "02" : "Verge"
+    },
+    "enumName" : "MRepresentativeLegalGuardianType"
+  },
+  "M030.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "M030.PleaseFindAttachedFollowingDocument.otherDocument" : {
+    "index" : "7.2. ",
+    "prompt" : "Annet/andre dokument(er)",
+    "valuetype" : "_uxTextAreaInput"
+  }
+}

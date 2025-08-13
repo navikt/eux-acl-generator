@@ -1,0 +1,217 @@
+{
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.Amount.amount" : {
+    "index" : "3.2.2.1. ",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.Amount.currency.value[0]" : {
+    "index" : "3.2.2.2. ",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.Period.FixedPeriod.endDate" : {
+    "index" : "3.2.1.1.2. ",
+    "prompt" : "Angi sluttdato for perioden.",
+    "valuetype" : "_uxDateInput"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.Period.FixedPeriod.startDate" : {
+    "index" : "3.2.1.1.1. ",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.Period.OpenPeriod.startDate" : {
+    "index" : "3.2.1.2.2. ",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+    "index" : "3.2.1.2.1. ",
+    "prompt" : "Type åpen periode",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Periode med åpen sluttdato",
+      "98" : "Ukjent sluttdato for perioden"
+    },
+    "enumName" : "EESSIOpenPeriodType"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.PleaseFillInFollowingIfFrequencyPaymentOther.descriptionBenefits" : {
+    "index" : "3.2.4.2. ",
+    "prompt" : "Beskrivelse av ytelsen(e)",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.PleaseFillInFollowingIfFrequencyPaymentOther.other" : {
+    "index" : "3.2.4.1. ",
+    "prompt" : "Annet",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.InformationEntitlement.FillInIfEntitlementOrNotThePerson.frequencyPayment.value[0]" : {
+    "index" : "3.2.3. ",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Daglig",
+      "02" : "Ukentlig",
+      "03" : "Månedlig",
+      "99" : "Annet"
+    },
+    "enumName" : "SPaymentFrequencyDayWeekMonthOtherType"
+  },
+  "S003.InformationEntitlement.entitlementOrNot.value[0]" : {
+    "index" : "3.1. ",
+    "prompt" : "Rett til eller ikke rett til ytelser",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Den berørte har ikke rett til kontantytelser - langvarig pleie",
+      "02" : "Den berørte har rett til kontantytelser - langvarig pleie"
+    },
+    "enumName" : "SEntitlementYesNoType"
+  },
+  "S003.Person.AdditionalInformationPerson.nationality.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+    "index" : "1.1.8.1.3. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "S003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "1.1.8.1.2. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "1.1.8.1.1. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "1.1.8.2. ",
+    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "1.1.8.3. ",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "1.1.8.5. ",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "1.1.8.4. ",
+    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "1.1.7.1.4.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "1.1.7.1.4.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "S003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+    "index" : "1.1.7.1.1. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "S003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "1.1.7.1.2. ",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+    "index" : "1.1.7.1.3. ",
+    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "S003.Person.PersonIdentification.dateBirth" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "S003.Person.PersonIdentification.familyName" : {
+    "index" : "1.1.1. ",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.familyNameAtBirth" : {
+    "index" : "1.1.5. ",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.forename" : {
+    "index" : "1.1.2. ",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.forenameAtBirth" : {
+    "index" : "1.1.6. ",
+    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.Person.PersonIdentification.sex.value[0]" : {
+    "index" : "1.1.4. ",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "S003.PersonAddress.Address.buildingName" : {
+    "index" : "2.1.2. ",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.PersonAddress.Address.country.value[0]" : {
+    "index" : "2.1.6. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "S003.PersonAddress.Address.postalCode" : {
+    "index" : "2.1.4. ",
+    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.PersonAddress.Address.region" : {
+    "index" : "2.1.5. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.PersonAddress.Address.street" : {
+    "index" : "2.1.1. ",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.PersonAddress.Address.town" : {
+    "index" : "2.1.3. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "S003.PersonAddress.residenceInThisCountrySince" : {
+    "index" : "2.2. ",
+    "prompt" : "Har bodd i dette landet siden",
+    "valuetype" : "_uxDateInput"
+  }
+}

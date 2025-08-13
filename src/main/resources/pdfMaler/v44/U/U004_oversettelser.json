@@ -1,0 +1,234 @@
+{
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].Earnings.amount" : {
+    "index" : "4.1.3.1.2.1. ",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].Earnings.currency.value[0]" : {
+    "index" : "4.1.3.1.2.2. ",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].PleaseFillInFollowingIfEarningsTypeOtherPayment.informationAboutOtherCompensation" : {
+    "index" : "4.1.3.1.3.1. ",
+    "prompt" : "Informasjon om annen kompensasjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].earningsType.value[0]" : {
+    "index" : "4.1.3.1.1. ",
+    "prompt" : "01 - Netto gjennomsnittlig månedlig inntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Netto gjennomsnittlig inntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
+      "02" : "Brutto gjennomsnittlig inntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
+      "03" : "En enkelt utbetaling",
+      "04" : "Overtidsgodtgjørelse",
+      "05" : "Vederlag for ferie som ikke er tatt ut",
+      "99" : "Annet vederlag"
+    },
+    "enumName" : "PaymentTypeUnemploymentEarningsType"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.FixedPeriod.endDate" : {
+    "index" : "4.1.1.1.2. ",
+    "prompt" : "Angi sluttdato for perioden.",
+    "valuetype" : "_uxDateInput"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.FixedPeriod.startDate" : {
+    "index" : "4.1.1.1.1. ",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.OpenPeriod.startDate" : {
+    "index" : "4.1.1.2.2. ",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+    "index" : "4.1.1.2.1. ",
+    "prompt" : "Type åpen periode",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Periode med åpen sluttdato",
+      "98" : "Ukjent sluttdato for perioden"
+    },
+    "enumName" : "EESSIOpenPeriodType"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].RequestedAdditionalDetails.numberDaysWorked" : {
+    "index" : "4.1.4.2. ",
+    "prompt" : "Antall dager i arbeid",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].RequestedAdditionalDetails.numberHoursWorked" : {
+    "index" : "4.1.4.1. ",
+    "prompt" : "Angi gjennomsnittlig antall arbeidstimer per uke i den aktuelle perioden.",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].periodOf.value[0]" : {
+    "index" : "4.1.2. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Ansettelsesforhold",
+      "02" : "Selvstendig næringsvirksomhet"
+    },
+    "enumName" : "EESSIEmploymentType"
+  },
+  "U004.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "index" : "1.1.3.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "index" : "1.1.3.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "U004.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "index" : "1.1.2. ",
+    "prompt" : "Saksnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+    "index" : "1.1.1. ",
+    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "U004.Person.AdditionalInformationPerson.nationality.value[0]" : {
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+    "index" : "2.1.8.1.3. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "2.1.8.1.2. ",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "2.1.8.1.1. ",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "2.1.8.2. ",
+    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "2.1.8.3. ",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "2.1.8.5. ",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "2.1.8.4. ",
+    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "2.1.7.1.4.1. ",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "2.1.7.1.4.2. ",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+    "index" : "2.1.7.1.1. ",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "2.1.7.1.2. ",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+    "index" : "2.1.7.1.3. ",
+    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "U004.Person.PersonIdentification.dateBirth" : {
+    "index" : "2.1.3. ",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "U004.Person.PersonIdentification.familyName" : {
+    "index" : "2.1.1. ",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.familyNameAtBirth" : {
+    "index" : "2.1.5. ",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.forename" : {
+    "index" : "2.1.2. ",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.forenameAtBirth" : {
+    "index" : "2.1.6. ",
+    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.sex.value[0]" : {
+    "index" : "2.1.4. ",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "U004.ReferencePeriod.FixedPeriod.endDate" : {
+    "index" : "3.1.2. ",
+    "prompt" : "Angi sluttdato for perioden.",
+    "valuetype" : "_uxDateInput"
+  },
+  "U004.ReferencePeriod.FixedPeriod.startDate" : {
+    "index" : "3.1.1. ",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "U004.ReferencePeriod.OpenPeriod.startDate" : {
+    "index" : "3.2.2. ",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "U004.ReferencePeriod.OpenPeriod.typeOpenPeriod.value[0]" : {
+    "index" : "3.2.1. ",
+    "prompt" : "Type åpen periode",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Periode med åpen sluttdato",
+      "98" : "Ukjent sluttdato for perioden"
+    },
+    "enumName" : "EESSIOpenPeriodType"
+  }
+}
