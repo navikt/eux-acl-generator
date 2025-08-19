@@ -47,10 +47,84 @@
     "enumName" : "EESSIAddressType"
   },
   "A001.ApplicableLegislation.applicableLegislationCurrentSituation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "9.1. ",
+    "prompt" : "Gjeldende lovgivning - nåværende situasjon",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "AT" : "Østerrike",
+      "BE" : "Belgia",
+      "BG" : "Bulgaria",
+      "CH" : "Sveits",
+      "CY" : "Kypros",
+      "CZ" : "Tsjekkia",
+      "DE" : "Tyskland",
+      "DK" : "Danmark",
+      "EE" : "Estland",
+      "EL" : "Hellas",
+      "ES" : "Spania",
+      "FI" : "Finland",
+      "FR" : "Frankrike",
+      "HR" : "Kroatia",
+      "HU" : "Ungarn",
+      "IE" : "Irland",
+      "IS" : "Island",
+      "IT" : "Italia",
+      "LI" : "Liechtenstein",
+      "LT" : "Litauen",
+      "LU" : "Luxembourg",
+      "LV" : "Latvia",
+      "MT" : "Malta",
+      "NL" : "Nederland",
+      "NO" : "Norge",
+      "PL" : "Polen",
+      "PT" : "Portugal",
+      "RO" : "Romania",
+      "SE" : "Sverige",
+      "SI" : "Slovenia",
+      "SK" : "Slovakia",
+      "UK" : "Storbritannia"
+    },
+    "enumName" : "EESSIEUEFTACountryMultipleType"
   },
   "A001.ApplicableLegislation.applicableLegislationRequestedSituation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "9.2. ",
+    "prompt" : "Gjeldende lovgivning - aktuell situasjon",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "AT" : "Østerrike",
+      "BE" : "Belgia",
+      "BG" : "Bulgaria",
+      "CH" : "Sveits",
+      "CY" : "Kypros",
+      "CZ" : "Tsjekkia",
+      "DE" : "Tyskland",
+      "DK" : "Danmark",
+      "EE" : "Estland",
+      "EL" : "Hellas",
+      "ES" : "Spania",
+      "FI" : "Finland",
+      "FR" : "Frankrike",
+      "HR" : "Kroatia",
+      "HU" : "Ungarn",
+      "IE" : "Irland",
+      "IS" : "Island",
+      "IT" : "Italia",
+      "LI" : "Liechtenstein",
+      "LT" : "Litauen",
+      "LU" : "Luxembourg",
+      "LV" : "Latvia",
+      "MT" : "Malta",
+      "NL" : "Nederland",
+      "NO" : "Norge",
+      "PL" : "Polen",
+      "PT" : "Portugal",
+      "RO" : "Romania",
+      "SE" : "Sverige",
+      "SI" : "Slovenia",
+      "SK" : "Slovakia",
+      "UK" : "Storbritannia"
+    },
+    "enumName" : "EESSIEUEFTACountryMultipleType"
   },
   "A001.EmployerInHostCountryIfRelevant.Address.buildingName" : {
     "index" : "6.3.2. ",
@@ -283,10 +357,27 @@
     "enumName" : "ArticlesIIA001Type"
   },
   "A001.MoreInformation.specialCircumstances.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "10.5. ",
+    "prompt" : "Særskilte omstendigheter",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Personen har arbeidskontrakt i vertslandet",
+      "02" : "Arbeidskontrakten i avsenderlandet er står ved lag",
+      "03" : "Arbeidsgiver i avsenderlandet og vertslandet har tilknytning.",
+      "04" : "Innskudd er bare betalt i stat der det er anmodet om at lovgivningen skal gjelde.",
+      "05" : "Ingen ytelser ble mottatt i vertslandet.",
+      "06" : "Innskudd er blitt betalt i begge land.",
+      "07" : "Innskudd er blitt betalt i begge land.",
+      "08" : "Løpende kontraktsperiode i mer enn 2 år og kortere enn 5 år",
+      "99" : "Annen situasjon"
+    },
+    "enumName" : "SpecialCircumstancesA001MultipleType"
   },
   "A001.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "1.1.8.1.3. ",

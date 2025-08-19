@@ -95,7 +95,14 @@
     "enumName" : "RTypesOfBenefitType"
   },
   "R009.FillInIfEntitlementArrears.PleaseFillInFollowingIfDeductionYes.TypeBenefitsFromWhichDeductionPossible[0].institutionCompetentForDeductionFromOngoingPayment.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.2.1.2. ",
+    "prompt" : "Angi om avsenderinstitusjonen også er kompetent myndighet for trekk i løpende utbetalinger, eller om dette er en annen institusjons/andre institusjoners anliggende (eventuelt i tillegg til avsenderinstitusjonen). Hvis kun en annen institusjon er kompetent, gir man nærmere opplysninger nedenfor.",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Avsenderinstitusjon",
+      "99" : "Annen/andre institusjon(er)"
+    },
+    "enumName" : "CompetentInstituitonMultipleType"
   },
   "R009.FillInIfEntitlementArrears.deductionPossiblePeriodicRatesFromOngoingPaymentsIndicator.value[0]" : {
     "index" : "5.1. ",
@@ -201,7 +208,10 @@
     "valuetype" : "_uxDateInput"
   },
   "R009.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2.1.2.2.1. ",
+    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "R009.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.2.1.2.1.8.1.3. ",
@@ -355,7 +365,10 @@
     "valuetype" : "_uxDateInput"
   },
   "R009.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2.2.2.1. ",
+    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "R009.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.2.2.1.8.1.3. ",
@@ -497,7 +510,10 @@
     "valuetype" : "_uxDateInput"
   },
   "R009.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.1.1.2.1. ",
+    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "R009.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.1.1.1.8.1.3. ",
@@ -639,7 +655,10 @@
     "valuetype" : "_uxDateInput"
   },
   "R009.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.3.3.2.2.1. ",
+    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "R009.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.3.3.2.1.8.1.3. ",
@@ -794,7 +813,10 @@
     "valuetype" : "_uxDateInput"
   },
   "R009.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.3.2.2.1. ",
+    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "R009.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.3.2.1.8.1.3. ",
@@ -936,7 +958,10 @@
     "valuetype" : "_uxDateInput"
   },
   "R009.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.3.1.2.2.1. ",
+    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "R009.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.3.1.2.1.8.1.3. ",
@@ -1096,7 +1121,10 @@
     "valuetype" : "_uxDateInput"
   },
   "R009.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1.2.2.1. ",
+    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "R009.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.2.1.2.1.8.1.3. ",

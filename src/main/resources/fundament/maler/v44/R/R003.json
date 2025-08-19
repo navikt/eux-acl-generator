@@ -5,7 +5,7 @@
     "indeks" : "3.1. ",
     "ledetekst" : "Aksepterer motregning i etterbetalinger",
     "enumNavn" : "EESSIYesNoType",
-    "tekstId" : "5e86830f-1a5e-e611-80ca-000d3a22e8cd"
+    "enumNavnId" : "5e86830f-1a5e-e611-80ca-000d3a22e8cd"
   },
   "R003.Acceptance.acceptanceDeductionFromOngoingPaymentsIndicator.value[0]" : {
     "verdiType" : "enum",
@@ -13,29 +13,26 @@
     "indeks" : "3.2. ",
     "ledetekst" : "Godkjennelse av motregning i løpende utbetalinger",
     "enumNavn" : "EESSIYesNoType",
-    "tekstId" : "5f86830f-1a5e-e611-80ca-000d3a22e8cd"
+    "enumNavnId" : "5f86830f-1a5e-e611-80ca-000d3a22e8cd"
   },
   "R003.Acceptance.comments" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.3. ",
     "ledetekst" : "Kommentarer",
-    "tekstId" : "6086830f-1a5e-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "255"
   },
   "R003.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID",
-    "tekstId" : "38684f61-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Institusjonens ID"
   },
   "R003.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
     "ledetekst" : "Institusjonens navn",
-    "tekstId" : "2aab0bc6-acfa-e611-80d3-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "R003.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
@@ -43,7 +40,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
     "ledetekst" : "Saksnummer",
-    "tekstId" : "6a970f32-539c-e611-80d1-000d3a22e8cd",
     "tekstlengde" : "65"
   },
   "R003.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
@@ -52,14 +48,13 @@
     "indeks" : "1.1.1. ",
     "ledetekst" : "Angi landet der saksnummeret kan brukes.",
     "enumNavn" : "EESSIEUEFTACountryType",
-    "tekstId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
+    "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
   },
   "R003.Persons.Person[0].AdditionalInformationAboutPerson.PleaseFillInFollowingIfStatusPersonOther.otherStatusPerson" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2.2.1. ",
     "ledetekst" : "Annen personstatus",
-    "tekstId" : "91302f1e-21b3-e611-80d2-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].AdditionalInformationAboutPerson.PreviousFamilyNames.PreviousFamilyName[0].previousFamilyName" : {
@@ -67,7 +62,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2.4.1.1. ",
     "ledetekst" : "Tidligere etternavn",
-    "tekstId" : "90302f1e-21b3-e611-80d2-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
@@ -75,7 +69,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2.5.1.1. ",
     "ledetekst" : "Tidligere fornavn",
-    "tekstId" : "92302f1e-21b3-e611-80d2-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
@@ -84,18 +77,21 @@
     "indeks" : "2.1.2.6. ",
     "ledetekst" : "Sivilstatus",
     "enumNavn" : "RFamilyStatusType",
-    "tekstId" : "c642fda6-fbfc-e611-80d3-000d3a22e8cd"
+    "enumNavnId" : "c642fda6-fbfc-e611-80d3-000d3a22e8cd"
   },
   "R003.Persons.Person[0].AdditionalInformationAboutPerson.dateDeath" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxDateInput",
     "indeks" : "2.1.2.7. ",
-    "ledetekst" : "Hvis personen er død, oppgi dødsdato.",
-    "tekstId" : "ca9db843-525d-e611-80ca-000d3a22e8cd"
+    "ledetekst" : "Hvis personen er død, oppgi dødsdato."
   },
   "R003.Persons.Person[0].AdditionalInformationAboutPerson.nationality.value[0]" : {
     "verdiType" : "enum",
-    "cdmType" : "_uxTextInput"
+    "cdmType" : "_uxMultiSelect",
+    "indeks" : "2.1.2.3. ",
+    "ledetekst" : "Den aktuelle personens nasjonalitet",
+    "enumNavn" : "EESSINationalityMultipleType",
+    "enumNavnId" : "1ed8210f-7373-e611-80cb-000d3a22e8cd"
   },
   "R003.Persons.Person[0].AdditionalInformationAboutPerson.statusPerson.value[0]" : {
     "verdiType" : "enum",
@@ -103,7 +99,7 @@
     "indeks" : "2.1.2.1. ",
     "ledetekst" : "Oppgi rollen til den berørte personen. SED-er kan inneholde mer enn en person (f.eks. trygdede og enken ved etterlattepensjon, eller arving av en avdød mottaker av ytelser som skal tilbakebetale feilutbetalingen). Personenes identitet må være klart definert. Dette gjør det mulig for mottakerinstitusjonen å identifisere, tildele og behandle tilsendte data korrekt. 'Trygdet person' og 'ansatt' skal ikke tolkes på samme måte. *) 'Ansatt' er relevant for innkreving av avgifter, *) 'Trygdet person' er relevant for motregning/innkreving (som f.eks. etterlattepensjon eller utbetalinger etter ytelsesmottakerens død). Det er nyttig å gi opplysninger om trygdede og enken/enkemannen ved etterlattepensjon . Dette gjør det mulig for mottakerinstitusjonen å tildele saken korrekt.",
     "enumNavn" : "RPersonInsuranceStatusType",
-    "tekstId" : "c99db843-525d-e611-80ca-000d3a22e8cd"
+    "enumNavnId" : "c99db843-525d-e611-80ca-000d3a22e8cd"
   },
   "R003.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "verdiType" : "enum",
@@ -111,14 +107,13 @@
     "indeks" : "2.1.1.8.1.3. ",
     "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
-    "tekstId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "R003.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.1.2. ",
     "ledetekst" : "Region",
-    "tekstId" : "3f684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "R003.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
@@ -126,7 +121,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.1.1. ",
     "ledetekst" : "By",
-    "tekstId" : "3e684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "R003.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
@@ -134,7 +128,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.2. ",
     "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
-    "tekstId" : "4e65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -142,7 +135,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.3. ",
     "ledetekst" : "Fars fornavn",
-    "tekstId" : "4f65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
@@ -150,7 +142,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.5. ",
     "ledetekst" : "Mors fornavn",
-    "tekstId" : "5165465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
@@ -158,22 +149,19 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.4. ",
     "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
-    "tekstId" : "5065465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID",
-    "tekstId" : "38684f61-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Institusjonens ID"
   },
   "R003.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "2.1.1.7.1.4.2. ",
     "ledetekst" : "Institusjonens navn",
-    "tekstId" : "2aab0bc6-acfa-e611-80d3-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
@@ -182,14 +170,13 @@
     "indeks" : "2.1.1.7.1.1. ",
     "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
-    "tekstId" : "35684f61-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "R003.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.7.1.2. ",
     "ledetekst" : "Personnummer (PIN)",
-    "tekstId" : "37684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "R003.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
@@ -198,21 +185,19 @@
     "indeks" : "2.1.1.7.1.3. ",
     "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
-    "tekstId" : "36684f61-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "R003.Persons.Person[0].PersonIdentification.dateBirth" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxDateInput",
     "indeks" : "2.1.1.3. ",
-    "ledetekst" : "Fødselsdato",
-    "tekstId" : "4a65465b-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Fødselsdato"
   },
   "R003.Persons.Person[0].PersonIdentification.familyName" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.1. ",
     "ledetekst" : "Etternavn",
-    "tekstId" : "4965465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.familyNameAtBirth" : {
@@ -220,7 +205,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.5. ",
     "ledetekst" : "Etternavn ved fødsel",
-    "tekstId" : "4c65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.forename" : {
@@ -228,7 +212,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.2. ",
     "ledetekst" : "Fornavn",
-    "tekstId" : "3068ce1f-83ad-e611-80d2-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.forenameAtBirth" : {
@@ -236,7 +219,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.6. ",
     "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
-    "tekstId" : "4d65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "R003.Persons.Person[0].PersonIdentification.sex.value[0]" : {
@@ -245,6 +227,6 @@
     "indeks" : "2.1.1.4. ",
     "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
-    "tekstId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   }
 }

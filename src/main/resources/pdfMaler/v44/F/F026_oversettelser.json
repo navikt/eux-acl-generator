@@ -54,7 +54,15 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "F026.InCaseAdoption.requestedInformation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1. ",
+    "prompt" : "Etterspurt informasjon",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Dato da adoptivforeldrene fikk omsorg for det adopterte barnet",
+      "02" : "Dato da adopsjonsbevillingen ble offentlig registrert",
+      "03" : "Dokument som stadfester at adopsjonen er lovlig"
+    },
+    "enumName" : "RequestedAdoptionInformationMultipleType"
   },
   "F026.Income.additionalRequestInformation" : {
     "index" : "3.2. ",
@@ -62,7 +70,15 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "F026.Income.requestedInformation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1. ",
+    "prompt" : "Velg etterspurt informasjon. Du kan sette kryss i flere bokser",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Type påkrevde data",
+      "02" : "Årlig inntekt",
+      "03" : "Periode (fra/til) det kreves opplysninger om"
+    },
+    "enumName" : "RequestedIncomeInformationMultipleType"
   },
   "F026.OrphansBenefits.additionalRequestInformation" : {
     "index" : "4.2. ",
@@ -70,7 +86,24 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "F026.OrphansBenefits.requestedInformation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "4.1. ",
+    "prompt" : "Etterspurt informasjon",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Identifisering av den avdøde",
+      "02" : "Identifisering av de berørte barna",
+      "03" : "Identifikasjon av andre personer - en annen slektning/verge som søker på vegne av den foreldreløse/barnet",
+      "04" : "Den foreldreløses/barnets bosted",
+      "05" : "Relasjon mellom den foreldreløse/barnet og avdøde",
+      "06" : "Relasjon mellom annen person og den avdøde",
+      "07" : "Den foreldreløses/barnets aktivitet",
+      "08" : "Skole",
+      "09" : "Opplæring",
+      "10" : "Uførhet",
+      "11" : "Arbeidsledighet",
+      "12" : "Inntekt til den foreldreløse/barnet"
+    },
+    "enumName" : "RequestedOrphanInformationMultipleType"
   },
   "F026.OtherInformationRelatedChild.additionalRequestInformation" : {
     "index" : "5.2. ",
@@ -78,7 +111,19 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "F026.OtherInformationRelatedChild.requestedInformation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.1. ",
+    "prompt" : "Etterspurt informasjon",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Hvem har daglig omsorg for barnet?",
+      "02" : "Hvem har foreldreansvar for barnet?",
+      "03" : "Er barnet adoptert",
+      "04" : "Forsørges barnet av det offentlige?",
+      "05" : "Går barnet i barnehage, finansieres barnehagen av staten eller det offentlige/antall timer barnet går i barnehage",
+      "06" : "Barnets sivilstand",
+      "07" : "Dato for endrede forhold"
+    },
+    "enumName" : "RequestedInformationChildStatusMultipleType"
   },
   "F026.Person.AdditionalInformationAboutNationality.Nationalities[0].nationality.value[0]" : {
     "index" : "1.2.1.1. ",

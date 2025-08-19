@@ -1,6 +1,9 @@
 {
   "S047.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "S047.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "1.1.8.1.3. ",
@@ -152,6 +155,13 @@
     "valuetype" : "_uxDateInput"
   },
   "S047.WeInformAbout.typeInformation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1. ",
+    "prompt" : "Type informasjon",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Siste dag den gjeldende personen mottar kontantytelser for arbeidsuførhet",
+      "02" : "Vesentlige opplysninger eller tilleggsinformasjon"
+    },
+    "enumName" : "InformationTypeS047MultipleType"
   }
 }

@@ -24,7 +24,7 @@ public class FilService {
     public static final String V43 = "4.3";
     public static final String V44 = "4.4";
     public static final String MAPPE_TARGET_CDM_SED = "target/cdmEuSed";
-    public static final String MAPPE_TARGET_CDM_DIFF = "target/cdmDiff";
+    public static final String MAPPE_TARGET_CDM_DIFF = "target/diffCdmEuSedVersjoner";
     public static final String MAPPE_TARGET_ACL_SED = "target/aclMaler";
     public static final String MAPPE_TARGET_FUNDAMENT_KODEVERK = "target/fundament/kodeverk";
     public static final String MAPPE_TARGET_FUNDAMENT_SEDMALER = "target/fundament/sedmaler";
@@ -237,6 +237,62 @@ public class FilService {
         }
     }
 
+    public void skrivKodeverksfundamentTilFil(
+            TreeMap<Integer, EnumkodeFundament> enumInnhold
+            , String enumNavn
+            , String mappenavn
+            , String cdmVersjon) {
+        String kodeverksfilJson = new JsonMapper().convertValue(enumInnhold, JsonNode.class).toPrettyString();
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String stiNavnEnumFil = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" +
+                mappenavn + "/" + enumNavn + ".json";
+        try {
+            FileUtils.writeStringToFile(new File(stiNavnEnumFil), kodeverksfilJson, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", stiNavnEnumFil);
+            //            throw new RuntimeException(e);
+        }
+    }
+
+    public void skrivKodeverkDiffTilEiFil(List<String> diffKodeverkOppsummeringLinjer, String cdmVersjon) {
+
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filnavn = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/_kodeverksdiff.txt";
+        String tekstMedDiff = StringUtils.join(diffKodeverkOppsummeringLinjer, "\n");
+        try {
+            FileUtils.writeStringToFile(new File(filnavn), tekstMedDiff, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavn);
+            //            throw new RuntimeException(e);
+        }
+    }
+
+    public void skrivKodeverkSammenlikningTilFil(String enumtype
+            , TreeMap<Integer, EnumkodeFundament> enumInnhold
+            , String sedType
+            , String cdmVersjon) {
+        String kodeverksfilJson = new JsonMapper().convertValue(enumInnhold, JsonNode.class).toPrettyString();
+        String sektor = StringUtils.splitByCharacterType(sedType)[0];
+        String filPrSektor = sektor + "/" + enumtype + ".json";
+        String filerSamlet = enumtype + ".json";
+
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filnavnStiPrSektor = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filPrSektor;
+        String filnavnStiFells = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filerSamlet;
+        try {
+            FileUtils.writeStringToFile(new File(filnavnStiPrSektor), kodeverksfilJson, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnStiPrSektor);
+            //            throw new RuntimeException(e);
+        }
+        try {
+            FileUtils.writeStringToFile(new File(filnavnStiFells), kodeverksfilJson, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnStiFells);
+            //            throw new RuntimeException(e);
+        }
+    }
+
     public void skrivEnumNavnTilFil(Set<String> enumnavn, String filnavn, String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filnavnSti = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "_" + filnavn;
@@ -253,7 +309,7 @@ public class FilService {
         String sektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filnavnSti = MAPPE_TARGET_PDF_SED_MAL + "/"
-                +  cdmVersjonTilpasset + "/" + sektor + "/"  + sedType +"_oversettelser.json";
+                + cdmVersjonTilpasset + "/" + sektor + "/" + sedType + "_oversettelser.json";
         String pdfSedMalJson = new JsonMapper().convertValue(euSedStiVsPdfSedElement, JsonNode.class).toPrettyString();
         try {
             FileUtils.writeStringToFile(new File(filnavnSti), pdfSedMalJson, "UTF-8");
@@ -350,15 +406,28 @@ public class FilService {
         String filsti = MAPPE_FUNDAMENT_MALER + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".json";
         try {
             String euSedFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
-            TreeMap<String, EuSedFundament> ff = new JsonMapper().readValue(euSedFundamentJson, new TypeReference<>() {
+            return new JsonMapper().readValue(euSedFundamentJson, new TypeReference<>() {
             });
-            return ff;
         } catch (JsonProcessingException e) {
             log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
         } catch (IOException e) {
             log.error("Fant ikke fil. filsti={}", filsti);
             //            throw new RuntimeException(e);
         }
+        return null;
+    }
+
+    public List<String> lesEnumFundamentFilnavnene(String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset;
+
+        File[] files = new File(filsti).listFiles();
+        if (files != null) {
+            return Arrays.stream(files)
+                    .map(f -> f.getName().replace(".json", ""))
+                    .toList();
+        }
+        log.error("Fant ikke mappe, eller mappa var tom. filsti={}", filsti);
         return null;
     }
 

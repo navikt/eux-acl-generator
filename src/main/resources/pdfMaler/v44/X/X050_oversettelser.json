@@ -89,7 +89,20 @@
     "valuetype" : "_uxTextInput"
   },
   "X050.TheFollowingBusinessExceptionHasOccurred.businessException.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1. ",
+    "prompt" : "Unntaksfeil",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Mottak av SED for manglende sak",
+      "02" : "Mottak av oppdatering for manglende SED",
+      "03" : "Mottak av SED etter at saken ble videresendt til en annen institusjon",
+      "04" : "Mottak av SED etter at saken ble fjernet ved mottak av X006 SED",
+      "05" : "Mottak av SED i annen rekkefølge enn definert i BUC",
+      "06" : "Mottak av SED når saken er avsluttet globalt",
+      "07" : "Mottak av SED med ugyldig virksomhetssertifikat",
+      "08" : "Mottak av SED / Vedlegg passerte ikke kontroll av skadelig programvare"
+    },
+    "enumName" : "BusinessExceptionMultipleType"
   },
   "X050.WhileReceivingFollowingSED.SEDCode" : {
     "index" : "3.1. ",

@@ -45,7 +45,10 @@
     "enumName" : "PSeparatedDivorcedType"
   },
   "P2100.Claimant.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.2.1.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P2100.Claimant.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "5.2.1.2. ",
@@ -415,7 +418,10 @@
     "valuetype" : "_uxDateInput"
   },
   "P2100.ClaimantChildren.Child[0].AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "8.1.2.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P2100.ClaimantChildren.Child[0].AdditionalInformationPerson.relationshipClaimant.value[0]" : {
     "index" : "8.1.2.2. ",
@@ -755,7 +761,10 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P2100.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P2100.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "2.2.1.2. ",
@@ -1009,7 +1018,16 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P2100.Miscellaneous.Attachments.attachments.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "11.4.1. ",
+    "prompt" : "Vedlegg",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Arbeidsattester",
+      "02" : "Medisinsk dokumentasjon",
+      "03" : "Bekreftelse på utdanning",
+      "99" : "Annet"
+    },
+    "enumName" : "PAttachedMedicalWorkStudyOtherMultipleType"
   },
   "P2100.Miscellaneous.DeductionsGrounds[0].deductionsGrounds.value[0]" : {
     "index" : "11.3.1. ",

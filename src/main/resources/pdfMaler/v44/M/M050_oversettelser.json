@@ -47,7 +47,10 @@
     "enumName" : "EESSIAddressType"
   },
   "M050.MemberFamilyOtherThanSpousepartnerIncomeRequested.MemberFamilyOtherThanSpousepartnerIncomeRequested[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1.1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "M050.MemberFamilyOtherThanSpousepartnerIncomeRequested.MemberFamilyOtherThanSpousepartnerIncomeRequested[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.otherRelative" : {
     "index" : "3.1.1.2.3. ",
@@ -218,7 +221,20 @@
     "enumName" : "EESSIOpenPeriodType"
   },
   "M050.MemberFamilyOtherThanSpousepartnerIncomeRequested.MemberFamilyOtherThanSpousepartnerIncomeRequested[0].Request[0].pleaseProvideInformationWithFollowingSourceIncome.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1.2.1. ",
+    "prompt" : "Vennligst send oss informasjon av følgende inntektstype(r)/inntektskilde(r)",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Ansettelsesforhold",
+      "02" : "Selvstendig næringsvirksomhet",
+      "03" : "Annen inntekt fra profesjonsutøvelse eller forretningsvirksomhet",
+      "04" : "Trygdeytelser",
+      "05" : "Løsøre",
+      "06" : "Fast eiendom",
+      "07" : "Overdratt eiendom",
+      "99" : "Annen inntektskilde"
+    },
+    "enumName" : "IncomeTypeGeneralMultipleType"
   },
   "M050.PersonIncomeRequested.Person.AdditionalInformationPerson.AddressPerson.Address.buildingName" : {
     "index" : "1.1.2.3.2.2. ",
@@ -273,7 +289,10 @@
     "valuetype" : "_uxTextInput"
   },
   "M050.PersonIncomeRequested.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "M050.PersonIncomeRequested.Person.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator.value[0]" : {
     "index" : "1.1.2.4. ",
@@ -424,10 +443,32 @@
     "enumName" : "EESSIOpenPeriodType"
   },
   "M050.PersonIncomeRequested.Request[0].pleaseProvideInformationWithFollowingSourceIncome.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Vennligst send oss informasjon av følgende inntektstype(r)/inntektskilde(r)",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Ansettelsesforhold",
+      "02" : "Selvstendig næringsvirksomhet",
+      "03" : "Annen inntekt fra profesjonsutøvelse eller forretningsvirksomhet",
+      "04" : "Trygdeytelser",
+      "05" : "Løsøre",
+      "06" : "Fast eiendom",
+      "07" : "Overdratt eiendom",
+      "99" : "Annen inntektskilde"
+    },
+    "enumName" : "IncomeTypeGeneralMultipleType"
   },
   "M050.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.1. ",
+    "prompt" : "Vedlagte dokument(er)",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Søknad",
+      "02" : "Fakturaer",
+      "03" : "Dødsattest",
+      "99" : "Annet/andre dokument(er)"
+    },
+    "enumName" : "MAttachedDocsMultipleType"
   },
   "M050.PleaseFindAttachedFollowingDocument.otherDocument" : {
     "index" : "5.2. ",
@@ -465,7 +506,20 @@
     "enumName" : "EESSIOpenPeriodType"
   },
   "M050.SpousePartnerIncomeRequested.Request[0].pleaseProvideInformationWithFollowingSourceIncome.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1. ",
+    "prompt" : "Vennligst send oss informasjon av følgende inntektstype(r)/inntektskilde(r)",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Ansettelsesforhold",
+      "02" : "Selvstendig næringsvirksomhet",
+      "03" : "Annen inntekt fra profesjonsutøvelse eller forretningsvirksomhet",
+      "04" : "Trygdeytelser",
+      "05" : "Løsøre",
+      "06" : "Fast eiendom",
+      "07" : "Overdratt eiendom",
+      "99" : "Annen inntektskilde"
+    },
+    "enumName" : "IncomeTypeGeneralMultipleType"
   },
   "M050.SpousePartnerIncomeRequested.SpousePartner.AdditionalInformationPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "2.1.2.4.2.2. ",

@@ -4,22 +4,19 @@
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "7.1. ",
     "ledetekst" : "Ytterligere informasjon",
-    "tekstId" : "e56d7007-7159-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "500"
   },
   "H120.DetailsRequest.TheRequestConcernsIncapacityForWork.TheRequestedMedicalEvidenceExaminationConcern.endDate" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxDateInput",
     "indeks" : "4.1.1.2. ",
-    "ledetekst" : "Sluttdato",
-    "tekstId" : "3982ce51-f844-e611-80c9-000d3a22e8cd"
+    "ledetekst" : "Sluttdato"
   },
   "H120.DetailsRequest.TheRequestConcernsIncapacityForWork.TheRequestedMedicalEvidenceExaminationConcern.startDate" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxDateInput",
     "indeks" : "4.1.1.1. ",
-    "ledetekst" : "Angi startdato for perioden.",
-    "tekstId" : "3882ce51-f844-e611-80c9-000d3a22e8cd"
+    "ledetekst" : "Angi startdato for perioden."
   },
   "H120.DetailsRequest.TheRequestConcernsIncapacityForWork.weAgreeCoverCostsMedicalEvidenceexamination.value[0]" : {
     "verdiType" : "enum",
@@ -27,7 +24,7 @@
     "indeks" : "4.1.2. ",
     "ledetekst" : "Vi samtykker i å dekke kostnadene for medisinsk dokumentasjon/undersøkelse",
     "enumNavn" : "EESSIYesNoNAType",
-    "tekstId" : "570adc5c-b8a7-4567-8cda-0c87d5879323"
+    "enumNavnId" : "570adc5c-b8a7-4567-8cda-0c87d5879323"
   },
   "H120.DetailsRequest.TheRequestDoesNotConcernIncapacityForWork.weAgreeCoverCostsMedicalEvidenceexamination.value[0]" : {
     "verdiType" : "enum",
@@ -35,38 +32,43 @@
     "indeks" : "4.2.1. ",
     "ledetekst" : "Vi samtykker i å dekke kostnadene for medisinsk dokumentasjon/undersøkelse",
     "enumNavn" : "EESSIYesNoNAType",
-    "tekstId" : "ccf932be-f373-493d-a834-68b0c411b93f"
+    "enumNavnId" : "ccf932be-f373-493d-a834-68b0c411b93f"
   },
   "H120.NatureRequest.FillInIfPleaseProvideOtherMedical.otherMedicalEvidence" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.3.1. ",
     "ledetekst" : "Annen medisinsk dokumentasjon",
-    "tekstId" : "8dd28f0c-8159-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "500"
   },
   "H120.NatureRequest.pleaseProvide.value[0]" : {
     "verdiType" : "enum",
-    "cdmType" : "_uxTextInput"
+    "cdmType" : "_uxMultiCheckbox",
+    "indeks" : "3.2. ",
+    "ledetekst" : "Vennligst oppgi",
+    "enumNavn" : "ApplicationForMedicalReportsMultipleType",
+    "enumNavnId" : "8cd28f0c-8159-e611-80ca-000d3a22e8cd"
   },
   "H120.NatureRequest.specialRequirementsPointsCoveredFromMedicalExamination" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.4. ",
     "ledetekst" : "Beskrivelse (Spesielle krav til hva som skal dekkes) av etterspurt legeundersøkelse",
-    "tekstId" : "e92255a2-7059-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "500"
   },
   "H120.NatureRequest.weAskTo.value[0]" : {
     "verdiType" : "enum",
-    "cdmType" : "_uxTextInput"
+    "cdmType" : "_uxMultiCheckbox",
+    "indeks" : "3.1. ",
+    "ledetekst" : "Vi ber dere om å",
+    "enumNavn" : "ApplyForCostsEstimationExaminationMultipleType",
+    "enumNavnId" : "e72255a2-7059-e611-80ca-000d3a22e8cd"
   },
   "H120.Person.AdditionalInformationPerson.Address.buildingName" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.4.2. ",
     "ledetekst" : "Bygningens navn",
-    "tekstId" : "3d684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.AdditionalInformationPerson.Address.country.value[0]" : {
@@ -75,14 +77,13 @@
     "indeks" : "1.2.4.6. ",
     "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
-    "tekstId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "H120.Person.AdditionalInformationPerson.Address.postalCode" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.4.4. ",
     "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
-    "tekstId" : "6033b48b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "25"
   },
   "H120.Person.AdditionalInformationPerson.Address.region" : {
@@ -90,7 +91,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.4.5. ",
     "ledetekst" : "Region",
-    "tekstId" : "6133b48b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "H120.Person.AdditionalInformationPerson.Address.street" : {
@@ -98,7 +98,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.4.1. ",
     "ledetekst" : "Gate",
-    "tekstId" : "3c684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.AdditionalInformationPerson.Address.town" : {
@@ -106,22 +105,19 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.4.3. ",
     "ledetekst" : "By",
-    "tekstId" : "5f33b48b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "H120.Person.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.5.2.1.1. ",
-    "ledetekst" : "E-postadresse",
-    "tekstId" : "30684f61-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "E-postadresse"
   },
   "H120.Person.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.5.1.1.2. ",
-    "ledetekst" : "Angi telefonnummer med nasjonal kode hvis dette finnes.",
-    "tekstId" : "2f684f61-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Angi telefonnummer med nasjonal kode hvis dette finnes."
   },
   "H120.Person.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
     "verdiType" : "enum",
@@ -129,18 +125,21 @@
     "indeks" : "1.2.5.1.1.1. ",
     "ledetekst" : "Angi hvilken type nummer som er gitt",
     "enumNavn" : "EESSITelephoneNumberType",
-    "tekstId" : "2e684f61-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "2e684f61-9218-e611-80ea-000c292ed0d7"
   },
   "H120.Person.AdditionalInformationPerson.nationality.value[0]" : {
     "verdiType" : "enum",
-    "cdmType" : "_uxTextInput"
+    "cdmType" : "_uxMultiSelect",
+    "indeks" : "1.2.1. ",
+    "ledetekst" : "Nasjonalitet",
+    "enumNavn" : "EESSINationalityMultipleType",
+    "enumNavnId" : "c55cdaab-2553-e611-80ca-000d3a22e8cd"
   },
   "H120.Person.AdditionalInformationPerson.previousFamilyName" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.2. ",
     "ledetekst" : "Tidligere etternavn",
-    "tekstId" : "ce9db843-525d-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "H120.Person.AdditionalInformationPerson.previousForename" : {
@@ -148,7 +147,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.3. ",
     "ledetekst" : "Tidligere fornavn",
-    "tekstId" : "cf9db843-525d-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
@@ -157,14 +155,13 @@
     "indeks" : "1.1.8.1.3. ",
     "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
-    "tekstId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.1.2. ",
     "ledetekst" : "Region",
-    "tekstId" : "3f684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
@@ -172,7 +169,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.1.1. ",
     "ledetekst" : "By",
-    "tekstId" : "3e684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
@@ -180,7 +176,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.2. ",
     "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
-    "tekstId" : "4e65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -188,7 +183,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.3. ",
     "ledetekst" : "Fars fornavn",
-    "tekstId" : "4f65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
@@ -196,7 +190,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.5. ",
     "ledetekst" : "Mors fornavn",
-    "tekstId" : "5165465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
@@ -204,22 +197,19 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.4. ",
     "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
-    "tekstId" : "5065465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID",
-    "tekstId" : "38684f61-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Institusjonens ID"
   },
   "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.7.1.4.2. ",
     "ledetekst" : "Institusjonens navn",
-    "tekstId" : "2aab0bc6-acfa-e611-80d3-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
@@ -228,14 +218,13 @@
     "indeks" : "1.1.7.1.1. ",
     "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
-    "tekstId" : "35684f61-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.7.1.2. ",
     "ledetekst" : "Personnummer (PIN)",
-    "tekstId" : "37684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
@@ -244,21 +233,19 @@
     "indeks" : "1.1.7.1.3. ",
     "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
-    "tekstId" : "36684f61-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "H120.Person.PersonIdentification.dateBirth" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxDateInput",
     "indeks" : "1.1.3. ",
-    "ledetekst" : "Fødselsdato",
-    "tekstId" : "4a65465b-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Fødselsdato"
   },
   "H120.Person.PersonIdentification.familyName" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1. ",
     "ledetekst" : "Etternavn",
-    "tekstId" : "4965465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.familyNameAtBirth" : {
@@ -266,7 +253,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.5. ",
     "ledetekst" : "Etternavn ved fødsel",
-    "tekstId" : "4c65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.forename" : {
@@ -274,7 +260,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
     "ledetekst" : "Fornavn",
-    "tekstId" : "3068ce1f-83ad-e611-80d2-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.forenameAtBirth" : {
@@ -282,7 +267,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.6. ",
     "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
-    "tekstId" : "4d65465b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.Person.PersonIdentification.sex.value[0]" : {
@@ -291,14 +275,13 @@
     "indeks" : "1.1.4. ",
     "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
-    "tekstId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.buildingName" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.8.3.2. ",
     "ledetekst" : "Bygningens navn",
-    "tekstId" : "3d684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.country.value[0]" : {
@@ -307,14 +290,13 @@
     "indeks" : "6.1.8.3.6. ",
     "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
-    "tekstId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.postalCode" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.8.3.4. ",
     "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
-    "tekstId" : "6033b48b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "25"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.region" : {
@@ -322,7 +304,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.8.3.5. ",
     "ledetekst" : "Region",
-    "tekstId" : "6133b48b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.street" : {
@@ -330,7 +311,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.8.3.1. ",
     "ledetekst" : "Gate",
-    "tekstId" : "3c684f61-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.town" : {
@@ -338,7 +318,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.8.3.3. ",
     "ledetekst" : "By",
-    "tekstId" : "5f33b48b-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "65"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.IdentificationNumbers.IdentificationNumber[0].number" : {
@@ -346,7 +325,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.8.2.1.1. ",
     "ledetekst" : "Nummer",
-    "tekstId" : "9d7a5f67-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "25"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
@@ -355,14 +333,13 @@
     "indeks" : "6.1.8.2.1.2. ",
     "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
-    "tekstId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.name" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.8.1. ",
     "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
-    "tekstId" : "9c7a5f67-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "155"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.PleaseFillInFollowingIfStatusPersonOther.statusPersonIfOther" : {
@@ -370,7 +347,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.1. ",
     "ledetekst" : "Personens status (hvis «Annet»)",
-    "tekstId" : "38661c10-b558-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "65"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.accidentDiseaseCode" : {
@@ -378,7 +354,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3. ",
     "ledetekst" : "Kode for ulykke/sykdom",
-    "tekstId" : "d508be38-b458-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "25"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.accidentDiseaseCodingSystem" : {
@@ -386,7 +361,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4. ",
     "ledetekst" : "Kodingssystem for ulykke/sykdom",
-    "tekstId" : "d208be38-b458-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "65"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.consequencesAccidentKindOrShortDescriptionDisease" : {
@@ -394,15 +368,13 @@
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "6.1.5. ",
     "ledetekst" : "Konsekvenser ulykken hadde eller kort beskrivelse av sykdommen",
-    "tekstId" : "d308be38-b458-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "255"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.date" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxDateInput",
     "indeks" : "6.1.2. ",
-    "ledetekst" : "Dato",
-    "tekstId" : "aaef6ee7-b158-e611-80ca-000d3a22e8cd"
+    "ledetekst" : "Dato"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.statusPerson.value[0]" : {
     "verdiType" : "enum",
@@ -410,7 +382,7 @@
     "indeks" : "6.1.6. ",
     "ledetekst" : "Personens status",
     "enumNavn" : "HTypePersonLabourPartialType",
-    "tekstId" : "d408be38-b458-e611-80ca-000d3a22e8cd"
+    "enumNavnId" : "d408be38-b458-e611-80ca-000d3a22e8cd"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.thisSEDRelatedTo.value[0]" : {
     "verdiType" : "enum",
@@ -418,19 +390,22 @@
     "indeks" : "6.1.1. ",
     "ledetekst" : "Denne SED-en gjelder",
     "enumNavn" : "EESSITypeSEDAccidentDiseaseType",
-    "tekstId" : "b2ef6ee7-b158-e611-80ca-000d3a22e8cd"
+    "enumNavnId" : "b2ef6ee7-b158-e611-80ca-000d3a22e8cd"
   },
   "H120.QuestionsForFamilyBenefitsOnly.additionalInformationMedicalReport" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "5.2. ",
     "ledetekst" : "Ytterligere informasjon til medisinsk rapport",
-    "tekstId" : "bd6cb32e-555d-e611-80ca-000d3a22e8cd",
     "tekstlengde" : "500"
   },
   "H120.QuestionsForFamilyBenefitsOnly.requestedInformation.value[0]" : {
     "verdiType" : "enum",
-    "cdmType" : "_uxTextInput"
+    "cdmType" : "_uxMultiSelect",
+    "indeks" : "5.1. ",
+    "ledetekst" : "Etterspurt informasjon",
+    "enumNavn" : "RequestedInformationMedicalReportMultipleType",
+    "enumNavnId" : "bc6cb32e-555d-e611-80ca-000d3a22e8cd"
   },
   "H120.TheBenefitConcerned.typeBenefitInReferWhichMedicalInformationRequested.value[0]" : {
     "verdiType" : "enum",
@@ -438,6 +413,6 @@
     "indeks" : "2.1. ",
     "ledetekst" : "Type ytelse der det anmodes om medisinsk informasjon",
     "enumNavn" : "BenefitTypeH120Type",
-    "tekstId" : "5976ba3c-6059-e611-80ca-000d3a22e8cd"
+    "enumNavnId" : "5976ba3c-6059-e611-80ca-000d3a22e8cd"
   }
 }

@@ -36,7 +36,15 @@
     "valuetype" : "_uxTextInput"
   },
   "DA040.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2. ",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressMultipleType"
   },
   "DA040.Employer.Address.buildingName" : {
     "index" : "4.3.2. ",
@@ -127,7 +135,10 @@
     "enumName" : "EESSIHasTheCashPaymentBeenAcceptedType"
   },
   "DA040.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "DA040.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",

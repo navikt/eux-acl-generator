@@ -154,10 +154,28 @@
     "enumName" : "EESSIYesNoType"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1.3.1.1. ",
+    "prompt" : "Type eierskap",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Eierskap",
+      "02" : "Begrensede faktiske rettigheter",
+      "03" : "Berettiget til renter",
+      "99" : "Annet"
+    },
+    "enumName" : "TypeOwnershipMultipleType"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1.3.1.2. ",
+    "prompt" : "Type eiendom",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Landeiendom",
+      "02" : "Bolig",
+      "03" : "Løsøre",
+      "99" : "Annet"
+    },
+    "enumName" : "TypePropertyMultipleType"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.amount" : {
     "index" : "3.1.4.2.2.1.2.1. ",
@@ -256,7 +274,10 @@
     "enumName" : "EESSIAddressType"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1.1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.otherRelative" : {
     "index" : "3.1.1.2.3. ",
@@ -546,10 +567,28 @@
     "enumName" : "EESSIYesNoType"
   },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.3.1.1. ",
+    "prompt" : "Type eierskap",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Eierskap",
+      "02" : "Begrensede faktiske rettigheter",
+      "03" : "Berettiget til renter",
+      "99" : "Annet"
+    },
+    "enumName" : "TypeOwnershipMultipleType"
   },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.3.1.2. ",
+    "prompt" : "Type eiendom",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Landeiendom",
+      "02" : "Bolig",
+      "03" : "Løsøre",
+      "99" : "Annet"
+    },
+    "enumName" : "TypePropertyMultipleType"
   },
   "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.amount" : {
     "index" : "1.4.2.2.1.2.1. ",
@@ -653,7 +692,10 @@
     "valuetype" : "_uxTextInput"
   },
   "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator.value[0]" : {
     "index" : "1.1.2.5. ",
@@ -791,7 +833,16 @@
     "enumName" : "EESSISexType"
   },
   "M051.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.1. ",
+    "prompt" : "Vedlagte dokument(er)",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Søknad",
+      "02" : "Fakturaer",
+      "03" : "Dødsattest",
+      "99" : "Annet/andre dokument(er)"
+    },
+    "enumName" : "MAttachedDocsMultipleType"
   },
   "M051.PleaseFindAttachedFollowingDocument.otherDocument" : {
     "index" : "5.2. ",
@@ -947,10 +998,28 @@
     "enumName" : "EESSIYesNoType"
   },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.3.1.1. ",
+    "prompt" : "Type eierskap",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Eierskap",
+      "02" : "Begrensede faktiske rettigheter",
+      "03" : "Berettiget til renter",
+      "99" : "Annet"
+    },
+    "enumName" : "TypeOwnershipMultipleType"
   },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.3.1.2. ",
+    "prompt" : "Type eiendom",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Landeiendom",
+      "02" : "Bolig",
+      "03" : "Løsøre",
+      "99" : "Annet"
+    },
+    "enumName" : "TypePropertyMultipleType"
   },
   "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.amount" : {
     "index" : "2.4.2.2.1.2.1. ",

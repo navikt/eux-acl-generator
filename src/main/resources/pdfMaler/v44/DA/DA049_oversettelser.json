@@ -78,7 +78,16 @@
     "enumName" : "ConditionsType"
   },
   "DA049.Decision.reasonForConditionForAccidentWorkDiseaseNotFulfilled.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.2. ",
+    "prompt" : "Grunn til at vilkårene for arbeidsulykke eller yrkessykdom ikke er oppfylt",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Personen dekkes ikke av sosiallovgivningen i vårt medlemsland",
+      "02" : "Personen er ikke forsikret mot arbeidsulykker eller yrkessykdommer",
+      "03" : "Der er ikke sammenheng mellom ulykken eller sykdommen og arbeidet",
+      "99" : "Annet"
+    },
+    "enumName" : "DReasonAccidentDiseasePersonMultipleType"
   },
   "DA049.Employer.Address.buildingName" : {
     "index" : "4.3.2. ",
@@ -134,7 +143,10 @@
     "valuetype" : "_uxTextInput"
   },
   "DA049.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "DA049.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",

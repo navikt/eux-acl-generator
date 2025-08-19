@@ -5,7 +5,22 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "U008.Entitlement.PleaseFillInFollowingIfEntitlementExportYes.CircumstancesLikelyAffectEntitlementUnemployment.circumstancesLikelyAffectEntitlementUnemploymentBenefit.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.2.2.1. ",
+    "prompt" : "Omstendigheter som sannsynligvis vil påvirke retten til dagpenger.",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Den arbeidsledige får jobb eller blir selvstendig næringsdrivende.",
+      "02" : "Den arbeidsledige får inntekt fra en annen yrkesaktivitet enn de ovennevnte",
+      "03" : "Den arbeidsledige avslår et jobbtilbud",
+      "04" : "Den arbeidsledige avslår å delta i en samtale hos arbeidsformidlingen",
+      "05" : "Den arbeidsledige avslår å delta i arbeidsavklaring",
+      "06" : "Den arbeidsledige er arbeidsufør",
+      "07" : "Den arbeidsledige følger ikke kontrollprosedyrene",
+      "08" : "Den arbeidsledige er ikke tilgjengelig for arbeidsformidlingen",
+      "10" : "Ingen",
+      "99" : "Andre omstendigheter"
+    },
+    "enumName" : "EntitlementCircumstancesPlusNoneMultipleType"
   },
   "U008.Entitlement.PleaseFillInFollowingIfEntitlementExportYes.ExportPeriodDetails.EstimatedEndEntitlement.date" : {
     "index" : "3.2.1.2.1. ",
@@ -49,7 +64,10 @@
     "enumName" : "EESSIEUEFTACountryType"
   },
   "U008.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "U008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.8.1.3. ",

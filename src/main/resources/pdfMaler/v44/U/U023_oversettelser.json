@@ -15,7 +15,15 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.NonAcceptanceIndividualClaim.reasonForNonAcceptance.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1.6.1.1. ",
+    "prompt" : "Grunn til manglende aksept",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Fremsatt etter tidsfristen",
+      "02" : "Ingen periode godkjent",
+      "99" : "Annen årsak eller tilleggsinformasjon"
+    },
+    "enumName" : "ReasonForNonAcceptanceLateClaimMultipleType"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialAcceptanceDueCeiling.AmountIntendedReimbursed.amount" : {
     "index" : "3.1.6.2.2.1.1. ",
@@ -39,7 +47,16 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.reasonForPartialNonAcceptance.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1.6.2.1. ",
+    "prompt" : "01 - 'Delvis aksept på grunn av tak i nasjonal lovgivning'",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Delvis aksept på grunn av tak i nasjonal lovgivning",
+      "02" : "Periode ikke berettiget",
+      "03" : "Ufullstendig refusjonskrav",
+      "99" : "Annen årsak eller tilleggsinformasjon"
+    },
+    "enumName" : "ReasonForPartialNonAcceptanceMultipleType"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.dateBirth" : {
     "index" : "3.1.5.3. ",

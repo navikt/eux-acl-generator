@@ -36,7 +36,15 @@
     "valuetype" : "_uxTextInput"
   },
   "DA031.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2. ",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressMultipleType"
   },
   "DA031.ApplicationForCashBenefit.AccordingMedicalCertificateAttachedPerson.FixedPeriod.endDate" : {
     "index" : "5.2.1.2. ",
@@ -122,7 +130,10 @@
     "valuetype" : "_uxTextInput"
   },
   "DA031.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "DA031.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",

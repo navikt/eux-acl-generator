@@ -52,7 +52,10 @@
     "valuetype" : "_uxTextInput"
   },
   "M053.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "M053.Person.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator.value[0]" : {
     "index" : "1.2.5. ",
@@ -251,7 +254,16 @@
     "valuetype" : "_uxDateInput"
   },
   "M053.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "4.1. ",
+    "prompt" : "Vedlagte dokument(er)",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Søknad",
+      "02" : "Fakturaer",
+      "03" : "Dødsattest",
+      "99" : "Annet/andre dokument(er)"
+    },
+    "enumName" : "MAttachedDocsMultipleType"
   },
   "M053.PleaseFindAttachedFollowingDocument.otherDocument" : {
     "index" : "4.2. ",

@@ -972,7 +972,17 @@
     "enumName" : "FDecisionProvisionalOnCompetenceType"
   },
   "F002.InformationAboutChangeInCircumstances.changeCircumstanceFor.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1. ",
+    "prompt" : "Endrede omstendigheter for",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Hele familien",
+      "02" : "Søker",
+      "03" : "Ektefelle/partner",
+      "04" : "Annen person",
+      "05" : "Barn"
+    },
+    "enumName" : "FCircsumstancesChangeMultipleType"
   },
   "F002.InformationAgreementDisagreementAfter.InformationAgreementWithDecision[0].InCaseDisagreement.additionalInformationForGroundsDisagreement" : {
     "index" : "7.1.3.2. ",
@@ -2388,7 +2398,20 @@
     "enumName" : "FTypeEmploymentType"
   },
   "F002.PurposeThisSED.purposeThisSED.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.1. ",
+    "prompt" : "Formålet med denne SED-en",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Mottak av søknad om familieytelser",
+      "02" : "Informasjon om endrede forhold",
+      "03" : "Svar på kontroll eller årlig kontroll",
+      "04" : "Svar på anmodning om informasjon",
+      "05" : "Vedtak",
+      "06" : "Motregning",
+      "07" : "Prosedyre ved uenighet",
+      "08" : "Refusjon i henhold til artikkel 58 i forordning (EF) nr. 987/2009"
+    },
+    "enumName" : "SedPurposeReplyMultipleType"
   },
   "F002.ReasonForDisagreement.additionalGroundsForDisagreement" : {
     "index" : "6.7. ",
@@ -2498,7 +2521,14 @@
     "valuetype" : "_uxDateInput"
   },
   "F002.ReceiptApplicationForFamilyBenefits.informationApplication.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.4. ",
+    "prompt" : "Informasjon om søknaden",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Vi bekrefter leverte opplysninger",
+      "02" : "Gi oss punktvise opplysninger"
+    },
+    "enumName" : "FInformationApplicationRequestMultipleType"
   },
   "F002.ReceiptApplicationForFamilyBenefits.pointsForWhichMoreInformationNeeded" : {
     "index" : "2.5. ",

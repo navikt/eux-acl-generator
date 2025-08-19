@@ -10,7 +10,10 @@
     "valuetype" : "_uxDateInput"
   },
   "P2200.Children.Child[0].AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "6.1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P2200.Children.Child[0].AdditionalInformationPerson.relationshipInsuredPerson.value[0]" : {
     "index" : "6.1.2.2. ",
@@ -273,7 +276,10 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P2200.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P2200.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "2.2.1.2. ",
@@ -781,7 +787,16 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P2200.Miscellaneous.attachments.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "9.4. ",
+    "prompt" : "Vedlegg",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Arbeidsattester",
+      "02" : "Medisinsk dokumentasjon",
+      "03" : "Bekreftelse på utdanning",
+      "99" : "Annet"
+    },
+    "enumName" : "PAttachedMedicalWorkStudyOtherMultipleType"
   },
   "P2200.Miscellaneous.dateClaim" : {
     "index" : "9.1. ",
@@ -789,10 +804,25 @@
     "valuetype" : "_uxDateInput"
   },
   "P2200.Miscellaneous.deductionsGrounds.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "9.3. ",
+    "prompt" : "Angi oss om det finnes en motregningsprosedyre i denne saken. Dette er ikke en offisiell anmodning om å motregne ytelser, men et skritt for å informere mottakerinstitusjonen om forventet motregningsprosedyre. Offisiell anmodning om motregning fremsettes med SED-er om innkreving.",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "987/2009",
+      "02" : "987/2009",
+      "03" : "987/2009"
+    },
+    "enumName" : "PDeductionsGroundsMultipleType"
   },
   "P2200.Miscellaneous.recipientDecision.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "9.2. ",
+    "prompt" : "Mottaker av vedtaket",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Forsikret person",
+      "02" : "Representant/verge"
+    },
+    "enumName" : "PDecisionInsuredLegalGuardianMultipleType"
   },
   "P2200.Miscellaneous.requestedDocuments" : {
     "index" : "9.6. ",
@@ -800,7 +830,10 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P2200.Spouse.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.3.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P2200.Spouse.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "5.3.2. ",

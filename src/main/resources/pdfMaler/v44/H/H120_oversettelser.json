@@ -42,7 +42,17 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "H120.NatureRequest.pleaseProvide.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.2. ",
+    "prompt" : "Vennligst oppgi",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Standard medisinsk rapport",
+      "02" : "Utførlig medisinsk rapport",
+      "03" : "Medisinsk rapport angående familieytelser",
+      "04" : "Bilateralt avtalt medisinsk rapport",
+      "99" : "Annen medisinsk dokumentasjon"
+    },
+    "enumName" : "ApplicationForMedicalReportsMultipleType"
   },
   "H120.NatureRequest.specialRequirementsPointsCoveredFromMedicalExamination" : {
     "index" : "3.4. ",
@@ -50,7 +60,15 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "H120.NatureRequest.weAskTo.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1. ",
+    "prompt" : "Vi ber dere om å",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Informer oss om estimerte kostnader for medisinsk dokumentasjon/legeundersøkelse",
+      "02" : "Utfør legeundersøkelse",
+      "03" : "Send oss den medisinske informasjonen/dokumentasjonen"
+    },
+    "enumName" : "ApplyForCostsEstimationExaminationMultipleType"
   },
   "H120.Person.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "1.2.4.2. ",
@@ -105,7 +123,10 @@
     "enumName" : "EESSITelephoneNumberType"
   },
   "H120.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "H120.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",
@@ -332,7 +353,23 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "H120.QuestionsForFamilyBenefitsOnly.requestedInformation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.1. ",
+    "prompt" : "Etterspurt informasjon",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Grad av selvhjulpenhet",
+      "02" : "Grad av hjelpebehov",
+      "03" : "Årsak til uførhet",
+      "04" : "Uføretidspunkt eller endring i uføregrad",
+      "05" : "Fysiske og mentale evner",
+      "06" : "Grad av mentale og fysiske evner",
+      "07" : "Dato når dette beløpet ble nådd",
+      "08" : "Er dette beløpet permanent?",
+      "09" : "Trengs ny undersøkelse? Hvis ja, når?",
+      "10" : "Prognose",
+      "11" : "Grad av inntektsevne"
+    },
+    "enumName" : "RequestedInformationMedicalReportMultipleType"
   },
   "H120.TheBenefitConcerned.typeBenefitInReferWhichMedicalInformationRequested.value[0]" : {
     "index" : "2.1. ",

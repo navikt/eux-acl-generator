@@ -52,7 +52,25 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "H130.Attachments.predefinedDocuments.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "8.1. ",
+    "prompt" : "Forhåndsdefinerte dokumenter",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Søknad",
+      "02" : "Dødsattest",
+      "03" : "Fakturaer",
+      "04" : "Ligningsattest",
+      "05" : "Krav",
+      "06" : "Medisinsk dokumentasjon",
+      "07" : "Arbeidsattest",
+      "08" : "Fødselsattest",
+      "09" : "Ekteskapsattest",
+      "10" : "Vitnemål",
+      "11" : "Medisinsk rapport",
+      "12" : "Legeattest",
+      "99" : "Annet"
+    },
+    "enumName" : "HAttachedDocumentsFullListMultipleType"
   },
   "H130.FillInSectionIfRequestConcerns.personStatus.value[0]" : {
     "index" : "3.1. ",
@@ -170,7 +188,14 @@
     "enumName" : "EESSITypeSEDAccidentDiseaseType"
   },
   "H130.NatureRequest.weAskTo.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "6.1. ",
+    "prompt" : "Vi ber dere om å",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Informer oss om beregnede kostnader for administrativ kontroll",
+      "02" : "Utfør administrativ kontroll"
+    },
+    "enumName" : "RequestNatureAdministrativeCheckMultipleType"
   },
   "H130.PeriodConcerned.TheAdministrativeCheckConcernsPeriodIncapacity.Period.endDate" : {
     "index" : "5.1.1.2. ",
@@ -183,7 +208,10 @@
     "valuetype" : "_uxDateInput"
   },
   "H130.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "H130.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "1.1.8.1.3. ",

@@ -5,7 +5,10 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P8000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P8000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "2.2.1.2. ",
@@ -199,7 +202,10 @@
     "enumName" : "EESSIEUEFTACountryType"
   },
   "P8000.OtherPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.3.1.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P8000.OtherPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "3.3.1.2. ",
@@ -433,7 +439,18 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P8000.RequestForDocument.pleaseProvideWithFollowingDocuments.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "6.1. ",
+    "prompt" : "Vennligst send oss følgende dokumenter",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Medisinsk dokumentasjon",
+      "02" : "Utførlig medisinsk rapport",
+      "03" : "Arbeidsattest",
+      "04" : "Fødselsattest",
+      "05" : "Vitnemål",
+      "99" : "Annet/andre dokument(er)"
+    },
+    "enumName" : "PRequestedDocumentInMultipleType"
   },
   "P8000.RequestForDocument.reasonForRequest" : {
     "index" : "6.3. ",
@@ -441,10 +458,28 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P8000.RequestForInformation.InformationPersonActivity.pleaseInform.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "8.3.2. ",
+    "prompt" : "Vennligst informer om",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Startdato for yrkesaktiviteten",
+      "02" : "Sluttdato for yrkesaktiviteten",
+      "03" : "Arbeidstimer per uke",
+      "04" : "Yrke"
+    },
+    "enumName" : "ActivityPeriodMultipleType"
   },
   "P8000.RequestForInformation.InformationPersonActivity.pleaseInformAboutPersonActivityAs.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "8.3.1. ",
+    "prompt" : "Vennligst informer oss om personens yrkesaktivitet som",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Ansatt",
+      "02" : "Selvstendig næringsdrivende",
+      "03" : "Offentlig ansatt",
+      "04" : "Frivillig arbeider (ikke inntektsgivende virksomhet)"
+    },
+    "enumName" : "PersonsActivityMultipleType"
   },
   "P8000.RequestForInformation.InformationPersonBenefit[0].PleaseFillInFollowingIfPleaseInformIfPersonIs.otherBenefit" : {
     "index" : "8.2.2.1. ",
@@ -500,7 +535,17 @@
     "enumName" : "PBenefitTypePlusBenefitNotCoveredByRegulationsType"
   },
   "P8000.RequestForInformation.PersonIncome[0].pleaseInformAboutPersonIncome.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "8.4.1. ",
+    "prompt" : "Vennligst informer oss om personens inntekt",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Inntektskilde",
+      "02" : "Bruttobeløp for inntekt",
+      "03" : "Betalingshyppighet for inntekten",
+      "04" : "Startdato for mottak av inntekt",
+      "05" : "Sluttdato for mottak av inntekt"
+    },
+    "enumName" : "PersonsIncomeMultipleType"
   },
   "P8000.RequestForInformation.PersonIncome[0].pleaseStateIncomeEffectiveSince" : {
     "index" : "8.4.2. ",
@@ -508,7 +553,22 @@
     "valuetype" : "_uxDateInput"
   },
   "P8000.RequestForInformation.generalInformation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "8.1. ",
+    "prompt" : "Generell informasjon",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Personens dødsdato",
+      "02" : "Fødested",
+      "03" : "Nåværende skolegang /opplæring/høyere studier",
+      "04" : "Lever personen",
+      "05" : "Personens nåværende adresse",
+      "06" : "Personnummer som personen er identifisert med i din institusjon",
+      "07" : "Personens nåværende familiestatus",
+      "08" : "Nåværende navn og adresse til representant/verge for personen",
+      "09" : "Nåværende bankinformasjon til personen, inkludert IBAN og BIC",
+      "10" : "Personens kontaktinformasjon, f.eks. telefonnummer, e-post eller postadresse"
+    },
+    "enumName" : "GeneralInformationMultipleType"
   },
   "P8000.RequestForInformation.otherRequestedInformation" : {
     "index" : "8.5. ",
@@ -541,6 +601,21 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P8000.RequestForSED.RequestForSED[0].pleaseProvideWithFollowingSEDs.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "7.1.1. ",
+    "prompt" : "Vennligst send oss følgende SED-er",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "P1000",
+      "02" : "P1100",
+      "03" : "P2000",
+      "04" : "P2100",
+      "05" : "P2200",
+      "06" : "P4000",
+      "07" : "P5000",
+      "08" : "P6000",
+      "09" : "P7000",
+      "99" : "Andre SED(er)"
+    },
+    "enumName" : "SedsProvidedInMultipleType"
   }
 }

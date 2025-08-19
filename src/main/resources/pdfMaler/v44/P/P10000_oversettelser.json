@@ -579,7 +579,10 @@
     "valuetype" : "_uxDateInput"
   },
   "P10000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P10000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "2.2.1.2. ",
@@ -804,7 +807,10 @@
     "enumName" : "EESSIEUEFTACountryType"
   },
   "P10000.OtherPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.3.1.1. ",
+    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "P10000.OtherPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "3.3.1.2. ",
@@ -1007,6 +1013,17 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "P10000.TransferringDocument.pleaseFindAttachedFollowingDocument.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "6.1. ",
+    "prompt" : "Følgende dokument(er) er vedlagt",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Medisinsk dokumentasjon",
+      "02" : "Utførlig medisinsk rapport",
+      "03" : "Arbeidsattest",
+      "04" : "Fødselsattest",
+      "05" : "Vitnemål",
+      "99" : "Annet/andre dokument(er)"
+    },
+    "enumName" : "PRequestedDocumentInMultipleType"
   }
 }

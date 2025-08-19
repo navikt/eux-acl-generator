@@ -36,7 +36,15 @@
     "valuetype" : "_uxTextInput"
   },
   "DA063.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2. ",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressMultipleType"
   },
   "DA063.AuthorisationTransportPlaceResidenceOrAHospital.Hospital.Address.buildingName" : {
     "index" : "5.2.2.2. ",
@@ -144,7 +152,10 @@
     "valuetype" : "_uxTextInput"
   },
   "DA063.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "DA063.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",

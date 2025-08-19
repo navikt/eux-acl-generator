@@ -36,7 +36,15 @@
     "valuetype" : "_uxTextInput"
   },
   "DA051.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2. ",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressMultipleType"
   },
   "DA051.Employer.Employer[0].Address.buildingName" : {
     "index" : "4.1.3.2. ",
@@ -97,7 +105,15 @@
     "valuetype" : "_uxTextInput"
   },
   "DA051.InformationAboutNotMeetingRequirements.informationAboutNotMeetingRequirementsOurLegislation.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.1. ",
+    "prompt" : "Informasjon om manglende oppfyllelse av kravene i vår lovgivning",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Den aktuelle personen har aldri utført aktiviteter som forårsaket sykdommen",
+      "02" : "Vi anerkjenner ikke at sykdommen er yrkesrelatert",
+      "99" : "Annet"
+    },
+    "enumName" : "LegislationRequirementsEligibilityMultipleType"
   },
   "DA051.InstitutionWhichHadSentDA050.institutionID" : {
     "index" : "6.1. ",
@@ -110,7 +126,10 @@
     "valuetype" : "_rinaIRAutocomplete"
   },
   "DA051.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "DA051.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",

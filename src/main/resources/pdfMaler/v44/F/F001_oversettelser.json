@@ -972,7 +972,17 @@
     "enumName" : "FDecisionProvisionalOnCompetenceType"
   },
   "F001.InformationAboutChangeInCircumstances.changeCircumstanceFor.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.1. ",
+    "prompt" : "Endrede omstendigheter for",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Hele familien",
+      "02" : "Søker",
+      "03" : "Ektefelle/partner",
+      "04" : "Annen person",
+      "05" : "Barn"
+    },
+    "enumName" : "FCircsumstancesChangeMultipleType"
   },
   "F001.InformationChildren.ChildForWhomThisDecisionApplies[0].AdditionalInformationAboutNationality.Nationalities[0].nationality.value[0]" : {
     "index" : "10.1.2.1.1. ",
@@ -2363,7 +2373,19 @@
     "enumName" : "FTypeEmploymentType"
   },
   "F001.PurposeThisSED.purposeThisSED.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.1. ",
+    "prompt" : "Formålet med denne SED-en",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Mottak av søknad om familieytelser",
+      "02" : "Informasjon om endrede forhold",
+      "03" : "Anmodning om kontroll eller årlig kontroll",
+      "04" : "Vedtak",
+      "05" : "Motregning",
+      "06" : "Refusjon i henhold til artikkel 58 i forordning (EF) nr. 987/2009",
+      "07" : "Anmodning om informasjon"
+    },
+    "enumName" : "SpecialPurposeSEDMultipleType"
   },
   "F001.ReceiptApplicationForFamilyBenefits.RequestForPeriodInformation[0].FixedPeriod.endDate" : {
     "index" : "2.2.1.2. ",
@@ -2396,7 +2418,14 @@
     "valuetype" : "_uxDateInput"
   },
   "F001.ReceiptApplicationForFamilyBenefits.informationApplication.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.4. ",
+    "prompt" : "Informasjon om søknaden",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Vi bekrefter leverte opplysninger",
+      "02" : "Gi oss punktvise opplysninger"
+    },
+    "enumName" : "FInformationApplicationRequestMultipleType"
   },
   "F001.ReceiptApplicationForFamilyBenefits.pointsForWhichMoreInformationNeeded" : {
     "index" : "2.5. ",

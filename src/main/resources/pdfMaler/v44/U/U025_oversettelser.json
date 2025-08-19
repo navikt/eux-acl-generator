@@ -57,7 +57,16 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.reasonForNotClosingReimbursementRequest.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.2.1. ",
+    "prompt" : "01 - 'Det finnes ennå noen tilfeller som skal betales'",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Det finnes noen tilfeller som likevel skal betales",
+      "02" : "Beløpet for enkeltkravene spesifisert i siste U024 er ikke tilstrekkelig",
+      "03" : "Det finnes ennå utestående beløp fra U024 eller U024s",
+      "99" : "Annen grunn"
+    },
+    "enumName" : "ReasonForUnemploymentRequestNotAcceptedMultipleType"
   },
   "U025.ReimbursementRequestClosed.reimbursementRequestClosedIndicator.value[0]" : {
     "index" : "3.1. ",

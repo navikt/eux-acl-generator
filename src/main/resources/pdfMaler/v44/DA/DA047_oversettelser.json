@@ -36,7 +36,15 @@
     "valuetype" : "_uxTextInput"
   },
   "DA047.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2. ",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressMultipleType"
   },
   "DA047.DateRecoveryOrStabilization.dateFromWhichInsuredPersonFitForWork" : {
     "index" : "5.3. ",
@@ -142,7 +150,10 @@
     "enumName" : "IsPensionGrantedType"
   },
   "DA047.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "DA047.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",

@@ -36,7 +36,15 @@
     "valuetype" : "_uxTextInput"
   },
   "DA058.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.1.2. ",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressMultipleType"
   },
   "DA058.Employer.Employer[0].Address.buildingName" : {
     "index" : "4.1.3.2. ",
@@ -102,10 +110,23 @@
     "valuetype" : "_uxTextAreaInput"
   },
   "DA058.InReplyRequest.weSendFollowingDocumentsRegarding.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "5.2. ",
+    "prompt" : "Vi sender deg følgende dokumenter om",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Risikoen(e) personen var utsatt for",
+      "02" : "Eksponeringsperiodene",
+      "03" : "Personens yrkesaktiviteter",
+      "04" : "Personens sykdomshistorie",
+      "99" : "Annet (oppgi type dokumenter i følgende felt)"
+    },
+    "enumName" : "DAccidentDiseaseSentDocumentsMultipleType"
   },
   "DA058.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "DA058.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "1.2.2. ",

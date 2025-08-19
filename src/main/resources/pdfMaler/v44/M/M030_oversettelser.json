@@ -104,13 +104,37 @@
     "enumName" : "EESSIYesNoType"
   },
   "M030.Claimant.AdditionalInformationClaimant.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "M030.Claimant.AdditionalInformationClaimant.status.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.5. ",
+    "prompt" : "Status",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Hos avsenderinstitusjonen",
+      "02" : "Hos mottakerinstitusjonen"
+    },
+    "enumName" : "SendingOrReceivingInstitutionMultipleType"
   },
   "M030.Claimant.AdditionalInformationClaimant.statusClaimant.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.3. ",
+    "prompt" : "Søkerens status",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Ansatt",
+      "02" : "Selvstendig næringsdrivende",
+      "03" : "Grensearbeider",
+      "04" : "Pensjonist",
+      "05" : "Person som krever pensjon",
+      "06" : "Arbeidsledig",
+      "07" : "Familiemedlem/forsørget",
+      "08" : "Student",
+      "99" : "Annet"
+    },
+    "enumName" : "PersonStatusPlusOtherMultipleType"
   },
   "M030.Claimant.Address.buildingName" : {
     "index" : "2.4.2. ",
@@ -338,13 +362,37 @@
     "valuetype" : "_uxTextInput"
   },
   "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.status.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.6. ",
+    "prompt" : "Status",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Hos avsenderinstitusjonen",
+      "02" : "Hos mottakerinstitusjonen"
+    },
+    "enumName" : "SendingOrReceivingInstitutionMultipleType"
   },
   "M030.DeceasedPerson.AdditionalInformationDeceasedPerson.statusDeceasedPersonBeforeDeath.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.4. ",
+    "prompt" : "Den avdødes status før han/hun døde",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Ansatt",
+      "02" : "Selvstendig næringsdrivende",
+      "03" : "Grensearbeider",
+      "04" : "Pensjonist",
+      "05" : "Person som krever pensjon",
+      "06" : "Arbeidsledig",
+      "07" : "Familiemedlem/forsørget",
+      "08" : "Student",
+      "99" : "Annet"
+    },
+    "enumName" : "PersonStatusPlusOtherMultipleType"
   },
   "M030.DeceasedPerson.DeceasedPerson.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "1.1.8.1.3. ",
@@ -567,7 +615,16 @@
     "enumName" : "MRepresentativeLegalGuardianType"
   },
   "M030.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "7.1. ",
+    "prompt" : "Vedlagte dokument(er)",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Søknad",
+      "02" : "Fakturaer",
+      "03" : "Dødsattest",
+      "99" : "Annet/andre dokument(er)"
+    },
+    "enumName" : "MAttachedDocsMultipleType"
   },
   "M030.PleaseFindAttachedFollowingDocument.otherDocument" : {
     "index" : "7.2. ",

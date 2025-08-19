@@ -1,0 +1,91 @@
+{
+  "U025.GeneralInformation.AmountReceived.amount" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.4.1. ",
+    "ledetekst" : "Beløp"
+  },
+  "U025.GeneralInformation.AmountReceived.currency.value[0]" : {
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.4.2. ",
+    "ledetekst" : "Valuta",
+    "enumNavn" : "EESSIEUEFTACurrencyType",
+    "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
+  },
+  "U025.GeneralInformation.datePaymentReceived" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.5. ",
+    "ledetekst" : "Datoen da institusjonen som anmodet om tilbakebetaling, mottok betalingen"
+  },
+  "U025.GeneralInformation.reimbursementPaymentNotificationID" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.2. ",
+    "ledetekst" : "Teknisk felt"
+  },
+  "U025.GeneralInformation.reimbursementReceiptOrClosingNotificationID" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.3. ",
+    "ledetekst" : "ID Kvittering for tilbakebetaling eller avslutningsmelding"
+  },
+  "U025.GeneralInformation.reimbursementRequestID" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1. ",
+    "ledetekst" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling')."
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.3.1. ",
+    "ledetekst" : "Institusjonens ID"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_rinaIRAutocomplete",
+    "indeks" : "1.1.3.2. ",
+    "ledetekst" : "Institusjonens navn",
+    "tekstlengde" : "155"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.2. ",
+    "ledetekst" : "Saksnummer",
+    "tekstlengde" : "65"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "1.1.1. ",
+    "ledetekst" : "Land",
+    "enumNavn" : "EESSIEUEFTACountryType",
+    "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.PleaseFillInFollowingIfReasonOtherReason.reason" : {
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextAreaInput",
+    "indeks" : "3.2.2.1. ",
+    "ledetekst" : "Grunn",
+    "tekstlengde" : "500"
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.reasonForNotClosingReimbursementRequest.value[0]" : {
+    "verdiType" : "enum",
+    "cdmType" : "_uxMultiCheckbox",
+    "indeks" : "3.2.1. ",
+    "ledetekst" : "01 - 'Det finnes ennå noen tilfeller som skal betales'",
+    "enumNavn" : "ReasonForUnemploymentRequestNotAcceptedMultipleType",
+    "enumNavnId" : "858c07e7-9218-e611-80ea-000c292ed0d7"
+  },
+  "U025.ReimbursementRequestClosed.reimbursementRequestClosedIndicator.value[0]" : {
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "3.1. ",
+    "ledetekst" : "Velg JA dersom institusjonen som anmodet om tilbakebetaling, anser anmodningen som avsluttet. Det betyr at ingen ytterligere avklaring og/eller bestridelser er aktuelle for denne anmodningen om tilbakebetaling. Ingen utbetalinger forventes.",
+    "enumNavn" : "EESSIYesNoType",
+    "enumNavnId" : "838c07e7-9218-e611-80ea-000c292ed0d7"
+  }
+}

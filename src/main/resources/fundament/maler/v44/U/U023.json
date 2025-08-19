@@ -3,34 +3,34 @@
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2. ",
-    "ledetekst" : "ID bestridelse av refusjon",
-    "tekstId" : "8102e557-3b8a-e611-80d0-000d3a22e8cd"
+    "ledetekst" : "ID bestridelse av refusjon"
   },
   "U023.GeneralInformation.reimbursementRequestID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1. ",
-    "ledetekst" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling').",
-    "tekstId" : "8002e557-3b8a-e611-80d0-000d3a22e8cd"
+    "ledetekst" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling')."
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.NonAcceptanceIndividualClaim.FillInIfReasonForNonAcceptance.informationAboutOtherReasonOrAdditionalInformation" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.1.6.1.2.1. ",
     "ledetekst" : "Informasjon om andre årsaker eller tilleggsinformasjon",
-    "tekstId" : "7aa0dfe0-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "500"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.NonAcceptanceIndividualClaim.reasonForNonAcceptance.value[0]" : {
     "verdiType" : "enum",
-    "cdmType" : "_uxTextInput"
+    "cdmType" : "_uxMultiCheckbox",
+    "indeks" : "3.1.6.1.1. ",
+    "ledetekst" : "Grunn til manglende aksept",
+    "enumNavn" : "ReasonForNonAcceptanceLateClaimMultipleType",
+    "enumNavnId" : "e5b34182-5290-e611-80d0-000d3a22e8cd"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialAcceptanceDueCeiling.AmountIntendedReimbursed.amount" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.6.2.2.1.1. ",
-    "ledetekst" : "Beløp",
-    "tekstId" : "2a3e7dce-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Beløp"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialAcceptanceDueCeiling.AmountIntendedReimbursed.currency.value[0]" : {
     "verdiType" : "enum",
@@ -38,14 +38,13 @@
     "indeks" : "3.1.6.2.2.1.2. ",
     "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
-    "tekstId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
+    "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialNonAcceptanceOtherReason.additionalInformation" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.1.6.2.4.1. ",
     "ledetekst" : "Ytterligere informasjon",
-    "tekstId" : "1e3b5efc-b4c3-e611-80d3-000d3a22e8cd",
     "tekstlengde" : "500"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialNonAcceptanceReimbursementIncomplete.informationMissingData" : {
@@ -53,26 +52,27 @@
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.1.6.2.3.1. ",
     "ledetekst" : "Informasjon om manglende informasjon",
-    "tekstId" : "7f8c07e7-9218-e611-80ea-000c292ed0d7",
     "tekstlengde" : "255"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.reasonForPartialNonAcceptance.value[0]" : {
     "verdiType" : "enum",
-    "cdmType" : "_uxTextInput"
+    "cdmType" : "_uxMultiCheckbox",
+    "indeks" : "3.1.6.2.1. ",
+    "ledetekst" : "01 - 'Delvis aksept på grunn av tak i nasjonal lovgivning'",
+    "enumNavn" : "ReasonForPartialNonAcceptanceMultipleType",
+    "enumNavnId" : "1d3b5efc-b4c3-e611-80d3-000d3a22e8cd"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.dateBirth" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxDateInput",
     "indeks" : "3.1.5.3. ",
-    "ledetekst" : "Fødselsdato",
-    "tekstId" : "3cd172c9-7289-e611-80d0-000d3a22e8cd"
+    "ledetekst" : "Fødselsdato"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.familyName" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.5.1. ",
     "ledetekst" : "Etternavn",
-    "tekstId" : "3ad172c9-7289-e611-80d0-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.forename" : {
@@ -80,7 +80,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.5.2. ",
     "ledetekst" : "Fornavn",
-    "tekstId" : "3bd172c9-7289-e611-80d0-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.sex.value[0]" : {
@@ -89,49 +88,43 @@
     "indeks" : "3.1.5.4. ",
     "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
-    "tekstId" : "379e16fd-8890-e611-80d0-000d3a22e8cd"
+    "enumNavnId" : "379e16fd-8890-e611-80d0-000d3a22e8cd"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].contestedIndividualClaimID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.4. ",
-    "ledetekst" : "ID bestridelse av enkeltkrav",
-    "tekstId" : "39d172c9-7289-e611-80d0-000d3a22e8cd"
+    "ledetekst" : "ID bestridelse av enkeltkrav"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].reimbursementContestationID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.2. ",
-    "ledetekst" : "ID bestridelse av refusjon",
-    "tekstId" : "37d172c9-7289-e611-80d0-000d3a22e8cd"
+    "ledetekst" : "ID bestridelse av refusjon"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].reimbursementRequestID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.1. ",
-    "ledetekst" : "Teknisk felt",
-    "tekstId" : "77a0dfe0-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Teknisk felt"
   },
   "U023.IndividualClaimsContested.IndividualClaimContested[0].sequentialNumberIndividualClaim" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.3. ",
-    "ledetekst" : "Løpenummer for enkeltkrav",
-    "tekstId" : "38d172c9-7289-e611-80d0-000d3a22e8cd"
+    "ledetekst" : "Løpenummer for enkeltkrav"
   },
   "U023.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID",
-    "tekstId" : "38684f61-9218-e611-80ea-000c292ed0d7"
+    "ledetekst" : "Institusjonens ID"
   },
   "U023.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
     "ledetekst" : "Institusjonens navn",
-    "tekstId" : "2aab0bc6-acfa-e611-80d3-000d3a22e8cd",
     "tekstlengde" : "155"
   },
   "U023.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
@@ -139,7 +132,6 @@
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
     "ledetekst" : "Saksnummer",
-    "tekstId" : "6a970f32-539c-e611-80d1-000d3a22e8cd",
     "tekstlengde" : "65"
   },
   "U023.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
@@ -148,6 +140,6 @@
     "indeks" : "1.1.1. ",
     "ledetekst" : "Angi landet der saksnummeret kan brukes.",
     "enumNavn" : "EESSIEUEFTACountryType",
-    "tekstId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
+    "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
   }
 }

@@ -42,7 +42,10 @@
     "enumName" : "EESSIAddressType"
   },
   "H061.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.3. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "H061.Person.AdditionalInformationPerson.previousFamilyName" : {
     "index" : "2.2.1. ",
@@ -163,7 +166,19 @@
     "enumName" : "EESSISexType"
   },
   "H061.PurposeSED.PleaseSelectSectorIfRequestPIN.sector.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "1.2.1. ",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "SectorsMultipleType"
   },
   "H061.PurposeSED.purposeSED.value[0]" : {
     "index" : "1.1. ",

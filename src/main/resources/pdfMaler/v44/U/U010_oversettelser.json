@@ -30,7 +30,21 @@
     "enumName" : "EESSIOpenPeriodType"
   },
   "U010.Circumstance.circumstances.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "3.2. ",
+    "prompt" : "Kryss av for den omstendigheten som inntraff. Velg '99 - Andre omstendigheter' bare hvis disse er ble spesifisert i PD U2 - 'Bevaring av rett til dagpenger' eller U008 - 'Dokument om eksport' og faktisk har inntruffet.",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Den arbeidsledige får jobb eller blir selvstendig næringsdrivende.",
+      "02" : "Den arbeidsledige får inntekt fra en annen yrkesaktivitet enn de ovennevnte",
+      "03" : "Den arbeidsledige avslår et jobbtilbud",
+      "04" : "Den arbeidsledige avslår å delta i en samtale hos arbeidsformidlingen",
+      "05" : "Den arbeidsledige avslår å delta i arbeidsavklaring",
+      "06" : "Den arbeidsledige er arbeidsufør",
+      "07" : "Den arbeidsledige følger ikke kontrollprosedyrene",
+      "08" : "Den arbeidsledige er ikke tilgjengelig for arbeidsformidlingen",
+      "99" : "Andre omstendigheter"
+    },
+    "enumName" : "EntitlementCircumstancesMultipleType"
   },
   "U010.FollowUpRequested.followUpRequestedIndicator.value[0]" : {
     "index" : "4.1. ",
@@ -64,7 +78,10 @@
     "enumName" : "EESSIEUEFTACountryType"
   },
   "U010.Person.AdditionalInformationPerson.nationality.value[0]" : {
-    "valuetype" : "_uxTextInput"
+    "index" : "2.2.1. ",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
   },
   "U010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
     "index" : "2.1.8.1.3. ",
