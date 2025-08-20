@@ -19,15 +19,15 @@ public class PdfService {
         sedTyper.forEach(sedType -> {
                     TreeMap<String, EuSedFundament> euSedFundament = filService.lesEuSedFundamentFil(sedType, cdmVersjon);
                     TreeMap<String, PdfSedElement> euSedStiVsSedElement = new TreeMap<>();
-                    euSedFundament.forEach((euSedSti, element) -> {
+                    euSedFundament.forEach((euSedSti, fundament) -> {
                         euSedStiVsSedElement.put(
                                 euSedSti,
                                 PdfSedElement.builder()
-                                        .index(element.getIndeks())
-                                        .prompt(element.getLedetekst())
-                                        .valuetype(element.getCdmType())
-                                        .codework(lesEnumVerdier(element.getEnumNavn(), cdmVersjon, euSedSti))
-                                        .enumName(element.getEnumNavn())
+                                        .index(fundament.getIndeks())
+                                        .prompt(fundament.getLedetekst())
+                                        .valuetype(fundament.getCdmType())
+                                        .codework(lesEnumVerdier(fundament.getEnumNavn(), cdmVersjon, euSedSti))
+                                        .enumName(fundament.getEnumNavn())
                                         .build());
                     });
                     filService.skrivPdfSedMalTilFil(euSedStiVsSedElement, sedType, cdmVersjon);

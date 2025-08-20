@@ -12,7 +12,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static eux.acl.generator.service.FilService.V43;
-import static eux.acl.generator.service.FilService.V44;
 
 @Slf4j
 public class DiffFacade {
@@ -121,14 +120,20 @@ public class DiffFacade {
         oppsummeringTilFil.add("--- Utgåtte filer:");
         oppsummeringTilFil.addAll(enumNavnUtgaatteFiler);
         oppsummeringTilFil.add("---");
-        filService.skrivKodeverkDiffTilEiFil(oppsummeringTilFil, cdmVersjonNy);
+        filService.skrivKodeverkOppsummeringTilEiFil(oppsummeringTilFil, "_kodeverksdiff", cdmVersjonNy);
         // skriv nyeOgEndretKodeverksfiler til fil
         List<String> enumNavnEndredeOgNyeFiler = new ArrayList<>(enumNavnNyeFiler);
         enumNavnEndredeOgNyeFiler.addAll(enumNavnEndredeFiler);
         enumNavnEndredeOgNyeFiler.forEach(enumNavn -> {
             TreeMap<Integer, EnumkodeFundament> enumInnhold = filService.lesEnumFundamentFil(enumNavn, cdmVersjonNy);
-            filService.skrivKodeverksfundamentTilFil(enumInnhold, enumNavn, "nyeOgEndrede", cdmVersjonNy);
+            filService.skrivKodeverksfundamentTilFil(enumInnhold, enumNavn, cdmVersjonNy);
         });
+        // lag fil for å endre navn på enumfiler (når navnet er det samme men innholdet er endret i ny versjon)
+        List<String> enumNavnVsFilnavn = new ArrayList<>();
+        enumNavnEndredeOgNyeFiler.forEach(enumNavn -> {
+            enumNavnVsFilnavn.add(enumNavn + ": " + enumNavn);
+        });
+        filService.skrivKodeverkOppsummeringTilEiFil(enumNavnVsFilnavn, "_enumFilnavnMapping", cdmVersjonNy);
     }
 
     private List<String> enumkoderFundamentTilEnumkoderListet(String enumNavn, String cdmVersjonNy) {

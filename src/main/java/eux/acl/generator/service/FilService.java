@@ -28,14 +28,18 @@ public class FilService {
     public static final String MAPPE_TARGET_ACL_SED = "target/aclMaler";
     public static final String MAPPE_TARGET_FUNDAMENT_KODEVERK = "target/fundament/kodeverk";
     public static final String MAPPE_TARGET_FUNDAMENT_SEDMALER = "target/fundament/sedmaler";
+    public static final String MAPPE_TARGET_DIFF_KODEVERK = "target/diff/kodeverk";
+    public static final String MAPPE_TARGET_DIFF_SEDMALER = "target/diff/sedmaler";
     public static final String MAPPE_TARGET_PDF_SED_MAL = "target/sedmaler/pdf";
     public static final String MAPPE_TARGET_ACL_DIFF = "target/aclDiff";
+    public static final String MAPPE_TARGET_RESULTAT_KODEVERK = "target/resultater/kodeverk";
     public static final String MAPPE_CDM_META = "src/main/resources/input/cdm-meta";
     public static final String MAPPE_CDM_LOGISK_MODELL = "src/main/resources/input/cdm-logisk-modell";
     public static final String MAPPE_OVERSETTELSER = "src/main/resources/input/cdm-oversettelser";
     public static final String MAPPE_ACL = "src/main/resources/acl";
     public static final String MAPPE_FUNDAMENT_MALER = "src/main/resources/fundament/maler";
     public static final String MAPPE_FUNDAMENT_KODEVERK = "src/main/resources/fundament/kodeverk";
+    public static final String MAPPE_DIFF_KODEVERK = "src/main/resources/diff/kodeverk";
     public static final String FIL_NYE_STIER = "nytt.txt";
     public static final String FIL_UENDREDE_STIER = "uendret.txt";
     public static final String FIL_UTGAATTE_STIER = "utgaatt.txt";
@@ -44,6 +48,7 @@ public class FilService {
     public static final String FIL_CDM_LOGISK_MODELL = "CDM_LM.xml";
     public static final String FIL_OVERSETTELSER = "no.json";
     public static final String FIL_TEKST_ID_VS_ENUM_NAVN = "cdmTekstIdVsEnumnavn";
+    public static final String MANUELLE_JUSTERINGER = "manuelleJusteringer";
 
     public static final List<String> SEDTYPER_A = List.of("A001", "A002", "A003", "A004", "A005"
             , "A006", "A007", "A008", "A009", "A010", "A011", "A012");
@@ -240,12 +245,10 @@ public class FilService {
     public void skrivKodeverksfundamentTilFil(
             TreeMap<Integer, EnumkodeFundament> enumInnhold
             , String enumNavn
-            , String mappenavn
             , String cdmVersjon) {
         String kodeverksfilJson = new JsonMapper().convertValue(enumInnhold, JsonNode.class).toPrettyString();
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String stiNavnEnumFil = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" +
-                mappenavn + "/" + enumNavn + ".json";
+        String stiNavnEnumFil = MAPPE_TARGET_DIFF_KODEVERK + "/" + cdmVersjonTilpasset + "/nyeOgEndrede/" + enumNavn + ".json";
         try {
             FileUtils.writeStringToFile(new File(stiNavnEnumFil), kodeverksfilJson, "UTF-8");
         } catch (IOException e) {
@@ -254,15 +257,14 @@ public class FilService {
         }
     }
 
-    public void skrivKodeverkDiffTilEiFil(List<String> diffKodeverkOppsummeringLinjer, String cdmVersjon) {
-
+    public void skrivKodeverkOppsummeringTilEiFil(List<String> diffKodeverkOppsummeringLinjer, String filnavn, String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavn = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/_kodeverksdiff.txt";
+        String filStiNavn = MAPPE_TARGET_DIFF_KODEVERK + "/" + cdmVersjonTilpasset + "/nyeOgEndrede/" + filnavn + ".txt";
         String tekstMedDiff = StringUtils.join(diffKodeverkOppsummeringLinjer, "\n");
         try {
-            FileUtils.writeStringToFile(new File(filnavn), tekstMedDiff, "UTF-8");
+            FileUtils.writeStringToFile(new File(filStiNavn), tekstMedDiff, "UTF-8");
         } catch (IOException e) {
-            log.error("Kunne ikke skrive til fil. fil={}", filnavn);
+            log.error("Kunne ikke skrive til fil. fil={}", filStiNavn);
             //            throw new RuntimeException(e);
         }
     }
@@ -420,10 +422,10 @@ public class FilService {
     public List<String> lesEnumFundamentFilnavnene(String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filsti = MAPPE_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset;
-
         File[] files = new File(filsti).listFiles();
         if (files != null) {
             return Arrays.stream(files)
+                    .filter(File::isFile)
                     .map(f -> f.getName().replace(".json", ""))
                     .toList();
         }
@@ -441,12 +443,69 @@ public class FilService {
         } catch (JsonProcessingException e) {
             log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
         } catch (IOException e) {
-            log.error("Fant ikke fil. filsti={}", filsti);
+            log.error("Fant ikke enum-fil. filsti={}", filsti);
             //            throw new RuntimeException(e);
         }
         return null;
     }
 
+    public List<String> lesNavneneTilEndredeKodeverksfiler(String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_DIFF_KODEVERK + "/" + cdmVersjonTilpasset;
+        File[] files = new File(filsti).listFiles();
+        if (files != null) {
+            return Arrays.stream(files)
+                    .filter(f -> f.isFile() && f.getName().endsWith(".json"))
+                    .map(f -> f.getName().replace(".json", ""))
+                    .toList();
+        } else {
+            log.error("Fant ikke mappe, eller mappa var tom. filsti={}", filsti);
+            return null;
+        }
+    }
+
+    public TreeMap<Integer, EnumkodeFundament> lesNyEnumFundamentFil(String enumNavn, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_DIFF_KODEVERK + "/" + cdmVersjonTilpasset + "/" + enumNavn + ".json";
+        try {
+            String enumFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
+            return new JsonMapper().readValue(enumFundamentJson, new TypeReference<>() {
+            });
+        } catch (JsonProcessingException e) {
+            log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
+        } catch (IOException e) {
+            log.error("Fant ikke enum-fil. filsti={}", filsti);
+            //            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+    public TreeMap<Integer, EnumkodeFundament> lesManueltEndretEnumFundamentFil(String enumNavn, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_DIFF_KODEVERK + "/" + cdmVersjonTilpasset + "/" + MANUELLE_JUSTERINGER + "/" + enumNavn + ".json";
+        try {
+            String enumFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
+            return new JsonMapper().readValue(enumFundamentJson, new TypeReference<>() {
+            });
+        } catch (IOException e) {
+            log.info("Ingen manuelle endringer i følgende enum-fil: {}", filsti);
+
+        }
+        return null;
+    }
+
+    public void opprettEnumfil(
+            List<String> nyAclEnumLinjer, String enumNavn, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_TARGET_RESULTAT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + enumNavn + ".properties";
+        try {
+            String nyAclEnum = StringUtils.join(nyAclEnumLinjer, "\n");
+            FileUtils.writeStringToFile(new File(filsti), nyAclEnum, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filsti);
+            //            throw new RuntimeException(e);
+        }
+    }
 
 //    public void skrivCdmIdVsEnumnavnTilFil(List<String> unikeNyeCdmStier, String cdmVersjon) {
 //        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".","");
@@ -460,32 +519,32 @@ public class FilService {
 //        }
 //    }
 
-    private String aclSektor(String cdmSektor) {
-        switch (cdmSektor) {
-            case "X":
-                return "administrative";
-            case "DA":
-                return "awod";
-            case "F":
-                return "family";
-            case "H":
-                return "horizontal";
-            case "A":
-                return "legislationapplicable";
-            case "M":
-                return "miscellaneous";
-            case "P":
-                return "pension";
-            case "R":
-                return "recovery";
-            case "S":
-                return "sickness";
-            case "U":
-                return "unemployment";
-            default:
-                return null;
-        }
+private String aclSektor(String cdmSektor) {
+    switch (cdmSektor) {
+        case "X":
+            return "administrative";
+        case "DA":
+            return "awod";
+        case "F":
+            return "family";
+        case "H":
+            return "horizontal";
+        case "A":
+            return "legislationapplicable";
+        case "M":
+            return "miscellaneous";
+        case "P":
+            return "pension";
+        case "R":
+            return "recovery";
+        case "S":
+            return "sickness";
+        case "U":
+            return "unemployment";
+        default:
+            return null;
     }
+}
 }
 
 

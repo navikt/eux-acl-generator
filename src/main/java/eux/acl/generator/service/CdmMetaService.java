@@ -344,14 +344,20 @@ public class CdmMetaService {
                             .forEach(enumVerdi -> {
                                         if (StringUtils.isNumeric(enumVerdi.getEnumkodeId())) {
                                             enumVerdi.setEnumkode(enumVerdi.getEnumkodeBeskrivelse()
-                                                            .trim()
-                                                            .replace(" ", "_")
+                                                            .trim().toLowerCase()
                                                             .replace(".", "")
                                                             .replace(",", "")
-//                                                    .replace("-", "")
-                                                            .replace("/", "-")
+                                                            .replace(" - ", "_")
+                                                            .replace("-", "")
+                                                            .replace(" / ", "_")
+                                                            .replace("/", "_")
+                                                            .replace("(", "")
+                                                            .replace(")", "")
+                                                            .replace(" ", "_")
                                                             .replace("§", "")
-                                                            .toLowerCase()
+                                                            .replace("æ", "ae")
+                                                            .replace("ø", "oe")
+                                                            .replace("å", "aa")
                                             );
                                         } else {
                                             enumVerdi.setEnumkode(enumVerdi.getEnumkodeId());
