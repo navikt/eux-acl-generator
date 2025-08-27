@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-import eux.acl.generator.SedTyper;
+import eux.acl.generator.modell.SedTyper;
 import org.apache.commons.io.FileUtils;
 import org.junit.Ignore;
 import org.junit.Test;

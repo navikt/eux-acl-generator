@@ -8,8 +8,7 @@ import static eux.acl.generator.service.FilService.V44;
 public class Kodeverk_2_kodeverksdiffMellomVersjoner {
 
     public static void main(String[] args) {
-        new DiffFacade()
-                .sammenliknerKodeverkForToCdmVersjonerOgSkriverDiffTilFil(V43, V44);
+        new DiffFacade().sammenliknerEnumeneForToCdmVersjonerOgKopiererEnumFundamentFilene(V43, V44);
     }
 
 }

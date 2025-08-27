@@ -1,7 +1,7 @@
 package eux.acl.v43;
 
 import com.github.wnameless.json.flattener.JsonFlattener;
-import eux.acl.generator.SedTyper;
+import eux.acl.generator.modell.SedTyper;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Ignore;

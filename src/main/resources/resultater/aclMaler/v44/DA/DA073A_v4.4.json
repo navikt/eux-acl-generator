@@ -1,0 +1,58 @@
+{
+  "GlobalNoteACPIO" : {
+    "TotalAmountAcceptedIndividualOverpayments" : {
+      "currency" : {
+        "value" : [ " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.total.valuta" ]
+      },
+      "amount" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.total.beloep"
+    },
+    "globalIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.avsenderinstitusjon.samarbeidsorgan.globalioreferanse",
+    "dateSubmission" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.leveringsdato",
+    "globalACPIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.mottakerland.forbindelsesorgan.globalioreferanse",
+    "totalNumberIndividualACPIO" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.total.antall"
+  },
+  "IndividualACPIOs" : {
+    "IndividualACPIO" : [ {
+      "IDCreditorInstitution" : {
+        "institutionID" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].kreditorinstitusjon.institusjonsid",
+        "institutionName" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].kreditorinstitusjon.institusjonsnavn"
+      },
+      "PersonReceivingBenefits" : {
+        "PersonIdentificationNumber" : {
+          "pINPersonInCompetentMemberState" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.pin.kompetenteuland",
+          "pINPersonInMemberStateStayOrResidence" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.pin.oppholdsland"
+        },
+        "PersonInformation" : {
+          "sex" : {
+            "value" : [ " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.kjoenn" ]
+          },
+          "familyName" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.etternavn",
+          "forename" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.fornavn",
+          "dateBirth" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.foedselsdato"
+        },
+        "forenameAtBirth" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.fornavnvedfoedsel",
+        "familyNameAtBirth" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.etternavnvedfoedsel"
+      },
+      "RefundPeriod" : {
+        "endDate" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon.periode.sluttdato",
+        "startDate" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon.periode.startdato"
+      },
+      "IDDebtorInstitution" : {
+        "institutionName" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].debitorinstitusjon.institusjonsnavn",
+        "institutionID" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].debitorinstitusjon.institusjonsid"
+      },
+      "References" : {
+        "globalIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.avsenderinstitusjon.samarbeidsorgan.globalioreferanse",
+        "individualACPIONumberLiaisonBody" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.mottakerland.forbindelsesorgan.individuellioreferanse",
+        "individualIONumberLiaisonBody" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.avsenderinstitusjon.samarbeidsorgan.individuellioreferanse",
+        "globalACPIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.mottakerland.forbindelsesorgan.globalioreferanse"
+      },
+      "RefundAmount" : {
+        "amount" : " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon,beloep",
+        "currency" : {
+          "value" : [ " $arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon.valuta" ]
+        }
+      }
+    } ]
+  }
+}

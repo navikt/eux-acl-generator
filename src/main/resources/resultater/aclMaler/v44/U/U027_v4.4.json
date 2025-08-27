@@ -1,0 +1,49 @@
+{
+  "PleaseFillInFollowingIfChargingInterest2" : {
+    "IndividualClaimWhichCannotSubjectedInterest" : [ {
+      "PleaseFillInFollowingIfSpecifyReason3Other" : {
+        "pleaseSpecifyOther" : " $dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.grunn.annen"
+      },
+      "Person" : {
+        "sex" : {
+          "value" : [ " $dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.kjoenn" ]
+        },
+        "dateBirth" : " $dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.foedselsdato",
+        "forename" : " $dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.fornavn",
+        "familyName" : " $dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.etternavn"
+      },
+      "specifyReason" : {
+        "value" : [ " $dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.grunn.type" ]
+      },
+      "sequentialNumberIndividualClaim" : " $dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.loepenummer"
+    } ]
+  },
+  "ChargingInterestAccepted" : {
+    "PleaseFillInFollowingIfChargingInterestAcceptedNo" : {
+      "specifyReasonForNonAcceptance" : {
+        "value" : [ " $dagpenger.refusjonskrav.svar.rentebetaling.ikkeakseptert.grunn.type[x]" ]
+      },
+      "PleaseFillInFollowingIfChargingInterestAccepted" : {
+        "additionalInformation" : " $dagpenger.refusjonskrav.svar.rentebetaling.ikkeakseptert.grunn.annen"
+      }
+    },
+    "chargingInterestAccepted" : {
+      "value" : [ " $dagpenger.refusjonskrav.svar.rentebetaling.erakseptert.type" ]
+    }
+  },
+  "LocalCaseNumbers" : {
+    "LocalCaseNumber" : [ {
+      "Institution" : {
+        "institutionName" : " $nav.eessisak[x].institusjonsnavn",
+        "institutionID" : " $nav.eessisak[x].institusjonsid"
+      },
+      "country" : {
+        "value" : [ " $nav.eessisak[x].land" ]
+      },
+      "caseNumber" : " $nav.eessisak[x].saksnummer"
+    } ]
+  },
+  "InformationChargingInterest" : {
+    "reimbursementRequestID" : " $dagpenger.refusjonskrav.id"
+  }
+}

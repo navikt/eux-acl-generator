@@ -1,0 +1,118 @@
+{
+  "DetailsInstitutionOrFundGrantingUnemployment" : {
+    "TheInstitutionEXISTSInIR" : {
+      "institutionName" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.institusjon.navn",
+      "institutionID" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.institusjon.id"
+    },
+    "TheInstitutionDOESNOTExistInIR" : {
+      "InstitutionAddress" : {
+        "town" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.ukjentinstitusjon.adresse.by",
+        "country" : {
+          "value" : [ " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.ukjentinstitusjon.adresse.land" ]
+        },
+        "region" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.ukjentinstitusjon.adresse.region",
+        "street" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.ukjentinstitusjon.adresse.gate",
+        "buildingName" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.ukjentinstitusjon.adresse.bygning",
+        "postalCode" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.ukjentinstitusjon.adresse.postnummer"
+      },
+      "institutionName" : " $dagpenger.anmodningominformasjon.trygdehistorikk.dagpenger.ukjentinstitusjon.navn"
+    }
+  },
+  "LastAddressInCompetentState" : {
+    "buildingName" : " $dagpenger.bruker.kompetentland.sisteadresse.bygning",
+    "region" : " $dagpenger.bruker.kompetentland.sisteadresse.region",
+    "street" : " $dagpenger.bruker.kompetentland.sisteadresse.gate",
+    "postalCode" : " $dagpenger.bruker.kompetentland.sisteadresse.postnummer",
+    "town" : " $dagpenger.bruker.kompetentland.sisteadresse.by",
+    "country" : {
+      "value" : [ " $dagpenger.bruker.kompetentland.sisteadresse.land" ]
+    }
+  },
+  "Person" : {
+    "AdditionalInformationPerson" : {
+      "nationality" : {
+        "value" : [ " $nav.bruker.person.statsborgerskap[x].land" ]
+      }
+    },
+    "PersonIdentification" : {
+      "PINPersonInEachInstitution" : {
+        "PersonalIdentificationNumber" : [ {
+          "Institution" : {
+            "institutionID" : " $nav.bruker.person.pin[x].institusjonsid",
+            "institutionName" : " $nav.bruker.person.pin[x].institusjonsnavn"
+          },
+          "sector" : {
+            "value" : [ " $nav.bruker.person.pin[x].sektor" ]
+          },
+          "personalIdentificationNumber" : " $nav.bruker.person.pin[x].identifikator",
+          "country" : {
+            "value" : [ " $nav.bruker.person.pin[x].land" ]
+          }
+        } ]
+      },
+      "forename" : " $nav.bruker.person.fornavn",
+      "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+        "PlaceBirth" : {
+          "town" : " $nav.bruker.person.foedested.by",
+          "country" : {
+            "value" : [ " $nav.bruker.person.foedested.land" ]
+          },
+          "region" : " $nav.bruker.person.foedested.region"
+        },
+        "forenameMother" : " $nav.bruker.mor.person.fornavn",
+        "forenameFather" : " $nav.bruker.far.person.fornavn",
+        "motherFamilyNameAtBirth" : " $nav.bruker.mor.person.etternavnvedfoedsel",
+        "fatherFamilyNameAtBirth" : " $nav.bruker.far.person.etternavnvedfoedsel"
+      },
+      "sex" : {
+        "value" : [ " $nav.bruker.person.kjoenn" ]
+      },
+      "forenameAtBirth" : " $nav.bruker.person.fornavnvedfoedsel",
+      "familyNameAtBirth" : " $nav.bruker.person.etternavnvedfoedsel",
+      "familyName" : " $nav.bruker.person.etternavn",
+      "dateBirth" : " $nav.bruker.person.foedselsdato"
+    }
+  },
+  "PersonCurrentAddress" : {
+    "AddressDetails" : {
+      "town" : " $nav.bruker.bostedsadresse.by",
+      "country" : {
+        "value" : [ " $nav.bruker.bostedsadresse.land" ]
+      },
+      "buildingName" : " $nav.bruker.bostedsadresse.bygning",
+      "region" : " $nav.bruker.bostedsadresse.region",
+      "street" : " $nav.bruker.bostedsadresse.gate",
+      "postalCode" : " $nav.bruker.bostedsadresse.postnummer"
+    },
+    "ContactInformation" : {
+      "TelephoneNumbers" : {
+        "TelephoneNumber" : [ {
+          "number" : " $nav.bruker.person.kontakt.telefon[x].nummer",
+          "type" : {
+            "value" : [ " $nav.bruker.person.kontakt.telefon[x].type" ]
+          }
+        } ]
+      },
+      "EmailAddresses" : {
+        "EmailAddress" : [ {
+          "email" : " $nav.bruker.person.kontakt.email[x].adresse"
+        } ]
+      }
+    }
+  },
+  "LocalCaseNumbers" : {
+    "LocalCaseNumber" : [ {
+      "caseNumber" : " $nav.eessisak[x].saksnummer",
+      "Institution" : {
+        "institutionName" : " $nav.eessisak[x].institusjonsnavn",
+        "institutionID" : " $nav.eessisak[x].institusjonsid"
+      },
+      "country" : {
+        "value" : [ " $nav.eessisak[x].land" ]
+      }
+    } ]
+  },
+  "DateRegistration" : {
+    "date" : " $dagpenger.bruker.landetdetsoekesarbeidi.registreringsdato"
+  }
+}

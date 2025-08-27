@@ -1,0 +1,66 @@
+{
+  "GlobalNoteCOCIO" : {
+    "totalNumberIndividualContestations" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.globalnotecocio.total.antall",
+    "TotalAmountIndividualOverpayments" : {
+      "amount" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.globalnotecocio.total.beloep",
+      "currency" : {
+        "value" : [ " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.globalnotecocio.total.valuta" ]
+      }
+    },
+    "globalCOCIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.globalnotecocio.mottakerinstitusjon.globalcocioreferanse",
+    "globalIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.globalnotecocio.avsenderinstitusjon.globalioreferanse",
+    "dateSubmission" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.globalnotecocio.leveringsdato"
+  },
+  "IndividualCOCIOs" : {
+    "IndividualCOCIO" : [ {
+      "IDCreditorInstitution" : {
+        "institutionID" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].kreditorinstitusjon.institusjonsid",
+        "institutionName" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].kreditorinstitusjon.institusjonsnavn"
+      },
+      "References" : {
+        "individualCOCIONumberLiaisonBody" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].referanser.mottakerland.forbindelsesorgan.individuellioreferanse",
+        "globalCOCIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].referanser.mottakerland.forbindelsesorgan.globalioreferanse",
+        "individualIONumberLiaisonBody" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].referanser.avsenderinstitusjon.samarbeidsorgan.individuellioreferanse",
+        "globalIOReferenceLiaisonBody" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].referanser.avsenderinstitusjon.samarbeidsorgan.globalioreferanse"
+      },
+      "ContestationReasons" : {
+        "ContestationReasons0299" : {
+          "requestedAdditionalInformation" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].innsigelse.anneninfo"
+        },
+        "contestationReasons" : {
+          "value" : [ " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].innsigelse.grunn.type" ]
+        }
+      },
+      "IDDebtorInstitution" : {
+        "institutionID" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].debitorinstitusjon.institusjonsid",
+        "institutionName" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].debitorinstitusjon.institusjonsnavn"
+      },
+      "RefundPeriod" : {
+        "startDate" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].refusjon.periode.startdato",
+        "endDate" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].refusjon.periode.sluttdato"
+      },
+      "PersonReceivingBenefits" : {
+        "PersonIdentificationNumber" : {
+          "pINPersonInMemberStateStayOrResidence" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.pin.oppholdsland",
+          "pINPersonInCompetentMemberState" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.pin.kompetenteuland"
+        },
+        "forenameAtBirth" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.fornavnvedfoedsel",
+        "PersonInformation" : {
+          "familyName" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.etternavn",
+          "forename" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.fornavn",
+          "dateBirth" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.foedselsdato",
+          "sex" : {
+            "value" : [ " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.kjoenn" ]
+          }
+        },
+        "familyNameAtBirth" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].bruker.person.etternavnvedfoedsel"
+      },
+      "RefundAmount" : {
+        "amount" : " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].refusjon,beloep",
+        "currency" : {
+          "value" : [ " $arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.individuellacpio[x].refusjon.valuta" ]
+        }
+      }
+    } ]
+  }
+}

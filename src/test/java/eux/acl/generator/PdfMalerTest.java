@@ -1,6 +1,6 @@
 package eux.acl.generator;
 
-import eux.acl.generator.facade.PdfMalerFacade;
+import eux.acl.generator.facade.ResultaterFacade;
 import org.junit.jupiter.api.Test;
 
 import static eux.acl.generator.service.FilService.*;
@@ -14,7 +14,7 @@ public class PdfMalerTest {
     @Test
     public void lager_pdfMaler_v44() {
         // krever at kodeverk og euSedFundament er generert - og flyttet til main/../resources..
-        PdfMalerFacade pdfMalerFacade = new PdfMalerFacade();
+        ResultaterFacade pdfMalerFacade = new ResultaterFacade();
         pdfMalerFacade.lagPdfMaler(SEDTYPER_A, V44);
         pdfMalerFacade.lagPdfMaler(SEDTYPER_F, V44);
         pdfMalerFacade.lagPdfMaler(SEDTYPER_H, V44);

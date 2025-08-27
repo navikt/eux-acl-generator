@@ -132,8 +132,6 @@ public class CdmMetaService {
                                     .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti))
                                     .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti))
                                     .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti))
-//                                    .enumNavn(uttrekkFundament.getCdmStiVsEnumtype().get(cdmSti))
-//                                    .tekstId(cdmUttrekk.getCdmStiVsTekstId().get(cdmSti))
                                     .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
                                     .build();
                             euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
@@ -187,15 +185,6 @@ public class CdmMetaService {
                 .cdmStiVsEnumkodeId(uttrekkCdmMeta.getCdmStiVsEnumkodeId())
                 .cdmStiVsTekstId(uttrekkCdmMeta.getCdmStiVsTekstId())
                 .cdmStiVsTekstlengde(lagCdmStiVsTekstlengde(uttrekkCdmMeta))
-                .build();
-    }
-
-    public CdmUttrekkEnum lagCdmUttrekkEnumEr(Map<String, Object> cdmMetaSed,
-                                              Map<String, String> tekstIdVsTekst) {
-        UttrekkCdmMeta uttrekkCdmMeta = lagUttrekkFraCdmMeta(cdmMetaSed);
-        return CdmUttrekkEnum.builder()
-                .cdmStiVsEnumkodeTekst(lagCdmStiVsEnumkodeTekst(uttrekkCdmMeta, tekstIdVsTekst))
-                .cdmStiVsEnumkodeId(uttrekkCdmMeta.getCdmStiVsEnumkodeId())
                 .build();
     }
 
@@ -260,113 +249,4 @@ public class CdmMetaService {
        return cdmStiVsTekstlengde;
     }
 
-    public void opprettEnumene(Map<String, TreeMap<Integer, EnumkodeFundament>> enumNavnVsEnumInnhold
-            , CdmUttrekk cdmUttrekk) {
-        cdmUttrekk.getCdmStiVsEnumNavn().forEach((cdmSti, enumnavn) -> {
-            if (!enumNavnVsEnumInnhold.containsKey(enumnavn)) {
-                enumNavnVsEnumInnhold.put(enumnavn, new TreeMap<>());
-            }
-        });
-    }
-
-    public void fyllInnEnumkodeId(Map<String, TreeMap<Integer, EnumkodeFundament>> enumNavnVsEnumInnhold
-            , CdmUttrekk cdmUttrekk, String sedType) {
-        Set<String> tekstIdTilEnumSomMangler = new HashSet<>();
-        cdmUttrekk.getCdmStiVsEnumkodeId()
-                .forEach((cdmSti, enumkodeId) -> {
-                            String cdmStiJustert = StringUtils.substringBeforeLast(cdmSti, ".");
-                            String cdmIndeks = StringUtils.getDigits(StringUtils.substringAfterLast(cdmSti, "["));
-                            int indeksNr = Integer.parseInt(cdmIndeks);
-                            String enumNavn = cdmUttrekk.getCdmStiVsEnumNavn().get(cdmStiJustert);
-                            if (enumNavn == null) {
-                                String tekstId = cdmUttrekk.getCdmStiVsTekstId().get(cdmStiJustert);
-//                                if (!enumNavnVsEnumInnhold.containsKey(tekstId )) {
-//                                    enumNavnVsEnumInnhold.put(tekstId, new TreeMap<>());
-//                                }
-//                                if (!enumNavnVsEnumInnhold.get(tekstId).containsKey(indeksNr)) {
-//                                    enumNavnVsEnumInnhold.get(tekstId).put(indeksNr, new EnumkodeFundament());
-//                                }
-//                                enumNavnVsEnumInnhold.get(tekstId).get(indeksNr).setEnumkodeId(enumkodeId);
-                                tekstIdTilEnumSomMangler.add(tekstId);
-                            } else {
-                                if (!enumNavnVsEnumInnhold.get(enumNavn).containsKey(indeksNr)) {
-                                    enumNavnVsEnumInnhold.get(enumNavn).put(indeksNr, new EnumkodeFundament());
-                                }
-                                enumNavnVsEnumInnhold.get(enumNavn).get(indeksNr).setEnumkodeId(enumkodeId);
-                            }
-                        }
-                );
-        if (!tekstIdTilEnumSomMangler.isEmpty()) {
-            tekstIdTilEnumSomMangler.forEach(tekstId -> log.error("EnumNavn mangler. " +
-                    "sedType={}, tekstId={}", sedType, tekstId));
-        }
-    }
-
-    public void fyllInnEnumkodeBeskrivelse
-            (Map<String, TreeMap<Integer, EnumkodeFundament>> enumNavnVsEnumInnhold
-                    , CdmUttrekk cdmUttrekk, String sedType) {
-        Set<String> tekstIdTilEnumSomMangler = new HashSet<>();
-        cdmUttrekk.getCdmStiVsEnumkodeTekst().forEach((cdmSti, enumkodeTekst) -> {
-                    String cdmStiJustert = StringUtils.substringBeforeLast(cdmSti, ".");
-                    String indeks = StringUtils.getDigits(StringUtils.substringAfterLast(cdmSti, "["));
-                    int cdmIndeksNr = Integer.parseInt(indeks); // for korrekt sortering
-                    String enumNavn = cdmUttrekk.getCdmStiVsEnumNavn().get(cdmStiJustert);
-                    if (enumNavn == null) {
-                        String tekstId = cdmUttrekk.getCdmStiVsTekstId().get(cdmStiJustert);
-                        tekstIdTilEnumSomMangler.add(tekstId);
-                    } else {
-                        if (!enumNavnVsEnumInnhold.get(enumNavn).containsKey(cdmIndeksNr)) {
-                            enumNavnVsEnumInnhold.get(enumNavn).put(cdmIndeksNr, new EnumkodeFundament());
-                        }
-                        if (enumNavnVsEnumInnhold.get(enumNavn).get(cdmIndeksNr).getEnumkodeBeskrivelse() != null
-                                && !enumNavnVsEnumInnhold.get(enumNavn).get(cdmIndeksNr).getEnumkodeBeskrivelse()
-                                .equals(enumkodeTekst)) {
-                            log.error("ENUM feil. Ulike verdier i ulike forekomster av samme enum: " +
-                                            "enumNavn={}, cdmIndeksNr={}, enumTekst_1={}, enumTekst_2={}"
-                                    , enumNavn, cdmIndeksNr, enumkodeTekst
-                                    , enumNavnVsEnumInnhold.get(enumNavn).get(cdmIndeksNr).getEnumkodeBeskrivelse());
-                        }
-                        enumNavnVsEnumInnhold.get(enumNavn).get(cdmIndeksNr).setEnumkodeBeskrivelse(enumkodeTekst);
-                    }
-                }
-        );
-        if (!tekstIdTilEnumSomMangler.isEmpty()) {
-            tekstIdTilEnumSomMangler.forEach(tekstId -> log.error("EnumBskr mangler. " +
-                    "sedType={}, tekstId={}", sedType, tekstId));
-        }
-    }
-
-    public void fyllInnEnumkoderMedBeskrivelser
-            (Map<String, TreeMap<Integer, EnumkodeFundament>> enumtypeVsEnumInnhold) {
-        enumtypeVsEnumInnhold.values()
-                .forEach(enumKodeSett -> {
-                    enumKodeSett.values()
-                            .forEach(enumVerdi -> {
-                                        if (StringUtils.isNumeric(enumVerdi.getEnumkodeId())) {
-                                            enumVerdi.setEnumkode(enumVerdi.getEnumkodeBeskrivelse()
-                                                            .trim().toLowerCase()
-                                                            .replace(".", "")
-                                                            .replace(",", "")
-                                                            .replace(" - ", "_")
-                                                            .replace("-", "")
-                                                            .replace(" / ", "_")
-                                                            .replace("/", "_")
-                                                            .replace("(", "")
-                                                            .replace(")", "")
-                                                            .replace(" ", "_")
-                                                            .replace("§", "")
-                                                            .replace("æ", "ae")
-                                                            .replace("ø", "oe")
-                                                            .replace("å", "aa")
-                                            );
-                                        } else {
-                                            enumVerdi.setEnumkode(enumVerdi.getEnumkodeId());
-                                        }
-                                    }
-                            );
-
-                });
-
-
-    }
 }

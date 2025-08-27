@@ -1,0 +1,39 @@
+{
+  "GeneralInformation" : {
+    "reimbursementRequestID" : " $dagpenger.refusjonskrav.id",
+    "AmountReceived" : {
+      "currency" : {
+        "value" : [ " $dagpenger.refusjonskrav.tilbakebetaling.valuta" ]
+      },
+      "amount" : " $dagpenger.refusjonskrav.tilbakebetaling.beloep"
+    },
+    "reimbursementPaymentNotificationID" : " $dagpenger.refusjonskrav.tilbakebetaling.id",
+    "datePaymentReceived" : " $dagpenger.refusjonskrav.tilbakebetaling.utbetalingsdato",
+    "reimbursementReceiptOrClosingNotificationID" : " $dagpenger.refusjonskrav.tilbakebetaling.kvittering.id"
+  },
+  "LocalCaseNumbers" : {
+    "LocalCaseNumber" : [ {
+      "Institution" : {
+        "institutionName" : " $nav.eessisak[x].institusjonsnavn",
+        "institutionID" : " $nav.eessisak[x].institusjonsid"
+      },
+      "country" : {
+        "value" : [ " $nav.eessisak[x].land" ]
+      },
+      "caseNumber" : " $nav.eessisak[x].saksnummer"
+    } ]
+  },
+  "ReimbursementRequestClosed" : {
+    "FillInIfReimbursementRequestNotClosed" : {
+      "reasonForNotClosingReimbursementRequest" : {
+        "value" : [ " $dagpenger.refusjonskrav.ikkeavsluttet.grunn.type[x]" ]
+      },
+      "PleaseFillInFollowingIfReasonOtherReason" : {
+        "reason" : " $dagpenger.refusjonskrav.ikkeavsluttet.grunn.annen"
+      }
+    },
+    "reimbursementRequestClosedIndicator" : {
+      "value" : [ " $dagpenger.refusjonskrav.eravsluttet" ]
+    }
+  }
+}

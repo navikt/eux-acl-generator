@@ -1,7 +1,6 @@
 package eux.acl.generator;
 
-import eux.acl.generator.facade.FundamentFacade;
-import eux.acl.generator.facade.PdfMalerFacade;
+import eux.acl.generator.facade.ResultaterFacade;
 
 import static eux.acl.generator.service.FilService.*;
 
@@ -10,7 +9,7 @@ public class Pdf_2_lagPdfMaler {
 
     public static void main(String[] args) {
 
-        PdfMalerFacade pdfMalerFacade = new PdfMalerFacade();
+        ResultaterFacade pdfMalerFacade = new ResultaterFacade();
         pdfMalerFacade.lagPdfMaler(SEDTYPER_A, V44);
         pdfMalerFacade.lagPdfMaler(SEDTYPER_DA, V44);
         pdfMalerFacade.lagPdfMaler(SEDTYPER_F, V44);

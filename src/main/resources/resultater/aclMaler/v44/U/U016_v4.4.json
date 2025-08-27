@@ -1,0 +1,62 @@
+{
+  "Person" : {
+    "PersonIdentification" : {
+      "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+        "forenameFather" : " $nav.bruker.far.person.fornavn",
+        "PlaceBirth" : {
+          "town" : " $nav.bruker.person.foedested.by",
+          "country" : {
+            "value" : [ " $nav.bruker.person.foedested.land" ]
+          },
+          "region" : " $nav.bruker.person.foedested.region"
+        },
+        "motherFamilyNameAtBirth" : " $nav.bruker.mor.person.etternavnvedfoedsel",
+        "fatherFamilyNameAtBirth" : " $nav.bruker.far.person.etternavnvedfoedsel",
+        "forenameMother" : " $nav.bruker.mor.person.fornavn"
+      },
+      "PINPersonInEachInstitution" : {
+        "PersonalIdentificationNumber" : [ {
+          "Institution" : {
+            "institutionID" : " $nav.bruker.person.pin[x].institusjonsid",
+            "institutionName" : " $nav.bruker.person.pin[x].institusjonsnavn"
+          },
+          "sector" : {
+            "value" : [ " $nav.bruker.person.pin[x].sektor" ]
+          },
+          "personalIdentificationNumber" : " $nav.bruker.person.pin[x].identifikator",
+          "country" : {
+            "value" : [ " $nav.bruker.person.pin[x].land" ]
+          }
+        } ]
+      },
+      "forename" : " $nav.bruker.person.fornavn",
+      "sex" : {
+        "value" : [ " $nav.bruker.person.kjoenn" ]
+      },
+      "familyNameAtBirth" : " $nav.bruker.person.etternavnvedfoedsel",
+      "familyName" : " $nav.bruker.person.etternavn",
+      "forenameAtBirth" : " $nav.bruker.person.fornavnvedfoedsel",
+      "dateBirth" : " $nav.bruker.person.foedselsdato"
+    },
+    "AdditionalInformationPerson" : {
+      "nationality" : {
+        "value" : [ " $nav.bruker.person.statsborgerskap[x].land" ]
+      }
+    }
+  },
+  "LocalCaseNumbers" : {
+    "LocalCaseNumber" : [ {
+      "Institution" : {
+        "institutionName" : " $nav.eessisak[x].institusjonsnavn",
+        "institutionID" : " $nav.eessisak[x].institusjonsid"
+      },
+      "country" : {
+        "value" : [ " $nav.eessisak[x].land" ]
+      },
+      "caseNumber" : " $nav.eessisak[x].saksnummer"
+    } ]
+  },
+  "DateEndEntitlement" : {
+    "date" : " $dagpenger.bruker.retttilytelser.sluttdato"
+  }
+}

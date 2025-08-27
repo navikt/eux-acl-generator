@@ -1,0 +1,125 @@
+{
+  "Employer" : {
+    "Address" : {
+      "postalCode" : " $nav.arbeidsgiver.adresse.postnummer",
+      "town" : " $nav.arbeidsgiver.adresse.by",
+      "buildingName" : " $nav.arbeidsgiver.adresse.bygning",
+      "region" : " $nav.arbeidsgiver.adresse.region",
+      "country" : {
+        "value" : [ " $nav.arbeidsgiver.adresse.land" ]
+      },
+      "street" : " $nav.arbeidsgiver.adresse.gate"
+    },
+    "name" : " $nav.arbeidsgiver.navn",
+    "IdentificationNumbers" : {
+      "IdentificationNumber" : [ {
+        "type" : {
+          "value" : [ " $nav.arbeidsgiver.identifikator[x].type" ]
+        },
+        "number" : " $nav.arbeidsgiver.identifikator[x].id"
+      } ]
+    }
+  },
+  "Person" : {
+    "PersonIdentification" : {
+      "forename" : " $nav.bruker.person.fornavn",
+      "sex" : {
+        "value" : [ " $nav.bruker.person.kjoenn" ]
+      },
+      "forenameAtBirth" : " $nav.bruker.person.fornavnvedfoedsel",
+      "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+        "motherFamilyNameAtBirth" : " $nav.bruker.mor.person.etternavnvedfoedsel",
+        "PlaceBirth" : {
+          "country" : {
+            "value" : [ " $nav.bruker.person.foedested.land" ]
+          },
+          "town" : " $nav.bruker.person.foedested.by",
+          "region" : " $nav.bruker.person.foedested.region"
+        },
+        "forenameMother" : " $nav.bruker.mor.person.fornavn",
+        "forenameFather" : " $nav.bruker.far.person.fornavn",
+        "fatherFamilyNameAtBirth" : " $nav.bruker.far.person.etternavnvedfoedsel"
+      },
+      "familyNameAtBirth" : " $nav.bruker.person.etternavnvedfoedsel",
+      "familyName" : " $nav.bruker.person.etternavn",
+      "dateBirth" : " $nav.bruker.person.foedselsdato",
+      "PINPersonInEachInstitution" : {
+        "PersonalIdentificationNumber" : [ {
+          "Institution" : {
+            "institutionID" : " $nav.bruker.person.pin[x].institusjonsid",
+            "institutionName" : " $nav.bruker.person.pin[x].institusjonsnavn"
+          },
+          "sector" : {
+            "value" : [ " $nav.bruker.person.pin[x].sektor" ]
+          },
+          "personalIdentificationNumber" : " $nav.bruker.person.pin[x].identifikator",
+          "country" : {
+            "value" : [ " $nav.bruker.person.pin[x].land" ]
+          }
+        } ]
+      }
+    },
+    "AdditionalInformationPerson" : {
+      "previousForename" : " $nav.bruker.person.tidligerefornavn",
+      "nationality" : {
+        "value" : [ " $nav.bruker.person.statsborgerskap[x].land" ]
+      },
+      "previousFamilyName" : " $nav.bruker.person.tidligereetternavn"
+    }
+  },
+  "AddressesPerson" : {
+    "AddressPerson" : [ {
+      "street" : " $nav.bruker.adresse[x].gate",
+      "country" : {
+        "value" : [ " $nav.bruker.adresse[x].land" ]
+      },
+      "region" : " $nav.bruker.adresse[x].region",
+      "postalCode" : " $nav.bruker.adresse[x].postnummer",
+      "town" : " $nav.bruker.adresse[x].by",
+      "buildingName" : " $nav.bruker.adresse[x].bygning"
+    } ]
+  },
+  "Decision" : {
+    "reasonForConditionForAccidentWorkDiseaseNotFulfilled" : {
+      "value" : [ " $arbeidsulykkeyrkessykdom.bestridelse.endeligvedtak.betingelser.ikkeoppfylt.grunn.type[x]" ]
+    },
+    "InformationAboutSicknessInsurance" : {
+      "FillInIfSicknessInsurance" : {
+        "Institution" : {
+          "institutionID" : " $arbeidsulykkeyrkessykdom.bestridelse.endeligvedtak.sykeforsikring.institusjonsid",
+          "institutionName" : " $arbeidsulykkeyrkessykdom.bestridelse.endeligvedtak.sykeforsikring.institusjonsnavn"
+        },
+        "countryCode" : {
+          "value" : [ " $arbeidsulykkeyrkessykdom.bestridelse.endeligvedtak.sykeforsikring.land" ]
+        }
+      },
+      "sicknessInsuranceInformation" : {
+        "value" : [ " $arbeidsulykkeyrkessykdom.bestridelse.endeligvedtak.sykeforsikring.status.type" ]
+      }
+    },
+    "conditionsAnAccidentAtWorkAnOccupationalDiseaseAre" : {
+      "value" : [ " $arbeidsulykkeyrkessykdom.bestridelse.endeligvedtak.betingelser.status.type" ]
+    },
+    "FillInIfReasonForConditions" : {
+      "otherReason" : " $arbeidsulykkeyrkessykdom.bestridelse.endeligvedtak.betingelser.ikkeoppfylt.grunn.annet"
+    }
+  },
+  "ThisSEDRelatedTo" : {
+    "date" : " $arbeidsulykkeyrkessykdom.sedrelaterttil.dato",
+    "statusPerson" : {
+      "value" : [ " $arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.id" ]
+    },
+    "PleaseFillInFollowingIfStatusPersonOther" : {
+      "statusPersonIfOther" : " $arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.annet"
+    },
+    "typeOfSED" : {
+      "value" : [ " $arbeidsulykkeyrkessykdom.sedrelaterttil.sedtype" ]
+    },
+    "code" : " $arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kode",
+    "codingSystem" : " $arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kodingssystem",
+    "description" : " $arbeidsulykkeyrkessykdom.sedrelaterttil.konsekvensellerbeskrivelse"
+  },
+  "AdditionalInformation" : {
+    "additionalInformation" : " $nav.ytterligereinformasjon"
+  }
+}

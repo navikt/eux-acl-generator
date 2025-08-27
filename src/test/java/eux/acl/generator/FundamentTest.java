@@ -2,7 +2,7 @@ package eux.acl.generator;
 
 import com.github.wnameless.json.flattener.JsonFlattener;
 import eux.acl.generator.facade.FundamentFacade;
-import eux.acl.generator.service.UttrekkAvKodeverkFraCdmService;
+import eux.acl.generator.old.UttrekkAvKodeverkFraCdmService;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -89,171 +89,30 @@ public class FundamentTest {
     @Test
     public void lager_kodeverkFundament_v44() {
         FundamentFacade aclMalFacade = new FundamentFacade();
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_M, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_A, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_DA, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_F, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_H, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_P, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_R, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_S, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_U, V44);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_X, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_M, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_A, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_DA, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_F, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_H, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_P, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_R, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_S, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_U, V44);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_X, V44);
     }
     @Test
     public void lager_kodeverkFundament_v43() {
         FundamentFacade aclMalFacade = new FundamentFacade();
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_M, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_A, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_DA, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_F, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_H, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_P, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_R, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_S, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_U, V43);
-        aclMalFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_X, V43);
-    }
-    /**
-     * Genererer SEDer basert på CDMen. Sammenlikner dem med eksisterende ACL-SEDer.
-     * Hvis disse er like antar vi at koden som gerererer SEDer basert på CDMen er korrekt.
-     * Vi kan da - i neste runde - bruke denne koden til å generere de nye SEDene - basert på ny versjon av CDMen.
-     */
-    @Test
-    public void aclSed_lesSedMalerOgSkrivTilFil_v43() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-        SEDTYPER_F_H_S_U().forEach(sedType -> aclMalFacade.lesAclMalOgSkrivDenTilFil(sedType, V43));
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_M, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_A, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_DA, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_F, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_H, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_P, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_R, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_S, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_U, V43);
+        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_X, V43);
     }
 
-
-    /**
-     * Sjekker at motoren for å generere SED-maler basert på CDMen er korrekt ved å
-     * sammenlikne de eksisterende ACL-SEDene med CDM-SEDer generert av motoren i samme versjon.
-     */
-
-
-
-
-//    @Test
-//    public void sammenlikneSammeVersjonerAvAclSedMedCdmSed_v43() {
-//        CdmMetaFacade aclMalFacade = new CdmMetaFacade();
-//        SEDTYPER_F_H_S_U().forEach(sedType -> aclMalFacade.sammenlikneSedFraAclOgSedFraCdm(sedType, V43));
-//    }
-
-    /**
-     * Lager CDM-SED-maler for v4.4 - brukes som grunnlag for å sammenlikne CDM v4.3 og CDM v4.4
-     */
-
-
-
-
-
-    @Test
-    public void aclSedMaler_skrivDiffMellomAclMalerOgNyCdmVersjonTilFiler() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-        SEDTYPER_F_H_S_U().forEach(sedType -> aclMalFacade
-                .sammenliknerGammelAclSedMedNyCdmVersjonOgSkriverDiffTilFil(sedType, V44, V43));
-    }
-
-    /**
-     * Brukes til å fylle ut nye felt samtidig i alle SEDene innen samme sektor
-     */
-    @Test
-    public void alleAclSedBasisMalerTilSammeFil_kolon_etter_sedtype() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-        aclMalFacade.skrivBasisForNyeAclMalerTilSammeFil(SEDTYPER_H, V44, V44);
-    }
-
-    /**
-     * Kodeverk -------------
-     * <p>
-     * Lage cdmSti til kodeverktype - Oversett til AclSti vs kodeverktype
-     * Bytt ut siste ledd i AclSti med kodeverktype.
-     */
-    @Test
-    public void henterLokasjonIdVsEnumNavnForAlleSed() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-// finn cdmStierVsDdmId
-
-//        Map<String, String> cdmIdVsEnumNavn =  aclMalFacade.uttrekkFraLogiskModell(V44);
-    }
-
-    @Test
-    public void kodeverkDiffMellomToCdmVersjoner() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-//        Map<String, String> lokasjonIdVsEnumNavn =  aclMalFacade.uttrekkFraLogiskModell(V44);
-    }
-
-    // -------------------
-
-    @Test
-    public void nyeStierSomErFellesForMangeSEDer() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-        aclMalFacade.lagEiFilMedUnikeNyeCdmStier(SEDTYPER_F, V44, "unikeNye_F_stier.txt");
-    }
-
-    @Test
-    public void utgaatteStierSomErFellesForMangeSEDer() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-        aclMalFacade.lagEiFilMedUnikeUtgaatteAclStier(SEDTYPER_F, V44, "unikeUtgaatte_F_stier.txt");
-    }
-
-
-    private void lagUtgangspunktForV43Mal(String sedType, String cdmSektor, String aclSector) {
-        String cdmV43TemplateFilnavn = MAPPE_CDMv43 + "/" + cdmSektor + "/" + sedType + ".json";
-        String aclV42TemplateFilnavn = MAPPE_ACLv42 + "/" + aclSector + "/" + sedType + "_v4.2.json";
-        try {
-            String aclMal42Json = FileUtils.readFileToString(new File(aclV42TemplateFilnavn), UTF_8);
-            Map<String, Object> acl42StiVsNavSti = JsonFlattener.flattenAsMap(aclMal42Json);
-            String cdm43FileJson = FileUtils.readFileToString(new File(cdmV43TemplateFilnavn), UTF_8);
-            Map<String, Object> cdmSedFlattenedMap = JsonFlattener.flattenAsMap(cdm43FileJson);
-            Map<String, String> cdm43StiVsType = cdmReader.lesMalFraCdm(cdmSedFlattenedMap, sedType);
-            // Lag (cdm) base-mal kun med stier som også fins i acl-en.
-            List<String> cdmFlatList = cdm43StiVsType.keySet().stream()
-                    .filter(k -> acl42StiVsNavSti.containsKey(k))
-                    .map(k -> k + ": " + acl42StiVsNavSti.get(k).toString())
-                    .toList();
-            // Sammenlikne:
-            List<String> kunIAcl = acl42StiVsNavSti.keySet().stream()
-                    .filter(k -> !cdm43StiVsType.containsKey(k))
-                    .map(k -> k + ": " + acl42StiVsNavSti.get(k))
-                    .toList();
-            List<String> kunICdm = cdm43StiVsType.keySet().stream()
-                    .filter(k -> !acl42StiVsNavSti.containsKey(k))
-                    .map(k -> k + ": ")
-                    .toList();
-            List<String> cdmAlleStierFlatList = new ArrayList<>();
-            cdmAlleStierFlatList.addAll(cdmFlatList);
-            cdmAlleStierFlatList.addAll(kunICdm);
-            String cdmMalAlleEuStier = StringUtils.join(cdmAlleStierFlatList.stream()
-                    .sorted().toList(), "\n");
-            String kunAclFlatList = StringUtils.join(kunIAcl.stream().sorted().toList(), "\n");
-            String kunCdmFlatList = StringUtils.join(kunICdm.stream().sorted().toList(), "\n");
-            FileUtils.writeStringToFile(
-                    new File(MAPPE_ACLv43_MELLOMBELS + "/" + cdmSektor + "/" + sedType + UENDRET_FILNAVN_ENDE),
-                    cdmMalAlleEuStier, "UTF-8");
-            FileUtils.writeStringToFile(
-                    new File(MAPPE_ACLv43_MELLOMBELS + "/" + cdmSektor + "/" + sedType + "-v42-diff.json"),
-                    kunAclFlatList, "UTF-8");
-            String templateAdjustmentsFile =
-                    MAPPE_ACLv43_MELLOMBELS + "/" + cdmSektor + "/" + sedType + JUSTERINGER_FILNAVN_ENDE;
-            if (Files.notExists(Paths.get(templateAdjustmentsFile))) {
-                FileUtils.writeStringToFile(new File(templateAdjustmentsFile), kunCdmFlatList, "UTF-8");
-            }
-            if (kunIAcl.size() == 0 && kunICdm.size() == 0) {
-                System.out.println(sedType + ": OK");
-            } else {
-                System.out.println(sedType + ": diff " + kunIAcl.size() + " - " + kunICdm.size());
-            }
-        } catch (Exception e) {
-            System.out.println("Error. Kunne ikke lese templatefil. " + sedType
-                    + " - " + e.getLocalizedMessage());
-        }
-    }
-
-
-    @Test
-    public void enTest() {
-
-    }
 }

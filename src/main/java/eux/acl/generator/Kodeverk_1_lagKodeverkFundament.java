@@ -10,28 +10,28 @@ public class Kodeverk_1_lagKodeverkFundament {
 
         FundamentFacade fundamentFacade = new FundamentFacade();
         String cdmVersjon = V43;
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_M, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_A, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_DA, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_F, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_H, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_P, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_R, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_S, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_U, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_X, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_M, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_A, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_DA, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_F, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_H, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_P, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_R, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_S, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_U, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_X, cdmVersjon);
 
         cdmVersjon = V44;
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_M, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_A, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_DA, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_F, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_H, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_P, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_R, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_S, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_U, cdmVersjon);
-        fundamentFacade.trekkUtEnumsettOgSkrivTilFil(SEDTYPER_X, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_M, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_A, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_DA, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_F, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_H, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_P, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_R, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_S, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_U, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_X, cdmVersjon);
     }
 
 }

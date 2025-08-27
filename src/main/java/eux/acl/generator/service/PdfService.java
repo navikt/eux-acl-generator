@@ -15,24 +15,21 @@ public class PdfService {
         this.filService = new FilService();
     }
 
-    public void lagPdfMaler(List<String> sedTyper, String cdmVersjon) {
-        sedTyper.forEach(sedType -> {
-                    TreeMap<String, EuSedFundament> euSedFundament = filService.lesEuSedFundamentFil(sedType, cdmVersjon);
-                    TreeMap<String, PdfSedElement> euSedStiVsSedElement = new TreeMap<>();
-                    euSedFundament.forEach((euSedSti, fundament) -> {
-                        euSedStiVsSedElement.put(
-                                euSedSti,
-                                PdfSedElement.builder()
-                                        .index(fundament.getIndeks())
-                                        .prompt(fundament.getLedetekst())
-                                        .valuetype(fundament.getCdmType())
-                                        .codework(lesEnumVerdier(fundament.getEnumNavn(), cdmVersjon, euSedSti))
-                                        .enumName(fundament.getEnumNavn())
-                                        .build());
-                    });
-                    filService.skrivPdfSedMalTilFil(euSedStiVsSedElement, sedType, cdmVersjon);
-                }
-        );
+    public void lagPdfMal(String sedType, String cdmVersjon) {
+        TreeMap<String, EuSedFundament> euSedFundament = filService.lesEuSedFundamentFil(sedType, cdmVersjon);
+        TreeMap<String, PdfSedElement> euSedStiVsSedElement = new TreeMap<>();
+        euSedFundament.forEach((euSedSti, fundament) -> {
+            euSedStiVsSedElement.put(
+                    euSedSti,
+                    PdfSedElement.builder()
+                            .index(fundament.getIndeks())
+                            .prompt(fundament.getLedetekst())
+                            .valuetype(fundament.getCdmType())
+                            .codework(lesEnumVerdier(fundament.getEnumNavn(), cdmVersjon, euSedSti))
+                            .enumName(fundament.getEnumNavn())
+                            .build());
+        });
+        filService.skrivPdfSedMalTilFil(euSedStiVsSedElement, sedType, cdmVersjon);
     }
 
     private NavigableMap<String, String> lesEnumVerdier(String enumNavn, String cdmVersjon, String euSedSti) {

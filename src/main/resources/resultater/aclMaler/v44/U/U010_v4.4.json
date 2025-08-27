@@ -1,0 +1,86 @@
+{
+  "Circumstance" : {
+    "Period" : {
+      "OpenPeriod" : {
+        "startDate" : " $dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.aapenperiode.startdato",
+        "typeOpenPeriod" : {
+          "value" : [ " $dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.aapenperiode.type" ]
+        }
+      },
+      "FixedPeriod" : {
+        "startDate" : " $dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.fastperiode.startdato",
+        "endDate" : " $dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.periode.fastperiode.sluttdato"
+      }
+    },
+    "circumstances" : {
+      "value" : [ " $dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.type[x].id" ]
+    },
+    "FillInFollowingIfCircumstancesIsOther" : {
+      "OtherCircumstanceSpecification" : [ {
+        "circumstance" : " $dagpenger.bruker.retttilytelser.paavirkendeomstendigheter.annentype[x].beskrivelse"
+      } ]
+    }
+  },
+  "Person" : {
+    "AdditionalInformationPerson" : {
+      "nationality" : {
+        "value" : [ " $nav.bruker.person.statsborgerskap[x].land" ]
+      }
+    },
+    "PersonIdentification" : {
+      "PINPersonInEachInstitution" : {
+        "PersonalIdentificationNumber" : [ {
+          "Institution" : {
+            "institutionID" : " $nav.bruker.person.pin[x].institusjonsid",
+            "institutionName" : " $nav.bruker.person.pin[x].institusjonsnavn"
+          },
+          "sector" : {
+            "value" : [ " $nav.bruker.person.pin[x].sektor" ]
+          },
+          "personalIdentificationNumber" : " $nav.bruker.person.pin[x].identifikator",
+          "country" : {
+            "value" : [ " $nav.bruker.person.pin[x].land" ]
+          }
+        } ]
+      },
+      "forename" : " $nav.bruker.person.fornavn",
+      "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+        "PlaceBirth" : {
+          "town" : " $nav.bruker.person.foedested.by",
+          "country" : {
+            "value" : [ " $nav.bruker.person.foedested.land" ]
+          },
+          "region" : " $nav.bruker.person.foedested.region"
+        },
+        "forenameMother" : " $nav.bruker.mor.person.fornavn",
+        "forenameFather" : " $nav.bruker.far.person.fornavn",
+        "motherFamilyNameAtBirth" : " $nav.bruker.mor.person.etternavnvedfoedsel",
+        "fatherFamilyNameAtBirth" : " $nav.bruker.far.person.etternavnvedfoedsel"
+      },
+      "sex" : {
+        "value" : [ " $nav.bruker.person.kjoenn" ]
+      },
+      "forenameAtBirth" : " $nav.bruker.person.fornavnvedfoedsel",
+      "familyNameAtBirth" : " $nav.bruker.person.etternavnvedfoedsel",
+      "familyName" : " $nav.bruker.person.etternavn",
+      "dateBirth" : " $nav.bruker.person.foedselsdato"
+    }
+  },
+  "FollowUpRequested" : {
+    "followUpRequestedIndicator" : {
+      "value" : [ " $dagpenger.bruker.retttilytelser.oenskeraabliinformertomkonsekvenser" ]
+    }
+  },
+  "LocalCaseNumbers" : {
+    "LocalCaseNumber" : [ {
+      "caseNumber" : " $nav.eessisak[x].saksnummer",
+      "Institution" : {
+        "institutionName" : " $nav.eessisak[x].institusjonsnavn",
+        "institutionID" : " $nav.eessisak[x].institusjonsid"
+      },
+      "country" : {
+        "value" : [ " $nav.eessisak[x].land" ]
+      }
+    } ]
+  }
+}

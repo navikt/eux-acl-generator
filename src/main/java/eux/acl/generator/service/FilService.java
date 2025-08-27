@@ -23,31 +23,32 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class FilService {
     public static final String V43 = "4.3";
     public static final String V44 = "4.4";
-    public static final String MAPPE_TARGET_CDM_SED = "target/cdmEuSed";
-    public static final String MAPPE_TARGET_CDM_DIFF = "target/diffCdmEuSedVersjoner";
-    public static final String MAPPE_TARGET_ACL_SED = "target/aclMaler";
     public static final String MAPPE_TARGET_FUNDAMENT_KODEVERK = "target/fundament/kodeverk";
     public static final String MAPPE_TARGET_FUNDAMENT_SEDMALER = "target/fundament/sedmaler";
     public static final String MAPPE_TARGET_DIFF_KODEVERK = "target/diff/kodeverk";
-    public static final String MAPPE_TARGET_DIFF_SEDMALER = "target/diff/sedmaler";
     public static final String MAPPE_TARGET_PDF_SED_MAL = "target/sedmaler/pdf";
-    public static final String MAPPE_TARGET_ACL_DIFF = "target/aclDiff";
+    public static final String MAPPE_TARGET_CDM_DIFF = "target/diff/aclMaler";
     public static final String MAPPE_TARGET_RESULTAT_KODEVERK = "target/resultater/kodeverk";
+    public static final String MAPPE_TARGET_RESULTAT_ACL = "target/resultater/aclmaler";
     public static final String MAPPE_CDM_META = "src/main/resources/input/cdm-meta";
     public static final String MAPPE_CDM_LOGISK_MODELL = "src/main/resources/input/cdm-logisk-modell";
     public static final String MAPPE_OVERSETTELSER = "src/main/resources/input/cdm-oversettelser";
-    public static final String MAPPE_ACL = "src/main/resources/acl";
+    public static final String MAPPE_EKSISTERENDE_ACL = "src/main/resources/acl/maler";
     public static final String MAPPE_FUNDAMENT_MALER = "src/main/resources/fundament/maler";
     public static final String MAPPE_FUNDAMENT_KODEVERK = "src/main/resources/fundament/kodeverk";
     public static final String MAPPE_DIFF_KODEVERK = "src/main/resources/diff/kodeverk";
-    public static final String FIL_NYE_STIER = "nytt.txt";
-    public static final String FIL_UENDREDE_STIER = "uendret.txt";
-    public static final String FIL_UTGAATTE_STIER = "utgaatt.txt";
+    public static final String MAPPE_DIFF_ACL_MALER = "src/main/resources/diff/aclMaler";
+    public static final String MAPPE_RESULTAT_ACL_MALER_FLAT = "src/main/resources/resultater/aclMalerFlattened";
+    public static final String FIL_MED_ENDRINGER_STIER = "endringer.txt";
+    public static final String FIL_MED_UENDREDE_STIER = "uendret.txt";
+    public static final String FIL_MED_UTGAATTE_STIER = "utgaatt.txt";
     public static final String FIL_UENDREDE_ACL_STIER = "uendret_acl.txt";
     public static final String FIL_UTGAATTE_ACL_STIER = "utgaatt_acl.txt";
+    public static final String FIL_NY_ACL_MAL_STIER = "nyAclMal_basis.txt";
+    public static final String FIL_ENDRET_ENUM_STIER = "endret_enum.txt";
     public static final String FIL_CDM_LOGISK_MODELL = "CDM_LM.xml";
     public static final String FIL_OVERSETTELSER = "no.json";
-    public static final String FIL_TEKST_ID_VS_ENUM_NAVN = "cdmTekstIdVsEnumnavn";
+    public static final String FIL_ACL_MALER_I_SEKTOREN_FLATTENED = "aclMalerFlattened.txt";
     public static final String MANUELLE_JUSTERINGER = "manuelleJusteringer";
 
     public static final List<String> SEDTYPER_A = List.of("A001", "A002", "A003", "A004", "A005"
@@ -109,7 +110,6 @@ public class FilService {
             log.error("Json-feil i fil. fil={}, cdmVersjon={}", cdmMetaSedFilSti, cdmVersjon);
         } catch (IOException e) {
             log.error("Fil mangler. fil={}, cdmVersjon={}", cdmMetaSedFilSti, cdmVersjon);
-//            throw new RuntimeException(e);
         }
         return null;
     }
@@ -125,11 +125,11 @@ public class FilService {
         try {
             String euSedJson = new JsonMapper().convertValue(euSedFundament, JsonNode.class).toPrettyString();
             FileUtils.writeStringToFile(new File(cdmSedFilSti), euSedJson, "UTF-8");
+            log.info("{} - euSedFundament opprettet", sedType);
         } catch (JsonProcessingException e) {
             log.error("kunne ikke konvertere euSedFundament til Json. sedType={} ", sedType);
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", cdmSedFilSti);
-            //            throw new RuntimeException(e);
         }
     }
 
@@ -137,56 +137,12 @@ public class FilService {
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String aclFilnavn = sedType + "_v" + cdmVersjon + ".json";
-        String aclMalFilSti = MAPPE_ACL + "/" + cdmVersjonTilpasset + "/" + aclSektor(cdmSektor) + "/" + aclFilnavn;
+        String aclMalFilSti = MAPPE_EKSISTERENDE_ACL + "/" + cdmVersjonTilpasset + "/" + aclSektor(cdmSektor) + "/" + aclFilnavn;
         try {
             String aclmalJson = FileUtils.readFileToString(new File(aclMalFilSti), UTF_8);
             return JsonFlattener.flattenAsMap(aclmalJson);
         } catch (IOException e) {
             log.error("Kunne ikke lese fil. fil={}", aclMalFilSti);
-            //            throw new RuntimeException(e);
-        }
-        return null;
-    }
-
-    public void skrivAclSedTilFil(List<String> cdmStiVsNavStiListe, String sedType, String cdmVersjon) {
-        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String aclMalFilsti = MAPPE_TARGET_ACL_SED + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".txt";
-        String aclMalFlattened = StringUtils.join(cdmStiVsNavStiListe.stream().sorted().toList(), "\n");
-        try {
-            FileUtils.writeStringToFile(new File(aclMalFilsti), aclMalFlattened, "UTF-8");
-        } catch (IOException e) {
-            log.error("Kunne ikke skrive til fil. fil={}", aclMalFilsti);
-            //            throw new RuntimeException(e);
-        }
-    }
-
-    public List<String> lesAclMalFraTarget(String sedType, String cdmVersjon) {
-        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-
-        String aclMalFilSti = MAPPE_TARGET_ACL_SED + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".txt";
-        try {
-            String aclFlattened = FileUtils.readFileToString(new File(aclMalFilSti), UTF_8);
-            return Arrays.asList(aclFlattened.split("\n"));
-        } catch (IOException e) {
-            log.error("Kunne ikke lese fil fra target. fil={}", aclMalFilSti);
-            //            throw new RuntimeException(e);
-        }
-        return null;
-    }
-
-    public List<String> lesCdmSedFraTarget(String sedType, String cdmVersjon) {
-        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-
-        String aclMalFilSti = MAPPE_TARGET_CDM_SED + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + ".txt";
-        try {
-            String aclFlattened = FileUtils.readFileToString(new File(aclMalFilSti), UTF_8);
-            return Arrays.asList(aclFlattened.split("\n"));
-        } catch (IOException e) {
-            log.error("Kunne ikke lese fil fra target. fil={}", aclMalFilSti);
-            //            throw new RuntimeException(e);
         }
         return null;
     }
@@ -200,20 +156,42 @@ public class FilService {
             FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
-            //            throw new RuntimeException(e);
         }
     }
 
-    public void skrivAclMalerTilFil(List<String> linjer, String sektor, String filnavn, String cdmVersjon) {
+    public void skrivAclMalBasisPrSektorTilFil(List<String> linjer, String sektor, String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_ACL_SED + "/" + cdmVersjonTilpasset + "/" + sektor + "/" + filnavn;
+        String filnavnSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + sektor + "_" + FIL_ACL_MALER_I_SEKTOREN_FLATTENED;
         String cdmSedStierFlattened = StringUtils.join(linjer.stream().sorted().toList(), "\n");
         try {
             FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
+        }
+    }
+
+    public void skrivAclMalTilFil(String aclSedJson, String sedType, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filnavnSti = MAPPE_TARGET_RESULTAT_ACL + "/" + cdmVersjonTilpasset + "/" + sedType + ".json";
+        try {
+            FileUtils.writeStringToFile(new File(filnavnSti), aclSedJson, "UTF-8");
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
             //            throw new RuntimeException(e);
         }
+    }
+
+    public List<String> lesAclMalBasisForEnSektorTilFil(String sektor, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filnavnSti = MAPPE_RESULTAT_ACL_MALER_FLAT + "/" + cdmVersjonTilpasset + "/" + sektor +
+                "_" + FIL_ACL_MALER_I_SEKTOREN_FLATTENED;
+        try {
+            String aclMalerForEnSektor = FileUtils.readFileToString(new File(filnavnSti), UTF_8);
+            return Arrays.asList(aclMalerForEnSektor.split("\n"));
+        } catch (IOException e) {
+            log.error("Kunne ikke lese fil. fil={}", filnavnSti);
+        }
+        return null;
     }
 
     public void skrivKodeverksfundamentTilFil(String enumtype
@@ -224,7 +202,6 @@ public class FilService {
         String sektor = StringUtils.splitByCharacterType(sedType)[0];
         String filPrSektor = sektor + "/" + enumtype + ".json";
         String filerSamlet = enumtype + ".json";
-
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filnavnStiPrSektor = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filPrSektor;
         String filnavnStiFells = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filerSamlet;
@@ -232,17 +209,15 @@ public class FilService {
             FileUtils.writeStringToFile(new File(filnavnStiPrSektor), kodeverksfilJson, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filnavnStiPrSektor);
-            //            throw new RuntimeException(e);
         }
         try {
             FileUtils.writeStringToFile(new File(filnavnStiFells), kodeverksfilJson, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filnavnStiFells);
-            //            throw new RuntimeException(e);
         }
     }
 
-    public void skrivKodeverksfundamentTilFil(
+    public void skrivNyeKodeverksfundamentTilFil(
             TreeMap<Integer, EnumkodeFundament> enumInnhold
             , String enumNavn
             , String cdmVersjon) {
@@ -253,7 +228,6 @@ public class FilService {
             FileUtils.writeStringToFile(new File(stiNavnEnumFil), kodeverksfilJson, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", stiNavnEnumFil);
-            //            throw new RuntimeException(e);
         }
     }
 
@@ -265,45 +239,6 @@ public class FilService {
             FileUtils.writeStringToFile(new File(filStiNavn), tekstMedDiff, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filStiNavn);
-            //            throw new RuntimeException(e);
-        }
-    }
-
-    public void skrivKodeverkSammenlikningTilFil(String enumtype
-            , TreeMap<Integer, EnumkodeFundament> enumInnhold
-            , String sedType
-            , String cdmVersjon) {
-        String kodeverksfilJson = new JsonMapper().convertValue(enumInnhold, JsonNode.class).toPrettyString();
-        String sektor = StringUtils.splitByCharacterType(sedType)[0];
-        String filPrSektor = sektor + "/" + enumtype + ".json";
-        String filerSamlet = enumtype + ".json";
-
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavnStiPrSektor = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filPrSektor;
-        String filnavnStiFells = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + filerSamlet;
-        try {
-            FileUtils.writeStringToFile(new File(filnavnStiPrSektor), kodeverksfilJson, "UTF-8");
-        } catch (IOException e) {
-            log.error("Kunne ikke skrive til fil. fil={}", filnavnStiPrSektor);
-            //            throw new RuntimeException(e);
-        }
-        try {
-            FileUtils.writeStringToFile(new File(filnavnStiFells), kodeverksfilJson, "UTF-8");
-        } catch (IOException e) {
-            log.error("Kunne ikke skrive til fil. fil={}", filnavnStiFells);
-            //            throw new RuntimeException(e);
-        }
-    }
-
-    public void skrivEnumNavnTilFil(Set<String> enumnavn, String filnavn, String cdmVersjon) {
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset + "_" + filnavn;
-        String cdmSedStierFlattened = StringUtils.join(enumnavn.stream().sorted().toList(), "\n");
-        try {
-            FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
-        } catch (IOException e) {
-            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
-            //            throw new RuntimeException(e);
         }
     }
 
@@ -315,66 +250,10 @@ public class FilService {
         String pdfSedMalJson = new JsonMapper().convertValue(euSedStiVsPdfSedElement, JsonNode.class).toPrettyString();
         try {
             FileUtils.writeStringToFile(new File(filnavnSti), pdfSedMalJson, "UTF-8");
+            log.info("Pdf-mal laget for " + sedType);
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
-            //            throw new RuntimeException(e);
         }
-    }
-
-    public void skrivNyeUnikeStierTilFil(List<String> unikeNyeCdmStier, String filnavn, String cdmVersjonNy) {
-        String cdmVersjonTilpasset = "v" + cdmVersjonNy.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + filnavn;
-        String cdmSedStierFlattened = StringUtils.join(unikeNyeCdmStier.stream().sorted().toList(), "\n");
-        try {
-            FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
-        } catch (IOException e) {
-            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
-            //            throw new RuntimeException(e);
-        }
-    }
-
-    public List<String> lesNyeStierFraTarget(String sedType, String cdmVersjon) {
-        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String aclMalFilSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + cdmSektor
-                + "/" + sedType + "/" + FIL_NYE_STIER;
-        try {
-            String aclFlattened = FileUtils.readFileToString(new File(aclMalFilSti), UTF_8);
-            return Arrays.asList(aclFlattened.split("\n"));
-        } catch (IOException e) {
-            log.error("Kunne ikke lese fil fra target. fil={}", aclMalFilSti);
-            //            throw new RuntimeException(e);
-        }
-        return null;
-    }
-
-    public List<String> lesUendredeAclStierFraTarget(String sedType, String cdmVersjon) {
-        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String aclMalFilSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + cdmSektor
-                + "/" + sedType + "/" + FIL_UENDREDE_ACL_STIER;
-        try {
-            String aclFlattened = FileUtils.readFileToString(new File(aclMalFilSti), UTF_8);
-            return Arrays.asList(aclFlattened.split("\n"));
-        } catch (IOException e) {
-            log.error("Kunne ikke lese fil fra target. fil={}", aclMalFilSti);
-            //            throw new RuntimeException(e);
-        }
-        return null;
-    }
-
-    public List<String> lesUtgaatteStierFraTarget(String sedType, String cdmVersjon) {
-        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
-        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String aclMalFilSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + "/" + FIL_UTGAATTE_STIER;
-        try {
-            String aclFlattened = FileUtils.readFileToString(new File(aclMalFilSti), UTF_8);
-            return Arrays.asList(aclFlattened.split("\n"));
-        } catch (IOException e) {
-            log.error("Kunne ikke lese fil fra target. fil={}", aclMalFilSti);
-            //            throw new RuntimeException(e);
-        }
-        return null;
     }
 
     public String lesCdmLogiskModellXmlFil(String cdmVersjon) {
@@ -419,6 +298,20 @@ public class FilService {
         return null;
     }
 
+    public List<String> lesEndredeOgNyeEnumNavn(String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_DIFF_KODEVERK + "/" + cdmVersjonTilpasset;
+        File[] files = new File(filsti).listFiles();
+        if (files != null) {
+            return Arrays.stream(files)
+                    .filter(File::isFile)
+                    .map(f -> f.getName().replace(".json", ""))
+                    .toList();
+        }
+        log.error("Fant ikke mappe, eller mappa var tom. filsti={}", filsti);
+        return null;
+    }
+
     public List<String> lesEnumFundamentFilnavnene(String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filsti = MAPPE_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset;
@@ -444,7 +337,6 @@ public class FilService {
             log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
         } catch (IOException e) {
             log.error("Fant ikke enum-fil. filsti={}", filsti);
-            //            throw new RuntimeException(e);
         }
         return null;
     }
@@ -452,6 +344,21 @@ public class FilService {
     public List<String> lesNavneneTilEndredeKodeverksfiler(String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filsti = MAPPE_DIFF_KODEVERK + "/" + cdmVersjonTilpasset;
+        File[] files = new File(filsti).listFiles();
+        if (files != null) {
+            return Arrays.stream(files)
+                    .filter(f -> f.isFile() && f.getName().endsWith(".json"))
+                    .map(f -> f.getName().replace(".json", ""))
+                    .toList();
+        } else {
+            log.error("Fant ikke mappe, eller mappa var tom. filsti={}", filsti);
+            return null;
+        }
+    }
+
+    public List<String> lesNavneneTilAlleKodeverksfiler(String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String filsti = MAPPE_FUNDAMENT_KODEVERK + "/" + cdmVersjonTilpasset;
         File[] files = new File(filsti).listFiles();
         if (files != null) {
             return Arrays.stream(files)
@@ -475,7 +382,6 @@ public class FilService {
             log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
         } catch (IOException e) {
             log.error("Fant ikke enum-fil. filsti={}", filsti);
-            //            throw new RuntimeException(e);
         }
         return null;
     }
@@ -483,68 +389,56 @@ public class FilService {
     public TreeMap<Integer, EnumkodeFundament> lesManueltEndretEnumFundamentFil(String enumNavn, String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filsti = MAPPE_DIFF_KODEVERK + "/" + cdmVersjonTilpasset + "/" + MANUELLE_JUSTERINGER + "/" + enumNavn + ".json";
-        try {
-            String enumFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
-            return new JsonMapper().readValue(enumFundamentJson, new TypeReference<>() {
-            });
-        } catch (IOException e) {
-            log.info("Ingen manuelle endringer i følgende enum-fil: {}", filsti);
-
+        if (FileUtils.isRegularFile(new File(filsti))) {
+            try {
+                String enumFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
+                return new JsonMapper().readValue(enumFundamentJson, new TypeReference<>() {
+                });
+            } catch (IOException e) {
+                log.info("Kunne ikke lese manuelt endret enum-fil: {}", filsti);
+            }
         }
         return null;
     }
 
-    public void opprettEnumfil(
-            List<String> nyAclEnumLinjer, String enumNavn, String cdmVersjon) {
+    public void opprettAclEnumfil(List<String> nyAclEnumLinjer, String enumNavn, String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String filsti = MAPPE_TARGET_RESULTAT_KODEVERK + "/" + cdmVersjonTilpasset + "/" + enumNavn + ".properties";
         try {
             String nyAclEnum = StringUtils.join(nyAclEnumLinjer, "\n");
             FileUtils.writeStringToFile(new File(filsti), nyAclEnum, "UTF-8");
+            log.info("Enum-fil opprettet: {}", enumNavn);
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filsti);
-            //            throw new RuntimeException(e);
         }
     }
 
-//    public void skrivCdmIdVsEnumnavnTilFil(List<String> unikeNyeCdmStier, String cdmVersjon) {
-//        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".","");
-//        String filnavnSti = MAPPE_CDM_LOGISK_MODELL + "/" + cdmVersjonTilpasset + "/" +  FIL_TEKST_ID_VS_ENUM_NAVN ;
-//        String cdmSedStierFlattened = StringUtils.join(unikeNyeCdmStier.stream().sorted().toList(), "\n");
-//        try {
-//            FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
-//        } catch (IOException e) {
-//            log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
-//            //            throw new RuntimeException(e);
-//        }
-//    }
-
-private String aclSektor(String cdmSektor) {
-    switch (cdmSektor) {
-        case "X":
-            return "administrative";
-        case "DA":
-            return "awod";
-        case "F":
-            return "family";
-        case "H":
-            return "horizontal";
-        case "A":
-            return "legislationapplicable";
-        case "M":
-            return "miscellaneous";
-        case "P":
-            return "pension";
-        case "R":
-            return "recovery";
-        case "S":
-            return "sickness";
-        case "U":
-            return "unemployment";
-        default:
-            return null;
+    private String aclSektor(String cdmSektor) {
+        switch (cdmSektor) {
+            case "X":
+                return "administrative";
+            case "DA":
+                return "awod";
+            case "F":
+                return "family";
+            case "H":
+                return "horizontal";
+            case "A":
+                return "legislationapplicable";
+            case "M":
+                return "miscellaneous";
+            case "P":
+                return "pension";
+            case "R":
+                return "recovery";
+            case "S":
+                return "sickness";
+            case "U":
+                return "unemployment";
+            default:
+                return null;
+        }
     }
-}
 }
 
 
