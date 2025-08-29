@@ -1,0 +1,195 @@
+{
+  "A005" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap.land" ]
+        }
+      }
+    },
+    "SelfEmployerActivitiesForWhichMoreInfoRequiredIn" : {
+      "SelfEmployedActivity" : [ {
+        "Address" : {
+          "buildingName" : "$nav.selvstendig.arbeidsgiver[x].adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.selvstendig.arbeidsgiver[x].adresse.land" ]
+          },
+          "region" : "$nav.selvstendig.arbeidsgiver[x].adresse.region",
+          "town" : "$nav.selvstendig.arbeidsgiver[x].adresse.by",
+          "postalCode" : "$nav.selvstendig.arbeidsgiver[x].adresse.postnummer",
+          "street" : "$nav.selvstendig.arbeidsgiver[x].adresse.gate"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.selvstendig.arbeidsgiver[x].identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.selvstendig.arbeidsgiver[x].identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.selvstendig.arbeidsgiver[x].navn"
+      } ]
+    },
+    "EmployerActivitiesForWhichMoreInfoRequiredInOther" : {
+      "EmployedActivity" : [ {
+        "Address" : {
+          "postalCode" : "$nav.arbeidsgiver[x].adresse.postnummer",
+          "region" : "$nav.arbeidsgiver[x].adresse.region",
+          "country" : {
+            "value" : [ "$nav.arbeidsgiver[x].adresse.land" ]
+          },
+          "town" : "$nav.arbeidsgiver[x].adresse.by",
+          "buildingName" : "$nav.arbeidsgiver[x].adresse.bygning",
+          "street" : "$nav.arbeidsgiver[x].adresse.gate"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "type" : {
+              "value" : [ "$nav.arbeidsgiver[x].identifikator[x].type" ]
+            },
+            "number" : "$nav.arbeidsgiver[x].identifikator[x].id"
+          } ]
+        },
+        "name" : "$nav.arbeidsgiver[x].navn"
+      } ]
+    },
+    "MoreInformationFor114Or115" : {
+      "MoreInformation" : [ {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel114eller115[x].ytterligereinformasjon"
+        },
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel114eller115[x].informasjonstype" ]
+        }
+      } ]
+    },
+    "MoreInformationFor131" : {
+      "MoreInformation" : [ {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel131[x].ytterligereinformasjon"
+        },
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel131[x].informasjonstype" ]
+        }
+      } ]
+    },
+    "MoreInformationFor132" : {
+      "MoreInformation" : [ {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel132[x].ytterligereinformasjon"
+        },
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel132[x].informasjonstype" ]
+        }
+      } ]
+    },
+    "MoreInformationFor133" : {
+      "MoreInformation" : [ {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel133[x].ytterligereinformasjon"
+        },
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel133[x].informasjonstype" ]
+        }
+      } ]
+    },
+    "MoreInformationFor112" : {
+      "MoreInformation" : [ {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel112[x].ytterligereinformasjon"
+        },
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel112[x].informasjonstype" ]
+        }
+      } ]
+    },
+    "InformationConcerningOtherArticlesBasic" : {
+      "InformationConcerningOtherArticlesBasic" : [ {
+        "articleRegulationForWhichInformationRequested" : "$medlemskap.artikklergrunnforordningen[x].merinformasjonforartikkel",
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikklergrunnforordningen[x].informasjonstype42" ]
+        },
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikklergrunnforordningen[x].ytterligereinformasjon"
+        }
+      } ]
+    },
+    "MoreInformationFor113a" : {
+      "MoreInformation" : [ {
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel113a[x].informasjonstype" ]
+        },
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel113a[x].ytterligereinformasjon"
+        }
+      } ]
+    },
+    "MoreInformationFor121" : {
+      "MoreInformation" : [ {
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel121[x].informasjonstype" ]
+        },
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel121[x].ytterligereinformasjon"
+        }
+      } ]
+    },
+    "ReasonForRequestingInformation" : {
+      "reason" : "$medlemskap.forespoerselomytterligereinformasjon.grunn"
+    },
+    "RequestedForSituationsCoveredByArti8832004" : {
+      "other" : "$medlemskap.artikkelmedbehovformerinformasjon.annet",
+      "articlesBasicRegulationForWhichMoreInfoRequested" : {
+        "value" : [ "$medlemskap.artikkelmedbehovformerinformasjon.artikkel.id" ]
+      }
+    },
+    "MoreInformationFor122" : {
+      "MoreInformation" : [ {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel122[x].ytterligereinformasjon"
+        },
+        "moreInformation" : {
+          "value" : [ "$medlemskap.artikkel122[x].informasjonstype" ]
+        }
+      } ]
+    }
+  }
+}

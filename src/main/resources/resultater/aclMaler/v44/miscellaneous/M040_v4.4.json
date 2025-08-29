@@ -1,0 +1,223 @@
+{
+  "M040" : {
+    "Claimant" : {
+      "PersonIdentification" : {
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "forename" : "$nav.bruker.person.fornavn"
+      },
+      "AdditionalInformationPerson" : {
+        "PreviousName" : {
+          "previousForename" : "$nav.bruker.person.tidligerefornavn",
+          "previousFamilyName" : "$nav.bruker.person.tidligereetternavn"
+        },
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "PersonBenefitDetails" : {
+      "PersonBenefitDetails" : [ {
+        "status" : {
+          "value" : [ "$diverse.ytelser[x].status" ]
+        },
+        "PeriodBenefitsPayment" : {
+          "FixedPeriod" : {
+            "startDate" : "$diverse.ytelser[x].fastperiode.startdato",
+            "endDate" : "$diverse.ytelser[x].fastperiode.sluttdato"
+          },
+          "OpenPeriod" : {
+            "typeOpenPeriod" : {
+              "value" : [ "$diverse.ytelser[x].aapenperiode.type" ]
+            },
+            "startDate" : "$diverse.ytelser[x].aapenperiode.startdato"
+          }
+        },
+        "PleaseFillInFollowingIfBenefitsOtherBenefit" : {
+          "otherBenefit" : "$diverse.ytelser[x].annenytelse"
+        },
+        "benefits" : {
+          "value" : [ "$diverse.ytelser[x].ytelse" ]
+        },
+        "Institution" : {
+          "institutionName" : "$diverse.ytelser[x].institusjon.institusjonsnavn",
+          "institutionID" : "$diverse.ytelser[x].institusjon.institusjonsid"
+        }
+      } ]
+    },
+    "InformationPayment" : {
+      "BankDetails" : {
+        "NonSEPAAccount" : {
+          "BICSWIFT" : "$nav.bruker.bank.konto.ikkesepa.swift",
+          "BankAddress" : {
+            "country" : {
+              "value" : [ "$nav.bruker.bank.adresse.land" ]
+            },
+            "postalCode" : "$nav.bruker.bank.adresse.postkode",
+            "buildingName" : "$nav.bruker.bank.adresse.bygning",
+            "town" : "$nav.bruker.bank.adresse.by",
+            "street" : "$nav.bruker.bank.adresse.gate",
+            "region" : "$nav.bruker.bank.adresse.region"
+          },
+          "accountNumber" : "$nav.bruker.bank.kontonummer",
+          "bankName" : "$nav.bruker.bank.navn"
+        },
+        "SEPAAccount" : {
+          "IBAN" : "$nav.bruker.bank.konto.sepa.iban",
+          "BICSWIFT" : "$nav.bruker.bank.konto.sepa.swift"
+        }
+      },
+      "paymentTo" : {
+        "value" : [ "$nav.bruker.bank.konto.innehaver.type" ]
+      }
+    },
+    "PersonEmploymentSelfEmploymentDetails" : {
+      "StatusActivity" : [ {
+        "PersonCeasedPursue" : {
+          "personCeasedPursue" : {
+            "value" : [ "$diverse.bruker.yrkesaktivitet.status[x].ikkelengeraktiv.type" ]
+          },
+          "date" : "$diverse.bruker.yrkesaktivitet.status[x].ikkelengeraktiv.startdato"
+        },
+        "PersonSuspended" : {
+          "date" : "$diverse.bruker.yrkesaktivitet.status[x].permisjon.startdato",
+          "personSuspended" : {
+            "value" : [ "$diverse.bruker.yrkesaktivitet.status[x].permisjon.type" ]
+          }
+        },
+        "PersonIntendsTakeUp" : {
+          "personIntendsTakeUp" : {
+            "value" : [ "$diverse.bruker.yrkesaktivitet.status[x].oenskeraaarbeidemed.type" ]
+          },
+          "date" : "$diverse.bruker.yrkesaktivitet.status[x].oenskeraaarbeidemed.startdato"
+        },
+        "PersonReduced" : {
+          "personReduced" : {
+            "value" : [ "$diverse.bruker.yrkesaktivitet.status[x].redusertomfang.type" ]
+          },
+          "date" : "$diverse.bruker.yrkesaktivitet.status[x].redusertomfang.startdato"
+        },
+        "country" : {
+          "value" : [ "$diverse.bruker.yrkesaktivitet.status[x].land" ]
+        },
+        "PersonIntendsRetireFrom" : {
+          "personIntendsRetireFrom" : {
+            "value" : [ "$diverse.bruker.yrkesaktivitet.status[x].skalpensjonereseg.type" ]
+          },
+          "date" : "$diverse.bruker.yrkesaktivitet.status[x].skalpensjonereseg.startdato"
+        },
+        "personStillPursuing" : {
+          "value" : [ "$diverse.bruker.yrkesaktivitet.status[x].ennaaktiv.type" ]
+        }
+      } ],
+      "LastEmployerDetails" : [ {
+        "Address" : {
+          "country" : {
+            "value" : [ "$nav.arbeidsgiver[x].adresse.land" ]
+          },
+          "street" : "$nav.arbeidsgiver[x].adresse.gate",
+          "region" : "$nav.arbeidsgiver[x].adresse.region",
+          "postalCode" : "$nav.arbeidsgiver[x].adresse.postnummer",
+          "town" : "$nav.arbeidsgiver[x].adresse.by",
+          "buildingName" : "$nav.arbeidsgiver[x].adresse.bygning"
+        },
+        "name" : "$nav.arbeidsgiver[x].navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "type" : {
+              "value" : [ "$nav.arbeidsgiver[x].identifikator[x].type" ]
+            },
+            "number" : "$nav.arbeidsgiver[x].identifikator[x].id"
+          } ]
+        }
+      } ],
+      "ReasonForTerminationLastEmploymentSelfEmployment" : {
+        "terminationReasonEmployment" : {
+          "value" : [ "$diverse.bruker.yrkesaktivitet.avslutningarbeidsforhold.grunn.type" ]
+        },
+        "terminationReasonSelfEmployment" : "$diverse.bruker.yrkesaktivitet.avslutningselvstendignaerignsdrivende.grunn",
+        "FillInIfTerminationReason" : {
+          "otherTermination" : "$diverse.bruker.yrkesaktivitet.avslutningarbeidsforhold.grunn.annen"
+        }
+      },
+      "countryWhichLegislationApplicableDuringLast" : {
+        "value" : [ "$diverse.bruker.yrkesaktivitet.sisteaktivitet.medlemskap.land" ]
+      },
+      "IfPersonStillPursuingOrIntendsTakeUpEmployment" : {
+        "amount" : "$diverse.bruker.yrkesaktivitet.ennaaktiv.inntekt.maanedligbeloep",
+        "currency" : {
+          "value" : [ "$diverse.bruker.yrkesaktivitet.ennaaktiv.inntekt.valuta" ]
+        }
+      },
+      "theDateTerminationLastEmploymentOrSelfEmployment" : "$diverse.bruker.yrkesaktivitet.avslutningarbeidsforhold.dato",
+      "countryLastEmploymentOrSelfEmploymentActivity" : {
+        "value" : [ "$diverse.bruker.yrkesaktivitet.sisteaktivitet.ansettelsesforhold.land" ]
+      },
+      "otherInformationEmploymentOrSelfEmployment" : "$diverse.bruker.yrkesaktivitet.ytterligereinformasjon"
+    },
+    "PleaseFindAttachedFollowingDocument" : {
+      "attachedDocument" : {
+        "value" : [ "$diverse.overfoeringinfo.foertidspensjon.dokumentervedlagt.type[x]" ]
+      },
+      "otherDocument" : "$diverse.overfoeringinfo.foertidspensjon.dokumentervedlagt.annentype"
+    },
+    "InformationRepresentativeLegalGuardian" : {
+      "InformationRepresentativeLegalGuardian" : {
+        "Address" : {
+          "country" : {
+            "value" : [ "$nav.verge.adresse.land" ]
+          },
+          "region" : "$nav.verge.adresse.region",
+          "postalCode" : "$nav.verge.adresse.postnummer",
+          "buildingName" : "$nav.verge.adresse.bygning",
+          "town" : "$nav.verge.adresse.by",
+          "street" : "$nav.verge.adresse.gate"
+        },
+        "name" : "$nav.verge.person.navn"
+      },
+      "status" : {
+        "value" : [ "$nav.verge.status" ]
+      }
+    },
+    "Miscellaneous" : {
+      "remarks" : "$diverse.merknader",
+      "dateClaim" : "$diverse.krav.dato"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

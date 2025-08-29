@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 
 @Slf4j
 public class CdmMetaService {
-    private static final List<String> CDM_TEKST_TYPER = List
-            .of("_uxTextInput", "_uxTextAreaInput", "_uxDateInput", "_rinaIRAutocomplete");
+    private static final List<String> CDM_TEKST_TYPER = List.of("_uxTextInput", "_uxTextAreaInput", "_rinaIRAutocomplete");
+    private static final List<String> CDM_DATO_TYPER = List.of("_uxDateInput");
     private static final List<String> CDM_ENUM_TYPER = List
             .of("_uxMultiSelect", "_uxMultiCheckbox", "_uxRadioButton");
     private static final List<String> CDM_LISTE_TYPER = List
@@ -135,21 +135,19 @@ public class CdmMetaService {
                                     .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
                                     .build();
                             euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
-                        }
+                        } else if (CDM_DATO_TYPER.contains(cdmStiVsMalTagtype.get(cdmSti))) {
+                        String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
+                        EuSedFundament euSedFundament = EuSedFundament.builder()
+                                .verdiType("dato")
+                                .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti))
+                                .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti))
+                                .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti))
+                                .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
+                                .build();
+                        euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
+                    }
                 });
         return euSedStiVsEuSedFundament;
-    }
-
-    public List<String> lagEuSedFraCdm(UttrekkCdmMeta uttrekkCdmMeta) {
-        Map<String, String> cdmStiVsMalTagnavn = uttrekkCdmMeta.getCdmStiVsMalTagnavn();
-        Map<String, String> cdmStiVsMalTagtype = uttrekkCdmMeta.getCdmStiVsTagtype();
-        return cdmStiVsMalTagnavn.keySet().stream()
-                .filter(cdmSti -> CDM_TEKST_TYPER.contains(cdmStiVsMalTagtype.get(cdmSti))
-                        || CDM_ENUM_TYPER.contains(cdmStiVsMalTagtype.get(cdmSti)))
-                .map(cdmSti -> byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype))
-                .distinct()
-                .sorted()
-                .toList();
     }
 
     private String byggEuSedSti(String cdmSti, Map<String, String> cdmStiVsTagnavn, Map<String, String> cdmStiVsTagtype) {

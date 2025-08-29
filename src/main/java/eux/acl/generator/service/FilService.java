@@ -23,22 +23,24 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class FilService {
     public static final String V43 = "4.3";
     public static final String V44 = "4.4";
+    public static final String MAPPE_CDM_LOGISK_MODELL = "src/main/resources/input/cdm-logisk-modell";
+    public static final String MAPPE_CDM_META = "src/main/resources/input/cdm-meta";
+    public static final String MAPPE_OVERSETTELSER = "src/main/resources/input/cdm-oversettelser";
     public static final String MAPPE_TARGET_FUNDAMENT_KODEVERK = "target/fundament/kodeverk";
     public static final String MAPPE_TARGET_FUNDAMENT_SEDMALER = "target/fundament/sedmaler";
     public static final String MAPPE_TARGET_DIFF_KODEVERK = "target/diff/kodeverk";
-    public static final String MAPPE_TARGET_PDF_SED_MAL = "target/sedmaler/pdf";
-    public static final String MAPPE_TARGET_CDM_DIFF = "target/diff/aclMaler";
+    public static final String MAPPE_TARGET_DIFF_ACL_MALER = "target/diff/aclMaler";
     public static final String MAPPE_TARGET_RESULTAT_KODEVERK = "target/resultater/kodeverk";
     public static final String MAPPE_TARGET_RESULTAT_ACL = "target/resultater/aclmaler";
-    public static final String MAPPE_CDM_META = "src/main/resources/input/cdm-meta";
-    public static final String MAPPE_CDM_LOGISK_MODELL = "src/main/resources/input/cdm-logisk-modell";
-    public static final String MAPPE_OVERSETTELSER = "src/main/resources/input/cdm-oversettelser";
+    public static final String MAPPE_TARGET_RESULTAT_PDF = "target/resultater/pdfmaler";
+    public static final String MAPPE_TARGET_TESTDATA_ACL_MALER = "target/testdata/aclMaler";
     public static final String MAPPE_EKSISTERENDE_ACL = "src/main/resources/acl/maler";
     public static final String MAPPE_FUNDAMENT_MALER = "src/main/resources/fundament/maler";
     public static final String MAPPE_FUNDAMENT_KODEVERK = "src/main/resources/fundament/kodeverk";
     public static final String MAPPE_DIFF_KODEVERK = "src/main/resources/diff/kodeverk";
     public static final String MAPPE_DIFF_ACL_MALER = "src/main/resources/diff/aclMaler";
     public static final String MAPPE_RESULTAT_ACL_MALER_FLAT = "src/main/resources/resultater/aclMalerFlattened";
+    public static final String MAPPE_TESTDATA_ACL_MALER = "src/main/resources/testdata/aclMaler";
     public static final String FIL_MED_ENDRINGER_STIER = "endringer.txt";
     public static final String FIL_MED_UENDREDE_STIER = "uendret.txt";
     public static final String FIL_MED_UTGAATTE_STIER = "utgaatt.txt";
@@ -125,7 +127,7 @@ public class FilService {
         try {
             String euSedJson = new JsonMapper().convertValue(euSedFundament, JsonNode.class).toPrettyString();
             FileUtils.writeStringToFile(new File(cdmSedFilSti), euSedJson, "UTF-8");
-            log.info("{} - euSedFundament opprettet", sedType);
+            log.info("{}, v{}: euSedFundament opprettet", sedType, cdmVersjon);
         } catch (JsonProcessingException e) {
             log.error("kunne ikke konvertere euSedFundament til Json. sedType={} ", sedType);
         } catch (IOException e) {
@@ -150,7 +152,7 @@ public class FilService {
     public void skrivDiffTilFil(List<String> cdmSedStierListe, String sedType, String cdmVersjonNy, String filnavn) {
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjonNy.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + "/" + filnavn;
+        String filnavnSti = MAPPE_TARGET_DIFF_ACL_MALER + "/" + cdmVersjonTilpasset + "/" + cdmSektor + "/" + sedType + "/" + filnavn;
         String cdmSedStierFlattened = StringUtils.join(cdmSedStierListe.stream().sorted().toList(), "\n");
         try {
             FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
@@ -161,7 +163,7 @@ public class FilService {
 
     public void skrivAclMalBasisPrSektorTilFil(List<String> linjer, String sektor, String cdmVersjon) {
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_CDM_DIFF + "/" + cdmVersjonTilpasset + "/" + sektor + "_" + FIL_ACL_MALER_I_SEKTOREN_FLATTENED;
+        String filnavnSti = MAPPE_TARGET_DIFF_ACL_MALER + "/" + cdmVersjonTilpasset + "/" + sektor + "_" + FIL_ACL_MALER_I_SEKTOREN_FLATTENED;
         String cdmSedStierFlattened = StringUtils.join(linjer.stream().sorted().toList(), "\n");
         try {
             FileUtils.writeStringToFile(new File(filnavnSti), cdmSedStierFlattened, "UTF-8");
@@ -177,7 +179,6 @@ public class FilService {
             FileUtils.writeStringToFile(new File(filnavnSti), aclSedJson, "UTF-8");
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filnavnSti);
-            //            throw new RuntimeException(e);
         }
     }
 
@@ -245,7 +246,7 @@ public class FilService {
     public void skrivPdfSedMalTilFil(TreeMap<String, PdfSedElement> euSedStiVsPdfSedElement, String sedType, String cdmVersjon) {
         String sektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
-        String filnavnSti = MAPPE_TARGET_PDF_SED_MAL + "/"
+        String filnavnSti = MAPPE_TARGET_RESULTAT_PDF + "/"
                 + cdmVersjonTilpasset + "/" + sektor + "/" + sedType + "_oversettelser.json";
         String pdfSedMalJson = new JsonMapper().convertValue(euSedStiVsPdfSedElement, JsonNode.class).toPrettyString();
         try {
@@ -407,13 +408,29 @@ public class FilService {
         try {
             String nyAclEnum = StringUtils.join(nyAclEnumLinjer, "\n");
             FileUtils.writeStringToFile(new File(filsti), nyAclEnum, "UTF-8");
-            log.info("Enum-fil opprettet: {}", enumNavn);
+            log.info("Enum-fil opprettet: {}", filsti);
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", filsti);
         }
     }
 
-    private String aclSektor(String cdmSektor) {
+
+    public void opprettSedMedTestdata(String testSedJson, String sedType, String cdmVersjon) {
+        String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
+        String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
+        String filsti = MAPPE_TARGET_TESTDATA_ACL_MALER + "/" + cdmVersjonTilpasset + "/" +
+                aclSektor(cdmSektor)  + "/" + sedType + "-EU.json";
+        try {
+            JsonNode aclMalNode = new JsonMapper().readTree(testSedJson);
+            String testSedPrettyPrint = new JsonMapper().writerWithDefaultPrettyPrinter().writeValueAsString(aclMalNode);
+            FileUtils.writeStringToFile(new File(filsti), testSedPrettyPrint, "UTF-8");
+            log.info("Test-fil opprettet: {}", filsti);
+        } catch (IOException e) {
+            log.error("Kunne ikke skrive til fil. fil={}", filsti);
+        }
+    }
+
+    public String aclSektor(String cdmSektor) {
         switch (cdmSektor) {
             case "X":
                 return "administrative";

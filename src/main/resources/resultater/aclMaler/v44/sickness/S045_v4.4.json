@@ -1,0 +1,76 @@
+{
+  "S045" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel"
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
+          } ]
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "AddressOfPersonForWhomAnEntitlementDocumentIssued" : {
+      "town" : "$sykdom.anmodningomdokumenter.svar.personensadresse.by",
+      "postalCode" : "$sykdom.anmodningomdokumenter.svar.personensadresse.postnummer",
+      "buildingName" : "$sykdom.anmodningomdokumenter.svar.personensadresse.bygning",
+      "region" : "$sykdom.anmodningomdokumenter.svar.personensadresse.region",
+      "street" : "$sykdom.anmodningomdokumenter.svar.personensadresse.gate",
+      "country" : {
+        "value" : [ "$sykdom.anmodningomdokumenter.personensadresse.land" ]
+      }
+    },
+    "InfoNonEntitlement" : {
+      "infoNonEntitlement" : {
+        "value" : [ "$sykdom.anmodningomdokumenter.svar.ikkrretttilytelser.grunn.type" ]
+      },
+      "FillInIfInfoNonEntitlementOther" : {
+        "reason" : "$sykdom.anmodningomdokumenter.svar.ikkrretttilytelser.grunn.annen"
+      }
+    },
+    "InfoEntitlement" : {
+      "PeriodEntitlement" : {
+        "endDate" : "$sykdom.anmodningomdokumenter.svar.retttilytelser.periode.sluttdato",
+        "startDate" : "$sykdom.anmodningomdokumenter.svar.retttilytelser.periode.startdato"
+      }
+    },
+    "EHICEuropeanHealthInsuranceCard" : {
+      "eHICNumber" : "$sykdom.anmodningomdokumenter.svar.ehicnummer"
+    }
+  }
+}

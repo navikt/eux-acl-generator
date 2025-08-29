@@ -1,0 +1,147 @@
+{
+  "DA050" : {
+    "InformationPeriodsExposure" : {
+      "InformationPeriodExposure" : [ {
+        "EmploymentPeriod" : {
+          "OpenPeriod" : {
+            "typeOpenPeriod" : {
+              "value" : [ "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].ansettelsesperiode.aapenperiode.type" ]
+            },
+            "startDate" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].ansettelsesperiode.aapenperiode.startdato"
+          },
+          "FixedPeriod" : {
+            "startDate" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].ansettelsesperiode.fastperiode.startdato",
+            "endDate" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].ansettelsesperiode.fastperiode.sluttdato"
+          }
+        },
+        "Employer" : {
+          "Address" : {
+            "region" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.adresse.region",
+            "postalCode" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.adresse.postnummer",
+            "street" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.adresse.gate",
+            "country" : {
+              "value" : [ "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.adresse.land" ]
+            },
+            "town" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.adresse.by",
+            "buildingName" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.adresse.bygning"
+          },
+          "IdentificationNumbers" : {
+            "IdentificationNumber" : [ {
+              "number" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.identifikator[x].id",
+              "type" : {
+                "value" : [ "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.identifikator[x].type" ]
+              }
+            } ]
+          },
+          "name" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsgiver.navn"
+        },
+        "descriptionJobPerformed" : "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].arbeidsoppgavene.beskrivelse",
+        "causalLinkIndicator" : {
+          "value" : [ "$arbeidsulykkeyrkessykdom.eksponeringsperiode[x].finnesaarsaksammenheng" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn"
+        },
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn"
+      },
+      "AdditionalInformationPerson" : {
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "previousForename" : "$nav.bruker.person.tidligerefornavn"
+      }
+    },
+    "AddressesPerson" : {
+      "AddressPerson" : [ {
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type[x]" ]
+        },
+        "Address" : {
+          "town" : "$nav.bruker.adresse[x].by",
+          "postalCode" : "$nav.bruker.adresse[x].postnummer",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "region" : "$nav.bruker.adresse[x].region",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "buildingName" : "$nav.bruker.adresse[x].bygning"
+        }
+      } ]
+    },
+    "ThisSEDRelatedAnOccupationalDisease" : {
+      "codingSystem" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kodingssystem",
+      "code" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kode",
+      "statusPerson" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.id" ]
+      },
+      "PleaseFillInFollowingIfStatusPersonOther" : {
+        "statusPersonIfOther" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.annet"
+      },
+      "date" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.dato",
+      "description" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.konsekvensellerbeskrivelse"
+    },
+    "Employer" : {
+      "Employer" : [ {
+        "Address" : {
+          "street" : "$nav.arbeidsgiver[x].adresse.gate",
+          "region" : "$nav.arbeidsgiver[x].adresse.region",
+          "country" : {
+            "value" : [ "$nav.arbeidsgiver[x].adresse.land" ]
+          },
+          "town" : "$nav.arbeidsgiver[x].adresse.by",
+          "buildingName" : "$nav.arbeidsgiver[x].adresse.bygning",
+          "postalCode" : "$nav.arbeidsgiver[x].adresse.postnummer"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.arbeidsgiver[x].identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.arbeidsgiver[x].identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.arbeidsgiver[x].navn"
+      } ]
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

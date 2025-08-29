@@ -45,8 +45,8 @@ public class AclService {
                 log.error("Feil i mal-linja: sektor={}, {}", sektor, l);
             }
             String sedType = malLinje[0];
-            String euSedSti = malLinje[1];
-            String aclSedSti = malLinje.length < 3 ? "--- ACL-sti mangler ---" : malLinje[2];
+            String euSedSti = sedType + "." + malLinje[1].trim();
+            String aclSedSti = malLinje.length < 3 ? "--- ACL-sti mangler ---" : malLinje[2].trim();
             if (!sedTypeVsEuSedStiVsAclSedSti.containsKey(sedType)) {
                 sedTypeVsEuSedStiVsAclSedSti.put(sedType, new HashMap<>());
             }
@@ -56,9 +56,10 @@ public class AclService {
             String aclMalJson = JsonUnflattener.unflatten(euSedStiVsAclSedSti);
             try {
                 String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
+                String aclSektor = filService.aclSektor(cdmSektor);
                JsonNode aclMalNode = new JsonMapper().readTree(aclMalJson);
                 String aclMalPrettyPrint = new JsonMapper().writerWithDefaultPrettyPrinter().writeValueAsString(aclMalNode);
-                filService.skrivAclMalTilFil(aclMalPrettyPrint,  cdmSektor + "/" + sedType + "_v" + cdmVersjon,  cdmVersjon);
+                filService.skrivAclMalTilFil(aclMalPrettyPrint,  aclSektor + "/" + sedType + "_v" + cdmVersjon,  cdmVersjon);
                 log.info("ACL-mal opprettet for {}", sedType);
             } catch (Exception e) {
                 log.error("Kunne ikke opprette ACL-mal. sedType={}: {}", sedType, e.getLocalizedMessage());

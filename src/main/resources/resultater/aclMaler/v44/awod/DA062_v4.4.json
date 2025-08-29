@@ -1,0 +1,132 @@
+{
+  "DA062" : {
+    "AddressesPerson" : {
+      "AddressPerson" : [ {
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type[x]" ]
+        },
+        "Address" : {
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "region" : "$nav.bruker.adresse[x].region",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "town" : "$nav.bruker.adresse[x].by",
+          "postalCode" : "$nav.bruker.adresse[x].postnummer"
+        }
+      } ]
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            }
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel"
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "previousForename" : "$nav.bruker.person.tidligerefornavn",
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn"
+      }
+    },
+    "RequestForAnAuthorizationTransportPlaceResidence" : {
+      "Hospital" : {
+        "Address" : {
+          "region" : "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.sykehus.adresse.region",
+          "postalCode" : "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.sykehus.adresse.postnummer",
+          "town" : "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.sykehus.adresse.by",
+          "buildingName" : "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.sykehus.adresse.bygning",
+          "street" : "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.sykehus.adresse.gate",
+          "country" : {
+            "value" : [ "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.sykehus.adresse.land" ]
+          }
+        },
+        "name" : "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.sykehus.navn"
+      },
+      "destinationTransport" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.type" ]
+      }
+    },
+    "Employer" : {
+      "Employer" : [ {
+        "name" : "$nav.arbeidsgiver[x].navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "type" : {
+              "value" : [ "$nav.arbeidsgiver[x].identifikator[x].type" ]
+            },
+            "number" : "$nav.arbeidsgiver[x].identifikator[x].id"
+          } ]
+        },
+        "Address" : {
+          "country" : {
+            "value" : [ "$nav.arbeidsgiver[x].adresse.land" ]
+          },
+          "postalCode" : "$nav.arbeidsgiver[x].adresse.postnummer",
+          "town" : "$nav.arbeidsgiver[x].adresse.by",
+          "region" : "$nav.arbeidsgiver[x].adresse.region",
+          "buildingName" : "$nav.arbeidsgiver[x].adresse.bygning",
+          "street" : "$nav.arbeidsgiver[x].adresse.gate"
+        }
+      } ]
+    },
+    "ThisSEDRelatedTo" : {
+      "date" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.dato",
+      "statusPerson" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.id" ]
+      },
+      "codingSystem" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kodingssystem",
+      "description" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.konsekvensellerbeskrivelse",
+      "code" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kode",
+      "typeOfSED" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.sedtype" ]
+      },
+      "PleaseFillInFollowingIfStatusPersonOther" : {
+        "statusPersonIfOther" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.annet"
+      }
+    },
+    "MedicalReport" : {
+      "medicalReportAttachedIndicator" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.anmodningomgodkjenning.transport.ermedisinskrapportvedlagt" ]
+      }
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}
