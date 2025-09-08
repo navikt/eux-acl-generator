@@ -1,10 +1,30 @@
 {
+  "P6000.AdditionalInformationDecision" : {
+    "index" : "6. ",
+    "prompt" : "Ytterligere informasjon om vedtaket",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.AdditionalInformationDecision.InformationRightAReview" : {
+    "index" : "6.5. ",
+    "prompt" : "Informasjon om retten til ny vurdering",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0]" : {
+    "index" : "6.5.2",
+    "prompt" : "Adressat for revurderingen",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Address" : {
+    "index" : "6.5.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Address.buildingName" : {
     "index" : "6.5.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Address.country.value[0]" : {
+  "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Address.country" : {
     "index" : "6.5.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -12,7 +32,7 @@
   },
   "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Address.postalCode" : {
     "index" : "6.5.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Address.region" : {
@@ -30,6 +50,11 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Institution" : {
+    "index" : "6.5.2.1. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.AdditionalInformationDecision.InformationRightAReview.WhereAddressReview[0].Institution.institutionID" : {
     "index" : "6.5.2.1.1. ",
     "prompt" : "Institusjonens ID",
@@ -42,8 +67,23 @@
   },
   "P6000.AdditionalInformationDecision.InformationRightAReview.timeLimitsForReview" : {
     "index" : "6.5.1. ",
-    "prompt" : "Angi tidsfristen for anmodning om gjennomgang dersom en slik tidsfrist finnes.",
+    "prompt" : "Tidsfrister for krav om revurdering",
     "valuetype" : "_uxTextInput"
+  },
+  "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending" : {
+    "index" : "6.7. ",
+    "prompt" : "Institusjon som har fattet vedtaket (hvis annen enn avsenderinstitusjonen)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending.Institution" : {
+    "index" : "6.7.1. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending.Institution.Institution" : {
+    "index" : "6.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending.Institution.Institution.institutionID" : {
     "index" : "6.7.1.4.1. ",
@@ -55,7 +95,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending.Institution.country.value[0]" : {
+  "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending.Institution.country" : {
     "index" : "6.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -66,9 +106,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending.Institution.sector.value[0]" : {
+  "P6000.AdditionalInformationDecision.InstitutionGivingDecisionIfDifferentFromSending.Institution.sector" : {
     "index" : "6.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -86,9 +126,9 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.AdditionalInformationDecision.benefitsAIndicator.value[0]" : {
+  "P6000.AdditionalInformationDecision.benefitsAIndicator" : {
     "index" : "6.1. ",
-    "prompt" : "Angi om vedtaket om uførepensjon er fattet i henhold til artikkel 44 i forordning 883/2004 der ytelsesbeløpet ikke avhenger av varigheten på trygdeperiode eller opphold.",
+    "prompt" : "Ytelsestype A",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -101,7 +141,7 @@
     "prompt" : "Vedtakets utstedelsesdato (angitt på vedtaket)",
     "valuetype" : "_uxDateInput"
   },
-  "P6000.AdditionalInformationDecision.decisionGivenAResultReviewAccordingArt4829872009Indicator.value[0]" : {
+  "P6000.AdditionalInformationDecision.decisionGivenAResultReviewAccordingArt4829872009Indicator" : {
     "index" : "6.6. ",
     "prompt" : "Vedtaket er fattet som følge av gjennomgangen i henhold til artikkel 48 (2) i forordning 987/2009",
     "valuetype" : "_uxRadioButton",
@@ -131,9 +171,24 @@
     "prompt" : "Tilbakekalling av pensjon",
     "valuetype" : "_uxDateInput"
   },
-  "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
+  "P6000.ClaimantSurvivorPension" : {
+    "index" : "3. ",
+    "prompt" : "Søker (etterlattepensjon)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.ClaimantSurvivorPension.AdditionalInformationPerson" : {
+    "index" : "3.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "3.2.1. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
     "index" : "3.2.1.1. ",
-    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
@@ -147,12 +202,17 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.Address" : {
+    "index" : "3.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "3.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.country.value[0]" : {
+  "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.country" : {
     "index" : "3.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -160,7 +220,7 @@
   },
   "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.postalCode" : {
     "index" : "3.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P6000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.region" : {
@@ -178,7 +238,22 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P6000.ClaimantSurvivorPension.PersonIdentification" : {
+    "index" : "3.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "3.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -196,7 +271,7 @@
   },
   "P6000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "3.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "P6000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -211,8 +286,23 @@
   },
   "P6000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "3.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "3.1.7.1.4.1. ",
@@ -224,7 +314,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "3.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -235,9 +325,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P6000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "3.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -272,10 +362,10 @@
   },
   "P6000.ClaimantSurvivorPension.PersonIdentification.forenameAtBirth" : {
     "index" : "3.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.ClaimantSurvivorPension.PersonIdentification.sex.value[0]" : {
+  "P6000.ClaimantSurvivorPension.PersonIdentification.sex" : {
     "index" : "3.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -285,6 +375,26 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "P6000.Decisions" : {
+    "index" : "4. ",
+    "prompt" : "Vedtak",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.Decisions.Decision[0]" : {
+    "index" : "4.1",
+    "prompt" : "Vedtak",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0]" : {
+    "index" : "7",
+    "prompt" : "Informasjon om utbetalingsperioder for pensjon",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].PensionAmount" : {
+    "index" : "4.1.7.3. ",
+    "prompt" : "Pensjonsbeløp",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].PensionAmount.grossAmount" : {
     "index" : "4.1.7.3.1. ",
@@ -306,12 +416,17 @@
     "prompt" : "Nettobeløp",
     "valuetype" : "_uxTextInput"
   },
+  "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.1.7.6. ",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
     "index" : "4.1.7.6.1. ",
     "prompt" : "Annen betalingshyppighet",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].currency.value[0]" : {
+  "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].currency" : {
     "index" : "4.1.7.4. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -327,9 +442,9 @@
     "prompt" : "Utbetales til",
     "valuetype" : "_uxDateInput"
   },
-  "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].paymentFrequency.value[0]" : {
+  "P6000.Decisions.Decision[0].DetailsPensionPaymentPeriods[0].paymentFrequency" : {
     "index" : "4.1.7.5. ",
-    "prompt" : "Angi hyppigheten på utbetalingene av ytelser/pensjon/inntekt (årlig, kvartalsvis, månedlig, ukentlig, annet).",
+    "prompt" : "Betalingshyppighet",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Årlig",
@@ -342,12 +457,22 @@
     },
     "enumName" : "PPaymentFrequencyType"
   },
+  "P6000.Decisions.Decision[0].PartialSuspensionPension" : {
+    "index" : "4.1.14. ",
+    "prompt" : "Delvis stans av pensjonen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.Decisions.Decision[0].PartialSuspensionPension.PleaseFillInFollowingIfPensionPartlySuspendedYes" : {
+    "index" : "4.1.14.2. ",
+    "prompt" : "Fyll ut hvis «Pensjon er midlertidig stanset» = «Ja»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.Decisions.Decision[0].PartialSuspensionPension.PleaseFillInFollowingIfPensionPartlySuspendedYes.amount" : {
     "index" : "4.1.14.2.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.Decisions.Decision[0].PartialSuspensionPension.PleaseFillInFollowingIfPensionPartlySuspendedYes.currency.value[0]" : {
+  "P6000.Decisions.Decision[0].PartialSuspensionPension.PleaseFillInFollowingIfPensionPartlySuspendedYes.currency" : {
     "index" : "4.1.14.2.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -358,7 +483,7 @@
     "prompt" : "Grunn",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P6000.Decisions.Decision[0].PartialSuspensionPension.pensionPartlySuspendedIndicator.value[0]" : {
+  "P6000.Decisions.Decision[0].PartialSuspensionPension.pensionPartlySuspendedIndicator" : {
     "index" : "4.1.14.1. ",
     "prompt" : "Pensjonen er delvis stanset.",
     "valuetype" : "_uxRadioButton",
@@ -368,17 +493,32 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P6000.Decisions.Decision[0].PleaseFillInFollowingIfTypePensionOther" : {
+    "index" : "4.1.3. ",
+    "prompt" : "Fyll ut hvis «Type ytelser» = «Andre ytelser»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.Decisions.Decision[0].PleaseFillInFollowingIfTypePensionOther.otherPension" : {
     "index" : "4.1.3.1. ",
     "prompt" : "Annen type pensjon",
     "valuetype" : "_uxTextInput"
   },
+  "P6000.Decisions.Decision[0].RejectionReasons[0]" : {
+    "index" : "13",
+    "prompt" : "Avslagsgrunner",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.Decisions.Decision[0].RejectionReasons[0].FillInIfRejectionReasonsOther" : {
+    "index" : "4.1.13.2. ",
+    "prompt" : "Fyll ut hvis «Grunner til avslag» = «Andre grunner»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.Decisions.Decision[0].RejectionReasons[0].FillInIfRejectionReasonsOther.otherReasons" : {
     "index" : "4.1.13.2.1. ",
-    "prompt" : "Begrunn avslaget dersom «Andre grunner» er oppgitt som grunn.",
+    "prompt" : "Andre grunner",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P6000.Decisions.Decision[0].RejectionReasons[0].rejectionReasons.value[0]" : {
+  "P6000.Decisions.Decision[0].RejectionReasons[0].rejectionReasons" : {
     "index" : "4.1.13.1. ",
     "prompt" : "Avslagsgrunner",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -405,20 +545,20 @@
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P6000.Decisions.Decision[0].awardBenefitArticle.value[0]" : {
+  "P6000.Decisions.Decision[0].awardBenefitArticle" : {
     "index" : "4.1.5. ",
-    "prompt" : "Angi hvilken artikkel i forordning 883/2004 som pensjonsvedtaket er basert på avhengig av pensjonsberegningen.",
+    "prompt" : "Artikkel for innvilgelse av ytelse",
     "valuetype" : "_uxRadioButton",
     "codework" : {
-      "01" : "883/2004",
-      "02" : "883/2004",
-      "03" : "883/2004",
-      "04" : "883/2004",
-      "05" : "883/2004"
+      "01" : "883/2004: artikkel 52 (1) (a)",
+      "02" : "883/2004: artikkel 52 (1) (b)",
+      "03" : "883/2004: Art. 57 (2)",
+      "04" : "883/2004: Art. 57 (3)",
+      "05" : "883/2004: Art. 60 (2)"
     },
     "enumName" : "BenefitAwardArticleType"
   },
-  "P6000.Decisions.Decision[0].basedOtherPersonInsurancePeriods.value[0]" : {
+  "P6000.Decisions.Decision[0].basedOtherPersonInsurancePeriods" : {
     "index" : "4.1.11. ",
     "prompt" : "Basert på annen persons forsikringsperioder",
     "valuetype" : "_uxRadioButton",
@@ -429,7 +569,7 @@
     },
     "enumName" : "ContributionVoluntaryBaseType"
   },
-  "P6000.Decisions.Decision[0].basedVoluntaryContributions.value[0]" : {
+  "P6000.Decisions.Decision[0].basedVoluntaryContributions" : {
     "index" : "4.1.10. ",
     "prompt" : "Basert på frivillige perioder",
     "valuetype" : "_uxRadioButton",
@@ -440,9 +580,9 @@
     },
     "enumName" : "ContributionVoluntaryBaseType"
   },
-  "P6000.Decisions.Decision[0].creditedPeriodIndicator.value[0]" : {
+  "P6000.Decisions.Decision[0].creditedPeriodIndicator" : {
     "index" : "4.1.12. ",
-    "prompt" : "Oppgi beløpet dersom ytelsen er fastsatt på grunnlag av en kreditert periode som regnes for fullført mellom start på uførhet, dødsdatoen eller oppstart av pensjon på en senere dato. Dette er for hjelpe de involverte institusjonene med å bruke overlappende regler korrekt ved uavhengige ytelser (Art. 54.2.b.i, forordning 883/2004). Eksempel",
+    "prompt" : "Godskrevet periode",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -450,7 +590,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "P6000.Decisions.Decision[0].decision.value[0]" : {
+  "P6000.Decisions.Decision[0].decision" : {
     "index" : "4.1.4. ",
     "prompt" : "Type vedtak",
     "valuetype" : "_uxRadioButton",
@@ -462,9 +602,9 @@
     },
     "enumName" : "DecisionType"
   },
-  "P6000.Decisions.Decision[0].definedPension.value[0]" : {
+  "P6000.Decisions.Decision[0].definedPension" : {
     "index" : "4.1.2. ",
-    "prompt" : "Nærmere definisjon av type pensjon (dvs. basert på arbeid eller bosted osv.)",
+    "prompt" : "Grunnlag for ytelse",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Basert på botid",
@@ -483,7 +623,7 @@
     "prompt" : "Tilleggsytelser og andre regelmessige utbetalinger i tillegg til pensjonen",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P6000.Decisions.Decision[0].typePension.value[0]" : {
+  "P6000.Decisions.Decision[0].typePension" : {
     "index" : "4.1.1. ",
     "prompt" : "Type pensjon",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -497,9 +637,24 @@
     },
     "enumName" : "PTypePensionOldAgeInvaliditySurvivorDisabilityEarlyAgeType"
   },
-  "P6000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
+  "P6000.InsuredPerson" : {
+    "index" : "2. ",
+    "prompt" : "Forsikret person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.InsuredPerson.AdditionalInformationPerson" : {
+    "index" : "2.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.1. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
     "index" : "2.2.1.1. ",
-    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
@@ -513,12 +668,17 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "P6000.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "index" : "2.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P6000.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "2.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.InsuredPerson.AdditionalInformationPerson.Address.country.value[0]" : {
+  "P6000.InsuredPerson.AdditionalInformationPerson.Address.country" : {
     "index" : "2.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -526,7 +686,7 @@
   },
   "P6000.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
     "index" : "2.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P6000.InsuredPerson.AdditionalInformationPerson.Address.region" : {
@@ -544,7 +704,22 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P6000.InsuredPerson.PersonIdentification" : {
+    "index" : "2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -562,7 +737,7 @@
   },
   "P6000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "P6000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -577,8 +752,23 @@
   },
   "P6000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.7.1.4.1. ",
@@ -590,7 +780,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -601,9 +791,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P6000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -638,10 +828,10 @@
   },
   "P6000.InsuredPerson.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.InsuredPerson.PersonIdentification.sex.value[0]" : {
+  "P6000.InsuredPerson.PersonIdentification.sex" : {
     "index" : "2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -651,6 +841,21 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "P6000.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P6000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -667,16 +872,36 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "P6000.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "P6000.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P6000.Reductions" : {
+    "index" : "5. ",
+    "prompt" : "Reduksjoner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P6000.Reductions.ReductionsPension[0]" : {
+    "index" : "5.1",
+    "prompt" : "Reduksjoner i pensjonen",
+    "valuetype" : "_rinaArray"
+  },
+  "P6000.Reductions.ReductionsPension[0].FillInIfPensionHasBeenReduced" : {
+    "index" : "5.1.3. ",
+    "prompt" : "Fyll ut hvis «Pensjonen er redusert grunnet overlapping med en annen type ytelse eller inntekt» = «Andre ytelser»: eller «Pensjonen er redusert grunnet overlapping med en annen type ytelse eller inntekt» = «Andre inntektskilder»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P6000.Reductions.ReductionsPension[0].FillInIfPensionHasBeenReduced.otherBenefitsSourceIncome" : {
     "index" : "5.1.3.1. ",
     "prompt" : "Andre ytelser/inntektskilder",
     "valuetype" : "_uxTextInput"
+  },
+  "P6000.Reductions.ReductionsPension[0].PeriodOverlapping[0]" : {
+    "index" : "5",
+    "prompt" : "Periode med overlapping",
+    "valuetype" : "_rinaArray"
   },
   "P6000.Reductions.ReductionsPension[0].PeriodOverlapping[0].endDateRuleAgainstOverlapping" : {
     "index" : "5.1.5.2. ",
@@ -688,20 +913,20 @@
     "prompt" : "Startdato for regel mot overlapping",
     "valuetype" : "_uxDateInput"
   },
-  "P6000.Reductions.ReductionsPension[0].articleConcerningLimitationRuleOverlapping.value[0]" : {
+  "P6000.Reductions.ReductionsPension[0].articleConcerningLimitationRuleOverlapping" : {
     "index" : "5.1.4. ",
     "prompt" : "Artikkel om begrensning av overlappingsregelen",
     "valuetype" : "_uxRadioButton",
     "codework" : {
-      "01" : "883/2004",
-      "02" : "883/2004",
-      "03" : "883/2004"
+      "01" : "883/2004: Artikkel 54 (2)(a)",
+      "02" : "883/2004: Artikkel 54 (2) (b)",
+      "03" : "883/2004: Art. 55"
     },
     "enumName" : "ArticlesConcerningLimitationRuleOverlappingType"
   },
-  "P6000.Reductions.ReductionsPension[0].pensionReducedPursuantOverlappingBenefitsSameKind.value[0]" : {
+  "P6000.Reductions.ReductionsPension[0].pensionReducedPursuantOverlappingBenefitsSameKind" : {
     "index" : "5.1.1. ",
-    "prompt" : "Angi om pensjonsbeløpet er redusert grunnet en overlappende ytelse av samme type i henhold til artikkel 54 (2) i forordning 883/2004",
+    "prompt" : "Pensjonen er blitt redusert grunnet overlapping med tilsvarende ytelser.",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Ytelse som ikke avhenger av varigheten på forsikringsperiode eller opphold",
@@ -709,7 +934,7 @@
     },
     "enumName" : "OverlappingBenefitsSameKindType"
   },
-  "P6000.Reductions.ReductionsPension[0].pensionReducedPursuantOverlappingOrBenefitsOrIncome.value[0]" : {
+  "P6000.Reductions.ReductionsPension[0].pensionReducedPursuantOverlappingOrBenefitsOrIncome" : {
     "index" : "5.1.2. ",
     "prompt" : "Pensjonen er redusert grunnet overlapping med en annen type ytelse eller inntekt.",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -735,5 +960,10 @@
       "99" : "Andre inntektskilder"
     },
     "enumName" : "BenefitIncomeType"
+  },
+  "P6000.sedTitle" : {
+    "index" : "P6000",
+    "prompt" : "P6000 - Vedtak om pensjon",
+    "valuetype" : "_rinaRoot"
   }
 }

@@ -1,7 +1,12 @@
 {
-  "U001.AdditionalInformationForLastPeriodEmployment.elementsForStartingDateIndicator.value[0]" : {
+  "U001.AdditionalInformationForLastPeriodEmployment" : {
+    "index" : "7. ",
+    "prompt" : "Ytterligere informasjon for siste periode i ansettelsesforhold/selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.AdditionalInformationForLastPeriodEmployment.elementsForStartingDateIndicator" : {
     "index" : "7.1. ",
-    "prompt" : "Merk av i denne boksen for å angi om svarinstitusjonen skal fylle ut 'Informasjon om siste ansettelsesforhold eller selvstendige næringsvirksomhet for startdato for ytelser' i U002 '- Trygdehistorikk'.",
+    "prompt" : "Elementer for startdato",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -9,7 +14,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "U001.AdditionalInformationForLastPeriodEmployment.reasonForTerminationEmploymentOrSelfEmploymentIndicator.value[0]" : {
+  "U001.AdditionalInformationForLastPeriodEmployment.reasonForTerminationEmploymentOrSelfEmploymentIndicator" : {
     "index" : "7.2. ",
     "prompt" : "Grunn til opphør i ansettelsesforhold eller selvstendig næringsvirksomhet",
     "valuetype" : "_uxRadioButton",
@@ -19,12 +24,17 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "U001.LastAddressInStateFormerInsurance" : {
+    "index" : "4. ",
+    "prompt" : "Siste adresse i landet for tidligere forsikring",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U001.LastAddressInStateFormerInsurance.buildingName" : {
     "index" : "4.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.LastAddressInStateFormerInsurance.country.value[0]" : {
+  "U001.LastAddressInStateFormerInsurance.country" : {
     "index" : "4.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -32,7 +42,7 @@
   },
   "U001.LastAddressInStateFormerInsurance.postalCode" : {
     "index" : "4.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.LastAddressInStateFormerInsurance.region" : {
@@ -42,13 +52,28 @@
   },
   "U001.LastAddressInStateFormerInsurance.street" : {
     "index" : "4.1. ",
-    "prompt" : "Oppgi gatenavn og annen tilgjengelig informasjon, som f.eks. gatenummer, oppgang, etasje og leilighetsnummer, eller identifikasjon. Bruk dette feltet for å gi opplysninger om postboksnummeret eller annen identifikasjon hvis dette brukes.",
+    "prompt" : "Gate",
     "valuetype" : "_uxTextInput"
   },
   "U001.LastAddressInStateFormerInsurance.town" : {
     "index" : "4.3. ",
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
+  },
+  "U001.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "U001.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U001.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -65,18 +90,38 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "U001.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U001.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment" : {
+    "index" : "6. ",
+    "prompt" : "Forsikringsperiode, ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0]" : {
+    "index" : "6.1",
+    "prompt" : "Forsikringsperiode, ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation" : {
+    "index" : "6.1.6.1. ",
+    "prompt" : "Fengselsinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address" : {
+    "index" : "6.1.6.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.buildingName" : {
     "index" : "6.1.6.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.country" : {
     "index" : "6.1.6.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -84,7 +129,7 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.postalCode" : {
     "index" : "6.1.6.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.region" : {
@@ -102,14 +147,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers" : {
+    "index" : "6.1.6.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "6.1.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "6.1.6.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "6.1.6.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -121,15 +176,25 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.name" : {
     "index" : "6.1.6.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment" : {
+    "index" : "6.1.3.1. ",
+    "prompt" : "Informasjon om ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address" : {
+    "index" : "6.1.3.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.buildingName" : {
     "index" : "6.1.3.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.country" : {
     "index" : "6.1.3.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -137,7 +202,7 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.postalCode" : {
     "index" : "6.1.3.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.region" : {
@@ -155,14 +220,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers" : {
+    "index" : "6.1.3.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "3.1.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "6.1.3.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "6.1.3.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -174,12 +249,17 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.name" : {
     "index" : "6.1.3.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.earningsIndicator.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested" : {
+    "index" : "6.1.4.1. ",
+    "prompt" : "Etterspørres flere opplysninger?",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.earningsIndicator" : {
     "index" : "6.1.4.1.1. ",
-    "prompt" : "Angi om denne opplysningen er påkrevd ifølge nasjonal lovgivning.",
+    "prompt" : "Inntekt",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -187,9 +267,9 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.employmentOrSelfEmploymentNatureIndicator.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.employmentOrSelfEmploymentNatureIndicator" : {
     "index" : "6.1.4.1.3. ",
-    "prompt" : "Angi om denne opplysningen er påkrevd ifølge nasjonal lovgivning.",
+    "prompt" : "Type ansettelse/selvstendig næringsvirksomhet",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -197,22 +277,32 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.numberWorkingHoursIndicator.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.numberWorkingHoursIndicator" : {
     "index" : "6.1.4.1.2. ",
-    "prompt" : "Angi om denne opplysningen er påkrevd ifølge nasjonal lovgivning.",
+    "prompt" : "Antall arbeidstimer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
       "1" : "Ja"
     },
     "enumName" : "EESSIYesNoType"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails" : {
+    "index" : "6.1.4.2. ",
+    "prompt" : "Informasjon om ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address" : {
+    "index" : "6.1.4.2.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.buildingName" : {
     "index" : "6.1.4.2.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.country" : {
     "index" : "6.1.4.2.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -220,7 +310,7 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.postalCode" : {
     "index" : "6.1.4.2.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.region" : {
@@ -238,14 +328,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers" : {
+    "index" : "6.1.4.2.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "4.2.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "6.1.4.2.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "6.1.4.2.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -257,15 +357,30 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.name" : {
     "index" : "6.1.4.2.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails" : {
+    "index" : "6.1.7.2. ",
+    "prompt" : "Opplysninger om forsikringsinstitusjonen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR" : {
+    "index" : "6.1.7.2.2. ",
+    "prompt" : "Institusjonen finnes ikke i institusjonskatalogen (IR)",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress" : {
+    "index" : "6.1.7.2.2.2. ",
+    "prompt" : "Institusjonens adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.buildingName" : {
     "index" : "6.1.7.2.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country" : {
     "index" : "6.1.7.2.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -273,7 +388,7 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.postalCode" : {
     "index" : "6.1.7.2.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.region" : {
@@ -296,6 +411,11 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionEXISTSInIR" : {
+    "index" : "6.1.7.2.1. ",
+    "prompt" : "Institusjonen finnes i institusjonskatalogen (IR)",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionEXISTSInIR.institutionID" : {
     "index" : "6.1.7.2.1.1. ",
     "prompt" : "Institusjonens ID",
@@ -316,12 +436,27 @@
     "prompt" : "Type",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution" : {
+    "index" : "6.1.5.1. ",
+    "prompt" : "Sykeforsikringsinstitusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR" : {
+    "index" : "6.1.5.1.2. ",
+    "prompt" : "Institusjonen finnes ikke i institusjonskatalogen (IR)",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress" : {
+    "index" : "6.1.5.1.2.2. ",
+    "prompt" : "Institusjonens adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.buildingName" : {
     "index" : "6.1.5.1.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country" : {
     "index" : "6.1.5.1.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -329,7 +464,7 @@
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.postalCode" : {
     "index" : "6.1.5.1.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.region" : {
@@ -352,6 +487,11 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionEXISTSInIR" : {
+    "index" : "6.1.5.1.1. ",
+    "prompt" : "Institusjonen finnes i institusjonskatalogen (IR)",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionEXISTSInIR.institutionID" : {
     "index" : "6.1.5.1.1.1. ",
     "prompt" : "Institusjonens ID",
@@ -362,9 +502,19 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period" : {
+    "index" : "6.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.FixedPeriod" : {
+    "index" : "6.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.FixedPeriod.endDate" : {
     "index" : "6.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.FixedPeriod.startDate" : {
@@ -372,12 +522,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod" : {
+    "index" : "6.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod.startDate" : {
     "index" : "6.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "6.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -387,7 +542,7 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].typePeriod.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].typePeriod" : {
     "index" : "6.1.2. ",
     "prompt" : "Type periode",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -405,13 +560,38 @@
     },
     "enumName" : "UPeriodTypeUnemploymentType"
   },
-  "U001.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "U001.Person" : {
+    "index" : "2. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.Person.AdditionalInformationPerson" : {
+    "index" : "2.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.Person.AdditionalInformationPerson.nationality" : {
     "index" : "2.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "U001.Person.PersonIdentification" : {
+    "index" : "2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -429,7 +609,7 @@
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -444,8 +624,23 @@
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.7.1.4.1. ",
@@ -457,7 +652,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -468,9 +663,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -505,10 +700,10 @@
   },
   "U001.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "U001.Person.PersonIdentification.sex.value[0]" : {
+  "U001.Person.PersonIdentification.sex" : {
     "index" : "2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -519,12 +714,22 @@
     },
     "enumName" : "EESSISexType"
   },
+  "U001.PersonCurrentAddress" : {
+    "index" : "3. ",
+    "prompt" : "Personens nåværende adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PersonCurrentAddress.AddressDetails" : {
+    "index" : "3.1. ",
+    "prompt" : "Opplysning om adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U001.PersonCurrentAddress.AddressDetails.buildingName" : {
     "index" : "3.1.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PersonCurrentAddress.AddressDetails.country.value[0]" : {
+  "U001.PersonCurrentAddress.AddressDetails.country" : {
     "index" : "3.1.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -532,7 +737,7 @@
   },
   "U001.PersonCurrentAddress.AddressDetails.postalCode" : {
     "index" : "3.1.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.PersonCurrentAddress.AddressDetails.region" : {
@@ -542,7 +747,7 @@
   },
   "U001.PersonCurrentAddress.AddressDetails.street" : {
     "index" : "3.1.1. ",
-    "prompt" : "Oppgi gatenavn og annen tilgjengelig informasjon, som f.eks. gatenummer, oppgang, etasje og leilighetsnummer, eller identifikasjon. Bruk dette feltet for å gi opplysninger om postboksnummeret eller annen identifikasjon hvis dette brukes.",
+    "prompt" : "Gate",
     "valuetype" : "_uxTextInput"
   },
   "U001.PersonCurrentAddress.AddressDetails.town" : {
@@ -550,19 +755,44 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PersonCurrentAddress.ContactInformation" : {
+    "index" : "3.2. ",
+    "prompt" : "Kontaktinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PersonCurrentAddress.ContactInformation.EmailAddresses" : {
+    "index" : "3.2.2. ",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PersonCurrentAddress.ContactInformation.EmailAddresses.EmailAddress[0]" : {
+    "index" : "3.2.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
   "U001.PersonCurrentAddress.ContactInformation.EmailAddresses.EmailAddress[0].email" : {
     "index" : "3.2.2.1.1. ",
     "prompt" : "E-postadresse",
     "valuetype" : "_uxTextInput"
   },
+  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers" : {
+    "index" : "3.2.1. ",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "3.2.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
   "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].number" : {
     "index" : "3.2.1.1.2. ",
-    "prompt" : "Angi telefonnummer med nasjonal kode hvis dette finnes.",
+    "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].type" : {
     "index" : "3.2.1.1.1. ",
-    "prompt" : "Angi hvilken type nummer som er gitt",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Hjem",
@@ -571,9 +801,19 @@
     },
     "enumName" : "EESSITelephoneNumberType"
   },
+  "U001.ReferencePeriod" : {
+    "index" : "5. ",
+    "prompt" : "Referanseperiode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.ReferencePeriod.FixedPeriod" : {
+    "index" : "5.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.ReferencePeriod.FixedPeriod.endDate" : {
     "index" : "5.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "U001.ReferencePeriod.FixedPeriod.startDate" : {
@@ -581,12 +821,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "U001.ReferencePeriod.OpenPeriod" : {
+    "index" : "5.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.ReferencePeriod.OpenPeriod.startDate" : {
     "index" : "5.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "U001.ReferencePeriod.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U001.ReferencePeriod.OpenPeriod.typeOpenPeriod" : {
     "index" : "5.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -596,12 +841,37 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
+  "U001.UnemploymentBenefitsPeriods" : {
+    "index" : "8. ",
+    "prompt" : "Periode for dagpenger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0]" : {
+    "index" : "8.1",
+    "prompt" : "Periode med dagpenger",
+    "valuetype" : "_rinaArray"
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution" : {
+    "index" : "8.1.2. ",
+    "prompt" : "Lokal institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR" : {
+    "index" : "8.1.2.2. ",
+    "prompt" : "Institusjonen finnes ikke i institusjonskatalogen (IR)",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress" : {
+    "index" : "8.1.2.2.2. ",
+    "prompt" : "Institusjonens adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.buildingName" : {
     "index" : "8.1.2.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country.value[0]" : {
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country" : {
     "index" : "8.1.2.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -609,7 +879,7 @@
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.postalCode" : {
     "index" : "8.1.2.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.region" : {
@@ -632,6 +902,11 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionEXISTSInIR" : {
+    "index" : "8.1.2.1. ",
+    "prompt" : "Institusjonen finnes i institusjonskatalogen (IR)",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionEXISTSInIR.institutionID" : {
     "index" : "8.1.2.1.1. ",
     "prompt" : "Institusjonens ID",
@@ -642,9 +917,19 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period" : {
+    "index" : "8.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.FixedPeriod" : {
+    "index" : "8.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.FixedPeriod.endDate" : {
     "index" : "8.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.FixedPeriod.startDate" : {
@@ -652,12 +937,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod" : {
+    "index" : "8.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod.startDate" : {
     "index" : "8.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "8.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -666,5 +956,10 @@
       "98" : "Ukjent sluttdato for perioden"
     },
     "enumName" : "EESSIOpenPeriodType"
+  },
+  "U001.sedTitle" : {
+    "index" : "U001",
+    "prompt" : "U001 - Anmodning om trygdehistorikk",
+    "valuetype" : "_rinaRoot"
   }
 }

@@ -1,15 +1,35 @@
 {
+  "A001.AdditionalInformation" : {
+    "index" : "11. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A001.AdditionalInformation.additionalInformation" : {
     "index" : "11.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "A001.Addresses" : {
+    "index" : "2. ",
+    "prompt" : "Adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.Addresses.Address[0]" : {
+    "index" : "2.1",
+    "prompt" : "Adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "A001.Addresses.Address[0].Address" : {
+    "index" : "2.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A001.Addresses.Address[0].Address.buildingName" : {
     "index" : "2.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A001.Addresses.Address[0].Address.country.value[0]" : {
+  "A001.Addresses.Address[0].Address.country" : {
     "index" : "2.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -17,7 +37,7 @@
   },
   "A001.Addresses.Address[0].Address.postalCode" : {
     "index" : "2.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A001.Addresses.Address[0].Address.region" : {
@@ -35,7 +55,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "A001.Addresses.Address[0].type.value[0]" : {
+  "A001.Addresses.Address[0].type" : {
     "index" : "2.1.1. ",
     "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
@@ -46,7 +66,12 @@
     },
     "enumName" : "EESSIAddressType"
   },
-  "A001.ApplicableLegislation.applicableLegislationCurrentSituation.value[0]" : {
+  "A001.ApplicableLegislation" : {
+    "index" : "9. ",
+    "prompt" : "Lovvalg",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.ApplicableLegislation.applicableLegislationCurrentSituation" : {
     "index" : "9.1. ",
     "prompt" : "Gjeldende lovgivning - nåværende situasjon",
     "valuetype" : "_uxMultiSelect",
@@ -86,7 +111,7 @@
     },
     "enumName" : "EESSIEUEFTACountryMultipleType"
   },
-  "A001.ApplicableLegislation.applicableLegislationRequestedSituation.value[0]" : {
+  "A001.ApplicableLegislation.applicableLegislationRequestedSituation" : {
     "index" : "9.2. ",
     "prompt" : "Gjeldende lovgivning - aktuell situasjon",
     "valuetype" : "_uxMultiSelect",
@@ -126,12 +151,22 @@
     },
     "enumName" : "EESSIEUEFTACountryMultipleType"
   },
+  "A001.EmployerInHostCountryIfRelevant" : {
+    "index" : "6. ",
+    "prompt" : "Arbeidsgiver i vertslandet (hvis relevant)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.EmployerInHostCountryIfRelevant.Address" : {
+    "index" : "6.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A001.EmployerInHostCountryIfRelevant.Address.buildingName" : {
     "index" : "6.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A001.EmployerInHostCountryIfRelevant.Address.country.value[0]" : {
+  "A001.EmployerInHostCountryIfRelevant.Address.country" : {
     "index" : "6.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -139,7 +174,7 @@
   },
   "A001.EmployerInHostCountryIfRelevant.Address.postalCode" : {
     "index" : "6.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A001.EmployerInHostCountryIfRelevant.Address.region" : {
@@ -157,14 +192,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A001.EmployerInHostCountryIfRelevant.IdentificationNumbers" : {
+    "index" : "6.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.EmployerInHostCountryIfRelevant.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "6.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A001.EmployerInHostCountryIfRelevant.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "6.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A001.EmployerInHostCountryIfRelevant.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A001.EmployerInHostCountryIfRelevant.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "6.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -176,15 +221,30 @@
   },
   "A001.EmployerInHostCountryIfRelevant.name" : {
     "index" : "6.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "A001.IdentificationEmployer" : {
+    "index" : "3. ",
+    "prompt" : "Identifikasjon av arbeidsgivere(n)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.IdentificationEmployer.Employer[0]" : {
+    "index" : "3.1",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_rinaArray"
+  },
+  "A001.IdentificationEmployer.Employer[0].Address" : {
+    "index" : "3.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A001.IdentificationEmployer.Employer[0].Address.buildingName" : {
     "index" : "3.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A001.IdentificationEmployer.Employer[0].Address.country.value[0]" : {
+  "A001.IdentificationEmployer.Employer[0].Address.country" : {
     "index" : "3.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -192,7 +252,7 @@
   },
   "A001.IdentificationEmployer.Employer[0].Address.postalCode" : {
     "index" : "3.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A001.IdentificationEmployer.Employer[0].Address.region" : {
@@ -210,14 +270,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A001.IdentificationEmployer.Employer[0].IdentificationNumbers" : {
+    "index" : "3.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.IdentificationEmployer.Employer[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A001.IdentificationEmployer.Employer[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "3.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A001.IdentificationEmployer.Employer[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A001.IdentificationEmployer.Employer[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "3.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -229,15 +299,30 @@
   },
   "A001.IdentificationEmployer.Employer[0].name" : {
     "index" : "3.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "A001.IdentificationSelfEmployment" : {
+    "index" : "4. ",
+    "prompt" : "Identifikasjon av selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.IdentificationSelfEmployment.SelfEmployment[0]" : {
+    "index" : "4.1",
+    "prompt" : "Selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "A001.IdentificationSelfEmployment.SelfEmployment[0].Address" : {
+    "index" : "4.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A001.IdentificationSelfEmployment.SelfEmployment[0].Address.buildingName" : {
     "index" : "4.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A001.IdentificationSelfEmployment.SelfEmployment[0].Address.country.value[0]" : {
+  "A001.IdentificationSelfEmployment.SelfEmployment[0].Address.country" : {
     "index" : "4.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -245,7 +330,7 @@
   },
   "A001.IdentificationSelfEmployment.SelfEmployment[0].Address.postalCode" : {
     "index" : "4.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A001.IdentificationSelfEmployment.SelfEmployment[0].Address.region" : {
@@ -263,14 +348,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A001.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers" : {
+    "index" : "4.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A001.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "4.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A001.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A001.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "4.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -282,17 +377,47 @@
   },
   "A001.IdentificationSelfEmployment.SelfEmployment[0].name" : {
     "index" : "4.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "A001.MoreInformation" : {
+    "index" : "10. ",
+    "prompt" : "Mer informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.MoreInformation.DatesPreviousRequest" : {
+    "index" : "10.2. ",
+    "prompt" : "Dato for forrige anmodning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.MoreInformation.DatesPreviousRequest.DatePreviousRequest[0]" : {
+    "index" : "10.2.1",
+    "prompt" : "Dato for forrige anmodning",
+    "valuetype" : "_rinaArray"
   },
   "A001.MoreInformation.DatesPreviousRequest.DatePreviousRequest[0].date" : {
     "index" : "10.2.1.1. ",
     "prompt" : "Dato",
     "valuetype" : "_uxDateInput"
   },
+  "A001.MoreInformation.PreviousPeriods" : {
+    "index" : "10.3. ",
+    "prompt" : "Tidligere perioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.MoreInformation.PreviousPeriods.Period[0]" : {
+    "index" : "10.3.1",
+    "prompt" : "Periode",
+    "valuetype" : "_rinaArray"
+  },
+  "A001.MoreInformation.PreviousPeriods.Period[0].FixedPeriod" : {
+    "index" : "10.3.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "A001.MoreInformation.PreviousPeriods.Period[0].FixedPeriod.endDate" : {
     "index" : "10.3.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "A001.MoreInformation.PreviousPeriods.Period[0].FixedPeriod.startDate" : {
@@ -300,12 +425,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "A001.MoreInformation.PreviousPeriods.Period[0].OpenPeriod" : {
+    "index" : "10.3.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "A001.MoreInformation.PreviousPeriods.Period[0].OpenPeriod.startDate" : {
     "index" : "10.3.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "A001.MoreInformation.PreviousPeriods.Period[0].OpenPeriod.typeOpenPeriod.value[0]" : {
+  "A001.MoreInformation.PreviousPeriods.Period[0].OpenPeriod.typeOpenPeriod" : {
     "index" : "10.3.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -315,7 +445,12 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
-  "A001.MoreInformation.TypeRequest.amendmentIndicator.value[0]" : {
+  "A001.MoreInformation.TypeRequest" : {
+    "index" : "10.1. ",
+    "prompt" : "Type anmodning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.MoreInformation.TypeRequest.amendmentIndicator" : {
     "index" : "10.1.1. ",
     "prompt" : "Endring",
     "valuetype" : "_uxRadioButton",
@@ -345,7 +480,7 @@
     "prompt" : "Begrunnelse",
     "valuetype" : "_uxTextAreaInput"
   },
-  "A001.MoreInformation.pDA1IssuedBasisArticle.value[0]" : {
+  "A001.MoreInformation.pDA1IssuedBasisArticle" : {
     "index" : "10.4. ",
     "prompt" : "PD A1 utstedt på grunnlag av artikkel",
     "valuetype" : "_uxRadioButton",
@@ -356,7 +491,7 @@
     },
     "enumName" : "ArticlesIIA001Type"
   },
-  "A001.MoreInformation.specialCircumstances.value[0]" : {
+  "A001.MoreInformation.specialCircumstances" : {
     "index" : "10.5. ",
     "prompt" : "Særskilte omstendigheter",
     "valuetype" : "_uxMultiSelect",
@@ -373,13 +508,38 @@
     },
     "enumName" : "SpecialCircumstancesA001MultipleType"
   },
-  "A001.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "A001.Person" : {
+    "index" : "1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.Person.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "A001.Person.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -397,7 +557,7 @@
   },
   "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -412,8 +572,23 @@
   },
   "A001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "A001.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "A001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -425,7 +600,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "A001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "A001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -436,9 +611,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "A001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "A001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -473,10 +648,10 @@
   },
   "A001.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "A001.Person.PersonIdentification.sex.value[0]" : {
+  "A001.Person.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -486,6 +661,31 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "A001.PlaceWork" : {
+    "index" : "5. ",
+    "prompt" : "Arbeidssted(er)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.PlaceWork.CountriesWork[0]" : {
+    "index" : "5.2",
+    "prompt" : "Arbeidsland",
+    "valuetype" : "_rinaArray"
+  },
+  "A001.PlaceWork.CountriesWork[0].PlaceWork" : {
+    "index" : "5.2.2. ",
+    "prompt" : "Arbeidssted(er)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0]" : {
+    "index" : "2.1",
+    "prompt" : "Arbeidssted",
+    "valuetype" : "_rinaArray"
+  },
+  "A001.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address" : {
+    "index" : "5.2.2.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A001.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.buildingName" : {
     "index" : "5.2.2.1.3.2. ",
@@ -522,13 +722,13 @@
     "prompt" : "Flaggstat/hjemmebase",
     "valuetype" : "_uxTextInput"
   },
-  "A001.PlaceWork.CountriesWork[0].countryWork.value[0]" : {
+  "A001.PlaceWork.CountriesWork[0].countryWork" : {
     "index" : "5.2.1. ",
     "prompt" : "Arbeidsland",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "A001.PlaceWork.aFixedPlaceWorkExistsIndicator.value[0]" : {
+  "A001.PlaceWork.aFixedPlaceWorkExistsIndicator" : {
     "index" : "5.1. ",
     "prompt" : "Fast arbeidssted",
     "valuetype" : "_uxRadioButton",
@@ -538,7 +738,17 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "A001.RequestedForSituationsCoveredByArti8832004.FillInIfArticle10.teleworkFrameworkAgreement.value[0]" : {
+  "A001.RequestedForSituationsCoveredByArti8832004" : {
+    "index" : "8. ",
+    "prompt" : "Artikler i grunnforordning som gjelder situasjonen der det anmodes om avtale om unntak",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.RequestedForSituationsCoveredByArti8832004.FillInIfArticle10" : {
+    "index" : "8.3. ",
+    "prompt" : "Vennligst fyll inn følgende hvis artikkel = \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A001.RequestedForSituationsCoveredByArti8832004.FillInIfArticle10.teleworkFrameworkAgreement" : {
     "index" : "8.3.1. ",
     "prompt" : "Rammeavtale for fjernarbeid",
     "valuetype" : "_uxRadioButton",
@@ -553,7 +763,7 @@
     "prompt" : "Annet",
     "valuetype" : "_uxTextAreaInput"
   },
-  "A001.RequestedForSituationsCoveredByArti8832004.regulationArticlesSituationAgreementExceptionProposed.value[0]" : {
+  "A001.RequestedForSituationsCoveredByArti8832004.regulationArticlesSituationAgreementExceptionProposed" : {
     "index" : "8.1. ",
     "prompt" : "Artikler i grunnforordning som gjelder situasjonen der det anmodes om avtale om unntak",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -582,6 +792,11 @@
     },
     "enumName" : "ArticlesIA001Type"
   },
+  "A001.RequestedPeriod" : {
+    "index" : "7. ",
+    "prompt" : "Søknadsperiode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A001.RequestedPeriod.endDate" : {
     "index" : "7.2. ",
     "prompt" : "Sluttdato",
@@ -589,7 +804,12 @@
   },
   "A001.RequestedPeriod.startDate" : {
     "index" : "7.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "A001.sedTitle" : {
+    "index" : "A001",
+    "prompt" : "A001 - Anmodning om unntak",
+    "valuetype" : "_rinaRoot"
   }
 }

@@ -1,10 +1,25 @@
 {
+  "X050.CaseContext" : {
+    "index" : "1. ",
+    "prompt" : "Sakens kontekst",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X050.CaseContext.EmployerContext" : {
+    "index" : "1.2. ",
+    "prompt" : "Kontekst for arbeidsgiver",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "X050.CaseContext.EmployerContext.Address" : {
+    "index" : "1.2.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "X050.CaseContext.EmployerContext.Address.buildingName" : {
     "index" : "1.2.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "X050.CaseContext.EmployerContext.Address.country.value[0]" : {
+  "X050.CaseContext.EmployerContext.Address.country" : {
     "index" : "1.2.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -12,7 +27,7 @@
   },
   "X050.CaseContext.EmployerContext.Address.postalCode" : {
     "index" : "1.2.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "X050.CaseContext.EmployerContext.Address.region" : {
@@ -30,14 +45,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "X050.CaseContext.EmployerContext.IdentificationNumbers" : {
+    "index" : "1.2.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X050.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "1.2.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "X050.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "1.2.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "X050.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "X050.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "1.2.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -49,8 +74,13 @@
   },
   "X050.CaseContext.EmployerContext.name" : {
     "index" : "1.2.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "X050.CaseContext.PersonContext" : {
+    "index" : "1.1. ",
+    "prompt" : "Kontekst for person",
+    "valuetype" : "_uxHiddenGroupContainer"
   },
   "X050.CaseContext.PersonContext.dateBirth" : {
     "index" : "1.1.3. ",
@@ -67,7 +97,7 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "X050.CaseContext.PersonContext.sex.value[0]" : {
+  "X050.CaseContext.PersonContext.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -77,6 +107,11 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "X050.CaseContext.ReimbursementContext" : {
+    "index" : "1.3. ",
+    "prompt" : "Kontekst for refusjon",
+    "valuetype" : "_uxHiddenGroupContainer"
   },
   "X050.CaseContext.ReimbursementContext.reimbursementRequestID" : {
     "index" : "1.3.1. ",
@@ -88,7 +123,12 @@
     "prompt" : "Totalt antall enkeltkrav",
     "valuetype" : "_uxTextInput"
   },
-  "X050.TheFollowingBusinessExceptionHasOccurred.businessException.value[0]" : {
+  "X050.TheFollowingBusinessExceptionHasOccurred" : {
+    "index" : "2. ",
+    "prompt" : "Følgende unntaksfeil har inntruffet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X050.TheFollowingBusinessExceptionHasOccurred.businessException" : {
     "index" : "2.1. ",
     "prompt" : "Unntaksfeil",
     "valuetype" : "_uxMultiSelect",
@@ -104,6 +144,11 @@
     },
     "enumName" : "BusinessExceptionMultipleType"
   },
+  "X050.WhileReceivingFollowingSED" : {
+    "index" : "3. ",
+    "prompt" : "Under mottak av følgende SED:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "X050.WhileReceivingFollowingSED.SEDCode" : {
     "index" : "3.1. ",
     "prompt" : "SED-kode",
@@ -113,5 +158,10 @@
     "index" : "3.2. ",
     "prompt" : "SED-versjon",
     "valuetype" : "_uxTextInput"
+  },
+  "X050.sedTitle" : {
+    "index" : "X050",
+    "prompt" : "X050 - Unntaksfeil",
+    "valuetype" : "_rinaRoot"
   }
 }

@@ -1,678 +1,990 @@
 {
+  "H002.ReplyRequestForInformation" : {
+    "ledetekst" : "Svar på anmodning om informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "H002.ReplyRequestForInformation.Employer" : {
+    "ledetekst" : "Arbeidsgiver",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "1.2. "
+  },
+  "H002.ReplyRequestForInformation.Employer.AdditionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.4. "
+  },
   "H002.ReplyRequestForInformation.Employer.AdditionalInformation.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.2.4.1. ",
-    "ledetekst" : "Ytterligere informasjon",
     "tekstlengde" : "500"
   },
+  "H002.ReplyRequestForInformation.Employer.Employer" : {
+    "ledetekst" : "Arbeidsgiver",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.1. "
+  },
+  "H002.ReplyRequestForInformation.Employer.Employer.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.1.3. "
+  },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "H002.ReplyRequestForInformation.Employer.Employer.Address.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Employer.Employer.Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.2.1.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.1.2. "
+  },
+  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.2.1.2.1"
+  },
   "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.2.1.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "H002.ReplyRequestForInformation.Employer.Employer.name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
+  "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation" : {
+    "ledetekst" : "Negativt svar på etterspurt informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.3. "
+  },
+  "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0]" : {
+    "ledetekst" : "Vi er ikke i stand til å sende.",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.2.3.1"
+  },
   "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].reasons" : {
+    "ledetekst" : "Grunner",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.2.3.1.4. ",
-    "ledetekst" : "Grunner",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingDocument" : {
+    "ledetekst" : "Følgende dokument(er)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.2.3.1.1. ",
-    "ledetekst" : "Følgende dokument(er)",
     "tekstlengde" : "255"
   },
   "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingInformation" : {
+    "ledetekst" : "Følgende informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.2.3.1.2. ",
-    "ledetekst" : "Følgende informasjon",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingSED" : {
+    "ledetekst" : "Følgende SED-er",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.3.1.3. ",
-    "ledetekst" : "Følgende SED-er",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments" : {
+    "ledetekst" : "Følgende dokument(er) er vedlagt:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.5. "
+  },
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached" : {
+    "ledetekst" : "Type dokumenter som er vedlagt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.5.2. "
+  },
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0]" : {
+    "ledetekst" : "Annet dokument",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.2.5.2.1"
+  },
   "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0].document" : {
+    "ledetekst" : "Dokument",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.2.5.2.1.1. ",
-    "ledetekst" : "Dokument",
     "tekstlengde" : "255"
   },
-  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.predefinedDocuments.value[0]" : {
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.predefinedDocuments" : {
+    "ledetekst" : "Forhåndsdefinerte dokumenter",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "1.2.5.1. ",
-    "ledetekst" : "Forhåndsdefinerte dokumenter",
     "enumNavn" : "HAttachedDocumentsFullListMultipleType",
     "enumNavnId" : "fd2ff47a-7f4e-e611-80ca-000d3a22e8cd"
   },
+  "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation" : {
+    "ledetekst" : "Positivt svar på etterspurt informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.2. "
+  },
+  "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation.WeAreEnclosing" : {
+    "ledetekst" : "Vi vedlegger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.2.1. "
+  },
   "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingDocument" : {
+    "ledetekst" : "Følgende dokument(er)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.2.2.1.1. ",
-    "ledetekst" : "Følgende dokument(er)",
     "tekstlengde" : "255"
   },
   "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingInformation" : {
+    "ledetekst" : "Følgende informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.2.2.1.2. ",
-    "ledetekst" : "Følgende informasjon",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingSED" : {
+    "ledetekst" : "Følgende SED-er",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.2.1.3. ",
-    "ledetekst" : "Følgende SED-er",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "1.1. "
+  },
+  "H002.ReplyRequestForInformation.Person.AdditionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.7. "
+  },
   "H002.ReplyRequestForInformation.Person.AdditionalInformation.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.7.1. ",
-    "ledetekst" : "Ytterligere informasjon",
     "tekstlengde" : "500"
   },
+  "H002.ReplyRequestForInformation.Person.AddressPerson" : {
+    "ledetekst" : "Personens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.2. "
+  },
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0]" : {
+    "ledetekst" : "Personens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1.2.1"
+  },
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.2.1.2. "
+  },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2.1.2.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.2.1.2.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2.1.2.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2.1.2.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2.1.2.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2.1.2.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
-  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].typeAddress" : {
+    "ledetekst" : "Type adresse",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.1.2.1.1. ",
-    "ledetekst" : "Type adresse",
     "enumNavn" : "EESSIAddressType",
     "enumNavnId" : "c96b0d48-6e5d-e611-80ca-000d3a22e8cd"
   },
-  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson" : {
+    "ledetekst" : "Informasjon for identifikasjon av personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3. "
+  },
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3.1. "
+  },
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3.1.7. "
+  },
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.3.1.7.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.7.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.7.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.birthDate" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "1.1.3.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "1.1.3.1.3. "
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.8. ",
-    "ledetekst" : "Fars etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.6. ",
-    "ledetekst" : "Fornavn ved fødsel",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.9. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.11. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.10. ",
-    "ledetekst" : "Mors etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.previousFamilyName" : {
+    "ledetekst" : "Tidligere etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.12. ",
-    "ledetekst" : "Tidligere etternavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.previousForename" : {
+    "ledetekst" : "Tidligere fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.3.1.13. ",
-    "ledetekst" : "Tidligere fornavn",
     "tekstlengde" : "155"
   },
-  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.sex.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.1.3.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "1df532a0-8937-e611-80c9-000d3a22e8cd"
   },
+  "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation" : {
+    "ledetekst" : "Negativt svar på etterspurt informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.6. "
+  },
+  "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0]" : {
+    "ledetekst" : "Vi er ikke i stand til å sende.",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1.6.1"
+  },
   "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].reasons" : {
+    "ledetekst" : "Grunner",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.6.1.4. ",
-    "ledetekst" : "Grunner",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingDocument" : {
+    "ledetekst" : "Følgende dokument(er)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.6.1.1. ",
-    "ledetekst" : "Følgende dokument(er)",
     "tekstlengde" : "255"
   },
   "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingInformation" : {
+    "ledetekst" : "Følgende informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.6.1.2. ",
-    "ledetekst" : "Følgende informasjon",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingSED" : {
+    "ledetekst" : "Følgende SED-er",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.6.1.3. ",
-    "ledetekst" : "Følgende SED-er",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1. "
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1.2. "
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.PleaseFillInIfStatusPersonOther" : {
+    "ledetekst" : "Fyll ut hvis «Personens status» = «Annet»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1.2.3. "
+  },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.PleaseFillInIfStatusPersonOther.other" : {
+    "ledetekst" : "Annet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.1.2.3.1. ",
-    "ledetekst" : "Annet",
     "tekstlengde" : "500"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.nationality.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "1.1.1.2.1. ",
-    "ledetekst" : "Den aktuelle personens nasjonalitet",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "01063b36-125e-e611-80ca-000d3a22e8cd"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.statusPerson.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.statusPerson" : {
+    "ledetekst" : "Personens status",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "1.1.1.2.2. ",
-    "ledetekst" : "Personens status",
     "enumNavn" : "HPersonStatusLimitedMultipleType",
     "enumNavnId" : "02063b36-125e-e611-80ca-000d3a22e8cd"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1.1. "
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1.1.8. "
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1.1.8.1. "
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.8.1.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.8.2. ",
-    "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1.1.7. "
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1.1.1.7.1"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.1.1.7.1.4. "
+  },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.1.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.1.1.7.1.4.1. "
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.1.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1.1.7.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "1.1.1.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "1.1.1.1.3. "
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.sex.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.1.1.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments" : {
+    "ledetekst" : "Følgende dokument(er) er vedlagt:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8. "
+  },
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached" : {
+    "ledetekst" : "Type dokumenter som er vedlagt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8.2. "
+  },
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0]" : {
+    "ledetekst" : "Annet dokument",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1.8.2.1"
+  },
   "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0].document" : {
+    "ledetekst" : "Dokument",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.8.2.1.1. ",
-    "ledetekst" : "Dokument",
     "tekstlengde" : "255"
   },
-  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.predefinedDocuments.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.predefinedDocuments" : {
+    "ledetekst" : "Forhåndsdefinerte dokumenter",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "1.1.8.1. ",
-    "ledetekst" : "Forhåndsdefinerte dokumenter",
     "enumNavn" : "HAttachedDocumentsFullListMultipleType",
     "enumNavnId" : "fd2ff47a-7f4e-e611-80ca-000d3a22e8cd"
   },
+  "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation" : {
+    "ledetekst" : "Positivt svar på etterspurt informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.5. "
+  },
+  "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation.WeAreEnclosing" : {
+    "ledetekst" : "Vi vedlegger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.5.1. "
+  },
   "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingDocument" : {
+    "ledetekst" : "Følgende dokument(er)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.5.1.1. ",
-    "ledetekst" : "Følgende dokument(er)",
     "tekstlengde" : "255"
   },
   "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingInformation" : {
+    "ledetekst" : "Følgende informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.1.5.1.2. ",
-    "ledetekst" : "Følgende informasjon",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingSED" : {
+    "ledetekst" : "Følgende SED-er",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.5.1.3. ",
-    "ledetekst" : "Følgende SED-er",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending" : {
+    "ledetekst" : "Sektor-PIN (Personnummer hos avsenderinstitusjonen)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.4. "
+  },
+  "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.PleaseFillInFollowingIfSectorPINOtherSectorPIN" : {
+    "ledetekst" : "Fyll ut hvis \\",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.4.2. "
+  },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.PleaseFillInFollowingIfSectorPINOtherSectorPIN.descriptionOtherSector" : {
+    "ledetekst" : "Beskrivelse av annen sektor",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.2.1. ",
-    "ledetekst" : "Beskrivelse av annen sektor",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending" : {
+    "ledetekst" : "Sektor-PIN (Personnummer hos avsenderinstitusjonen)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.4.1. "
+  },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.all" : {
+    "ledetekst" : "Alle",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.1. ",
-    "ledetekst" : "Alle",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.familyBenefits" : {
+    "ledetekst" : "Familieytelser",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.8. ",
-    "ledetekst" : "Familieytelser",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.nationalTaxNumber" : {
+    "ledetekst" : "Nasjonalt skattenummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.10. ",
-    "ledetekst" : "Nasjonalt skattenummer",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.occupationalDiseaseAccidentAtWorkBenefitsInCash" : {
+    "ledetekst" : "Yrkessykdom og arbeidsulykke, kontantytelse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.6. ",
-    "ledetekst" : "Yrkessykdom og arbeidsulykke, kontantytelse",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.occupationalDiseaseAccidentAtWorkBenefitsInKind" : {
+    "ledetekst" : "Yrkessykdom og arbeidsulykke, kontantytelse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.7. ",
-    "ledetekst" : "Yrkessykdom og arbeidsulykke, kontantytelse",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.otherSectorPIN" : {
+    "ledetekst" : "Annen sektor-PIN",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.11. ",
-    "ledetekst" : "Annen sektor-PIN",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.pension" : {
+    "ledetekst" : "Pensjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.4. ",
-    "ledetekst" : "Pensjon",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.recovery" : {
+    "ledetekst" : "Tilbakekreving",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.9. ",
-    "ledetekst" : "Tilbakekreving",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.sicknessInCash" : {
+    "ledetekst" : "Sykepenger kontant",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.2. ",
-    "ledetekst" : "Sykepenger kontant",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.sicknessInKind" : {
+    "ledetekst" : "Sykepenger kontant",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.3. ",
-    "ledetekst" : "Sykepenger kontant",
     "tekstlengde" : "65"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.unemployment" : {
+    "ledetekst" : "Arbeidsledighet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.4.1.5. ",
-    "ledetekst" : "Arbeidsledighet",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED" : {
+    "ledetekst" : "Samlet tilbakebetaling SED",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "1.3. "
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.AdditionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.3.4. "
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.AdditionalInformation.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.3.4.1. ",
-    "ledetekst" : "Ytterligere informasjon",
     "tekstlengde" : "500"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation" : {
+    "ledetekst" : "Negativt svar på etterspurt informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.3.3. "
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0]" : {
+    "ledetekst" : "Vi er ikke i stand til å sende.",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.3.3.1"
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].reasons" : {
+    "ledetekst" : "Grunner",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.3.3.1.4. ",
-    "ledetekst" : "Grunner",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingDocument" : {
+    "ledetekst" : "Følgende dokument(er)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.3.3.1.1. ",
-    "ledetekst" : "Følgende dokument(er)",
     "tekstlengde" : "255"
   },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingInformation" : {
+    "ledetekst" : "Følgende informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.3.3.1.2. ",
-    "ledetekst" : "Følgende informasjon",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].theFollowingSED" : {
+    "ledetekst" : "Følgende SED-er",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.3.3.1.3. ",
-    "ledetekst" : "Følgende SED-er",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments" : {
+    "ledetekst" : "Følgende dokument(er) er vedlagt:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.3.5. "
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached" : {
+    "ledetekst" : "Type dokumenter som er vedlagt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.3.5.2. "
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0]" : {
+    "ledetekst" : "Annet dokument",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.3.5.2.1"
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0].document" : {
+    "ledetekst" : "Dokument",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.3.5.2.1.1. ",
-    "ledetekst" : "Dokument",
     "tekstlengde" : "255"
   },
-  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.predefinedDocuments.value[0]" : {
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.predefinedDocuments" : {
+    "ledetekst" : "Forhåndsdefinerte dokumenter",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "1.3.5.1. ",
-    "ledetekst" : "Forhåndsdefinerte dokumenter",
     "enumNavn" : "HAttachedDocumentsFullListMultipleType",
     "enumNavnId" : "fd2ff47a-7f4e-e611-80ca-000d3a22e8cd"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation" : {
+    "ledetekst" : "Positivt svar på etterspurt informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.3.2. "
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation.WeAreEnclosing" : {
+    "ledetekst" : "Vi vedlegger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.3.2.1. "
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingDocument" : {
+    "ledetekst" : "Følgende dokument(er)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.3.2.1.1. ",
-    "ledetekst" : "Følgende dokument(er)",
     "tekstlengde" : "255"
   },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingInformation" : {
+    "ledetekst" : "Følgende informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "1.3.2.1.2. ",
-    "ledetekst" : "Følgende informasjon",
     "tekstlengde" : "500"
   },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingSED" : {
+    "ledetekst" : "Følgende SED-er",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.3.2.1.3. ",
-    "ledetekst" : "Følgende SED-er",
     "tekstlengde" : "65"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.ReimbursementIdentification" : {
+    "ledetekst" : "Identifikasjon av refusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.3.1. "
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.ReimbursementIdentification.reimbursementRequestID" : {
+    "ledetekst" : "ID-nummer for krav om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.3.1.1. ",
-    "ledetekst" : "ID-nummer for krav om refusjon"
+    "indeks" : "1.3.1.1. "
+  },
+  "H002.sedTitle" : {
+    "ledetekst" : "Svar på anmodning om informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "H002"
   }
 }

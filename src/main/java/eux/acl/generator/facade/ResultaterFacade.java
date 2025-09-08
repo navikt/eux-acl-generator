@@ -23,10 +23,9 @@ public class ResultaterFacade {
     }
 
     public void lagNyeEnumfilerForAcl(String cdmVersjon) {
+        log.info("Nye enum-filer for ACLen v{}: ", cdmVersjon);
         List<String> endredeEnumer = filService.lesNavneneTilEndredeKodeverksfiler(cdmVersjon);
         endredeEnumer.forEach(enumNavn -> kodeverkService.opprettEnumFilForAcl(enumNavn, cdmVersjon));
-
-
     }
 
     public void lagAclMaler(String sektor, String cdmVersjon) {

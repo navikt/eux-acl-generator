@@ -41,7 +41,7 @@
       },
       "AdditionalInformationPerson" : {
         "nationality" : {
-          "value" : [ "$nav.bruker.person.statsborgerskap.land" ]
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
         }
       }
     },
@@ -168,9 +168,9 @@
       }
     },
     "RequestedForSituationsCoveredByArti8832004" : {
-      "other" : "$medlemskap.unntak.grunnlag.annet",
+      "other" : "$medlemskap.forordning8832004.unntak.grunnlag.annet",
       "regulationArticlesSituationAgreementExceptionProposed" : {
-        "value" : [ "$medlemskap.unntak.grunnlag.artikkel" ]
+        "value" : [ "$medlemskap.forordning8832004.unntak.grunnlag.artikkel" ]
       },
       "FillInIfArticle10" : {
         "teleworkFrameworkAgreement" : {
@@ -186,22 +186,22 @@
       "IdentificationNumbers" : {
         "IdentificationNumber" : [ {
           "type" : {
-            "value" : [ "$medlemskap.vertsland.arbeidsgiver.identifikator[x].type" ]
+            "value" : [ "$medlemskap.vertsland.arbeidsgiver[x].identifikator[x].type" ]
           },
-          "number" : "$medlemskap.vertsland.arbeidsgiver.identifikator[x].id"
+          "number" : "$medlemskap.vertsland.arbeidsgiver[x].identifikator[x].id"
         } ]
       },
       "Address" : {
-        "street" : "$medlemskap.vertsland.arbeidsgiver.adresse.gate",
-        "town" : "$medlemskap.vertsland.arbeidsgiver.adresse.by",
+        "street" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.gate",
+        "town" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.by",
         "country" : {
-          "value" : [ "$medlemskap.vertsland.arbeidsgiver.adresse.land" ]
+          "value" : [ "$medlemskap.vertsland.arbeidsgiver[x].adresse.land" ]
         },
-        "buildingName" : "$medlemskap.vertsland.arbeidsgiver.adresse.bygning",
-        "region" : "$medlemskap.vertsland.arbeidsgiver.adresse.region",
-        "postalCode" : "$medlemskap.vertsland.arbeidsgiver.adresse.postnummer"
+        "buildingName" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.bygning",
+        "region" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.region",
+        "postalCode" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.postnummer"
       },
-      "name" : "$medlemskap.vertsland.arbeidsgiver.navn"
+      "name" : "$medlemskap.vertsland.arbeidsgiver[x].navn"
     },
     "ApplicableLegislation" : {
       "applicableLegislationCurrentSituation" : {

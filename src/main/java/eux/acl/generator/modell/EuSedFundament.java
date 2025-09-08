@@ -12,13 +12,11 @@ import lombok.*;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class EuSedFundament {
 
+    private String ledetekst;
     private String verdiType;
     private String cdmType;
     private String indeks;
-    private String ledetekst;
     private String enumNavn;
     private String enumNavnId;
-//    private String tekstId;
-    // Teori: ulike versjoner kan ha samme tekstId, men ulike stier. Da har vi sammenhengen mellom ny og gammel sti!
     private String tekstlengde;
 }

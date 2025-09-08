@@ -1,10 +1,15 @@
 {
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued" : {
+    "index" : "2. ",
+    "prompt" : "Adresse (personen som dokumenter om rett til ytelser er utstedt til)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.buildingName" : {
     "index" : "2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.country.value[0]" : {
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.country" : {
     "index" : "2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -12,7 +17,7 @@
   },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.postalCode" : {
     "index" : "2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.region" : {
@@ -30,10 +35,25 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "S045.EHICEuropeanHealthInsuranceCard" : {
+    "index" : "5. ",
+    "prompt" : "EHIC - Europeisk helsetrygdkort",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "S045.EHICEuropeanHealthInsuranceCard.eHICNumber" : {
     "index" : "5.1. ",
     "prompt" : "EHIC-nummer",
     "valuetype" : "_uxTextInput"
+  },
+  "S045.InfoEntitlement" : {
+    "index" : "3. ",
+    "prompt" : "Informasjon om rett til ytelser",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "S045.InfoEntitlement.PeriodEntitlement" : {
+    "index" : "3.1. ",
+    "prompt" : "Periode med rett til ytelser",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "S045.InfoEntitlement.PeriodEntitlement.endDate" : {
     "index" : "3.1.2. ",
@@ -42,15 +62,20 @@
   },
   "S045.InfoEntitlement.PeriodEntitlement.startDate" : {
     "index" : "3.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "S045.InfoNonEntitlement.FillInIfInfoNonEntitlementOther" : {
+    "index" : "4.2. ",
+    "prompt" : "Fyll ut hvis «Informasjon om manglende rett» = «Annen grunn»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "S045.InfoNonEntitlement.FillInIfInfoNonEntitlementOther.reason" : {
     "index" : "4.2.1. ",
     "prompt" : "Grunn",
     "valuetype" : "_uxTextAreaInput"
   },
-  "S045.InfoNonEntitlement.infoNonEntitlement.value[0]" : {
+  "S045.InfoNonEntitlement.infoNonEntitlement" : {
     "index" : "4.1. ",
     "prompt" : "Informasjon om manglende rett til ytelser",
     "valuetype" : "_uxRadioButton",
@@ -61,13 +86,38 @@
     },
     "enumName" : "ReasonForSicknessNoEntitlementType"
   },
-  "S045.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "S045.Person" : {
+    "index" : "1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "S045.Person.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "S045.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "S045.Person.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -85,7 +135,7 @@
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -100,8 +150,23 @@
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -113,7 +178,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -124,9 +189,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -161,10 +226,10 @@
   },
   "S045.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "S045.Person.PersonIdentification.sex.value[0]" : {
+  "S045.Person.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -174,5 +239,10 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "S045.sedTitle" : {
+    "index" : "S045",
+    "prompt" : "S045 - Dokumenter om rett til ytelser - midlertidig opphold",
+    "valuetype" : "_rinaRoot"
   }
 }

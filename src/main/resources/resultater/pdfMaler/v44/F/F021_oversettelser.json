@@ -1,25 +1,55 @@
 {
+  "F021.AdditionalInformation" : {
+    "index" : "3. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "F021.AdditionalInformation.additionalInformation" : {
     "index" : "3.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "F021.AdditionalInformationEnd" : {
+    "index" : "8. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.AdditionalInformationEnd.additionalInformation" : {
     "index" : "8.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
   },
+  "F021.ClaimingAuthority" : {
+    "index" : "6. ",
+    "prompt" : "Myndighet som fremsetter kravet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.ClaimingAuthority.BankDetails" : {
+    "index" : "6.3. ",
+    "prompt" : "Bankinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.ClaimingAuthority.BankDetails.NonSEPAAccount" : {
+    "index" : "6.3.2. ",
+    "prompt" : "Ikke-SEPA-konto",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "F021.ClaimingAuthority.BankDetails.NonSEPAAccount.BICSWIFT" : {
     "index" : "6.3.2.2. ",
     "prompt" : "BIC-SWIFT",
     "valuetype" : "_uxTextInput"
+  },
+  "F021.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress" : {
+    "index" : "6.3.2.4. ",
+    "prompt" : "Bankens adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.buildingName" : {
     "index" : "6.3.2.4.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "F021.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.country.value[0]" : {
+  "F021.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.country" : {
     "index" : "6.3.2.4.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -27,7 +57,7 @@
   },
   "F021.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.postalCode" : {
     "index" : "6.3.2.4.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "F021.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.region" : {
@@ -55,6 +85,11 @@
     "prompt" : "Bankens navn",
     "valuetype" : "_uxTextInput"
   },
+  "F021.ClaimingAuthority.BankDetails.SEPAAccount" : {
+    "index" : "6.3.1. ",
+    "prompt" : "SEPA-konto",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "F021.ClaimingAuthority.BankDetails.SEPAAccount.BICSWIFT" : {
     "index" : "6.3.1.2. ",
     "prompt" : "BIC-SWIFT",
@@ -62,8 +97,13 @@
   },
   "F021.ClaimingAuthority.BankDetails.SEPAAccount.IBAN" : {
     "index" : "6.3.1.1. ",
-    "prompt" : "Oppgi IBAN til bankkonto som pengenes skal overføres til. IBAN er det internasjonale systemet for å identifisere bankkonti over landegrensene.",
+    "prompt" : "IBAN",
     "valuetype" : "_uxTextInput"
+  },
+  "F021.ClaimingAuthority.ClaimingAuthority" : {
+    "index" : "6.2. ",
+    "prompt" : "Myndighet som fremsetter kravet",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.ClaimingAuthority.ClaimingAuthority.institutionID" : {
     "index" : "6.2.1. ",
@@ -80,7 +120,22 @@
     "prompt" : "Begrunnelse for myndighetens krav",
     "valuetype" : "_uxTextAreaInput"
   },
-  "F021.DeceasedPerson.AdditionalInformationAboutNationality.Nationalities[0].nationality.value[0]" : {
+  "F021.DeceasedPerson" : {
+    "index" : "2. ",
+    "prompt" : "Avdød",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.AdditionalInformationAboutNationality" : {
+    "index" : "2.2. ",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "2.2.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.DeceasedPerson.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
     "index" : "2.2.1.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -91,6 +146,21 @@
     "prompt" : "Siden",
     "valuetype" : "_uxDateInput"
   },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme" : {
+    "index" : "2.5. ",
+    "prompt" : "Dekning av en trygdeordning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember" : {
+    "index" : "2.5.1. ",
+    "prompt" : "Perioder dekket av trygdeordning i avsenderlandet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0]" : {
+    "index" : "2.5.1.1",
+    "prompt" : "Periode",
+    "valuetype" : "_rinaArray"
+  },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].endDate" : {
     "index" : "2.5.1.1.2. ",
     "prompt" : "Sluttdato",
@@ -98,12 +168,37 @@
   },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].startDate" : {
     "index" : "2.5.1.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement" : {
+    "index" : "2.5.3. ",
+    "prompt" : "Periode med rettigheter",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0]" : {
+    "index" : "2.5.3.1 ",
+    "prompt" : "Periode med rett til ytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits" : {
+    "index" : "2.5.3.1.2.1. ",
+    "prompt" : "Periode uten rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0]" : {
+    "index" : "2.1.1",
+    "prompt" : "Periode uten rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period" : {
+    "index" : "2.5.3.1.2.1.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.FixedPeriod.endDate" : {
     "index" : "2.5.3.1.2.1.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.FixedPeriod.startDate" : {
@@ -116,7 +211,7 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "2.5.3.1.2.1.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -131,7 +226,7 @@
     "prompt" : "Annen grunn",
     "valuetype" : "_uxTextAreaInput"
   },
-  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason.value[0]" : {
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason" : {
     "index" : "2.5.3.1.2.1.1.2. ",
     "prompt" : "Grunn",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -145,9 +240,19 @@
     },
     "enumName" : "FReasonEntitlementType"
   },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits" : {
+    "index" : "2.5.3.1.1.1. ",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0]" : {
+    "index" : "1.1.1",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].FixedPeriod.endDate" : {
-    "index" : "2.5.3.1.1.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "index" : "2.5.3.1.1.1.1.1.2.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].FixedPeriod.startDate" : {
@@ -160,7 +265,7 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod" : {
     "index" : "2.5.3.1.1.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -170,6 +275,16 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered" : {
+    "index" : "2.5.2. ",
+    "prompt" : "Udekkede perioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0]" : {
+    "index" : "2.5.2.1",
+    "prompt" : "Periode uten dekning",
+    "valuetype" : "_rinaArray"
+  },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].endDate" : {
     "index" : "2.5.2.1.2. ",
     "prompt" : "Sluttdato",
@@ -177,8 +292,13 @@
   },
   "F021.DeceasedPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].startDate" : {
     "index" : "2.5.2.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "F021.DeceasedPerson.DetailsDeath" : {
+    "index" : "2.3. ",
+    "prompt" : "Opplysninger om dødsfall",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.DeceasedPerson.DetailsDeath.dateDeath" : {
     "index" : "2.3.2. ",
@@ -190,7 +310,22 @@
     "prompt" : "Dødssted",
     "valuetype" : "_uxTextAreaInput"
   },
-  "F021.DeceasedPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "F021.DeceasedPerson.PersonIdentification" : {
+    "index" : "2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -208,7 +343,7 @@
   },
   "F021.DeceasedPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "F021.DeceasedPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -223,8 +358,23 @@
   },
   "F021.DeceasedPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.7.1.4.1. ",
@@ -236,7 +386,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -247,9 +397,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "F021.DeceasedPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -284,10 +434,10 @@
   },
   "F021.DeceasedPerson.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "F021.DeceasedPerson.PersonIdentification.sex.value[0]" : {
+  "F021.DeceasedPerson.PersonIdentification.sex" : {
     "index" : "2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -298,12 +448,27 @@
     },
     "enumName" : "EESSISexType"
   },
+  "F021.DeceasedPerson.PersonLatestAddresses" : {
+    "index" : "2.4. ",
+    "prompt" : "Personens siste adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0]" : {
+    "index" : "2.4.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].Address" : {
+    "index" : "2.4.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].Address.buildingName" : {
     "index" : "2.4.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].Address.country.value[0]" : {
+  "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].Address.country" : {
     "index" : "2.4.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -311,7 +476,7 @@
   },
   "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].Address.postalCode" : {
     "index" : "2.4.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].Address.region" : {
@@ -329,7 +494,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].typeAddress.value[0]" : {
+  "F021.DeceasedPerson.PersonLatestAddresses.AddressPerson[0].typeAddress" : {
     "index" : "2.4.1.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -340,7 +505,27 @@
     },
     "enumName" : "EESSIAddressType"
   },
-  "F021.InformationChildren.Child.AdditionalInformationAboutNationality.Nationalities[0].nationality.value[0]" : {
+  "F021.InformationChildren" : {
+    "index" : "7. ",
+    "prompt" : "Informasjon om barn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child" : {
+    "index" : "7.2. ",
+    "prompt" : "Barn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.AdditionalInformationAboutNationality" : {
+    "index" : "7.2.2. ",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "7.2.2.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationChildren.Child.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
     "index" : "7.2.2.1.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -351,12 +536,27 @@
     "prompt" : "Siden",
     "valuetype" : "_uxDateInput"
   },
+  "F021.InformationChildren.Child.AddressesChild" : {
+    "index" : "7.2.3. ",
+    "prompt" : "Barnets adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.AddressesChild.AddressPerson[0]" : {
+    "index" : "7.2.3.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].Address" : {
+    "index" : "7.2.3.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].Address.buildingName" : {
     "index" : "7.2.3.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].Address.country.value[0]" : {
+  "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].Address.country" : {
     "index" : "7.2.3.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -364,7 +564,7 @@
   },
   "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].Address.postalCode" : {
     "index" : "7.2.3.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].Address.region" : {
@@ -382,7 +582,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].typeAddress.value[0]" : {
+  "F021.InformationChildren.Child.AddressesChild.AddressPerson[0].typeAddress" : {
     "index" : "7.2.3.1.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -393,7 +593,22 @@
     },
     "enumName" : "EESSIAddressType"
   },
-  "F021.InformationChildren.Child.ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "F021.InformationChildren.Child.ChildDetails" : {
+    "index" : "7.2.1. ",
+    "prompt" : "Opplysninger om barn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "7.2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "7.2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "7.2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -411,7 +626,7 @@
   },
   "F021.InformationChildren.Child.ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "7.2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationChildren.Child.ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -426,8 +641,23 @@
   },
   "F021.InformationChildren.Child.ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "7.2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution" : {
+    "index" : "7.2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "7.2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "7.2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "7.2.1.7.1.4.1. ",
@@ -439,7 +669,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "7.2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -450,9 +680,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "F021.InformationChildren.Child.ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "7.2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -487,10 +717,10 @@
   },
   "F021.InformationChildren.Child.ChildDetails.forenameAtBirth" : {
     "index" : "7.2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationChildren.Child.ChildDetails.sex.value[0]" : {
+  "F021.InformationChildren.Child.ChildDetails.sex" : {
     "index" : "7.2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -501,7 +731,22 @@
     },
     "enumName" : "EESSISexType"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdClaimantIndicator.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson" : {
+    "index" : "7.2.4. ",
+    "prompt" : "Relasjon til søker ektefelle/partner eller til annen person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0]" : {
+    "index" : "7.2.4.1",
+    "prompt" : "Relasjon til det enkelte barn",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold" : {
+    "index" : "7.2.4.1.5. ",
+    "prompt" : "Barn i husstanden",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdClaimantIndicator" : {
     "index" : "7.2.4.1.5.1. ",
     "prompt" : "Bor barnet i samme husstand som søkeren",
     "valuetype" : "_uxRadioButton",
@@ -511,7 +756,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdOtherPersonInQuestionIndicator.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdOtherPersonInQuestionIndicator" : {
     "index" : "7.2.4.1.5.3. ",
     "prompt" : "Bor barnet i samme husstand som den andre aktuelle personen",
     "valuetype" : "_uxRadioButton",
@@ -521,7 +766,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdSpousePartnerInQuestionIndicator.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildAMemberSameHouseholdSpousePartnerInQuestionIndicator" : {
     "index" : "7.2.4.1.5.2. ",
     "prompt" : "Bor barnet i samme husstand som ektefellen/partneren",
     "valuetype" : "_uxRadioButton",
@@ -531,7 +776,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildInInstitutionIndicator.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].ChildrenHousehold.isChildInInstitutionIndicator" : {
     "index" : "7.2.4.1.5.4. ",
     "prompt" : "Bor barnet i institusjonen",
     "valuetype" : "_uxRadioButton",
@@ -541,9 +786,19 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship" : {
+    "index" : "7.2.4.1.3. ",
+    "prompt" : "Relasjonens varighet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.FixedPeriod" : {
+    "index" : "7.2.4.1.3.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.FixedPeriod.endDate" : {
     "index" : "7.2.4.1.3.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.FixedPeriod.startDate" : {
@@ -551,12 +806,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.OpenPeriod" : {
+    "index" : "7.2.4.1.3.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.OpenPeriod.startDate" : {
     "index" : "7.2.4.1.3.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].PeriodRelationship.OpenPeriod.typeOpenPeriod" : {
     "index" : "7.2.4.1.3.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -566,7 +826,7 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].jointCustodyIndicator.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].jointCustodyIndicator" : {
     "index" : "7.2.4.1.4. ",
     "prompt" : "Delt foreldreansvar",
     "valuetype" : "_uxRadioButton",
@@ -576,9 +836,9 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].relationshipWith.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].relationshipWith" : {
     "index" : "7.2.4.1.1. ",
-    "prompt" : "Velg relevant boks",
+    "prompt" : "Relasjon med",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Søker",
@@ -588,9 +848,9 @@
     },
     "enumName" : "FDisagreementGroundsType"
   },
-  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].type.value[0]" : {
+  "F021.InformationChildren.Child.RelationshipClaimantSpousePartnerOrOtherPerson.RelationshipPerChild[0].type" : {
     "index" : "7.2.4.1.2. ",
-    "prompt" : "Kryss av for relevant boks",
+    "prompt" : "Type",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Daglig omsorg for barnet",
@@ -604,7 +864,7 @@
     },
     "enumName" : "FChildRelationshipEnchancedType"
   },
-  "F021.InformationChildren.isChildClaimantIndicator.value[0]" : {
+  "F021.InformationChildren.isChildClaimantIndicator" : {
     "index" : "7.1. ",
     "prompt" : "Er det barnet som søker?",
     "valuetype" : "_uxRadioButton",
@@ -614,7 +874,27 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].AdditionalInformationAboutNationality.Nationalities[0].nationality.value[0]" : {
+  "F021.InformationOtherPersons" : {
+    "index" : "5. ",
+    "prompt" : "Informasjon om andre personer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0]" : {
+    "index" : "5.1",
+    "prompt" : "Informasjon om annen person",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AdditionalInformationAboutNationality" : {
+    "index" : "5.1.3. ",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "5.1.3.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
     "index" : "5.1.3.1.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -625,12 +905,27 @@
     "prompt" : "Siden",
     "valuetype" : "_uxDateInput"
   },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson" : {
+    "index" : "5.1.4. ",
+    "prompt" : "Personens adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0]" : {
+    "index" : "5.1.4.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].Address" : {
+    "index" : "5.1.4.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "5.1.4.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].Address.country.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].Address.country" : {
     "index" : "5.1.4.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -638,7 +933,7 @@
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].Address.postalCode" : {
     "index" : "5.1.4.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].Address.region" : {
@@ -656,7 +951,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].AddressesPerson.AddressPerson[0].typeAddress" : {
     "index" : "5.1.4.1.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -667,19 +962,44 @@
     },
     "enumName" : "EESSIAddressType"
   },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails" : {
+    "index" : "5.1.5. ",
+    "prompt" : "Kontaktinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.EmailAddresses" : {
+    "index" : "5.1.5.2. ",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.EmailAddresses.EmailAddress[0]" : {
+    "index" : "5.1.5.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.EmailAddresses.EmailAddress[0].email" : {
     "index" : "5.1.5.2.1.1. ",
     "prompt" : "E-postadresse",
     "valuetype" : "_uxTextInput"
   },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.TelephoneNumbers" : {
+    "index" : "5.1.5.1. ",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "5.1.5.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.TelephoneNumbers.TelephoneNumber[0].number" : {
     "index" : "5.1.5.1.1.2. ",
-    "prompt" : "Angi telefonnummer med nasjonal kode hvis dette finnes.",
+    "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
     "index" : "5.1.5.1.1.1. ",
-    "prompt" : "Angi hvilken type nummer som er gitt",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Hjem",
@@ -688,6 +1008,21 @@
     },
     "enumName" : "EESSITelephoneNumberType"
   },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme" : {
+    "index" : "5.1.6. ",
+    "prompt" : "Dekning av en trygdeordning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember" : {
+    "index" : "5.1.6.1. ",
+    "prompt" : "Perioder dekket av trygdeordning i avsenderlandet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0]" : {
+    "index" : "5.1.6.1.1",
+    "prompt" : "Periode",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].endDate" : {
     "index" : "5.1.6.1.1.2. ",
     "prompt" : "Sluttdato",
@@ -695,12 +1030,37 @@
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].startDate" : {
     "index" : "5.1.6.1.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement" : {
+    "index" : "5.1.6.3. ",
+    "prompt" : "Periode med rettigheter",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0]" : {
+    "index" : "6.3.1",
+    "prompt" : "Periode med rett til ytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits" : {
+    "index" : "5.1.6.3.1.2.1. ",
+    "prompt" : "Periode uten rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0]" : {
+    "index" : "2.1.1",
+    "prompt" : "Periode uten rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period" : {
+    "index" : "5.1.6.3.1.2.1.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.FixedPeriod.endDate" : {
     "index" : "5.1.6.3.1.2.1.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.FixedPeriod.startDate" : {
@@ -713,7 +1073,7 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "5.1.6.3.1.2.1.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -728,7 +1088,7 @@
     "prompt" : "Annen grunn",
     "valuetype" : "_uxTextAreaInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason" : {
     "index" : "5.1.6.3.1.2.1.1.2. ",
     "prompt" : "Grunn",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -742,9 +1102,19 @@
     },
     "enumName" : "FReasonEntitlementType"
   },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits" : {
+    "index" : "5.1.6.3.1.1.1. ",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0]" : {
+    "index" : "1.1.1",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].FixedPeriod.endDate" : {
-    "index" : "5.1.6.3.1.1.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "index" : "5.1.6.3.1.1.1.1.1.2.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].FixedPeriod.startDate" : {
@@ -757,7 +1127,7 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod" : {
     "index" : "5.1.6.3.1.1.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -767,6 +1137,16 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsNotCovered" : {
+    "index" : "5.1.6.2. ",
+    "prompt" : "Udekkede perioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0]" : {
+    "index" : "5.1.6.2.1",
+    "prompt" : "Periode uten dekning",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].endDate" : {
     "index" : "5.1.6.2.1.2. ",
     "prompt" : "Sluttdato",
@@ -774,12 +1154,37 @@
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].startDate" : {
     "index" : "5.1.6.2.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner" : {
+    "index" : "5.1.7. ",
+    "prompt" : "Avdødes familierelasjon til ektefellen, partneren eller annen person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships" : {
+    "index" : "5.1.7.1. ",
+    "prompt" : "Relasjoner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0]" : {
+    "index" : "5.1.7.1.1",
+    "prompt" : "Familierelasjon",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period" : {
+    "index" : "5.1.7.1.1.3. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.FixedPeriod" : {
+    "index" : "5.7.1.1.3.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.FixedPeriod.endDate" : {
     "index" : "5.1.7.1.1.3.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.FixedPeriod.startDate" : {
@@ -787,12 +1192,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod" : {
+    "index" : "5.1.7.1.1.3.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod.startDate" : {
     "index" : "5.1.7.1.1.3.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "5.1.7.1.1.3.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -807,7 +1217,7 @@
     "prompt" : "Dato for relasjon",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].familyRelationship.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].familyRelationship" : {
     "index" : "5.1.7.1.1.1. ",
     "prompt" : "Familierelasjon",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -823,7 +1233,7 @@
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].namePerson" : {
     "index" : "5.1.7.1.1.5. ",
-    "prompt" : "Oppgi navn på person i forhold og start/sluttdato for forhold, hvis det fremgår.",
+    "prompt" : "Navn på person",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].other" : {
@@ -836,7 +1246,7 @@
     "prompt" : "Annen relasjon",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].wasClaimantAMemberSameHouseholdPersonInQuestionIndicator.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].wasClaimantAMemberSameHouseholdPersonInQuestionIndicator" : {
     "index" : "5.1.7.1.1.7. ",
     "prompt" : "Bor søkeren i samme husstand som den aktuelle personen",
     "valuetype" : "_uxRadioButton",
@@ -846,7 +1256,22 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification" : {
+    "index" : "5.1.2. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "5.1.2.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "5.1.2.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "5.1.2.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -864,7 +1289,7 @@
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "5.1.2.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -879,8 +1304,23 @@
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "5.1.2.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "5.1.2.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "5.1.2.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "5.1.2.7.1.4.1. ",
@@ -892,7 +1332,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "5.1.2.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -903,9 +1343,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "5.1.2.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -940,10 +1380,10 @@
   },
   "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.forenameAtBirth" : {
     "index" : "5.1.2.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.sex.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].PersonIdentification.sex" : {
     "index" : "5.1.2.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -954,7 +1394,7 @@
     },
     "enumName" : "EESSISexType"
   },
-  "F021.InformationOtherPersons.InformationOtherPerson[0].isPersonClaimantIndicator.value[0]" : {
+  "F021.InformationOtherPersons.InformationOtherPerson[0].isPersonClaimantIndicator" : {
     "index" : "5.1.1. ",
     "prompt" : "Er personen identisk med søkeren?",
     "valuetype" : "_uxRadioButton",
@@ -964,7 +1404,22 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationSpouseOrPartner.AdditionalInformationAboutNationality.Nationalities[0].nationality.value[0]" : {
+  "F021.InformationSpouseOrPartner" : {
+    "index" : "4. ",
+    "prompt" : "Informasjon om ektefelle eller partner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.AdditionalInformationAboutNationality" : {
+    "index" : "4.3. ",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "4.3.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationSpouseOrPartner.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
     "index" : "4.3.1.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -975,12 +1430,27 @@
     "prompt" : "Siden",
     "valuetype" : "_uxDateInput"
   },
+  "F021.InformationSpouseOrPartner.AddressesPerson" : {
+    "index" : "4.4. ",
+    "prompt" : "Personens adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0]" : {
+    "index" : "4.4.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address" : {
+    "index" : "4.4.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "4.4.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.country.value[0]" : {
+  "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.country" : {
     "index" : "4.4.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -988,7 +1458,7 @@
   },
   "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.postalCode" : {
     "index" : "4.4.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.region" : {
@@ -1006,7 +1476,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "F021.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].typeAddress" : {
     "index" : "4.4.1.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -1017,19 +1487,44 @@
     },
     "enumName" : "EESSIAddressType"
   },
+  "F021.InformationSpouseOrPartner.ContactDetails" : {
+    "index" : "4.5. ",
+    "prompt" : "Kontaktinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.ContactDetails.EmailAddresses" : {
+    "index" : "4.5.2. ",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.ContactDetails.EmailAddresses.EmailAddress[0]" : {
+    "index" : "4.5.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationSpouseOrPartner.ContactDetails.EmailAddresses.EmailAddress[0].email" : {
     "index" : "4.5.2.1.1. ",
     "prompt" : "E-postadresse",
     "valuetype" : "_uxTextInput"
   },
+  "F021.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers" : {
+    "index" : "4.5.1. ",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "4.5.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0].number" : {
     "index" : "4.5.1.1.2. ",
-    "prompt" : "Angi telefonnummer med nasjonal kode hvis dette finnes.",
+    "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "F021.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
     "index" : "4.5.1.1.1. ",
-    "prompt" : "Angi hvilken type nummer som er gitt",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Hjem",
@@ -1038,6 +1533,21 @@
     },
     "enumName" : "EESSITelephoneNumberType"
   },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme" : {
+    "index" : "4.6. ",
+    "prompt" : "Dekning av en trygdeordning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember" : {
+    "index" : "4.6.1. ",
+    "prompt" : "Perioder dekket av trygdeordning i avsenderlandet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0]" : {
+    "index" : "4.6.1.1",
+    "prompt" : "Periode",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].endDate" : {
     "index" : "4.6.1.1.2. ",
     "prompt" : "Sluttdato",
@@ -1045,12 +1555,37 @@
   },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].startDate" : {
     "index" : "4.6.1.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement" : {
+    "index" : "4.6.3. ",
+    "prompt" : "Periode med rettigheter",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0]" : {
+    "index" : "4.6.3.1 ",
+    "prompt" : "Periode med rett til ytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits" : {
+    "index" : "4.6.3.1.2.1. ",
+    "prompt" : "Periode uten rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0]" : {
+    "index" : "2.1.1",
+    "prompt" : "Periode uten rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period" : {
+    "index" : "4.6.3.1.2.1.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.FixedPeriod.endDate" : {
     "index" : "4.6.3.1.2.1.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.FixedPeriod.startDate" : {
@@ -1063,7 +1598,7 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.6.3.1.2.1.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -1078,7 +1613,7 @@
     "prompt" : "Annen grunn",
     "valuetype" : "_uxTextAreaInput"
   },
-  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason.value[0]" : {
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsDoesNotExist.PeriodNoEntitlementFamilyBenefits.PeriodNoEntitlementToFamilyBenefit[0].reason" : {
     "index" : "4.6.3.1.2.1.1.2. ",
     "prompt" : "Grunn",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1092,9 +1627,19 @@
     },
     "enumName" : "FReasonEntitlementType"
   },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits" : {
+    "index" : "4.6.3.1.1.1. ",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0]" : {
+    "index" : "1.1.1",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].FixedPeriod.endDate" : {
-    "index" : "4.6.3.1.1.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "index" : "4.6.3.1.1.1.1.1.2.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].FixedPeriod.startDate" : {
@@ -1107,7 +1652,7 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.PeriodOfEntitlement[0].EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].OpenPeriod.typeOpenPeriod" : {
     "index" : "4.6.3.1.1.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -1117,6 +1662,16 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered" : {
+    "index" : "4.6.2. ",
+    "prompt" : "Udekkede perioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0]" : {
+    "index" : "4.6.2.1",
+    "prompt" : "Periode uten dekning",
+    "valuetype" : "_rinaArray"
+  },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].endDate" : {
     "index" : "4.6.2.1.2. ",
     "prompt" : "Sluttdato",
@@ -1124,12 +1679,37 @@
   },
   "F021.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].startDate" : {
     "index" : "4.6.2.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner" : {
+    "index" : "4.7. ",
+    "prompt" : "Avdødes familierelasjon til ektefellen, partneren eller annen person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships" : {
+    "index" : "4.7.1. ",
+    "prompt" : "Relasjoner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0]" : {
+    "index" : "4.7.1.1",
+    "prompt" : "Familierelasjon",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period" : {
+    "index" : "4.7.1.1.3. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.FixedPeriod" : {
+    "index" : "4.7.1.1.3.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
   },
   "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.FixedPeriod.endDate" : {
     "index" : "4.7.1.1.3.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.FixedPeriod.startDate" : {
@@ -1137,12 +1717,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod" : {
+    "index" : "4.7.1.1.3.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod.startDate" : {
     "index" : "4.7.1.1.3.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.7.1.1.3.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -1157,7 +1742,7 @@
     "prompt" : "Dato for relasjon",
     "valuetype" : "_uxDateInput"
   },
-  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].familyRelationship.value[0]" : {
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].familyRelationship" : {
     "index" : "4.7.1.1.1. ",
     "prompt" : "Familierelasjon",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1173,7 +1758,7 @@
   },
   "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].namePerson" : {
     "index" : "4.7.1.1.5. ",
-    "prompt" : "Oppgi navn på person i forhold og start/sluttdato for forhold, hvis det fremgår.",
+    "prompt" : "Navn på person",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].other" : {
@@ -1186,7 +1771,7 @@
     "prompt" : "Annen relasjon",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].wasClaimantAMemberSameHouseholdPersonInQuestionIndicator.value[0]" : {
+  "F021.InformationSpouseOrPartner.FamilyRelationshipDeceasedPersonSpousePartner.Relationships.FamilyRelationship[0].wasClaimantAMemberSameHouseholdPersonInQuestionIndicator" : {
     "index" : "4.7.1.1.7. ",
     "prompt" : "Bor søkeren i samme husstand som den aktuelle personen",
     "valuetype" : "_uxRadioButton",
@@ -1196,7 +1781,22 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "F021.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "F021.InformationSpouseOrPartner.PersonIdentification" : {
+    "index" : "4.2. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "4.2.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "4.2.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "4.2.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1214,7 +1814,7 @@
   },
   "F021.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "4.2.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "F021.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -1229,8 +1829,23 @@
   },
   "F021.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "4.2.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "4.2.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "4.2.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "4.2.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "4.2.7.1.4.1. ",
@@ -1242,7 +1857,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "4.2.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1253,9 +1868,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "F021.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "4.2.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -1290,10 +1905,10 @@
   },
   "F021.InformationSpouseOrPartner.PersonIdentification.forenameAtBirth" : {
     "index" : "4.2.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "F021.InformationSpouseOrPartner.PersonIdentification.sex.value[0]" : {
+  "F021.InformationSpouseOrPartner.PersonIdentification.sex" : {
     "index" : "4.2.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -1304,7 +1919,7 @@
     },
     "enumName" : "EESSISexType"
   },
-  "F021.InformationSpouseOrPartner.isPersonClaimantIndicator.value[0]" : {
+  "F021.InformationSpouseOrPartner.isPersonClaimantIndicator" : {
     "index" : "4.1. ",
     "prompt" : "Er personen identisk med søkeren?",
     "valuetype" : "_uxRadioButton",
@@ -1314,12 +1929,17 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "F021.ReceiptApplicationForAdditionalOrSpecialFamily" : {
+    "index" : "1. ",
+    "prompt" : "Mottak av søknad om tilleggsytelse eller særskilt familieytelse for foreldreløse barn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "F021.ReceiptApplicationForAdditionalOrSpecialFamily.dateReceiptApplication" : {
     "index" : "1.1. ",
     "prompt" : "Mottaksdato for søknad",
     "valuetype" : "_uxDateInput"
   },
-  "F021.ReceiptApplicationForAdditionalOrSpecialFamily.informationApplication.value[0]" : {
+  "F021.ReceiptApplicationForAdditionalOrSpecialFamily.informationApplication" : {
     "index" : "1.3. ",
     "prompt" : "Informasjon om søknaden",
     "valuetype" : "_uxRadioButton",
@@ -1334,14 +1954,19 @@
     "prompt" : "Punkter det kreves mer informasjon om",
     "valuetype" : "_uxTextAreaInput"
   },
-  "F021.ReceiptApplicationForAdditionalOrSpecialFamily.typeClaim.value[0]" : {
+  "F021.ReceiptApplicationForAdditionalOrSpecialFamily.typeClaim" : {
     "index" : "1.2. ",
-    "prompt" : "Velg nytt krav dersom det gjelder søknad om familieytelser, hvis ikke velg endring i omstendigheter",
+    "prompt" : "Type krav",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Nytt krav",
       "02" : "Endrede omstendigheter"
     },
     "enumName" : "FTypeClaimNewChangeType"
+  },
+  "F021.sedTitle" : {
+    "index" : "F021",
+    "prompt" : "F021 - Søknad om tilleggsytelser",
+    "valuetype" : "_rinaRoot"
   }
 }

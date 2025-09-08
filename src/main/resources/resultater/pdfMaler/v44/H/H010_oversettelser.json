@@ -1,10 +1,25 @@
 {
+  "H010.AddressPerson" : {
+    "index" : "2. ",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H010.AddressPerson.AddressPerson[0]" : {
+    "index" : "2.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "H010.AddressPerson.AddressPerson[0].Address" : {
+    "index" : "2.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H010.AddressPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "2.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "H010.AddressPerson.AddressPerson[0].Address.country.value[0]" : {
+  "H010.AddressPerson.AddressPerson[0].Address.country" : {
     "index" : "2.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -12,7 +27,7 @@
   },
   "H010.AddressPerson.AddressPerson[0].Address.postalCode" : {
     "index" : "2.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "H010.AddressPerson.AddressPerson[0].Address.region" : {
@@ -30,7 +45,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "H010.AddressPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "H010.AddressPerson.AddressPerson[0].typeAddress" : {
     "index" : "2.1.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -41,6 +56,11 @@
     },
     "enumName" : "EESSIAddressType"
   },
+  "H010.DateChangeLegislationApplicable" : {
+    "index" : "3. ",
+    "prompt" : "Dato for endring av lovvalg",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H010.DateChangeLegislationApplicable.dateChangeLegislationApplicable" : {
     "index" : "3.1. ",
     "prompt" : "Dato for endring av lovvalg",
@@ -48,10 +68,20 @@
   },
   "H010.DateChangeLegislationApplicable.dateUntilWhichThisChangeApplies" : {
     "index" : "3.2. ",
-    "prompt" : "Oppgi om mulig datoen for når deres medlemsstats lovgivning opphørte å gjelde for den berørte personen.",
+    "prompt" : "Endringen gjelder til denne dato",
     "valuetype" : "_uxDateInput"
   },
-  "H010.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "H010.Person" : {
+    "index" : "1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H010.Person.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H010.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.3. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
@@ -67,7 +97,22 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "H010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "H010.Person.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -85,7 +130,7 @@
   },
   "H010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "H010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -100,8 +145,23 @@
   },
   "H010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "H010.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "H010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -113,7 +173,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "H010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "H010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -124,9 +184,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "H010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "H010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -161,10 +221,10 @@
   },
   "H010.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "H010.Person.PersonIdentification.sex.value[0]" : {
+  "H010.Person.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -174,5 +234,10 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "H010.sedTitle" : {
+    "index" : "H010",
+    "prompt" : "H010 - Melding om endring av lovvalg",
+    "valuetype" : "_rinaRoot"
   }
 }

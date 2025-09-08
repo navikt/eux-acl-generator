@@ -14,7 +14,7 @@ import java.util.TreeMap;
 @NoArgsConstructor
 public class UttrekkCdmMeta {
 
-    private Map<String, String> cdmStiVsMalTagnavn = new HashMap<>();
+    private TreeMap<String, String> cdmStiVsMalTagnavn = new TreeMap<>();
     private Map<String, String> cdmStiVsTagtype = new HashMap<>();
     private TreeMap<String, String> cdmStiVsIndeks = new TreeMap<>();
     private TreeMap<String, String> cdmStiVsTekstId = new TreeMap<>();

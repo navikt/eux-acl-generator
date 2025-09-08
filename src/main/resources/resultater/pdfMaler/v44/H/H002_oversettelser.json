@@ -1,15 +1,40 @@
 {
+  "H002.ReplyRequestForInformation" : {
+    "index" : "1. ",
+    "prompt" : "Svar på anmodning om informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer" : {
+    "index" : "1.2. ",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer.AdditionalInformation" : {
+    "index" : "1.2.4. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.Employer.AdditionalInformation.additionalInformation" : {
     "index" : "1.2.4.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "H002.ReplyRequestForInformation.Employer.Employer" : {
+    "index" : "1.2.1. ",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer.Employer.Address" : {
+    "index" : "1.2.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.buildingName" : {
     "index" : "1.2.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "H002.ReplyRequestForInformation.Employer.Employer.Address.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Employer.Employer.Address.country" : {
     "index" : "1.2.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -17,7 +42,7 @@
   },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.postalCode" : {
     "index" : "1.2.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "H002.ReplyRequestForInformation.Employer.Employer.Address.region" : {
@@ -35,14 +60,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers" : {
+    "index" : "1.2.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "1.2.1.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "1.2.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "H002.ReplyRequestForInformation.Employer.Employer.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "1.2.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -54,8 +89,18 @@
   },
   "H002.ReplyRequestForInformation.Employer.Employer.name" : {
     "index" : "1.2.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation" : {
+    "index" : "1.2.3. ",
+    "prompt" : "Negativt svar på etterspurt informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0]" : {
+    "index" : "1.2.3.1",
+    "prompt" : "Vi er ikke i stand til å sende.",
+    "valuetype" : "_rinaArray"
   },
   "H002.ReplyRequestForInformation.Employer.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].reasons" : {
     "index" : "1.2.3.1.4. ",
@@ -77,12 +122,27 @@
     "prompt" : "Følgende SED-er",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments" : {
+    "index" : "1.2.5. ",
+    "prompt" : "Følgende dokument(er) er vedlagt:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached" : {
+    "index" : "1.2.5.2. ",
+    "prompt" : "Type dokumenter som er vedlagt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0]" : {
+    "index" : "1.2.5.2.1",
+    "prompt" : "Annet dokument",
+    "valuetype" : "_rinaArray"
+  },
   "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0].document" : {
     "index" : "1.2.5.2.1.1. ",
     "prompt" : "Dokument",
     "valuetype" : "_uxTextAreaInput"
   },
-  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.predefinedDocuments.value[0]" : {
+  "H002.ReplyRequestForInformation.Employer.PleaseFindAttachedFollowingDocuments.predefinedDocuments" : {
     "index" : "1.2.5.1. ",
     "prompt" : "Forhåndsdefinerte dokumenter",
     "valuetype" : "_uxMultiSelect",
@@ -103,6 +163,16 @@
     },
     "enumName" : "HAttachedDocumentsFullListMultipleType"
   },
+  "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation" : {
+    "index" : "1.2.2. ",
+    "prompt" : "Positivt svar på etterspurt informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation.WeAreEnclosing" : {
+    "index" : "1.2.2.1. ",
+    "prompt" : "Vi vedlegger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.Employer.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingDocument" : {
     "index" : "1.2.2.1.1. ",
     "prompt" : "Følgende dokument(er)",
@@ -118,17 +188,42 @@
     "prompt" : "Følgende SED-er",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.Person" : {
+    "index" : "1.1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.AdditionalInformation" : {
+    "index" : "1.1.7. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.Person.AdditionalInformation.additionalInformation" : {
     "index" : "1.1.7.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "H002.ReplyRequestForInformation.Person.AddressPerson" : {
+    "index" : "1.1.2. ",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0]" : {
+    "index" : "1.1.2.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address" : {
+    "index" : "1.1.2.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "1.1.2.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.country" : {
     "index" : "1.1.2.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -136,7 +231,7 @@
   },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.postalCode" : {
     "index" : "1.1.2.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].Address.region" : {
@@ -154,7 +249,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.AddressPerson.AddressPerson[0].typeAddress" : {
     "index" : "1.1.2.1.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -165,7 +260,22 @@
     },
     "enumName" : "EESSIAddressType"
   },
-  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Informasjon for identifikasjon av personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person" : {
+    "index" : "1.1.3.1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth" : {
+    "index" : "1.1.3.1.7. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.PlaceBirth.country" : {
     "index" : "1.1.3.1.7.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -236,7 +346,7 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.sex.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.InformationForIdentificationPerson.Person.sex" : {
     "index" : "1.1.3.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -246,6 +356,16 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation" : {
+    "index" : "1.1.6. ",
+    "prompt" : "Negativt svar på etterspurt informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0]" : {
+    "index" : "1.1.6.1",
+    "prompt" : "Vi er ikke i stand til å sende.",
+    "valuetype" : "_rinaArray"
   },
   "H002.ReplyRequestForInformation.Person.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].reasons" : {
     "index" : "1.1.6.1.4. ",
@@ -267,18 +387,33 @@
     "prompt" : "Følgende SED-er",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification" : {
+    "index" : "1.1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson" : {
+    "index" : "1.1.1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.PleaseFillInIfStatusPersonOther" : {
+    "index" : "1.1.1.2.3. ",
+    "prompt" : "Fyll ut hvis «Personens status» = «Annet»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.PleaseFillInIfStatusPersonOther.other" : {
     "index" : "1.1.1.2.3.1. ",
     "prompt" : "Annet",
     "valuetype" : "_uxTextAreaInput"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.nationality.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.nationality" : {
     "index" : "1.1.1.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet",
+    "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.statusPerson.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.AdditionalInformationPerson.statusPerson" : {
     "index" : "1.1.1.2.2. ",
     "prompt" : "Personens status",
     "valuetype" : "_uxMultiSelect",
@@ -299,7 +434,22 @@
     },
     "enumName" : "HPersonStatusLimitedMultipleType"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification" : {
+    "index" : "1.1.1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -317,7 +467,7 @@
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -332,8 +482,23 @@
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.1.1.7.1.4.1. ",
@@ -345,7 +510,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -356,9 +521,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -393,10 +558,10 @@
   },
   "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.sex.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PersonIdentification.PersonIdentification.sex" : {
     "index" : "1.1.1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -407,12 +572,27 @@
     },
     "enumName" : "EESSISexType"
   },
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Følgende dokument(er) er vedlagt:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached" : {
+    "index" : "1.1.8.2. ",
+    "prompt" : "Type dokumenter som er vedlagt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0]" : {
+    "index" : "1.1.8.2.1",
+    "prompt" : "Annet dokument",
+    "valuetype" : "_rinaArray"
+  },
   "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0].document" : {
     "index" : "1.1.8.2.1.1. ",
     "prompt" : "Dokument",
     "valuetype" : "_uxTextAreaInput"
   },
-  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.predefinedDocuments.value[0]" : {
+  "H002.ReplyRequestForInformation.Person.PleaseFindAttachedFollowingDocuments.predefinedDocuments" : {
     "index" : "1.1.8.1. ",
     "prompt" : "Forhåndsdefinerte dokumenter",
     "valuetype" : "_uxMultiSelect",
@@ -433,6 +613,16 @@
     },
     "enumName" : "HAttachedDocumentsFullListMultipleType"
   },
+  "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation" : {
+    "index" : "1.1.5. ",
+    "prompt" : "Positivt svar på etterspurt informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation.WeAreEnclosing" : {
+    "index" : "1.1.5.1. ",
+    "prompt" : "Vi vedlegger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.Person.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingDocument" : {
     "index" : "1.1.5.1.1. ",
     "prompt" : "Følgende dokument(er)",
@@ -448,10 +638,25 @@
     "prompt" : "Følgende SED-er",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending" : {
+    "index" : "1.1.4. ",
+    "prompt" : "Sektor-PIN (Personnummer hos avsenderinstitusjonen)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.PleaseFillInFollowingIfSectorPINOtherSectorPIN" : {
+    "index" : "1.1.4.2. ",
+    "prompt" : "Fyll ut hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.PleaseFillInFollowingIfSectorPINOtherSectorPIN.descriptionOtherSector" : {
     "index" : "1.1.4.2.1. ",
     "prompt" : "Beskrivelse av annen sektor",
     "valuetype" : "_uxTextInput"
+  },
+  "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending" : {
+    "index" : "1.1.4.1. ",
+    "prompt" : "Sektor-PIN (Personnummer hos avsenderinstitusjonen)",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H002.ReplyRequestForInformation.Person.SectorPINPersonalIdentificationNumberSending.SectorPINPersonalIdentificationNumberSending.all" : {
     "index" : "1.1.4.1.1. ",
@@ -508,10 +713,30 @@
     "prompt" : "Arbeidsledighet",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED" : {
+    "index" : "1.3. ",
+    "prompt" : "Samlet tilbakebetaling SED",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.AdditionalInformation" : {
+    "index" : "1.3.4. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.AdditionalInformation.additionalInformation" : {
     "index" : "1.3.4.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation" : {
+    "index" : "1.3.3. ",
+    "prompt" : "Negativt svar på etterspurt informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0]" : {
+    "index" : "1.3.3.1",
+    "prompt" : "Vi er ikke i stand til å sende.",
+    "valuetype" : "_rinaArray"
   },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.NegativeReplyRequestedInformation.InformationOnInabilityToSend[0].reasons" : {
     "index" : "1.3.3.1.4. ",
@@ -533,12 +758,27 @@
     "prompt" : "Følgende SED-er",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments" : {
+    "index" : "1.3.5. ",
+    "prompt" : "Følgende dokument(er) er vedlagt:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached" : {
+    "index" : "1.3.5.2. ",
+    "prompt" : "Type dokumenter som er vedlagt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0]" : {
+    "index" : "1.3.5.2.1",
+    "prompt" : "Annet dokument",
+    "valuetype" : "_rinaArray"
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.OtherDocumentsAttached.OtherDocument[0].document" : {
     "index" : "1.3.5.2.1.1. ",
     "prompt" : "Dokument",
     "valuetype" : "_uxTextAreaInput"
   },
-  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.predefinedDocuments.value[0]" : {
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PleaseFindAttachedFollowingDocuments.predefinedDocuments" : {
     "index" : "1.3.5.1. ",
     "prompt" : "Forhåndsdefinerte dokumenter",
     "valuetype" : "_uxMultiSelect",
@@ -559,6 +799,16 @@
     },
     "enumName" : "HAttachedDocumentsFullListMultipleType"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation" : {
+    "index" : "1.3.2. ",
+    "prompt" : "Positivt svar på etterspurt informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation.WeAreEnclosing" : {
+    "index" : "1.3.2.1. ",
+    "prompt" : "Vi vedlegger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.PositiveReplyRequestedInformation.WeAreEnclosing.theFollowingDocument" : {
     "index" : "1.3.2.1.1. ",
     "prompt" : "Følgende dokument(er)",
@@ -574,9 +824,19 @@
     "prompt" : "Følgende SED-er",
     "valuetype" : "_uxTextInput"
   },
+  "H002.ReplyRequestForInformation.ReimbursementBulkSED.ReimbursementIdentification" : {
+    "index" : "1.3.1. ",
+    "prompt" : "Identifikasjon av refusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H002.ReplyRequestForInformation.ReimbursementBulkSED.ReimbursementIdentification.reimbursementRequestID" : {
     "index" : "1.3.1.1. ",
     "prompt" : "ID-nummer for krav om refusjon",
     "valuetype" : "_uxTextInput"
+  },
+  "H002.sedTitle" : {
+    "index" : "H002",
+    "prompt" : "H002 - Svar på anmodning om informasjon",
+    "valuetype" : "_rinaRoot"
   }
 }

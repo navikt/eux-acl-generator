@@ -9,8 +9,12 @@ import java.util.stream.Collectors;
 
 @Slf4j
 public class CdmMetaService {
-    private static final List<String> CDM_TEKST_TYPER = List.of("_uxTextInput", "_uxTextAreaInput", "_rinaIRAutocomplete");
-    private static final List<String> CDM_DATO_TYPER = List.of("_uxDateInput");
+    private static final List<String> CDM_TITTEL_TYPER = List
+            .of("_uxFieldSetContainer", "_uxSelectAutoCompleteInput", "_rinaArray");
+    private static final List<String> CDM_TEKST_TYPER = List
+            .of("_uxTextInput", "_uxTextAreaInput", "_rinaIRAutocomplete");
+    private static final List<String> CDM_DATO_TYPER = List
+            .of("_uxDateInput");
     private static final List<String> CDM_ENUM_TYPER = List
             .of("_uxMultiSelect", "_uxMultiCheckbox", "_uxRadioButton");
     private static final List<String> CDM_LISTE_TYPER = List
@@ -24,13 +28,21 @@ public class CdmMetaService {
             return null;
         }
         UttrekkCdmMeta uttrekkCdmMeta = new UttrekkCdmMeta();
+        String sedType = cdmFilFlattened.get("context.inputs.sedName").toString().trim();
+        String cdmType = cdmFilFlattened.get("context.type").toString().trim();
+        String sedTitleId = cdmFilFlattened.get("context.inputs.sedTitle").toString().split("_")[1].toLowerCase();
+        uttrekkCdmMeta.getCdmStiVsMalTagnavn().put("meta", sedType + ".sedTitle");
+        uttrekkCdmMeta.getCdmStiVsTagtype().put("meta", cdmType);
+        uttrekkCdmMeta.getCdmStiVsTekstId().put("meta", sedTitleId);
+        uttrekkCdmMeta.getCdmStiVsIndeks().put("meta", sedType);
+
         cdmFilFlattened.keySet().stream().sorted().forEach(k -> {
             try {
                 String v = cdmFilFlattened.get(k).toString();
                 if (k.contains("context.key")) {
                     String cdmSti = k.replace(".context.key", "");
                     uttrekkCdmMeta.getCdmStiVsMalTagnavn().put(cdmSti, v);
-                } else if (k.contains("context.type")) {
+                } else if (k.contains(".context.type")) {
                     String cdmSti = k.replace(".context.type", "");
                     uttrekkCdmMeta.getCdmStiVsTagtype().put(cdmSti, v);
                 } else if (k.endsWith(".context.inputs.label[0].string")) {
@@ -40,10 +52,12 @@ public class CdmMetaService {
                     String cdmSti = k.replace(".context.inputs.label", "");
                     uttrekkCdmMeta.getCdmStiVsTekstId().put(cdmSti, v.split("_")[1].toLowerCase());
                 } else if (k.endsWith("context.inputs.sedTitle")) {
-                    String sedTittelId = v.trim();
-                    uttrekkCdmMeta.getCdmStiVsTekstId().put("sedTitle", sedTittelId);
+                    uttrekkCdmMeta.getCdmStiVsTekstId().put("sedMeta", v.split("_")[1].toLowerCase());
                 } else if (k.endsWith("context.inputs.label[0].prefix")) {
                     String cdmSti = k.replace(".context.inputs.label[0].prefix", "");
+                    uttrekkCdmMeta.getCdmStiVsIndeks().put(cdmSti, v.trim());
+                } else if (k.endsWith("context.inputs.preLabel")) {
+                    String cdmSti = k.replace(".context.inputs.preLabel", "");
                     uttrekkCdmMeta.getCdmStiVsIndeks().put(cdmSti, v);
                 } else if ((k.contains(".context.inputs.options[") && k.contains(".label[0].string"))
                         || (k.contains(".context.inputs.selectOptions[") && k.contains(".label[0].string"))) {
@@ -84,13 +98,23 @@ public class CdmMetaService {
         if (cdmUttrekk == null || cdmUttrekk.getCdmStiVsMalTagnavn() == null || cdmUttrekk.getCdmStiVsTagtype() == null) {
             return null;
         }
-        Map<String, String> cdmStiVsMalTagnavn = cdmUttrekk.getCdmStiVsMalTagnavn();
+        TreeMap<String, String> cdmStiVsMalTagnavn = cdmUttrekk.getCdmStiVsMalTagnavn();
         Map<String, String> cdmStiVsMalTagtype = cdmUttrekk.getCdmStiVsTagtype();
         TreeMap<String, EuSedFundament> euSedStiVsEuSedFundament = new TreeMap<>();
         cdmStiVsMalTagnavn
                 .forEach((cdmSti, tagnavn) -> {
-                    if (List.of("_uxMultiSelect")
-                            .contains(cdmStiVsMalTagtype.get(cdmSti))) {
+                    String tagType = cdmStiVsMalTagtype.get(cdmSti);
+                    if ("_rinaRoot".equals(tagType)) {
+                        String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
+                        EuSedFundament euSedFundament = EuSedFundament.builder()
+                                .verdiType("tittel")
+                                .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti))
+                                .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti))
+                                .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti))
+                                .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
+                                .build();
+                        euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
+                    } else if (List.of("_uxMultiSelect", "_uxMultiCheckbox", "_uxRadioButton").contains(tagType)) {
                         String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
                         EuSedFundament euSedFundament = EuSedFundament.builder()
                                 .verdiType("enum")
@@ -101,41 +125,28 @@ public class CdmMetaService {
                                 .enumNavnId(cdmUttrekk.getCdmStiVsTekstId().get(cdmSti))
                                 .build();
                         euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
-                    } else if (List.of("_uxHiddenArrayContainer")
-                                .contains(cdmStiVsMalTagtype.get(cdmSti))) {
-                            String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
-                            EuSedFundament euSedFundament = EuSedFundament.builder()
-                                    .verdiType("enum")
-                                    .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti+ ".children[0]"))
-                                    .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti+ ".children[0]"))
-                                    .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti+ ".children[0]"))
-                                    .enumNavn(cdmUttrekk.getCdmStiVsEnumNavn().get(cdmSti + ".children[0]"))
-                                    .enumNavnId(cdmUttrekk.getCdmStiVsTekstId().get(cdmSti+ ".children[0]"))
-                                    .build();
-                            euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
-                        } else if (List.of("_uxMultiCheckbox", "_uxRadioButton")
-                            .contains(cdmStiVsMalTagtype.get(cdmSti))) {
+                    } else if (List.of("_uxHiddenArrayContainer").contains(tagType)) {
                         String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
                         EuSedFundament euSedFundament = EuSedFundament.builder()
                                 .verdiType("enum")
+                                .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti + ".children[0]"))
+                                .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti + ".children[0]"))
+                                .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti + ".children[0]"))
+                                .enumNavn(cdmUttrekk.getCdmStiVsEnumNavn().get(cdmSti + ".children[0]"))
+                                .enumNavnId(cdmUttrekk.getCdmStiVsTekstId().get(cdmSti + ".children[0]"))
+                                .build();
+                        euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
+                    } else if (CDM_TEKST_TYPER.contains(tagType)) {
+                        String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
+                        EuSedFundament euSedFundament = EuSedFundament.builder()
+                                .verdiType("tekst")
                                 .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti))
                                 .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti))
                                 .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti))
-                                .enumNavn(cdmUttrekk.getCdmStiVsEnumNavn().get(cdmSti))
-                                .enumNavnId(cdmUttrekk.getCdmStiVsTekstId().get(cdmSti))
+                                .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
                                 .build();
                         euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
-                    } else if (CDM_TEKST_TYPER.contains(cdmStiVsMalTagtype.get(cdmSti))) {
-                            String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
-                            EuSedFundament euSedFundament = EuSedFundament.builder()
-                                    .verdiType("tekst")
-                                    .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti))
-                                    .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti))
-                                    .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti))
-                                    .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
-                                    .build();
-                            euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
-                        } else if (CDM_DATO_TYPER.contains(cdmStiVsMalTagtype.get(cdmSti))) {
+                    } else if (CDM_DATO_TYPER.contains(tagType)) {
                         String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
                         EuSedFundament euSedFundament = EuSedFundament.builder()
                                 .verdiType("dato")
@@ -145,7 +156,33 @@ public class CdmMetaService {
                                 .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
                                 .build();
                         euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
+                        // , "_uxHiddenGroupContainer"
+                    } else if (CDM_TITTEL_TYPER.contains(tagType)) {
+                        String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
+                        EuSedFundament euSedFundament = EuSedFundament.builder()
+                                .verdiType("tittel")
+                                .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti))
+                                .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti))
+                                .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti))
+                                .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
+                                .build();
+                        euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
+                    } else if (List.of("_uxHiddenGroupContainer").contains(tagType)) {
+                        if (cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti) != null) {
+
+
+                            String euSedSti = byggEuSedSti(cdmSti, cdmStiVsMalTagnavn, cdmStiVsMalTagtype);
+                            EuSedFundament euSedFundament = EuSedFundament.builder()
+                                    .verdiType("tittel")
+                                    .cdmType(cdmUttrekk.getCdmStiVsTagtype().get(cdmSti))
+                                    .indeks(cdmUttrekk.getCdmStiVsIndeks().get(cdmSti))
+                                    .ledetekst(cdmUttrekk.getCdmStiVsLedetekst().get(cdmSti))
+                                    .tekstlengde(cdmUttrekk.getCdmStiVsTekstlengde().get(cdmSti))
+                                    .build();
+                            euSedStiVsEuSedFundament.put(euSedSti, euSedFundament);
+                        }
                     }
+
                 });
         return euSedStiVsEuSedFundament;
     }
@@ -195,7 +232,7 @@ public class CdmMetaService {
             if (tekstId == null) {
                 log.error("tekstId mangler, cdmSti={}", cdmSti);
             } else {
-                cdmStiVsLedetekst.put(cdmSti, tekstIdVsTekst.get(tekstId));
+                cdmStiVsLedetekst.put(cdmSti, tekstIdVsTekst.get(tekstId + "_label"));
             }
         });
         return cdmStiVsLedetekst;
@@ -207,44 +244,46 @@ public class CdmMetaService {
         }
         TreeMap<String, String> cdmStiVsEnumNavn = new TreeMap<>();
         uttrekkCdmMeta.getCdmStiVsTekstId().forEach((cdmSti, tekstId) -> {
-            cdmStiVsEnumNavn.put(cdmSti, cdmTekstIdVsEnumNavn.get(tekstId));
+            if (cdmTekstIdVsEnumNavn.get(tekstId) != null) {
+                cdmStiVsEnumNavn.put(cdmSti, cdmTekstIdVsEnumNavn.get(tekstId));
+            }
         });
         return cdmStiVsEnumNavn;
     }
 
-    private Map<String, String> lagCdmStiVsEnumkodeTekst(UttrekkCdmMeta
-                                                                uttrekkCdmMeta, Map<String, String> tekstIdVsTekst) {
-        if (uttrekkCdmMeta == null || uttrekkCdmMeta.getCdmStiVsEnumkodeTekstId() == null || tekstIdVsTekst == null) {
-            return null;
-        }
-        try {
-            return uttrekkCdmMeta.getCdmStiVsEnumkodeTekstId().entrySet().stream()
-                    .filter(entry -> {
-                        if (tekstIdVsTekst.containsKey(entry.getValue())) {
-                            return true;
-                        } else {
-                            log.error("Mangler tekstIdVsTekst for: v={} ", entry.getValue());
-                            return false;
-                        }
-                    })
-                    .collect(Collectors.toMap(
-                            entry -> entry.getKey(),
-                            entry -> tekstIdVsTekst.get(entry.getValue())));
-        } catch (Exception e) {
-            log.error("Kunne ikke lage mapping mellom tekstId og tekst");
-            throw new RuntimeException(e);
-        }
+private Map<String, String> lagCdmStiVsEnumkodeTekst(UttrekkCdmMeta
+                                                             uttrekkCdmMeta, Map<String, String> tekstIdVsTekst) {
+    if (uttrekkCdmMeta == null || uttrekkCdmMeta.getCdmStiVsEnumkodeTekstId() == null || tekstIdVsTekst == null) {
+        return null;
     }
-
-    private Map<String, String> lagCdmStiVsTekstlengde(UttrekkCdmMeta uttrekkCdmMeta) {
-        Map<String, String> cdmStiVsTekstlengde = new HashMap<>();
-        uttrekkCdmMeta.getCdmStiVsParameterNavn().forEach((cdmStiParam, parameternavn) -> {
-            String cdmSti = StringUtils.substringBeforeLast(cdmStiParam, ".");
-            String tekstlengde = uttrekkCdmMeta.getCdmStiVsParameterVerdi().get(cdmStiParam);
-            cdmStiVsTekstlengde.put(cdmSti, tekstlengde);
-
-        });
-       return cdmStiVsTekstlengde;
+    try {
+        return uttrekkCdmMeta.getCdmStiVsEnumkodeTekstId().entrySet().stream()
+                .filter(entry -> {
+                    if (tekstIdVsTekst.containsKey(entry.getValue() + "_codeListEntry")) {
+                        return true;
+                    } else {
+                        log.error("Mangler tekstIdVsTekst for: v={} ", entry.getValue());
+                        return false;
+                    }
+                })
+                .collect(Collectors.toMap(
+                        entry -> entry.getKey(),
+                        entry -> tekstIdVsTekst.get(entry.getValue() + "_codeListEntry")));
+    } catch (Exception e) {
+        log.error("Kunne ikke lage mapping mellom tekstId og tekst");
+        throw new RuntimeException(e);
     }
+}
+
+private Map<String, String> lagCdmStiVsTekstlengde(UttrekkCdmMeta uttrekkCdmMeta) {
+    Map<String, String> cdmStiVsTekstlengde = new HashMap<>();
+    uttrekkCdmMeta.getCdmStiVsParameterNavn().forEach((cdmStiParam, parameternavn) -> {
+        String cdmSti = StringUtils.substringBeforeLast(cdmStiParam, ".");
+        String tekstlengde = uttrekkCdmMeta.getCdmStiVsParameterVerdi().get(cdmStiParam);
+        cdmStiVsTekstlengde.put(cdmSti, tekstlengde);
+
+    });
+    return cdmStiVsTekstlengde;
+}
 
 }

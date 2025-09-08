@@ -1,108 +1,180 @@
 {
+  "U027.ChargingInterestAccepted" : {
+    "ledetekst" : "Rentebelastningen godkjennes",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3. "
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo" : {
+    "ledetekst" : "Fyll ut hvis «Rentebelastning godkjennes» = «03 - Ikke akseptert»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.2. "
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.PleaseFillInFollowingIfChargingInterestAccepted" : {
+    "ledetekst" : "Fyll ut hvis «Rentebelastning godkjennes» = «03 - Ikke akseptert» OG «Spesifiser årsaken til manglende aksept» = «99 - Annet»",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.2.2. "
+  },
   "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.PleaseFillInFollowingIfChargingInterestAccepted.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.2.2.1. ",
-    "ledetekst" : "Gi om nødvendig nærmere opplysninger om grunnen til at det ikke er akseptert",
     "tekstlengde" : "500"
   },
-  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.specifyReasonForNonAcceptance.value[0]" : {
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.specifyReasonForNonAcceptance" : {
+    "ledetekst" : "Spesifiser grunnen til manglende aksept",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiCheckbox",
     "indeks" : "3.2.1. ",
-    "ledetekst" : "Spesifiser grunnen til manglende aksept",
     "enumNavn" : "InterestNonAcceptanceMultipleType",
     "enumNavnId" : "71a0dfe0-9218-e611-80ea-000c292ed0d7"
   },
-  "U027.ChargingInterestAccepted.chargingInterestAccepted.value[0]" : {
+  "U027.ChargingInterestAccepted.chargingInterestAccepted" : {
+    "ledetekst" : "Rentebelastningen godkjennes",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "3.1. ",
-    "ledetekst" : "Rentebelastningen godkjennes",
     "enumNavn" : "InterestAcceptedType",
     "enumNavnId" : "cd598d2a-0e0b-e711-80d3-000d3a22e8cd"
   },
+  "U027.InformationChargingInterest" : {
+    "ledetekst" : "Informasjon om rentebelastning",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
   "U027.InformationChargingInterest.reimbursementRequestID" : {
+    "ledetekst" : "ID-nummer for krav om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1. ",
-    "ledetekst" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling')."
+    "indeks" : "2.1. "
+  },
+  "U027.LocalCaseNumbers" : {
+    "ledetekst" : "Lokale saksnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "ledetekst" : "Lokalt saksnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1"
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3. "
   },
   "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.3.1. "
   },
   "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
   "U027.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "ledetekst" : "Saksnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Saksnummer",
     "tekstlengde" : "65"
   },
-  "U027.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Angi landet der saksnummeret kan brukes.",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
   },
+  "U027.PleaseFillInFollowingIfChargingInterest2" : {
+    "ledetekst" : "Fyll ut hvis «Rentebelastning aksepteres» = «02 - Delvis akseptert»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4. "
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0]" : {
+    "ledetekst" : "Enkelkrav som ikke kan rentebelastes",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "4.1"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.2. "
+  },
   "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "4.1.2.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "4.1.2.3. "
   },
   "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.2.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.2.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
-  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.sex.value[0]" : {
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "4.1.2.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "379e16fd-8890-e611-80d0-000d3a22e8cd"
   },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].PleaseFillInFollowingIfSpecifyReason3Other" : {
+    "ledetekst" : "Fyll ut hvis «Spesifiser grunn» = «99 - Annet»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.4. "
+  },
   "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].PleaseFillInFollowingIfSpecifyReason3Other.pleaseSpecifyOther" : {
+    "ledetekst" : "Vennligst spesifiser annet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "4.1.4.1. ",
-    "ledetekst" : "Vennligst spesifiser annet",
     "tekstlengde" : "500"
   },
   "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].sequentialNumberIndividualClaim" : {
+    "ledetekst" : "Løpenummer for enkeltkrav",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "4.1.1. ",
-    "ledetekst" : "Løpenummer for enkeltkrav"
+    "indeks" : "4.1.1. "
   },
-  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].specifyReason.value[0]" : {
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].specifyReason" : {
+    "ledetekst" : "Oppgi årsak",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "4.1.3. ",
-    "ledetekst" : "Oppgi årsak",
     "enumNavn" : "NoInterestIndividualClaimType",
     "enumNavnId" : "6754a8c2-530d-e711-80d3-000d3a22e8cd"
+  },
+  "U027.sedTitle" : {
+    "ledetekst" : "Svar angående renter",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "U027"
   }
 }

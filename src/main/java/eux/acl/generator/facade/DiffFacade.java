@@ -6,6 +6,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
+import java.util.stream.Collectors;
+
+import static eux.acl.generator.service.FilService.MAPPE_ENDRINGER_ACL_TARGET;
 
 @Slf4j
 public class DiffFacade {
@@ -24,20 +27,21 @@ public class DiffFacade {
 
     public void sammenliknerCdmEuSedMedAclEuSed(List<String> sedTyper, String cdmVersjon) {
         sedTyper.forEach(sedType -> {
-            var cdmSedListe = euSedService.lagCdmEuSedFraFundament(sedType, cdmVersjon);
-            var aclSedListe = aclService.lagEuSedFraAclMal(sedType, cdmVersjon);
+            TreeMap<String, EuSedFundament> cdmEuSedStiVsFundament = euSedService.lagCdmEuSedMedFundament(sedType, cdmVersjon);
+            List<String> cdmSedListe = cdmEuSedStiVsFundament.keySet().stream().toList();
+            List<String> aclSedListe = aclService.lagEuSedFraAclMal(sedType, cdmVersjon);
             for (int nr = 0; nr < aclSedListe.size(); nr++) {
                 if (!aclSedListe.get(nr).equals(cdmSedListe.get(nr))) {
-                    log.error(sedType + " mismatch:\nAcl={}\nCdm={}", aclSedListe.get(nr), cdmSedListe.get(nr));
+                    log.error(sedType + " mismatch:\nAcl={}\nCdm={}", aclSedListe.get(nr), cdmEuSedStiVsFundament.get(nr));
                     throw new RuntimeException("Mismatch mellom CDM- og ACL-Sed - se loggen");
                 }
             }
-            if (cdmSedListe.size() != aclSedListe.size()) {
+            if (cdmEuSedStiVsFundament.size() != aclSedListe.size()) {
                 log.error(sedType + " mismatch. Ulikt linjeantall. Acl={}, Cdm={}"
-                        , aclSedListe.size(), cdmSedListe.size());
+                        , aclSedListe.size(), cdmEuSedStiVsFundament.size());
                 throw new RuntimeException("Mismatch mellom CDM- og ACL-Sed - se loggen");
             } else {
-                log.info("EuSed fra CDM og ACL er identiske for {}", sedType);
+                log.info("I {} er CDM og ACL utgavene identiske for {}", cdmVersjon, sedType);
             }
         });
     }
@@ -50,6 +54,7 @@ public class DiffFacade {
             filService.skrivDiffTilFil(diff.getNyeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_ENDRINGER_STIER);
             filService.skrivDiffTilFil(diff.getUtgaatteStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_UTGAATTE_STIER);
             euSedService.leggTilNyeDiffer(sedType, diff, sektorVsNyeStier);
+            log.info("Diff mellom CDM-versjoner. Filer opprettet for {}", sedType);
         });
         euSedService.skrivDiffOppsummeringTilEiFil(sektorVsNyeStier, cdmNyVersjon);
     }
@@ -59,14 +64,15 @@ public class DiffFacade {
                                                                                   String nyCdmVersjon) {
         Map<String, List<String>> sektorVsNyeStier = new HashMap<>();
         sedTyper.forEach(sedType -> {
-            TreeMap<String, EuSedFundament> euSedStiVsFundament = filService.lesEuSedFundamentFil(sedType, nyCdmVersjon);
-            List<String> cdmEuSedStiListe = euSedService.lagCdmEuSedFraFundament(sedType, nyCdmVersjon);
+
+            TreeMap<String, EuSedFundament> euSedStiVsFundament = euSedService.lagCdmEuSedMedFundament(sedType, nyCdmVersjon);
+            List<String> cdmEuSedStiListe = euSedStiVsFundament.keySet().stream().toList();
             Map<String, String> euSedStiVsAclSedSti = aclService.hentAclMal(sedType, aclVersjon);
             List<String> endredeEnumer = filService.lesEndredeOgNyeEnumNavn(nyCdmVersjon);
-            if (euSedStiVsFundament == null || cdmEuSedStiListe == null || euSedStiVsAclSedSti == null) {
+            if (euSedStiVsFundament == null || euSedStiVsFundament == null || euSedStiVsAclSedSti == null) {
                 return;
             }
-            List<String> euSedStiVsAclSedStiEndretEnum = new ArrayList<>();
+//            List<String> euSedStiVsAclSedStiEndretEnum = new ArrayList<>();
             List<String> euSedStiVsAclSedStiNyMal = new ArrayList<>();
             List<String> euSedStiVsAclSedStiNye = new ArrayList<>();
             List<String> euSedStiVsAclSedUendret = new ArrayList<>();
@@ -79,7 +85,7 @@ public class DiffFacade {
                                 + euSedStiVsAclSedSti.get(euSedSti) + ": "
                                 + euSedStiVsFundament.get(euSedSti).getEnumNavn();
                         euSedStiVsAclSedStiNyMal.add(euSedStiVsAclSedStiVsEnum);
-                        euSedStiVsAclSedStiEndretEnum.add(euSedStiVsAclSedStiVsEnum);
+//                        euSedStiVsAclSedStiEndretEnum.add(euSedStiVsAclSedStiVsEnum);
                         euSedStiVsAclSedStiNye.add(euSedStiVsAclSedStiVsEnum);
                         aclMalBasisPrSektor.add(euSedStiVsAclSedStiVsEnum.replaceFirst("\\.", ":"));
                     } else {
@@ -93,7 +99,7 @@ public class DiffFacade {
                         // ny og med ny enum
                         String euSedStiVsEnum = euSedSti + ": : " + euSedStiVsFundament.get(euSedSti).getEnumNavn();
                         euSedStiVsAclSedStiNyMal.add(euSedStiVsEnum);
-                        euSedStiVsAclSedStiEndretEnum.add(euSedStiVsEnum);
+//                        euSedStiVsAclSedStiEndretEnum.add(euSedStiVsEnum);
                         euSedStiVsAclSedStiNye.add(euSedStiVsEnum);
                         aclMalBasisPrSektor.add(euSedStiVsEnum.replaceFirst("\\.", ":"));
                     } else {
@@ -123,9 +129,11 @@ public class DiffFacade {
                     .toList();
             filService.skrivDiffTilFil(euSedStiVsAclSedStiNyMal, sedType, nyCdmVersjon, FilService.FIL_NY_ACL_MAL_STIER);
             filService.skrivDiffTilFil(euSedStiVsAclSedStiNye, sedType, nyCdmVersjon, FilService.FIL_MED_ENDRINGER_STIER);
-            filService.skrivDiffTilFil(euSedStiVsAclSedStiEndretEnum, sedType, nyCdmVersjon, FilService.FIL_ENDRET_ENUM_STIER);
+//            filService.skrivDiffTilFil(euSedStiVsAclSedStiEndretEnum, sedType, nyCdmVersjon, FilService.FIL_ENDRET_ENUM_STIER);
             filService.skrivDiffTilFil(euSedStiVsAclSedUendret, sedType, nyCdmVersjon, FilService.FIL_UENDREDE_ACL_STIER);
             filService.skrivDiffTilFil(euSedStiVsAclSedStiUtgaatte, sedType, nyCdmVersjon, FilService.FIL_UTGAATTE_ACL_STIER);
+            log.info("{}: ACL {} vs CDM {}. Diff skrevet til filer. Se: {}",
+                    sedType, aclVersjon, nyCdmVersjon, MAPPE_ENDRINGER_ACL_TARGET);
         });
         sektorVsNyeStier.forEach((sektor, aclBasis) ->
                 filService.skrivAclMalBasisPrSektorTilFil(sektorVsNyeStier.get(sektor), sektor, nyCdmVersjon)
@@ -146,16 +154,6 @@ public class DiffFacade {
         kodeverkService.kopierNyeOgEndredeEnumerTilEgenLokasjon(enumNavnEndredeOgNyeFiler, cdmVersjonNy);
         // fil for å endre navn på enumfiler (når navnet er det samme men innholdet er endret i ny versjon)
         kodeverkService.opprettEnumnavnemappingFil(enumNavnEndredeOgNyeFiler, cdmVersjonNy);
-        // Lager også alle enum-filene
-        List<String> alleEnumnavn = filService.lesNavneneTilAlleKodeverksfiler(cdmVersjonNy);
-        alleEnumnavn.forEach(enumNavn -> {
-            List<String> enumkodeMapping = new ArrayList<>();
-            TreeMap<Integer, EnumkodeFundament> enumNavnVsEnumInfo = filService.lesEnumFundamentFil(enumNavn, cdmVersjonNy);
-            enumNavnVsEnumInfo.forEach((i, enumInfo) ->
-                    enumkodeMapping.add(enumInfo.getEnumkode() + "=" + enumInfo.getEnumkodeId()));
-
-            filService.opprettAclEnumfil(enumkodeMapping, "alle/" + enumNavn, cdmVersjonNy);
-        });
     }
 
 }

@@ -26,6 +26,20 @@ public class PdfMalerTest {
         pdfMalerFacade.lagPdfMaler(SEDTYPER_U, V44);
         pdfMalerFacade.lagPdfMaler(SEDTYPER_X, V44);
     }
-
+    @Test
+    public void lager_pdfMaler_v43() {
+        // krever at kodeverk og euSedFundament er generert - og flyttet til main/../resources..
+        ResultaterFacade pdfMalerFacade = new ResultaterFacade();
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_A, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_F, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_H, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_DA, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_M, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_P, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_R, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_S, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_U, V43);
+        pdfMalerFacade.lagPdfMaler(SEDTYPER_X, V43);
+    }
 
 }

@@ -4,6 +4,8 @@ import eux.acl.generator.facade.ResultaterFacade;
 import eux.acl.generator.facade.TestdataFacade;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static eux.acl.generator.service.FilService.*;
 
 public class TestdataTest {
@@ -13,7 +15,6 @@ public class TestdataTest {
     @Test
     public void lag_testdata_v44() {
         TestdataFacade testdataFacade = new TestdataFacade();
-        testdataFacade.lagTestdata(SEDTYPER_A, V44, 0);
         testdataFacade.lagTestdata(SEDTYPER_F, V44, 0);
         testdataFacade.lagTestdata(SEDTYPER_H, V44, 0);
         testdataFacade.lagTestdata(SEDTYPER_DA, V44, 0);

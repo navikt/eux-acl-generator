@@ -1,15 +1,35 @@
 {
+  "A003.AdditionalInformation" : {
+    "index" : "12. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A003.AdditionalInformation.additionalInformation" : {
     "index" : "12.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "A003.Addresses" : {
+    "index" : "3. ",
+    "prompt" : "Adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.Addresses.Address[0]" : {
+    "index" : "3.1",
+    "prompt" : "Adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "A003.Addresses.Address[0].Address" : {
+    "index" : "3.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A003.Addresses.Address[0].Address.buildingName" : {
     "index" : "3.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A003.Addresses.Address[0].Address.country.value[0]" : {
+  "A003.Addresses.Address[0].Address.country" : {
     "index" : "3.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -17,7 +37,7 @@
   },
   "A003.Addresses.Address[0].Address.postalCode" : {
     "index" : "3.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A003.Addresses.Address[0].Address.region" : {
@@ -35,7 +55,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "A003.Addresses.Address[0].type.value[0]" : {
+  "A003.Addresses.Address[0].type" : {
     "index" : "3.1.1. ",
     "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
@@ -46,7 +66,12 @@
     },
     "enumName" : "EESSIAddressType"
   },
-  "A003.ArticleRegulationECNo8832004Or9872009.articleRegulationECNo8832004Or9872009.value[0]" : {
+  "A003.ArticleRegulationECNo8832004Or9872009" : {
+    "index" : "10. ",
+    "prompt" : "Artikkel i forordning (EF) nr. 883/2004 eller 987/2009",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.ArticleRegulationECNo8832004Or9872009.articleRegulationECNo8832004Or9872009" : {
     "index" : "10.1. ",
     "prompt" : "Artikkel i forordning (EF) nr. 883/2004 eller 987/2009",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -66,6 +91,11 @@
     },
     "enumName" : "ArticlesIA003Type"
   },
+  "A003.CompetentInstitutionIfDiffersFromSending" : {
+    "index" : "2. ",
+    "prompt" : "Kompetent institusjon (hvis annen enn avsenderinstitusjonen)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A003.CompetentInstitutionIfDiffersFromSending.institutionID" : {
     "index" : "2.1. ",
     "prompt" : "Institusjonens ID",
@@ -76,7 +106,22 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "A003.DecisionLegislationApplicable.Decision.AmendingDecision.InitialDecision.value[0]" : {
+  "A003.DecisionLegislationApplicable" : {
+    "index" : "8. ",
+    "prompt" : "Vedtak om lovvalg",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.DecisionLegislationApplicable.Decision" : {
+    "index" : "8.1. ",
+    "prompt" : "Vedtak",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.DecisionLegislationApplicable.Decision.AmendingDecision" : {
+    "index" : "8.1.2. ",
+    "prompt" : "Endringsvedtak",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "A003.DecisionLegislationApplicable.Decision.AmendingDecision.InitialDecision" : {
     "index" : "8.1.2.1. ",
     "prompt" : "Opprinnelig vedtak",
     "valuetype" : "_uxRadioButton",
@@ -91,7 +136,7 @@
     "prompt" : "Dato for forrige vedtak",
     "valuetype" : "_uxDateInput"
   },
-  "A003.DecisionLegislationApplicable.Decision.InitialDecision.value[0]" : {
+  "A003.DecisionLegislationApplicable.Decision.InitialDecision" : {
     "index" : "8.1.1. ",
     "prompt" : "Opprinnelig vedtak",
     "valuetype" : "_uxRadioButton",
@@ -101,9 +146,19 @@
     },
     "enumName" : "EESSIYesNoFixedYesType"
   },
+  "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies" : {
+    "index" : "8.4. ",
+    "prompt" : "Perioden vedtaket gjelder for",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.FixedPeriod" : {
+    "index" : "8.4.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.FixedPeriod.endDate" : {
     "index" : "8.4.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.FixedPeriod.startDate" : {
@@ -111,12 +166,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod" : {
+    "index" : "8.4.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod.startDate" : {
     "index" : "8.4.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "A003.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod.typeOpenPeriod" : {
     "index" : "8.4.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -126,13 +186,13 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
-  "A003.DecisionLegislationApplicable.memberStateWhichLegislationApplies.value[0]" : {
+  "A003.DecisionLegislationApplicable.memberStateWhichLegislationApplies" : {
     "index" : "8.2. ",
     "prompt" : "Medlemsland hvor lovgivningen er gjeldende",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "A003.DecisionLegislationApplicable.theDecisionAppliesForDurationActivityIndicator.value[0]" : {
+  "A003.DecisionLegislationApplicable.theDecisionAppliesForDurationActivityIndicator" : {
     "index" : "8.3. ",
     "prompt" : "Vedtaket gjelder for yrkesaktivitetens varighet",
     "valuetype" : "_uxRadioButton",
@@ -142,12 +202,27 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "A003.EmployerInMemberStateWhichLegislationApplies" : {
+    "index" : "4. ",
+    "prompt" : "Arbeidsgiver(e) i medlemsstaten hvor lovgivningen gjelder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0]" : {
+    "index" : "4.1",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_rinaArray"
+  },
+  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].Address" : {
+    "index" : "4.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].Address.buildingName" : {
     "index" : "4.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].Address.country.value[0]" : {
+  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].Address.country" : {
     "index" : "4.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -155,7 +230,7 @@
   },
   "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].Address.postalCode" : {
     "index" : "4.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].Address.region" : {
@@ -173,14 +248,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].IdentificationNumbers" : {
+    "index" : "4.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "4.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "4.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -192,10 +277,10 @@
   },
   "A003.EmployerInMemberStateWhichLegislationApplies.Employer[0].name" : {
     "index" : "4.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
   },
-  "A003.EmployerInMemberStateWhichLegislationApplies.activityMarginalAccordingArticle145bEC9872009Indicator.value[0]" : {
+  "A003.EmployerInMemberStateWhichLegislationApplies.activityMarginalAccordingArticle145bEC9872009Indicator" : {
     "index" : "4.2. ",
     "prompt" : "Dette er en bivirksomhet i samsvar med artikkel 14(5) i forordning (EF) nr. 987/2009.",
     "valuetype" : "_uxRadioButton",
@@ -205,12 +290,27 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "A003.EmployerInOtherMemberStateConcerned" : {
+    "index" : "5. ",
+    "prompt" : "Arbeidsgiver(e) i andre berørte medlemsland",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.EmployerInOtherMemberStateConcerned.Employer[0]" : {
+    "index" : "5.1",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_rinaArray"
+  },
+  "A003.EmployerInOtherMemberStateConcerned.Employer[0].Address" : {
+    "index" : "5.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A003.EmployerInOtherMemberStateConcerned.Employer[0].Address.buildingName" : {
     "index" : "5.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A003.EmployerInOtherMemberStateConcerned.Employer[0].Address.country.value[0]" : {
+  "A003.EmployerInOtherMemberStateConcerned.Employer[0].Address.country" : {
     "index" : "5.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -218,7 +318,7 @@
   },
   "A003.EmployerInOtherMemberStateConcerned.Employer[0].Address.postalCode" : {
     "index" : "5.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A003.EmployerInOtherMemberStateConcerned.Employer[0].Address.region" : {
@@ -236,14 +336,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A003.EmployerInOtherMemberStateConcerned.Employer[0].IdentificationNumbers" : {
+    "index" : "5.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.EmployerInOtherMemberStateConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A003.EmployerInOtherMemberStateConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "5.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A003.EmployerInOtherMemberStateConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A003.EmployerInOtherMemberStateConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "5.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -255,10 +365,10 @@
   },
   "A003.EmployerInOtherMemberStateConcerned.Employer[0].name" : {
     "index" : "5.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
   },
-  "A003.EmployerInOtherMemberStateConcerned.activityMarginalAccordingArticle145bEC9872009Indicator.value[0]" : {
+  "A003.EmployerInOtherMemberStateConcerned.activityMarginalAccordingArticle145bEC9872009Indicator" : {
     "index" : "5.2. ",
     "prompt" : "Dette er en bivirksomhet i samsvar med artikkel 14(5) i forordning (EF) nr. 987/2009.",
     "valuetype" : "_uxRadioButton",
@@ -268,9 +378,14 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "A003.InformationDeterminationProvisionalAccording.informationDeterminationProvisionalArt16EC9872009Indicator.value[0]" : {
+  "A003.InformationDeterminationProvisionalAccording" : {
+    "index" : "9. ",
+    "prompt" : "Informasjon: beslutningen er midlertidig i samsvar med artikkel 16 i forordning (EF) nr. 987/2009",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.InformationDeterminationProvisionalAccording.informationDeterminationProvisionalArt16EC9872009Indicator" : {
     "index" : "9.1. ",
-    "prompt" : "Informasjon",
+    "prompt" : "Informasjon: beslutningen er midlertidig i samsvar med artikkel 16 i forordning (EF) nr. 987/2009",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -278,13 +393,38 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "A003.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "A003.Person" : {
+    "index" : "1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.Person.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "A003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "A003.Person.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -302,7 +442,7 @@
   },
   "A003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "A003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -317,8 +457,23 @@
   },
   "A003.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "A003.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "A003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -330,7 +485,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "A003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "A003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -341,9 +496,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "A003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "A003.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -378,10 +533,10 @@
   },
   "A003.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "A003.Person.PersonIdentification.sex.value[0]" : {
+  "A003.Person.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -391,6 +546,31 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "A003.PlaceWork" : {
+    "index" : "7. ",
+    "prompt" : "Arbeidssted(er)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.PlaceWork.CountriesWork[0]" : {
+    "index" : "7.2",
+    "prompt" : "Arbeidsland",
+    "valuetype" : "_rinaArray"
+  },
+  "A003.PlaceWork.CountriesWork[0].PlaceWork" : {
+    "index" : "7.2.2. ",
+    "prompt" : "Arbeidssted(er)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0]" : {
+    "index" : "2.1",
+    "prompt" : "Arbeidssted",
+    "valuetype" : "_rinaArray"
+  },
+  "A003.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address" : {
+    "index" : "7.2.2.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A003.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.buildingName" : {
     "index" : "7.2.2.1.3.2. ",
@@ -427,13 +607,13 @@
     "prompt" : "Flaggstat/hjemmebase",
     "valuetype" : "_uxTextInput"
   },
-  "A003.PlaceWork.CountriesWork[0].countryWork.value[0]" : {
+  "A003.PlaceWork.CountriesWork[0].countryWork" : {
     "index" : "7.2.1. ",
     "prompt" : "Arbeidsland",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "A003.PlaceWork.aFixedPlaceWorkExistsIndicator.value[0]" : {
+  "A003.PlaceWork.aFixedPlaceWorkExistsIndicator" : {
     "index" : "7.1. ",
     "prompt" : "Fast arbeidssted",
     "valuetype" : "_uxRadioButton",
@@ -443,7 +623,12 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "A003.RulesApplyProvidedForByRegulationEC883.articleRegulationECNo140871WhichApplies.value[0]" : {
+  "A003.RulesApplyProvidedForByRegulationEC883" : {
+    "index" : "11. ",
+    "prompt" : "Overgangsregler gjelder i henhold til forordning (EF) 883/2004.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.RulesApplyProvidedForByRegulationEC883.articleRegulationECNo140871WhichApplies" : {
     "index" : "11.1. ",
     "prompt" : "Artikkel i gjeldende forordning (EF) nr. 1408/71",
     "valuetype" : "_uxRadioButton",
@@ -456,12 +641,27 @@
     },
     "enumName" : "ArticlesRegulationEnumType"
   },
+  "A003.SelfEmployment" : {
+    "index" : "6. ",
+    "prompt" : "Selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.SelfEmployment.SelfEmployment[0]" : {
+    "index" : "6.1",
+    "prompt" : "Selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "A003.SelfEmployment.SelfEmployment[0].Address" : {
+    "index" : "6.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A003.SelfEmployment.SelfEmployment[0].Address.buildingName" : {
     "index" : "6.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A003.SelfEmployment.SelfEmployment[0].Address.country.value[0]" : {
+  "A003.SelfEmployment.SelfEmployment[0].Address.country" : {
     "index" : "6.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -469,7 +669,7 @@
   },
   "A003.SelfEmployment.SelfEmployment[0].Address.postalCode" : {
     "index" : "6.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A003.SelfEmployment.SelfEmployment[0].Address.region" : {
@@ -487,14 +687,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A003.SelfEmployment.SelfEmployment[0].IdentificationNumbers" : {
+    "index" : "6.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A003.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A003.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "6.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A003.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A003.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "6.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -506,7 +716,12 @@
   },
   "A003.SelfEmployment.SelfEmployment[0].name" : {
     "index" : "6.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "A003.sedTitle" : {
+    "index" : "A003",
+    "prompt" : "A003 - Beslutning om lovvalg",
+    "valuetype" : "_rinaRoot"
   }
 }

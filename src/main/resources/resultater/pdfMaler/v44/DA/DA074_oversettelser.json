@@ -1,4 +1,19 @@
 {
+  "DA074.GlobalNoteDecisionIROIO" : {
+    "index" : "1. ",
+    "prompt" : "Global Note om vedtak IRO_IO",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund" : {
+    "index" : "1.6. ",
+    "prompt" : "Refusjonsmåte",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundBankTransfer.BankAccountDebtorLiaisonBody" : {
+    "index" : "1.6.2.1. ",
+    "prompt" : "Bankkonto til debitorinstitusjonens samarbeidsorgan",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundBankTransfer.BankAccountDebtorLiaisonBody.BICSWIFT" : {
     "index" : "1.6.2.1.2. ",
     "prompt" : "BIC-SWIFT",
@@ -6,15 +21,20 @@
   },
   "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundBankTransfer.BankAccountDebtorLiaisonBody.IBAN" : {
     "index" : "1.6.2.1.1. ",
-    "prompt" : "Oppgi IBAN til bankkonto som pengenes skal overføres til. IBAN er det internasjonale systemet for å identifisere bankkonti over landegrensene.",
+    "prompt" : "IBAN",
     "valuetype" : "_uxTextInput"
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundOffset" : {
+    "index" : "1.6.3. ",
+    "prompt" : "Fyll ut hvis «Refusjonsmåte» = «Motregning mot refusjonskrav som fremdeles pågår»",
+    "valuetype" : "_uxHiddenGroupContainer"
   },
   "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundOffset.globalCLAReferenceCreditorLiaisonBody" : {
     "index" : "1.6.3.1. ",
-    "prompt" : "Unikt saksnummer for åpent refusjonskrav (CLA) hvor en feilutbetaling vil avskrives.",
+    "prompt" : "Global CLA-referanse til kreditorinstitusjonens samarbeidsorgan",
     "valuetype" : "_uxTextInput"
   },
-  "DA074.GlobalNoteDecisionIROIO.MethodRefund.methodRefund.value[0]" : {
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.methodRefund" : {
     "index" : "1.6.1. ",
     "prompt" : "Refusjonsmåte",
     "valuetype" : "_uxRadioButton",
@@ -25,12 +45,17 @@
     },
     "enumName" : "RefundMethodType"
   },
+  "DA074.GlobalNoteDecisionIROIO.TotalAmountIndividualOverpayments" : {
+    "index" : "1.5. ",
+    "prompt" : "Totalbeløp for feilutbetaling på enkeltkrav",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA074.GlobalNoteDecisionIROIO.TotalAmountIndividualOverpayments.amount" : {
     "index" : "1.5.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "DA074.GlobalNoteDecisionIROIO.TotalAmountIndividualOverpayments.currency.value[0]" : {
+  "DA074.GlobalNoteDecisionIROIO.TotalAmountIndividualOverpayments.currency" : {
     "index" : "1.5.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -38,12 +63,12 @@
   },
   "DA074.GlobalNoteDecisionIROIO.dateSubmission" : {
     "index" : "1.7. ",
-    "prompt" : "Datoen nåværende SED er sendt",
+    "prompt" : "Leveringsdato",
     "valuetype" : "_uxDateInput"
   },
   "DA074.GlobalNoteDecisionIROIO.globalACPIOReferenceLiaisonBody" : {
     "index" : "1.2. ",
-    "prompt" : "Unikt saksnummer for aksept av IO hentet fra den globale delen i DA073A,saksnummeret gjør at det individuelle beslutningen på IOen (DA074) kan knyttes til den aksepterte IOen (DA073C) og saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Global ACP_IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA074.GlobalNoteDecisionIROIO.globalDecisionIOReferenceDebtorLiaisonBody" : {
@@ -53,13 +78,28 @@
   },
   "DA074.GlobalNoteDecisionIROIO.globalIOReferenceLiaisonBody" : {
     "index" : "1.1. ",
-    "prompt" : "Unikt saksnummer for IOen gitt i DA071, saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Global IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA074.GlobalNoteDecisionIROIO.totalNumberIndividualDecisionIO" : {
     "index" : "1.4. ",
     "prompt" : "Totalt antall enkeltkrav IO-er",
     "valuetype" : "_uxTextInput"
+  },
+  "DA074.IndividualDecisionIOs" : {
+    "index" : "2. ",
+    "prompt" : "Individuell beslutning IO",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0]" : {
+    "index" : "2.1",
+    "prompt" : "Enkeltvedtak IO",
+    "valuetype" : "_rinaArray"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDCreditorInstitution" : {
+    "index" : "2.1.1. ",
+    "prompt" : "ID-nummeret til kreditorinstitusjonen",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDCreditorInstitution.institutionID" : {
     "index" : "2.1.1.1. ",
@@ -71,6 +111,11 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDDebtorInstitution" : {
+    "index" : "2.1.2. ",
+    "prompt" : "ID-nummeret til debitorinstitusjonen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDDebtorInstitution.institutionID" : {
     "index" : "2.1.2.1. ",
     "prompt" : "Institusjonens ID",
@@ -81,6 +126,16 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits" : {
+    "index" : "2.1.4. ",
+    "prompt" : "Mottaker av ytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonIdentificationNumber" : {
+    "index" : "2.1.4.4. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInCompetentMemberState" : {
     "index" : "2.1.4.4.1. ",
     "prompt" : "Personens PIN i kompetent EU-land",
@@ -90,6 +145,11 @@
     "index" : "2.1.4.4.2. ",
     "prompt" : "Personens PIN i oppholds- eller bostedslandet i EU",
     "valuetype" : "_uxTextInput"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation" : {
+    "index" : "2.1.4.1. ",
+    "prompt" : "Personopplysninger",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation.dateBirth" : {
     "index" : "2.1.4.1.3. ",
@@ -106,7 +166,7 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation.sex.value[0]" : {
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation.sex" : {
     "index" : "2.1.4.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -127,9 +187,14 @@
     "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References" : {
+    "index" : "2.1.3. ",
+    "prompt" : "Referanser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.globalACPIOReferenceLiaisonBody" : {
     "index" : "2.1.3.2. ",
-    "prompt" : "Unikt saksnummer for aksept av IO hentet fra den globale delen i DA073A,saksnummeret gjør at det individuelle beslutningen på IOen (DA074) kan knyttes til den aksepterte IOen (DA073C) og saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Global ACP_IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.globalDecisionIOReferenceDebtorLiaisonBody" : {
@@ -139,12 +204,12 @@
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.globalIOReferenceLiaisonBody" : {
     "index" : "2.1.3.1. ",
-    "prompt" : "Unikt saksnummer for IOen hentet fra den globale delen i DA071, saksnummeret gjør at den individuelle avgjørelsen i IOen kan knyttes til den globale delen av IO (DA071) og saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Global IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.individualACPIONumberLiaisonBody" : {
     "index" : "2.1.3.5. ",
-    "prompt" : "Saksnummeret til individuell akseptert IO hentet fra den individuelle delen av DA073A, saksnummeret gjør at det individuelle beslutningen på IOen (DA074) kan knyttes til den individuelt aksepterte IOen (DA073A) og saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Individuelt ACP_IO nummer til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.individualIODecisionNumberDebtorLiaisonBody" : {
@@ -154,19 +219,29 @@
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.individualIONumberLiaisonBody" : {
     "index" : "2.1.3.4. ",
-    "prompt" : "Unikt saksnummer for individuell del av IO hentet fra den individuelle delen i DA071, saksnummeret gjør at det individuelle avgjørelsen på IOen (DA074) kan knyttes til den individuelle delen i IOen (DA071) og saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Individuelt IO nummer til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundAmount" : {
+    "index" : "2.1.6. ",
+    "prompt" : "Refusjonsbeløp",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundAmount.amount" : {
     "index" : "2.1.6.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundAmount.currency.value[0]" : {
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundAmount.currency" : {
     "index" : "2.1.6.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundPeriod" : {
+    "index" : "2.1.5. ",
+    "prompt" : "Refusjonsperiode",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundPeriod.endDate" : {
     "index" : "2.1.5.2. ",
@@ -175,7 +250,12 @@
   },
   "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundPeriod.startDate" : {
     "index" : "2.1.5.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "DA074.sedTitle" : {
+    "index" : "DA074",
+    "prompt" : "DA074 - Vedtak om tilbakebetaling av feilutbetaling (IRO_IO)",
+    "valuetype" : "_rinaRoot"
   }
 }

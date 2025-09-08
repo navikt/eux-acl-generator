@@ -1,136 +1,196 @@
 {
+  "X012.CaseContext" : {
+    "ledetekst" : "Sakens kontekst",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "X012.CaseContext.EmployerContext" : {
+    "ledetekst" : "Kontekst for arbeidsgiver",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "1.2. "
+  },
+  "X012.CaseContext.EmployerContext.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.3. "
+  },
   "X012.CaseContext.EmployerContext.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "X012.CaseContext.EmployerContext.Address.country.value[0]" : {
+  "X012.CaseContext.EmployerContext.Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.2.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "X012.CaseContext.EmployerContext.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "X012.CaseContext.EmployerContext.Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "X012.CaseContext.EmployerContext.Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "X012.CaseContext.EmployerContext.Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "X012.CaseContext.EmployerContext.IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.2. "
+  },
+  "X012.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.2.2.1"
+  },
   "X012.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "X012.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "X012.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.2.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "X012.CaseContext.EmployerContext.name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
+  "X012.CaseContext.PersonContext" : {
+    "ledetekst" : "Kontekst for person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "1.1. "
+  },
   "X012.CaseContext.PersonContext.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "1.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "1.1.3. "
   },
   "X012.CaseContext.PersonContext.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "X012.CaseContext.PersonContext.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
-  "X012.CaseContext.PersonContext.sex.value[0]" : {
+  "X012.CaseContext.PersonContext.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "379e16fd-8890-e611-80d0-000d3a22e8cd"
   },
+  "X012.CaseContext.ReimbursementContext" : {
+    "ledetekst" : "Kontekst for refusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "1.3. "
+  },
   "X012.CaseContext.ReimbursementContext.reimbursementRequestID" : {
+    "ledetekst" : "ID-nummer for krav om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.3.1. ",
-    "ledetekst" : "ID-nummer for krav om refusjon"
+    "indeks" : "1.3.1. "
   },
   "X012.CaseContext.ReimbursementContext.totalNumberIndividualClaims" : {
+    "ledetekst" : "Totalt antall enkeltkrav",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.3.2. ",
-    "ledetekst" : "Totalt antall enkeltkrav"
+    "indeks" : "1.3.2. "
+  },
+  "X012.WeRequestClarificationFollowing" : {
+    "ledetekst" : "Vi ber om klargjøring av følgende",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "X012.WeRequestClarificationFollowing.Clarification[0]" : {
+    "ledetekst" : "Klargjøring",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
   },
   "X012.WeRequestClarificationFollowing.Clarification[0].item" : {
+    "ledetekst" : "Punkt",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2. ",
-    "ledetekst" : "Punkt",
     "tekstlengde" : "65"
   },
   "X012.WeRequestClarificationFollowing.Clarification[0].pleaseProvideMoreDetailsIf99OtherSelected" : {
+    "ledetekst" : "Gi nærmere opplysninger hvis du velger \\",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "2.1.4. ",
-    "ledetekst" : "Gi nærmere opplysninger hvis du velger \\",
     "tekstlengde" : "255"
   },
-  "X012.WeRequestClarificationFollowing.Clarification[0].reason.value[0]" : {
+  "X012.WeRequestClarificationFollowing.Clarification[0].reason" : {
+    "ledetekst" : "Grunn:",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.3. ",
-    "ledetekst" : "Grunn",
     "enumNavn" : "ReasonClarifyContentType",
     "enumNavnId" : "233e7dce-9218-e611-80ea-000c292ed0d7"
   },
   "X012.WeRequestClarificationFollowing.Clarification[0].section" : {
+    "ledetekst" : "Del",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1. ",
-    "ledetekst" : "Del",
     "tekstlengde" : "65"
+  },
+  "X012.sedTitle" : {
+    "ledetekst" : "Klargjør innhold",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "X012"
   }
 }

@@ -1,91 +1,145 @@
 {
+  "U025.GeneralInformation" : {
+    "ledetekst" : "Generell informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "U025.GeneralInformation.AmountReceived" : {
+    "ledetekst" : "Mottatt beløp",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.4. "
+  },
   "U025.GeneralInformation.AmountReceived.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.4.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "2.4.1. "
   },
-  "U025.GeneralInformation.AmountReceived.currency.value[0]" : {
+  "U025.GeneralInformation.AmountReceived.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.4.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
   "U025.GeneralInformation.datePaymentReceived" : {
+    "ledetekst" : "Dato for mottatt utbetaling",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.5. ",
-    "ledetekst" : "Datoen da institusjonen som anmodet om tilbakebetaling, mottok betalingen"
+    "indeks" : "2.5. "
   },
   "U025.GeneralInformation.reimbursementPaymentNotificationID" : {
+    "ledetekst" : "ID for melding om tilbakebetaling",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.2. ",
-    "ledetekst" : "Teknisk felt"
+    "indeks" : "2.2. "
   },
   "U025.GeneralInformation.reimbursementReceiptOrClosingNotificationID" : {
+    "ledetekst" : "ID Kvittering for tilbakebetaling eller avslutningsmelding",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.3. ",
-    "ledetekst" : "ID Kvittering for tilbakebetaling eller avslutningsmelding"
+    "indeks" : "2.3. "
   },
   "U025.GeneralInformation.reimbursementRequestID" : {
+    "ledetekst" : "ID-nummer for krav om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1. ",
-    "ledetekst" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling')."
+    "indeks" : "2.1. "
+  },
+  "U025.LocalCaseNumbers" : {
+    "ledetekst" : "Lokale saksnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "ledetekst" : "Lokalt saksnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3. "
   },
   "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.3.1. "
   },
   "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
   "U025.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "ledetekst" : "Saksnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Saksnummer",
     "tekstlengde" : "65"
   },
-  "U025.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Angi landet der saksnummeret kan brukes.",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
   },
+  "U025.ReimbursementRequestClosed" : {
+    "ledetekst" : "Refusjonskrav er avsluttet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3. "
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed" : {
+    "ledetekst" : "Fyll ut hvis «Anmodning om refusjon lukket» = «Nei»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.2. "
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.PleaseFillInFollowingIfReasonOtherReason" : {
+    "ledetekst" : "Fyll ut hvis «Årsak til å ikke lukke anmodning om refusjon» = «99 - Annen grunn»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.2.2. "
+  },
   "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.PleaseFillInFollowingIfReasonOtherReason.reason" : {
+    "ledetekst" : "Grunn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.2.2.1. ",
-    "ledetekst" : "Grunn",
     "tekstlengde" : "500"
   },
-  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.reasonForNotClosingReimbursementRequest.value[0]" : {
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.reasonForNotClosingReimbursementRequest" : {
+    "ledetekst" : "Årsaken til at anmodning om refusjon ikke avsluttes",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiCheckbox",
     "indeks" : "3.2.1. ",
-    "ledetekst" : "01 - 'Det finnes ennå noen tilfeller som skal betales'",
     "enumNavn" : "ReasonForUnemploymentRequestNotAcceptedMultipleType",
     "enumNavnId" : "858c07e7-9218-e611-80ea-000c292ed0d7"
   },
-  "U025.ReimbursementRequestClosed.reimbursementRequestClosedIndicator.value[0]" : {
+  "U025.ReimbursementRequestClosed.reimbursementRequestClosedIndicator" : {
+    "ledetekst" : "Refusjonskrav er avsluttet",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "3.1. ",
-    "ledetekst" : "Refusjonskrav er avsluttet",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "838c07e7-9218-e611-80ea-000c292ed0d7"
+  },
+  "U025.sedTitle" : {
+    "ledetekst" : "Kvittering for refusjon/meddelelse om at refusjonssak avsluttes",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "U025"
   }
 }

@@ -17,12 +17,13 @@ public class TestdataService {
     public void lagSedMedTestdata(String sedType, String cdmVersjon, int enumkodeNr) {
         TreeMap<String, EuSedFundament> euSedStiVsEuSedStiInfo = filService.lesEuSedFundamentFil(sedType, cdmVersjon);
         int[] datoTeller = {2001};
+        int[] tekstTeller = {1};
         TreeMap<String, String> testSedLinjer = new TreeMap<>();
         euSedStiVsEuSedStiInfo.forEach((s, fundament) -> {
             String testdata = "";
-
             if ("tekst".equals(fundament.getVerdiType())) {
-                testdata = "æøå";
+                testdata = "æøå" + tekstTeller[0];
+                tekstTeller[0]++;
             } else if ("dato".equals(fundament.getVerdiType())) {
                 testdata =  datoTeller[0] + "-01-01";
                 datoTeller[0]++;
@@ -34,6 +35,11 @@ public class TestdataService {
                 } else {
                     testdata = enumkodeNrVsInfo.get(enumkodeNrVsInfo.size() - 1).getEnumkode();
                 }
+            } else {
+                return;
+            }
+            if (testdata == null || testdata.isEmpty()) {
+                testdata = fundament.getEnumNavn();
             }
             testSedLinjer.put(s, testdata);
             String stiUtenEnum = s.replace(".value[0]", "");
@@ -45,8 +51,6 @@ public class TestdataService {
             }
 
         });
-//        testSedLinjer.put(sedType + ".sedGVer", cdmVersjon.split("\\.")[0]);
-//        testSedLinjer.put(sedType + ".sedVer", cdmVersjon.split("\\.")[1]);
         String testSedJson = JsonUnflattener.unflatten(testSedLinjer);
         filService.opprettSedMedTestdata(testSedJson, sedType, cdmVersjon);
     }

@@ -6,6 +6,7 @@ import eux.acl.generator.modell.EuSedFundament;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class EuSedService {
     private final FilService filService;
@@ -17,11 +18,11 @@ public class EuSedService {
     }
 
     public void lagEuSedFundamentOgSkrivTilFil(String sedType,
-                                               Map<String, String> tekstIdVsEnumtype,
+                                               Map<String, String> tekstIdVsEnumNavn,
                                                Map<String, String> tekstIdVsTekst,
                                                String cdmVersjon) {
         Map<String, Object> cdmMetaSed = filService.lesCdmMetaFilForEnSed(sedType, cdmVersjon);
-        CdmUttrekk cdmUttrekk = cdmMetaService.lagCdmUttrekk(cdmMetaSed, tekstIdVsTekst, tekstIdVsEnumtype);
+        CdmUttrekk cdmUttrekk = cdmMetaService.lagCdmUttrekk(cdmMetaSed, tekstIdVsTekst, tekstIdVsEnumNavn);
         TreeMap<String, EuSedFundament> euSedFundament = cdmMetaService.lagEuSedFundament(cdmUttrekk);
         filService.skrivEuSedMalFundamentTilFil(euSedFundament, sedType, cdmVersjon);
     }
@@ -41,31 +42,38 @@ public class EuSedService {
     }
 
     public EuSedCdmVersjonsdiff diffMellomUlikeCdmSedVersjoner(String sedType, String cdmGammelVersjon, String cdmNyVersjon) {
-        List<String> cdmNyVersjonListe = lagCdmEuSedFraFundament(sedType, cdmNyVersjon);
-        List<String> cdmGammelVersjonListe = lagCdmEuSedFraFundament(sedType, cdmGammelVersjon);
-        if (cdmNyVersjonListe == null || cdmGammelVersjonListe == null) {
+        TreeMap<String, EuSedFundament> nyCdmSedVersjon = lagCdmEuSedMedFundament(sedType, cdmNyVersjon);
+        TreeMap<String, EuSedFundament>  gammelCdmSedVersjon = lagCdmEuSedMedFundament(sedType, cdmGammelVersjon);
+        if (nyCdmSedVersjon == null || gammelCdmSedVersjon == null) {
             return null;
         }
+        List<String> cdmNyVersjonListe = nyCdmSedVersjon.keySet().stream().toList();
+        List<String> cdmGammelVersjonListe = gammelCdmSedVersjon.keySet().stream().toList();
         List<String> uendredeStierListe = new ArrayList<>();
         List<String> nyeStierListe = new ArrayList<>();
         List<String> utgaatteStierListe = new ArrayList<>();
-        cdmNyVersjonListe.forEach(l -> {
-            if (cdmGammelVersjonListe.contains(l)) {
-                uendredeStierListe.add(l);
+        cdmNyVersjonListe.forEach(sti -> {
+            if (cdmGammelVersjonListe.contains(sti)) {
+                uendredeStierListe.add(sti);
             } else {
-                nyeStierListe.add(l);
+                nyeStierListe.add(sti);
             }
         });
-        cdmGammelVersjonListe.forEach(l -> {
-            if (!uendredeStierListe.contains(l)) {
-                utgaatteStierListe.add(l);
+        cdmGammelVersjonListe.forEach(sti -> {
+            if (!uendredeStierListe.contains(sti)) {
+                utgaatteStierListe.add(sti);
             }
         });
         return new EuSedCdmVersjonsdiff(uendredeStierListe, nyeStierListe, utgaatteStierListe);
     }
 
-    public List<String> lagCdmEuSedFraFundament(String sedType, String cdmVersjon) {
-        Map<String, EuSedFundament> euSedFundament = filService.lesEuSedFundamentFil(sedType, cdmVersjon);
-        return euSedFundament.keySet().stream().sorted().toList();
+    public TreeMap<String, EuSedFundament>  lagCdmEuSedMedFundament(String sedType, String cdmVersjon) {
+        Map<String, EuSedFundament> alleLeddStiVsFundament = filService.lesEuSedFundamentFil(sedType, cdmVersjon);
+
+        return new TreeMap<>(
+                alleLeddStiVsFundament.entrySet().stream()
+                        .filter(entry ->
+                                List.of("tekst", "enum", "dato").contains(entry.getValue().getVerdiType()))
+                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)));
     }
 }

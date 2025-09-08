@@ -1,12 +1,32 @@
 {
+  "P11000.AdditionalInformation" : {
+    "index" : "6. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P11000.AdditionalInformation.additionalInformation" : {
     "index" : "6.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P11000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
+  "P11000.InsuredPerson" : {
+    "index" : "2. ",
+    "prompt" : "Forsikret person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.AdditionalInformationPerson" : {
+    "index" : "2.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.1. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
     "index" : "2.2.1.1. ",
-    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
@@ -20,12 +40,17 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "P11000.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "index" : "2.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P11000.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "2.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.InsuredPerson.AdditionalInformationPerson.Address.country.value[0]" : {
+  "P11000.InsuredPerson.AdditionalInformationPerson.Address.country" : {
     "index" : "2.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -33,7 +58,7 @@
   },
   "P11000.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
     "index" : "2.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P11000.InsuredPerson.AdditionalInformationPerson.Address.region" : {
@@ -51,19 +76,44 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson" : {
+    "index" : "2.2.3. ",
+    "prompt" : "Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "index" : "2.2.3.2. ",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "2.2.3.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
   "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
     "index" : "2.2.3.2.1.1. ",
     "prompt" : "E-postadresse",
     "valuetype" : "_uxTextInput"
   },
+  "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "2.2.3.1. ",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "2.2.3.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
   "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
     "index" : "2.2.3.1.1.2. ",
-    "prompt" : "Angi telefonnummer med nasjonal kode hvis dette finnes.",
+    "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "P11000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
     "index" : "2.2.3.1.1.1. ",
-    "prompt" : "Angi hvilken type nummer som er gitt",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Hjem",
@@ -72,7 +122,22 @@
     },
     "enumName" : "EESSITelephoneNumberType"
   },
-  "P11000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P11000.InsuredPerson.PersonIdentification" : {
+    "index" : "2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -90,7 +155,7 @@
   },
   "P11000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "P11000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -105,8 +170,23 @@
   },
   "P11000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.7.1.4.1. ",
@@ -118,7 +198,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -129,9 +209,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P11000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -166,10 +246,10 @@
   },
   "P11000.InsuredPerson.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.InsuredPerson.PersonIdentification.sex.value[0]" : {
+  "P11000.InsuredPerson.PersonIdentification.sex" : {
     "index" : "2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -179,6 +259,21 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "P11000.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P11000.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P11000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -195,15 +290,30 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "P11000.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
+  "P11000.RecipientSurvivorPension" : {
+    "index" : "3. ",
+    "prompt" : "Mottaker av etterlattepensjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson" : {
+    "index" : "3.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "3.2.1. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
     "index" : "3.2.1.1. ",
-    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
@@ -217,12 +327,17 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.Address" : {
+    "index" : "3.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P11000.RecipientSurvivorPension.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "3.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.Address.country.value[0]" : {
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.Address.country" : {
     "index" : "3.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -230,7 +345,7 @@
   },
   "P11000.RecipientSurvivorPension.AdditionalInformationPerson.Address.postalCode" : {
     "index" : "3.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P11000.RecipientSurvivorPension.AdditionalInformationPerson.Address.region" : {
@@ -248,19 +363,44 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson" : {
+    "index" : "3.2.3. ",
+    "prompt" : "Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "index" : "3.2.3.2. ",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "3.2.3.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
   "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
     "index" : "3.2.3.2.1.1. ",
     "prompt" : "E-postadresse",
     "valuetype" : "_uxTextInput"
   },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "3.2.3.1. ",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "3.2.3.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
   "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
     "index" : "3.2.3.1.1.2. ",
-    "prompt" : "Angi telefonnummer med nasjonal kode hvis dette finnes.",
+    "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "P11000.RecipientSurvivorPension.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
     "index" : "3.2.3.1.1.1. ",
-    "prompt" : "Angi hvilken type nummer som er gitt",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Hjem",
@@ -269,7 +409,22 @@
     },
     "enumName" : "EESSITelephoneNumberType"
   },
-  "P11000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P11000.RecipientSurvivorPension.PersonIdentification" : {
+    "index" : "3.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "3.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -287,7 +442,7 @@
   },
   "P11000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "3.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "P11000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -302,8 +457,23 @@
   },
   "P11000.RecipientSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "3.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "3.1.7.1.4.1. ",
@@ -315,7 +485,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "3.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -326,9 +496,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P11000.RecipientSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "3.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -363,10 +533,10 @@
   },
   "P11000.RecipientSurvivorPension.PersonIdentification.forenameAtBirth" : {
     "index" : "3.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "P11000.RecipientSurvivorPension.PersonIdentification.sex.value[0]" : {
+  "P11000.RecipientSurvivorPension.PersonIdentification.sex" : {
     "index" : "3.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -377,7 +547,12 @@
     },
     "enumName" : "EESSISexType"
   },
-  "P11000.ReferencePerson.thisRequestMadeWithReferencePersonNamedIn.value[0]" : {
+  "P11000.ReferencePerson" : {
+    "index" : "4. ",
+    "prompt" : "Referanse til personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.ReferencePerson.thisRequestMadeWithReferencePersonNamedIn" : {
     "index" : "4.1. ",
     "prompt" : "Denne anmodning er fremmet med henvisning til personen navngitt i",
     "valuetype" : "_uxRadioButton",
@@ -387,9 +562,24 @@
     },
     "enumName" : "PSection2Section3Type"
   },
+  "P11000.RequestForPensionAmount" : {
+    "index" : "5. ",
+    "prompt" : "Anmodning om pensjonsbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested" : {
+    "index" : "5.2. ",
+    "prompt" : "Periode for anmodet pensjonsbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested.FixedPeriod" : {
+    "index" : "5.2.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested.FixedPeriod.endDate" : {
     "index" : "5.2.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested.FixedPeriod.startDate" : {
@@ -397,12 +587,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested.OpenPeriod" : {
+    "index" : "5.2.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested.OpenPeriod.startDate" : {
     "index" : "5.2.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P11000.RequestForPensionAmount.PeriodForWhichPensionAmountRequested.OpenPeriod.typeOpenPeriod" : {
     "index" : "5.2.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -412,7 +607,7 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
-  "P11000.RequestForPensionAmount.request.value[0]" : {
+  "P11000.RequestForPensionAmount.request" : {
     "index" : "5.1. ",
     "prompt" : "Forespørsel",
     "valuetype" : "_uxRadioButton",
@@ -421,5 +616,10 @@
       "02" : "Send oss SED P12000 med informasjon om endret pensjonsbeløp og dato for endringen."
     },
     "enumName" : "RequestForPensionAmountType"
+  },
+  "P11000.sedTitle" : {
+    "index" : "P11000",
+    "prompt" : "P11000 - Anmodning om pensjonsbeløp",
+    "valuetype" : "_rinaRoot"
   }
 }

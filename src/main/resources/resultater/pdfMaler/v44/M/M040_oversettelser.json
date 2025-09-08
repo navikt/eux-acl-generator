@@ -1,8 +1,28 @@
 {
+  "M040.AdditionalInformation" : {
+    "index" : "7. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.AdditionalInformation.additionalInformation" : {
     "index" : "7.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "M040.Claimant" : {
+    "index" : "1. ",
+    "prompt" : "Søker",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.Claimant.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.Claimant.AdditionalInformationPerson.PreviousName" : {
+    "index" : "1.2.2. ",
+    "prompt" : "Tidligere navn",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M040.Claimant.AdditionalInformationPerson.PreviousName.previousFamilyName" : {
     "index" : "1.2.2.1. ",
@@ -14,13 +34,28 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "M040.Claimant.AdditionalInformationPerson.nationality.value[0]" : {
+  "M040.Claimant.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "M040.Claimant.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -38,7 +73,7 @@
   },
   "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -53,8 +88,23 @@
   },
   "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -66,7 +116,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -77,9 +127,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -114,10 +164,10 @@
   },
   "M040.Claimant.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "M040.Claimant.PersonIdentification.sex.value[0]" : {
+  "M040.Claimant.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -128,17 +178,37 @@
     },
     "enumName" : "EESSISexType"
   },
+  "M040.InformationPayment" : {
+    "index" : "5. ",
+    "prompt" : "Informasjon om betaling",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.InformationPayment.BankDetails" : {
+    "index" : "5.2. ",
+    "prompt" : "Bankinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount" : {
+    "index" : "5.2.2. ",
+    "prompt" : "Ikke-SEPA-konto",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "M040.InformationPayment.BankDetails.NonSEPAAccount.BICSWIFT" : {
     "index" : "5.2.2.2. ",
     "prompt" : "BIC-SWIFT",
     "valuetype" : "_uxTextInput"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress" : {
+    "index" : "5.2.2.4. ",
+    "prompt" : "Bankens adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.buildingName" : {
     "index" : "5.2.2.4.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.country.value[0]" : {
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.country" : {
     "index" : "5.2.2.4.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -146,7 +216,7 @@
   },
   "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.postalCode" : {
     "index" : "5.2.2.4.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.region" : {
@@ -174,6 +244,11 @@
     "prompt" : "Bankens navn",
     "valuetype" : "_uxTextInput"
   },
+  "M040.InformationPayment.BankDetails.SEPAAccount" : {
+    "index" : "5.2.1. ",
+    "prompt" : "SEPA-konto",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "M040.InformationPayment.BankDetails.SEPAAccount.BICSWIFT" : {
     "index" : "5.2.1.2. ",
     "prompt" : "BIC-SWIFT",
@@ -181,10 +256,10 @@
   },
   "M040.InformationPayment.BankDetails.SEPAAccount.IBAN" : {
     "index" : "5.2.1.1. ",
-    "prompt" : "Oppgi IBAN til bankkonto som pengenes skal overføres til. IBAN er det internasjonale systemet for å identifisere bankkonti over landegrensene.",
+    "prompt" : "IBAN",
     "valuetype" : "_uxTextInput"
   },
-  "M040.InformationPayment.paymentTo.value[0]" : {
+  "M040.InformationPayment.paymentTo" : {
     "index" : "5.1. ",
     "prompt" : "Utbetaling til",
     "valuetype" : "_uxRadioButton",
@@ -194,12 +269,27 @@
     },
     "enumName" : "EESSIClaimantRepresentativeType"
   },
+  "M040.InformationRepresentativeLegalGuardian" : {
+    "index" : "4. ",
+    "prompt" : "Informasjon om representant/verge",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian" : {
+    "index" : "4.2. ",
+    "prompt" : "Informasjon om representant/verge",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address" : {
+    "index" : "4.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.buildingName" : {
     "index" : "4.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.country.value[0]" : {
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.country" : {
     "index" : "4.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -207,7 +297,7 @@
   },
   "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.postalCode" : {
     "index" : "4.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.region" : {
@@ -227,10 +317,10 @@
   },
   "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.name" : {
     "index" : "4.2.1. ",
-    "prompt" : "Representantens navn, dvs. navnet på personen, eller navnet på en myndighet, for eksempel en overformynder som representerer søkeren.",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextAreaInput"
   },
-  "M040.InformationRepresentativeLegalGuardian.status.value[0]" : {
+  "M040.InformationRepresentativeLegalGuardian.status" : {
     "index" : "4.1. ",
     "prompt" : "Status",
     "valuetype" : "_uxRadioButton",
@@ -240,6 +330,11 @@
     },
     "enumName" : "MRepresentativeLegalGuardianType"
   },
+  "M040.Miscellaneous" : {
+    "index" : "6. ",
+    "prompt" : "Diverse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.Miscellaneous.dateClaim" : {
     "index" : "6.1. ",
     "prompt" : "Dato for krav",
@@ -247,8 +342,23 @@
   },
   "M040.Miscellaneous.remarks" : {
     "index" : "6.2. ",
-    "prompt" : "Anfør andre merknader som anses som nyttig tilleggsinformasjon.",
+    "prompt" : "Merknader",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "M040.PersonBenefitDetails" : {
+    "index" : "3. ",
+    "prompt" : "Informasjon om ytelser personen mottar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0]" : {
+    "index" : "3.1",
+    "prompt" : "Informasjon om ytelser personen mottar",
+    "valuetype" : "_rinaArray"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].Institution" : {
+    "index" : "3.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M040.PersonBenefitDetails.PersonBenefitDetails[0].Institution.institutionID" : {
     "index" : "3.1.4.1. ",
@@ -260,9 +370,19 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment" : {
+    "index" : "3.1.5. ",
+    "prompt" : "Utbetalingsperiode for ytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.FixedPeriod" : {
+    "index" : "3.1.5.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.FixedPeriod.endDate" : {
     "index" : "3.1.5.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.FixedPeriod.startDate" : {
@@ -270,12 +390,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.OpenPeriod" : {
+    "index" : "3.1.5.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.OpenPeriod.startDate" : {
     "index" : "3.1.5.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.OpenPeriod.typeOpenPeriod" : {
     "index" : "3.1.5.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -285,12 +410,17 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PleaseFillInFollowingIfBenefitsOtherBenefit" : {
+    "index" : "3.1.2. ",
+    "prompt" : "Fyll ut hvis «Ytelser» = «Andre ytelser»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.PersonBenefitDetails.PersonBenefitDetails[0].PleaseFillInFollowingIfBenefitsOtherBenefit.otherBenefit" : {
     "index" : "3.1.2.1. ",
     "prompt" : "Annen ytelse",
     "valuetype" : "_uxTextInput"
   },
-  "M040.PersonBenefitDetails.PersonBenefitDetails[0].benefits.value[0]" : {
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].benefits" : {
     "index" : "3.1.1. ",
     "prompt" : "Ytelser",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -310,7 +440,7 @@
     },
     "enumName" : "MBenefitTypePlusEarlyRetirementType"
   },
-  "M040.PersonBenefitDetails.PersonBenefitDetails[0].status.value[0]" : {
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].status" : {
     "index" : "3.1.3. ",
     "prompt" : "Status",
     "valuetype" : "_uxRadioButton",
@@ -322,23 +452,43 @@
     },
     "enumName" : "EESSIAppliedGrantedDeniedProvisionalType"
   },
+  "M040.PersonEmploymentSelfEmploymentDetails" : {
+    "index" : "2. ",
+    "prompt" : "Informasjon om personens ansettelsesforhold eller selvstendige næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.IfPersonStillPursuingOrIntendsTakeUpEmployment" : {
+    "index" : "2.2. ",
+    "prompt" : "Hvis personen fortsatt driver eller skal påbegynne ansettelsesforhold eller starte selvstendig næringsvirksomhet, oppgi månedlig inntektsbeløp fra aktuelt ansettelsesforhold/selvstendig næringsvirksomhet.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.PersonEmploymentSelfEmploymentDetails.IfPersonStillPursuingOrIntendsTakeUpEmployment.amount" : {
     "index" : "2.2.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.IfPersonStillPursuingOrIntendsTakeUpEmployment.currency.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.IfPersonStillPursuingOrIntendsTakeUpEmployment.currency" : {
     "index" : "2.2.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0]" : {
+    "index" : "2.5",
+    "prompt" : "Informasjon om siste arbeidsgiver",
+    "valuetype" : "_rinaArray"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address" : {
+    "index" : "2.5.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.buildingName" : {
     "index" : "2.5.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.country.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.country" : {
     "index" : "2.5.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -346,7 +496,7 @@
   },
   "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.postalCode" : {
     "index" : "2.5.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.region" : {
@@ -364,14 +514,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers" : {
+    "index" : "2.5.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "2.5.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "2.5.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -383,15 +543,25 @@
   },
   "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].name" : {
     "index" : "2.5.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment" : {
+    "index" : "2.6. ",
+    "prompt" : "Grunn til opphør i siste arbeidsforhold / selvstendige næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.FillInIfTerminationReason" : {
+    "index" : "2.6.2. ",
+    "prompt" : "Fyll ut hvis «Grunn til avsluttet arbeidsforhold» = «Annen»",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.FillInIfTerminationReason.otherTermination" : {
     "index" : "2.6.2.1. ",
     "prompt" : "Annet opphør",
     "valuetype" : "_uxTextInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.terminationReasonEmployment.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.terminationReasonEmployment" : {
     "index" : "2.6.1. ",
     "prompt" : "Årsak til avslutning av arbeidsforhold",
     "valuetype" : "_uxRadioButton",
@@ -407,12 +577,22 @@
     "prompt" : "Årsak til avslutning av selvstending næringsvirksomhet",
     "valuetype" : "_uxTextAreaInput"
   },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0]" : {
+    "index" : "2.1",
+    "prompt" : "Yrkesaktivitetens status",
+    "valuetype" : "_rinaArray"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonCeasedPursue" : {
+    "index" : "2.1.3. ",
+    "prompt" : "Personen arbeider ikke lenger med",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonCeasedPursue.date" : {
     "index" : "2.1.3.2. ",
     "prompt" : "Dato",
     "valuetype" : "_uxDateInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonCeasedPursue.personCeasedPursue.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonCeasedPursue.personCeasedPursue" : {
     "index" : "2.1.3.1. ",
     "prompt" : "Personen arbeider ikke lenger med",
     "valuetype" : "_uxRadioButton",
@@ -422,12 +602,17 @@
     },
     "enumName" : "EESSIEmploymentType"
   },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsRetireFrom" : {
+    "index" : "2.1.6. ",
+    "prompt" : "Personen skal pensjonere seg fra",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsRetireFrom.date" : {
     "index" : "2.1.6.2. ",
     "prompt" : "Dato",
     "valuetype" : "_uxDateInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsRetireFrom.personIntendsRetireFrom.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsRetireFrom.personIntendsRetireFrom" : {
     "index" : "2.1.6.1. ",
     "prompt" : "Personen skal pensjonere seg fra",
     "valuetype" : "_uxRadioButton",
@@ -437,12 +622,17 @@
     },
     "enumName" : "EESSIEmploymentType"
   },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsTakeUp" : {
+    "index" : "2.1.7. ",
+    "prompt" : "Personen ønsker å arbeide med",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsTakeUp.date" : {
     "index" : "2.1.7.2. ",
     "prompt" : "Dato",
     "valuetype" : "_uxDateInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsTakeUp.personIntendsTakeUp.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsTakeUp.personIntendsTakeUp" : {
     "index" : "2.1.7.1. ",
     "prompt" : "Personen ønsker å arbeide med",
     "valuetype" : "_uxRadioButton",
@@ -452,12 +642,17 @@
     },
     "enumName" : "EESSIEmploymentType"
   },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonReduced" : {
+    "index" : "2.1.4. ",
+    "prompt" : "Personen har redusert omfanget av",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonReduced.date" : {
     "index" : "2.1.4.2. ",
     "prompt" : "Dato",
     "valuetype" : "_uxDateInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonReduced.personReduced.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonReduced.personReduced" : {
     "index" : "2.1.4.1. ",
     "prompt" : "Personen har redusert omfanget av",
     "valuetype" : "_uxRadioButton",
@@ -467,12 +662,17 @@
     },
     "enumName" : "EESSIEmploymentType"
   },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonSuspended" : {
+    "index" : "2.1.5. ",
+    "prompt" : "Personen er i permisjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonSuspended.date" : {
     "index" : "2.1.5.2. ",
     "prompt" : "Dato",
     "valuetype" : "_uxDateInput"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonSuspended.personSuspended.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonSuspended.personSuspended" : {
     "index" : "2.1.5.1. ",
     "prompt" : "Personen er i permisjon",
     "valuetype" : "_uxRadioButton",
@@ -482,13 +682,13 @@
     },
     "enumName" : "EESSIEmploymentType"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].country.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].country" : {
     "index" : "2.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].personStillPursuing.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].personStillPursuing" : {
     "index" : "2.1.2. ",
     "prompt" : "Personen arbeider ennå med",
     "valuetype" : "_uxRadioButton",
@@ -498,13 +698,13 @@
     },
     "enumName" : "EESSIEmploymentType"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.countryLastEmploymentOrSelfEmploymentActivity.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.countryLastEmploymentOrSelfEmploymentActivity" : {
     "index" : "2.3. ",
     "prompt" : "Land for siste ansettelsesforhold eller selvstendige næringsvirksomhet",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCountryType"
   },
-  "M040.PersonEmploymentSelfEmploymentDetails.countryWhichLegislationApplicableDuringLast.value[0]" : {
+  "M040.PersonEmploymentSelfEmploymentDetails.countryWhichLegislationApplicableDuringLast" : {
     "index" : "2.4. ",
     "prompt" : "Land hvor lovgivning gjaldt under siste ansettelsesforhold eller selvstendige næringsvirksomhet",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -520,7 +720,12 @@
     "prompt" : "Sluttdato for forrige arbeidsforhold / selvstendige næringsvirksomhet",
     "valuetype" : "_uxDateInput"
   },
-  "M040.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
+  "M040.PleaseFindAttachedFollowingDocument" : {
+    "index" : "8. ",
+    "prompt" : "Følgende dokument(er) er vedlagt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M040.PleaseFindAttachedFollowingDocument.attachedDocument" : {
     "index" : "8.1. ",
     "prompt" : "Vedlagte dokument(er)",
     "valuetype" : "_uxMultiCheckbox",
@@ -535,5 +740,10 @@
     "index" : "8.2. ",
     "prompt" : "Annet/andre dokument(er)",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "M040.sedTitle" : {
+    "index" : "M040",
+    "prompt" : "M040 - Krav om førtidspensjon",
+    "valuetype" : "_rinaRoot"
   }
 }

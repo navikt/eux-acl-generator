@@ -17,6 +17,8 @@ public class PdfService {
 
     public void lagPdfMal(String sedType, String cdmVersjon) {
         TreeMap<String, EuSedFundament> euSedFundament = filService.lesEuSedFundamentFil(sedType, cdmVersjon);
+        String tittel = euSedFundament.get(sedType + ".sedTitle").getLedetekst();
+        euSedFundament.get(sedType + ".sedTitle").setLedetekst(sedType + " - " + tittel);
         TreeMap<String, PdfSedElement> euSedStiVsSedElement = new TreeMap<>();
         euSedFundament.forEach((euSedSti, fundament) -> {
             euSedStiVsSedElement.put(

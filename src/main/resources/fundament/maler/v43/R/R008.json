@@ -1,397 +1,583 @@
 {
+  "R008.AdditionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8. "
+  },
   "R008.AdditionalInformation.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "8.1. ",
-    "ledetekst" : "Ytterligere informasjon",
     "tekstlengde" : "500"
   },
+  "R008.BankDetails" : {
+    "ledetekst" : "Bankinformasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7. "
+  },
+  "R008.BankDetails.ReceivingBankAddress" : {
+    "ledetekst" : "Mottakerbankens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.4. "
+  },
   "R008.BankDetails.ReceivingBankAddress.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "R008.BankDetails.ReceivingBankAddress.country.value[0]" : {
+  "R008.BankDetails.ReceivingBankAddress.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "7.4.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "R008.BankDetails.ReceivingBankAddress.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.4. ",
-    "ledetekst" : "Postnummer",
     "tekstlengde" : "25"
   },
   "R008.BankDetails.ReceivingBankAddress.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "R008.BankDetails.ReceivingBankAddress.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.1. ",
-    "ledetekst" : "Oppgi gatenavn og annen tilgjengelig informasjon, som f.eks. gatenummer, oppgang, etasje og leilighetsnummer, eller identifikasjon. Bruk dette feltet for å gi opplysninger om postboksnummeret eller annen identifikasjon hvis dette brukes.",
     "tekstlengde" : "155"
   },
   "R008.BankDetails.ReceivingBankAddress.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "R008.BankDetails.SEPABankDetails" : {
+    "ledetekst" : "SEPA-bankopplysninger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.1. "
+  },
   "R008.BankDetails.SEPABankDetails.BICSWIFT" : {
+    "ledetekst" : "BIC-SWIFT",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.1.2. ",
-    "ledetekst" : "BIC-SWIFT",
     "tekstlengde" : "11"
   },
   "R008.BankDetails.SEPABankDetails.IBAN" : {
+    "ledetekst" : "IBAN",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "7.1.1. ",
-    "ledetekst" : "IBAN"
+    "indeks" : "7.1.1. "
   },
   "R008.BankDetails.accountHolderName" : {
+    "ledetekst" : "Kontohavers navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2. ",
-    "ledetekst" : "Kontohavers navn",
     "tekstlengde" : "155"
   },
   "R008.BankDetails.paymentReference" : {
+    "ledetekst" : "Betalingsreferanse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.3. ",
-    "ledetekst" : "Betalingsreferanse",
     "tekstlengde" : "65"
   },
+  "R008.DecisionCompetentInstitution" : {
+    "ledetekst" : "Vedtak om kompetent institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3. "
+  },
   "R008.DecisionCompetentInstitution.dateByWhichThisRequestMustMade" : {
+    "ledetekst" : "Frist for framsettelse av anmodning",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.2. ",
-    "ledetekst" : "Frist for framsettelse av anmodning"
+    "indeks" : "3.2. "
   },
   "R008.DecisionCompetentInstitution.dateCompetenceDetermined" : {
+    "ledetekst" : "Dato kompetansen ble avklart",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1. ",
-    "ledetekst" : "Angi avtaledatoen for enighet om kompetanse. Et krav kan kun godkjennes hvis det fremsettes innen tre måneder etter denne datoen."
+    "indeks" : "3.1. "
+  },
+  "R008.LocalCaseNumbers" : {
+    "ledetekst" : "Lokale saksnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "R008.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "ledetekst" : "Lokalt saksnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1"
+  },
+  "R008.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3. "
   },
   "R008.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.3.1. "
   },
   "R008.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
   "R008.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "ledetekst" : "Saksnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Saksnummer",
     "tekstlengde" : "65"
   },
-  "R008.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "R008.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
   },
+  "R008.Persons" : {
+    "ledetekst" : "Personer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "R008.Persons.Person[0]" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
+  },
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson" : {
+    "ledetekst" : "Tilleggsinformasjon om en person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.2. "
+  },
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.PleaseFillInFollowingIfStatusPersonOther" : {
+    "ledetekst" : "Fyll ut hvis «Personens status» = «Annet»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.2.2. "
+  },
   "R008.Persons.Person[0].AdditionalInformationAboutPerson.PleaseFillInFollowingIfStatusPersonOther.otherStatusPerson" : {
+    "ledetekst" : "Annen personstatus",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2.2.1. ",
-    "ledetekst" : "Annen personstatus",
     "tekstlengde" : "155"
   },
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.PreviousFamilyNames" : {
+    "ledetekst" : "Tidligere etternavn",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.2.4. "
+  },
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.PreviousFamilyNames.PreviousFamilyName[0]" : {
+    "ledetekst" : "Tidligere etternavn",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.4.1"
+  },
   "R008.Persons.Person[0].AdditionalInformationAboutPerson.PreviousFamilyNames.PreviousFamilyName[0].previousFamilyName" : {
+    "ledetekst" : "Tidligere etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2.4.1.1. ",
-    "ledetekst" : "Tidligere etternavn",
     "tekstlengde" : "155"
   },
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.PreviousForenames" : {
+    "ledetekst" : "Tidligere fornavn",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.2.5. "
+  },
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "ledetekst" : "Tidligere fornavn",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.5.1"
+  },
   "R008.Persons.Person[0].AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
+    "ledetekst" : "Tidligere fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2.5.1.1. ",
-    "ledetekst" : "Tidligere fornavn",
     "tekstlengde" : "155"
   },
-  "R008.Persons.Person[0].AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.currentFamilyStatus" : {
+    "ledetekst" : "Sivilstatus",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.2.6. ",
-    "ledetekst" : "Sivilstatus",
     "enumNavn" : "RFamilyStatusType",
     "enumNavnId" : "c642fda6-fbfc-e611-80d3-000d3a22e8cd"
   },
   "R008.Persons.Person[0].AdditionalInformationAboutPerson.dateDeath" : {
+    "ledetekst" : "Dødsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.2.7. ",
-    "ledetekst" : "Dødsdato"
+    "indeks" : "2.1.2.7. "
   },
-  "R008.Persons.Person[0].AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "2.1.2.3. ",
-    "ledetekst" : "Nasjonalitet",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "1ed8210f-7373-e611-80cb-000d3a22e8cd"
   },
-  "R008.Persons.Person[0].AdditionalInformationAboutPerson.statusPerson.value[0]" : {
+  "R008.Persons.Person[0].AdditionalInformationAboutPerson.statusPerson" : {
+    "ledetekst" : "Personens status",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.2.1. ",
-    "ledetekst" : "Oppgi rollen til den berørte personen. SED-er kan inneholde mer enn en person (f.eks. trygdede og enken ved etterlattepensjon, eller arving av en avdød mottaker av ytelser som skal tilbakebetale feilutbetalingen). Personenes identitet må være klart definert. Dette gjør det mulig for mottakerinstitusjonen å identifisere, tildele og behandle tilsendte data korrekt. 'Trygdet person' og 'ansatt' skal ikke tolkes på samme måte. *) 'Ansatt' er relevant for innkreving av avgifter, *) 'Trygdet person' er relevant for motregning/innkreving (som f.eks. etterlattepensjon eller utbetalinger etter ytelsesmottakerens død). Det er nyttig å gi opplysninger om trygdede og enken/enkemannen ved etterlattepensjon . Dette gjør det mulig for mottakerinstitusjonen å tildele saken korrekt.",
     "enumNavn" : "RPersonInsuranceStatusType",
     "enumNavnId" : "c99db843-525d-e611-80ca-000d3a22e8cd"
   },
-  "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R008.Persons.Person[0].PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.1. "
+  },
+  "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.1.8. "
+  },
+  "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.1.8.1. "
+  },
+  "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.1.1. ",
-    "ledetekst" : "Oppgi by/sted hvor personen er født. Dersom dette ikke er kjent, benytt det engelske ordet 'Unknown' (som vist her) med apostrof",
     "tekstlengde" : "65"
   },
   "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.2. ",
-    "ledetekst" : "Fars etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "R008.Persons.Person[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.1.7. "
+  },
+  "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.7.1"
+  },
+  "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.1.7.1.4. "
+  },
   "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "2.1.1.7.1.4.1. "
   },
   "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "2.1.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R008.Persons.Person[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.1.7.1.3. ",
-    "ledetekst" : "Sektor",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "R008.Persons.Person[0].PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "2.1.1.3. "
   },
   "R008.Persons.Person[0].PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "R008.Persons.Person[0].PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "R008.Persons.Person[0].PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "R008.Persons.Person[0].PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "R008.Persons.Person[0].PersonIdentification.sex.value[0]" : {
+  "R008.Persons.Person[0].PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
+  "R008.Persons.Person[0].PersonLastKnownAddresses" : {
+    "ledetekst" : "Personens siste kjente adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.3. "
+  },
+  "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0]" : {
+    "ledetekst" : "Opplysninger om personens siste kjente adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.1"
+  },
+  "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail" : {
+    "ledetekst" : "Adresseopplysninger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.3.1.3. "
+  },
   "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.3.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail.country.value[0]" : {
+  "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.3.1.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.3.1.3.4. ",
-    "ledetekst" : "Postnummer",
     "tekstlengde" : "25"
   },
   "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.3.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.3.1.3.1. ",
-    "ledetekst" : "Oppgi gatenavn og annen tilgjengelig informasjon, som f.eks. gatenummer, oppgang, etasje og leilighetsnummer, eller identifikasjon. Bruk dette feltet for å gi opplysninger om postboksnummeret eller annen identifikasjon hvis dette brukes.",
     "tekstlengde" : "155"
   },
   "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].AddressDetail.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.3.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].PleaseFillInFollowingIfTypeAddressOther" : {
+    "ledetekst" : "Fyll ut hvis «Type adresse» = «Andre»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.3.1.2. "
+  },
   "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].PleaseFillInFollowingIfTypeAddressOther.specifyOtherType" : {
+    "ledetekst" : "Spesifiser type \\",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.3.1.2.1. ",
-    "ledetekst" : "Spesifiser type \\",
     "tekstlengde" : "65"
   },
-  "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].typeAddress.value[0]" : {
+  "R008.Persons.Person[0].PersonLastKnownAddresses.PersonLastKnownAddressDetails[0].typeAddress" : {
+    "ledetekst" : "Type adresse",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.3.1.1. ",
-    "ledetekst" : "Type adresse",
     "enumNavn" : "RAddressTypesType",
     "enumNavnId" : "b8d2f459-adf9-e611-80d3-000d3a22e8cd"
   },
+  "R008.ProvisionalPaymentPeriod" : {
+    "ledetekst" : "Periode for foreløpig utbetaling",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5. "
+  },
   "R008.ProvisionalPaymentPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "5.2. ",
-    "ledetekst" : "Sluttdato"
+    "indeks" : "5.2. "
   },
   "R008.ProvisionalPaymentPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "5.1. ",
-    "ledetekst" : "Angi startdato for perioden."
+    "indeks" : "5.1. "
+  },
+  "R008.ProvisionalPaymentTotalAmount" : {
+    "ledetekst" : "Foreløpig utbetalt totalbeløp",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6. "
   },
   "R008.ProvisionalPaymentTotalAmount.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "6.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "6.1. "
   },
-  "R008.ProvisionalPaymentTotalAmount.currency.value[0]" : {
+  "R008.ProvisionalPaymentTotalAmount.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
+  "R008.ProvisionallyPaidBenefit" : {
+    "ledetekst" : "Foreløpig utbetalte ytelser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4. "
+  },
+  "R008.ProvisionallyPaidBenefit.PleaseFillInFollowingIfTypeBenefitOtherBenefit" : {
+    "ledetekst" : "Fyll ut hvis «Type ytelser» = «Andre ytelser»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.2. "
+  },
   "R008.ProvisionallyPaidBenefit.PleaseFillInFollowingIfTypeBenefitOtherBenefit.typeOtherBenefit" : {
+    "ledetekst" : "Type andre ytelser",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.2.1. ",
-    "ledetekst" : "Type andre ytelser",
     "tekstlengde" : "65"
   },
-  "R008.ProvisionallyPaidBenefit.typeBenefit.value[0]" : {
+  "R008.ProvisionallyPaidBenefit.typeBenefit" : {
+    "ledetekst" : "Type ytelse",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.1. ",
-    "ledetekst" : "Type ytelse",
     "enumNavn" : "RTypesOfBenefitType",
     "enumNavnId" : "d6b76ec7-1b9d-e611-80d1-000d3a22e8cd"
+  },
+  "R008.sedTitle" : {
+    "ledetekst" : "Refusjonskrav for foreløpig utbetalte ytelser",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "R008"
   }
 }

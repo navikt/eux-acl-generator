@@ -83,9 +83,9 @@
               "street" : "$nav.arbeidsland[x].bosted.adresse.gate",
               "town" : "$nav.arbeidsland[x].bosted.adresse.by"
             },
-            "startDateActivities" : "$nav.arbeidsland[x].yrkesaktivitet.startdato",
+            "startDateActivities" : "$medlemskap.bruker.arbeidiflereland[x].yrkesaktivitet.startdato",
             "stateResidence" : {
-              "value" : [ "$nav.arbeidsland[x].bosted.land" ]
+              "value" : [ "$medlemskap.bruker.arbeidiflereland[x].bosted.land" ]
             }
           } ]
         }
@@ -136,7 +136,7 @@
     "Person" : {
       "AdditionalInformationPerson" : {
         "nationality" : {
-          "value" : [ "$nav.bruker.person.statsborgerskap.land" ]
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
         }
       },
       "PersonIdentification" : {

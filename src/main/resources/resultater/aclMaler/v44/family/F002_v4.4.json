@@ -130,19 +130,19 @@
                   "PeriodsEmployment" : {
                     "Period" : [ {
                       "OpenPeriod" : {
-                        "startDate" : "$nav.bruker.aktiviteter[x].aktiv.periode[x].aapenperiode.startdato",
+                        "startDate" : "$nav.bruker.omaktiviteter[x].aktiviteter[x].periode[x].aapenperiode.startdato",
                         "typeOpenPeriod" : {
-                          "value" : [ "$nav.bruker.aktiviteter[x].aktiv.periode[x].aapenperiode.type" ]
+                          "value" : [ "$nav.bruker.omaktiviteter[x].aktiviteter[x].periode[x].aapenperiode.type" ]
                         }
                       },
                       "FixedPeriod" : {
-                        "endDate" : "$nav.bruker.aktiviteter[x].aktiv.periode[x].fastperiode.sluttdato",
-                        "startDate" : "$nav.bruker.aktiviteter[x].aktiv.periode[x].fastperiode.startdato"
+                        "endDate" : "$nav.bruker.omaktiviteter[x].aktiviteter[x].periode[x].fastperiode.sluttdato",
+                        "startDate" : "$nav.bruker.omaktiviteter[x].aktiviteter[x].periode[x].fastperiode.startdato"
                       }
                     } ]
                   },
                   "typeEmployment" : {
-                    "value" : [ "$nav.bruker.aktiviteter[x].aktiv.type.FTypeEmploymentType" ]
+                    "value" : [ "$nav.bruker.omaktiviteter[x].aktiviteter[x].type.FTypeEmploymentType" ]
                   }
                 } ]
               }
@@ -152,13 +152,13 @@
                 "Period" : [ {
                   "OpenPeriod" : {
                     "typeOpenPeriod" : {
-                      "value" : [ "$nav.bruker.aktiviteter[x].ingeninformasjon.periode[x].aapenperiode.type" ]
+                      "value" : [ "$nav.bruker.omaktiviteter[x].ingeninformasjon.periode[x].aapenperiode.type" ]
                     },
-                    "startDate" : "$nav.bruker.aktiviteter[x].ingeninformasjon.periode[x].aapenperiode.startdato"
+                    "startDate" : "$nav.bruker.omaktiviteter[x].ingeninformasjon.periode[x].aapenperiode.startdato"
                   },
                   "FixedPeriod" : {
-                    "startDate" : "$nav.bruker.aktiviteter[x].ingeninformasjon.periode[x].fastperiode.startdato",
-                    "endDate" : "$nav.bruker.aktiviteter[x].ingeninformasjon.periode[x].fastperiode.sluttdato"
+                    "startDate" : "$nav.bruker.omaktiviteter[x].ingeninformasjon.periode[x].fastperiode.startdato",
+                    "endDate" : "$nav.bruker.omaktiviteter[x].ingeninformasjon.periode[x].fastperiode.sluttdato"
                   }
                 } ]
               }
@@ -169,19 +169,19 @@
                   "PeriodsNonActivity" : {
                     "Period" : [ {
                       "FixedPeriod" : {
-                        "startDate" : "$nav.bruker.aktivitet[x].inaktiv.periode[x].fastperiode.startdato",
-                        "endDate" : "$nav.bruker.aktivitet[x].inaktiv.periode[x].fastperiode.sluttdato"
+                        "startDate" : "$nav.bruker.omaktivitet[x].inaktiv.periode[x].fastperiode.startdato",
+                        "endDate" : "$nav.bruker.omaktivitet[x].inaktiv.periode[x].fastperiode.sluttdato"
                       },
                       "OpenPeriod" : {
                         "typeOpenPeriod" : {
-                          "value" : [ "$nav.bruker.aktivitet[x].inaktiv.periode[x].aapenperiode.type" ]
+                          "value" : [ "$nav.bruker.omaktivitet[x].inaktiv.periode[x].aapenperiode.type" ]
                         },
-                        "startDate" : "$nav.bruker.aktivitet[x].inaktiv.periode[x].aapenperiode.startdato"
+                        "startDate" : "$nav.bruker.omaktivitet[x].inaktiv.periode[x].aapenperiode.startdato"
                       }
                     } ]
                   },
                   "typeNonActivePerson" : {
-                    "value" : [ "$nav.bruker.aktivitet[x].inaktiv.type.FActivePersonType" ]
+                    "value" : [ "$nav.bruker.omaktivitet[x].inaktiv.type.FActivePersonType" ]
                   }
                 } ]
               }
@@ -327,14 +327,14 @@
         },
         "PeriodsNotCovered" : {
           "PeriodNotCovered" : [ {
-            "startDate" : "$familie.bruker.ikkedekketavtrygd.periode[x].fastperiode.startdato",
-            "endDate" : "$familie.bruker.ikkedekketavtrygd.periode[x].fastperiode.sluttdato"
+            "startDate" : "$familie.bruker.ikkedekketavtrygdeordning.periode[x].fastperiode.startdato",
+            "endDate" : "$familie.bruker.ikkedekketavtrygdeordning.periode[x].fastperiode.sluttdato"
           } ]
         },
         "PeriodsCoveredBySecuritySchemeInSendingMember" : {
           "Period" : [ {
-            "endDate" : "$familie.bruker.dekketavtrygd.periode[x].fastperiode.sluttdato",
-            "startDate" : "$familie.bruker.dekketavtrygd.periode[x].fastperiode.startdato"
+            "endDate" : "$familie.bruker.dekketavtrygdeordning.periode[x].fastperiode.sluttdato",
+            "startDate" : "$familie.bruker.dekketavtrygdeordning.periode[x].fastperiode.startdato"
           } ]
         }
       },
@@ -454,18 +454,18 @@
                     "Period" : [ {
                       "OpenPeriod" : {
                         "typeOpenPeriod" : {
-                          "value" : [ "$nav.ektefelle.aktiviteter[x].aktiv.periode[x].aapenperiode.type" ]
+                          "value" : [ "$nav.ektefelle.omaktiviteter[x].aktiviteter[x].periode[x].aapenperiode.type" ]
                         },
-                        "startDate" : "$nav.ektefelle.aktiviteter[x].aktiv.periode[x].aapenperiode.startdato"
+                        "startDate" : "$nav.ektefelle.omaktiviteter[x].aktiviteter[x].periode[x].aapenperiode.startdato"
                       },
                       "FixedPeriod" : {
-                        "startDate" : "$nav.ektefelle.aktiviteter[x].aktiv.periode[x].fastperiode.startdato",
-                        "endDate" : "$nav.ektefelle.aktiviteter[x].aktiv.periode[x].fastperiode.sluttdato"
+                        "startDate" : "$nav.ektefelle.omaktiviteter[x].aktiviteter[x].periode[x].fastperiode.startdato",
+                        "endDate" : "$nav.ektefelle.omaktiviteter[x].aktiviteter[x].periode[x].fastperiode.sluttdato"
                       }
                     } ]
                   },
                   "typeEmployment" : {
-                    "value" : [ "$nav.ektefelle.aktiviteter[x].aktiv.type.FTypeEmploymentType" ]
+                    "value" : [ "$nav.ektefelle.omaktiviteter[x].aktiv.type.FTypeEmploymentType" ]
                   }
                 } ]
               }
@@ -476,19 +476,19 @@
                   "PeriodsNonActivity" : {
                     "Period" : [ {
                       "FixedPeriod" : {
-                        "endDate" : "$nav.ektefelle.aktivitet[x].inaktiv.periode[x].fastperiode.sluttdato",
-                        "startDate" : "$nav.ektefelle.aktivitet[x].inaktiv.periode[x].fastperiode.startdato"
+                        "endDate" : "$nav.ektefelle.omaktivitet[x].inaktiv.periode[x].fastperiode.sluttdato",
+                        "startDate" : "$nav.ektefelle.omaktivitet[x].inaktiv.periode[x].fastperiode.startdato"
                       },
                       "OpenPeriod" : {
                         "typeOpenPeriod" : {
-                          "value" : [ "$nav.ektefelle.aktivitet[x].inaktiv.periode[x].aapenperiode.type" ]
+                          "value" : [ "$nav.ektefelle.omaktivitet[x].inaktiv.periode[x].aapenperiode.type" ]
                         },
-                        "startDate" : "$nav.ektefelle.aktivitet[x].inaktiv.periode[x].aapenperiode.startdato"
+                        "startDate" : "$nav.ektefelle.omaktivitet[x].inaktiv.periode[x].aapenperiode.startdato"
                       }
                     } ]
                   },
                   "typeNonActivePerson" : {
-                    "value" : [ "$nav.ektefelle.aktivitet[x].inaktiv.type.FActivePersonType" ]
+                    "value" : [ "$nav.ektefelle.omaktivitet[x].inaktiv.type.FActivePersonType" ]
                   }
                 } ]
               }
@@ -497,14 +497,14 @@
               "PeriodsNonActivity" : {
                 "Period" : [ {
                   "OpenPeriod" : {
-                    "startDate" : "$nav.ektefelle.aktiviteter[x].ingeninformasjon.periode[x].aapenperiode.startdato",
+                    "startDate" : "$nav.ektefelle.omaktiviteter[x].ingeninformasjon.periode[x].aapenperiode.startdato",
                     "typeOpenPeriod" : {
-                      "value" : [ "$nav.ektefelle.aktiviteter[x].ingeninformasjon.periode[x].aapenperiode.type" ]
+                      "value" : [ "$nav.ektefelle.omaktiviteter[x].ingeninformasjon.periode[x].aapenperiode.type" ]
                     }
                   },
                   "FixedPeriod" : {
-                    "endDate" : "$nav.ektefelle.aktiviteter[x].ingeninformasjon.periode[x].fastperiode.sluttdato",
-                    "startDate" : "$nav.ektefelle.aktiviteter[x].ingeninformasjon.periode[x].fastperiode.startdato"
+                    "endDate" : "$nav.ektefelle.omaktiviteter[x].ingeninformasjon.periode[x].fastperiode.sluttdato",
+                    "startDate" : "$nav.ektefelle.omaktiviteter[x].ingeninformasjon.periode[x].fastperiode.startdato"
                   }
                 } ]
               }
@@ -576,14 +576,14 @@
         },
         "PeriodsNotCovered" : {
           "PeriodNotCovered" : [ {
-            "startDate" : "$familie.ektefelle.ikkedekketavtrygd.periode[x].fastperiode.startdato",
-            "endDate" : "$familie.ektefelle.ikkedekketavtrygd.periode[x].fastperiode.sluttdato"
+            "startDate" : "$familie.ektefelle.ikkedekketavtrygdeordning.periode[x].fastperiode.startdato",
+            "endDate" : "$familie.ektefelle.ikkedekketavtrygdeordning.periode[x].fastperiode.sluttdato"
           } ]
         },
         "PeriodsCoveredBySecuritySchemeInSendingMember" : {
           "Period" : [ {
-            "endDate" : "$familie.ektefelle.dekketavtrygd.periode[x].fastperiode.sluttdato",
-            "startDate" : "$familie.ektefelle.dekketavtrygd.periode[x].fastperiode.startdato"
+            "endDate" : "$familie.ektefelle.dekketavtrygdeordning.periode[x].fastperiode.sluttdato",
+            "startDate" : "$familie.ektefelle.dekketavtrygdeordning.periode[x].fastperiode.startdato"
           } ]
         }
       },
@@ -758,18 +758,18 @@
                       "Period" : [ {
                         "OpenPeriod" : {
                           "typeOpenPeriod" : {
-                            "startDate" : "$nav.andrepersoner[x].aktiviteter[x].aktiv.periode[x].aapenperiode.startdato",
-                            "value" : [ "$nav.andrepersoner[x].aktiviteter[x].aktiv.periode[x].aapenperiode.type" ]
+                            "startDate" : "$nav.andrepersoner[x].omaktiviteter[x].aktiviteter[x].periode[x].aapenperiode.startdato",
+                            "value" : [ "$nav.andrepersoner[x].omaktiviteter[x].aktiviteter[x].periode[x].aapenperiode.type" ]
                           }
                         },
                         "FixedPeriod" : {
-                          "startDate" : "$nav.andrepersoner[x].aktiviteter[x].aktiv.periode[x].fastperiode.startdato",
-                          "endDate" : "$nav.andrepersoner[x].aktiviteter[x].aktiv.periode[x].fastperiode.sluttdato"
+                          "startDate" : "$nav.andrepersoner[x].omaktiviteter[x].aktiviteter[x].periode[x].fastperiode.startdato",
+                          "endDate" : "$nav.andrepersoner[x].omaktiviteter[x].aktiviteter[x].periode[x].fastperiode.sluttdato"
                         }
                       } ]
                     },
                     "typeEmployment" : {
-                      "value" : [ "$nav.andrepersoner[x].aktiviteter[x].aktiv.type.FTypeEmploymentType" ]
+                      "value" : [ "$nav.andrepersoner[x].omaktiviteter[x].aktiv.type.FTypeEmploymentType" ]
                     }
                   } ]
                 },
@@ -778,19 +778,19 @@
                     "PeriodsNonActivity" : {
                       "Period" : [ {
                         "FixedPeriod" : {
-                          "startDate" : "$nav.andrepersoner[x].aktivitet[x].inaktiv.periode[x].fastperiode.startdato",
-                          "endDate" : "$nav.andrepersoner[x].aktivitet[x].inaktiv.periode[x].fastperiode.sluttdato"
+                          "startDate" : "$nav.andrepersoner[x].omaktivitet[x].inaktiv.periode[x].fastperiode.startdato",
+                          "endDate" : "$nav.andrepersoner[x].omaktivitet[x].inaktiv.periode[x].fastperiode.sluttdato"
                         },
                         "OpenPeriod" : {
                           "typeOpenPeriod" : {
-                            "value" : [ "$nav.andrepersoner[x].aktivitet[x].inaktiv.periode[x].aapenperiode.type" ],
-                            "startDate" : "$nav.andrepersoner[x].aktivitet[x].inaktiv.periode[x].aapenperiode.startdato"
+                            "value" : [ "$nav.andrepersoner[x].omaktivitet[x].inaktiv.periode[x].aapenperiode.type" ],
+                            "startDate" : "$nav.andrepersoner[x].omaktivitet[x].inaktiv.periode[x].aapenperiode.startdato"
                           }
                         }
                       } ]
                     },
                     "typeNonActivePerson" : {
-                      "value" : [ "$nav.andrepersoner[x].aktivitet[x].inaktiv.type.FActivePersonType" ]
+                      "value" : [ "$nav.andrepersoner[x].omaktivitet[x].inaktiv.type.FActivePersonType" ]
                     }
                   } ]
                 }
@@ -799,13 +799,13 @@
                 "PeriodsNonActivity" : {
                   "Period" : [ {
                     "FixedPeriod" : {
-                      "startDate" : "$nav.andrepersoner[x].aktiviteter[x].ingeninformasjon.periode[x].fastperiode.startdato",
-                      "endDate" : "$nav.andrepersoner[x].aktiviteter[x].ingeninformasjon.periode[x].fastperiode.sluttdato"
+                      "startDate" : "$nav.andrepersoner[x].omaktiviteter[x].ingeninformasjon.periode[x].fastperiode.startdato",
+                      "endDate" : "$nav.andrepersoner[x].omaktiviteter[x].ingeninformasjon.periode[x].fastperiode.sluttdato"
                     },
                     "OpenPeriod" : {
                       "typeOpenPeriod" : {
-                        "startDate" : "$nav.andrepersoner[x].aktiviteter[x].ingeninformasjon.periode[x].aapenperiode.startdato",
-                        "value" : [ "$nav.andrepersoner[x].aktiviteter[x].ingeninformasjon.periode[x].aapenperiode.type" ]
+                        "startDate" : "$nav.andrepersoner[x].omaktiviteter[x].ingeninformasjon.periode[x].aapenperiode.startdato",
+                        "value" : [ "$nav.andrepersoner[x].omaktiviteter[x].ingeninformasjon.periode[x].aapenperiode.type" ]
                       }
                     }
                   } ]
@@ -911,14 +911,14 @@
           },
           "PeriodsCoveredBySecuritySchemeInSendingMember" : {
             "Period" : [ {
-              "endDate" : "$familie.andrepersoner[x].dekketavtrygd.periode[x].fastperiode.sluttdato",
-              "startDate" : "$familie.andrepersoner[x].dekketavtrygd.periode[x].fastperiode.startdato"
+              "endDate" : "$familie.andrepersoner[x].dekketavtrygdeordning.periode[x].fastperiode.sluttdato",
+              "startDate" : "$familie.andrepersoner[x].dekketavtrygdeordning.periode[x].fastperiode.startdato"
             } ]
           },
           "PeriodsNotCovered" : {
             "PeriodNotCovered" : [ {
-              "endDate" : "$familie.andrepersoner[x].ikkedekketavtrygd.periode[x].fastperiode.sluttdato",
-              "startDate" : "$familie.andrepersoner[x].ikkedekketavtrygd.periode[x].fastperiode.startdato"
+              "endDate" : "$familie.andrepersoner[x].ikkedekketavtrygdeordning.periode[x].fastperiode.sluttdato",
+              "startDate" : "$familie.andrepersoner[x].ikkedekketavtrygdeordning.periode[x].fastperiode.startdato"
             } ]
           }
         },
@@ -1291,26 +1291,26 @@
         "ClaimDetail" : [ {
           "Amount" : {
             "currency" : {
-              "value" : [ "$familie.refusjonskrav.valuta" ]
+              "value" : [ "$familie.refusjon.krav[x].valuta" ]
             },
-            "amount" : "$familie.refusjonskrav.beloep"
+            "amount" : "$familie.refusjon.krav[x].beloep"
           },
           "DateForGrantedBenefits" : {
-            "endDate" : "$familie.refusjonskrav.innvilgetytelse.sluttdato",
-            "startDate" : "$familie.refusjonskrav.innvilgetytelse.startdato"
+            "endDate" : "$familie.refusjon.krav[x].innvilgetytelse.sluttdato",
+            "startDate" : "$familie.refusjon.krav[x].innvilgetytelse.startdato"
           },
-          "additionalInformation" : "$familie.refusjonskrav.ytterligereinformasjon"
+          "additionalInformation" : "$familie.refusjon.krav[x].ytterligereinformasjon"
         } ]
       },
       "TotalClaimsAmount" : {
-        "variableSymbol" : "$familie.refusjonskrav.betalingspresiseringenvariabeltsymbol",
+        "variableSymbol" : "$familie.refusjon.betalingspresiseringenvariabeltsymbol",
         "TotalAmount" : {
-          "amount" : "$familie.refusjonskrav.totalt.beloep",
+          "amount" : "$familie.refusjon.totalt.beloep",
           "currency" : {
-            "value" : [ "$familie.refusjonskrav.totalt.valuta" ]
+            "value" : [ "$familie.refusjon.totalt.valuta" ]
           }
         },
-        "messageForRecipient" : "$familie.refusjonskrav.melding"
+        "messageForRecipient" : "$familie.refusjon.melding"
       }
     },
     "InformationAboutChangeInCircumstances" : {

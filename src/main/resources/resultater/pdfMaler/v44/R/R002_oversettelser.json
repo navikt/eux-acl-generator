@@ -1,10 +1,20 @@
 {
+  "R002.AdditionalInformation" : {
+    "index" : "8. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.AdditionalInformation.additionalInformation" : {
     "index" : "8.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "R002.DeductionPossibleFrom.arrearsIndicator.value[0]" : {
+  "R002.DeductionPossibleFrom" : {
+    "index" : "5. ",
+    "prompt" : "Motregning mulig i",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.DeductionPossibleFrom.arrearsIndicator" : {
     "index" : "5.1. ",
     "prompt" : "Restanser",
     "valuetype" : "_uxRadioButton",
@@ -14,7 +24,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "R002.DeductionPossibleFrom.ongoingPaymentsIndicator.value[0]" : {
+  "R002.DeductionPossibleFrom.ongoingPaymentsIndicator" : {
     "index" : "5.2. ",
     "prompt" : "Løpende utbetalinger",
     "valuetype" : "_uxRadioButton",
@@ -24,23 +34,43 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "R002.FillInIfTypeRequestFinalOngoing" : {
+    "index" : "7. ",
+    "prompt" : "Fyll ut hvis «Type forespørsel» = «Endelig» og «Løpende utbetalinger» = «Ja»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments" : {
+    "index" : "7.1. ",
+    "prompt" : "Motregning i løpende ytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.AmountPerUnit" : {
+    "index" : "7.1.4. ",
+    "prompt" : "Beløp per enhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.AmountPerUnit.amount" : {
     "index" : "7.1.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.AmountPerUnit.currency.value[0]" : {
+  "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.AmountPerUnit.currency" : {
     "index" : "7.1.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.PleaseFillInFollowingIfFrequencyOther" : {
+    "index" : "7.1.2. ",
+    "prompt" : "Fyll ut hvis «Hyppighet» = «Annen»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.PleaseFillInFollowingIfFrequencyOther.otherFrequency" : {
     "index" : "7.1.2.1. ",
     "prompt" : "Annen hyppighet",
     "valuetype" : "_uxTextInput"
   },
-  "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.frequency.value[0]" : {
+  "R002.FillInIfTypeRequestFinalOngoing.DeductionFromOngoingPayments.frequency" : {
     "index" : "7.1.1. ",
     "prompt" : "Hyppighet",
     "valuetype" : "_uxRadioButton",
@@ -57,6 +87,21 @@
     "prompt" : "Antall periodeenheter",
     "valuetype" : "_uxTextInput"
   },
+  "R002.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
     "prompt" : "Institusjonens ID",
@@ -72,23 +117,68 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "R002.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "R002.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
+  },
+  "R002.Persons" : {
+    "index" : "2. ",
+    "prompt" : "Personer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor" : {
+    "index" : "2.1. ",
+    "prompt" : "Debitor",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails" : {
+    "index" : "2.1.2.1. ",
+    "prompt" : "Den begunstiges detaljer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification" : {
+    "index" : "2.1.2.1.2. ",
+    "prompt" : "Begunstigetes identifikasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson" : {
+    "index" : "2.1.2.1.2.2. ",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousFamilyName" : {
+    "index" : "2.1.2.1.2.2.2. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0]" : {
+    "index" : "2.1.2.1.2.2.2.1",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_rinaArray"
   },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0].previousFamilyName" : {
     "index" : "2.1.2.1.2.2.2.1.1. ",
     "prompt" : "Tidligere etternavn",
     "valuetype" : "_uxTextInput"
   },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.1.2.1.2.2.3. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.1.2.1.2.2.3.1",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_rinaArray"
+  },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
     "index" : "2.1.2.1.2.2.3.1.1. ",
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.currentFamilyStatus" : {
     "index" : "2.1.2.1.2.2.4. ",
     "prompt" : "Sivilstatus",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -106,16 +196,31 @@
   },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.dateDeath" : {
     "index" : "2.1.2.1.2.2.5. ",
-    "prompt" : "Hvis personen er død, oppgi dødsdato.",
+    "prompt" : "Dødsdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.nationality" : {
     "index" : "2.1.2.1.2.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "prompt" : "Nationality",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification" : {
+    "index" : "2.1.2.1.2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.2.1.2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.2.1.2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.2.1.2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -133,7 +238,7 @@
   },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.2.1.2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -148,8 +253,23 @@
   },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.2.1.2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.2.1.2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.2.1.2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.2.1.2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.2.1.2.1.7.1.4.1. ",
@@ -161,7 +281,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.2.1.2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -172,9 +292,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.2.1.2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -209,10 +329,10 @@
   },
   "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.2.1.2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.sex.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.sex" : {
     "index" : "2.1.2.1.2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -223,7 +343,12 @@
     },
     "enumName" : "EESSISexType"
   },
-  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryStatus.statusBeneficiary.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryStatus" : {
+    "index" : "2.1.2.1.1. ",
+    "prompt" : "Den begunstiges status",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.BeneficiaryDetails.BeneficiaryStatus.statusBeneficiary" : {
     "index" : "2.1.2.1.1.1. ",
     "prompt" : "Status for den begunstiget",
     "valuetype" : "_uxRadioButton",
@@ -235,17 +360,47 @@
     },
     "enumName" : "RStatusPersonBeneficiaryNoDeceaseType"
   },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails" : {
+    "index" : "2.1.2.2. ",
+    "prompt" : "Detaljer om den forsikrede personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson" : {
+    "index" : "2.1.2.2.2. ",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName" : {
+    "index" : "2.1.2.2.2.2. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0]" : {
+    "index" : "2.1.2.2.2.2.1",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_rinaArray"
+  },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0].previousFamilyName" : {
     "index" : "2.1.2.2.2.2.1.1. ",
     "prompt" : "Tidligere etternavn",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.1.2.2.2.3. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.1.2.2.2.3.1",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_rinaArray"
   },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
     "index" : "2.1.2.2.2.3.1.1. ",
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.currentFamilyStatus" : {
     "index" : "2.1.2.2.2.4. ",
     "prompt" : "Sivilstatus",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -263,16 +418,31 @@
   },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.dateDeath" : {
     "index" : "2.1.2.2.2.5. ",
-    "prompt" : "Hvis personen er død, oppgi dødsdato.",
+    "prompt" : "Dødsdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality" : {
     "index" : "2.1.2.2.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "prompt" : "Nationality",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification" : {
+    "index" : "2.1.2.2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.2.2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.2.2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.2.2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -290,7 +460,7 @@
   },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.2.2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -305,8 +475,23 @@
   },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.2.2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.2.2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.2.2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.2.2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.2.2.1.7.1.4.1. ",
@@ -318,7 +503,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.2.2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -329,9 +514,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.2.2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -366,10 +551,10 @@
   },
   "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.2.2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.sex.value[0]" : {
+  "R002.Persons.Debtor.Beneficiary.InsuredPersonDetails.PersonIdentification.sex" : {
     "index" : "2.1.2.2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -380,17 +565,47 @@
     },
     "enumName" : "EESSISexType"
   },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails" : {
+    "index" : "2.1.1.1. ",
+    "prompt" : "Detaljer om den forsikrede personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson" : {
+    "index" : "2.1.1.1.2. ",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName" : {
+    "index" : "2.1.1.1.2.2. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0]" : {
+    "index" : "2.1.1.1.2.2.1",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_rinaArray"
+  },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0].previousFamilyName" : {
     "index" : "2.1.1.1.2.2.1.1. ",
     "prompt" : "Tidligere etternavn",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.1.1.1.2.3. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.1.1.1.2.3.1",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_rinaArray"
   },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
     "index" : "2.1.1.1.2.3.1.1. ",
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.currentFamilyStatus" : {
     "index" : "2.1.1.1.2.4. ",
     "prompt" : "Sivilstatus",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -408,16 +623,31 @@
   },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.dateDeath" : {
     "index" : "2.1.1.1.2.5. ",
-    "prompt" : "Hvis personen er død, oppgi dødsdato.",
+    "prompt" : "Dødsdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality" : {
     "index" : "2.1.1.1.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "prompt" : "Nationality",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification" : {
+    "index" : "2.1.1.1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.1.1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.1.1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.1.1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -435,7 +665,7 @@
   },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.1.1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -450,8 +680,23 @@
   },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.1.1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.1.1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.1.1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.1.1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.1.1.1.7.1.4.1. ",
@@ -463,7 +708,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.1.1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -474,9 +719,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.1.1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -511,10 +756,10 @@
   },
   "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.1.1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.sex.value[0]" : {
+  "R002.Persons.Debtor.InsuredPerson.InsuredPersonDetails.PersonIdentification.sex" : {
     "index" : "2.1.1.1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -525,17 +770,52 @@
     },
     "enumName" : "EESSISexType"
   },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails" : {
+    "index" : "2.1.3.3. ",
+    "prompt" : "Den begunstiges detaljer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification" : {
+    "index" : "2.1.3.3.2. ",
+    "prompt" : "Begunstigetes identifikasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson" : {
+    "index" : "2.1.3.3.2.2. ",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousFamilyName" : {
+    "index" : "2.1.3.3.2.2.2. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0]" : {
+    "index" : "2.1.3.3.2.2.2.1",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_rinaArray"
+  },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0].previousFamilyName" : {
     "index" : "2.1.3.3.2.2.2.1.1. ",
     "prompt" : "Tidligere etternavn",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.1.3.3.2.2.3. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.1.3.3.2.2.3.1",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_rinaArray"
   },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
     "index" : "2.1.3.3.2.2.3.1.1. ",
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.currentFamilyStatus" : {
     "index" : "2.1.3.3.2.2.4. ",
     "prompt" : "Sivilstatus",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -553,16 +833,31 @@
   },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.dateDeath" : {
     "index" : "2.1.3.3.2.2.5. ",
-    "prompt" : "Hvis personen er død, oppgi dødsdato.",
+    "prompt" : "Dødsdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.AdditionalInformationAboutPerson.nationality" : {
     "index" : "2.1.3.3.2.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "prompt" : "Nationality",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification" : {
+    "index" : "2.1.3.3.2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.3.3.2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.3.3.2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.3.3.2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -580,7 +875,7 @@
   },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.3.3.2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -595,8 +890,23 @@
   },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.3.3.2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.3.3.2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.3.3.2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.3.3.2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.3.3.2.1.7.1.4.1. ",
@@ -608,7 +918,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.3.3.2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -619,9 +929,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.3.3.2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -656,10 +966,10 @@
   },
   "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.3.3.2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.sex.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryIdentification.PersonIdentification.sex" : {
     "index" : "2.1.3.3.2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -670,7 +980,12 @@
     },
     "enumName" : "EESSISexType"
   },
-  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryStatus.StatusPersonBeneficiary.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryStatus" : {
+    "index" : "2.1.3.3.1. ",
+    "prompt" : "Den begunstiges status",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.BeneficiaryDetails.BeneficiaryStatus.StatusPersonBeneficiary" : {
     "index" : "2.1.3.3.1.1. ",
     "prompt" : "Status for den begunstiget",
     "valuetype" : "_uxRadioButton",
@@ -683,17 +998,47 @@
     },
     "enumName" : "RStatusPersonBeneficiaryType"
   },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails" : {
+    "index" : "2.1.3.2. ",
+    "prompt" : "Detaljer om den forsikrede personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson" : {
+    "index" : "2.1.3.2.2. ",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName" : {
+    "index" : "2.1.3.2.2.2. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0]" : {
+    "index" : "2.1.3.2.2.2.1",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_rinaArray"
+  },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0].previousFamilyName" : {
     "index" : "2.1.3.2.2.2.1.1. ",
     "prompt" : "Tidligere etternavn",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.1.3.2.2.3. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.1.3.2.2.3.1",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_rinaArray"
   },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
     "index" : "2.1.3.2.2.3.1.1. ",
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.currentFamilyStatus" : {
     "index" : "2.1.3.2.2.4. ",
     "prompt" : "Sivilstatus",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -711,16 +1056,31 @@
   },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.dateDeath" : {
     "index" : "2.1.3.2.2.5. ",
-    "prompt" : "Hvis personen er død, oppgi dødsdato.",
+    "prompt" : "Dødsdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.AdditionalInformationAboutPerson.nationality" : {
     "index" : "2.1.3.2.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "prompt" : "Nationality",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification" : {
+    "index" : "2.1.3.2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.3.2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.3.2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.3.2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -738,7 +1098,7 @@
   },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.3.2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -753,8 +1113,23 @@
   },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.3.2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.3.2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.3.2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.3.2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.3.2.1.7.1.4.1. ",
@@ -766,7 +1141,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.3.2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -777,9 +1152,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.3.2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -814,10 +1189,10 @@
   },
   "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.3.2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.sex.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.InsuredPersonDetails.PersonIdentification.sex" : {
     "index" : "2.1.3.2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -828,17 +1203,52 @@
     },
     "enumName" : "EESSISexType"
   },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails" : {
+    "index" : "2.1.3.1. ",
+    "prompt" : "Tredjeparts detaljer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification" : {
+    "index" : "2.1.3.1.2. ",
+    "prompt" : "Tredjeparts identifikasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson" : {
+    "index" : "2.1.3.1.2.2. ",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousFamilyName" : {
+    "index" : "2.1.3.1.2.2.2. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0]" : {
+    "index" : "2.1.3.1.2.2.2.1",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_rinaArray"
+  },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0].previousFamilyName" : {
     "index" : "2.1.3.1.2.2.2.1.1. ",
     "prompt" : "Tidligere etternavn",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.1.3.1.2.2.3. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.1.3.1.2.2.3.1",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_rinaArray"
   },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
     "index" : "2.1.3.1.2.2.3.1.1. ",
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.currentFamilyStatus" : {
     "index" : "2.1.3.1.2.2.4. ",
     "prompt" : "Sivilstatus",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -856,16 +1266,31 @@
   },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.dateDeath" : {
     "index" : "2.1.3.1.2.2.5. ",
-    "prompt" : "Hvis personen er død, oppgi dødsdato.",
+    "prompt" : "Dødsdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.AdditionalInformationAboutPerson.nationality" : {
     "index" : "2.1.3.1.2.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "prompt" : "Nationality",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification" : {
+    "index" : "2.1.3.1.2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.3.1.2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.3.1.2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.3.1.2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -883,7 +1308,7 @@
   },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.3.1.2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -898,8 +1323,23 @@
   },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.3.1.2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.3.1.2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.3.1.2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.3.1.2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.3.1.2.1.7.1.4.1. ",
@@ -911,7 +1351,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.3.1.2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -922,9 +1362,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.3.1.2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -959,10 +1399,10 @@
   },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.3.1.2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.sex.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyIdentification.PersonIdentification.sex" : {
     "index" : "2.1.3.1.2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -973,12 +1413,22 @@
     },
     "enumName" : "EESSISexType"
   },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyStatus" : {
+    "index" : "2.1.3.1.1. ",
+    "prompt" : "Tredjeparts status",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyStatus.PleaseFillInFollowingIfStatusPersonOther" : {
+    "index" : "2.1.3.1.1.2. ",
+    "prompt" : "Vennligst fyll inn følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyStatus.PleaseFillInFollowingIfStatusPersonOther.otherStatusPerson" : {
     "index" : "2.1.3.1.1.2.1. ",
     "prompt" : "Annen status for tredjepart",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyStatus.StatusPersonThirdParty.value[0]" : {
+  "R002.Persons.Debtor.ThirdParty.ThirdPartyDetails.ThirdPartyStatus.StatusPersonThirdParty" : {
     "index" : "2.1.3.1.1.1. ",
     "prompt" : "Status for tredjepart",
     "valuetype" : "_uxRadioButton",
@@ -991,17 +1441,57 @@
     },
     "enumName" : "RStatusPersonThirdPartyType"
   },
+  "R002.Persons.OtherPersons" : {
+    "index" : "2.2. ",
+    "prompt" : "Andre personer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0]" : {
+    "index" : "2.2.1",
+    "prompt" : "Tredjeparts detaljer",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification" : {
+    "index" : "2.2.1.2. ",
+    "prompt" : "Tredjeparts identifikasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson" : {
+    "index" : "2.2.1.2.2. ",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousFamilyName" : {
+    "index" : "2.2.1.2.2.2. ",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0]" : {
+    "index" : "2.2.2.1",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_rinaArray"
+  },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousFamilyName.PreviousFamilyName[0].previousFamilyName" : {
     "index" : "2.2.1.2.2.2.1.1. ",
     "prompt" : "Tidligere etternavn",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousForenames" : {
+    "index" : "2.2.1.2.2.3. ",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0]" : {
+    "index" : "2.2.3.1",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_rinaArray"
   },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.PreviousForenames.PreviousForename[0].previousForename" : {
     "index" : "2.2.1.2.2.3.1.1. ",
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.currentFamilyStatus.value[0]" : {
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.currentFamilyStatus" : {
     "index" : "2.2.1.2.2.4. ",
     "prompt" : "Sivilstatus",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1019,16 +1509,31 @@
   },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.dateDeath" : {
     "index" : "2.2.1.2.2.5. ",
-    "prompt" : "Hvis personen er død, oppgi dødsdato.",
+    "prompt" : "Dødsdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.nationality.value[0]" : {
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.AdditionalInformationAboutPerson.nationality" : {
     "index" : "2.2.1.2.2.1. ",
-    "prompt" : "Den aktuelle personens nasjonalitet.",
+    "prompt" : "Nationality",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification" : {
+    "index" : "2.2.1.2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.2.1.2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.2.1.2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.2.1.2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1046,7 +1551,7 @@
   },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.2.1.2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -1061,8 +1566,23 @@
   },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.2.1.2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.2.1.2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.2.1.2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.2.1.2.1.7.1.4.1. ",
@@ -1074,7 +1594,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.2.1.2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1085,9 +1605,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.2.1.2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -1122,10 +1642,10 @@
   },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.forenameAtBirth" : {
     "index" : "2.2.1.2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.sex.value[0]" : {
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyIdentification.PersonIdentification.sex" : {
     "index" : "2.2.1.2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -1136,12 +1656,22 @@
     },
     "enumName" : "EESSISexType"
   },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyStatus" : {
+    "index" : "2.2.1.1. ",
+    "prompt" : "Tredjeparts status",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyStatus.PleaseFillInFollowingIfStatusPersonOther" : {
+    "index" : "2.2.1.1.2. ",
+    "prompt" : "Vennligst fyll inn følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyStatus.PleaseFillInFollowingIfStatusPersonOther.otherStatusPerson" : {
     "index" : "2.2.1.1.2.1. ",
     "prompt" : "Annen status for tredjepart",
     "valuetype" : "_uxTextInput"
   },
-  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyStatus.StatusPersonThirdParty.value[0]" : {
+  "R002.Persons.OtherPersons.ThirdPartyDetails[0].ThirdPartyStatus.StatusPersonThirdParty" : {
     "index" : "2.2.1.1.1. ",
     "prompt" : "Status for tredjepart",
     "valuetype" : "_uxRadioButton",
@@ -1154,34 +1684,74 @@
     },
     "enumName" : "RStatusPersonThirdPartyType"
   },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes" : {
+    "index" : "6. ",
+    "prompt" : "Fyll ut hvis «Type forespørsel» = «Endelig» og «Etterbetalinger» = «Ja»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears" : {
+    "index" : "6.1. ",
+    "prompt" : "Motregning i etterbetalinger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.DeductionFromArrearsAmount" : {
+    "index" : "6.1.1. ",
+    "prompt" : "Motregningsbeløp i etterbetalinger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.DeductionFromArrearsAmount.amount" : {
     "index" : "6.1.1.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.DeductionFromArrearsAmount.currency.value[0]" : {
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.DeductionFromArrearsAmount.currency" : {
     "index" : "6.1.1.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted" : {
+    "index" : "6.1.3. ",
+    "prompt" : "Fyll ut hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0]" : {
+    "index" : "6.1.3.1",
+    "prompt" : "Nærmere informasjon om aktuelle etterbetalinger",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details" : {
+    "index" : "6.1.3.1.2. ",
+    "prompt" : "Opplysninger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.AmountPerUnit" : {
+    "index" : "6.1.3.1.2.4. ",
+    "prompt" : "Beløp per enhet",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.AmountPerUnit.amount" : {
     "index" : "6.1.3.1.2.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.AmountPerUnit.currency.value[0]" : {
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.AmountPerUnit.currency" : {
     "index" : "6.1.3.1.2.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.PleaseFillInFollowingIfFrequencyOther" : {
+    "index" : "6.1.3.1.2.2. ",
+    "prompt" : "Fyll ut hvis «Hyppighet» = «Annen»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.PleaseFillInFollowingIfFrequencyOther.otherFrequency" : {
     "index" : "6.1.3.1.2.2.1. ",
     "prompt" : "Annen hyppighet",
     "valuetype" : "_uxTextInput"
   },
-  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.frequency.value[0]" : {
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.FillInIfOverpaymentCanDeducted.DetailedInformationAboutArrearsAtDisposal[0].Details.frequency" : {
     "index" : "6.1.3.1.2.1. ",
     "prompt" : "Hyppighet",
     "valuetype" : "_uxRadioButton",
@@ -1203,7 +1773,7 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.overpaymentCanDeductedCompletelyFromArrearsIndicator.value[0]" : {
+  "R002.PleaseFillInFollowingIfTypeRequestFinalArrearsYes.DeductionFromArrears.overpaymentCanDeductedCompletelyFromArrearsIndicator" : {
     "index" : "6.1.2. ",
     "prompt" : "Feilutbetalingen kan i sin helhet motregnes i etterbetalinger",
     "valuetype" : "_uxRadioButton",
@@ -1213,23 +1783,53 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "R002.ReplyOriginalRequest" : {
+    "index" : "4. ",
+    "prompt" : "Svar på opprinnelig anmodning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional" : {
+    "index" : "4.2. ",
+    "prompt" : "Fyll ut hvis «Type anmodning» = «Foreløpig»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits" : {
+    "index" : "4.2.2. ",
+    "prompt" : "Ytelsesbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0]" : {
+    "index" : "4.2.2.1",
+    "prompt" : "Ytelsesbeløp",
+    "valuetype" : "_rinaArray"
+  },
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].AmountPerUnit" : {
+    "index" : "4.2.2.1.4. ",
+    "prompt" : "Beløp per enhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].AmountPerUnit.amount" : {
     "index" : "4.2.2.1.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].AmountPerUnit.currency.value[0]" : {
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].AmountPerUnit.currency" : {
     "index" : "4.2.2.1.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].PleaseFillInFollowingIfFrequencyOther" : {
+    "index" : "4.2.2.1.2. ",
+    "prompt" : "Fyll ut hvis «Hyppighet» = «Annen»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].PleaseFillInFollowingIfFrequencyOther.otherFrequency" : {
     "index" : "4.2.2.1.2.1. ",
     "prompt" : "Annen hyppighet",
     "valuetype" : "_uxTextInput"
   },
-  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].frequency.value[0]" : {
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.AmountBenefits.AmountBenefit[0].frequency" : {
     "index" : "4.2.2.1.1. ",
     "prompt" : "Hyppighet",
     "valuetype" : "_uxRadioButton",
@@ -1246,12 +1846,17 @@
     "prompt" : "Antall periodeenheter",
     "valuetype" : "_uxTextInput"
   },
+  "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.StartDateEntitlementBenefit" : {
+    "index" : "4.2.1. ",
+    "prompt" : "Startdato for rett til ytelse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.ReplyOriginalRequest.PleaseFillInFollowingIfTypeRequestProvisional.StartDateEntitlementBenefit.startDateEntitlementBenefit" : {
     "index" : "4.2.1.1. ",
-    "prompt" : "Angi startdato for retten til ytelsen angitt under delen om type ytelse.",
+    "prompt" : "Startdato for rett til ytelser",
     "valuetype" : "_uxDateInput"
   },
-  "R002.ReplyOriginalRequest.typeRequest.value[0]" : {
+  "R002.ReplyOriginalRequest.typeRequest" : {
     "index" : "4.1. ",
     "prompt" : "Type anmodning",
     "valuetype" : "_uxRadioButton",
@@ -1261,12 +1866,22 @@
     },
     "enumName" : "RRequestTypeProvisionalFinalType"
   },
+  "R002.TypeBenefit" : {
+    "index" : "3. ",
+    "prompt" : "Type ytelse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "R002.TypeBenefit.PleaseFillInFollowingIfTypeBenefitOtherBenefit" : {
+    "index" : "3.2. ",
+    "prompt" : "Fyll ut hvis «Type ytelser» = «Andre ytelser»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "R002.TypeBenefit.PleaseFillInFollowingIfTypeBenefitOtherBenefit.typeOtherBenefit" : {
     "index" : "3.2.1. ",
     "prompt" : "Type andre ytelser",
     "valuetype" : "_uxTextInput"
   },
-  "R002.TypeBenefit.typeBenefit.value[0]" : {
+  "R002.TypeBenefit.typeBenefit" : {
     "index" : "3.1. ",
     "prompt" : "Type ytelse",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1287,5 +1902,10 @@
       "99" : "Annet"
     },
     "enumName" : "RTypesOfBenefitType"
+  },
+  "R002.sedTitle" : {
+    "index" : "R002",
+    "prompt" : "R002 - Svar på anmodning om trekk i etterbetalinger/løpende utbetalinger",
+    "valuetype" : "_rinaRoot"
   }
 }

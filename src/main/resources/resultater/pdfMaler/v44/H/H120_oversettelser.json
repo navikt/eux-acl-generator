@@ -1,8 +1,23 @@
 {
+  "H120.AdditionalInformation" : {
+    "index" : "7. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H120.AdditionalInformation.additionalInformation" : {
     "index" : "7.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "H120.DetailsRequest" : {
+    "index" : "4. ",
+    "prompt" : "Informasjon om anmodningen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.DetailsRequest.TheRequestConcernsIncapacityForWork" : {
+    "index" : "4.1.1. ",
+    "prompt" : "Anmodningen gjelder arbeidsuførhet",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H120.DetailsRequest.TheRequestConcernsIncapacityForWork.TheRequestedMedicalEvidenceExaminationConcern.endDate" : {
     "index" : "4.1.1.2. ",
@@ -11,10 +26,10 @@
   },
   "H120.DetailsRequest.TheRequestConcernsIncapacityForWork.TheRequestedMedicalEvidenceExaminationConcern.startDate" : {
     "index" : "4.1.1.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "H120.DetailsRequest.TheRequestConcernsIncapacityForWork.weAgreeCoverCostsMedicalEvidenceexamination.value[0]" : {
+  "H120.DetailsRequest.TheRequestConcernsIncapacityForWork.weAgreeCoverCostsMedicalEvidenceexamination" : {
     "index" : "4.1.2. ",
     "prompt" : "Vi samtykker i å dekke kostnadene for medisinsk dokumentasjon/undersøkelse",
     "valuetype" : "_uxRadioButton",
@@ -25,7 +40,7 @@
     },
     "enumName" : "EESSIYesNoNAType"
   },
-  "H120.DetailsRequest.TheRequestDoesNotConcernIncapacityForWork.weAgreeCoverCostsMedicalEvidenceexamination.value[0]" : {
+  "H120.DetailsRequest.TheRequestDoesNotConcernIncapacityForWork.weAgreeCoverCostsMedicalEvidenceexamination" : {
     "index" : "4.2.1. ",
     "prompt" : "Vi samtykker i å dekke kostnadene for medisinsk dokumentasjon/undersøkelse",
     "valuetype" : "_uxRadioButton",
@@ -36,12 +51,22 @@
     },
     "enumName" : "EESSIYesNoNAType"
   },
+  "H120.NatureRequest" : {
+    "index" : "3. ",
+    "prompt" : "Kravets art",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.NatureRequest.FillInIfPleaseProvideOtherMedical" : {
+    "index" : "3.3. ",
+    "prompt" : "Fyll ut hvis «Vennligst fremskaff» = «Annen medisinsk dokumentasjon»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H120.NatureRequest.FillInIfPleaseProvideOtherMedical.otherMedicalEvidence" : {
     "index" : "3.3.1. ",
     "prompt" : "Annen medisinsk dokumentasjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "H120.NatureRequest.pleaseProvide.value[0]" : {
+  "H120.NatureRequest.pleaseProvide" : {
     "index" : "3.2. ",
     "prompt" : "Vennligst oppgi",
     "valuetype" : "_uxMultiCheckbox",
@@ -59,7 +84,7 @@
     "prompt" : "Beskrivelse (Spesielle krav til hva som skal dekkes) av etterspurt legeundersøkelse",
     "valuetype" : "_uxTextAreaInput"
   },
-  "H120.NatureRequest.weAskTo.value[0]" : {
+  "H120.NatureRequest.weAskTo" : {
     "index" : "3.1. ",
     "prompt" : "Vi ber dere om å",
     "valuetype" : "_uxMultiCheckbox",
@@ -70,12 +95,27 @@
     },
     "enumName" : "ApplyForCostsEstimationExaminationMultipleType"
   },
+  "H120.Person" : {
+    "index" : "1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.AdditionalInformationPerson.Address" : {
+    "index" : "1.2.4. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H120.Person.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "1.2.4.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "H120.Person.AdditionalInformationPerson.Address.country.value[0]" : {
+  "H120.Person.AdditionalInformationPerson.Address.country" : {
     "index" : "1.2.4.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -83,7 +123,7 @@
   },
   "H120.Person.AdditionalInformationPerson.Address.postalCode" : {
     "index" : "1.2.4.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "H120.Person.AdditionalInformationPerson.Address.region" : {
@@ -101,19 +141,44 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "H120.Person.AdditionalInformationPerson.ContactInformationPerson" : {
+    "index" : "1.2.5. ",
+    "prompt" : "Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "index" : "1.2.5.2. ",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "1.2.5.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
   "H120.Person.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
     "index" : "1.2.5.2.1.1. ",
     "prompt" : "E-postadresse",
     "valuetype" : "_uxTextInput"
   },
+  "H120.Person.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "1.2.5.1. ",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "1.2.5.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
   "H120.Person.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
     "index" : "1.2.5.1.1.2. ",
-    "prompt" : "Angi telefonnummer med nasjonal kode hvis dette finnes.",
+    "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "H120.Person.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "H120.Person.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
     "index" : "1.2.5.1.1.1. ",
-    "prompt" : "Angi hvilken type nummer som er gitt",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Hjem",
@@ -122,7 +187,7 @@
     },
     "enumName" : "EESSITelephoneNumberType"
   },
-  "H120.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "H120.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
@@ -138,7 +203,22 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "H120.Person.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -156,7 +236,7 @@
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -171,8 +251,23 @@
   },
   "H120.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "H120.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -184,7 +279,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -195,9 +290,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "H120.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -232,10 +327,10 @@
   },
   "H120.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "H120.Person.PersonIdentification.sex.value[0]" : {
+  "H120.Person.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -246,12 +341,32 @@
     },
     "enumName" : "EESSISexType"
   },
+  "H120.QuestionsForAWODOnly" : {
+    "index" : "6. ",
+    "prompt" : "Spørsmål kun for AWOD",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns" : {
+    "index" : "6.1. ",
+    "prompt" : "Fyll ut følgende del bare hvis anmodningen gjelder yrkesskade eller yrkessykdom",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer" : {
+    "index" : "6.1.8. ",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address" : {
+    "index" : "6.1.8.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.buildingName" : {
     "index" : "6.1.8.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.country.value[0]" : {
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.country" : {
     "index" : "6.1.8.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -259,7 +374,7 @@
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.postalCode" : {
     "index" : "6.1.8.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.Address.region" : {
@@ -277,14 +392,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.IdentificationNumbers" : {
+    "index" : "6.1.8.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "6.1.8.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "6.1.8.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "6.1.8.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -296,8 +421,13 @@
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.Employer.name" : {
     "index" : "6.1.8.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.PleaseFillInFollowingIfStatusPersonOther" : {
+    "index" : "6.1.7. ",
+    "prompt" : "Fyll ut hvis «Personens status» = «Annet»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.PleaseFillInFollowingIfStatusPersonOther.statusPersonIfOther" : {
     "index" : "6.1.7.1. ",
@@ -324,7 +454,7 @@
     "prompt" : "Dato",
     "valuetype" : "_uxDateInput"
   },
-  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.statusPerson.value[0]" : {
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.statusPerson" : {
     "index" : "6.1.6. ",
     "prompt" : "Personens status",
     "valuetype" : "_uxRadioButton",
@@ -337,7 +467,7 @@
     },
     "enumName" : "HTypePersonLabourPartialType"
   },
-  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.thisSEDRelatedTo.value[0]" : {
+  "H120.QuestionsForAWODOnly.FillInSectionOnlyIfRequestConcerns.thisSEDRelatedTo" : {
     "index" : "6.1.1. ",
     "prompt" : "Denne SED-en gjelder",
     "valuetype" : "_uxRadioButton",
@@ -347,12 +477,17 @@
     },
     "enumName" : "EESSITypeSEDAccidentDiseaseType"
   },
+  "H120.QuestionsForFamilyBenefitsOnly" : {
+    "index" : "5. ",
+    "prompt" : "Spørsmål kun for familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "H120.QuestionsForFamilyBenefitsOnly.additionalInformationMedicalReport" : {
     "index" : "5.2. ",
     "prompt" : "Ytterligere informasjon til medisinsk rapport",
     "valuetype" : "_uxTextAreaInput"
   },
-  "H120.QuestionsForFamilyBenefitsOnly.requestedInformation.value[0]" : {
+  "H120.QuestionsForFamilyBenefitsOnly.requestedInformation" : {
     "index" : "5.1. ",
     "prompt" : "Etterspurt informasjon",
     "valuetype" : "_uxMultiSelect",
@@ -371,7 +506,12 @@
     },
     "enumName" : "RequestedInformationMedicalReportMultipleType"
   },
-  "H120.TheBenefitConcerned.typeBenefitInReferWhichMedicalInformationRequested.value[0]" : {
+  "H120.TheBenefitConcerned" : {
+    "index" : "2. ",
+    "prompt" : "Berørt ytelse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H120.TheBenefitConcerned.typeBenefitInReferWhichMedicalInformationRequested" : {
     "index" : "2.1. ",
     "prompt" : "Type ytelse der det anmodes om medisinsk informasjon",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -391,5 +531,10 @@
       "13" : "Sykepenger - kontantytelser"
     },
     "enumName" : "BenefitTypeH120Type"
+  },
+  "H120.sedTitle" : {
+    "index" : "H120",
+    "prompt" : "H120 - Anmodning om medisinsk informasjon",
+    "valuetype" : "_rinaRoot"
   }
 }

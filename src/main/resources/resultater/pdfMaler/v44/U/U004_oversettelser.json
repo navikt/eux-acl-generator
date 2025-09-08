@@ -1,27 +1,57 @@
 {
+  "U004.EmploymentOrSelfEmploymentInformation" : {
+    "index" : "4. ",
+    "prompt" : "Ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0]" : {
+    "index" : "4.1",
+    "prompt" : "Ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails" : {
+    "index" : "4.1.3. ",
+    "prompt" : "Opplysning om inntekter",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0]" : {
+    "index" : "3.1",
+    "prompt" : "Opplysning om inntekter",
+    "valuetype" : "_rinaArray"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].Earnings" : {
+    "index" : "4.1.3.1.2. ",
+    "prompt" : "Inntekt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].Earnings.amount" : {
     "index" : "4.1.3.1.2.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].Earnings.currency.value[0]" : {
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].Earnings.currency" : {
     "index" : "4.1.3.1.2.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].PleaseFillInFollowingIfEarningsTypeOtherPayment" : {
+    "index" : "4.1.3.1.3. ",
+    "prompt" : "Fyll ut hvis «Inntektstype» = «99 - Annen kompensasjon»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].PleaseFillInFollowingIfEarningsTypeOtherPayment.informationAboutOtherCompensation" : {
     "index" : "4.1.3.1.3.1. ",
     "prompt" : "Informasjon om annen kompensasjon",
     "valuetype" : "_uxTextInput"
   },
-  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].earningsType.value[0]" : {
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].EarningsDetails.EarningsDetail[0].earningsType" : {
     "index" : "4.1.3.1.1. ",
-    "prompt" : "01 - Netto gjennomsnittlig månedlig inntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "prompt" : "Type inntekter",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
-      "01" : "Netto gjennomsnittlig inntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
-      "02" : "Brutto gjennomsnittlig inntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
+      "01" : "Nettoinntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
+      "02" : "Bruttoinntekt under ansettelsesforhold eller selvstendig næringsvirksomhet",
       "03" : "En enkelt utbetaling",
       "04" : "Overtidsgodtgjørelse",
       "05" : "Vederlag for ferie som ikke er tatt ut",
@@ -29,9 +59,19 @@
     },
     "enumName" : "PaymentTypeUnemploymentEarningsType"
   },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period" : {
+    "index" : "4.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.FixedPeriod" : {
+    "index" : "4.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.FixedPeriod.endDate" : {
     "index" : "4.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.FixedPeriod.startDate" : {
@@ -39,12 +79,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.OpenPeriod" : {
+    "index" : "4.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.OpenPeriod.startDate" : {
     "index" : "4.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -54,6 +99,11 @@
     },
     "enumName" : "EESSIOpenPeriodType"
   },
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].RequestedAdditionalDetails" : {
+    "index" : "4.1.4. ",
+    "prompt" : "Etterspurte tilleggsopplysninger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].RequestedAdditionalDetails.numberDaysWorked" : {
     "index" : "4.1.4.2. ",
     "prompt" : "Antall dager i arbeid",
@@ -61,10 +111,10 @@
   },
   "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].RequestedAdditionalDetails.numberHoursWorked" : {
     "index" : "4.1.4.1. ",
-    "prompt" : "Angi gjennomsnittlig antall arbeidstimer per uke i den aktuelle perioden.",
+    "prompt" : "Antall timer i arbeid",
     "valuetype" : "_uxTextInput"
   },
-  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].periodOf.value[0]" : {
+  "U004.EmploymentOrSelfEmploymentInformation.EmploymentOrSelfEmploymentInformation[0].periodOf" : {
     "index" : "4.1.2. ",
     "prompt" : "Periode",
     "valuetype" : "_uxRadioButton",
@@ -73,6 +123,21 @@
       "02" : "Selvstendig næringsvirksomhet"
     },
     "enumName" : "EESSIEmploymentType"
+  },
+  "U004.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "U004.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U004.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -89,19 +154,44 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "U004.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U004.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "U004.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "U004.Person" : {
+    "index" : "2. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.Person.AdditionalInformationPerson" : {
+    "index" : "2.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.Person.AdditionalInformationPerson.nationality" : {
     "index" : "2.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "U004.Person.PersonIdentification" : {
+    "index" : "2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -119,7 +209,7 @@
   },
   "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -134,8 +224,23 @@
   },
   "U004.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.7.1.4.1. ",
@@ -147,7 +252,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -158,9 +263,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "U004.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -195,10 +300,10 @@
   },
   "U004.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "U004.Person.PersonIdentification.sex.value[0]" : {
+  "U004.Person.PersonIdentification.sex" : {
     "index" : "2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -209,9 +314,19 @@
     },
     "enumName" : "EESSISexType"
   },
+  "U004.ReferencePeriod" : {
+    "index" : "3. ",
+    "prompt" : "Referanseperiode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U004.ReferencePeriod.FixedPeriod" : {
+    "index" : "3.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U004.ReferencePeriod.FixedPeriod.endDate" : {
     "index" : "3.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "U004.ReferencePeriod.FixedPeriod.startDate" : {
@@ -219,12 +334,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "U004.ReferencePeriod.OpenPeriod" : {
+    "index" : "3.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "U004.ReferencePeriod.OpenPeriod.startDate" : {
     "index" : "3.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "U004.ReferencePeriod.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U004.ReferencePeriod.OpenPeriod.typeOpenPeriod" : {
     "index" : "3.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -233,5 +353,10 @@
       "98" : "Ukjent sluttdato for perioden"
     },
     "enumName" : "EESSIOpenPeriodType"
+  },
+  "U004.sedTitle" : {
+    "index" : "U004",
+    "prompt" : "U004 - Lønnsopplysninger",
+    "valuetype" : "_rinaRoot"
   }
 }

@@ -1,796 +1,1150 @@
 {
-  "U001.AdditionalInformationForLastPeriodEmployment.elementsForStartingDateIndicator.value[0]" : {
+  "U001.AdditionalInformationForLastPeriodEmployment" : {
+    "ledetekst" : "Ytterligere informasjon for siste periode i ansettelsesforhold/selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7. "
+  },
+  "U001.AdditionalInformationForLastPeriodEmployment.elementsForStartingDateIndicator" : {
+    "ledetekst" : "Elementer for startdato",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "7.1. ",
-    "ledetekst" : "Merk av i denne boksen for å angi om svarinstitusjonen skal fylle ut 'Informasjon om siste ansettelsesforhold eller selvstendige næringsvirksomhet for startdato for ytelser' i U002 '- Trygdehistorikk'.",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "22684f61-9218-e611-80ea-000c292ed0d7"
   },
-  "U001.AdditionalInformationForLastPeriodEmployment.reasonForTerminationEmploymentOrSelfEmploymentIndicator.value[0]" : {
+  "U001.AdditionalInformationForLastPeriodEmployment.reasonForTerminationEmploymentOrSelfEmploymentIndicator" : {
+    "ledetekst" : "Grunn til opphør i ansettelsesforhold eller selvstendig næringsvirksomhet",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "7.2. ",
-    "ledetekst" : "Grunn til opphør i ansettelsesforhold eller selvstendig næringsvirksomhet",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "23684f61-9218-e611-80ea-000c292ed0d7"
   },
+  "U001.LastAddressInStateFormerInsurance" : {
+    "ledetekst" : "Siste adresse i landet for tidligere forsikring",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4. "
+  },
   "U001.LastAddressInStateFormerInsurance.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.LastAddressInStateFormerInsurance.country.value[0]" : {
+  "U001.LastAddressInStateFormerInsurance.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "e50c0a5f-47f4-e611-80d3-000d3a22e8cd"
   },
   "U001.LastAddressInStateFormerInsurance.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.LastAddressInStateFormerInsurance.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.LastAddressInStateFormerInsurance.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1. ",
-    "ledetekst" : "Oppgi gatenavn og annen tilgjengelig informasjon, som f.eks. gatenummer, oppgang, etasje og leilighetsnummer, eller identifikasjon. Bruk dette feltet for å gi opplysninger om postboksnummeret eller annen identifikasjon hvis dette brukes.",
     "tekstlengde" : "155"
   },
   "U001.LastAddressInStateFormerInsurance.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "U001.LocalCaseNumbers" : {
+    "ledetekst" : "Lokale saksnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "U001.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "ledetekst" : "Lokalt saksnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1"
+  },
+  "U001.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3. "
+  },
   "U001.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.3.1. "
   },
   "U001.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
   "U001.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "ledetekst" : "Saksnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Saksnummer",
     "tekstlengde" : "65"
   },
-  "U001.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U001.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Angi landet der saksnummeret kan brukes.",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment" : {
+    "ledetekst" : "Forsikringsperiode, ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0]" : {
+    "ledetekst" : "Forsikringsperiode, ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "6.1"
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation" : {
+    "ledetekst" : "Fengselsinformasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.6.1. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.6.1.3. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.6.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.6.1.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.6.1.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.6.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.6.1.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.6.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.6.1.2. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "6.1.2.1"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.6.1.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.6.1.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodDeprivation.PrisonInformation.name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.6.1.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment" : {
+    "ledetekst" : "Informasjon om ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.3.1. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.3.1.3. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.3.1.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.3.1.2. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.1.2.1"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.3.1.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmployment.EmploymentOrSelfEmployment.name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.earningsIndicator.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested" : {
+    "ledetekst" : "Etterspørres flere opplysninger?",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.4.1. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.earningsIndicator" : {
+    "ledetekst" : "Inntekt",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.4.1.1. ",
-    "ledetekst" : "Angi om denne opplysningen er påkrevd ifølge nasjonal lovgivning.",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "2393e136-1750-e611-80ca-000d3a22e8cd"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.employmentOrSelfEmploymentNatureIndicator.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.employmentOrSelfEmploymentNatureIndicator" : {
+    "ledetekst" : "Type ansettelse/selvstendig næringsvirksomhet",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.4.1.3. ",
-    "ledetekst" : "Angi om denne opplysningen er påkrevd ifølge nasjonal lovgivning.",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "2593e136-1750-e611-80ca-000d3a22e8cd"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.numberWorkingHoursIndicator.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.AdditionalDetailsRequested.numberWorkingHoursIndicator" : {
+    "ledetekst" : "Antall arbeidstimer",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.4.1.2. ",
-    "ledetekst" : "Angi om denne opplysningen er påkrevd ifølge nasjonal lovgivning.",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "2493e136-1750-e611-80ca-000d3a22e8cd"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails" : {
+    "ledetekst" : "Informasjon om ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.4.2. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.4.2.3. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4.2.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.4.2.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4.2.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4.2.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4.2.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4.2.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.4.2.2. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "4.2.2.1"
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4.2.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.4.2.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodEmploymentNot.EmploymentOrSelfEmploymentDetails.name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.4.2.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails" : {
+    "ledetekst" : "Opplysninger om forsikringsinstitusjonen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.7.2. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR" : {
+    "ledetekst" : "Institusjonen finnes ikke i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "6.1.7.2.2. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress" : {
+    "ledetekst" : "Institusjonens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.7.2.2.2. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.2.2.2.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.7.2.2.2.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.2.2.2.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.2.2.2.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.2.2.2.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.InstitutionAddress.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.2.2.2.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionDOESNOTExistInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.2.2.1. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionEXISTSInIR" : {
+    "ledetekst" : "Institusjonen finnes i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "6.1.7.2.1. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionEXISTSInIR.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "6.1.7.2.1.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "6.1.7.2.1.1. "
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.InsuranceInstitutionDetails.TheInstitutionEXISTSInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.2.1.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.activityNature" : {
+    "ledetekst" : "Virksomhetens art",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.3. ",
-    "ledetekst" : "Virksomhetens art",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodOtherPeriod.type" : {
+    "ledetekst" : "Type",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.7.1. ",
-    "ledetekst" : "Type",
     "tekstlengde" : "65"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution" : {
+    "ledetekst" : "Sykeforsikringsinstitusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.5.1. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR" : {
+    "ledetekst" : "Institusjonen finnes ikke i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "6.1.5.1.2. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress" : {
+    "ledetekst" : "Institusjonens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.5.1.2.2. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.5.1.2.2.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.5.1.2.2.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.5.1.2.2.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.5.1.2.2.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.5.1.2.2.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.5.1.2.2.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionDOESNOTExistInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.5.1.2.1. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionEXISTSInIR" : {
+    "ledetekst" : "Institusjonen finnes i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "6.1.5.1.1. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionEXISTSInIR.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "6.1.5.1.1.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "6.1.5.1.1.1. "
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].FillInIfTypePeriodSicknessPeriod.HealthInsuranceInstitution.TheInstitutionEXISTSInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.5.1.1.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period" : {
+    "ledetekst" : "Periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.1. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.FixedPeriod" : {
+    "ledetekst" : "Fastsatt periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "6.1.1.1. "
+  },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.FixedPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "6.1.1.1.2. ",
-    "ledetekst" : "Angi sluttdato for perioden."
+    "indeks" : "6.1.1.1.2. "
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.FixedPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "6.1.1.1.1. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "6.1.1.1.1. "
+  },
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod" : {
+    "ledetekst" : "Åpen periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "6.1.1.2. "
   },
   "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "6.1.1.2.2. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "6.1.1.2.2. "
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "ledetekst" : "Type åpen periode",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.1.2.1. ",
-    "ledetekst" : "Type åpen periode",
     "enumNavn" : "EESSIOpenPeriodType",
     "enumNavnId" : "a8fbff38-4ff4-e611-80d3-000d3a22e8cd"
   },
-  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].typePeriod.value[0]" : {
+  "U001.PeriodsInsuranceEmploymentOrSelfEmployment.InsuranceOrEmploymentOrSelfEmploymentPeriod[0].typePeriod" : {
+    "ledetekst" : "Type periode",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.2. ",
-    "ledetekst" : "Type periode",
     "enumNavn" : "UPeriodTypeUnemploymentType",
     "enumNavnId" : "a3d68e0b-8ab5-e611-80d2-000d3a22e8cd"
   },
-  "U001.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "U001.Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "U001.Person.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2. "
+  },
+  "U001.Person.AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "2.2.1. ",
-    "ledetekst" : "Nasjonalitet",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "c25cdaab-2553-e611-80ca-000d3a22e8cd"
   },
-  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "U001.Person.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1. "
+  },
+  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.8. "
+  },
+  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.8.1. "
+  },
+  "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.1.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.2. ",
-    "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "U001.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7. "
+  },
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1.7.1"
+  },
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7.1.4. "
+  },
   "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "2.1.7.1.4.1. "
   },
   "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "2.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "U001.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.7.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "U001.Person.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "2.1.3. "
   },
   "U001.Person.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "U001.Person.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "U001.Person.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "U001.Person.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "U001.Person.PersonIdentification.sex.value[0]" : {
+  "U001.Person.PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
+  "U001.PersonCurrentAddress" : {
+    "ledetekst" : "Personens nåværende adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3. "
+  },
+  "U001.PersonCurrentAddress.AddressDetails" : {
+    "ledetekst" : "Opplysning om adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1. "
+  },
   "U001.PersonCurrentAddress.AddressDetails.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.PersonCurrentAddress.AddressDetails.country.value[0]" : {
+  "U001.PersonCurrentAddress.AddressDetails.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "e50c0a5f-47f4-e611-80d3-000d3a22e8cd"
   },
   "U001.PersonCurrentAddress.AddressDetails.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.PersonCurrentAddress.AddressDetails.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.PersonCurrentAddress.AddressDetails.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.1. ",
-    "ledetekst" : "Oppgi gatenavn og annen tilgjengelig informasjon, som f.eks. gatenummer, oppgang, etasje og leilighetsnummer, eller identifikasjon. Bruk dette feltet for å gi opplysninger om postboksnummeret eller annen identifikasjon hvis dette brukes.",
     "tekstlengde" : "155"
   },
   "U001.PersonCurrentAddress.AddressDetails.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "U001.PersonCurrentAddress.ContactInformation" : {
+    "ledetekst" : "Kontaktinformasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.2. "
+  },
+  "U001.PersonCurrentAddress.ContactInformation.EmailAddresses" : {
+    "ledetekst" : "E-postadresser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.2.2. "
+  },
+  "U001.PersonCurrentAddress.ContactInformation.EmailAddresses.EmailAddress[0]" : {
+    "ledetekst" : "E-postadresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.2.2.1"
+  },
   "U001.PersonCurrentAddress.ContactInformation.EmailAddresses.EmailAddress[0].email" : {
+    "ledetekst" : "E-postadresse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.2.2.1.1. ",
-    "ledetekst" : "E-postadresse"
+    "indeks" : "3.2.2.1.1. "
+  },
+  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers" : {
+    "ledetekst" : "Telefonnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.2.1. "
+  },
+  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0]" : {
+    "ledetekst" : "Telefonnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.2.1.1"
   },
   "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.2.1.1.2. ",
-    "ledetekst" : "Angi telefonnummer med nasjonal kode hvis dette finnes."
+    "indeks" : "3.2.1.1.2. "
   },
-  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "U001.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "3.2.1.1.1. ",
-    "ledetekst" : "Angi hvilken type nummer som er gitt",
     "enumNavn" : "EESSITelephoneNumberType",
     "enumNavnId" : "2e684f61-9218-e611-80ea-000c292ed0d7"
   },
+  "U001.ReferencePeriod" : {
+    "ledetekst" : "Referanseperiode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5. "
+  },
+  "U001.ReferencePeriod.FixedPeriod" : {
+    "ledetekst" : "Fastsatt periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "5.1. "
+  },
   "U001.ReferencePeriod.FixedPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "5.1.2. ",
-    "ledetekst" : "Angi sluttdato for perioden."
+    "indeks" : "5.1.2. "
   },
   "U001.ReferencePeriod.FixedPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "5.1.1. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "5.1.1. "
+  },
+  "U001.ReferencePeriod.OpenPeriod" : {
+    "ledetekst" : "Åpen periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "5.2. "
   },
   "U001.ReferencePeriod.OpenPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "5.2.2. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "5.2.2. "
   },
-  "U001.ReferencePeriod.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U001.ReferencePeriod.OpenPeriod.typeOpenPeriod" : {
+    "ledetekst" : "Type åpen periode",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "5.2.1. ",
-    "ledetekst" : "Type åpen periode",
     "enumNavn" : "EESSIOpenPeriodType",
     "enumNavnId" : "a8fbff38-4ff4-e611-80d3-000d3a22e8cd"
   },
+  "U001.UnemploymentBenefitsPeriods" : {
+    "ledetekst" : "Periode for dagpenger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8. "
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0]" : {
+    "ledetekst" : "Periode med dagpenger",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "8.1"
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution" : {
+    "ledetekst" : "Lokal institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8.1.2. "
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR" : {
+    "ledetekst" : "Institusjonen finnes ikke i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.1.2.2. "
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress" : {
+    "ledetekst" : "Institusjonens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8.1.2.2.2. "
+  },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.1.2.2.2.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country.value[0]" : {
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "8.1.2.2.2.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.1.2.2.2.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.1.2.2.2.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.1.2.2.2.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.InstitutionAddress.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.1.2.2.2.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionDOESNOTExistInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.1.2.2.1. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionEXISTSInIR" : {
+    "ledetekst" : "Institusjonen finnes i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.1.2.1. "
+  },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionEXISTSInIR.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "8.1.2.1.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "8.1.2.1.1. "
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].LocalInstitution.TheInstitutionEXISTSInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.1.2.1.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period" : {
+    "ledetekst" : "Periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8.1.1. "
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.FixedPeriod" : {
+    "ledetekst" : "Fastsatt periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.1.1.1. "
+  },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.FixedPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "8.1.1.1.2. ",
-    "ledetekst" : "Angi sluttdato for perioden."
+    "indeks" : "8.1.1.1.2. "
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.FixedPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "8.1.1.1.1. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "8.1.1.1.1. "
+  },
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod" : {
+    "ledetekst" : "Åpen periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.1.1.2. "
   },
   "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "8.1.1.2.2. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "8.1.1.2.2. "
   },
-  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "U001.UnemploymentBenefitsPeriods.UnemploymentBenefitsPeriod[0].Period.OpenPeriod.typeOpenPeriod" : {
+    "ledetekst" : "Type åpen periode",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "8.1.1.2.1. ",
-    "ledetekst" : "Type åpen periode",
     "enumNavn" : "EESSIOpenPeriodType",
     "enumNavnId" : "a8fbff38-4ff4-e611-80d3-000d3a22e8cd"
+  },
+  "U001.sedTitle" : {
+    "ledetekst" : "Anmodning om trygdehistorikk",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "U001"
   }
 }

@@ -1,15 +1,35 @@
 {
+  "DA048.AdditionalInformation" : {
+    "index" : "6. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA048.AdditionalInformation.additionalInformation" : {
     "index" : "6.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "DA048.AddressesPerson" : {
+    "index" : "2. ",
+    "prompt" : "Personens adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.AddressesPerson.AddressPerson[0]" : {
+    "index" : "2.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "DA048.AddressesPerson.AddressPerson[0].Address" : {
+    "index" : "2.1.1. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA048.AddressesPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "2.1.1.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "DA048.AddressesPerson.AddressPerson[0].Address.country.value[0]" : {
+  "DA048.AddressesPerson.AddressPerson[0].Address.country" : {
     "index" : "2.1.1.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -17,7 +37,7 @@
   },
   "DA048.AddressesPerson.AddressPerson[0].Address.postalCode" : {
     "index" : "2.1.1.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "DA048.AddressesPerson.AddressPerson[0].Address.region" : {
@@ -35,7 +55,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "DA048.AddressesPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "DA048.AddressesPerson.AddressPerson[0].typeAddress" : {
     "index" : "2.1.2. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxMultiCheckbox",
@@ -46,12 +66,22 @@
     },
     "enumName" : "EESSIAddressMultipleType"
   },
+  "DA048.Employer" : {
+    "index" : "4. ",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Employer.Address" : {
+    "index" : "4.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA048.Employer.Address.buildingName" : {
     "index" : "4.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "DA048.Employer.Address.country.value[0]" : {
+  "DA048.Employer.Address.country" : {
     "index" : "4.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -59,7 +89,7 @@
   },
   "DA048.Employer.Address.postalCode" : {
     "index" : "4.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "DA048.Employer.Address.region" : {
@@ -77,14 +107,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "DA048.Employer.IdentificationNumbers" : {
+    "index" : "4.2. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Employer.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "4.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "DA048.Employer.IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "4.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "DA048.Employer.IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "DA048.Employer.IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "4.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -96,13 +136,38 @@
   },
   "DA048.Employer.name" : {
     "index" : "4.1. ",
-    "prompt" : "Angi juridisk navn eller selskapsnavn.",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "DA048.InformationAboutContestation" : {
+    "index" : "5. ",
+    "prompt" : "Informasjon om bestridelse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.InformationAboutContestation.FillInIfReasonForDisputing" : {
+    "index" : "5.2. ",
+    "prompt" : "Fyll ut hvis «Grunn til å bestride bruk av vårt lands lovgivning om arbeidsulykker og yrkessykdommer» = \\",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA048.InformationAboutContestation.FillInIfReasonForDisputing.otherReason" : {
     "index" : "5.2.1. ",
     "prompt" : "Annen grunn",
     "valuetype" : "_uxTextInput"
+  },
+  "DA048.InformationAboutContestation.InformationAboutSicknessInsurance" : {
+    "index" : "5.3. ",
+    "prompt" : "Informasjon om sykeforsikring",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.InformationAboutContestation.InformationAboutSicknessInsurance.Institution" : {
+    "index" : "5.3.2. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.InformationAboutContestation.InformationAboutSicknessInsurance.Institution.Institution" : {
+    "index" : "5.3.2.2. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA048.InformationAboutContestation.InformationAboutSicknessInsurance.Institution.Institution.institutionID" : {
     "index" : "5.3.2.2.1. ",
@@ -114,13 +179,13 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "DA048.InformationAboutContestation.InformationAboutSicknessInsurance.Institution.countryCode.value[0]" : {
+  "DA048.InformationAboutContestation.InformationAboutSicknessInsurance.Institution.countryCode" : {
     "index" : "5.3.2.1. ",
     "prompt" : "Landskode",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "DA048.InformationAboutContestation.InformationAboutSicknessInsurance.sicknessInsuranceInformation.value[0]" : {
+  "DA048.InformationAboutContestation.InformationAboutSicknessInsurance.sicknessInsuranceInformation" : {
     "index" : "5.3.1. ",
     "prompt" : "Opplysninger om helseforsikring",
     "valuetype" : "_uxRadioButton",
@@ -136,7 +201,7 @@
     "prompt" : "Forventet dato for endelig vedtak",
     "valuetype" : "_uxDateInput"
   },
-  "DA048.InformationAboutContestation.reasonDisputingLegislationInStateAccidentsWorkDiseases.value[0]" : {
+  "DA048.InformationAboutContestation.reasonDisputingLegislationInStateAccidentsWorkDiseases" : {
     "index" : "5.1. ",
     "prompt" : "Grunn til å bestride bruk av vårt lands lovgivning om arbeidsulykker og yrkessykdommer",
     "valuetype" : "_uxRadioButton",
@@ -148,7 +213,17 @@
     },
     "enumName" : "ReasonLegislationApplicationDisputingType"
   },
-  "DA048.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "DA048.Person" : {
+    "index" : "1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Person.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
@@ -164,7 +239,22 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "DA048.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "DA048.Person.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -182,7 +272,7 @@
   },
   "DA048.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "DA048.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -197,8 +287,23 @@
   },
   "DA048.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "DA048.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "DA048.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA048.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -210,7 +315,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "DA048.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "DA048.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -221,9 +326,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "DA048.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "DA048.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -258,10 +363,10 @@
   },
   "DA048.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "DA048.Person.PersonIdentification.sex.value[0]" : {
+  "DA048.Person.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -271,6 +376,16 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "DA048.ThisSEDRelatedTo" : {
+    "index" : "3. ",
+    "prompt" : "Denne SED-en gjelder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA048.ThisSEDRelatedTo.PleaseFillInFollowingIfStatusPersonOther" : {
+    "index" : "3.7. ",
+    "prompt" : "Fyll ut hvis «Personens status» = «Annet»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA048.ThisSEDRelatedTo.PleaseFillInFollowingIfStatusPersonOther.statusPersonIfOther" : {
     "index" : "3.7.1. ",
@@ -294,10 +409,10 @@
   },
   "DA048.ThisSEDRelatedTo.description" : {
     "index" : "3.5. ",
-    "prompt" : "Gi henholdsvis beskrivelsen av skade/sykdom forårsaket av yrkesskaden eller beskrivelsen av yrkessykdom. Oppgi diagnosen som gir personen rett til kompensasjon.",
+    "prompt" : "Beskrivelse",
     "valuetype" : "_uxTextAreaInput"
   },
-  "DA048.ThisSEDRelatedTo.statusPerson.value[0]" : {
+  "DA048.ThisSEDRelatedTo.statusPerson" : {
     "index" : "3.6. ",
     "prompt" : "Personens status",
     "valuetype" : "_uxRadioButton",
@@ -309,7 +424,7 @@
     },
     "enumName" : "DTypePersonType"
   },
-  "DA048.ThisSEDRelatedTo.typeOfSED.value[0]" : {
+  "DA048.ThisSEDRelatedTo.typeOfSED" : {
     "index" : "3.1. ",
     "prompt" : "Type SED",
     "valuetype" : "_uxRadioButton",
@@ -318,5 +433,10 @@
       "02" : "Yrkessykdom"
     },
     "enumName" : "EESSITypeSEDAccidentDiseaseType"
+  },
+  "DA048.sedTitle" : {
+    "index" : "DA048",
+    "prompt" : "DA048 - Melding om bestridelse av at ulykken eller sykdommen er yrkesrelatert",
+    "valuetype" : "_rinaRoot"
   }
 }

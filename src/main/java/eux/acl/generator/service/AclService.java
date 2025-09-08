@@ -1,13 +1,8 @@
 package eux.acl.generator.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.json.JsonMapper;
-import com.github.wnameless.json.flattener.JsonFlattener;
-import com.github.wnameless.json.flattener.PrintMode;
 import com.github.wnameless.json.unflattener.JsonUnflattener;
-import eux.acl.generator.modell.EuSedFundament;
-import eux.acl.generator.modell.pdf.PdfSedElement;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -37,12 +32,13 @@ public class AclService {
     }
 
     public void lagAclMal(String sektor, String cdmVersjon) {
-        List<String> alleAclMalLinjerInnenSektoren = filService.lesAclMalBasisForEnSektorTilFil(sektor, cdmVersjon);
+        log.info("--- AclMaler for sektor {} ---", sektor);
+        List<String> alleAclMalLinjerInnenSektoren = filService.lesAclMalBasisForEnSektor(sektor, cdmVersjon);
         TreeMap<String, Map<String,String>> sedTypeVsEuSedStiVsAclSedSti = new TreeMap<>();
         alleAclMalLinjerInnenSektoren.forEach( l -> {
             String[] malLinje = l.split(":");
             if (malLinje.length < 3) {
-                log.error("Feil i mal-linja: sektor={}, {}", sektor, l);
+                log.error("Feil i mal-linja, sektor={}: {}", sektor, l);
             }
             String sedType = malLinje[0];
             String euSedSti = sedType + "." + malLinje[1].trim();
@@ -60,7 +56,6 @@ public class AclService {
                JsonNode aclMalNode = new JsonMapper().readTree(aclMalJson);
                 String aclMalPrettyPrint = new JsonMapper().writerWithDefaultPrettyPrinter().writeValueAsString(aclMalNode);
                 filService.skrivAclMalTilFil(aclMalPrettyPrint,  aclSektor + "/" + sedType + "_v" + cdmVersjon,  cdmVersjon);
-                log.info("ACL-mal opprettet for {}", sedType);
             } catch (Exception e) {
                 log.error("Kunne ikke opprette ACL-mal. sedType={}: {}", sedType, e.getLocalizedMessage());
                 e.printStackTrace();

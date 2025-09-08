@@ -4,7 +4,6 @@
       "PersonIdentification" : {
         "dateBirth" : "$nav.bruker.person.foedselsdato",
         "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
-          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
           "PlaceBirth" : {
             "region" : "$nav.bruker.person.foedested.region",
             "town" : "$nav.bruker.person.foedested.by",
@@ -12,6 +11,7 @@
               "value" : [ "$nav.bruker.person.foedested.land" ]
             }
           },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
           "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
           "forenameMother" : "$nav.bruker.mor.person.fornavn",
           "forenameFather" : "$nav.bruker.far.person.fornavn"
@@ -41,7 +41,7 @@
       },
       "AdditionalInformationPerson" : {
         "nationality" : {
-          "value" : [ "$nav.bruker.person.statsborgerskap.land" ]
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
         }
       }
     },

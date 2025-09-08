@@ -93,7 +93,7 @@
       },
       "AdditionalInformationPerson" : {
         "nationality" : {
-          "value" : [ "$nav.bruker.person.statsborgerskap.land" ]
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
         }
       }
     },
@@ -205,7 +205,7 @@
     },
     "RulesApplyProvidedForByRegulationEC883" : {
       "articleRegulationECNo140871WhichApplies" : {
-        "value" : [ "$medlemskap.gjeldendereglerEC883" ]
+        "value" : [ "$medlemskap.gjeldendereglerEC883[x]" ]
       }
     },
     "InformationDeterminationProvisionalAccording" : {

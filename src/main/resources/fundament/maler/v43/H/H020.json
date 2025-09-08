@@ -1,165 +1,237 @@
 {
+  "H020.Claim" : {
+    "ledetekst" : "Krav",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "H020.Claim.Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1. "
+  },
+  "H020.Claim.Person.PersonIdentificationNumber" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.4. "
+  },
   "H020.Claim.Person.PersonIdentificationNumber.pINPersonInCompetentMemberState" : {
+    "ledetekst" : "Personens PIN i kompetent EU-land",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.1. ",
-    "ledetekst" : "Personens PIN i kompetent EU-land",
     "tekstlengde" : "65"
   },
   "H020.Claim.Person.PersonIdentificationNumber.pINPersonInMemberStateStayOrResidence" : {
+    "ledetekst" : "Personens PIN i oppholds- eller bostedslandet i EU",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.2. ",
-    "ledetekst" : "Personens PIN i oppholds- eller bostedslandet i EU",
     "tekstlengde" : "65"
   },
+  "H020.Claim.Person.PersonInformation" : {
+    "ledetekst" : "Personopplysninger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.1. "
+  },
   "H020.Claim.Person.PersonInformation.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "2.1.1.3. "
   },
   "H020.Claim.Person.PersonInformation.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "H020.Claim.Person.PersonInformation.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
-  "H020.Claim.Person.PersonInformation.sex.value[0]" : {
+  "H020.Claim.Person.PersonInformation.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "379e16fd-8890-e611-80d0-000d3a22e8cd"
   },
   "H020.Claim.Person.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "H020.Claim.Person.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.3. ",
-    "ledetekst" : "Fornavn ved fødsel",
     "tekstlengde" : "155"
   },
+  "H020.Claim.Reimbursement[0]" : {
+    "ledetekst" : "Refusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.2"
+  },
+  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution" : {
+    "ledetekst" : "Fakturabeløp i kredittinstitusjonens valuta",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2.4. "
+  },
   "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.2.4.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "2.2.4.1. "
   },
-  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution.currency.value[0]" : {
+  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.2.4.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
-  "H020.Claim.Reimbursement[0].inReferenceYour.value[0]" : {
+  "H020.Claim.Reimbursement[0].inReferenceYour" : {
+    "ledetekst" : "Med henvisning til deres",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.2.1. ",
-    "ledetekst" : "Angi enkeltkravets fakturanummer.",
     "enumNavn" : "HReferenceListType",
     "enumNavnId" : "05a0775d-8b90-e611-80d0-000d3a22e8cd"
   },
   "H020.Claim.Reimbursement[0].invoiceNumberCreditorInstitution" : {
+    "ledetekst" : "Kredittinstitusjonens fakturanummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.3. ",
-    "ledetekst" : "Kredittinstitusjonens fakturanummer",
     "tekstlengde" : "65"
   },
   "H020.Claim.Reimbursement[0].issuedOn" : {
+    "ledetekst" : "Utstedelsesdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.2.2. ",
-    "ledetekst" : "Utstedelsesdato"
+    "indeks" : "2.2.2. "
+  },
+  "H020.GlobalClaim" : {
+    "ledetekst" : "Globalt krav",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "H020.GlobalClaim.BankDetails" : {
+    "ledetekst" : "Bankinformasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.6. "
   },
   "H020.GlobalClaim.BankDetails.BICSWIFT" : {
+    "ledetekst" : "BIC-SWIFT",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.6.2. ",
-    "ledetekst" : "BIC-SWIFT",
     "tekstlengde" : "11"
   },
   "H020.GlobalClaim.BankDetails.IBAN" : {
+    "ledetekst" : "IBAN",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.6.1. ",
-    "ledetekst" : "IBAN"
+    "indeks" : "1.6.1. "
+  },
+  "H020.GlobalClaim.CreditorInstitution" : {
+    "ledetekst" : "Kreditorinstitusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1. "
   },
   "H020.GlobalClaim.CreditorInstitution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.1. "
   },
   "H020.GlobalClaim.CreditorInstitution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "H020.GlobalClaim.DebtorInstitution" : {
+    "ledetekst" : "Debitorinstitusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.5. "
+  },
   "H020.GlobalClaim.DebtorInstitution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.5.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.5.1. "
   },
   "H020.GlobalClaim.DebtorInstitution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.5.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution" : {
+    "ledetekst" : "Kravets totalbeløp i kreditorinstitusjonens valuta",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.4. "
+  },
   "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.4.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "1.4.1. "
   },
-  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.currency.value[0]" : {
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.4.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "8c1d14a2-0172-e711-80d7-000d3a22e8cd"
   },
   "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.paymentDueOn" : {
+    "ledetekst" : "Betalingen forfaller",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "1.4.3. ",
-    "ledetekst" : "Betalingen forfaller"
+    "indeks" : "1.4.3. "
   },
   "H020.GlobalClaim.globalReferenceSetByCreditorInstitution" : {
+    "ledetekst" : "Global RPY_COC_CLA_IMO-referanse til kreditorinstitusjonens forbindelsesorgan",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.2. ",
-    "ledetekst" : "Global RPY_COC_CLA_IMO-referanse til kreditorinstitusjonens forbindelsesorgan",
     "tekstlengde" : "25"
   },
   "H020.GlobalClaim.totalNumberInvoices" : {
+    "ledetekst" : "Totalt antall fakturaer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.3. ",
-    "ledetekst" : "Totalt antall fakturaer"
+    "indeks" : "1.3. "
+  },
+  "H020.sedTitle" : {
+    "ledetekst" : "Krav om - refusjon - administrativ kontroll / medisinsk informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "H020"
   }
 }

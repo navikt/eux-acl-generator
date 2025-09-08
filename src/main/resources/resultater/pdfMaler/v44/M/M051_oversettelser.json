@@ -1,15 +1,45 @@
 {
+  "M051.AdditionalInformation" : {
+    "index" : "4. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.AdditionalInformation.additionalInformation" : {
     "index" : "4.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived" : {
+    "index" : "3. ",
+    "prompt" : "Inntekt til familiemedlemmer utenom ektefelle/partner/samboer mottatt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0]" : {
+    "index" : "3.1",
+    "prompt" : "Inntekt til familiemedlemmer utenom ektefelle/partner/samboer mottatt",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0]" : {
+    "index" : "2",
+    "prompt" : "Mottatt inntekt i løpet av perioden det anmodes informasjon om",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation" : {
+    "index" : "3.1.2.3. ",
+    "prompt" : "Mottatt inntekt i løpet av perioden det anmodes informasjon om",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome" : {
+    "index" : "3.1.2.3.3. ",
+    "prompt" : "Mottatt inntekt",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome.amount" : {
     "index" : "3.1.2.3.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome.currency.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome.currency" : {
     "index" : "3.1.2.3.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -25,7 +55,12 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived.socialSecurityBenefit.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived" : {
+    "index" : "3.1.2.2. ",
+    "prompt" : "Fyll ut følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived.socialSecurityBenefit" : {
     "index" : "3.1.2.2.1. ",
     "prompt" : "Trygdeytelse",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -45,9 +80,9 @@
     },
     "enumName" : "MBenefitTypePlusEarlyRetirementType"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].typeIncomeReceived.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].IncomeReceivedDuringPeriodInRespectInformation[0].typeIncomeReceived" : {
     "index" : "3.1.2.1. ",
-    "prompt" : "Inntektstype mottatt",
+    "prompt" : "Inntektstype mottatt:",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Lønn",
@@ -58,12 +93,22 @@
     },
     "enumName" : "IncomeReceivedEnumType"
   },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationEnclosedStatementIncomeIfFail[0]" : {
+    "index" : "5",
+    "prompt" : "Informasjon i vedlagt \\",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationEnclosedStatementIncomeIfFail[0].PleaseFillInFollowingIfPersonSubmitted" : {
+    "index" : "3.1.5.2. ",
+    "prompt" : "Fyll ut følgende dersom personen har framlagt \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationEnclosedStatementIncomeIfFail[0].PleaseFillInFollowingIfPersonSubmitted.otherIncome" : {
     "index" : "3.1.5.2.1. ",
     "prompt" : "Annen inntektskilde",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationEnclosedStatementIncomeIfFail[0].personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationEnclosedStatementIncomeIfFail[0].personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome" : {
     "index" : "3.1.5.1. ",
     "prompt" : "Personen framla \\",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -79,12 +124,27 @@
     },
     "enumName" : "IncomeTypeGeneralSimpleType"
   },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0]" : {
+    "index" : "3",
+    "prompt" : "Informasjon om fast eiendom i perioden det anmodes om informasjon for.",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder" : {
+    "index" : "3.1.3.1. ",
+    "prompt" : "Eiendom som personen enten eier eller har gevinst av.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0]" : {
+    "index" : "1.5",
+    "prompt" : "Adresse i landet der eiendommene (faste eiendommer) finnes",
+    "valuetype" : "_rinaArray"
+  },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].buildingName" : {
     "index" : "3.1.3.1.5.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].country.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].country" : {
     "index" : "3.1.3.1.5.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -92,7 +152,7 @@
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].postalCode" : {
     "index" : "3.1.3.1.5.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].region" : {
@@ -110,40 +170,60 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed" : {
+    "index" : "3.1.3.1.7. ",
+    "prompt" : "Fyll ut følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied" : {
+    "index" : "3.1.3.1.7.1. ",
+    "prompt" : "Skattbar inntekt fra bolig",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.amount" : {
     "index" : "3.1.3.1.7.1.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.currency.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.currency" : {
     "index" : "3.1.3.1.7.1.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets" : {
+    "index" : "3.1.3.1.4. ",
+    "prompt" : "Nåverdi av disse eiendommene (faste eiendommer)",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.amount" : {
     "index" : "3.1.3.1.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.currency.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.currency" : {
     "index" : "3.1.3.1.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets" : {
+    "index" : "3.1.3.1.3. ",
+    "prompt" : "Skattbar inntekt fra hver av disse eiendommene (faste eiendommer)",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.amount" : {
     "index" : "3.1.3.1.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.currency.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.currency" : {
     "index" : "3.1.3.1.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator" : {
     "index" : "3.1.3.1.6. ",
     "prompt" : "Personen bor i en bolig som han/hun, hans/hennes ektefelle eller hans/hennes partner eller hans/hennes familiemedlem enten eier eller er berettiget til avkastning fra?»",
     "valuetype" : "_uxRadioButton",
@@ -153,7 +233,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership" : {
     "index" : "3.1.3.1.1. ",
     "prompt" : "Type eierskap",
     "valuetype" : "_uxMultiCheckbox",
@@ -165,7 +245,7 @@
     },
     "enumName" : "TypeOwnershipMultipleType"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty" : {
     "index" : "3.1.3.1.2. ",
     "prompt" : "Type eiendom",
     "valuetype" : "_uxMultiCheckbox",
@@ -177,12 +257,37 @@
     },
     "enumName" : "TypePropertyMultipleType"
   },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0]" : {
+    "index" : "4",
+    "prompt" : "Informasjon om overdratt eiendom i perioden det anmodes om informasjon for.",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0]" : {
+    "index" : "2",
+    "prompt" : "Eier personen navngitt i denne delen, avkastningen fra den overdratte eiendommen?",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes" : {
+    "index" : "3.1.4.2.2. ",
+    "prompt" : "Fyll ut hvis «Svar» = «Ja»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details" : {
+    "index" : "3.1.4.2.2.1. ",
+    "prompt" : "Opplysninger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved" : {
+    "index" : "3.1.4.2.2.1.2. ",
+    "prompt" : "Hvilket beløp dreier det seg om?",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.amount" : {
     "index" : "3.1.4.2.2.1.2.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.currency.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.currency" : {
     "index" : "3.1.4.2.2.1.2.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -193,7 +298,7 @@
     "prompt" : "Hvilken type inntekter er dette?",
     "valuetype" : "_uxTextAreaInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].answerIndicator.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].answerIndicator" : {
     "index" : "3.1.4.2.1. ",
     "prompt" : "Svar",
     "valuetype" : "_uxRadioButton",
@@ -203,12 +308,22 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor" : {
+    "index" : "3.1.4.1. ",
+    "prompt" : "Eiendommen er blitt overdratt enten som vederlag for betaling eller vederlagsfritt i perioden det anmodes om informasjon for.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer" : {
+    "index" : "3.1.4.1.3. ",
+    "prompt" : "Eiendommens verdi på tidspunktet for overdragelse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.amount" : {
     "index" : "3.1.4.1.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.currency.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.currency" : {
     "index" : "3.1.4.1.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -219,7 +334,7 @@
     "prompt" : "Dato for overdragelse",
     "valuetype" : "_uxDateInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.typeProperty.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.typeProperty" : {
     "index" : "3.1.4.1.1. ",
     "prompt" : "Type eiendom",
     "valuetype" : "_uxRadioButton",
@@ -231,12 +346,32 @@
     },
     "enumName" : "TypePropertyType"
   },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner" : {
+    "index" : "3.1.1. ",
+    "prompt" : "Familiemedlemmer utover ektefelle/partner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson" : {
+    "index" : "3.1.1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0]" : {
+    "index" : "1.2.4",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].Address" : {
+    "index" : "3.1.1.2.4.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "3.1.1.2.4.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].Address.country.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].Address.country" : {
     "index" : "3.1.1.2.4.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -244,7 +379,7 @@
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].Address.postalCode" : {
     "index" : "3.1.1.2.4.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].Address.region" : {
@@ -262,7 +397,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.AddressPerson[0].typeAddress" : {
     "index" : "3.1.1.2.4.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -273,7 +408,7 @@
     },
     "enumName" : "EESSIAddressType"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.nationality.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.nationality" : {
     "index" : "3.1.1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
@@ -284,7 +419,7 @@
     "prompt" : "Annen slektning",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator" : {
     "index" : "3.1.1.2.5. ",
     "prompt" : "Utøver en profesjon eller forretningsvirksomhet",
     "valuetype" : "_uxRadioButton",
@@ -294,7 +429,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.relationshipPersonNamedInSection1.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.AdditionalInformationPerson.relationshipPersonNamedInSection1" : {
     "index" : "3.1.1.2.2. ",
     "prompt" : "Relasjon til personen som er navngitt i del 1",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -309,7 +444,22 @@
     },
     "enumName" : "MChildRelationship7Type"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification" : {
+    "index" : "3.1.1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "3.1.1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -327,7 +477,7 @@
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "3.1.1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -342,8 +492,23 @@
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "3.1.1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "3.1.1.1.7.1.4.1. ",
@@ -355,7 +520,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "3.1.1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -366,9 +531,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "3.1.1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -403,10 +568,10 @@
   },
   "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.forenameAtBirth" : {
     "index" : "3.1.1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.sex.value[0]" : {
+  "M051.MemberFamilyOtherThanSpousepartnerIncomeReceived.MemberFamilyOtherThanSpousepartnerIncomeReceived[0].MemberFamilyOtherThanSpousepartner.PersonIdentification.sex" : {
     "index" : "3.1.1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -417,12 +582,32 @@
     },
     "enumName" : "EESSISexType"
   },
+  "M051.PersonIncomeReceived" : {
+    "index" : "1. ",
+    "prompt" : "Personinntekt mottatt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0]" : {
+    "index" : "1.2",
+    "prompt" : "Mottatt inntekt i løpet av perioden det anmodes informasjon om",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation" : {
+    "index" : "1.2.3. ",
+    "prompt" : "Mottatt inntekt i løpet av perioden det anmodes informasjon om",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome" : {
+    "index" : "1.2.3.3. ",
+    "prompt" : "Mottatt inntekt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome.amount" : {
     "index" : "1.2.3.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome.currency.value[0]" : {
+  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.ReceivedIncome.currency" : {
     "index" : "1.2.3.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -438,7 +623,12 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived.socialSecurityBenefit.value[0]" : {
+  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived" : {
+    "index" : "1.2.2. ",
+    "prompt" : "Fyll ut følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived.socialSecurityBenefit" : {
     "index" : "1.2.2.1. ",
     "prompt" : "Trygdeytelse",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -458,9 +648,9 @@
     },
     "enumName" : "MBenefitTypePlusEarlyRetirementType"
   },
-  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].typeIncomeReceived.value[0]" : {
+  "M051.PersonIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].typeIncomeReceived" : {
     "index" : "1.2.1. ",
-    "prompt" : "Inntektstype mottatt",
+    "prompt" : "Inntektstype mottatt:",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Lønn",
@@ -471,12 +661,22 @@
     },
     "enumName" : "IncomeReceivedEnumType"
   },
+  "M051.PersonIncomeReceived.InformationEnclosedStatementIncomeIfFailProvide[0]" : {
+    "index" : "1.5",
+    "prompt" : "Informasjon i vedlagt \\",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.PersonIncomeReceived.InformationEnclosedStatementIncomeIfFailProvide[0].PleaseFillInFollowingIfPersonSubmitted" : {
+    "index" : "1.5.2. ",
+    "prompt" : "Fyll ut følgende dersom personen har framlagt \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.PersonIncomeReceived.InformationEnclosedStatementIncomeIfFailProvide[0].PleaseFillInFollowingIfPersonSubmitted.otherIncome" : {
     "index" : "1.5.2.1. ",
     "prompt" : "Annen inntektskilde",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.InformationEnclosedStatementIncomeIfFailProvide[0].personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome.value[0]" : {
+  "M051.PersonIncomeReceived.InformationEnclosedStatementIncomeIfFailProvide[0].personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome" : {
     "index" : "1.5.1. ",
     "prompt" : "Personen framla \\",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -492,12 +692,27 @@
     },
     "enumName" : "IncomeTypeGeneralSimpleType"
   },
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0]" : {
+    "index" : "1.3",
+    "prompt" : "Informasjon om fast eiendom i perioden det anmodes om informasjon for.",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder" : {
+    "index" : "1.3.1. ",
+    "prompt" : "Eiendom som personen enten eier eller har gevinst av.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0]" : {
+    "index" : "1.5",
+    "prompt" : "Adresse i landet der eiendommene (faste eiendommer) finnes",
+    "valuetype" : "_rinaArray"
+  },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].buildingName" : {
     "index" : "1.3.1.5.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].country.value[0]" : {
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].country" : {
     "index" : "1.3.1.5.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -505,7 +720,7 @@
   },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].postalCode" : {
     "index" : "1.3.1.5.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].region" : {
@@ -523,40 +738,60 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed" : {
+    "index" : "1.3.1.7. ",
+    "prompt" : "Fyll ut følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied" : {
+    "index" : "1.3.1.7.1. ",
+    "prompt" : "Skattbar inntekt fra bolig",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.amount" : {
     "index" : "1.3.1.7.1.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.currency.value[0]" : {
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.currency" : {
     "index" : "1.3.1.7.1.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets" : {
+    "index" : "1.3.1.4. ",
+    "prompt" : "Nåverdi av disse eiendommene (faste eiendommer)",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.amount" : {
     "index" : "1.3.1.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.currency.value[0]" : {
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.currency" : {
     "index" : "1.3.1.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets" : {
+    "index" : "1.3.1.3. ",
+    "prompt" : "Skattbar inntekt fra hver av disse eiendommene (faste eiendommer)",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.amount" : {
     "index" : "1.3.1.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.currency.value[0]" : {
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.currency" : {
     "index" : "1.3.1.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
   },
-  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator.value[0]" : {
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator" : {
     "index" : "1.3.1.6. ",
     "prompt" : "Personen bor i en bolig som han/hun, hans/hennes ektefelle eller hans/hennes partner eller hans/hennes familiemedlem enten eier eller er berettiget til avkastning fra?»",
     "valuetype" : "_uxRadioButton",
@@ -566,7 +801,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership.value[0]" : {
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership" : {
     "index" : "1.3.1.1. ",
     "prompt" : "Type eierskap",
     "valuetype" : "_uxMultiCheckbox",
@@ -578,7 +813,7 @@
     },
     "enumName" : "TypeOwnershipMultipleType"
   },
-  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty.value[0]" : {
+  "M051.PersonIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty" : {
     "index" : "1.3.1.2. ",
     "prompt" : "Type eiendom",
     "valuetype" : "_uxMultiCheckbox",
@@ -590,12 +825,37 @@
     },
     "enumName" : "TypePropertyMultipleType"
   },
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0]" : {
+    "index" : "1.4",
+    "prompt" : "Informasjon om overdratt eiendom i perioden det anmodes om informasjon for.",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0]" : {
+    "index" : "2",
+    "prompt" : "Eier personen navngitt i denne delen, avkastningen fra den overdratte eiendommen?",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes" : {
+    "index" : "1.4.2.2. ",
+    "prompt" : "Fyll ut hvis «Svar» = «Ja»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details" : {
+    "index" : "1.4.2.2.1. ",
+    "prompt" : "Opplysninger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved" : {
+    "index" : "1.4.2.2.1.2. ",
+    "prompt" : "Hvilket beløp dreier det seg om?",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.amount" : {
     "index" : "1.4.2.2.1.2.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.currency.value[0]" : {
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.currency" : {
     "index" : "1.4.2.2.1.2.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -606,7 +866,7 @@
     "prompt" : "Hvilken type inntekter er dette?",
     "valuetype" : "_uxTextAreaInput"
   },
-  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].answerIndicator.value[0]" : {
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].answerIndicator" : {
     "index" : "1.4.2.1. ",
     "prompt" : "Svar",
     "valuetype" : "_uxRadioButton",
@@ -616,12 +876,22 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor" : {
+    "index" : "1.4.1. ",
+    "prompt" : "Eiendommen er blitt overdratt enten som vederlag for betaling eller vederlagsfritt i perioden det anmodes om informasjon for.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer" : {
+    "index" : "1.4.1.3. ",
+    "prompt" : "Eiendommens verdi på tidspunktet for overdragelse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.amount" : {
     "index" : "1.4.1.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.currency.value[0]" : {
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.currency" : {
     "index" : "1.4.1.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -632,7 +902,7 @@
     "prompt" : "Dato for overdragelse",
     "valuetype" : "_uxDateInput"
   },
-  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.typeProperty.value[0]" : {
+  "M051.PersonIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.typeProperty" : {
     "index" : "1.4.1.1. ",
     "prompt" : "Type eiendom",
     "valuetype" : "_uxRadioButton",
@@ -644,12 +914,32 @@
     },
     "enumName" : "TypePropertyType"
   },
+  "M051.PersonIncomeReceived.Person" : {
+    "index" : "1.1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson" : {
+    "index" : "1.1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson" : {
+    "index" : "1.1.2.4. ",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.Address" : {
+    "index" : "1.1.2.4.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.Address.buildingName" : {
     "index" : "1.1.2.4.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.Address.country.value[0]" : {
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.Address.country" : {
     "index" : "1.1.2.4.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -657,7 +947,7 @@
   },
   "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.Address.postalCode" : {
     "index" : "1.1.2.4.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.Address.region" : {
@@ -675,7 +965,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.typeAddress.value[0]" : {
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.AddressPerson.typeAddress" : {
     "index" : "1.1.2.4.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -686,18 +976,23 @@
     },
     "enumName" : "EESSIAddressType"
   },
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.PleaseFillInFollowingIfStatusPersonOther" : {
+    "index" : "1.1.2.3. ",
+    "prompt" : "Fyll ut hvis «Personens status» = «Annet»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.PleaseFillInFollowingIfStatusPersonOther.otherStatus" : {
     "index" : "1.1.2.3.1. ",
     "prompt" : "Annen status",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator.value[0]" : {
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator" : {
     "index" : "1.1.2.5. ",
     "prompt" : "Utøver en profesjon eller forretningsvirksomhet",
     "valuetype" : "_uxRadioButton",
@@ -707,7 +1002,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.statusPerson.value[0]" : {
+  "M051.PersonIncomeReceived.Person.AdditionalInformationPerson.statusPerson" : {
     "index" : "1.1.2.2. ",
     "prompt" : "Personens status",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -724,7 +1019,22 @@
     },
     "enumName" : "MExpandedStatusPersonType"
   },
-  "M051.PersonIncomeReceived.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "M051.PersonIncomeReceived.Person.PersonIdentification" : {
+    "index" : "1.1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -742,7 +1052,7 @@
   },
   "M051.PersonIncomeReceived.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "M051.PersonIncomeReceived.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -757,8 +1067,23 @@
   },
   "M051.PersonIncomeReceived.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.1.7.1.4.1. ",
@@ -770,7 +1095,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -781,9 +1106,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "M051.PersonIncomeReceived.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -818,10 +1143,10 @@
   },
   "M051.PersonIncomeReceived.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "M051.PersonIncomeReceived.Person.PersonIdentification.sex.value[0]" : {
+  "M051.PersonIncomeReceived.Person.PersonIdentification.sex" : {
     "index" : "1.1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -832,7 +1157,12 @@
     },
     "enumName" : "EESSISexType"
   },
-  "M051.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
+  "M051.PleaseFindAttachedFollowingDocument" : {
+    "index" : "5. ",
+    "prompt" : "Følgende dokument(er) er vedlagt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.PleaseFindAttachedFollowingDocument.attachedDocument" : {
     "index" : "5.1. ",
     "prompt" : "Vedlagte dokument(er)",
     "valuetype" : "_uxMultiCheckbox",
@@ -849,11 +1179,26 @@
     "prompt" : "Annet/andre dokument(er)",
     "valuetype" : "_uxTextAreaInput"
   },
+  "M051.SpousePartnerIncomeReceived" : {
+    "index" : "2. ",
+    "prompt" : "Ektefelles/partners/samboers inntekt mottatt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0]" : {
+    "index" : "2.2",
+    "prompt" : "Mottatt inntekt i løpet av perioden det anmodes informasjon om",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation" : {
+    "index" : "2.2.3. ",
+    "prompt" : "Mottatt inntekt i løpet av perioden det anmodes informasjon om",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.amount" : {
     "index" : "2.2.3.3. ",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.currency.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].IncomeReceivedDuringPeriodInRespectInformation.currency" : {
     "index" : "2.2.3.4. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -869,7 +1214,12 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived.socialSecurityBenefit.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived" : {
+    "index" : "2.2.2. ",
+    "prompt" : "Fyll ut følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].PleaseFillInFollowingIfTypeIncomeReceived.socialSecurityBenefit" : {
     "index" : "2.2.2.1. ",
     "prompt" : "Trygdeytelse",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -889,9 +1239,9 @@
     },
     "enumName" : "MBenefitTypePlusEarlyRetirementType"
   },
-  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].typeIncomeReceived.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.IncomeReceivedDuringPeriodInRespectInformation[0].typeIncomeReceived" : {
     "index" : "2.2.1. ",
-    "prompt" : "Inntektstype mottatt",
+    "prompt" : "Inntektstype mottatt:",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Lønn",
@@ -902,12 +1252,22 @@
     },
     "enumName" : "IncomeReceivedEnumType"
   },
+  "M051.SpousePartnerIncomeReceived.InformationEnclosedStatementIncomeIfFail[0]" : {
+    "index" : "2.5",
+    "prompt" : "Informasjon i vedlagt \\",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationEnclosedStatementIncomeIfFail[0].PleaseFillInFollowingIfPersonSubmitted" : {
+    "index" : "2.5.2. ",
+    "prompt" : "Fyll ut følgende dersom personen har framlagt \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.SpousePartnerIncomeReceived.InformationEnclosedStatementIncomeIfFail[0].PleaseFillInFollowingIfPersonSubmitted.otherIncome" : {
     "index" : "2.5.2.1. ",
     "prompt" : "Annen inntektskilde",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationEnclosedStatementIncomeIfFail[0].personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationEnclosedStatementIncomeIfFail[0].personSubmittedAStatementIncomeCanReplaceRelatedTypeIncome" : {
     "index" : "2.5.1. ",
     "prompt" : "Personen framla \\",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -923,12 +1283,27 @@
     },
     "enumName" : "IncomeTypeGeneralSimpleType"
   },
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0]" : {
+    "index" : "2.3",
+    "prompt" : "Informasjon om fast eiendom i perioden det anmodes om informasjon for.",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder" : {
+    "index" : "2.3.1. ",
+    "prompt" : "Eiendom som personen enten eier eller har gevinst av.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0]" : {
+    "index" : "1.5",
+    "prompt" : "Adresse i landet der eiendommene (faste eiendommer) finnes",
+    "valuetype" : "_rinaArray"
+  },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].buildingName" : {
     "index" : "2.3.1.5.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].country.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].country" : {
     "index" : "2.3.1.5.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -936,7 +1311,7 @@
   },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].postalCode" : {
     "index" : "2.3.1.5.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.AddressInCountryWhereThesePropertiesFixedAssets[0].region" : {
@@ -954,40 +1329,60 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed" : {
+    "index" : "2.3.1.7. ",
+    "prompt" : "Fyll ut følgende hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied" : {
+    "index" : "2.3.1.7.1. ",
+    "prompt" : "Skattbar inntekt fra bolig",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.amount" : {
     "index" : "2.3.1.7.1.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.currency.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PleaseFillInFollowingIfThePersonNamed.TaxableIncomeDwellingOccupied.currency" : {
     "index" : "2.3.1.7.1.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets" : {
+    "index" : "2.3.1.4. ",
+    "prompt" : "Nåverdi av disse eiendommene (faste eiendommer)",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.amount" : {
     "index" : "2.3.1.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.currency.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.PresentValueThesePropertiesFixedAssets.currency" : {
     "index" : "2.3.1.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets" : {
+    "index" : "2.3.1.3. ",
+    "prompt" : "Skattbar inntekt fra hver av disse eiendommene (faste eiendommer)",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.amount" : {
     "index" : "2.3.1.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.currency.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.TaxableIncomeFromEachThesePropertiesFixedAssets.currency" : {
     "index" : "2.3.1.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCurrencyType"
   },
-  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.thePersonOccupiesADwellingIsOwnerABeneficialLifeIndicator" : {
     "index" : "2.3.1.6. ",
     "prompt" : "Personen bor i en bolig som han/hun, hans/hennes ektefelle eller hans/hennes partner eller hans/hennes familiemedlem enten eier eller er berettiget til avkastning fra?»",
     "valuetype" : "_uxRadioButton",
@@ -997,7 +1392,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeOwnership" : {
     "index" : "2.3.1.1. ",
     "prompt" : "Type eierskap",
     "valuetype" : "_uxMultiCheckbox",
@@ -1009,7 +1404,7 @@
     },
     "enumName" : "TypeOwnershipMultipleType"
   },
-  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationFixedAssetsDuringPeriodInRespect[0].PropertyInRespectPersonOwnerOrHolder.typeProperty" : {
     "index" : "2.3.1.2. ",
     "prompt" : "Type eiendom",
     "valuetype" : "_uxMultiCheckbox",
@@ -1021,12 +1416,37 @@
     },
     "enumName" : "TypePropertyMultipleType"
   },
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0]" : {
+    "index" : "2.4",
+    "prompt" : "Informasjon om overdratt eiendom i perioden det anmodes om informasjon for.",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0]" : {
+    "index" : "2",
+    "prompt" : "Eier personen navngitt i denne delen, avkastningen fra den overdratte eiendommen?",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes" : {
+    "index" : "2.4.2.2. ",
+    "prompt" : "Fyll ut hvis «Svar» = «Ja»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details" : {
+    "index" : "2.4.2.2.1. ",
+    "prompt" : "Opplysninger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved" : {
+    "index" : "2.4.2.2.1.2. ",
+    "prompt" : "Hvilket beløp dreier det seg om?",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.amount" : {
     "index" : "2.4.2.2.1.2.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.currency.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].PleaseFillInFollowingIfAnswerYes.Details.WhatAmountInvolved.currency" : {
     "index" : "2.4.2.2.1.2.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1037,7 +1457,7 @@
     "prompt" : "Hvilken type inntekter er dette?",
     "valuetype" : "_uxTextAreaInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].answerIndicator.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].IsPersonNamedInThisSectionInPossession[0].answerIndicator" : {
     "index" : "2.4.2.1. ",
     "prompt" : "Svar",
     "valuetype" : "_uxRadioButton",
@@ -1047,12 +1467,22 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor" : {
+    "index" : "2.4.1. ",
+    "prompt" : "Eiendommen er blitt overdratt enten som vederlag for betaling eller vederlagsfritt i perioden det anmodes om informasjon for.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer" : {
+    "index" : "2.4.1.3. ",
+    "prompt" : "Eiendommens verdi på tidspunktet for overdragelse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.amount" : {
     "index" : "2.4.1.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.currency.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.ValuePropertyAtTimeTransfer.currency" : {
     "index" : "2.4.1.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1063,7 +1493,7 @@
     "prompt" : "Dato for overdragelse",
     "valuetype" : "_uxDateInput"
   },
-  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.typeProperty.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.InformationTransferredPropertyDuringPeriod[0].PropertyHasBeenTransferredEitherInReturnFor.typeProperty" : {
     "index" : "2.4.1.1. ",
     "prompt" : "Type eiendom",
     "valuetype" : "_uxRadioButton",
@@ -1075,12 +1505,32 @@
     },
     "enumName" : "TypePropertyType"
   },
+  "M051.SpousePartnerIncomeReceived.SpousePartner" : {
+    "index" : "2.1. ",
+    "prompt" : "Ektefelle/partner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson" : {
+    "index" : "2.1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0]" : {
+    "index" : "2.1.2.4",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].Address" : {
+    "index" : "2.1.2.4.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].Address.buildingName" : {
     "index" : "2.1.2.4.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].Address.country.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].Address.country" : {
     "index" : "2.1.2.4.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1088,7 +1538,7 @@
   },
   "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].Address.postalCode" : {
     "index" : "2.1.2.4.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].Address.region" : {
@@ -1106,7 +1556,7 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].typeAddress.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.AddressPerson[0].typeAddress" : {
     "index" : "2.1.2.4.1. ",
     "prompt" : "Type adresse",
     "valuetype" : "_uxRadioButton",
@@ -1117,18 +1567,23 @@
     },
     "enumName" : "EESSIAddressType"
   },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.FillInIfRelationshipPersonNamedIn" : {
+    "index" : "2.1.2.3. ",
+    "prompt" : "Fyll ut hvis «Relasjon til person angitt i del 1» = «Annen»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.FillInIfRelationshipPersonNamedIn.other" : {
     "index" : "2.1.2.3.1. ",
     "prompt" : "Annet",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.nationality.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.nationality" : {
     "index" : "2.1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSINationalityType"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.pursuesAProfessionalOrTradeActivityIndicator" : {
     "index" : "2.1.2.5. ",
     "prompt" : "Utøver en profesjon eller forretningsvirksomhet",
     "valuetype" : "_uxRadioButton",
@@ -1138,7 +1593,7 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.relationshipPersonNamedInSection1.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.AdditionalInformationPerson.relationshipPersonNamedInSection1" : {
     "index" : "2.1.2.2. ",
     "prompt" : "Relasjon til personen som er navngitt i del",
     "valuetype" : "_uxRadioButton",
@@ -1150,7 +1605,22 @@
     },
     "enumName" : "MRelationshipPersonType"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification" : {
+    "index" : "2.1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1168,7 +1638,7 @@
   },
   "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -1183,8 +1653,23 @@
   },
   "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.1.7.1.4.1. ",
@@ -1196,7 +1681,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -1207,9 +1692,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -1244,10 +1729,10 @@
   },
   "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.sex.value[0]" : {
+  "M051.SpousePartnerIncomeReceived.SpousePartner.PersonIdentification.sex" : {
     "index" : "2.1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -1257,5 +1742,10 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "M051.sedTitle" : {
+    "index" : "M051",
+    "prompt" : "M051 - Anmodning om informasjon om inntekt - særskilte innskuddsfrie kontantytelser",
+    "valuetype" : "_rinaRoot"
   }
 }

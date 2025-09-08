@@ -1,187 +1,277 @@
 {
+  "DA073C.GlobalNoteCOCIO" : {
+    "ledetekst" : "Global Note COC_IO",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments" : {
+    "ledetekst" : "Totalbeløp for feilutbetaling på enkeltkrav",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.4. "
+  },
   "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.4.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "1.4.1. "
   },
-  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.currency.value[0]" : {
+  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.4.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
   "DA073C.GlobalNoteCOCIO.dateSubmission" : {
+    "ledetekst" : "Leveringsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "1.5. ",
-    "ledetekst" : "Leveringsdato"
+    "indeks" : "1.5. "
   },
   "DA073C.GlobalNoteCOCIO.globalCOCIOReferenceLiaisonBody" : {
+    "ledetekst" : "Global COC_IO referanse til forbindelsesorganet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.2. ",
-    "ledetekst" : "Global COC_IO referanse til forbindelsesorganet"
+    "indeks" : "1.2. "
   },
   "DA073C.GlobalNoteCOCIO.globalIOReferenceLiaisonBody" : {
+    "ledetekst" : "Global IO referanse til forbindelsesorganet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1. ",
-    "ledetekst" : "Unikt saksnummer for IOen hentet fra DA071, saksnummeret skal kopieres uten noen endringer"
+    "indeks" : "1.1. "
   },
   "DA073C.GlobalNoteCOCIO.totalNumberIndividualContestations" : {
+    "ledetekst" : "Totalt antall innsigelser på enkeltkrav",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.3. ",
-    "ledetekst" : "Summert antall innsigelser på identifiserte feilutbetalinger som skal være lik nummer av individuelle deler i DA073C"
+    "indeks" : "1.3. "
+  },
+  "DA073C.IndividualCOCIOs" : {
+    "ledetekst" : "Individuelle COC_IOer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0]" : {
+    "ledetekst" : "Individuell COC_IO",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons" : {
+    "ledetekst" : "Svar",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7. "
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.ContestationReasons0299" : {
+    "ledetekst" : "Fyll ut hvis \\",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7.2. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.ContestationReasons0299.requestedAdditionalInformation" : {
+    "ledetekst" : "Etterspurt tilleggsinformasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "2.1.7.2.1. ",
-    "ledetekst" : "Etterspurt tilleggsinformasjon",
     "tekstlengde" : "500"
   },
-  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.contestationReasons.value[0]" : {
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.contestationReasons" : {
+    "ledetekst" : "Svar",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.7.1. ",
-    "ledetekst" : "Svar",
     "enumNavn" : "AccidentDiseaseReplyCodeType",
     "enumNavnId" : "319dc881-91ce-eb11-80e7-000d3a22e8cd"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDCreditorInstitution" : {
+    "ledetekst" : "ID-nummeret til kreditorinstitusjonen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.1. "
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDCreditorInstitution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.1.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "2.1.1.1. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDCreditorInstitution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDDebtorInstitution" : {
+    "ledetekst" : "ID-nummeret til debitorinstitusjonen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.2. "
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDDebtorInstitution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.2.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "2.1.2.1. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDDebtorInstitution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits" : {
+    "ledetekst" : "Mottaker av ytelser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.4. "
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonIdentificationNumber" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.4.4. "
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInCompetentMemberState" : {
+    "ledetekst" : "Personens PIN i kompetent EU-land",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.4.1. ",
-    "ledetekst" : "Personens PIN i kompetent EU-land",
     "tekstlengde" : "65"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInMemberStateStayOrResidence" : {
+    "ledetekst" : "Personens PIN i oppholds- eller bostedslandet i EU",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.4.2. ",
-    "ledetekst" : "Personens PIN i oppholds- eller bostedslandet i EU",
     "tekstlengde" : "65"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation" : {
+    "ledetekst" : "Personopplysninger",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.4.1. "
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.4.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "2.1.4.1.3. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
-  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.sex.value[0]" : {
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.4.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "379e16fd-8890-e611-80d0-000d3a22e8cd"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.2. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.4.3. ",
-    "ledetekst" : "Fornavn ved fødsel",
     "tekstlengde" : "155"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References" : {
+    "ledetekst" : "Referanser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.3. "
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.globalCOCIOReferenceLiaisonBody" : {
+    "ledetekst" : "Global COC_IO referanse til forbindelsesorganet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.3.2. ",
-    "ledetekst" : "Unikt saksnummer for innsigelsen på IOen hentet fra den globale delen i DA073C, saksnummeret gjør at den individuelle innsigelsen i IOen (DA073C) kan knyttes til den globale delen i IOen DA073C og saksnummeret skal kopieres uten noen endringer"
+    "indeks" : "2.1.3.2. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.globalIOReferenceLiaisonBody" : {
+    "ledetekst" : "Global IO referanse til forbindelsesorganet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.3.1. ",
-    "ledetekst" : "Global IO referanse til forbindelsesorganet"
+    "indeks" : "2.1.3.1. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.individualCOCIONumberLiaisonBody" : {
+    "ledetekst" : "Individuelt COC_IO nummer til forbindelsesorganet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.3.4. ",
-    "ledetekst" : "Individuelt COC_IO nummer til forbindelsesorganet"
+    "indeks" : "2.1.3.4. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.individualIONumberLiaisonBody" : {
+    "ledetekst" : "Individuelt IO nummer til forbindelsesorganet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.3.3. ",
-    "ledetekst" : "Unikt saksnummer for individuell del av IO hentet fra den individuelle delen i DA071, saksnummeret gjør at den individuelle innsigelse IOen (DA073C) kan knyttes til den individuelle delen i IOen (DA071) og saksnummeret skal kopieres uten noen endringer"
+    "indeks" : "2.1.3.3. "
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount" : {
+    "ledetekst" : "Refusjonsbeløp",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.6. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.6.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "2.1.6.1. "
   },
-  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.currency.value[0]" : {
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.6.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod" : {
+    "ledetekst" : "Refusjonsperiode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.5. "
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.5.2. ",
-    "ledetekst" : "Sluttdato"
+    "indeks" : "2.1.5.2. "
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.5.1. ",
-    "ledetekst" : "Angi startdato for perioden."
+    "indeks" : "2.1.5.1. "
+  },
+  "DA073C.sedTitle" : {
+    "ledetekst" : "Innsigelse på identifisering av feilutbetaling (COC_IO)",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "DA073C"
   }
 }

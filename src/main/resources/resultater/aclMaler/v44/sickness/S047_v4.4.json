@@ -24,6 +24,7 @@
     "Person" : {
       "PersonIdentification" : {
         "forename" : "$nav.bruker.person.fornavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
         "PINPersonInEachInstitution" : {
           "PersonalIdentificationNumber" : [ {
             "Institution" : {
@@ -39,7 +40,6 @@
             }
           } ]
         },
-        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
         "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
           "PlaceBirth" : {
             "region" : "$nav.bruker.person.foedested.region",

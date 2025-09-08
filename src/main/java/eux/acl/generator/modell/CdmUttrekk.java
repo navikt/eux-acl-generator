@@ -13,7 +13,7 @@ import java.util.TreeMap;
 @Getter
 public class CdmUttrekk {
 
-    private Map<String, String> cdmStiVsMalTagnavn;
+    private TreeMap<String, String> cdmStiVsMalTagnavn;
     private Map<String, String> cdmStiVsTagtype;
     private Map<String, String> cdmStiVsIndeks;
     private Map<String, String> cdmStiVsLedetekst;

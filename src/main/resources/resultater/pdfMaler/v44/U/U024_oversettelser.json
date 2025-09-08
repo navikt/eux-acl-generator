@@ -1,10 +1,20 @@
 {
+  "U024.AmountReimbursed" : {
+    "index" : "3. ",
+    "prompt" : "Refundert beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U024.AmountReimbursed.Amount" : {
+    "index" : "3.1. ",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U024.AmountReimbursed.Amount.amount" : {
     "index" : "3.1.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "U024.AmountReimbursed.Amount.currency.value[0]" : {
+  "U024.AmountReimbursed.Amount.currency" : {
     "index" : "3.1.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -12,8 +22,18 @@
   },
   "U024.AmountReimbursed.datePayment" : {
     "index" : "3.2. ",
-    "prompt" : "Datoen institusjonen i medlemslandet for siste yrkesaktivitet / selvstendige næringsvirksomhet har bestilt bankoverføringen",
+    "prompt" : "Utbetalingsdato",
     "valuetype" : "_uxDateInput"
+  },
+  "U024.BankInformation" : {
+    "index" : "4. ",
+    "prompt" : "Bankinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U024.BankInformation.SEPABankDetails" : {
+    "index" : "4.1. ",
+    "prompt" : "SEPA-bankopplysninger",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U024.BankInformation.SEPABankDetails.BICSWIFT" : {
     "index" : "4.1.2. ",
@@ -22,13 +42,18 @@
   },
   "U024.BankInformation.SEPABankDetails.IBAN" : {
     "index" : "4.1.1. ",
-    "prompt" : "Oppgi IBAN til bankkonto som pengenes skal overføres til. IBAN er det internasjonale systemet for å identifisere bankkonti over landegrensene.",
+    "prompt" : "IBAN",
     "valuetype" : "_uxTextInput"
   },
   "U024.BankInformation.bankTransferSubjectOrTransactionReference" : {
     "index" : "4.2. ",
-    "prompt" : "Bankoverføring",
+    "prompt" : "Bankoverføring: emne eller transaksjonsnummer",
     "valuetype" : "_uxTextInput"
+  },
+  "U024.GeneralInformation" : {
+    "index" : "2. ",
+    "prompt" : "Generell informasjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U024.GeneralInformation.reimbursementPaymentNotificationID" : {
     "index" : "2.2. ",
@@ -37,8 +62,23 @@
   },
   "U024.GeneralInformation.reimbursementRequestID" : {
     "index" : "2.1. ",
-    "prompt" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling').",
+    "prompt" : "ID-nummer for krav om refusjon",
     "valuetype" : "_uxTextInput"
+  },
+  "U024.IndividualClaimsWhichPaymentRelates" : {
+    "index" : "5. ",
+    "prompt" : "Enkeltkrav utbetalingen gjelder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0]" : {
+    "index" : "5.1",
+    "prompt" : "Enkeltkrav utbetalingen gjelder",
+    "valuetype" : "_rinaArray"
+  },
+  "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].Person" : {
+    "index" : "5.1.7. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].Person.dateBirth" : {
     "index" : "5.1.7.3. ",
@@ -55,7 +95,7 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].Person.sex.value[0]" : {
+  "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].Person.sex" : {
     "index" : "5.1.7.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -73,7 +113,7 @@
   },
   "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].contestedIndividualClaimID" : {
     "index" : "5.1.4. ",
-    "prompt" : "Teknisk felt",
+    "prompt" : "ID bestridelse av enkeltkrav",
     "valuetype" : "_uxTextInput"
   },
   "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].individualClaimPaymentNotificationID" : {
@@ -83,7 +123,7 @@
   },
   "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].reimbursementPaymentNotificationID" : {
     "index" : "5.1.2. ",
-    "prompt" : "Teknisk felt",
+    "prompt" : "ID for melding om tilbakebetaling",
     "valuetype" : "_uxTextInput"
   },
   "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].reimbursementRequestID" : {
@@ -93,8 +133,23 @@
   },
   "U024.IndividualClaimsWhichPaymentRelates.IndividualClaimWhichPaymentRelates[0].sequentialNumberIndividualClaim" : {
     "index" : "5.1.3. ",
-    "prompt" : "Samme sekvensnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling').",
+    "prompt" : "Løpenummer for enkeltkrav",
     "valuetype" : "_uxTextInput"
+  },
+  "U024.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U024.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "U024.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U024.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -111,10 +166,15 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "U024.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U024.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
+  },
+  "U024.sedTitle" : {
+    "index" : "U024",
+    "prompt" : "U024 - Informasjon om refundert beløp",
+    "valuetype" : "_rinaRoot"
   }
 }

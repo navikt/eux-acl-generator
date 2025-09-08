@@ -201,7 +201,7 @@ public class KodeverkService {
     }
 
     public void opprettEnumFilForAcl(String filnavn, String cdmVersjon) {
-        TreeMap<Integer, EnumkodeFundament> nyEnumFundament = filService.lesNyEnumFundamentFil(filnavn, cdmVersjon);
+        TreeMap<Integer, EnumkodeFundament> nyEnumFundament = filService.lesNyEnumFundamentFil("nyeOgEndrede/" + filnavn, cdmVersjon);
         TreeMap<Integer, EnumkodeFundament> endretEnumFundament = filService.lesManueltEndretEnumFundamentFil(filnavn, cdmVersjon);
         List<String> aclEnum = new ArrayList<>();
         nyEnumFundament.keySet().forEach(kodeNr -> {

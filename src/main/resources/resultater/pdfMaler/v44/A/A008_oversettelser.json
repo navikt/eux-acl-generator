@@ -1,4 +1,9 @@
 {
+  "A008.CompetentInstitutionIfDiffersFromSending" : {
+    "index" : "2. ",
+    "prompt" : "Kompetent institusjon (hvis annen enn avsenderinstitusjonen)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A008.CompetentInstitutionIfDiffersFromSending.institutionID" : {
     "index" : "2.1. ",
     "prompt" : "Institusjonens ID",
@@ -9,13 +14,38 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "A008.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "A008.Person" : {
+    "index" : "1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.Person.AdditionalInformationPerson" : {
+    "index" : "1.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.Person.AdditionalInformationPerson.nationality" : {
     "index" : "1.2.1. ",
     "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
-  "A008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "A008.Person.PersonIdentification" : {
+    "index" : "1.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "1.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -33,7 +63,7 @@
   },
   "A008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "1.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "A008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -48,8 +78,23 @@
   },
   "A008.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "1.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "A008.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "A008.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A008.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "1.1.7.1.4.1. ",
@@ -61,7 +106,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "A008.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "A008.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "1.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -72,9 +117,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "A008.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "A008.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "1.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -109,10 +154,10 @@
   },
   "A008.Person.PersonIdentification.forenameAtBirth" : {
     "index" : "1.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "A008.Person.PersonIdentification.sex.value[0]" : {
+  "A008.Person.PersonIdentification.sex" : {
     "index" : "1.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -123,17 +168,42 @@
     },
     "enumName" : "EESSISexType"
   },
+  "A008.PlaceWork" : {
+    "index" : "4. ",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A008.PlaceWork.additionalInformation" : {
     "index" : "4.1. ",
     "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
+  },
+  "A008.PurposeofSED" : {
+    "index" : "3. ",
+    "prompt" : "Formål med SED",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers" : {
+    "index" : "3.2.2. ",
+    "prompt" : "Identifikasjon av arbeidsgivere(n)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0]" : {
+    "index" : "3.2.2.1",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_rinaArray"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].Address" : {
+    "index" : "3.2.2.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].Address.buildingName" : {
     "index" : "3.2.2.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].Address.country.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].Address.country" : {
     "index" : "3.2.2.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -141,7 +211,7 @@
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].Address.postalCode" : {
     "index" : "3.2.2.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].Address.region" : {
@@ -159,14 +229,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].IdentificationNumbers" : {
+    "index" : "3.2.2.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "3.2.2.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "3.2.2.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -178,15 +258,30 @@
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationEmployers.Employer[0].name" : {
     "index" : "3.2.2.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment" : {
+    "index" : "3.2.3. ",
+    "prompt" : "Identifikasjon av selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0]" : {
+    "index" : "3.2.3.1",
+    "prompt" : "Selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].Address" : {
+    "index" : "3.2.3.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].Address.buildingName" : {
     "index" : "3.2.3.1.3.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].Address.country.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].Address.country" : {
     "index" : "3.2.3.1.3.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -194,7 +289,7 @@
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].Address.postalCode" : {
     "index" : "3.2.3.1.3.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].Address.region" : {
@@ -212,14 +307,24 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers" : {
+    "index" : "3.2.3.1.2. ",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].number" : {
     "index" : "3.2.3.1.2.1.1. ",
     "prompt" : "Nummer",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type" : {
     "index" : "3.2.3.1.2.1.2. ",
-    "prompt" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
+    "prompt" : "Type",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "01" : "Identifikasjonsnummer",
@@ -231,8 +336,33 @@
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.IdentificationSelfEmployment.SelfEmployment[0].name" : {
     "index" : "3.2.3.1.1. ",
-    "prompt" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
+    "prompt" : "Navn",
     "valuetype" : "_uxTextInput"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork" : {
+    "index" : "3.2.4. ",
+    "prompt" : "Arbeidssted(er)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.CountriesWork[0]" : {
+    "index" : "3.2.4.2",
+    "prompt" : "Arbeidsland",
+    "valuetype" : "_rinaArray"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.CountriesWork[0].PlaceWork" : {
+    "index" : "3.2.4.2.2. ",
+    "prompt" : "Arbeidssted(er)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0]" : {
+    "index" : "2.1",
+    "prompt" : "Arbeidssted",
+    "valuetype" : "_rinaArray"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address" : {
+    "index" : "3.2.4.2.2.1.3. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.buildingName" : {
     "index" : "3.2.4.2.2.1.3.2. ",
@@ -269,13 +399,13 @@
     "prompt" : "Flaggstat/hjemmebase",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.CountriesWork[0].countryWork.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.CountriesWork[0].countryWork" : {
     "index" : "3.2.4.2.1. ",
     "prompt" : "Arbeidsland",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.aFixedPlaceWorkExistsIndicator.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.PlaceWork.aFixedPlaceWorkExistsIndicator" : {
     "index" : "3.2.4.1. ",
     "prompt" : "Fast arbeidssted",
     "valuetype" : "_uxRadioButton",
@@ -285,12 +415,27 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence" : {
+    "index" : "3.2.1. ",
+    "prompt" : "Bostedsland",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0]" : {
+    "index" : "3.2.1.1",
+    "prompt" : "Bostedsland",
+    "valuetype" : "_rinaArray"
+  },
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].Address" : {
+    "index" : "3.2.1.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].Address.buildingName" : {
     "index" : "3.2.1.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].Address.country.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].Address.country" : {
     "index" : "3.2.1.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -298,7 +443,7 @@
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].Address.postalCode" : {
     "index" : "3.2.1.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].Address.region" : {
@@ -321,18 +466,28 @@
     "prompt" : "Startdato for yrkesaktivitetene",
     "valuetype" : "_uxDateInput"
   },
-  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].stateResidence.value[0]" : {
+  "A008.PurposeofSED.InformationWorkingInTwoOrMoreMemberStates.StatesResidence.StateResidence[0].stateResidence" : {
     "index" : "3.2.1.1.1. ",
     "prompt" : "Bostedsland",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCountryType"
+  },
+  "A008.PurposeofSED.NotificationChangesInRelevantData" : {
+    "index" : "3. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
+  "A008.PurposeofSED.NotificationChangesInRelevantData.Address" : {
+    "index" : "3.1.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.Address.buildingName" : {
     "index" : "3.1.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.NotificationChangesInRelevantData.Address.country.value[0]" : {
+  "A008.PurposeofSED.NotificationChangesInRelevantData.Address.country" : {
     "index" : "3.1.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -340,7 +495,7 @@
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.Address.postalCode" : {
     "index" : "3.1.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.Address.region" : {
@@ -358,7 +513,12 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.NotificationChangesInRelevantData.Cancellation.cancellationWholePeriod.value[0]" : {
+  "A008.PurposeofSED.NotificationChangesInRelevantData.Cancellation" : {
+    "index" : "3.1.6. ",
+    "prompt" : "Oppheving",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.NotificationChangesInRelevantData.Cancellation.cancellationWholePeriod" : {
     "index" : "3.1.6.1. ",
     "prompt" : "Opphevelse av hele perioden",
     "valuetype" : "_uxRadioButton",
@@ -367,6 +527,11 @@
       "1" : "Ja"
     },
     "enumName" : "EESSIYesNoType"
+  },
+  "A008.PurposeofSED.NotificationChangesInRelevantData.ChangeInPeriod" : {
+    "index" : "3.1.5. ",
+    "prompt" : "Endring i perioden",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.ChangeInPeriod.actualEndDate" : {
     "index" : "3.1.5.3. ",
@@ -378,7 +543,7 @@
     "prompt" : "Faktisk startdato",
     "valuetype" : "_uxDateInput"
   },
-  "A008.PurposeofSED.NotificationChangesInRelevantData.ChangeInPeriod.periodChange.value[0]" : {
+  "A008.PurposeofSED.NotificationChangesInRelevantData.ChangeInPeriod.periodChange" : {
     "index" : "3.1.5.1. ",
     "prompt" : "Endring av periode",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -408,6 +573,11 @@
     },
     "enumName" : "PeriodChangeType"
   },
+  "A008.PurposeofSED.NotificationChangesInRelevantData.Person" : {
+    "index" : "3.1.1. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A008.PurposeofSED.NotificationChangesInRelevantData.Person.familyName" : {
     "index" : "3.1.1.1. ",
     "prompt" : "Etternavn",
@@ -418,12 +588,22 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry" : {
+    "index" : "3.1.3. ",
+    "prompt" : "Arbeidssted i vertslandet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.Address" : {
+    "index" : "3.1.3.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.Address.buildingName" : {
     "index" : "3.1.3.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.Address.country.value[0]" : {
+  "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.Address.country" : {
     "index" : "3.1.3.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -431,7 +611,7 @@
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.Address.postalCode" : {
     "index" : "3.1.3.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.Address.region" : {
@@ -446,6 +626,7 @@
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.Address.town" : {
     "index" : "3.1.3.2.3. ",
+    "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
   "A008.PurposeofSED.NotificationChangesInRelevantData.PlaceWorkInHostCountry.companyNameVesselName" : {
@@ -457,5 +638,10 @@
     "index" : "3.1.4. ",
     "prompt" : "Endring trer i kraft fra",
     "valuetype" : "_uxDateInput"
+  },
+  "A008.sedTitle" : {
+    "index" : "A008",
+    "prompt" : "A008 - Meddelelse av relevant informasjon",
+    "valuetype" : "_rinaRoot"
   }
 }

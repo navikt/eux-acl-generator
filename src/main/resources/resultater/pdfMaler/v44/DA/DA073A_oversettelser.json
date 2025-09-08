@@ -1,10 +1,20 @@
 {
+  "DA073A.GlobalNoteACPIO" : {
+    "index" : "1. ",
+    "prompt" : "Global Note ACP_IO",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA073A.GlobalNoteACPIO.TotalAmountAcceptedIndividualOverpayments" : {
+    "index" : "1.4. ",
+    "prompt" : "Totalbeløp for aksepterte feilutbetalinger på enkeltkrav",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073A.GlobalNoteACPIO.TotalAmountAcceptedIndividualOverpayments.amount" : {
     "index" : "1.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "DA073A.GlobalNoteACPIO.TotalAmountAcceptedIndividualOverpayments.currency.value[0]" : {
+  "DA073A.GlobalNoteACPIO.TotalAmountAcceptedIndividualOverpayments.currency" : {
     "index" : "1.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -12,23 +22,38 @@
   },
   "DA073A.GlobalNoteACPIO.dateSubmission" : {
     "index" : "1.5. ",
-    "prompt" : "Datoen nåværende SED er sendt",
+    "prompt" : "Leveringsdato",
     "valuetype" : "_uxDateInput"
   },
   "DA073A.GlobalNoteACPIO.globalACPIOReferenceLiaisonBody" : {
     "index" : "1.2. ",
-    "prompt" : "Saksnummeret til aksept av identifisert feilutbetaling (IO) som gjør at man kan identifisere svaret som kommer i neste steg av utvekslingen, samt i annen fremtidig kommunikasjon (lenker til SEDen). Det er et unikt saksnummer for denne saken og skal gjengis i alle etterfølgende deler av en SED, både i global og individuell del.",
+    "prompt" : "Global ACP_IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA073A.GlobalNoteACPIO.globalIOReferenceLiaisonBody" : {
     "index" : "1.1. ",
-    "prompt" : "Unikt saksnummer for IOen hentet fra DA071, saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Global IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA073A.GlobalNoteACPIO.totalNumberIndividualACPIO" : {
     "index" : "1.3. ",
     "prompt" : "Totalt antall individuelle ACP_IO",
     "valuetype" : "_uxTextInput"
+  },
+  "DA073A.IndividualACPIOs" : {
+    "index" : "2. ",
+    "prompt" : "Individuelle ACP_IOer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0]" : {
+    "index" : "2.1",
+    "prompt" : "Individuell ACP_IO",
+    "valuetype" : "_rinaArray"
+  },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].IDCreditorInstitution" : {
+    "index" : "2.1.1. ",
+    "prompt" : "ID-nummeret til kreditorinstitusjonen",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].IDCreditorInstitution.institutionID" : {
     "index" : "2.1.1.1. ",
@@ -40,6 +65,11 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].IDDebtorInstitution" : {
+    "index" : "2.1.2. ",
+    "prompt" : "ID-nummeret til debitorinstitusjonen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].IDDebtorInstitution.institutionID" : {
     "index" : "2.1.2.1. ",
     "prompt" : "Institusjonens ID",
@@ -50,6 +80,16 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].PersonReceivingBenefits" : {
+    "index" : "2.1.4. ",
+    "prompt" : "Mottaker av ytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].PersonReceivingBenefits.PersonIdentificationNumber" : {
+    "index" : "2.1.4.4. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInCompetentMemberState" : {
     "index" : "2.1.4.4.1. ",
     "prompt" : "Personens PIN i kompetent EU-land",
@@ -59,6 +99,11 @@
     "index" : "2.1.4.4.2. ",
     "prompt" : "Personens PIN i oppholds- eller bostedslandet i EU",
     "valuetype" : "_uxTextInput"
+  },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].PersonReceivingBenefits.PersonInformation" : {
+    "index" : "2.1.4.1. ",
+    "prompt" : "Personopplysninger",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].PersonReceivingBenefits.PersonInformation.dateBirth" : {
     "index" : "2.1.4.1.3. ",
@@ -75,7 +120,7 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "DA073A.IndividualACPIOs.IndividualACPIO[0].PersonReceivingBenefits.PersonInformation.sex.value[0]" : {
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].PersonReceivingBenefits.PersonInformation.sex" : {
     "index" : "2.1.4.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -96,6 +141,11 @@
     "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].References" : {
+    "index" : "2.1.3. ",
+    "prompt" : "Referanser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].References.globalACPIOReferenceLiaisonBody" : {
     "index" : "2.1.3.2. ",
     "prompt" : "Global ACP_IO referanse til forbindelsesorganet",
@@ -113,19 +163,29 @@
   },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].References.individualIONumberLiaisonBody" : {
     "index" : "2.1.3.3. ",
-    "prompt" : "Unikt saksnummer for IOen hentet fra den individuelle delen i DA071, saksnummeret gjør at det akseptert enkeltkrav i IOen (DA073A) kan knyttes til enkeltkravet i IOen (DA071) og saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Individuelt IO nummer til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
+  },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].RefundAmount" : {
+    "index" : "2.1.6. ",
+    "prompt" : "Refusjonsbeløp",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].RefundAmount.amount" : {
     "index" : "2.1.6.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "DA073A.IndividualACPIOs.IndividualACPIO[0].RefundAmount.currency.value[0]" : {
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].RefundAmount.currency" : {
     "index" : "2.1.6.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "DA073A.IndividualACPIOs.IndividualACPIO[0].RefundPeriod" : {
+    "index" : "2.1.5. ",
+    "prompt" : "Refusjonsperiode",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].RefundPeriod.endDate" : {
     "index" : "2.1.5.2. ",
@@ -134,7 +194,12 @@
   },
   "DA073A.IndividualACPIOs.IndividualACPIO[0].RefundPeriod.startDate" : {
     "index" : "2.1.5.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "DA073A.sedTitle" : {
+    "index" : "DA073A",
+    "prompt" : "DA073A - Aksept av identifisert feilutbetaling (ACP_IO)",
+    "valuetype" : "_rinaRoot"
   }
 }

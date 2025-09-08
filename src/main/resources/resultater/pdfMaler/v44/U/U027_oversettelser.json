@@ -1,10 +1,25 @@
 {
+  "U027.ChargingInterestAccepted" : {
+    "index" : "3. ",
+    "prompt" : "Rentebelastningen godkjennes",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo" : {
+    "index" : "3.2. ",
+    "prompt" : "Fyll ut hvis «Rentebelastning godkjennes» = «03 - Ikke akseptert»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.PleaseFillInFollowingIfChargingInterestAccepted" : {
+    "index" : "3.2.2. ",
+    "prompt" : "Fyll ut hvis «Rentebelastning godkjennes» = «03 - Ikke akseptert» OG «Spesifiser årsaken til manglende aksept» = «99 - Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.PleaseFillInFollowingIfChargingInterestAccepted.additionalInformation" : {
     "index" : "3.2.2.1. ",
-    "prompt" : "Gi om nødvendig nærmere opplysninger om grunnen til at det ikke er akseptert",
+    "prompt" : "Ytterligere informasjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.specifyReasonForNonAcceptance.value[0]" : {
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.specifyReasonForNonAcceptance" : {
     "index" : "3.2.1. ",
     "prompt" : "Spesifiser grunnen til manglende aksept",
     "valuetype" : "_uxMultiCheckbox",
@@ -16,7 +31,7 @@
     },
     "enumName" : "InterestNonAcceptanceMultipleType"
   },
-  "U027.ChargingInterestAccepted.chargingInterestAccepted.value[0]" : {
+  "U027.ChargingInterestAccepted.chargingInterestAccepted" : {
     "index" : "3.1. ",
     "prompt" : "Rentebelastningen godkjennes",
     "valuetype" : "_uxRadioButton",
@@ -27,10 +42,30 @@
     },
     "enumName" : "InterestAcceptedType"
   },
+  "U027.InformationChargingInterest" : {
+    "index" : "2. ",
+    "prompt" : "Informasjon om rentebelastning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U027.InformationChargingInterest.reimbursementRequestID" : {
     "index" : "2.1. ",
-    "prompt" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling').",
+    "prompt" : "ID-nummer for krav om refusjon",
     "valuetype" : "_uxTextInput"
+  },
+  "U027.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -47,11 +82,26 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "U027.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2" : {
+    "index" : "4. ",
+    "prompt" : "Fyll ut hvis «Rentebelastning aksepteres» = «02 - Delvis akseptert»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0]" : {
+    "index" : "4.1",
+    "prompt" : "Enkelkrav som ikke kan rentebelastes",
+    "valuetype" : "_rinaArray"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person" : {
+    "index" : "4.1.2. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.dateBirth" : {
     "index" : "4.1.2.3. ",
@@ -68,7 +118,7 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.sex.value[0]" : {
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.sex" : {
     "index" : "4.1.2.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -78,6 +128,11 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].PleaseFillInFollowingIfSpecifyReason3Other" : {
+    "index" : "4.1.4. ",
+    "prompt" : "Fyll ut hvis «Spesifiser grunn» = «99 - Annet»:",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].PleaseFillInFollowingIfSpecifyReason3Other.pleaseSpecifyOther" : {
     "index" : "4.1.4.1. ",
@@ -89,7 +144,7 @@
     "prompt" : "Løpenummer for enkeltkrav",
     "valuetype" : "_uxTextInput"
   },
-  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].specifyReason.value[0]" : {
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].specifyReason" : {
     "index" : "4.1.3. ",
     "prompt" : "Oppgi årsak",
     "valuetype" : "_uxRadioButton",
@@ -99,5 +154,10 @@
       "99" : "Annet"
     },
     "enumName" : "NoInterestIndividualClaimType"
+  },
+  "U027.sedTitle" : {
+    "index" : "U027",
+    "prompt" : "U027 - Svar angående renter",
+    "valuetype" : "_rinaRoot"
   }
 }

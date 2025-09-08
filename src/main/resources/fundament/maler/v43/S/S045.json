@@ -1,214 +1,298 @@
 {
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued" : {
+    "ledetekst" : "Adresse (personen som dokumenter om rett til ytelser er utstedt til)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.country.value[0]" : {
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.4. ",
-    "ledetekst" : "Postnummer",
     "tekstlengde" : "25"
   },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1. ",
-    "ledetekst" : "Oppgi gatenavn og annen tilgjengelig informasjon, som f.eks. gatenummer, oppgang, etasje og leilighetsnummer, eller identifikasjon. Bruk dette feltet for å gi opplysninger om postboksnummeret eller annen identifikasjon hvis dette brukes.",
     "tekstlengde" : "155"
   },
   "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "S045.EHICEuropeanHealthInsuranceCard" : {
+    "ledetekst" : "EHIC - Europeisk helsetrygdkort",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5. "
+  },
   "S045.EHICEuropeanHealthInsuranceCard.eHICNumber" : {
+    "ledetekst" : "EHIC-nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "5.1. ",
-    "ledetekst" : "EHIC-nummer"
+    "indeks" : "5.1. "
+  },
+  "S045.InfoEntitlement" : {
+    "ledetekst" : "Informasjon om rett til ytelser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "3. "
+  },
+  "S045.InfoEntitlement.PeriodEntitlement" : {
+    "ledetekst" : "Periode med rett til ytelser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1. "
   },
   "S045.InfoEntitlement.PeriodEntitlement.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.2. ",
-    "ledetekst" : "Sluttdato"
+    "indeks" : "3.1.2. "
   },
   "S045.InfoEntitlement.PeriodEntitlement.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.1. ",
-    "ledetekst" : "Angi startdato for perioden."
+    "indeks" : "3.1.1. "
+  },
+  "S045.InfoNonEntitlement.FillInIfInfoNonEntitlementOther" : {
+    "ledetekst" : "Fyll ut hvis «Informasjon om manglende rett» = «Annen grunn»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.2. "
   },
   "S045.InfoNonEntitlement.FillInIfInfoNonEntitlementOther.reason" : {
+    "ledetekst" : "Grunn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "4.2.1. ",
-    "ledetekst" : "Grunn",
     "tekstlengde" : "500"
   },
-  "S045.InfoNonEntitlement.infoNonEntitlement.value[0]" : {
+  "S045.InfoNonEntitlement.infoNonEntitlement" : {
+    "ledetekst" : "Informasjon om manglende rett til ytelser",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "4.1. ",
-    "ledetekst" : "Informasjon om manglende rett til ytelser",
     "enumNavn" : "ReasonForSicknessNoEntitlementType",
     "enumNavnId" : "7feea6f6-3a2e-e611-80c8-000d3a22e8cd"
   },
-  "S045.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "S045.Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "S045.Person.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2. "
+  },
+  "S045.Person.AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "1.2.1. ",
-    "ledetekst" : "Nasjonalitet",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "2632c2cb-ea65-e611-80cb-000d3a22e8cd"
   },
-  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "S045.Person.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1. "
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8. "
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8.1. "
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.1.1. ",
-    "ledetekst" : "Oppgi by/sted hvor personen er født. Dersom dette ikke er kjent, benytt det engelske ordet 'Unknown' (som vist her) med apostrof",
     "tekstlengde" : "65"
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.2. ",
-    "ledetekst" : "Fars etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.7. "
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1.7.1"
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.7.1.4. "
+  },
   "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.7.1.4.1. "
   },
   "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.7.1.3. ",
-    "ledetekst" : "Sektor",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "S045.Person.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "1.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "1.1.3. "
   },
   "S045.Person.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "S045.Person.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "S045.Person.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "S045.Person.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "S045.Person.PersonIdentification.sex.value[0]" : {
+  "S045.Person.PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
+  },
+  "S045.sedTitle" : {
+    "ledetekst" : "Dokumenter om rett til ytelser - midlertidig opphold",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "S045"
   }
 }

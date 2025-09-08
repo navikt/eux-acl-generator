@@ -1,4 +1,19 @@
 {
+  "U026.IndividualClaimsWhichInterestApplies" : {
+    "index" : "3. ",
+    "prompt" : "Enkeltkrav som rentene gjelder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U026.IndividualClaimsWhichInterestApplies.IndividualClaimWhichInterestApplies[0]" : {
+    "index" : "3.1",
+    "prompt" : "Enkeltkrav som rentene gjelder",
+    "valuetype" : "_rinaArray"
+  },
+  "U026.IndividualClaimsWhichInterestApplies.IndividualClaimWhichInterestApplies[0].Person" : {
+    "index" : "3.1.2. ",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "U026.IndividualClaimsWhichInterestApplies.IndividualClaimWhichInterestApplies[0].Person.dateBirth" : {
     "index" : "3.1.2.3. ",
     "prompt" : "Fødselsdato",
@@ -14,7 +29,7 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "U026.IndividualClaimsWhichInterestApplies.IndividualClaimWhichInterestApplies[0].Person.sex.value[0]" : {
+  "U026.IndividualClaimsWhichInterestApplies.IndividualClaimWhichInterestApplies[0].Person.sex" : {
     "index" : "3.1.2.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -27,15 +42,25 @@
   },
   "U026.IndividualClaimsWhichInterestApplies.IndividualClaimWhichInterestApplies[0].sequentialNumberIndividualClaim" : {
     "index" : "3.1.1. ",
-    "prompt" : "Samme sekvensnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling').",
+    "prompt" : "Løpenummer for enkeltkrav",
     "valuetype" : "_uxTextInput"
+  },
+  "U026.InformationChargingInterest" : {
+    "index" : "2. ",
+    "prompt" : "Informasjon om rentebelastning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U026.InformationChargingInterest.TotalAmountOutstandingClaims" : {
+    "index" : "2.3. ",
+    "prompt" : "Totalbeløp for utestående krav",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U026.InformationChargingInterest.TotalAmountOutstandingClaims.amount" : {
     "index" : "2.3.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "U026.InformationChargingInterest.TotalAmountOutstandingClaims.currency.value[0]" : {
+  "U026.InformationChargingInterest.TotalAmountOutstandingClaims.currency" : {
     "index" : "2.3.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -43,18 +68,33 @@
   },
   "U026.InformationChargingInterest.dueDate" : {
     "index" : "2.2. ",
-    "prompt" : "Forfallsdato for utbetalingen i henhold til artikkel 67 (5) i forordning (EF) nr. 987/2009",
+    "prompt" : "Forfallsdato",
     "valuetype" : "_uxDateInput"
   },
   "U026.InformationChargingInterest.interestRate" : {
     "index" : "2.4. ",
-    "prompt" : "Rentesats som fastsatt i artikkel 68 (2) i forordning (EF) nr. 987/2009.",
+    "prompt" : "Rentesats",
     "valuetype" : "_uxTextInput"
   },
   "U026.InformationChargingInterest.reimbursementRequestID" : {
     "index" : "2.1. ",
-    "prompt" : "Identifikasjonsnummer for anmodningen om tilbakebetaling – samme identifikasjonsnummer som opprinnelig anmodning (U020 - 'Anmodning om tilbakebetaling').",
+    "prompt" : "ID-nummer for krav om refusjon",
     "valuetype" : "_uxTextInput"
+  },
+  "U026.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U026.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "U026.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "U026.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -71,10 +111,15 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "U026.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U026.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
+  },
+  "U026.sedTitle" : {
+    "index" : "U026",
+    "prompt" : "U026 - Rentebetaling",
+    "valuetype" : "_rinaRoot"
   }
 }

@@ -1,7 +1,22 @@
 {
-  "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
+  "P4000.ClaimantSurvivorPension" : {
+    "index" : "3. ",
+    "prompt" : "Søker (etterlattepensjon)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.ClaimantSurvivorPension.AdditionalInformationPerson" : {
+    "index" : "3.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "3.2.1. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
     "index" : "3.2.1.1. ",
-    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
@@ -15,12 +30,17 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.Address" : {
+    "index" : "3.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "3.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.country.value[0]" : {
+  "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.country" : {
     "index" : "3.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -28,7 +48,7 @@
   },
   "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.postalCode" : {
     "index" : "3.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P4000.ClaimantSurvivorPension.AdditionalInformationPerson.Address.region" : {
@@ -46,7 +66,22 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P4000.ClaimantSurvivorPension.PersonIdentification" : {
+    "index" : "3.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "3.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -64,7 +99,7 @@
   },
   "P4000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "3.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "P4000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -79,8 +114,23 @@
   },
   "P4000.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "3.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "3.1.7.1.4.1. ",
@@ -92,7 +142,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "3.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -103,9 +153,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P4000.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "3.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -140,10 +190,10 @@
   },
   "P4000.ClaimantSurvivorPension.PersonIdentification.forenameAtBirth" : {
     "index" : "3.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.ClaimantSurvivorPension.PersonIdentification.sex.value[0]" : {
+  "P4000.ClaimantSurvivorPension.PersonIdentification.sex" : {
     "index" : "3.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -154,7 +204,27 @@
     },
     "enumName" : "EESSISexType"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].InformationChild.country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory" : {
+    "index" : "4. ",
+    "prompt" : "Informasjon om den forsikredes trygdehistorikk",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods" : {
+    "index" : "4.3. ",
+    "prompt" : "Perioder med omsorg for barn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0]" : {
+    "index" : "4.3.1",
+    "prompt" : "Omsorg for barn",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].InformationChild" : {
+    "index" : "4.3.1.3. ",
+    "prompt" : "Informasjon om barnet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].InformationChild.country" : {
     "index" : "4.3.1.3.4. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -175,9 +245,19 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period" : {
+    "index" : "4.3.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period.FixedPeriod" : {
+    "index" : "4.3.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period.FixedPeriod.endDate" : {
     "index" : "4.3.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period.FixedPeriod.startDate" : {
@@ -185,12 +265,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period.OpenPeriod" : {
+    "index" : "4.3.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period.OpenPeriod.startDate" : {
     "index" : "4.3.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.3.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -205,9 +290,9 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.ChildRaisingPeriods.ChildRaising[0].uncertainDatesIndicator" : {
     "index" : "4.3.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -215,12 +300,27 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods" : {
+    "index" : "4.1. ",
+    "prompt" : "Perioder som ansatt eller selvstendig næringsdrivende",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0]" : {
+    "index" : "4.1.1",
+    "prompt" : "Ansettelsesforhold og selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].AddressEmployerCompany" : {
+    "index" : "4.1.1.7. ",
+    "prompt" : "Arbeidsgivers/selskapets adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].AddressEmployerCompany.buildingName" : {
     "index" : "4.1.1.7.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].AddressEmployerCompany.country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].AddressEmployerCompany.country" : {
     "index" : "4.1.1.7.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -228,7 +328,7 @@
   },
   "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].AddressEmployerCompany.postalCode" : {
     "index" : "4.1.1.7.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].AddressEmployerCompany.region" : {
@@ -246,9 +346,19 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period" : {
+    "index" : "4.1.1.2. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period.FixedPeriod" : {
+    "index" : "4.1.1.2.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period.FixedPeriod.endDate" : {
     "index" : "4.1.1.2.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period.FixedPeriod.startDate" : {
@@ -256,12 +366,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period.OpenPeriod" : {
+    "index" : "4.1.1.2.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period.OpenPeriod.startDate" : {
     "index" : "4.1.1.2.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.1.1.2.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -291,7 +406,7 @@
     "prompt" : "Yrkesaktivitet under ansettelsesforhold eller selvstendig næringsvirksomhet",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].typePeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].typePeriod" : {
     "index" : "4.1.1.1. ",
     "prompt" : "Type periode",
     "valuetype" : "_uxRadioButton",
@@ -301,7 +416,7 @@
     },
     "enumName" : "EESSIEmploymentType"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.EmploymentSelfEmploymentPeriods.EmploymentSelfEmployment[0].uncertainDatesIndicator" : {
     "index" : "4.1.1.3. ",
     "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
@@ -311,9 +426,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods" : {
+    "index" : "4.6. ",
+    "prompt" : "Perioder med fødselspenger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0]" : {
+    "index" : "4.6.1",
+    "prompt" : "Foreldrepenger til mor",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period" : {
+    "index" : "4.6.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period.FixedPeriod" : {
+    "index" : "4.6.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period.FixedPeriod.endDate" : {
     "index" : "4.6.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period.FixedPeriod.startDate" : {
@@ -321,12 +456,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period.OpenPeriod" : {
+    "index" : "4.6.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period.OpenPeriod.startDate" : {
     "index" : "4.6.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.6.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -341,15 +481,15 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].country" : {
     "index" : "4.6.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCountryType"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.MaternityPeriods.Maternity[0].uncertainDatesIndicator" : {
     "index" : "4.6.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -357,9 +497,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods" : {
+    "index" : "4.5. ",
+    "prompt" : "Perioder med militærtjeneste",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0]" : {
+    "index" : "4.5.1",
+    "prompt" : "Militærtjeneste",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period" : {
+    "index" : "4.5.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period.FixedPeriod" : {
+    "index" : "4.5.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period.FixedPeriod.endDate" : {
     "index" : "4.5.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period.FixedPeriod.startDate" : {
@@ -367,12 +527,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period.OpenPeriod" : {
+    "index" : "4.5.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period.OpenPeriod.startDate" : {
     "index" : "4.5.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.5.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -387,15 +552,15 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].country" : {
     "index" : "4.5.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCountryType"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.MilitaryServicePeriods.MilitaryService[0].uncertainDatesIndicator" : {
     "index" : "4.5.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -403,9 +568,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods" : {
+    "index" : "4.10. ",
+    "prompt" : "Andre typer forsikringsperioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0]" : {
+    "index" : "4.10.1",
+    "prompt" : "Annen type forsikringsperioder",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period" : {
+    "index" : "4.10.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period.FixedPeriod" : {
+    "index" : "4.10.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period.FixedPeriod.endDate" : {
     "index" : "4.10.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period.FixedPeriod.startDate" : {
@@ -413,12 +598,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period.OpenPeriod" : {
+    "index" : "4.10.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period.OpenPeriod.startDate" : {
     "index" : "4.10.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.10.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -433,7 +623,7 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].country" : {
     "index" : "4.10.1.4. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -441,12 +631,12 @@
   },
   "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].typePeriod" : {
     "index" : "4.10.1.3. ",
-    "prompt" : "Angi andre periodetyper (som f.eks. skoleår).",
+    "prompt" : "Type periode",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.OtherTypesInsurancePeriods.OtherTypeInsurancePeriods[0].uncertainDatesIndicator" : {
     "index" : "4.10.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -454,9 +644,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods" : {
+    "index" : "4.2. ",
+    "prompt" : "Periode for botid",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0]" : {
+    "index" : "4.2.1",
+    "prompt" : "Botid",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period" : {
+    "index" : "4.2.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period.FixedPeriod" : {
+    "index" : "4.2.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period.FixedPeriod.endDate" : {
     "index" : "4.2.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period.FixedPeriod.startDate" : {
@@ -464,12 +674,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period.OpenPeriod" : {
+    "index" : "4.2.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period.OpenPeriod.startDate" : {
     "index" : "4.2.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.2.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -484,15 +699,15 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].country" : {
     "index" : "4.2.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCountryType"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.ResidencePeriods.Residence[0].uncertainDatesIndicator" : {
     "index" : "4.2.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -500,9 +715,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods" : {
+    "index" : "4.9. ",
+    "prompt" : "Periode med sykepenger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0]" : {
+    "index" : "4.9.1",
+    "prompt" : "Sykepenger",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period" : {
+    "index" : "4.9.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period.FixedPeriod" : {
+    "index" : "4.9.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period.FixedPeriod.endDate" : {
     "index" : "4.9.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period.FixedPeriod.startDate" : {
@@ -510,12 +745,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period.OpenPeriod" : {
+    "index" : "4.9.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period.OpenPeriod.startDate" : {
     "index" : "4.9.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.9.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -530,7 +770,7 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].country" : {
     "index" : "4.9.1.4. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -541,9 +781,9 @@
     "prompt" : "Navn på betalende institusjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.SicknessBenefitsPeriods.SicknessBenefit[0].uncertainDatesIndicator" : {
     "index" : "4.9.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -551,9 +791,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods" : {
+    "index" : "4.7. ",
+    "prompt" : "Opplæringsperioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0]" : {
+    "index" : "4.7.1",
+    "prompt" : "Opplæring",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period" : {
+    "index" : "4.7.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period.FixedPeriod" : {
+    "index" : "4.7.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period.FixedPeriod.endDate" : {
     "index" : "4.7.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period.FixedPeriod.startDate" : {
@@ -561,12 +821,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period.OpenPeriod" : {
+    "index" : "4.7.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period.OpenPeriod.startDate" : {
     "index" : "4.7.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.7.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -581,7 +846,7 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].country" : {
     "index" : "4.7.1.4. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -592,9 +857,9 @@
     "prompt" : "Navn på opplæringsinstitusjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.TrainingPeriods.Training[0].uncertainDatesIndicator" : {
     "index" : "4.7.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -602,9 +867,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods" : {
+    "index" : "4.8. ",
+    "prompt" : "Periode for dagpenger",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0]" : {
+    "index" : "4.8.1",
+    "prompt" : "Dagpenger",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period" : {
+    "index" : "4.8.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period.FixedPeriod" : {
+    "index" : "4.8.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period.FixedPeriod.endDate" : {
     "index" : "4.8.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period.FixedPeriod.startDate" : {
@@ -612,12 +897,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period.OpenPeriod" : {
+    "index" : "4.8.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period.OpenPeriod.startDate" : {
     "index" : "4.8.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.8.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -632,7 +922,7 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].country" : {
     "index" : "4.8.1.4. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -643,9 +933,9 @@
     "prompt" : "Navn på betalende institusjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.UnemploymentBenefitsPeriods.UnemploymentBenefits[0].uncertainDatesIndicator" : {
     "index" : "4.8.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -653,9 +943,29 @@
     },
     "enumName" : "EESSIYesNoType"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods" : {
+    "index" : "4.4. ",
+    "prompt" : "Frivillige forsikringsperioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0]" : {
+    "index" : "4.4.1",
+    "prompt" : "Frivillig forsikring",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period" : {
+    "index" : "4.4.1.1. ",
+    "prompt" : "Periode",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period.FixedPeriod" : {
+    "index" : "4.4.1.1.1. ",
+    "prompt" : "Fastsatt periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period.FixedPeriod.endDate" : {
     "index" : "4.4.1.1.1.2. ",
-    "prompt" : "Angi sluttdato for perioden.",
+    "prompt" : "Sluttdato",
     "valuetype" : "_uxDateInput"
   },
   "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period.FixedPeriod.startDate" : {
@@ -663,12 +973,17 @@
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period.OpenPeriod" : {
+    "index" : "4.4.1.1.2. ",
+    "prompt" : "Åpen periode",
+    "valuetype" : "_uxHiddenGroupContainer"
+  },
   "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period.OpenPeriod.startDate" : {
     "index" : "4.4.1.1.2.2. ",
     "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].Period.OpenPeriod.typeOpenPeriod" : {
     "index" : "4.4.1.1.2.1. ",
     "prompt" : "Type åpen periode",
     "valuetype" : "_uxRadioButton",
@@ -683,15 +998,15 @@
     "prompt" : "Tilleggsinformasjon om perioden",
     "valuetype" : "_uxTextAreaInput"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].country.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].country" : {
     "index" : "4.4.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIWorldCountryType"
   },
-  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].uncertainDatesIndicator.value[0]" : {
+  "P4000.InformationInsuredPersonInsuranceHistory.VoluntaryInsurancePeriods.VoluntaryInsurance[0].uncertainDatesIndicator" : {
     "index" : "4.4.1.2. ",
-    "prompt" : "Hvis trygdede eller søkeren (etterlattepensjon) bare kan oppgi antatte eller omtrentlige perioder for ansettelse/selvstendig næringsvirksomhet, uten bestemte datoer (som f.eks. arbeidet i EU-landet XX i 1975), skal man oppgi startdato som 01.01.1975 og sluttdato som 31.12.1975. Velg 'Usikre datoer' med 'Ja'. Vedlegg dokumentet der den trygdede eller søkeren hevder å ha vært ansatt / drevet selvstendig næringsvirksomhet. Hvis den trygdede eller søkeren oppgir bestemte datoer for ansettelse/selvstendig næringsvirksomhet (som f.eks. arbeidet i EU-landet XX i 15.01.2001 til 29.01.2001), skal man velge feltet 'Bestemt periode'. Oppgi startdato som 15.01.2001, sluttdato som 29.01.2001 og 'Usikre datoer' som 'Nei'. Arbeidsattester osv. bør vedlegges. Samme prosedyre gjelder for alle andre perioder i P4000.",
+    "prompt" : "Usikre datoer",
     "valuetype" : "_uxRadioButton",
     "codework" : {
       "0" : "Nei",
@@ -699,9 +1014,24 @@
     },
     "enumName" : "EESSIYesNoType"
   },
-  "P4000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
+  "P4000.InsuredPerson" : {
+    "index" : "2. ",
+    "prompt" : "Forsikret person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InsuredPerson.AdditionalInformationPerson" : {
+    "index" : "2.2. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.1. ",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
     "index" : "2.2.1.1. ",
-    "prompt" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
+    "prompt" : "Nasjonalitet",
     "valuetype" : "_uxMultiSelect",
     "enumName" : "EESSINationalityMultipleType"
   },
@@ -715,12 +1045,17 @@
     "prompt" : "Tidligere fornavn",
     "valuetype" : "_uxTextInput"
   },
+  "P4000.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "index" : "2.2.2. ",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "P4000.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
     "index" : "2.2.2.2. ",
     "prompt" : "Bygningens navn",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.InsuredPerson.AdditionalInformationPerson.Address.country.value[0]" : {
+  "P4000.InsuredPerson.AdditionalInformationPerson.Address.country" : {
     "index" : "2.2.2.6. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -728,7 +1063,7 @@
   },
   "P4000.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
     "index" : "2.2.2.4. ",
-    "prompt" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
+    "prompt" : "Postnummer",
     "valuetype" : "_uxTextInput"
   },
   "P4000.InsuredPerson.AdditionalInformationPerson.Address.region" : {
@@ -746,7 +1081,22 @@
     "prompt" : "By",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P4000.InsuredPerson.PersonIdentification" : {
+    "index" : "2.1. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8. ",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1. ",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
     "index" : "2.1.8.1.3. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -764,7 +1114,7 @@
   },
   "P4000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
     "index" : "2.1.8.2. ",
-    "prompt" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Fars etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
   "P4000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
@@ -779,8 +1129,23 @@
   },
   "P4000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
     "index" : "2.1.8.4. ",
-    "prompt" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
+    "prompt" : "Mors etternavn ved fødsel",
     "valuetype" : "_uxTextInput"
+  },
+  "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7. ",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
     "index" : "2.1.7.1.4.1. ",
@@ -792,7 +1157,7 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_rinaIRAutocomplete"
   },
-  "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
     "index" : "2.1.7.1.1. ",
     "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -803,9 +1168,9 @@
     "prompt" : "Personnummer (PIN)",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P4000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
     "index" : "2.1.7.1.3. ",
-    "prompt" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
+    "prompt" : "Sektor",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "codework" : {
       "01" : "Yrkesskade og yrkessykdom",
@@ -840,10 +1205,10 @@
   },
   "P4000.InsuredPerson.PersonIdentification.forenameAtBirth" : {
     "index" : "2.1.6. ",
-    "prompt" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
+    "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.InsuredPerson.PersonIdentification.sex.value[0]" : {
+  "P4000.InsuredPerson.PersonIdentification.sex" : {
     "index" : "2.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -853,6 +1218,21 @@
       "98" : "Ukjent"
     },
     "enumName" : "EESSISexType"
+  },
+  "P4000.LocalCaseNumbers" : {
+    "index" : "1. ",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P4000.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P4000.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3. ",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "P4000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
     "index" : "1.1.3.1. ",
@@ -869,10 +1249,15 @@
     "prompt" : "Saksnummer",
     "valuetype" : "_uxTextInput"
   },
-  "P4000.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "P4000.LocalCaseNumbers.LocalCaseNumber[0].country" : {
     "index" : "1.1.1. ",
-    "prompt" : "Angi landet der saksnummeret kan brukes.",
+    "prompt" : "Land",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P4000.sedTitle" : {
+    "index" : "P4000",
+    "prompt" : "P4000 - Rapport om trygdehistorikk",
+    "valuetype" : "_rinaRoot"
   }
 }

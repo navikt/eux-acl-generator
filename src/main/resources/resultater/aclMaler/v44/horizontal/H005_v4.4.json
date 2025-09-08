@@ -21,21 +21,21 @@
         "familyMemberSpouse" : "$horisontal.anmodningominformasjon.familiestatus.ektefelle.familiemedlem"
       },
       "Addresses" : [ {
-        "durationPresence" : "$horisontal.anmodningominformasjon.bosteder[x].oppholdetsvarighet",
+        "durationPresence" : "$horisontal.anmodningominformasjon.fastslaabosteder[x].oppholdetsvarighet",
         "Address" : {
-          "town" : "$horisontal.anmodningominformasjon.bosteder[x].adresse.by",
+          "town" : "$horisontal.anmodningominformasjon.fastslaabosteder[x].bruker.adresse.by",
           "country" : {
-            "value" : [ "$horisontal.anmodningominformasjon.bosteder[x].adresse.land" ]
+            "value" : [ "$horisontal.anmodningominformasjon.fastslaabosteder[x].bruker.adresse.land" ]
           },
-          "street" : "$horisontal.anmodningominformasjon.bosteder[x].adresse.gate",
-          "region" : "$horisontal.anmodningominformasjon.bosteder[x].adresse.region",
-          "postalCode" : "$horisontal.anmodningominformasjon.bosteder[x].adresse.postnummer",
-          "buildingName" : "$horisontal.anmodningominformasjon.bosteder[x].adresse.bygning"
+          "street" : "$horisontal.anmodningominformasjon.fastslaabosteder[x].bruker.adresse.gate",
+          "region" : "$horisontal.anmodningominformasjon.fastslaabosteder[x].bruker.adresse.region",
+          "postalCode" : "$horisontal.anmodningominformasjon.fastslaabosteder[x].bruker.adresse.postnummer",
+          "buildingName" : "$horisontal.anmodningominformasjon.fastslaabosteder[x].bruker.adresse.bygning"
         },
         "typeAddress" : {
-          "value" : [ "$horisontal.anmodningominformasjon.bosteder[x].adresse.type" ]
+          "value" : [ "$horisontal.anmodningominformasjon.fastslaabosteder[x].bruker.adresse.type" ]
         },
-        "continuityPresence" : "$horisontal.anmodningominformasjon.bosteder[x].varighetuavbruttopphold"
+        "continuityPresence" : "$horisontal.anmodningominformasjon.fastslaabosteder[x].varighetuavbruttopphold"
       } ],
       "statusPerson" : {
         "value" : [ "$horisontal.anmodningominformasjon.aktivitet.status.id" ]

@@ -1,541 +1,781 @@
 {
+  "A010.AdditionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "10. "
+  },
   "A010.AdditionalInformation.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "10.1. ",
-    "ledetekst" : "Ytterligere informasjon",
     "tekstlengde" : "500"
   },
+  "A010.Addresses" : {
+    "ledetekst" : "Adresser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3. "
+  },
+  "A010.Addresses.Address[0]" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.1"
+  },
+  "A010.Addresses.Address[0].Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.2. "
+  },
   "A010.Addresses.Address[0].Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.2.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "A010.Addresses.Address[0].Address.country.value[0]" : {
+  "A010.Addresses.Address[0].Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.2.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "A010.Addresses.Address[0].Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.2.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "A010.Addresses.Address[0].Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.2.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "A010.Addresses.Address[0].Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.2.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "A010.Addresses.Address[0].Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.2.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
-  "A010.Addresses.Address[0].type.value[0]" : {
+  "A010.Addresses.Address[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "3.1.1. ",
-    "ledetekst" : "Type",
     "enumNavn" : "EESSIAddressType",
     "enumNavnId" : "9492c09b-9a5f-e611-80cb-000d3a22e8cd"
   },
+  "A010.CompetentInstitutionIfDiffersFromSending" : {
+    "ledetekst" : "Kompetent institusjon (hvis annen enn avsenderinstitusjonen)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
   "A010.CompetentInstitutionIfDiffersFromSending.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "2.1. "
   },
   "A010.CompetentInstitutionIfDiffersFromSending.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "2.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "A010.DecisionLegislationApplicable.Decision.AmendingDecision.InitialDecision.value[0]" : {
+  "A010.DecisionLegislationApplicable" : {
+    "ledetekst" : "Vedtak om lovvalg",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8. "
+  },
+  "A010.DecisionLegislationApplicable.Decision" : {
+    "ledetekst" : "Vedtak",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8.1. "
+  },
+  "A010.DecisionLegislationApplicable.Decision.AmendingDecision" : {
+    "ledetekst" : "Endringsvedtak",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.1.2. "
+  },
+  "A010.DecisionLegislationApplicable.Decision.AmendingDecision.InitialDecision" : {
+    "ledetekst" : "Opprinnelig vedtak",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "8.1.2.1. ",
-    "ledetekst" : "Opprinnelig vedtak",
     "enumNavn" : "EESSIYesNoFixedNoType",
     "enumNavnId" : "c94de088-9335-e711-80d4-000d3a22e8cd"
   },
   "A010.DecisionLegislationApplicable.Decision.AmendingDecision.datePreviousDecision" : {
+    "ledetekst" : "Dato for forrige vedtak",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "8.1.2.2. ",
-    "ledetekst" : "Dato for forrige vedtak"
+    "indeks" : "8.1.2.2. "
   },
-  "A010.DecisionLegislationApplicable.Decision.InitialDecision.value[0]" : {
+  "A010.DecisionLegislationApplicable.Decision.InitialDecision" : {
+    "ledetekst" : "Opprinnelig vedtak",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "8.1.1. ",
-    "ledetekst" : "Opprinnelig vedtak",
     "enumNavn" : "EESSIYesNoFixedYesType",
     "enumNavnId" : "3cbbe533-9435-e711-80d4-000d3a22e8cd"
   },
+  "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies" : {
+    "ledetekst" : "Perioden vedtaket gjelder for",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8.4. "
+  },
+  "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.FixedPeriod" : {
+    "ledetekst" : "Fastsatt periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.4.1. "
+  },
   "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.FixedPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "8.4.1.2. ",
-    "ledetekst" : "Angi sluttdato for perioden."
+    "indeks" : "8.4.1.2. "
   },
   "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.FixedPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "8.4.1.1. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "8.4.1.1. "
+  },
+  "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod" : {
+    "ledetekst" : "Åpen periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.4.2. "
   },
   "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "8.4.2.2. ",
-    "ledetekst" : "Startdato"
+    "indeks" : "8.4.2.2. "
   },
-  "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod.typeOpenPeriod.value[0]" : {
+  "A010.DecisionLegislationApplicable.PeriodForWhichDecisionApplies.OpenPeriod.typeOpenPeriod" : {
+    "ledetekst" : "Type åpen periode",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "8.4.2.1. ",
-    "ledetekst" : "Type åpen periode",
     "enumNavn" : "EESSIOpenPeriodType",
     "enumNavnId" : "a8fbff38-4ff4-e611-80d3-000d3a22e8cd"
   },
-  "A010.DecisionLegislationApplicable.memberStateWhichLegislationApplies.value[0]" : {
+  "A010.DecisionLegislationApplicable.memberStateWhichLegislationApplies" : {
+    "ledetekst" : "Medlemsland hvor lovgivningen er gjeldende",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "8.2. ",
-    "ledetekst" : "Medlemsland hvor lovgivningen er gjeldende",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "c4f7b291-a45f-e611-80cb-000d3a22e8cd"
   },
-  "A010.DecisionLegislationApplicable.theDecisionAppliesForDurationActivityIndicator.value[0]" : {
+  "A010.DecisionLegislationApplicable.theDecisionAppliesForDurationActivityIndicator" : {
+    "ledetekst" : "Vedtaket gjelder for yrkesaktivitetens varighet",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "8.3. ",
-    "ledetekst" : "Vedtaket gjelder for yrkesaktivitetens varighet",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "c3f7b291-a45f-e611-80cb-000d3a22e8cd"
   },
+  "A010.EmployerInOtherMSConcerned" : {
+    "ledetekst" : "Arbeidsgiver(e) i andre berørte medlemsstater",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5. "
+  },
+  "A010.EmployerInOtherMSConcerned.Employer[0]" : {
+    "ledetekst" : "Arbeidsgiver",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "5.1"
+  },
+  "A010.EmployerInOtherMSConcerned.Employer[0].Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.1.3. "
+  },
   "A010.EmployerInOtherMSConcerned.Employer[0].Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "A010.EmployerInOtherMSConcerned.Employer[0].Address.country.value[0]" : {
+  "A010.EmployerInOtherMSConcerned.Employer[0].Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "5.1.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "A010.EmployerInOtherMSConcerned.Employer[0].Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.1.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "A010.EmployerInOtherMSConcerned.Employer[0].Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "A010.EmployerInOtherMSConcerned.Employer[0].Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.1.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "A010.EmployerInOtherMSConcerned.Employer[0].Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "A010.EmployerInOtherMSConcerned.Employer[0].IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.1.2. "
+  },
+  "A010.EmployerInOtherMSConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
+  },
   "A010.EmployerInOtherMSConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.1.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "A010.EmployerInOtherMSConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A010.EmployerInOtherMSConcerned.Employer[0].IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "5.1.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "A010.EmployerInOtherMSConcerned.Employer[0].name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.1.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
+  "A010.EmployerInPostingState" : {
+    "ledetekst" : "Arbeidsgiver(e) i utsendingslandet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4. "
+  },
+  "A010.EmployerInPostingState.Employer[0]" : {
+    "ledetekst" : "Arbeidsgiver",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "4.1"
+  },
+  "A010.EmployerInPostingState.Employer[0].Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.3. "
+  },
   "A010.EmployerInPostingState.Employer[0].Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "A010.EmployerInPostingState.Employer[0].Address.country.value[0]" : {
+  "A010.EmployerInPostingState.Employer[0].Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.1.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "A010.EmployerInPostingState.Employer[0].Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "A010.EmployerInPostingState.Employer[0].Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "A010.EmployerInPostingState.Employer[0].Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "A010.EmployerInPostingState.Employer[0].Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "A010.EmployerInPostingState.Employer[0].IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.2. "
+  },
+  "A010.EmployerInPostingState.Employer[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
+  },
   "A010.EmployerInPostingState.Employer[0].IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "A010.EmployerInPostingState.Employer[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A010.EmployerInPostingState.Employer[0].IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "4.1.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "A010.EmployerInPostingState.Employer[0].name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
-  "A010.Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "A010.Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "A010.Person.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2. "
+  },
+  "A010.Person.AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "1.2.1. ",
-    "ledetekst" : "Nasjonalitet",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "3ded5926-3a5e-e611-80ca-000d3a22e8cd"
   },
-  "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "A010.Person.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1. "
+  },
+  "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8. "
+  },
+  "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8.1. "
+  },
+  "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.1.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.2. ",
-    "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
   "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "A010.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "A010.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.7. "
+  },
+  "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1.7.1"
+  },
+  "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.7.1.4. "
+  },
   "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.7.1.4.1. "
   },
   "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "A010.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.7.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "A010.Person.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "1.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "1.1.3. "
   },
   "A010.Person.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "A010.Person.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "A010.Person.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "A010.Person.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "A010.Person.PersonIdentification.sex.value[0]" : {
+  "A010.Person.PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "1.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
+  "A010.PlaceWork" : {
+    "ledetekst" : "Arbeidssted(er)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7. "
+  },
+  "A010.PlaceWork.CountriesWork[0]" : {
+    "ledetekst" : "Arbeidsland",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "7.2"
+  },
+  "A010.PlaceWork.CountriesWork[0].PlaceWork" : {
+    "ledetekst" : "Arbeidssted(er)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.2.2. "
+  },
+  "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0]" : {
+    "ledetekst" : "Arbeidssted",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
+  },
+  "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.2.2.1.3. "
+  },
   "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2.2.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
   "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2.2.1.3.4. ",
-    "ledetekst" : "Postnummer",
     "tekstlengde" : "25"
   },
   "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2.2.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2.2.1.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2.2.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].companyNameVesselName" : {
+    "ledetekst" : "Navn på selskap/fartøy",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2.2.1.1. ",
-    "ledetekst" : "Navn på selskap/fartøy",
     "tekstlengde" : "155"
   },
   "A010.PlaceWork.CountriesWork[0].PlaceWork.PlaceWork[0].flagStatehomeBase" : {
+    "ledetekst" : "Flaggstat/hjemmebase",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2.2.1.2. ",
-    "ledetekst" : "Flaggstat/hjemmebase",
     "tekstlengde" : "155"
   },
-  "A010.PlaceWork.CountriesWork[0].countryWork.value[0]" : {
+  "A010.PlaceWork.CountriesWork[0].countryWork" : {
+    "ledetekst" : "Arbeidsland",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "7.2.1. ",
-    "ledetekst" : "Arbeidsland",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "a3b20abc-84a6-eb11-80e7-000d3a22e8cd"
   },
-  "A010.PlaceWork.aFixedPlaceWorkExistsIndicator.value[0]" : {
+  "A010.PlaceWork.aFixedPlaceWorkExistsIndicator" : {
+    "ledetekst" : "Fast arbeidssted",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "7.1. ",
-    "ledetekst" : "Fast arbeidssted",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "a2b20abc-84a6-eb11-80e7-000d3a22e8cd"
   },
+  "A010.SelfEmployment" : {
+    "ledetekst" : "Selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6. "
+  },
+  "A010.SelfEmployment.SelfEmployment[0]" : {
+    "ledetekst" : "Selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "6.1"
+  },
+  "A010.SelfEmployment.SelfEmployment[0].Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.3. "
+  },
   "A010.SelfEmployment.SelfEmployment[0].Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "A010.SelfEmployment.SelfEmployment[0].Address.country.value[0]" : {
+  "A010.SelfEmployment.SelfEmployment[0].Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "A010.SelfEmployment.SelfEmployment[0].Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "A010.SelfEmployment.SelfEmployment[0].Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "A010.SelfEmployment.SelfEmployment[0].Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "A010.SelfEmployment.SelfEmployment[0].Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "A010.SelfEmployment.SelfEmployment[0].IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.2. "
+  },
+  "A010.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
+  },
   "A010.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.2.1.1. ",
-    "ledetekst" : "Nummer",
     "tekstlengde" : "25"
   },
-  "A010.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+  "A010.SelfEmployment.SelfEmployment[0].IdentificationNumbers.IdentificationNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.2.1.2. ",
-    "ledetekst" : "Angi type identifikasjonsnummer som er brukt for de oppgitte verdiene.",
     "enumNavn" : "EESSIOrganisationIdentificationNumberType",
     "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
   },
   "A010.SelfEmployment.SelfEmployment[0].name" : {
+    "ledetekst" : "Navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1. ",
-    "ledetekst" : "Oppgi organisasjonens juridiske navn eller selskapsnavn",
     "tekstlengde" : "155"
   },
-  "A010.articleRegulationECNo8832004.value[0]" : {
+  "A010.articleRegulationECNo8832004" : {
+    "ledetekst" : "Artikkel i forordning (EF) nr. 883/2004",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "9. ",
-    "ledetekst" : "Artikkel i forordning (EF) nr. 883/2004",
     "enumNavn" : "ArticlesA010Type",
     "enumNavnId" : "28bc8e81-4e6f-e611-80cb-000d3a22e8cd"
+  },
+  "A010.sedTitle" : {
+    "ledetekst" : "Melding om lovvalg",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "A010"
   }
 }

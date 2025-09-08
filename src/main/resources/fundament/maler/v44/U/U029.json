@@ -1,356 +1,512 @@
 {
+  "U029.GeneralInformation" : {
+    "ledetekst" : "Generell informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "U029.GeneralInformation.UpdatedTotalAmountRequested" : {
+    "ledetekst" : "Oppdatert, etterspurt totalbeløp",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.4. "
+  },
   "U029.GeneralInformation.UpdatedTotalAmountRequested.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.4.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "2.4.1. "
   },
-  "U029.GeneralInformation.UpdatedTotalAmountRequested.currency.value[0]" : {
+  "U029.GeneralInformation.UpdatedTotalAmountRequested.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.4.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
   "U029.GeneralInformation.amendedReimbursementRequestID" : {
+    "ledetekst" : "ID for endret anmodning om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.3. ",
-    "ledetekst" : "ID for endret anmodning om refusjon"
+    "indeks" : "2.3. "
   },
   "U029.GeneralInformation.reimbursementContestationID" : {
+    "ledetekst" : "ID bestridelse av refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.2. ",
-    "ledetekst" : "ID bestridelse av refusjon"
+    "indeks" : "2.2. "
   },
   "U029.GeneralInformation.reimbursementRequestID" : {
+    "ledetekst" : "ID-nummer for krav om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1. ",
-    "ledetekst" : "ID-nummer for krav om refusjon"
+    "indeks" : "2.1. "
+  },
+  "U029.IndividualClaims" : {
+    "ledetekst" : "Enkeltkrav",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0]" : {
+    "ledetekst" : "Enkeltkrav",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.1"
+  },
+  "U029.IndividualClaims.IndividualClaim[0].IndividualClaimStatus" : {
+    "ledetekst" : "Status for enkeltkrav",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.7. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].IndividualClaimStatus.PleaseFillInFollowingIfStatus6UnderDispute" : {
+    "ledetekst" : "Fyll ut hvis «Status» = «06 - Omtvistet»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.7.2. "
   },
   "U029.IndividualClaims.IndividualClaim[0].IndividualClaimStatus.PleaseFillInFollowingIfStatus6UnderDispute.reasoning" : {
+    "ledetekst" : "Begrunnelse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "3.1.7.2.1. ",
-    "ledetekst" : "Begrunnelse",
     "tekstlengde" : "500"
   },
-  "U029.IndividualClaims.IndividualClaim[0].IndividualClaimStatus.status.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].IndividualClaimStatus.status" : {
+    "ledetekst" : "Status",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.7.1. ",
-    "ledetekst" : "Status gjelder alltid nåværende status for enkeltkravet. Status '01 - Akseptert' skal brukes for alle enkeltkrav som ikke er tatt med i tidligere U023 - 'Bestridelse av tilbakebetaling' (og ikke enda 'meldt som betalt i U024'). For enkeltkrav som har mottatt U024 - 'Melding om tilbakebetaling' skal man bruke status '02 - meldt som betalt i U024'. Hvis kreditor ikke samtykker i ikke-aksept eller delvis aksept av enkeltkravet i tidligere U023 - 'Bestridelse av tilbakebetaling', skal man bruke status '06 - Omtvistet' og begrunne dette.",
     "enumNavn" : "SingleCaseStatusType",
     "enumNavnId" : "d5e1a7d7-0b8a-e611-80d0-000d3a22e8cd"
   },
+  "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord" : {
+    "ledetekst" : "Institusjon som attesterer trygdehistorikken",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.9. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR" : {
+    "ledetekst" : "Institusjonen finnes ikke i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "3.1.9.2. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress" : {
+    "ledetekst" : "Institusjonens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.9.2.2. "
+  },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.9.2.2.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.9.2.2.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.9.2.2.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.9.2.2.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.9.2.2.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.InstitutionAddress.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.9.2.2.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionDOESNOTExistInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.9.2.1. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
+  "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionEXISTSInIR" : {
+    "ledetekst" : "Institusjonen finnes i institusjonskatalogen (IR)",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "3.1.9.1. "
+  },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionEXISTSInIR.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.9.1.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "3.1.9.1.1. "
   },
   "U029.IndividualClaims.IndividualClaim[0].InstitutionWhichCertifiedInsuranceRecord.TheInstitutionEXISTSInIR.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.9.1.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "U029.IndividualClaims.IndividualClaim[0].Person.AdditionalInformationPerson.nationality.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.8. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].Person.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.8.2. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].Person.AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "3.1.8.2.1. ",
-    "ledetekst" : "Nasjonalitet",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "c25cdaab-2553-e611-80ca-000d3a22e8cd"
   },
-  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.8.1. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.8.1.8. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.8.1.8.1. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.8.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.8.1.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.8.2. ",
-    "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.8.1.7. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "8.1.7.1"
+  },
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.8.1.7.1.4. "
+  },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.8.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "3.1.8.1.7.1.4.1. "
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "3.1.8.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.8.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.8.1.7.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.8.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "3.1.8.1.3. "
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.8.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.sex.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].Person.PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "3.1.8.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
+  "U029.IndividualClaims.IndividualClaim[0].ReimbursementPeriod" : {
+    "ledetekst" : "Refusjonsperiode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.11. "
+  },
   "U029.IndividualClaims.IndividualClaim[0].ReimbursementPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.11.2. ",
-    "ledetekst" : "Sluttdato"
+    "indeks" : "3.1.11.2. "
   },
   "U029.IndividualClaims.IndividualClaim[0].ReimbursementPeriod.startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.11.1. ",
-    "ledetekst" : "Angi startdato for perioden."
+    "indeks" : "3.1.11.1. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].RequestedAmountForReimbursement" : {
+    "ledetekst" : "Anmodet refusjonsbeløp",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.13. "
   },
   "U029.IndividualClaims.IndividualClaim[0].RequestedAmountForReimbursement.amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.13.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "3.1.13.1. "
   },
-  "U029.IndividualClaims.IndividualClaim[0].RequestedAmountForReimbursement.currency.value[0]" : {
+  "U029.IndividualClaims.IndividualClaim[0].RequestedAmountForReimbursement.currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.13.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIEUEFTACurrencyType",
     "enumNavnId" : "2b3e7dce-9218-e611-80ea-000c292ed0d7"
   },
+  "U029.IndividualClaims.IndividualClaim[0].WorkingPeriodsConsidered" : {
+    "ledetekst" : "Arbeidsperioder tatt i betrakning",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.10. "
+  },
+  "U029.IndividualClaims.IndividualClaim[0].WorkingPeriodsConsidered.WorkingPeriodConsidered[0]" : {
+    "ledetekst" : "Arbeidsperioder tatt i betrakning",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "10.1"
+  },
   "U029.IndividualClaims.IndividualClaim[0].WorkingPeriodsConsidered.WorkingPeriodConsidered[0].endDate" : {
+    "ledetekst" : "Sluttdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.10.1.2. ",
-    "ledetekst" : "Sluttdato"
+    "indeks" : "3.1.10.1.2. "
   },
   "U029.IndividualClaims.IndividualClaim[0].WorkingPeriodsConsidered.WorkingPeriodConsidered[0].startDate" : {
+    "ledetekst" : "Startdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.10.1.1. ",
-    "ledetekst" : "Angi startdato for perioden."
+    "indeks" : "3.1.10.1.1. "
   },
   "U029.IndividualClaims.IndividualClaim[0].amendedContestedIndividualClaimID" : {
+    "ledetekst" : "ID for endret bestridelse av enkeltkrav",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.6. ",
-    "ledetekst" : "Teknisk felt"
+    "indeks" : "3.1.6. "
   },
   "U029.IndividualClaims.IndividualClaim[0].amendedReimbursementRequestID" : {
+    "ledetekst" : "ID for endret anmodning om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.3. ",
-    "ledetekst" : "ID for endret anmodning om refusjon"
+    "indeks" : "3.1.3. "
   },
   "U029.IndividualClaims.IndividualClaim[0].contestedIndividualClaimID" : {
+    "ledetekst" : "ID bestridelse av enkeltkrav",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.5. ",
-    "ledetekst" : "ID bestridelse av enkeltkrav"
+    "indeks" : "3.1.5. "
   },
   "U029.IndividualClaims.IndividualClaim[0].lastPaymentDate" : {
+    "ledetekst" : "Siste utbetalingsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.12. ",
-    "ledetekst" : "Dato for siste utbetaling av dagpenger som anmodningen om tilbakebetaling gjelder. Denne datoen er referansedatoen for tidsfristen for å fremsette anmodningen om tilbakebetaling (artikkel 70(1) i forordning (EF) nr. 987/2009)."
+    "indeks" : "3.1.12. "
   },
   "U029.IndividualClaims.IndividualClaim[0].reimbursementContestationID" : {
+    "ledetekst" : "ID bestridelse av refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.2. ",
-    "ledetekst" : "Teknisk felt"
+    "indeks" : "3.1.2. "
   },
   "U029.IndividualClaims.IndividualClaim[0].reimbursementRequestID" : {
+    "ledetekst" : "ID-nummer for krav om refusjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.1. ",
-    "ledetekst" : "Teknisk felt"
+    "indeks" : "3.1.1. "
   },
   "U029.IndividualClaims.IndividualClaim[0].sequentialNumberIndividualClaim" : {
+    "ledetekst" : "Løpenummer for enkeltkrav",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.4. ",
-    "ledetekst" : "Løpenummer for enkeltkrav"
+    "indeks" : "3.1.4. "
+  },
+  "U029.LocalCaseNumbers" : {
+    "ledetekst" : "Lokale saksnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "U029.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "ledetekst" : "Lokalt saksnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1"
+  },
+  "U029.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3. "
   },
   "U029.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.3.1. "
   },
   "U029.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
   "U029.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "ledetekst" : "Saksnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Saksnummer",
     "tekstlengde" : "65"
   },
-  "U029.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "U029.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Angi landet der saksnummeret kan brukes.",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
+  },
+  "U029.sedTitle" : {
+    "ledetekst" : "Endret anmodning om refusjon etter bestridelse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "U029"
   }
 }

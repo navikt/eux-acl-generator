@@ -1,10 +1,20 @@
 {
+  "DA073C.GlobalNoteCOCIO" : {
+    "index" : "1. ",
+    "prompt" : "Global Note COC_IO",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments" : {
+    "index" : "1.4. ",
+    "prompt" : "Totalbeløp for feilutbetaling på enkeltkrav",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.amount" : {
     "index" : "1.4.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.currency.value[0]" : {
+  "DA073C.GlobalNoteCOCIO.TotalAmountIndividualOverpayments.currency" : {
     "index" : "1.4.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
@@ -12,12 +22,12 @@
   },
   "DA073C.GlobalNoteCOCIO.dateSubmission" : {
     "index" : "1.5. ",
-    "prompt" : "Datoen nåværende SED er sendt",
+    "prompt" : "Leveringsdato",
     "valuetype" : "_uxDateInput"
   },
   "DA073C.GlobalNoteCOCIO.globalCOCIOReferenceLiaisonBody" : {
     "index" : "1.2. ",
-    "prompt" : "Unike saksnummer for innsigelsen på IOen som gjør at innsigelsen kan identifiseres i neste steg av utvekslingen, samt i annen fremtidig kommunikasjon (lenker til SEDen). Saksnummeret er unikt for denne innsigelsen og skal brukes som referansenummer i alle etterfølgende SEDer",
+    "prompt" : "Global COC_IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA073C.GlobalNoteCOCIO.globalIOReferenceLiaisonBody" : {
@@ -27,15 +37,35 @@
   },
   "DA073C.GlobalNoteCOCIO.totalNumberIndividualContestations" : {
     "index" : "1.3. ",
-    "prompt" : "Summert antall innsigelser på identifiserte feilutbetalinger som skal være lik nummer av individuelle deler i DA073C",
+    "prompt" : "Totalt antall innsigelser på enkeltkrav",
     "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs" : {
+    "index" : "2. ",
+    "prompt" : "Individuelle COC_IOer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0]" : {
+    "index" : "2.1",
+    "prompt" : "Individuell COC_IO",
+    "valuetype" : "_rinaArray"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons" : {
+    "index" : "2.1.7. ",
+    "prompt" : "Svar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.ContestationReasons0299" : {
+    "index" : "2.1.7.2. ",
+    "prompt" : "Fyll ut hvis \\",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.ContestationReasons0299.requestedAdditionalInformation" : {
     "index" : "2.1.7.2.1. ",
     "prompt" : "Etterspurt tilleggsinformasjon",
     "valuetype" : "_uxTextAreaInput"
   },
-  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.contestationReasons.value[0]" : {
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].ContestationReasons.contestationReasons" : {
     "index" : "2.1.7.1. ",
     "prompt" : "Svar",
     "valuetype" : "_uxRadioButton",
@@ -45,6 +75,11 @@
       "99" : "Annet"
     },
     "enumName" : "AccidentDiseaseReplyCodeType"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDCreditorInstitution" : {
+    "index" : "2.1.1. ",
+    "prompt" : "ID-nummeret til kreditorinstitusjonen",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDCreditorInstitution.institutionID" : {
     "index" : "2.1.1.1. ",
@@ -56,6 +91,11 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDDebtorInstitution" : {
+    "index" : "2.1.2. ",
+    "prompt" : "ID-nummeret til debitorinstitusjonen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].IDDebtorInstitution.institutionID" : {
     "index" : "2.1.2.1. ",
     "prompt" : "Institusjonens ID",
@@ -66,6 +106,16 @@
     "prompt" : "Institusjonens navn",
     "valuetype" : "_uxTextInput"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits" : {
+    "index" : "2.1.4. ",
+    "prompt" : "Mottaker av ytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonIdentificationNumber" : {
+    "index" : "2.1.4.4. ",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInCompetentMemberState" : {
     "index" : "2.1.4.4.1. ",
     "prompt" : "Personens PIN i kompetent EU-land",
@@ -75,6 +125,11 @@
     "index" : "2.1.4.4.2. ",
     "prompt" : "Personens PIN i oppholds- eller bostedslandet i EU",
     "valuetype" : "_uxTextInput"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation" : {
+    "index" : "2.1.4.1. ",
+    "prompt" : "Personopplysninger",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.dateBirth" : {
     "index" : "2.1.4.1.3. ",
@@ -91,7 +146,7 @@
     "prompt" : "Fornavn",
     "valuetype" : "_uxTextInput"
   },
-  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.sex.value[0]" : {
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].PersonReceivingBenefits.PersonInformation.sex" : {
     "index" : "2.1.4.1.4. ",
     "prompt" : "Kjønn",
     "valuetype" : "_uxRadioButton",
@@ -112,9 +167,14 @@
     "prompt" : "Fornavn ved fødsel",
     "valuetype" : "_uxTextInput"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References" : {
+    "index" : "2.1.3. ",
+    "prompt" : "Referanser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.globalCOCIOReferenceLiaisonBody" : {
     "index" : "2.1.3.2. ",
-    "prompt" : "Unikt saksnummer for innsigelsen på IOen hentet fra den globale delen i DA073C, saksnummeret gjør at den individuelle innsigelsen i IOen (DA073C) kan knyttes til den globale delen i IOen DA073C og saksnummeret skal kopieres uten noen endringer",
+    "prompt" : "Global COC_IO referanse til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].References.globalIOReferenceLiaisonBody" : {
@@ -132,16 +192,26 @@
     "prompt" : "Individuelt IO nummer til forbindelsesorganet",
     "valuetype" : "_uxTextInput"
   },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount" : {
+    "index" : "2.1.6. ",
+    "prompt" : "Refusjonsbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.amount" : {
     "index" : "2.1.6.1. ",
     "prompt" : "Beløp",
     "valuetype" : "_uxTextInput"
   },
-  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.currency.value[0]" : {
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundAmount.currency" : {
     "index" : "2.1.6.2. ",
     "prompt" : "Valuta",
     "valuetype" : "_uxSelectAutoCompleteInput",
     "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod" : {
+    "index" : "2.1.5. ",
+    "prompt" : "Refusjonsperiode",
+    "valuetype" : "_uxFieldSetContainer"
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod.endDate" : {
     "index" : "2.1.5.2. ",
@@ -150,7 +220,12 @@
   },
   "DA073C.IndividualCOCIOs.IndividualCOCIO[0].RefundPeriod.startDate" : {
     "index" : "2.1.5.1. ",
-    "prompt" : "Angi startdato for perioden.",
+    "prompt" : "Startdato",
     "valuetype" : "_uxDateInput"
+  },
+  "DA073C.sedTitle" : {
+    "index" : "DA073C",
+    "prompt" : "DA073C - Innsigelse på identifisering av feilutbetaling (COC_IO)",
+    "valuetype" : "_rinaRoot"
   }
 }

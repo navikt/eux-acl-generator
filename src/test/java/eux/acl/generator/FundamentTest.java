@@ -42,10 +42,10 @@ public class FundamentTest {
 
     public static List<String> SEDTYPER_F_H_S_U() {
         List<String> sedtyper = new ArrayList<>();
+        sedtyper.addAll(SEDTYPER_U);
         sedtyper.addAll(SEDTYPER_F);
         sedtyper.addAll(SEDTYPER_H);
         sedtyper.addAll(SEDTYPER_S);
-        sedtyper.addAll(SEDTYPER_U);
         return sedtyper;
     }
 

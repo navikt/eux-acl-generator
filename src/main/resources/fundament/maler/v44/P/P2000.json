@@ -1,1067 +1,1469 @@
 {
+  "P2000.Children" : {
+    "ledetekst" : "Barn",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6. "
+  },
+  "P2000.Children.Child[0]" : {
+    "ledetekst" : "Barn",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "6.1"
+  },
+  "P2000.Children.Child[0].AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.2. "
+  },
+  "P2000.Children.Child[0].AdditionalInformationPerson.FillInFollowingIfRelationshipInsuredPersonIsOther" : {
+    "ledetekst" : "Fyll ut hvis «Relasjon til forsikrede» = «Annet barn»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.2.3. "
+  },
   "P2000.Children.Child[0].AdditionalInformationPerson.FillInFollowingIfRelationshipInsuredPersonIsOther.specificsOtherChild" : {
+    "ledetekst" : "Opplysninger om \\",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.2.3.1. ",
-    "ledetekst" : "Opplysninger om \\",
     "tekstlengde" : "155"
   },
   "P2000.Children.Child[0].AdditionalInformationPerson.dateDeath" : {
+    "ledetekst" : "Dødsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "6.1.2.4. ",
-    "ledetekst" : "Dødsdato"
+    "indeks" : "6.1.2.4. "
   },
-  "P2000.Children.Child[0].AdditionalInformationPerson.nationality.value[0]" : {
+  "P2000.Children.Child[0].AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "6.1.2.1. ",
-    "ledetekst" : "Nasjonalitet",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "14fa1a2f-7710-e711-80d3-000d3a22e8cd"
   },
-  "P2000.Children.Child[0].AdditionalInformationPerson.relationshipInsuredPerson.value[0]" : {
+  "P2000.Children.Child[0].AdditionalInformationPerson.relationshipInsuredPerson" : {
+    "ledetekst" : "Relasjon til forsikret person",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.2.2. ",
-    "ledetekst" : "Relasjon til forsikret person",
     "enumNavn" : "PChildRelationshipType",
     "enumNavnId" : "366915ed-9218-e611-80ea-000c292ed0d7"
   },
-  "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P2000.Children.Child[0].PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.1. "
+  },
+  "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.1.8. "
+  },
+  "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.1.8.1. "
+  },
+  "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.8.1.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.8.2. ",
-    "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
   "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "P2000.Children.Child[0].PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.1.7. "
+  },
+  "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.7.1"
+  },
+  "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6.1.1.7.1.4. "
+  },
   "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "6.1.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "6.1.1.7.1.4.1. "
   },
   "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "6.1.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P2000.Children.Child[0].PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "6.1.1.7.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.Children.Child[0].PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "6.1.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "6.1.1.3. "
   },
   "P2000.Children.Child[0].PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "P2000.Children.Child[0].PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "P2000.Children.Child[0].PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "P2000.Children.Child[0].PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "6.1.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "P2000.Children.Child[0].PersonIdentification.sex.value[0]" : {
+  "P2000.Children.Child[0].PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "6.1.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
+  "P2000.InformationPayment" : {
+    "ledetekst" : "Informasjon om betaling",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8. "
+  },
+  "P2000.InformationPayment.BankInformation" : {
+    "ledetekst" : "Bankinformasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8.2. "
+  },
+  "P2000.InformationPayment.BankInformation.NonSEPAAccount" : {
+    "ledetekst" : "Ikke-SEPA-konto",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.2.3. "
+  },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.BICSWIFT" : {
+    "ledetekst" : "BIC-SWIFT",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.2. ",
-    "ledetekst" : "Angi kontoens BIC/SWIFT hos aktuell filial i utenlandsk bankinstitusjon. (BIC/SWIFT). SWIFT/BIC-koden er en standardkode som brukes ved pengeoverføringer mellom banker og som identifiserer bank og finansinstitusjoner globalt.",
     "tekstlengde" : "11"
   },
+  "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress" : {
+    "ledetekst" : "Bankens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8.2.3.4. "
+  },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.4.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.country.value[0]" : {
+  "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "8.2.3.4.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.4.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.4.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.4.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.4.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.accountNumber" : {
+    "ledetekst" : "Kontonummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.1. ",
-    "ledetekst" : "Kontonummer",
     "tekstlengde" : "65"
   },
   "P2000.InformationPayment.BankInformation.NonSEPAAccount.bankName" : {
+    "ledetekst" : "Bankens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.3.3. ",
-    "ledetekst" : "Bankens navn",
     "tekstlengde" : "65"
   },
+  "P2000.InformationPayment.BankInformation.SEPAAccount" : {
+    "ledetekst" : "SEPA-konto",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "8.2.2. "
+  },
   "P2000.InformationPayment.BankInformation.SEPAAccount.BICSWIFT" : {
+    "ledetekst" : "BIC-SWIFT",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "8.2.2.2. ",
-    "ledetekst" : "BIC-SWIFT",
     "tekstlengde" : "11"
   },
   "P2000.InformationPayment.BankInformation.SEPAAccount.IBAN" : {
+    "ledetekst" : "IBAN",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "8.2.2.1. ",
-    "ledetekst" : "Oppgi IBAN til bankkonto som pengenes skal overføres til. IBAN er det internasjonale systemet for å identifisere bankkonti over landegrensene."
+    "indeks" : "8.2.2.1. "
   },
   "P2000.InformationPayment.BankInformation.accountHolderName" : {
+    "ledetekst" : "Kontohavers navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "8.2.1. ",
-    "ledetekst" : "Kontohavers navn",
     "tekstlengde" : "255"
   },
-  "P2000.InformationPayment.paymentTo.value[0]" : {
+  "P2000.InformationPayment.paymentTo" : {
+    "ledetekst" : "Utbetaling til",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "8.1. ",
-    "ledetekst" : "Utbetaling til",
     "enumNavn" : "PInformationPaymentType",
     "enumNavnId" : "3b6915ed-9218-e611-80ea-000c292ed0d7"
   },
+  "P2000.InformationRepresentativeLegalGuardian" : {
+    "ledetekst" : "Informasjon om representant/verge",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7. "
+  },
+  "P2000.InformationRepresentativeLegalGuardian.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.4. "
+  },
   "P2000.InformationRepresentativeLegalGuardian.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "P2000.InformationRepresentativeLegalGuardian.Address.country.value[0]" : {
+  "P2000.InformationRepresentativeLegalGuardian.Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "7.4.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InformationRepresentativeLegalGuardian.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "P2000.InformationRepresentativeLegalGuardian.Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "P2000.InformationRepresentativeLegalGuardian.Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "P2000.InformationRepresentativeLegalGuardian.Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.4.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson" : {
+    "ledetekst" : "Kontaktinformasjon for personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.5. "
+  },
+  "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.EmailAddresses" : {
+    "ledetekst" : "E-postadresser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.5.2. "
+  },
+  "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "ledetekst" : "E-postadresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "7.5.2.1"
+  },
   "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
+    "ledetekst" : "E-postadresse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "7.5.2.1.1. ",
-    "ledetekst" : "E-postadresse"
+    "indeks" : "7.5.2.1.1. "
+  },
+  "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.TelephoneNumbers" : {
+    "ledetekst" : "Telefonnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7.5.1. "
+  },
+  "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "ledetekst" : "Telefonnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "7.5.1.1"
   },
   "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "7.5.1.1.2. ",
-    "ledetekst" : "Angi telefonnummer med nasjonal kode hvis dette finnes."
+    "indeks" : "7.5.1.1.2. "
   },
-  "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "P2000.InformationRepresentativeLegalGuardian.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "7.5.1.1.1. ",
-    "ledetekst" : "Angi hvilken type nummer som er gitt",
     "enumNavn" : "EESSITelephoneNumberType",
     "enumNavnId" : "2e684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InformationRepresentativeLegalGuardian.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "P2000.InformationRepresentativeLegalGuardian.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "7.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "P2000.InformationRepresentativeLegalGuardian.grounds" : {
+    "ledetekst" : "Grunner",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "7.3. ",
-    "ledetekst" : "Grunner",
     "tekstlengde" : "255"
   },
-  "P2000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality.value[0]" : {
+  "P2000.InsuredPerson" : {
+    "ledetekst" : "Forsikret person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2. "
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2. "
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2.1. "
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "2.2.1.1. ",
-    "ledetekst" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "b0f957c5-7c4e-e611-80ca-000d3a22e8cd"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "ledetekst" : "Tidligere etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.1.2. ",
-    "ledetekst" : "Tidligere etternavn",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "ledetekst" : "Tidligere fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.1.3. ",
-    "ledetekst" : "Tidligere fornavn",
     "tekstlengde" : "155"
   },
+  "P2000.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2.3. "
+  },
   "P2000.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.3.2. ",
-    "ledetekst" : "Bygningens navn",
     "tekstlengde" : "155"
   },
-  "P2000.InsuredPerson.AdditionalInformationPerson.Address.country.value[0]" : {
+  "P2000.InsuredPerson.AdditionalInformationPerson.Address.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.2.3.6. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryType",
     "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.3.4. ",
-    "ledetekst" : "Postnummeret er meget viktig for å behandle søknader. Kontroller at dette alltid er oppgitt hvis ikke det nasjonale adressesystemet mangler postnummer.",
     "tekstlengde" : "25"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.Address.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.3.5. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.Address.street" : {
+    "ledetekst" : "Gate",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.3.1. ",
-    "ledetekst" : "Gate",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.Address.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.2.3.3. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
+  "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson" : {
+    "ledetekst" : "Kontaktinformasjon for personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2.4. "
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "ledetekst" : "E-postadresser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2.4.2. "
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "ledetekst" : "E-postadresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.2.4.2.1"
+  },
   "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
+    "ledetekst" : "E-postadresse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.2.4.2.1.1. ",
-    "ledetekst" : "E-postadresse"
+    "indeks" : "2.2.4.2.1.1. "
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "ledetekst" : "Telefonnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2.4.1. "
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "ledetekst" : "Telefonnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.2.4.1.1"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "ledetekst" : "Nummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.2.4.1.1.2. ",
-    "ledetekst" : "Angi telefonnummer med nasjonal kode hvis dette finnes."
+    "indeks" : "2.2.4.1.1.2. "
   },
-  "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+  "P2000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "ledetekst" : "Type",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.2.4.1.1.1. ",
-    "ledetekst" : "Angi hvilken type nummer som er gitt",
     "enumNavn" : "EESSITelephoneNumberType",
     "enumNavnId" : "2e684f61-9218-e611-80ea-000c292ed0d7"
   },
-  "P2000.InsuredPerson.AdditionalInformationPerson.FamilyStatus[0].familyStatus.value[0]" : {
+  "P2000.InsuredPerson.AdditionalInformationPerson.FamilyStatus[0]" : {
+    "ledetekst" : "Familiestatus",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.2.2"
+  },
+  "P2000.InsuredPerson.AdditionalInformationPerson.FamilyStatus[0].familyStatus" : {
+    "ledetekst" : "Familiestatus",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.2.2.1. ",
-    "ledetekst" : "Familiestatus",
     "enumNavn" : "PFamilyStatusType",
     "enumNavnId" : "b75f5142-9318-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPerson.AdditionalInformationPerson.FamilyStatus[0].familyStatusDate" : {
+    "ledetekst" : "Dato for familiestatus",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.2.2.2. ",
-    "ledetekst" : "Dato for familiestatus"
+    "indeks" : "2.2.2.2. "
   },
-  "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P2000.InsuredPerson.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1. "
+  },
+  "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.8. "
+  },
+  "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.8.1. "
+  },
+  "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.1.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.2. ",
-    "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7. "
+  },
+  "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1.7.1"
+  },
+  "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7.1.4. "
+  },
   "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "2.1.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "2.1.7.1.4.1. "
   },
   "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "2.1.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P2000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "2.1.7.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPerson.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "2.1.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "2.1.3. "
   },
   "P2000.InsuredPerson.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPerson.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "2.1.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "P2000.InsuredPerson.PersonIdentification.sex.value[0]" : {
+  "P2000.InsuredPerson.PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "2.1.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
+  "P2000.InsuredPersonBenefitDetails" : {
+    "ledetekst" : "Informasjon om ytelser den forsikrede mottar",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4. "
+  },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0]" : {
+    "ledetekst" : "Informasjon om ytelser",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "4.1"
+  },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0]" : {
+    "ledetekst" : "Beløp",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "9"
+  },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "ledetekst" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.9.5. "
+  },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "ledetekst" : "Annen betalingshyppighet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.9.5.1. ",
-    "ledetekst" : "Annen betalingshyppighet",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "4.1.9.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "4.1.9.1. "
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].amountEffectiveSince" : {
+    "ledetekst" : "Beløp gjeldende siden",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "4.1.9.3. ",
-    "ledetekst" : "Beløp gjeldende siden"
+    "indeks" : "4.1.9.3. "
   },
-  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].currency.value[0]" : {
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.1.9.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIWorldCurrencyType",
     "enumNavnId" : "333e7dce-9218-e611-80ea-000c292ed0d7"
   },
-  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].paymentFrequency.value[0]" : {
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Amount[0].paymentFrequency" : {
+    "ledetekst" : "Betalingshyppighet",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.1.9.4. ",
-    "ledetekst" : "Angi hyppigheten på utbetalingene av ytelser/pensjon/inntekt (årlig, kvartalsvis, månedlig, ukentlig, annet).",
     "enumNavn" : "PPaymentFrequencyType",
     "enumNavnId" : "343e7dce-9218-e611-80ea-000c292ed0d7"
   },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.4. "
+  },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.4.1. "
+  },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.4.1.4. "
+  },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "4.1.4.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "4.1.4.1.4.1. "
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "4.1.4.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.country.value[0]" : {
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.1.4.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.4.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.sector.value[0]" : {
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.Institution.sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.1.4.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].Institution.caseNumber" : {
+    "ledetekst" : "Saksnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.4.2. ",
-    "ledetekst" : "Saksnummer",
     "tekstlengde" : "65"
   },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].PleaseFillInFollowingIfBenefitsOtherBenefits" : {
+    "ledetekst" : "Fyll ut hvis «Ytelser» = «Andre ytelser»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.2. "
+  },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].PleaseFillInFollowingIfBenefitsOtherBenefits.otherBenefit" : {
+    "ledetekst" : "Annen ytelse",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "4.1.2.1. ",
-    "ledetekst" : "Hvis personen mottar eller har søkt om ytelser som ikke er oppført på listen, spesifiseres hvilken type ytelser vedkommende mottar eller har søkt om.",
     "tekstlengde" : "155"
   },
-  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].ThePensionReceivedBasedOn.thePensionReceivedBasedOn.value[0]" : {
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].ThePensionReceivedBasedOn" : {
+    "ledetekst" : "Pensjonen mottas basert på",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1.10. "
+  },
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].ThePensionReceivedBasedOn.thePensionReceivedBasedOn" : {
+    "ledetekst" : "Pensjonen mottas basert på",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "4.1.10.1. ",
-    "ledetekst" : "Pensjonen mottas basert på",
     "enumNavn" : "PResidenceWorkingType",
     "enumNavnId" : "4b7cdd1e-9418-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].ThePensionReceivedBasedOn.totalGrossAmountResidenceBasedPension" : {
+    "ledetekst" : "Totalt bruttobeløp for bostedsbasert pensjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "4.1.10.2. ",
-    "ledetekst" : "Totalt bruttobeløp for bostedsbasert pensjon"
+    "indeks" : "4.1.10.2. "
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].ThePensionReceivedBasedOn.totalGrossAmountWorkRelatedPension" : {
+    "ledetekst" : "Totalt bruttobeløp for arbeidsrelatert pensjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "4.1.10.3. ",
-    "ledetekst" : "Totalt bruttobeløp for arbeidsrelatert pensjon"
+    "indeks" : "4.1.10.3. "
   },
-  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].benefits.value[0]" : {
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].benefits" : {
+    "ledetekst" : "Ytelser",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "4.1.1. ",
-    "ledetekst" : "Ytelser",
     "enumNavn" : "PBenefitType",
     "enumNavnId" : "848c07e7-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].endDateBenefitsPayment" : {
+    "ledetekst" : "Sluttdato for utbetaling av ytelse",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "4.1.6. ",
-    "ledetekst" : "Sluttdato for utbetaling av ytelse"
+    "indeks" : "4.1.6. "
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].endDateEntitlementBenefits" : {
+    "ledetekst" : "Sluttdato for rett til ytelser",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "4.1.8. ",
-    "ledetekst" : "Sluttdato for rett til ytelser"
+    "indeks" : "4.1.8. "
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].startDateBenefitsPayment" : {
+    "ledetekst" : "Startdato for utbetaling av ytelse",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "4.1.5. ",
-    "ledetekst" : "Startdato for utbetaling av ytelse"
+    "indeks" : "4.1.5. "
   },
   "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].startDateEntitlementBenefits" : {
+    "ledetekst" : "Startdato for rett til ytelser",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "4.1.7. ",
-    "ledetekst" : "Startdato for rett til ytelser"
+    "indeks" : "4.1.7. "
   },
-  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].status.value[0]" : {
+  "P2000.InsuredPersonBenefitDetails.BenefitDetails[0].status" : {
+    "ledetekst" : "Status",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "4.1.3. ",
-    "ledetekst" : "Angi om det er søkt om den aktuelle ytelse eller om ytelsen er innvilget eller avslått, eller om ytelsen er midlertidig innvilget.",
     "enumNavn" : "EESSIAppliedGrantedDeniedProvisionalType",
     "enumNavnId" : "868c07e7-9218-e611-80ea-000c292ed0d7"
   },
+  "P2000.InsuredPersonEmploymentSelfEmploymentDetails" : {
+    "ledetekst" : "Informasjon om personens ansettelsesforhold og selvstendige næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3. "
+  },
+  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0]" : {
+    "ledetekst" : "Informasjon om ansettelsesforhold og selvstendig næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.1"
+  },
+  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0]" : {
+    "ledetekst" : "Inntektsbeløp",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "7"
+  },
+  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "ledetekst" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.7.5. "
+  },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "ledetekst" : "Annen betalingshyppighet",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.7.5.1. ",
-    "ledetekst" : "Annen betalingshyppighet",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].amount" : {
+    "ledetekst" : "Beløp",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.7.1. ",
-    "ledetekst" : "Beløp"
+    "indeks" : "3.1.7.1. "
   },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].amountEffectiveSince" : {
+    "ledetekst" : "Beløp gjeldende siden",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.7.3. ",
-    "ledetekst" : "Beløp gjeldende siden"
+    "indeks" : "3.1.7.3. "
   },
-  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].currency.value[0]" : {
+  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].currency" : {
+    "ledetekst" : "Valuta",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.7.2. ",
-    "ledetekst" : "Valuta",
     "enumNavn" : "EESSIWorldCurrencyType",
     "enumNavnId" : "333e7dce-9218-e611-80ea-000c292ed0d7"
   },
-  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].paymentFrequency.value[0]" : {
+  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].IncomeAmount[0].paymentFrequency" : {
+    "ledetekst" : "Betalingshyppighet",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.7.4. ",
-    "ledetekst" : "Angi hyppigheten på utbetalingene av ytelser/pensjon/inntekt (årlig, kvartalsvis, månedlig, ukentlig, annet).",
     "enumNavn" : "PPaymentFrequencyType",
     "enumNavnId" : "343e7dce-9218-e611-80ea-000c292ed0d7"
   },
-  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].employmentSelfEmployment.value[0]" : {
+  "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].employmentSelfEmployment" : {
+    "ledetekst" : "Ansettelsesforhold og selvstendig næringsvirksomhet",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "3.1.2. ",
-    "ledetekst" : "Angi om den aktuelle personen fortsatt har / ikke har inntektsgivende arbeid eller driver selvstendig næringsvirksomhet, eller om vedkommende etter eget utsagn har til hensikt å pensjonere seg fra eller begynne med inntektsgivende arbeid eller selvstendig næringsvirksomhet.",
     "enumNavn" : "PEmploymentSelfEmploymentInsuredPersonType",
     "enumNavnId" : "f6c43cf9-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].endDateEmploymentOrSelfEmployment" : {
+    "ledetekst" : "Sluttdato for ansettelsesforhold eller selvstendig næringsvirksomhet",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.4. ",
-    "ledetekst" : "Hvis den aktuelle personen ikke lenger søker inntektsgivende arbeid eller driver selvstendig næringsvirksomhet, angi siste dato vedkommende var ansatt eller var selvstendig næringsdrivende."
+    "indeks" : "3.1.4. "
   },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].hoursPerWeek" : {
+    "ledetekst" : "Arbeidstimer per uke",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "3.1.6. ",
-    "ledetekst" : "Arbeidstimer per uke"
+    "indeks" : "3.1.6. "
   },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].intendedRetirementDateFromEmploymentOrSelfEmployment" : {
+    "ledetekst" : "Planlagt pensjonsdato fra ansettelsesforhold eller selvstendig næringsvirksomhet",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.5. ",
-    "ledetekst" : "Hvis den aktuelle personen har tilkjennegitt å ville pensjonere seg fra inntektsgivende arbeid eller selvstendig næringsvirksomhet, angi første dag vedkommende etter eget utsagn ikke lenger vil ha inntektsgivende arbeid eller drive selvstendig næringsvirksomhet."
+    "indeks" : "3.1.5. "
   },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].occupation" : {
+    "ledetekst" : "Yrke",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "3.1.1. ",
-    "ledetekst" : "Yrke",
     "tekstlengde" : "155"
   },
   "P2000.InsuredPersonEmploymentSelfEmploymentDetails.EmploymentSelfemploymentDetails[0].startDateIntendedEmploymentOrSelfEmployment" : {
+    "ledetekst" : "Startdato for planlagt ansettelsesforhold eller selvstendig næringsvirksomhet",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "3.1.3. ",
-    "ledetekst" : "Startdato for planlagt ansettelsesforhold eller selvstendig næringsvirksomhet"
+    "indeks" : "3.1.3. "
+  },
+  "P2000.LocalCaseNumbers" : {
+    "ledetekst" : "Lokale saksnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1. "
+  },
+  "P2000.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "ledetekst" : "Lokalt saksnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1"
+  },
+  "P2000.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3. "
   },
   "P2000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "1.1.3.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "1.1.3.1. "
   },
   "P2000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "1.1.3.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
   "P2000.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "ledetekst" : "Saksnummer",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "1.1.2. ",
-    "ledetekst" : "Saksnummer",
     "tekstlengde" : "65"
   },
-  "P2000.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+  "P2000.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "1.1.1. ",
-    "ledetekst" : "Angi landet der saksnummeret kan brukes.",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
   },
-  "P2000.Miscellaneous.Deferment[0].defermentCountry.value[0]" : {
+  "P2000.Miscellaneous" : {
+    "ledetekst" : "Diverse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "9. "
+  },
+  "P2000.Miscellaneous.Deferment[0]" : {
+    "ledetekst" : "Utsettelse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "9.4"
+  },
+  "P2000.Miscellaneous.Deferment[0].defermentCountry" : {
+    "ledetekst" : "Utsettelsesland",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "9.4.1. ",
-    "ledetekst" : "Angi landet (oppgitt med ISO3166-1-alfa-2-kode) der den aktuelle personen ønsker å utsette pensjonsutbetalingen. Merk at informasjonen må angis separat for hvert land.",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "426915ed-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.Miscellaneous.Deferment[0].defermentInstitutionCode" : {
+    "ledetekst" : "Kode til institusjon som utsetter",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "9.4.3. ",
-    "ledetekst" : "Kode til institusjon som utsetter",
     "tekstlengde" : "25"
   },
   "P2000.Miscellaneous.Deferment[0].defermentInstitutionName" : {
+    "ledetekst" : "Navn på institusjonen som utsetter",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "9.4.2. ",
-    "ledetekst" : "Navn på institusjonen som utsetter",
     "tekstlengde" : "155"
   },
   "P2000.Miscellaneous.Deferment[0].defermentTimeUntilWhichDate" : {
+    "ledetekst" : "Utsettelsesdato (fram til dato)",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "9.4.4. ",
-    "ledetekst" : "Utsettelsesdato (fram til dato)"
+    "indeks" : "9.4.4. "
+  },
+  "P2000.Miscellaneous.InstitutionWherePensionNotClaimedYetOnlyP5000[0]" : {
+    "ledetekst" : "Institusjon der det ennå ikke er søkt om pensjon (kun P5000 trengs)",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "9.7"
   },
   "P2000.Miscellaneous.InstitutionWherePensionNotClaimedYetOnlyP5000[0].institutionWherePensionNotClaimedYetOnlyP5000Needed" : {
+    "ledetekst" : "Institusjon der det ennå ikke er søkt om pensjon (kun P5000 trengs)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "9.7.1. ",
-    "ledetekst" : "Institusjon der det ennå ikke er søkt om pensjon (kun P5000 trengs)",
     "tekstlengde" : "155"
   },
+  "P2000.Miscellaneous.PleaseFillInFollowingIfAttachmentsOther" : {
+    "ledetekst" : "Fyll ut hvis «Vedlegg» = «Annet»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "9.9. "
+  },
   "P2000.Miscellaneous.PleaseFillInFollowingIfAttachmentsOther.otherAttachments" : {
+    "ledetekst" : "Andre vedlegg",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "9.9.1. ",
-    "ledetekst" : "Andre vedlegg",
     "tekstlengde" : "255"
   },
   "P2000.Miscellaneous.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "9.11. ",
-    "ledetekst" : "Ytterligere informasjon",
     "tekstlengde" : "500"
   },
-  "P2000.Miscellaneous.attachments.value[0]" : {
+  "P2000.Miscellaneous.attachments" : {
+    "ledetekst" : "Vedlegg",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiCheckbox",
     "indeks" : "9.8. ",
-    "ledetekst" : "Vedlegg",
     "enumNavn" : "PAttachedMedicalWorkStudyOtherMultipleType",
     "enumNavnId" : "853ba516-7810-e711-80d3-000d3a22e8cd"
   },
   "P2000.Miscellaneous.dateClaim" : {
+    "ledetekst" : "Dato for krav",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "9.1. ",
-    "ledetekst" : "Dato for krav"
+    "indeks" : "9.1. "
   },
-  "P2000.Miscellaneous.deductionsGrounds.value[0]" : {
+  "P2000.Miscellaneous.deductionsGrounds" : {
+    "ledetekst" : "Grunnlag for trekk",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiCheckbox",
     "indeks" : "9.6. ",
-    "ledetekst" : "Grunnlag for trekk",
     "enumNavn" : "PDeductionsGroundsMultipleType",
     "enumNavnId" : "1395e07b-7210-e711-80d3-000d3a22e8cd"
   },
-  "P2000.Miscellaneous.fromEarliestDateEligibilityIndicator.value[0]" : {
+  "P2000.Miscellaneous.fromEarliestDateEligibilityIndicator" : {
+    "ledetekst" : "Angi tidligste dato for kvalifisering",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "9.3. ",
-    "ledetekst" : "Angi tidligste dato for kvalifisering",
     "enumNavn" : "EESSIYesNoType",
     "enumNavnId" : "39960843-4bf8-e611-80d3-000d3a22e8cd"
   },
-  "P2000.Miscellaneous.recipientDecision.value[0]" : {
+  "P2000.Miscellaneous.recipientDecision" : {
+    "ledetekst" : "Mottaker av vedtaket",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiCheckbox",
     "indeks" : "9.5. ",
-    "ledetekst" : "Mottaker av vedtaket",
     "enumNavn" : "PDecisionInsuredLegalGuardianMultipleType",
     "enumNavnId" : "01f446af-6f10-e711-80d3-000d3a22e8cd"
   },
   "P2000.Miscellaneous.requestedDocuments" : {
+    "ledetekst" : "Etterspurte dokumenter",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextAreaInput",
     "indeks" : "9.10. ",
-    "ledetekst" : "Etterspurte dokumenter",
     "tekstlengde" : "255"
   },
   "P2000.Miscellaneous.startDatePensionPaymentRequestedByInsuredPerson" : {
+    "ledetekst" : "Startdato for pensjonsutbetaling som den forsikrede har anmodet om hos kontaktinstitusjonen",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "9.2. ",
-    "ledetekst" : "Startdato for pensjonsutbetaling som den forsikrede har anmodet om hos kontaktinstitusjonen"
+    "indeks" : "9.2. "
   },
-  "P2000.Spouse.AdditionalInformationPerson.nationality.value[0]" : {
+  "P2000.Spouse" : {
+    "ledetekst" : "Ektefelle",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5. "
+  },
+  "P2000.Spouse.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.3. "
+  },
+  "P2000.Spouse.AdditionalInformationPerson.nationality" : {
+    "ledetekst" : "Nasjonalitet",
     "verdiType" : "enum",
     "cdmType" : "_uxMultiSelect",
     "indeks" : "5.3.1. ",
-    "ledetekst" : "Landskode gitt i ISO3166-1-alfa-2-kode Hvis personen har flere statsborgerskap, oppføres alle disse ved å gjenta datafeltet.",
     "enumNavn" : "EESSINationalityMultipleType",
     "enumNavnId" : "b0f957c5-7c4e-e611-80ca-000d3a22e8cd"
   },
   "P2000.Spouse.AdditionalInformationPerson.previousFamilyName" : {
+    "ledetekst" : "Tidligere etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.3.2. ",
-    "ledetekst" : "Tidligere etternavn",
     "tekstlengde" : "155"
   },
   "P2000.Spouse.AdditionalInformationPerson.previousForename" : {
+    "ledetekst" : "Tidligere fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.3.3. ",
-    "ledetekst" : "Tidligere fornavn",
     "tekstlengde" : "155"
   },
-  "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+  "P2000.Spouse.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.2. "
+  },
+  "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.2.8. "
+  },
+  "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.2.8.1. "
+  },
+  "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "5.2.8.1.3. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIWorldCountryHistoricType",
     "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.8.1.2. ",
-    "ledetekst" : "Region",
     "tekstlengde" : "65"
   },
   "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.8.1.1. ",
-    "ledetekst" : "By",
     "tekstlengde" : "65"
   },
   "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.8.2. ",
-    "ledetekst" : "Oppgi farens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
   "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.8.3. ",
-    "ledetekst" : "Fars fornavn",
     "tekstlengde" : "155"
   },
   "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.8.5. ",
-    "ledetekst" : "Mors fornavn",
     "tekstlengde" : "155"
   },
   "P2000.Spouse.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.8.4. ",
-    "ledetekst" : "Oppgi morens etternavn ved fødselen hvis dette er et annet enn personens etternavn ved fødselen.",
     "tekstlengde" : "155"
   },
+  "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.2.7. "
+  },
+  "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "5.2.7.1"
+  },
+  "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.2.7.1.4. "
+  },
   "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
-    "indeks" : "5.2.7.1.4.1. ",
-    "ledetekst" : "Institusjonens ID"
+    "indeks" : "5.2.7.1.4.1. "
   },
   "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
     "verdiType" : "tekst",
     "cdmType" : "_rinaIRAutocomplete",
     "indeks" : "5.2.7.1.4.2. ",
-    "ledetekst" : "Institusjonens navn",
     "tekstlengde" : "155"
   },
-  "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+  "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "ledetekst" : "Land",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "5.2.7.1.1. ",
-    "ledetekst" : "Land",
     "enumNavn" : "EESSIEUEFTACountryType",
     "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.7.1.2. ",
-    "ledetekst" : "Personnummer (PIN)",
     "tekstlengde" : "65"
   },
-  "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+  "P2000.Spouse.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "ledetekst" : "Sektor",
     "verdiType" : "enum",
     "cdmType" : "_uxSelectAutoCompleteInput",
     "indeks" : "5.2.7.1.3. ",
-    "ledetekst" : "Angi sektoren der oppgitt personnummer kan brukes. Denne opplysningen er særlig nyttig i saker fra sektorene Horisontal, Gjeldende lovgivning, Annet og Innkreving. AWOD viser til sektoren for arbeidsulykker eller yrkessykdom.",
     "enumNavn" : "EESSISectorsType",
     "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
   },
   "P2000.Spouse.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
     "verdiType" : "dato",
     "cdmType" : "_uxDateInput",
-    "indeks" : "5.2.3. ",
-    "ledetekst" : "Fødselsdato"
+    "indeks" : "5.2.3. "
   },
   "P2000.Spouse.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.1. ",
-    "ledetekst" : "Etternavn",
     "tekstlengde" : "155"
   },
   "P2000.Spouse.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.5. ",
-    "ledetekst" : "Etternavn ved fødsel",
     "tekstlengde" : "155"
   },
   "P2000.Spouse.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.2. ",
-    "ledetekst" : "Fornavn",
     "tekstlengde" : "155"
   },
   "P2000.Spouse.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
     "verdiType" : "tekst",
     "cdmType" : "_uxTextInput",
     "indeks" : "5.2.6. ",
-    "ledetekst" : "Oppgi personens fornavn ved fødselen hvis dette ikke er nåværende fornavn.",
     "tekstlengde" : "155"
   },
-  "P2000.Spouse.PersonIdentification.sex.value[0]" : {
+  "P2000.Spouse.PersonIdentification.sex" : {
+    "ledetekst" : "Kjønn",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "5.2.4. ",
-    "ledetekst" : "Kjønn",
     "enumNavn" : "EESSISexType",
     "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
   },
-  "P2000.Spouse.spouse.value[0]" : {
+  "P2000.Spouse.spouse" : {
+    "ledetekst" : "Type ektefelle",
     "verdiType" : "enum",
     "cdmType" : "_uxRadioButton",
     "indeks" : "5.1. ",
-    "ledetekst" : "Angi ektefellens forhold til den forsikrede.",
     "enumNavn" : "PSpouseType",
     "enumNavnId" : "346915ed-9218-e611-80ea-000c292ed0d7"
+  },
+  "P2000.sedTitle" : {
+    "ledetekst" : "Krav om alderspensjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "P2000"
   }
 }

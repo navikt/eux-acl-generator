@@ -22,7 +22,9 @@
             "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
           } ]
         },
+        "forename" : "$nav.bruker.person.fornavn",
         "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
           "PlaceBirth" : {
             "region" : "$nav.bruker.person.foedested.region",
             "country" : {
@@ -30,12 +32,10 @@
             },
             "town" : "$nav.bruker.person.foedested.by"
           },
-          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
           "forenameFather" : "$nav.bruker.far.person.fornavn",
           "forenameMother" : "$nav.bruker.mor.person.fornavn",
           "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel"
         },
-        "forename" : "$nav.bruker.person.fornavn",
         "familyName" : "$nav.bruker.person.etternavn",
         "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
         "dateBirth" : "$nav.bruker.person.foedselsdato",

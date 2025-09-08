@@ -41,7 +41,7 @@
       },
       "AdditionalInformationPerson" : {
         "nationality" : {
-          "value" : [ "$nav.bruker.person.statsborgerskap.land" ]
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
         }
       }
     },
@@ -178,7 +178,7 @@
     "RequestedForSituationsCoveredByArti8832004" : {
       "other" : "$medlemskap.artikkelmedbehovformerinformasjon.annet",
       "articlesBasicRegulationForWhichMoreInfoRequested" : {
-        "value" : [ "$medlemskap.artikkelmedbehovformerinformasjon.artikkel.id" ]
+        "value" : [ "$medlemskap.artikkelmedbehovformerinformasjon.artikkel[x].id" ]
       }
     },
     "MoreInformationFor122" : {
