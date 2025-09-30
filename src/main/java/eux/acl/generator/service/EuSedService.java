@@ -1,7 +1,7 @@
 package eux.acl.generator.service;
 
 import eux.acl.generator.modell.CdmUttrekk;
-import eux.acl.generator.modell.EuSedCdmVersjonsdiff;
+import eux.acl.generator.modell.SedVersjonsdiff;
 import eux.acl.generator.modell.EuSedFundament;
 import org.apache.commons.lang3.StringUtils;
 
@@ -27,7 +27,7 @@ public class EuSedService {
         filService.skrivEuSedMalFundamentTilFil(euSedFundament, sedType, cdmVersjon);
     }
 
-    public void leggTilNyeDiffer(String sedType, EuSedCdmVersjonsdiff diff, Map<String, List<String>> sektorVsNyeStier) {
+    public void leggTilNyeDiffer(String sedType, SedVersjonsdiff diff, Map<String, List<String>> sektorVsNyeStier) {
         String sektor = StringUtils.splitByCharacterType(sedType)[0];
         if (!sektorVsNyeStier.containsKey(sektor)) {
             sektorVsNyeStier.put(sektor, new ArrayList<>());
@@ -37,11 +37,11 @@ public class EuSedService {
 
     public void skrivDiffOppsummeringTilEiFil(Map<String, List<String>> sektorVsNyeStier, String nyVersjon) {
         sektorVsNyeStier.forEach((sektor, nyttListe) -> {
-            filService.skrivDiffTilFil(nyttListe, sektor + "-sektor", nyVersjon, FilService.FIL_MED_ENDRINGER_STIER);
+            filService.skrivCdmAclDiffTilFil(nyttListe, sektor + "-sektor", nyVersjon, FilService.FIL_MED_ENDRINGER_STIER);
         });
     }
 
-    public EuSedCdmVersjonsdiff diffMellomUlikeCdmSedVersjoner(String sedType, String cdmGammelVersjon, String cdmNyVersjon) {
+    public SedVersjonsdiff diffMellomUlikeCdmSedVersjoner(String sedType, String cdmGammelVersjon, String cdmNyVersjon) {
         TreeMap<String, EuSedFundament> nyCdmSedVersjon = lagCdmEuSedMedFundament(sedType, cdmNyVersjon);
         TreeMap<String, EuSedFundament>  gammelCdmSedVersjon = lagCdmEuSedMedFundament(sedType, cdmGammelVersjon);
         if (nyCdmSedVersjon == null || gammelCdmSedVersjon == null) {
@@ -64,7 +64,7 @@ public class EuSedService {
                 utgaatteStierListe.add(sti);
             }
         });
-        return new EuSedCdmVersjonsdiff(uendredeStierListe, nyeStierListe, utgaatteStierListe);
+        return new SedVersjonsdiff(uendredeStierListe, nyeStierListe, utgaatteStierListe);
     }
 
     public TreeMap<String, EuSedFundament>  lagCdmEuSedMedFundament(String sedType, String cdmVersjon) {

@@ -1,22 +1,12 @@
 package eux.acl.generator;
 
-import com.github.wnameless.json.flattener.JsonFlattener;
 import eux.acl.generator.facade.DiffFacade;
-import eux.acl.generator.facade.FundamentFacade;
 import eux.acl.generator.old.UttrekkAvKodeverkFraCdmService;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.StringUtils;
 
 import org.junit.jupiter.api.Test;
 
 
-import java.io.File;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 import static eux.acl.generator.service.FilService.*;
 
@@ -39,6 +29,21 @@ public class DiffTest {
      */
 
     @Test
+    public void sammenliknerToACL_versjoner() {
+        DiffFacade diffFacade = new DiffFacade();
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_A, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_DA, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_F, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_H, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_M, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_P, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_R, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_S, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_U, V43, V44);
+        diffFacade.sammenliknerToAclVersjonerOgSkriverDiffTilFil(SEDTYPER_X, V43, V44);
+    }
+
+    @Test
     public void sammenlikner_CDM_euSed_ACL_euSed_forrigeVersjon() {
         DiffFacade diffFacade = new DiffFacade();
         diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_A, V43);
@@ -47,7 +52,6 @@ public class DiffTest {
         diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_H, V43);
         diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_M, V43);
         diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_P, V43);
-//        diffFacade.sammenliknerEuSedFraCdmMedEuSedFraAcl(SEDTYPER_P3000, V43);
         diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_R, V43);
         diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_S, V43);
         diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_U, V43);

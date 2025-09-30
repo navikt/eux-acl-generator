@@ -42,13 +42,14 @@ public class TestdataService {
                 testdata = fundament.getEnumNavn();
             }
             testSedLinjer.put(s, testdata);
-            String stiUtenEnum = s.replace(".value[0]", "");
-            if (stiUtenEnum.contains("[0]")) {
-                String sti2 = StringUtils.replaceOnce(s,"[0]", "[1]");
-                String sti3 = StringUtils.replaceOnce(s,"[0]", "[2]");
-                testSedLinjer.put(sti2, testdata);
-                testSedLinjer.put(sti3, testdata);
-            }
+
+//            String stiUtenEnum = s.replace(".value[0]", "");
+//            if (stiUtenEnum.contains("[0]")) {
+//                String sti2 = StringUtils.replaceOnce(s,"[0]", "[1]");
+//                String sti3 = StringUtils.replaceOnce(s,"[0]", "[2]");
+//                testSedLinjer.put(sti2, testdata);
+//                testSedLinjer.put(sti3, testdata);
+//            }
 
         });
         String testSedJson = JsonUnflattener.unflatten(testSedLinjer);

@@ -21,16 +21,6 @@ public class AclMalerFacade {
         this.filService = new FilService();
         this.aclService = new AclService();
     }
-
-    /**
-     * Antakelsen om at en tekst i en versjon har en unik Id og at samme id brukes for samme tekst i ny
-     * versjon - selv om stien endres - stemmer ikke: En id kan brukes mange steder for samme tekst.
-     * @param sedTyper
-     * @param cdmVersjonForrige
-     * @param cdmVersjonNy
-     */
-
-
     public void sammenliknerEuSedCdmVersjonerOgSkriverDiffTilFiler(List<String> sedTyper, String cdmVersjonForrige, String cdmVersjonNy) {
         // samtlige filer med euSti -> aclSti eller tom
         // stier med enum

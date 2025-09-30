@@ -24,6 +24,15 @@ public class AclService {
                 .filter(k -> !k.contains("sedGVer") && !k.contains("sedVer"))
                 .sorted().toList();
     }
+
+    public List<String> lagNavSedFraAclMal(String sedType, String mappe, String cdmVersjon) {
+        Map<String, Object> aclMal = filService.lesAclMal(sedType, mappe, cdmVersjon);
+        return aclMal.keySet().stream()
+                .filter(k -> !k.contains("sedGVer") && !k.contains("sedVer"))
+                .map(k -> aclMal.get(k).toString().replace("$", ""))
+                .sorted().toList();
+    }
+
     public Map<String, String> hentAclMal(String sedType, String cdmVersjon) {
         Map<String, Object> aclMal = filService.lesAclMal(sedType, cdmVersjon);
         return aclMal.entrySet().stream()

@@ -3,20 +3,18 @@ package eux.acl.generator;
 import eux.acl.generator.facade.ResultaterFacade;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static eux.acl.generator.service.FilService.*;
 
 public class LagResultaterTest {
 
     @Test
-    public void lagerKodeverksfiler() {
+    public void lagKodeverksfiler() {
         ResultaterFacade resultaterFacade = new ResultaterFacade();
         resultaterFacade.lagNyeEnumfilerForAcl(V44);
     }
 
     @Test
-    public void lag_ACL_maler_v44() {
+    public void lagACL_malerV44() {
         ResultaterFacade resultaterFacade = new ResultaterFacade();
         resultaterFacade.lagAclMaler("A", V44);
         resultaterFacade.lagAclMaler("DA", V44);

@@ -6,9 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-import static eux.acl.generator.service.FilService.MAPPE_ENDRINGER_ACL_TARGET;
+import static eux.acl.generator.service.FilService.*;
 
 @Slf4j
 public class DiffFacade {
@@ -46,13 +45,28 @@ public class DiffFacade {
         });
     }
 
+    public void sammenliknerToAclVersjonerOgSkriverDiffTilFil(List<String> sedTyper, String aclVersjonForrrige, String aclNyVersjon) {
+        sedTyper.forEach(sedType -> {
+            List<String> navSedForrige = aclService.lagNavSedFraAclMal(sedType, MAPPE_EKSISTERENDE_ACL, aclVersjonForrrige);
+            List<String> navSedNy = aclService.lagNavSedFraAclMal(sedType, MAPPE_RESULTATER_ACL, aclNyVersjon);
+            List<String> uendredeLinjer = navSedNy.stream().filter(navSedForrige::contains).toList();
+            List<String> nyeLinjer = navSedNy.stream().filter(linje -> !navSedForrige.contains(linje)).toList();
+            List<String> utgaatteLinjer = navSedForrige.stream().filter(linje -> !navSedNy.contains(linje)).toList();
+            int antallEndringer = nyeLinjer.size();
+            filService.skrivAclVsAclDiffTilFil(uendredeLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FilService.FIL_MED_UENDREDE_STIER);
+            filService.skrivAclVsAclDiffTilFil(nyeLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FIL_MED_ENDRINGER_STIER);
+            filService.skrivAclVsAclDiffTilFil(utgaatteLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FIL_MED_UTGAATTE_STIER);
+            log.info("Diff mellom ny og gammel Acl-versjon skrevet til filer. Sedtype: {}", sedType);
+        });
+    }
+
     public void sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(List<String> sedTyper, String cdmForrigeVersjon, String cdmNyVersjon) {
         Map<String, List<String>> sektorVsNyeStier = new HashMap<>();
         sedTyper.forEach(sedType -> {
-            EuSedCdmVersjonsdiff diff = euSedService.diffMellomUlikeCdmSedVersjoner(sedType, cdmForrigeVersjon, cdmNyVersjon);
-            filService.skrivDiffTilFil(diff.getUendredeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_UENDREDE_STIER);
-            filService.skrivDiffTilFil(diff.getNyeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_ENDRINGER_STIER);
-            filService.skrivDiffTilFil(diff.getUtgaatteStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_UTGAATTE_STIER);
+            SedVersjonsdiff diff = euSedService.diffMellomUlikeCdmSedVersjoner(sedType, cdmForrigeVersjon, cdmNyVersjon);
+            filService.skrivCdmAclDiffTilFil(diff.getUendredeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_UENDREDE_STIER);
+            filService.skrivCdmAclDiffTilFil(diff.getNyeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_ENDRINGER_STIER);
+            filService.skrivCdmAclDiffTilFil(diff.getUtgaatteStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_UTGAATTE_STIER);
             euSedService.leggTilNyeDiffer(sedType, diff, sektorVsNyeStier);
             log.info("Diff mellom CDM-versjoner. Filer opprettet for {}", sedType);
         });
@@ -127,11 +141,11 @@ public class DiffFacade {
                     .filter(s -> !cdmEuSedStiListe.contains(s))
                     .map(s -> s + ": " + euSedStiVsAclSedSti.get(s))
                     .toList();
-            filService.skrivDiffTilFil(euSedStiVsAclSedStiNyMal, sedType, nyCdmVersjon, FilService.FIL_NY_ACL_MAL_STIER);
-            filService.skrivDiffTilFil(euSedStiVsAclSedStiNye, sedType, nyCdmVersjon, FilService.FIL_MED_ENDRINGER_STIER);
+            filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedStiNyMal, sedType, nyCdmVersjon, FilService.FIL_NY_ACL_MAL_STIER);
+            filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedStiNye, sedType, nyCdmVersjon, FilService.FIL_MED_ENDRINGER_STIER);
 //            filService.skrivDiffTilFil(euSedStiVsAclSedStiEndretEnum, sedType, nyCdmVersjon, FilService.FIL_ENDRET_ENUM_STIER);
-            filService.skrivDiffTilFil(euSedStiVsAclSedUendret, sedType, nyCdmVersjon, FilService.FIL_UENDREDE_ACL_STIER);
-            filService.skrivDiffTilFil(euSedStiVsAclSedStiUtgaatte, sedType, nyCdmVersjon, FilService.FIL_UTGAATTE_ACL_STIER);
+            filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedUendret, sedType, nyCdmVersjon, FilService.FIL_UENDREDE_ACL_STIER);
+            filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedStiUtgaatte, sedType, nyCdmVersjon, FilService.FIL_UTGAATTE_ACL_STIER);
             log.info("{}: ACL {} vs CDM {}. Diff skrevet til filer. Se: {}",
                     sedType, aclVersjon, nyCdmVersjon, MAPPE_ENDRINGER_ACL_TARGET);
         });
