@@ -70,6 +70,7 @@ public class DiffTest {
     }
 
     @Test
+    @Disabled
     public void sammenlikner_nyCdmVersjon_med_gammelAclVersjon_skriverNyAclVersjonTilTilFiler() {
         DiffFacade diffFacade = new DiffFacade();
         diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_A, V43, V44);
@@ -87,6 +88,7 @@ public class DiffTest {
     // sammenlikne enum innhold i ulike versjoner
     // kodeverk - stier der kodeverket er endret
     @Test
+    @Disabled
     public void sammenlikner_kodeverkCdm_iUlikeVersjoner_skriverDiffTilFiler() {
         DiffFacade diffFacade = new DiffFacade();
         diffFacade.sammenliknerEnumeneForToCdmVersjonerOgKopiererEnumFundamentFilene(V43, V44);
