@@ -53,6 +53,7 @@ public class DiffTest {
      *
      */
     @Test
+    @Disabled("På github er ikke input-filene generert og da feiler testen")
     public void sammenlikner_euSedCdm_iUlikeVersjoner_skriverDiffTilFiler() {
         DiffFacade diffFacade = new DiffFacade();
         diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_A, V43, V44);
