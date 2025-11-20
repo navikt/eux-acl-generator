@@ -3,7 +3,7 @@ package eux.acl.generator.eksekvering.acl;
 import eux.acl.generator.facade.FundamentFacade;
 
 import static eux.acl.generator.service.FilService.*;
-import static eux.acl.generator.service.FilService.SEDTYPER_X;
+import static eux.acl.generator.modell.SedTyper.*;
 
 public class Acl_1_lagEuSedFundament {
     public static void main(String[] args) {

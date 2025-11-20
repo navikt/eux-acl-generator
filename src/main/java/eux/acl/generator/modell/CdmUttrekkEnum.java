@@ -13,7 +13,6 @@ import java.util.TreeMap;
 @Getter
 public class CdmUttrekkEnum {
 
-//    private TreeMap<String, String> cdmStiVsEnumNavn;
     private Map<String, String> cdmStiVsEnumkodeTekst;
     private Map<String, String> cdmStiVsEnumkodeId;
     private TreeMap<String, String> cdmStiVsTekstId;

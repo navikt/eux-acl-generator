@@ -2,6 +2,7 @@ package eux.acl.generator.eksekvering.pdf;
 
 import eux.acl.generator.facade.ResultaterFacade;
 
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class Pdf_2_lagPdfMaler {

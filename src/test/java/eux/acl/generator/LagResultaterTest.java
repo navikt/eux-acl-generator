@@ -3,6 +3,7 @@ package eux.acl.generator;
 import eux.acl.generator.facade.ResultaterFacade;
 import org.junit.jupiter.api.Test;
 
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class LagResultaterTest {

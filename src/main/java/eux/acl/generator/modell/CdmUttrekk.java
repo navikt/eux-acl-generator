@@ -16,6 +16,7 @@ public class CdmUttrekk {
     private TreeMap<String, String> cdmStiVsMalTagnavn;
     private Map<String, String> cdmStiVsTagtype;
     private Map<String, String> cdmStiVsIndeks;
+    private Map<String, String> cdmStiVsPreIndeks;
     private Map<String, String> cdmStiVsLedetekst;
     private TreeMap<String, String> cdmStiVsEnumNavn;
     private Map<String, String> cdmStiVsEnumkodeTekst;

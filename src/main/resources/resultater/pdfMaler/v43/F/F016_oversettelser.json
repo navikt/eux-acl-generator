@@ -1,0 +1,1402 @@
+{
+  "F016.ReasonForRequestLegalGrounds" : {
+    "index" : "1.",
+    "prompt" : "Grunn for anmodning/rettslige grunner.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.ReasonForRequestLegalGrounds.reason" : {
+    "index" : "1.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "F016.StatementLegalGrounds" : {
+    "index" : "2.",
+    "prompt" : "Erklæring/rettslige grunner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.StatementLegalGrounds.statement" : {
+    "index" : "2.1.",
+    "prompt" : "Uttalelse",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "F016.PresentBeneficiary" : {
+    "index" : "3.",
+    "prompt" : "Nåværende mottaker",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.PersonIdentification" : {
+    "index" : "3.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.familyName" : {
+    "index" : "3.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.forename" : {
+    "index" : "3.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.dateBirth" : {
+    "index" : "3.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.sex" : {
+    "index" : "3.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.familyNameAtBirth" : {
+    "index" : "3.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.forenameAtBirth" : {
+    "index" : "3.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "3.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "3.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "3.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "3.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "3.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "3.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "3.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "3.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "3.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "3.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "3.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "3.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.AdditionalInformationAboutNationality" : {
+    "index" : "3.2.",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "3.2.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "index" : "3.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSINationalityType"
+  },
+  "F016.PresentBeneficiary.AdditionalInformationAboutNationality.Nationalities[0].since" : {
+    "index" : "3.2.1.2.",
+    "prompt" : "Siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.AddressesPerson" : {
+    "index" : "3.3.",
+    "prompt" : "Personens adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0]" : {
+    "index" : "3.3.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].typeAddress" : {
+    "index" : "3.3.1.1.",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressType"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].Address" : {
+    "index" : "3.3.1.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].Address.street" : {
+    "index" : "3.3.1.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].Address.buildingName" : {
+    "index" : "3.3.1.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].Address.town" : {
+    "index" : "3.3.1.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].Address.postalCode" : {
+    "index" : "3.3.1.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].Address.region" : {
+    "index" : "3.3.1.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.AddressesPerson.AddressPerson[0].Address.country" : {
+    "index" : "3.3.1.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "F016.PresentBeneficiary.ContactDetails" : {
+    "index" : "3.4.",
+    "prompt" : "Kontaktinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.ContactDetails.TelephoneNumbers" : {
+    "index" : "3.4.1.",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.ContactDetails.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "3.4.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "3.4.1.1.1.",
+    "prompt" : "Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    },
+    "enumName" : "EESSITelephoneNumberType"
+  },
+  "F016.PresentBeneficiary.ContactDetails.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "3.4.1.1.2.",
+    "prompt" : "Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.ContactDetails.EmailAddresses" : {
+    "index" : "3.4.2.",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.ContactDetails.EmailAddresses.EmailAddress[0]" : {
+    "index" : "3.4.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.ContactDetails.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "3.4.2.1.1.",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme" : {
+    "index" : "3.5.",
+    "prompt" : "Dekning av en trygdeordning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember" : {
+    "index" : "3.5.1.",
+    "prompt" : "Perioder dekket av trygdeordning i avsenderlandet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0]" : {
+    "index" : "3.5.1.1",
+    "prompt" : "Periode",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].startDate" : {
+    "index" : "3.5.1.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].endDate" : {
+    "index" : "3.5.1.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsNotCovered" : {
+    "index" : "3.5.2.",
+    "prompt" : "Udekkede perioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0]" : {
+    "index" : "3.5.2.1",
+    "prompt" : "Periode uten dekning",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].startDate" : {
+    "index" : "3.5.2.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].endDate" : {
+    "index" : "3.5.2.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsEntitlement" : {
+    "index" : "3.5.3.",
+    "prompt" : "Periode med rettigheter",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits" : {
+    "index" : "3.5.3.1.1.",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0]" : {
+    "index" : "3.5.3.1.1.1",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].startDate" : {
+    "index" : "3.5.3.1.1.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].endDate" : {
+    "index" : "3.5.3.1.1.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsDoesNotExist.reason" : {
+    "index" : "3.5.3.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxRadioButton"
+  },
+  "F016.PresentBeneficiary.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsDoesNotExist.otherReason" : {
+    "index" : "3.5.3.2.2.",
+    "prompt" : "Annen grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "F016.RequestedBeneficiary" : {
+    "index" : "4.",
+    "prompt" : "Ønsker mottaker",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.RequestedBeneficiary.requestedBeneficiary" : {
+    "index" : "4.1.",
+    "prompt" : "Ønsker mottaker",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Ektefelle/partner",
+      "02" : "Myndighet",
+      "03" : "Barn",
+      "99" : "Annen person"
+    },
+    "enumName" : "FApprovedBeneficiaryType"
+  },
+  "F016.InformationSpouseOrPartner" : {
+    "index" : "5.",
+    "prompt" : "Informasjon om ektefelle eller partner",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification" : {
+    "index" : "5.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.familyName" : {
+    "index" : "5.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.forename" : {
+    "index" : "5.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.dateBirth" : {
+    "index" : "5.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.sex" : {
+    "index" : "5.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.familyNameAtBirth" : {
+    "index" : "5.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.forenameAtBirth" : {
+    "index" : "5.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "5.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "5.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "5.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "5.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "5.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "5.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "5.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "5.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "5.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "5.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "5.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "5.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "5.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "5.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "5.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "5.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "5.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.AdditionalInformationAboutNationality" : {
+    "index" : "5.2.",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "5.2.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "index" : "5.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSINationalityType"
+  },
+  "F016.InformationSpouseOrPartner.AdditionalInformationAboutNationality.Nationalities[0].since" : {
+    "index" : "5.2.1.2.",
+    "prompt" : "Siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson" : {
+    "index" : "5.3.",
+    "prompt" : "Personens adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0]" : {
+    "index" : "5.3.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].typeAddress" : {
+    "index" : "5.3.1.1.",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressType"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address" : {
+    "index" : "5.3.1.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.street" : {
+    "index" : "5.3.1.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.buildingName" : {
+    "index" : "5.3.1.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.town" : {
+    "index" : "5.3.1.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.postalCode" : {
+    "index" : "5.3.1.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.region" : {
+    "index" : "5.3.1.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.AddressesPerson.AddressPerson[0].Address.country" : {
+    "index" : "5.3.1.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails" : {
+    "index" : "5.4.",
+    "prompt" : "Kontaktinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers" : {
+    "index" : "5.4.1.",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "5.4.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "5.4.1.1.1.",
+    "prompt" : "Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    },
+    "enumName" : "EESSITelephoneNumberType"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "5.4.1.1.2.",
+    "prompt" : "Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails.EmailAddresses" : {
+    "index" : "5.4.2.",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails.EmailAddresses.EmailAddress[0]" : {
+    "index" : "5.4.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.ContactDetails.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "5.4.2.1.1.",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme" : {
+    "index" : "5.5.",
+    "prompt" : "Dekning av en trygdeordning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember" : {
+    "index" : "5.5.1.",
+    "prompt" : "Perioder dekket av trygdeordning i avsenderlandet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0]" : {
+    "index" : "5.5.1.1",
+    "prompt" : "Periode",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].startDate" : {
+    "index" : "5.5.1.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].endDate" : {
+    "index" : "5.5.1.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered" : {
+    "index" : "5.5.2.",
+    "prompt" : "Udekkede perioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0]" : {
+    "index" : "5.5.2.1",
+    "prompt" : "Periode uten dekning",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].startDate" : {
+    "index" : "5.5.2.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].endDate" : {
+    "index" : "5.5.2.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement" : {
+    "index" : "5.5.3.",
+    "prompt" : "Periode med rettigheter",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits" : {
+    "index" : "5.5.3.1.1.",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0]" : {
+    "index" : "5.5.3.1.1.1",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].startDate" : {
+    "index" : "5.5.3.1.1.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].endDate" : {
+    "index" : "5.5.3.1.1.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsDoesNotExist.reason" : {
+    "index" : "5.5.3.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxRadioButton"
+  },
+  "F016.InformationSpouseOrPartner.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsDoesNotExist.otherReason" : {
+    "index" : "5.5.3.2.2.",
+    "prompt" : "Annen grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "F016.InformationOtherPerson" : {
+    "index" : "6.",
+    "prompt" : "Informasjon om annen person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.PersonIdentification" : {
+    "index" : "6.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.familyName" : {
+    "index" : "6.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.forename" : {
+    "index" : "6.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.dateBirth" : {
+    "index" : "6.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.sex" : {
+    "index" : "6.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.familyNameAtBirth" : {
+    "index" : "6.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.forenameAtBirth" : {
+    "index" : "6.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "6.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "6.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "6.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "6.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "6.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "6.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "6.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "6.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "6.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "6.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "6.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "6.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "6.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "6.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "6.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "6.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "6.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.AdditionalInformationAboutNationality" : {
+    "index" : "6.2.",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "6.2.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "index" : "6.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSINationalityType"
+  },
+  "F016.InformationOtherPerson.AdditionalInformationAboutNationality.Nationalities[0].since" : {
+    "index" : "6.2.1.2.",
+    "prompt" : "Siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.AddressesPerson" : {
+    "index" : "6.3.",
+    "prompt" : "Personens adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0]" : {
+    "index" : "6.3.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].typeAddress" : {
+    "index" : "6.3.1.1.",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressType"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].Address" : {
+    "index" : "6.3.1.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].Address.street" : {
+    "index" : "6.3.1.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].Address.buildingName" : {
+    "index" : "6.3.1.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].Address.town" : {
+    "index" : "6.3.1.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].Address.postalCode" : {
+    "index" : "6.3.1.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].Address.region" : {
+    "index" : "6.3.1.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.AddressesPerson.AddressPerson[0].Address.country" : {
+    "index" : "6.3.1.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "F016.InformationOtherPerson.ContactDetails" : {
+    "index" : "6.4.",
+    "prompt" : "Kontaktinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.ContactDetails.TelephoneNumbers" : {
+    "index" : "6.4.1.",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.ContactDetails.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "6.4.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.ContactDetails.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "6.4.1.1.1.",
+    "prompt" : "Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    },
+    "enumName" : "EESSITelephoneNumberType"
+  },
+  "F016.InformationOtherPerson.ContactDetails.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "6.4.1.1.2.",
+    "prompt" : "Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.ContactDetails.EmailAddresses" : {
+    "index" : "6.4.2.",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.ContactDetails.EmailAddresses.EmailAddress[0]" : {
+    "index" : "6.4.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.ContactDetails.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "6.4.2.1.1.",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme" : {
+    "index" : "6.5.",
+    "prompt" : "Dekning av en trygdeordning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember" : {
+    "index" : "6.5.1.",
+    "prompt" : "Perioder dekket av trygdeordning i avsenderlandet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0]" : {
+    "index" : "6.5.1.1",
+    "prompt" : "Periode",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].startDate" : {
+    "index" : "6.5.1.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsCoveredBySecuritySchemeInSendingMember.Period[0].endDate" : {
+    "index" : "6.5.1.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered" : {
+    "index" : "6.5.2.",
+    "prompt" : "Udekkede perioder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0]" : {
+    "index" : "6.5.2.1",
+    "prompt" : "Periode uten dekning",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].startDate" : {
+    "index" : "6.5.2.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsNotCovered.PeriodNotCovered[0].endDate" : {
+    "index" : "6.5.2.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement" : {
+    "index" : "6.5.3.",
+    "prompt" : "Periode med rettigheter",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits" : {
+    "index" : "6.5.3.1.1.",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0]" : {
+    "index" : "6.5.3.1.1.1",
+    "prompt" : "Periode for rett til familieytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].startDate" : {
+    "index" : "6.5.3.1.1.1.1.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsExists.PeriodEntitlementFamilyBenefits.PeriodEntitlementFamilyBenefit[0].endDate" : {
+    "index" : "6.5.3.1.1.1.2.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsDoesNotExist.reason" : {
+    "index" : "6.5.3.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxRadioButton"
+  },
+  "F016.InformationOtherPerson.CoverageBySocialSecurityScheme.PeriodsEntitlement.EntitlementFamilyBenefitsDoesNotExist.otherReason" : {
+    "index" : "6.5.3.2.2.",
+    "prompt" : "Annen grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "F016.ClaimingAuthority" : {
+    "index" : "7.",
+    "prompt" : "Myndighet som fremsetter kravet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.ClaimingAuthority.reasonForAuthorityClaim" : {
+    "index" : "7.1.",
+    "prompt" : "Begrunnelse for myndighetens krav",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "F016.ClaimingAuthority.ClaimingAuthority" : {
+    "index" : "7.2.",
+    "prompt" : "Myndighet som fremsetter kravet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.ClaimingAuthority.ClaimingAuthority.institutionID" : {
+    "index" : "7.2.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.ClaimingAuthority.institutionName" : {
+    "index" : "7.2.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "F016.ClaimingAuthority.BankDetails" : {
+    "index" : "7.3.",
+    "prompt" : "Bankinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.ClaimingAuthority.BankDetails.SEPAAccount.IBAN" : {
+    "index" : "7.3.1.1.",
+    "prompt" : "IBAN",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.SEPAAccount.BICSWIFT" : {
+    "index" : "7.3.1.2.",
+    "prompt" : "BIC-SWIFT",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.accountNumber" : {
+    "index" : "7.3.2.1.",
+    "prompt" : "Kontonummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BICSWIFT" : {
+    "index" : "7.3.2.2.",
+    "prompt" : "BIC-SWIFT",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.bankName" : {
+    "index" : "7.3.2.3.",
+    "prompt" : "Bankens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress" : {
+    "index" : "7.3.2.4.",
+    "prompt" : "Bankens adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.street" : {
+    "index" : "7.3.2.4.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.buildingName" : {
+    "index" : "7.3.2.4.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.town" : {
+    "index" : "7.3.2.4.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.postalCode" : {
+    "index" : "7.3.2.4.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.region" : {
+    "index" : "7.3.2.4.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.ClaimingAuthority.BankDetails.NonSEPAAccount.BankAddress.country" : {
+    "index" : "7.3.2.4.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "F016.InformationChildren" : {
+    "index" : "8.",
+    "prompt" : "Informasjon om barn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0]" : {
+    "index" : "8.1",
+    "prompt" : "Barn",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails" : {
+    "index" : "8.1.1.",
+    "prompt" : "Opplysninger om barn",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.familyName" : {
+    "index" : "8.1.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.forename" : {
+    "index" : "8.1.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.dateBirth" : {
+    "index" : "8.1.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.sex" : {
+    "index" : "8.1.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.familyNameAtBirth" : {
+    "index" : "8.1.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.forenameAtBirth" : {
+    "index" : "8.1.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution" : {
+    "index" : "8.1.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "8.1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "8.1.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "8.1.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "8.1.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "8.1.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "8.1.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "8.1.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "8.1.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "8.1.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "8.1.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "8.1.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "8.1.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "8.1.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "8.1.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "8.1.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].ChildDetails.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "8.1.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].AdditionalInformationAboutNationality" : {
+    "index" : "8.1.2.",
+    "prompt" : "Ytterligere informasjon om nasjonalitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].AdditionalInformationAboutNationality.Nationalities[0]" : {
+    "index" : "8.1.2.1",
+    "prompt" : "Nasjonaliteter",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationChildren.Child[0].AdditionalInformationAboutNationality.Nationalities[0].nationality" : {
+    "index" : "8.1.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSINationalityType"
+  },
+  "F016.InformationChildren.Child[0].AdditionalInformationAboutNationality.Nationalities[0].since" : {
+    "index" : "8.1.2.1.2.",
+    "prompt" : "Siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild" : {
+    "index" : "8.1.3.",
+    "prompt" : "Barnets adresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0]" : {
+    "index" : "8.1.3.1",
+    "prompt" : "Personens adresse",
+    "valuetype" : "_rinaArray"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].typeAddress" : {
+    "index" : "8.1.3.1.1.",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressType"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].Address" : {
+    "index" : "8.1.3.1.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].Address.street" : {
+    "index" : "8.1.3.1.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].Address.buildingName" : {
+    "index" : "8.1.3.1.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].Address.town" : {
+    "index" : "8.1.3.1.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].Address.postalCode" : {
+    "index" : "8.1.3.1.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].Address.region" : {
+    "index" : "8.1.3.1.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "F016.InformationChildren.Child[0].AddressesChild.AddressPerson[0].Address.country" : {
+    "index" : "8.1.3.1.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "F016.sedTitle" : {
+    "index" : "F016",
+    "prompt" : "F016 - Anmodning om overføring av ytelser",
+    "valuetype" : "_rinaRoot"
+  }
+}

@@ -2,6 +2,7 @@ package eux.acl.generator.eksekvering.acl;
 
 import eux.acl.generator.facade.DiffFacade;
 
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class Acl_6_sammenliknerAclVersjoner {

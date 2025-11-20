@@ -1,35 +1,15 @@
 package eux.acl.generator;
 
-import com.github.wnameless.json.flattener.JsonFlattener;
 import eux.acl.generator.facade.FundamentFacade;
-import eux.acl.generator.old.UttrekkAvKodeverkFraCdmService;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.StringUtils;
-
 import org.junit.jupiter.api.Test;
 
-
-import java.io.File;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class FundamentTest {
 
-
-    private static final String MAPPE_CDMv43 = "src/test/resources/cdm-v43-meta";
-    private static final String MAPPE_ACLv42 = "src/main/resources/sedtemplates/v42";
-    public static final String MAPPE_ACLv43_MELLOMBELS = "target/v43Raw";
-    public static String JUSTERINGER_FILNAVN_ENDE = "-v43-adjustments.json";
-    public static String UENDRET_FILNAVN_ENDE = "-v43-flat.json";
-
-    private static final String UTF_8 = StandardCharsets.UTF_8.name();
-    private UttrekkAvKodeverkFraCdmService cdmReader = new UttrekkAvKodeverkFraCdmService();
 
     /**
      * Sammenlikner CDM og ACL versjoner
@@ -40,20 +20,16 @@ public class FundamentTest {
      * De genereres kun når disse filene ikke finnes fra tidligere.
      */
 
-    public static List<String> SEDTYPER_F_H_S_U() {
-        List<String> sedtyper = new ArrayList<>();
-        sedtyper.addAll(SEDTYPER_U);
-        sedtyper.addAll(SEDTYPER_F);
-        sedtyper.addAll(SEDTYPER_H);
-        sedtyper.addAll(SEDTYPER_S);
-        return sedtyper;
-    }
-
     /**
      * Trekker ut enum-er fra cdm-meta-filer og lager ei fil pr unike enum med info som seinere kan brukes til å
      * generere kodeverksfiler.
      */
 
+    @Test
+    public void lager_EttEuSedFundament_v44() {
+        FundamentFacade aclMalFacade = new FundamentFacade();
+        aclMalFacade.trekkUtEuSedFundamentOgSkrivTilFil(List.of("U004"), V44);
+    }
 
     @Test
     public void lager_euSedFundament_v44() {
@@ -100,6 +76,7 @@ public class FundamentTest {
         aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_U, V44);
         aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_X, V44);
     }
+
     @Test
     public void lager_kodeverkFundament_v43() {
         FundamentFacade aclMalFacade = new FundamentFacade();

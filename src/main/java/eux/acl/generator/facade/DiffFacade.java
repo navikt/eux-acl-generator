@@ -54,7 +54,7 @@ public class DiffFacade {
             List<String> utgaatteLinjer = navSedForrige.stream().filter(linje -> !navSedNy.contains(linje)).toList();
             int antallEndringer = nyeLinjer.size();
             filService.skrivAclVsAclDiffTilFil(uendredeLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FilService.FIL_MED_UENDREDE_STIER);
-            filService.skrivAclVsAclDiffTilFil(nyeLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FIL_MED_ENDRINGER_STIER);
+            filService.skrivAclVsAclDiffTilFil(nyeLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FIL_MED_ENDREDE_STIER);
             filService.skrivAclVsAclDiffTilFil(utgaatteLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FIL_MED_UTGAATTE_STIER);
             log.info("Diff mellom ny og gammel Acl-versjon skrevet til filer. Sedtype: {}", sedType);
         });
@@ -65,7 +65,7 @@ public class DiffFacade {
         sedTyper.forEach(sedType -> {
             SedVersjonsdiff diff = euSedService.diffMellomUlikeCdmSedVersjoner(sedType, cdmForrigeVersjon, cdmNyVersjon);
             filService.skrivCdmAclDiffTilFil(diff.getUendredeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_UENDREDE_STIER);
-            filService.skrivCdmAclDiffTilFil(diff.getNyeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_ENDRINGER_STIER);
+            filService.skrivCdmAclDiffTilFil(diff.getNyeStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_ENDREDE_STIER);
             filService.skrivCdmAclDiffTilFil(diff.getUtgaatteStierListe(), sedType, cdmNyVersjon, FilService.FIL_MED_UTGAATTE_STIER);
             euSedService.leggTilNyeDiffer(sedType, diff, sektorVsNyeStier);
             log.info("Diff mellom CDM-versjoner. Filer opprettet for {}", sedType);
@@ -142,7 +142,7 @@ public class DiffFacade {
                     .map(s -> s + ": " + euSedStiVsAclSedSti.get(s))
                     .toList();
             filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedStiNyMal, sedType, nyCdmVersjon, FilService.FIL_NY_ACL_MAL_STIER);
-            filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedStiNye, sedType, nyCdmVersjon, FilService.FIL_MED_ENDRINGER_STIER);
+            filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedStiNye, sedType, nyCdmVersjon, FilService.FIL_MED_ENDREDE_STIER);
 //            filService.skrivDiffTilFil(euSedStiVsAclSedStiEndretEnum, sedType, nyCdmVersjon, FilService.FIL_ENDRET_ENUM_STIER);
             filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedUendret, sedType, nyCdmVersjon, FilService.FIL_UENDREDE_ACL_STIER);
             filService.skrivCdmAclDiffTilFil(euSedStiVsAclSedStiUtgaatte, sedType, nyCdmVersjon, FilService.FIL_UTGAATTE_ACL_STIER);

@@ -1,0 +1,170 @@
+{
+  "F020" : {
+    "DeceasedPerson" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "town" : "$bruker.personinfo.pinmangler.foedested.by",
+            "country" : {
+              "value" : [ "$bruker.personinfo.pinmangler.foedested.land" ]
+            },
+            "region" : "$bruker.personinfo.pinmangler.foedested.region"
+          },
+          "fatherFamilyNameAtBirth" : "$bruker.personinfo.pinmangler.far.etternavnvedfoedsel",
+          "forenameMother" : "$bruker.personinfo.pinmangler.mor.fornavn",
+          "motherFamilyNameAtBirth" : "$bruker.personinfo.pinmangler.mor.etternavnvedfoedsel",
+          "forenameFather" : "$bruker.personinfo.pinmangler.far.fornavn"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$bruker.personinfo.pin[x].institusjonsid",
+              "institutionName" : "$bruker.personinfo.pin[x].institusjonsnavn"
+            },
+            "sector" : {
+              "value" : [ "$bruker.personinfo.pin[x].sektor" ]
+            },
+            "country" : {
+              "value" : [ "$bruker.personinfo.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$bruker.personinfo.pin[x].identifikator"
+          } ]
+        },
+        "forename" : "$bruker.personinfo.fornavn",
+        "dateBirth" : "$bruker.personinfo.foedselsdato",
+        "familyNameAtBirth" : "$bruker.personinfo.pinmangler.etternavnvedfoedsel",
+        "familyName" : "$bruker.personinfo.etternavn",
+        "sex" : {
+          "value" : [ "$bruker.personinfo.kjoenn" ]
+        },
+        "forenameAtBirth" : "$bruker.personinfo.pinmangler.fornavnvedfoedsel"
+      },
+      "CoverageBySocialSecurityScheme" : {
+        "PeriodsEntitlement" : {
+          "PeriodOfEntitlement" : [ {
+            "EntitlementFamilyBenefitsDoesNotExist" : {
+              "PeriodNoEntitlementFamilyBenefits" : {
+                "PeriodNoEntitlementToFamilyBenefit" : [ {
+                  "otherReason" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].grunn.annen",
+                  "reason" : {
+                    "value" : [ "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].grunn.FReasonEntitlementType" ]
+                  },
+                  "Period" : {
+                    "OpenPeriod" : {
+                      "startDate" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.aapenperiode.startdato",
+                      "typeOpenPeriod" : {
+                        "value" : [ "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.aapenperiode.type" ]
+                      }
+                    },
+                    "FixedPeriod" : {
+                      "startDate" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.fastperiode.startdato",
+                      "endDate" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.fastperiode.sluttdato"
+                    }
+                  }
+                } ]
+              }
+            },
+            "EntitlementFamilyBenefitsExists" : {
+              "PeriodEntitlementFamilyBenefits" : {
+                "PeriodEntitlementFamilyBenefit" : [ {
+                  "OpenPeriod" : {
+                    "startDate" : "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.startdato",
+                    "typeOpenPeriod" : {
+                      "value" : [ "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.type" ]
+                    }
+                  },
+                  "FixedPeriod" : {
+                    "endDate" : "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.fastperiode.sluttdato",
+                    "startDate" : "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.fastperiode.startdato"
+                  }
+                } ]
+              }
+            }
+          } ]
+        },
+        "PeriodsCoveredBySecuritySchemeInSendingMember" : {
+          "Period" : [ {
+            "endDate" : "$bruker.perioderdekketavtrygdeordning.periode[x].sluttdato",
+            "startDate" : "$bruker.perioderdekketavtrygdeordning.periode[x].startdato"
+          } ]
+        },
+        "PeriodsNotCovered" : {
+          "PeriodNotCovered" : [ {
+            "startDate" : "$bruker.perioderikkedekketavtrygdeordning.periode[x].startdato",
+            "endDate" : "$bruker.perioderikkedekketavtrygdeordning.periode[x].sluttdato"
+          } ]
+        }
+      },
+      "PersonLatestAddresses" : {
+        "AddressPerson" : [ {
+          "Address" : {
+            "town" : "$bruker.personinfo.adresser[x].by",
+            "region" : "$bruker.personinfo.adresser[x].region",
+            "street" : "$bruker.personinfo.adresser[x].gate",
+            "buildingName" : "$bruker.personinfo.adresser[x].bygning",
+            "country" : {
+              "value" : [ "$bruker.personinfo.adresser[x].land" ]
+            },
+            "postalCode" : "$bruker.personinfo.adresser[x].postnummer"
+          },
+          "typeAddress" : {
+            "value" : [ "$bruker.personinfo.adresser[x].type" ]
+          }
+        } ]
+      },
+      "AdditionalInformationAboutNationality" : {
+        "Nationalities" : [ {
+          "nationality" : {
+            "value" : [ "$bruker.personinfo.statsborgerskap[x].land" ]
+          },
+          "since" : "$bruker.personinfo.statsborgerskap[x].siden"
+        } ]
+      },
+      "DetailsDeath" : {
+        "placeDeath" : "$bruker.personinfo.doedssted",
+        "dateDeath" : "$bruker.personinfo.doedsdato"
+      }
+    },
+    "ResidencePeriods" : {
+      "ResidencePeriod" : [ {
+        "Period" : {
+          "OpenPeriod" : {
+            "startDate" : "$bruker.bodid[x].periode.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$bruker.bodid[x].periode.aapenperiode.type" ]
+            }
+          },
+          "FixedPeriod" : {
+            "endDate" : "$bruker.bodid[x].periode.fastperiode.sluttdato",
+            "startDate" : "$bruker.bodid[x].periode.fastperiode.startdato"
+          }
+        },
+        "country" : {
+          "value" : [ "$bruker.bodid[x].periode.land" ]
+        }
+      } ]
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "InsurancePeriods" : {
+      "InsurancePeriod" : [ {
+        "Period" : {
+          "OpenPeriod" : {
+            "startDate" : "$bruker.medlemskap[x].periode.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$bruker.medlemskap[x].periode.aapenperiode.type" ]
+            }
+          },
+          "FixedPeriod" : {
+            "startDate" : "$bruker.medlemskap[x].periode.fastperiode.startdato",
+            "endDate" : "$bruker.medlemskap[x].periode.fastperiode.sluttdato"
+          }
+        },
+        "country" : {
+          "value" : [ "$bruker.medlemskap[x].periode.land" ]
+        }
+      } ]
+    }
+  }
+}

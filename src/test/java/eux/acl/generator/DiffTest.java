@@ -1,27 +1,20 @@
 package eux.acl.generator;
 
 import eux.acl.generator.facade.DiffFacade;
-import eux.acl.generator.old.UttrekkAvKodeverkFraCdmService;
+
 
 import org.junit.jupiter.api.Test;
 
 
 import java.nio.charset.StandardCharsets;
 
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class DiffTest {
 
 
-    private static final String MAPPE_CDMv43 = "src/test/resources/cdm-v43-meta";
-    private static final String MAPPE_ACLv42 = "src/main/resources/sedtemplates/v42";
-    public static final String MAPPE_ACLv43_MELLOMBELS = "target/v43Raw";
-    public static String JUSTERINGER_FILNAVN_ENDE = "-v43-adjustments.json";
-    public static String UENDRET_FILNAVN_ENDE = "-v43-flat.json";
-
     private static final String UTF_8 = StandardCharsets.UTF_8.name();
-    private UttrekkAvKodeverkFraCdmService cdmReader = new UttrekkAvKodeverkFraCdmService();
-
 
     /**
      * Sjekker at motoren for å generere SED-maler fra CDMen er korrekt ved å

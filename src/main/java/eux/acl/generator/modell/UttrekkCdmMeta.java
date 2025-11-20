@@ -17,6 +17,7 @@ public class UttrekkCdmMeta {
     private TreeMap<String, String> cdmStiVsMalTagnavn = new TreeMap<>();
     private Map<String, String> cdmStiVsTagtype = new HashMap<>();
     private TreeMap<String, String> cdmStiVsIndeks = new TreeMap<>();
+    private TreeMap<String, String> cdmStiVsPreIndeks = new TreeMap<>();
     private TreeMap<String, String> cdmStiVsTekstId = new TreeMap<>();
     private TreeMap<String, String> cdmStiVsEnumkodeTekstId = new TreeMap<>();
     private TreeMap<String, String> cdmStiVsEnumkodeId = new TreeMap<>();

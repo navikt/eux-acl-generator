@@ -14,7 +14,6 @@ public class TestdataFacade {
     public TestdataFacade() {
         this.filService = new FilService();
         this.testdataService = new TestdataService();
-
     }
 
     public void lagTestdata(List<String> sedTyper, String cdmVersjon, int brukEnumkodeNr) {

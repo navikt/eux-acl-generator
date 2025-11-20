@@ -37,7 +37,7 @@ public class EuSedService {
 
     public void skrivDiffOppsummeringTilEiFil(Map<String, List<String>> sektorVsNyeStier, String nyVersjon) {
         sektorVsNyeStier.forEach((sektor, nyttListe) -> {
-            filService.skrivCdmAclDiffTilFil(nyttListe, sektor + "-sektor", nyVersjon, FilService.FIL_MED_ENDRINGER_STIER);
+            filService.skrivCdmAclDiffTilFil(nyttListe, sektor + "-sektor", nyVersjon, FilService.FIL_MED_ENDREDE_STIER);
         });
     }
 

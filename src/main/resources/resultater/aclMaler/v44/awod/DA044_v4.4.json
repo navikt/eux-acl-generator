@@ -1,0 +1,107 @@
+{
+  "DA044" : {
+    "AddressesPerson" : {
+      "AddressPerson" : [ {
+        "Address" : {
+          "street" : "$nav.bruker.adresse[x].gate",
+          "town" : "$nav.bruker.adresse[x].by",
+          "region" : "$nav.bruker.adresse[x].region",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "postalCode" : "$nav.bruker.adresse[x].postnummer"
+        },
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type[x]" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            }
+          } ]
+        },
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region"
+          },
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn"
+      },
+      "AdditionalInformationPerson" : {
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "previousForename" : "$nav.bruker.person.tidligerefornavn"
+      }
+    },
+    "Employer" : {
+      "name" : "$nav.arbeidsgiver.navn",
+      "Address" : {
+        "region" : "$nav.arbeidsgiver.adresse.region",
+        "country" : {
+          "value" : [ "$nav.arbeidsgiver.adresse.land" ]
+        },
+        "street" : "$nav.arbeidsgiver.adresse.gate",
+        "buildingName" : "$nav.arbeidsgiver.adresse.bygning",
+        "postalCode" : "$nav.arbeidsgiver.adresse.postnummer",
+        "town" : "$nav.arbeidsgiver.adresse.by"
+      },
+      "IdentificationNumbers" : {
+        "IdentificationNumber" : [ {
+          "number" : "$nav.arbeidsgiver.identifikator[x].id",
+          "type" : {
+            "value" : [ "$nav.arbeidsgiver.identifikator[x].type" ]
+          }
+        } ]
+      }
+    },
+    "ThisSEDRelatedTo" : {
+      "typeOfSED" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.sedtype" ]
+      },
+      "description" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.konsekvensellerbeskrivelse",
+      "statusPerson" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.id" ]
+      },
+      "codingSystem" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kodingssystem",
+      "PleaseFillInFollowingIfStatusPersonOther" : {
+        "statusPersonIfOther" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.annet"
+      },
+      "date" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.dato",
+      "code" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kode"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

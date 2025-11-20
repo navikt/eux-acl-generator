@@ -3,6 +3,9 @@ package eux.acl.generator;
 import eux.acl.generator.facade.ResultaterFacade;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class PdfMalerTest {
@@ -11,6 +14,13 @@ public class PdfMalerTest {
      * Leser sed-fundament-filer og genererer mal-filer som Pdf-generatoren så bruker.
      *
      */
+    @Test
+    public void lager_pdfMal_v44() {
+        // krever at kodeverk og euSedFundament er generert - og flyttet til main/../resources..
+        ResultaterFacade pdfMalerFacade = new ResultaterFacade();
+        pdfMalerFacade.lagPdfMaler(List.of("F002"), V44);
+    }
+
     @Test
     public void lager_pdfMaler_v44() {
         // krever at kodeverk og euSedFundament er generert - og flyttet til main/../resources..

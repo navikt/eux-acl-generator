@@ -1,0 +1,107 @@
+{
+  "DA046" : {
+    "ThisSEDRelatedTo" : {
+      "codingSystem" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kodingssystem",
+      "code" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kode",
+      "date" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.dato",
+      "statusPerson" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.id" ]
+      },
+      "typeOfSED" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.sedtype" ]
+      },
+      "PleaseFillInFollowingIfStatusPersonOther" : {
+        "statusPersonIfOther" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.annet"
+      },
+      "description" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.konsekvensellerbeskrivelse"
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
+          } ]
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel"
+      },
+      "AdditionalInformationPerson" : {
+        "previousForename" : "$nav.bruker.person.tidligerefornavn",
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn"
+      }
+    },
+    "AddressesPerson" : {
+      "AddressPerson" : [ {
+        "Address" : {
+          "town" : "$nav.bruker.adresse[x].by",
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "region" : "$nav.bruker.adresse[x].region",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "postalCode" : "$nav.bruker.adresse[x].postnummer"
+        },
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type[x]" ]
+        }
+      } ]
+    },
+    "Employer" : {
+      "Address" : {
+        "country" : {
+          "value" : [ "$nav.arbeidsgiver.adresse.land" ]
+        },
+        "street" : "$nav.arbeidsgiver.adresse.gate",
+        "town" : "$nav.arbeidsgiver.adresse.by",
+        "postalCode" : "$nav.arbeidsgiver.adresse.postnummer",
+        "buildingName" : "$nav.arbeidsgiver.adresse.bygning",
+        "region" : "$nav.arbeidsgiver.adresse.region"
+      },
+      "IdentificationNumbers" : {
+        "IdentificationNumber" : [ {
+          "type" : {
+            "value" : [ "$nav.arbeidsgiver.identifikator[x].type" ]
+          },
+          "number" : "$nav.arbeidsgiver.identifikator[x].id"
+        } ]
+      },
+      "name" : "$nav.arbeidsgiver.navn"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

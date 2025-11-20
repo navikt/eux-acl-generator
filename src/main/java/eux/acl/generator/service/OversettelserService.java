@@ -14,7 +14,7 @@ public class OversettelserService {
         List<String> oversatteLinjer = Arrays.asList(ordliste.split("\n"));
         oversatteLinjer.forEach(linje -> {
                     if (linje.contains("\"" + cdmVersjon)
-                            && (linje.contains("_label\":")) || (linje.contains("_codeListEntry\":"))) {
+                            && (linje.contains("_label\":") || linje.contains("_codeListEntry\":"))) {
                         String[] tekstId_tekst = linje.split("\":");
                         String[] versjonTekstIdType = tekstId_tekst[0].split("_");
                         String tekstId = versjonTekstIdType[1].toLowerCase() + "_" + versjonTekstIdType[2];

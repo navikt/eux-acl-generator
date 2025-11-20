@@ -1,0 +1,1396 @@
+{
+  "P9000.LocalCaseNumbers" : {
+    "index" : "1.",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "index" : "1.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P9000.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "index" : "1.1.2.",
+    "prompt" : "Saksnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "index" : "1.1.3.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "index" : "1.1.3.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P9000.InsuredPerson" : {
+    "index" : "2.",
+    "prompt" : "Forsikret person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.PersonIdentification" : {
+    "index" : "2.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.PersonIdentification.familyName" : {
+    "index" : "2.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.forename" : {
+    "index" : "2.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.dateBirth" : {
+    "index" : "2.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.sex" : {
+    "index" : "2.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "P9000.InsuredPerson.PersonIdentification.familyNameAtBirth" : {
+    "index" : "2.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.forenameAtBirth" : {
+    "index" : "2.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "2.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "2.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "2.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "2.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "2.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "2.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "2.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "2.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "2.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "2.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "2.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "2.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.1.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "index" : "2.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "index" : "2.2.1.2.",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "index" : "2.2.1.3.",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "index" : "2.2.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.Address.street" : {
+    "index" : "2.2.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
+    "index" : "2.2.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.Address.town" : {
+    "index" : "2.2.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
+    "index" : "2.2.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.Address.region" : {
+    "index" : "2.2.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.Address.country" : {
+    "index" : "2.2.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson" : {
+    "index" : "2.2.3.",
+    "prompt" : "Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "2.2.3.1.",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "2.2.3.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "2.2.3.1.1.1.",
+    "prompt" : "Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    },
+    "enumName" : "EESSITelephoneNumberType"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "2.2.3.1.1.2.",
+    "prompt" : "Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "index" : "2.2.3.2.",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "2.2.3.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InsuredPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "2.2.3.2.1.1.",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson" : {
+    "index" : "3.",
+    "prompt" : "Annen person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.rolePersonConcerned" : {
+    "index" : "3.1.",
+    "prompt" : "Den aktuelle personens rolle",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søker til etterlattepensjon",
+      "02" : "Forsørget/familiemedlem",
+      "03" : "Barn"
+    },
+    "enumName" : "PRolePersonConcernedType"
+  },
+  "P9000.OtherPerson.PersonIdentification" : {
+    "index" : "3.2.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.PersonIdentification.familyName" : {
+    "index" : "3.2.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.forename" : {
+    "index" : "3.2.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.dateBirth" : {
+    "index" : "3.2.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.sex" : {
+    "index" : "3.2.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "P9000.OtherPerson.PersonIdentification.familyNameAtBirth" : {
+    "index" : "3.2.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.forenameAtBirth" : {
+    "index" : "3.2.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.2.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.2.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "3.2.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "3.2.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "3.2.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.2.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "3.2.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "3.2.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.2.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.2.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "3.2.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "3.2.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "3.2.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "3.2.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "3.2.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "3.2.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "3.2.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson" : {
+    "index" : "3.3.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.AdditionalInformationAboutAPerson" : {
+    "index" : "3.3.1.",
+    "prompt" : "Tilleggsinformasjon om en person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.AdditionalInformationAboutAPerson.nationality" : {
+    "index" : "3.3.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.AdditionalInformationAboutAPerson.previousFamilyName" : {
+    "index" : "3.3.1.2.",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.AdditionalInformationAboutAPerson.previousForename" : {
+    "index" : "3.3.1.3.",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson" : {
+    "index" : "3.3.2.",
+    "prompt" : "Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "3.3.2.1.",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "3.3.2.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "3.3.2.1.1.1.",
+    "prompt" : "Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    },
+    "enumName" : "EESSITelephoneNumberType"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "3.3.2.1.1.2.",
+    "prompt" : "Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses" : {
+    "index" : "3.3.2.2.",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "3.3.2.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.OtherPerson.AdditionalInformationPerson.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "3.3.2.2.1.1.",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.ReferenceRequestP8000" : {
+    "index" : "4.",
+    "prompt" : "Referanse til anmodning på P8000",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.ReferenceRequestP8000.thisReplyMadeInResponseRequestP8000Dated" : {
+    "index" : "4.1.",
+    "prompt" : "Dette svaret gjelder forespørselen i P8000 datert",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.ReferenceRequestP8000.thisReplyMadeWithReferencePersonNamedIn" : {
+    "index" : "4.2.",
+    "prompt" : "Denne informasjonen er gitt med henvisning til personen navngitt i",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "del 2",
+      "02" : "Del 3"
+    },
+    "enumName" : "PSection2Section3Type"
+  },
+  "P9000.ReplyRequestForDocument" : {
+    "index" : "5.",
+    "prompt" : "Svar på anmodning om dokument(er)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.ReplyRequestForDocument.pleaseFindAttachedFollowingDocument" : {
+    "index" : "5.1.",
+    "prompt" : "Følgende dokument(er) er vedlagt",
+    "valuetype" : "_uxMultiSelect",
+    "codework" : {
+      "01" : "Medisinsk dokumentasjon",
+      "02" : "Utførlig medisinsk rapport",
+      "03" : "Arbeidsattest",
+      "04" : "Fødselsattest",
+      "05" : "Vitnemål",
+      "99" : "Annet/andre dokument(er)"
+    },
+    "enumName" : "PRequestedDocumentInMultipleType"
+  },
+  "P9000.ReplyRequestForDocument.additionalInformationDocument" : {
+    "index" : "5.2.",
+    "prompt" : "Ytterligere informasjon om dokument(er)",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.LifeDeathInformation" : {
+    "index" : "6.",
+    "prompt" : "Informasjon relatert til liv/død",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.LifeDeathInformation.accordingOurOfficialSources" : {
+    "index" : "6.1.",
+    "prompt" : "Ifølge våre offisielle kilder",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Personen lever",
+      "02" : "Personen er død"
+    },
+    "enumName" : "PIsPersonAliveType"
+  },
+  "P9000.LifeDeathInformation.dateDeathPersonIs" : {
+    "index" : "6.2.",
+    "prompt" : "Personens dødsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.LifeDeathInformation.PlaceBirth" : {
+    "index" : "6.3.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.LifeDeathInformation.PlaceBirth.townBirth" : {
+    "index" : "6.3.1.",
+    "prompt" : "Fødeby",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.LifeDeathInformation.PlaceBirth.regionBirth" : {
+    "index" : "6.3.2.",
+    "prompt" : "Føderegion",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.LifeDeathInformation.PlaceBirth.countryBirth" : {
+    "index" : "6.3.3.",
+    "prompt" : "Fødeland",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P9000.InformationAttendanceSchoolTrainingHigherStudies" : {
+    "index" : "7.",
+    "prompt" : "Informasjon om skolegang/opplæring/høyere utdanning",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationAttendanceSchoolTrainingHigherStudies.AttendanceSchoolTrainingHigherStudies[0]" : {
+    "index" : "7.1",
+    "prompt" : "Skolegang / opplæring / høyere studier",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationAttendanceSchoolTrainingHigherStudies.AttendanceSchoolTrainingHigherStudies[0].startDateAttendanceSchoolTrainingHigherStudies" : {
+    "index" : "7.1.1.",
+    "prompt" : "Startdato for skolegang/opplæring/høyere utdanning",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationAttendanceSchoolTrainingHigherStudies.AttendanceSchoolTrainingHigherStudies[0].endDateAttendanceSchoolTrainingHigherStudies" : {
+    "index" : "7.1.2.",
+    "prompt" : "Sluttdato for skolegang/opplæring/høyere utdanning",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationAttendanceSchoolTrainingHigherStudies.AttendanceSchoolTrainingHigherStudies[0].typeSchoolTrainingHigherStudies" : {
+    "index" : "7.1.3.",
+    "prompt" : "Type skolegang / opplæring / høyere utdanning",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationAttendanceSchoolTrainingHigherStudies.AttendanceSchoolTrainingHigherStudies[0].nameEducationalInstitutionSchoolUniversity" : {
+    "index" : "7.1.4.",
+    "prompt" : "Navn på utdanningsinstitusjon/skole/universitet",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationAttendanceSchoolTrainingHigherStudies.AttendanceSchoolTrainingHigherStudies[0].detailedInformationAttendanceSchoolOrTraining" : {
+    "index" : "7.1.5.",
+    "prompt" : "Nærmere informasjon om skolegang/opplæring/høyere utdanning",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.CurrentAddressPerson" : {
+    "index" : "8.",
+    "prompt" : "Personens nåværende adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.CurrentAddressPerson.Address" : {
+    "index" : "8.1.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.CurrentAddressPerson.Address.street" : {
+    "index" : "8.1.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.CurrentAddressPerson.Address.buildingName" : {
+    "index" : "8.1.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.CurrentAddressPerson.Address.town" : {
+    "index" : "8.1.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.CurrentAddressPerson.Address.postalCode" : {
+    "index" : "8.1.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.CurrentAddressPerson.Address.region" : {
+    "index" : "8.1.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.CurrentAddressPerson.Address.country" : {
+    "index" : "8.1.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P9000.CurrentAddressPerson.dateChangeAddress" : {
+    "index" : "8.2.",
+    "prompt" : "Dato for adresseforandring",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.PersonalIdentificationNumber" : {
+    "index" : "9.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.PersonalIdentificationNumber.personalIdentificationNumberForPersonConcernedIs" : {
+    "index" : "9.1.",
+    "prompt" : "Personnummer for den berørte personen er",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.FamilyStatus" : {
+    "index" : "10.",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.FamilyStatus.FamilyStatus[0]" : {
+    "index" : "10.1",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.FamilyStatus.FamilyStatus[0].familyStatus" : {
+    "index" : "10.1.1.",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Enslig",
+      "02" : "Gift",
+      "03" : "Samboer",
+      "04" : "Registrert partnerskap",
+      "05" : "Skilt",
+      "06" : "Skilt fra registrert partnerskap",
+      "07" : "Separert",
+      "08" : "Enke/enkemann"
+    },
+    "enumName" : "PFamilyStatusType"
+  },
+  "P9000.FamilyStatus.FamilyStatus[0].familyStatusDate" : {
+    "index" : "10.1.2.",
+    "prompt" : "Dato for familiestatus",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian" : {
+    "index" : "11.",
+    "prompt" : "Informasjon om representant/verge",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.name" : {
+    "index" : "11.1.",
+    "prompt" : "Navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.grounds" : {
+    "index" : "11.2.",
+    "prompt" : "Grunner",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.Address" : {
+    "index" : "11.3.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.Address.street" : {
+    "index" : "11.3.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.Address.buildingName" : {
+    "index" : "11.3.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.Address.town" : {
+    "index" : "11.3.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.Address.postalCode" : {
+    "index" : "11.3.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.Address.region" : {
+    "index" : "11.3.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationRepresentativeLegalGuardian.Address.country" : {
+    "index" : "11.3.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P9000.InformationPayment" : {
+    "index" : "12.",
+    "prompt" : "Informasjon om betaling",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPayment.paymentTo" : {
+    "index" : "12.1.",
+    "prompt" : "Utbetaling til",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Forsikret person",
+      "02" : "Søker (etterlattepensjon)",
+      "03" : "Representant/verge"
+    },
+    "enumName" : "PPaymentToICRType"
+  },
+  "P9000.InformationPayment.BankInformation" : {
+    "index" : "12.2.",
+    "prompt" : "Bankinformasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPayment.BankInformation.accountHolderName" : {
+    "index" : "12.2.1.",
+    "prompt" : "Kontohavers navn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationPayment.BankInformation.SEPAAccount.IBAN" : {
+    "index" : "12.2.2.1.",
+    "prompt" : "IBAN",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.SEPAAccount.BICSWIFT" : {
+    "index" : "12.2.2.2.",
+    "prompt" : "BIC-SWIFT",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.accountNumber" : {
+    "index" : "12.2.3.1.",
+    "prompt" : "Kontonummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BICSWIFT" : {
+    "index" : "12.2.3.2.",
+    "prompt" : "BIC-SWIFT",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.bankName" : {
+    "index" : "12.2.3.3.",
+    "prompt" : "Bankens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress" : {
+    "index" : "12.2.3.4.",
+    "prompt" : "Bankens adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.street" : {
+    "index" : "12.2.3.4.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.buildingName" : {
+    "index" : "12.2.3.4.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.town" : {
+    "index" : "12.2.3.4.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.postalCode" : {
+    "index" : "12.2.3.4.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.region" : {
+    "index" : "12.2.3.4.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPayment.BankInformation.NonSEPAAccount.BankAddress.country" : {
+    "index" : "12.2.3.4.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P9000.ContactInformationPerson" : {
+    "index" : "13.",
+    "prompt" : "Kontaktinformasjon for personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.ContactInformationPerson.TelephoneNumbers" : {
+    "index" : "13.1.",
+    "prompt" : "Telefonnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0]" : {
+    "index" : "13.1.1",
+    "prompt" : "Telefonnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].type" : {
+    "index" : "13.1.1.1.",
+    "prompt" : "Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Hjem",
+      "02" : "Mobil",
+      "03" : "Arbeid"
+    },
+    "enumName" : "EESSITelephoneNumberType"
+  },
+  "P9000.ContactInformationPerson.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "index" : "13.1.1.2.",
+    "prompt" : "Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.ContactInformationPerson.EmailAddresses" : {
+    "index" : "13.2.",
+    "prompt" : "E-postadresser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.ContactInformationPerson.EmailAddresses.EmailAddress[0]" : {
+    "index" : "13.2.1",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.ContactInformationPerson.EmailAddresses.EmailAddress[0].email" : {
+    "index" : "13.2.1.1.",
+    "prompt" : "E-postadresse",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPersonBenefit" : {
+    "index" : "14.",
+    "prompt" : "Informasjon om en persons ytelse(r)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0]" : {
+    "index" : "14.1",
+    "prompt" : "Informasjon om personens ytelser",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].thePerson" : {
+    "index" : "14.1.1.",
+    "prompt" : "Personen",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Fremsetter krav",
+      "02" : "Fremsatte krav om",
+      "03" : "Har ennå ikke fremsatt krav",
+      "04" : "Mottar",
+      "05" : "Mottok",
+      "06" : "Mottok ikke",
+      "07" : "Mottar ikke",
+      "08" : "Har fått ytelsene redusert",
+      "09" : "Fikk avslag",
+      "10" : "Har fått stans i ytelsene"
+    },
+    "enumName" : "PPersonsBenefitInformationType"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].theFollowingBenefit" : {
+    "index" : "14.1.2.",
+    "prompt" : "Følgende ytelse",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Fortsatt lønnsutbetaling ved sykdom",
+      "02" : "Sykepenger ved arbeidsuførhet",
+      "03" : "Kortsiktig kontantytelse ved arbeidsulykke eller yrkessykdom",
+      "04" : "Rehabiliteringspenger",
+      "05" : "Familieytelse",
+      "06" : "Dagpenger",
+      "07" : "Førtidspensjon",
+      "08" : "Uførepensjon",
+      "09" : "Førtidspensjon",
+      "10" : "Alderspensjon",
+      "11" : "Etterlattepensjon",
+      "12" : "Pensjon pga arbeidsulykke eller yrkessykdom",
+      "13" : "Pensjonslignende ytelse som utbetales under obligatorisk trafikkforsikring (ansvarsforsikring)",
+      "14" : "Ytelser som ikke er dekket av forordningen",
+      "99" : "Annen/andre ytelse(r)"
+    },
+    "enumName" : "PBenefitTypePlusBenefitNotCoveredByRegulationsType"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].FillInIfTheFollowingBenefitOther" : {
+    "index" : "14.1.3.",
+    "prompt" : "Fyll ut hvis «Følgende ytelse» = «Andre ytelser»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].FillInIfTheFollowingBenefitOther.otherBenefit" : {
+    "index" : "14.1.3.1.",
+    "prompt" : "Annen/andre ytelse(r)",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].dateClaimForBenefit" : {
+    "index" : "14.1.4.",
+    "prompt" : "Dato for krav om ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].startDateEntitlement" : {
+    "index" : "14.1.5.",
+    "prompt" : "Startdato for rett til ytelser",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].endDateEntitlement" : {
+    "index" : "14.1.6.",
+    "prompt" : "Sluttdato for rett til ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].startDatePayment" : {
+    "index" : "14.1.7.",
+    "prompt" : "Startdato for utbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].endDatePayment" : {
+    "index" : "14.1.8.",
+    "prompt" : "Sluttdato for utbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].startDateSuspensionBenefit" : {
+    "index" : "14.1.9.",
+    "prompt" : "Startdato for stans i ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].endDateSuspensionBenefit" : {
+    "index" : "14.1.10.",
+    "prompt" : "Sluttdato for stans i ytelser",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].startDateReductionBenefit" : {
+    "index" : "14.1.11.",
+    "prompt" : "Startdato for redusert ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].endDateReductionBenefit" : {
+    "index" : "14.1.12.",
+    "prompt" : "Sluttdato for redusert ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].Amount[0]" : {
+    "index" : "14.1.13",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].Amount[0].amount" : {
+    "index" : "14.1.13.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].Amount[0].currency" : {
+    "index" : "14.1.13.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].Amount[0].amountEffectiveSince" : {
+    "index" : "14.1.13.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].Amount[0].paymentFrequency" : {
+    "index" : "14.1.13.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "14.1.13.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "14.1.13.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].supplementsAdditionalFrequentPaymentsPension" : {
+    "index" : "14.1.14.",
+    "prompt" : "Tilleggsytelser og andre regelmessige utbetalinger i tillegg til pensjonen",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].dateRejectionBenefit" : {
+    "index" : "14.1.15.",
+    "prompt" : "Dato for avslag på ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonBenefit.PersonBenefitInformation[0].otherInformationBenefit" : {
+    "index" : "14.1.16.",
+    "prompt" : "Annen informasjon om ytelse(r)",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationPersonActivity" : {
+    "index" : "15.",
+    "prompt" : "Informasjon om personens yrkesaktivitet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPersonActivity.DetailedInformationActivity[0]" : {
+    "index" : "15.1",
+    "prompt" : "Nærmere informasjon om yrkesaktivitet",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationPersonActivity.DetailedInformationActivity[0].thePersonIsWasRunningActivityAs" : {
+    "index" : "15.1.1.",
+    "prompt" : "Personen er/var yrkesaktiv som",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Ansatt",
+      "02" : "Selvstendig næringsdrivende",
+      "03" : "Offentlig ansatt",
+      "04" : "Frivillig arbeider (ikke inntektsgivende virksomhet)"
+    },
+    "enumName" : "PPersonsActivityType"
+  },
+  "P9000.InformationPersonActivity.DetailedInformationActivity[0].startDateActivity" : {
+    "index" : "15.1.2.",
+    "prompt" : "Startdato for yrkesaktiviteten",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonActivity.DetailedInformationActivity[0].endDateActivity" : {
+    "index" : "15.1.3.",
+    "prompt" : "Sluttdato for yrkesaktiviteten",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonActivity.DetailedInformationActivity[0].workingHoursPerWeek" : {
+    "index" : "15.1.4.",
+    "prompt" : "Arbeidstimer per uke",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPersonActivity.DetailedInformationActivity[0].occupation" : {
+    "index" : "15.1.5.",
+    "prompt" : "Yrke",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPersonActivity.InformationNonActivity[0]" : {
+    "index" : "15.2",
+    "prompt" : "Informasjon om ikke yrkesaktivitet",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationPersonActivity.InformationNonActivity[0].thePersonIsWasNonActiveIndicator" : {
+    "index" : "15.2.1.",
+    "prompt" : "Personen er/var ikke yrkesaktiv",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P9000.InformationPersonActivity.InformationNonActivity[0].startDate" : {
+    "index" : "15.2.2.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonActivity.InformationNonActivity[0].endDate" : {
+    "index" : "15.2.3.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonActivity.InformationUnemployment[0]" : {
+    "index" : "15.3",
+    "prompt" : "Informasjon om arbeidsledighet",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationPersonActivity.InformationUnemployment[0].thePersonIsWasUnemployedIndicator" : {
+    "index" : "15.3.1.",
+    "prompt" : "Personen er/var arbeidsledig",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P9000.InformationPersonActivity.InformationUnemployment[0].startDate" : {
+    "index" : "15.3.2.",
+    "prompt" : "Startdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonActivity.InformationUnemployment[0].endDate" : {
+    "index" : "15.3.3.",
+    "prompt" : "Sluttdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonActivity.additionalInformationActivityNonActivity" : {
+    "index" : "15.4.",
+    "prompt" : "Ytterligere informasjon om yrkesaktivitet / ikke yrkesaktivitet",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationPersonIncome" : {
+    "index" : "16.",
+    "prompt" : "Informasjon om personens inntekt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0]" : {
+    "index" : "16.1",
+    "prompt" : "Personens inntekt",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].thePerson" : {
+    "index" : "16.1.1.",
+    "prompt" : "Personen",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Har inntekt",
+      "02" : "Har ikke inntekt",
+      "03" : "Hadde inntekt",
+      "04" : "Hadde ikke inntekt"
+    },
+    "enumName" : "PRecipientIncomeType"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].sourceIncome" : {
+    "index" : "16.1.2.",
+    "prompt" : "Inntektskilde",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].startDateReceivingIncome" : {
+    "index" : "16.1.3.",
+    "prompt" : "Startdato for mottak av inntekt",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].endDateReceivingIncome" : {
+    "index" : "16.1.4.",
+    "prompt" : "Sluttdato for mottak av inntekt",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].Amount[0]" : {
+    "index" : "16.1.5",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].Amount[0].amount" : {
+    "index" : "16.1.5.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].Amount[0].currency" : {
+    "index" : "16.1.5.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].Amount[0].amountEffectiveSince" : {
+    "index" : "16.1.5.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].Amount[0].paymentFrequency" : {
+    "index" : "16.1.5.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "16.1.5.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "16.1.5.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].supplementsAdditionalFrequentPaymentsIncome" : {
+    "index" : "16.1.6.",
+    "prompt" : "Tilleggsytelser og andre regelmessige utbetalinger i tillegg til inntekt",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.InformationPersonIncome.PersonIncome[0].additionalInformationIncome" : {
+    "index" : "16.1.7.",
+    "prompt" : "Ytterligere informasjon om inntekt",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.ReplyRequestForOtherInformation" : {
+    "index" : "17.",
+    "prompt" : "Svar på anmodning om annen informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.ReplyRequestForOtherInformation.otherInformation" : {
+    "index" : "17.1.",
+    "prompt" : "Annen informasjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.ConfirmationInformation" : {
+    "index" : "18.",
+    "prompt" : "Bekreftelse på informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.ConfirmationInformation.ConfirmationInformation[0]" : {
+    "index" : "18.1",
+    "prompt" : "Bekreftelse på informasjon",
+    "valuetype" : "_rinaArray"
+  },
+  "P9000.ConfirmationInformation.ConfirmationInformation[0].theInformationInP8000StatedInPoint" : {
+    "index" : "18.1.1.",
+    "prompt" : "Informasjonen i ditt P8000 angitt i punkt",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.ConfirmationInformation.ConfirmationInformation[0].theInformation" : {
+    "index" : "18.1.2.",
+    "prompt" : "Informasjonen",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Er korrekt (vi bekrefter)",
+      "02" : "Er ikke korrekt (vi bekrefter ikke)"
+    },
+    "enumName" : "ConfirmationInformationEnumerationType"
+  },
+  "P9000.ConfirmationInformation.ConfirmationInformation[0].reasonWhyDoNotConfirmInformationDifferences" : {
+    "index" : "18.1.3.",
+    "prompt" : "Grunn til at vi ikke bekrefter informasjonen (avvik)",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.ConfirmationInformation.ConfirmationInformation[0].differentInformationInOurPossessionIs" : {
+    "index" : "18.1.4.",
+    "prompt" : "Avvikende informasjon som vi har, er",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.StatementPerson" : {
+    "index" : "19.",
+    "prompt" : "Egenerklæring",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.StatementPerson.thePersonMadeSignedAtOurInstitutionFollowingStatement" : {
+    "index" : "19.1.",
+    "prompt" : "Personen har avgitt og undertegnet følgende erklæring ved vår institusjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.StatementPerson.dateStatement" : {
+    "index" : "19.2.",
+    "prompt" : "Dato for erklæringen",
+    "valuetype" : "_uxDateInput"
+  },
+  "P9000.NegativeReply" : {
+    "index" : "20.",
+    "prompt" : "Negativt svar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.NegativeReply.WeRegretButAreUnableSendYou" : {
+    "index" : "20.1.",
+    "prompt" : "Vi beklager å ikke kunne sende deg",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.NegativeReply.WeRegretButAreUnableSendYou.followingInformation" : {
+    "index" : "20.1.1.",
+    "prompt" : "Følgende informasjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.NegativeReply.WeRegretButAreUnableSendYou.followingSED" : {
+    "index" : "20.1.2.",
+    "prompt" : "Følgende SED-er",
+    "valuetype" : "_uxTextInput"
+  },
+  "P9000.NegativeReply.WeRegretButAreUnableSendYou.followingDocument" : {
+    "index" : "20.1.3.",
+    "prompt" : "Følgende dokument(er)",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.NegativeReply.WeRegretButAreUnableSendYou.followingConfirmationInformation" : {
+    "index" : "20.1.4.",
+    "prompt" : "Følgende bekreftelse av informasjonen",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.NegativeReply.reasons" : {
+    "index" : "20.2.",
+    "prompt" : "Grunner",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Vi har ikke denne informasjonen eller dette dokumentet",
+      "02" : "Vi klarte ikke å innhente denne informasjonen eller dette dokumentet",
+      "03" : "Vi har ikke tillatelse til å gi informasjonen/dokumentet videre.",
+      "04" : "Personen har ikke vært behjelpelig med å innhente informasjonen/dokumentet",
+      "99" : "Andre grunner"
+    },
+    "enumName" : "ReasonNegativeReplyType"
+  },
+  "P9000.NegativeReply.PleaseFillInFollowingIfReasonsOtherReasons" : {
+    "index" : "20.3.",
+    "prompt" : "Fyll ut hvis «Grunn» = «Andre grunner»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.NegativeReply.PleaseFillInFollowingIfReasonsOtherReasons.otherReasons" : {
+    "index" : "20.3.1.",
+    "prompt" : "Andre grunner",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.NegativeReply.reasonsForNotSendingSED" : {
+    "index" : "20.4.",
+    "prompt" : "Grunner til å ikke sende SED(-er)",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.AdditionalInformation" : {
+    "index" : "21.",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P9000.AdditionalInformation.additionalInformation" : {
+    "index" : "21.1.",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P9000.sedTitle" : {
+    "index" : "P9000",
+    "prompt" : "P9000 - Svar på anmodning om mer informasjon",
+    "valuetype" : "_rinaRoot"
+  }
+}

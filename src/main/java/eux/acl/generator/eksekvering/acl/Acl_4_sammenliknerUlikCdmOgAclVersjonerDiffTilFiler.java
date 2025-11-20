@@ -3,6 +3,7 @@ package eux.acl.generator.eksekvering.acl;
 import eux.acl.generator.facade.DiffFacade;
 import lombok.extern.slf4j.Slf4j;
 
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 @Slf4j

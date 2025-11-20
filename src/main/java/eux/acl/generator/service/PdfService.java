@@ -4,6 +4,7 @@ import eux.acl.generator.modell.EnumkodeFundament;
 import eux.acl.generator.modell.EuSedFundament;
 import eux.acl.generator.modell.pdf.PdfSedElement;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
@@ -20,18 +21,45 @@ public class PdfService {
         String tittel = euSedFundament.get(sedType + ".sedTitle").getLedetekst();
         euSedFundament.get(sedType + ".sedTitle").setLedetekst(sedType + " - " + tittel);
         TreeMap<String, PdfSedElement> euSedStiVsSedElement = new TreeMap<>();
+        Map<String, Integer> indekserVsAntall = new HashMap<>();
+        Set<String> indekser = new HashSet<>();
         euSedFundament.forEach((euSedSti, fundament) -> {
-            euSedStiVsSedElement.put(
-                    euSedSti,
-                    PdfSedElement.builder()
-                            .index(fundament.getIndeks())
-                            .prompt(fundament.getLedetekst())
-                            .valuetype(fundament.getCdmType())
-                            .codework(lesEnumVerdier(fundament.getEnumNavn(), cdmVersjon, euSedSti))
-                            .enumName(fundament.getEnumNavn())
-                            .build());
+            if (!"_uxHiddenGroupContainer".equals(fundament.getCdmType())) {
+                if (indekser.contains(fundament.getIndeks())) {
+                    indekserVsAntall.putIfAbsent(fundament.getIndeks(), 1);
+                    indekserVsAntall.put(fundament.getIndeks(), indekserVsAntall.get(fundament.getIndeks()) + 1);
+                } else {
+                    indekser.add(fundament.getIndeks());
+                    euSedStiVsSedElement.put(
+                            StringUtils.removeEnd(euSedSti, ".value[0]"),
+                            PdfSedElement.builder()
+                                    .index(fundament.getIndeks())
+                                    .prompt(fundament.getLedetekst())
+                                    .valuetype(fundament.getCdmType())
+                                    .codework(lesEnumVerdier(fundament.getEnumNavn(), cdmVersjon, euSedSti))
+                                    .enumName(fundament.getEnumNavn())
+                                    .build());
+                }
+            }
         });
-        filService.skrivPdfSedMalTilFil(euSedStiVsSedElement, sedType, cdmVersjon);
+        indekserVsAntall.forEach((indeks, antall) -> {
+            log.warn("Indeks: '{}': Antall: {} - {}. De overskytende er ignorert", indeks, antall, sedType);
+        });
+        LinkedHashMap<String, PdfSedElement> euSedStiVsSedElementSortert = sorterOverIndekser(euSedStiVsSedElement);
+        filService.skrivPdfSedMalTilFil(euSedStiVsSedElementSortert, sedType, cdmVersjon);
+    }
+
+    private LinkedHashMap<String, PdfSedElement> sorterOverIndekser(TreeMap<String, PdfSedElement> euSedStiVsSedElement) {
+        List<Map.Entry<String, PdfSedElement>> euSedStiVsSedElementListe = new ArrayList<>(euSedStiVsSedElement.entrySet());
+        String[] indexNrs = {".1.", ".2.", ".3.", ".4.", ".5.", ".6.", ".7.", ".8.", ".9.",};
+        String[] indexCompareNrs = {".01.", ".02.", ".03.", ".04.", ".05.", ".06.", ".07.", ".08.", ".09."};
+        euSedStiVsSedElementListe.sort(Comparator.comparing(entry ->
+                StringUtils.replaceEachRepeatedly("." + entry.getValue().getIndex() + ".", indexNrs, indexCompareNrs)
+        ));
+        LinkedHashMap<String, PdfSedElement> euSedStiVsSedElementSortert = new LinkedHashMap<>();
+        euSedStiVsSedElementListe.forEach(element ->
+                euSedStiVsSedElementSortert.put(element.getKey(), element.getValue()));
+        return euSedStiVsSedElementSortert;
     }
 
     private NavigableMap<String, String> lesEnumVerdier(String enumNavn, String cdmVersjon, String euSedSti) {

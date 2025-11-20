@@ -1,6 +1,8 @@
 package eux.acl.generator.eksekvering.kodeverk;
 
 import eux.acl.generator.facade.FundamentFacade;
+
+import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class Kodeverk_1_lagKodeverkFundament {
@@ -12,11 +14,11 @@ public class Kodeverk_1_lagKodeverkFundament {
     }
     public static void lagKodeverkFundament(String cdmVersjon) {
         FundamentFacade fundamentFacade = new FundamentFacade();
-        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_M, cdmVersjon);
         fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_A, cdmVersjon);
         fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_DA, cdmVersjon);
         fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_F, cdmVersjon);
         fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_H, cdmVersjon);
+        fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_M, cdmVersjon);
         fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_P, cdmVersjon);
         fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_R, cdmVersjon);
         fundamentFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_S, cdmVersjon);
