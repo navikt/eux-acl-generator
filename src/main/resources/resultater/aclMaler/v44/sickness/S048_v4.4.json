@@ -1,0 +1,73 @@
+{
+  "S048" : {
+    "PersonAddress" : {
+      "town" : "$nav.bruker.bostedsadresse.by",
+      "postalCode" : "$nav.bruker.bostedsadresse.postnummer",
+      "region" : "$nav.bruker.bostedsadresse.region",
+      "country" : {
+        "value" : [ "$nav.bruker.bostedsadresse.land" ]
+      },
+      "street" : "$nav.bruker.bostedsadresse.gate",
+      "buildingName" : "$nav.bruker.bostedsadresse.bygning"
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "PlaceBirth" : {
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "WeInformAbout" : {
+      "typeInformation" : {
+        "value" : [ "$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.type[x]" ]
+      },
+      "OtherCrucialInformation" : {
+        "otherCrucialInformationOrAnyAdditionalInformation" : "$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.tilleggsinformasjon"
+      },
+      "TheLastDayIncapacityForWorkPersonConcerned" : {
+        "theLastDayIncapacityForWorkPersonConcerned" : "$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.sistemottaksdato"
+      }
+    },
+    "Attachments" : {
+      "document" : "$sykdom.informasjonomytelse.kontantytelse.arbeidsufoerhet.bosted.dokumentervedlagt"
+    }
+  }
+}

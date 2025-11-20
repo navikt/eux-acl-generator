@@ -1,0 +1,88 @@
+{
+  "H003" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            }
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "TypeInformation" : {
+      "ProposalStateResidence" : {
+        "reasoningProposal" : "$horisontal.fremlegg.bruker.person.bosted.begrunnelse",
+        "startingDate" : "$horisontal.fremlegg.bruker.person.bosted.startdato",
+        "proposedStateResidence" : {
+          "value" : [ "$horisontal.fremlegg.bruker.person.bosted.land" ]
+        }
+      },
+      "NotificationStateResidence" : {
+        "startingDate" : "$horisontal.varsel.bruker.person.bosted.startdato",
+        "stateResidence" : {
+          "value" : [ "$horisontal.varsel.bruker.person.bosted.land" ]
+        },
+        "reasoningNotification" : "$horisontal.varsel.bruker.person.bosted.begrunnelse"
+      },
+      "typeInformation" : {
+        "value" : [ "$horisontal.fremlegg.typeinformasjon" ]
+      }
+    },
+    "AddressPerson" : {
+      "AddressPerson" : [ {
+        "Address" : {
+          "region" : "$nav.bruker.adresse[x].region",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "town" : "$nav.bruker.adresse[x].by",
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "postalCode" : "$nav.bruker.adresse[x].postnummer"
+        },
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type" ]
+        }
+      } ]
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "H006" : {
+    "PositiveReplyRequestedInformation" : {
+      "WeProvideFollowingInformationElementsResidence" : {
+        "FamilyStatus" : {
+          "placeResidenceSpouse" : "$horisontal.svar.familiestatus.ektefelle.bosted",
+          "familyMemberChildren" : "$horisontal.svar.familiestatus.barn.familiemedlem",
+          "placeSchoolChildren" : "$horisontal.svar.familiestatus.barn.skolekrets",
+          "placeResidenceChildren" : "$horisontal.svar.familiestatus.barn.bosted",
+          "familyMemberSpouse" : "$horisontal.svar.familiestatus.ektefelle.familiemedlem"
+        },
+        "DescriptionNatureSpecificCharacteristicsActivity" : [ {
+          "natureActivity" : "$horisontal.svar.aktiviteter[x].art",
+          "locationActivity" : "$horisontal.svar.aktiviteter[x].sted",
+          "durationActivity" : "$horisontal.svar.aktiviteter[x].varighet",
+          "typeActivity" : {
+            "value" : [ "$horisontal.svar.aktiviteter[x].type" ]
+          },
+          "descriptionActivity" : "$horisontal.svar.aktiviteter[x].beskrivelse"
+        } ],
+        "Address" : {
+          "AddressPerson" : [ {
+            "Address" : {
+              "country" : {
+                "value" : [ "$horisontal.informasjonombosted.bruker.adresse[x].land" ]
+              },
+              "postalCode" : "$horisontal.informasjonombosted.bruker.adresse[x].postnummer",
+              "region" : "$horisontal.informasjonombosted.bruker.adresse[x].region",
+              "buildingName" : "$horisontal.informasjonombosted.bruker.adresse[x].bygning",
+              "street" : "$horisontal.informasjonombosted.bruker.adresse[x].gate",
+              "town" : "$horisontal.informasjonombosted.bruker.adresse[x].by"
+            },
+            "typeAddress" : {
+              "value" : [ "$horisontal.informasjonombosted.bruker.adresse[x].type" ]
+            }
+          } ]
+        },
+        "housingSituationInParticularHowPermanentItIs" : "$horisontal.svar.fastslaabosted.bruker.hvorpermanent",
+        "residenceForTaxPurposes" : "$horisontal.svar.fastslaabosted.bruker.permanentoppholdskattemessig",
+        "intentionPersonConcernedReasonsMove" : "$horisontal.svar.fastslaabosted.bruker.grunnforflytting",
+        "StatusPerson" : {
+          "statusPerson" : {
+            "value" : [ "$horisontal.svar.aktivitet.status.id" ]
+          },
+          "PleaseFillInIfStatusPersonOther" : {
+            "other" : "$horisontal.svar.aktivitet.status.annet"
+          }
+        },
+        "sourceIncomeStudents" : "$horisontal.svar.inntektskilde.studenter"
+      }
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region"
+          },
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "forename" : "$nav.bruker.person.fornavn",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "NegativeReplyRequestedInformation" : {
+      "weAreUnableForwardRequestedInformationInPoints" : "$horisontal.negativtsvar.kunneikkevideresendeinformasjon",
+      "reasons" : "$horisontal.negativtsvar.grunner"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

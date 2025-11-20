@@ -1,0 +1,54 @@
+{
+  "U024" : {
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn",
+          "institutionID" : "$nav.eessisak[x].institusjonsid"
+        },
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer"
+      } ]
+    },
+    "IndividualClaimsWhichPaymentRelates" : {
+      "IndividualClaimWhichPaymentRelates" : [ {
+        "individualClaimPaymentNotificationID" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.melding.id",
+        "sequentialNumberIndividualClaim" : "$dagpenger.refusjonskrav.enkeltkrav[x].loepenummer",
+        "reimbursementPaymentNotificationID" : "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravtilbakebetalingid",
+        "reimbursementRequestID" : "$dagpenger.refusjonskrav.enkeltkrav[x].id",
+        "Person" : {
+          "familyName" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.etternavn",
+          "sex" : {
+            "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.kjoenn" ]
+          },
+          "dateBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.foedselsdato",
+          "forename" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.fornavn"
+        },
+        "amendedContestedIndividualClaimID" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.endret.id",
+        "contestedIndividualClaimID" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.id"
+      } ]
+    },
+    "GeneralInformation" : {
+      "reimbursementPaymentNotificationID" : "$dagpenger.refusjonskrav.tilbakebetaling.id",
+      "reimbursementRequestID" : "$dagpenger.refusjonskrav.id"
+    },
+    "BankInformation" : {
+      "bankTransferSubjectOrTransactionReference" : "$dagpenger.refusjonskrav.tilbakebetaling.bank.overfoering.emneellerreferanse",
+      "SEPABankDetails" : {
+        "BICSWIFT" : "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.swift",
+        "IBAN" : "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.iban"
+      }
+    },
+    "AmountReimbursed" : {
+      "datePayment" : "$dagpenger.refusjonskrav.tilbakebetaling.utbetalingsdato",
+      "Amount" : {
+        "amount" : "$dagpenger.refusjonskrav.tilbakebetaling.beloep",
+        "currency" : {
+          "value" : [ "$dagpenger.refusjonskrav.tilbakebetaling.valuta" ]
+        }
+      }
+    }
+  }
+}

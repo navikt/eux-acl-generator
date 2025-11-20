@@ -1,0 +1,91 @@
+{
+  "H121" : {
+    "ReplyRequestForMedicalExaminationReport" : {
+      "ReplyRequestForMedicalExaminationReport" : {
+        "reasonForNotCarryingOutMedicalExamination" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.undersoekelse.ikkegjennomfoert.grunn.type" ]
+        },
+        "inReplyRequestConcerningMedicalExaminationInformIt" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.undersoekelse.type" ]
+        },
+        "FillInIfReasonForNotCarryingOut" : {
+          "otherReason" : "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.undersoekelse.ikkegjennomfoert.grunn.annen"
+        }
+      }
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "previousForename" : "$nav.endredeforhold.bruker.person.tidligerefornavn",
+        "previousFamilyName" : "$nav.endredeforhold.bruker.person.tidligereetternavn"
+      },
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
+          } ]
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "PlaceBirth" : {
+            "town" : "$nav.bruker.person.foedested.by",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region"
+          },
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "dateBirth" : "$nav.bruker.person.foedselsdato"
+      }
+    },
+    "ReplyRequestForMedicalEvidence" : {
+      "ReplyRequestForMedicalEvidence" : {
+        "replyAttachedRequestedMedicalEvidenceIndicator" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.svar.erdokumentasjonsvedlagt" ]
+        },
+        "reasonsForNotSendingRequestedMedicalEvidence" : "$horisontal.anmodningmedisinskinformasjon.svar.dokumentasjonikkevedlagt.grunn"
+      }
+    },
+    "NotificationMedicalInformation" : {
+      "NotificationMedicalInformation" : {
+        "otherMedicalInformation" : "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.informasjon.annen",
+        "pleaseFindAttached" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.svar.medisinsk.informasjon.type43" ]
+        }
+      }
+    },
+    "ReplyRequestForEstimatedCostsMedicalEvidence" : {
+      "ReplyRequestForEstimatedCostsMedicalEvidence" : {
+        "amount" : "$horisontal.anmodningmedisinskinformasjon.svar.undersoekelse.estimat.kostnader.beloep",
+        "currency" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.svar.undersoekelse.estimat.kostnader.valuta" ]
+        }
+      }
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

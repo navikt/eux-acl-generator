@@ -1,0 +1,59 @@
+{
+  "X010" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "Address" : {
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          },
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate",
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning"
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        }
+      },
+      "PersonContext" : {
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn",
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn"
+      },
+      "ReimbursementContext" : {
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav",
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id"
+      }
+    },
+    "RepliesReminder" : {
+      "TheFollowingRequestedInformationNotAvailable" : [ {
+        "type" : {
+          "value" : [ "$nav.sak.paaminnelse.svar.informasjon.ikketilgjengelig[x].type" ]
+        },
+        "reason" : {
+          "value" : [ "$nav.sak.paaminnelse.svar.informasjon.ikketilgjengelig[x].grunn.type" ]
+        },
+        "details" : "$nav.sak.paaminnelse.svar.informasjon.ikketilgjengelig[x].opplysninger",
+        "pleaseProvideReasonIf99OtherSelected" : "$nav.sak.paaminnelse.svar.informasjon.ikketilgjengelig[x].annenbegrunnelse"
+      } ],
+      "TheFollowingRequestedInformationWillFollow" : [ {
+        "details" : "$nav.sak.paaminnelse.svar.informasjon.kommersenere[x].opplysninger",
+        "pleaseProvideMoreDetails" : "$nav.sak.paaminnelse.svar.informasjon.kommersenere[x].ytterligereinformasjon",
+        "type" : {
+          "value" : [ "$nav.sak.paaminnelse.svar.informasjon.kommersenere[x].type" ]
+        },
+        "expectedDateRequestCanFulfilled" : "$nav.sak.paaminnelse.svar.informasjon.kommersenere[x].forventetdato"
+      } ]
+    }
+  }
+}
