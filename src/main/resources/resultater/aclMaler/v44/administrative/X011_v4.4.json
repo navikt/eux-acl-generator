@@ -1,0 +1,47 @@
+{
+  "X011" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "Address" : {
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          },
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn"
+      },
+      "ReimbursementContext" : {
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav",
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id"
+      },
+      "PersonContext" : {
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn",
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn"
+      }
+    },
+    "RejectSED" : {
+      "dateIssued" : "$nav.sak.avvis.sed.utstedelsesdato",
+      "SEDType" : "$nav.sak.avvis.sed.type",
+      "groundsForRejection" : {
+        "value" : [ "$nav.sak.avvis.sed.grunn.type" ]
+      },
+      "pleaseProvideMoreDetailsIf99OtherSelected" : "$nav.sak.avvis.sed.grunn.annet"
+    }
+  }
+}

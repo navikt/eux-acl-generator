@@ -1,0 +1,47 @@
+{
+  "X009" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "Address" : {
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          },
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by"
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        }
+      },
+      "PersonContext" : {
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn",
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        }
+      },
+      "ReimbursementContext" : {
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav",
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id"
+      }
+    },
+    "Reminders" : {
+      "ReminderSendUs" : [ {
+        "type" : {
+          "value" : [ "$nav.sak.paaminnelse.sende[x].type" ]
+        },
+        "details" : "$nav.sak.paaminnelse.sende[x].detaljer"
+      } ]
+    }
+  }
+}

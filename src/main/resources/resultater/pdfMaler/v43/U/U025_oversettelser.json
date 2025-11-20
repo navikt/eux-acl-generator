@@ -1,0 +1,126 @@
+{
+  "U025.LocalCaseNumbers" : {
+    "index" : "1.",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "index" : "1.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "index" : "1.1.2.",
+    "prompt" : "Saksnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "index" : "1.1.3.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "U025.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "index" : "1.1.3.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "U025.GeneralInformation" : {
+    "index" : "2.",
+    "prompt" : "Generell informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U025.GeneralInformation.reimbursementRequestID" : {
+    "index" : "2.1.",
+    "prompt" : "ID-nummer for krav om refusjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "U025.GeneralInformation.reimbursementPaymentNotificationID" : {
+    "index" : "2.2.",
+    "prompt" : "ID for melding om tilbakebetaling",
+    "valuetype" : "_uxTextInput"
+  },
+  "U025.GeneralInformation.reimbursementReceiptOrClosingNotificationID" : {
+    "index" : "2.3.",
+    "prompt" : "ID Kvittering for tilbakebetaling eller avslutningsmelding",
+    "valuetype" : "_uxTextInput"
+  },
+  "U025.GeneralInformation.AmountReceived" : {
+    "index" : "2.4.",
+    "prompt" : "Mottatt beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U025.GeneralInformation.AmountReceived.amount" : {
+    "index" : "2.4.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "U025.GeneralInformation.AmountReceived.currency" : {
+    "index" : "2.4.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACurrencyType"
+  },
+  "U025.GeneralInformation.datePaymentReceived" : {
+    "index" : "2.5.",
+    "prompt" : "Dato for mottatt utbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "U025.ReimbursementRequestClosed" : {
+    "index" : "3.",
+    "prompt" : "Refusjonskrav er avsluttet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U025.ReimbursementRequestClosed.reimbursementRequestClosedIndicator" : {
+    "index" : "3.1.",
+    "prompt" : "Refusjonskrav er avsluttet",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed" : {
+    "index" : "3.2.",
+    "prompt" : "Fyll ut hvis «Anmodning om refusjon lukket» = «Nei»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.reasonForNotClosingReimbursementRequest" : {
+    "index" : "3.2.1.",
+    "prompt" : "Årsaken til at anmodning om refusjon ikke avsluttes",
+    "valuetype" : "_uxMultiCheckbox",
+    "codework" : {
+      "01" : "Det finnes noen tilfeller som likevel skal betales",
+      "02" : "Beløpet for enkeltkravene spesifisert i siste U024 er ikke tilstrekkelig",
+      "03" : "Det finnes ennå utestående beløp fra U024 eller U024s",
+      "99" : "Annen grunn"
+    },
+    "enumName" : "ReasonForUnemploymentRequestNotAcceptedMultipleType"
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.PleaseFillInFollowingIfReasonOtherReason" : {
+    "index" : "3.2.2.",
+    "prompt" : "Fyll ut hvis «Årsak til å ikke lukke anmodning om refusjon» = «99 - Annen grunn»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "U025.ReimbursementRequestClosed.FillInIfReimbursementRequestNotClosed.PleaseFillInFollowingIfReasonOtherReason.reason" : {
+    "index" : "3.2.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "U025.sedTitle" : {
+    "index" : "U025",
+    "prompt" : "U025 - Kvittering for refusjon/meddelelse om at refusjonssak avsluttes",
+    "valuetype" : "_rinaRoot"
+  }
+}

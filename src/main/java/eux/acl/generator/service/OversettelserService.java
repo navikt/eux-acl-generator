@@ -1,0 +1,28 @@
+package eux.acl.generator.service;
+
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class OversettelserService {
+
+    public Map<String, String> lagOversettelser(String ordliste, String cdmVersjon) {
+        Map<String, String> tekstIdVsTekst = new HashMap<>();
+        List<String> oversatteLinjer = Arrays.asList(ordliste.split("\n"));
+        oversatteLinjer.forEach(linje -> {
+                    if (linje.contains("\"" + cdmVersjon)
+                            && (linje.contains("_label\":") || linje.contains("_codeListEntry\":"))) {
+                        String[] tekstId_tekst = linje.split("\":");
+                        String[] versjonTekstIdType = tekstId_tekst[0].split("_");
+                        String tekstId = versjonTekstIdType[1].toLowerCase() + "_" + versjonTekstIdType[2];
+                        String tekst = tekstId_tekst[1].split("\"")[1].trim();
+                        tekstIdVsTekst.put(tekstId, tekst);
+                    }
+                }
+        );
+        return tekstIdVsTekst;
+    }
+}

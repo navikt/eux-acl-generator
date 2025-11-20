@@ -1,0 +1,549 @@
+{
+  "R009" : {
+    "FillInIfEntitlementArrears" : {
+      "PleaseFillInFollowingIfDeductionYes" : {
+        "TypeBenefitsFromWhichDeductionPossible" : [ {
+          "institutionCompetentForDeductionFromOngoingPayment" : {
+            "value" : [ "$tilbakekreving.retttilytelser.motregning.ytelse[x].institusjon.type[x]" ]
+          },
+          "TypeBenefitFromWhichDeductionFromOngoing" : {
+            "typeBenefit" : {
+              "value" : [ "$tilbakekreving.retttilytelser.motregning.ytelse[x].type43" ]
+            },
+            "PleaseFillInFollowingIfTypeBenefitOtherBenefit" : {
+              "typeOtherBenefit" : "$tilbakekreving.retttilytelser.motregning.ytelse[x].annen"
+            }
+          },
+          "PeriodicAmount" : {
+            "AmountPerUnit" : {
+              "currency" : {
+                "value" : [ "$tilbakekreving.retttilytelser.motregning.ytelse[x].utbetalingperperiode.valuta" ]
+              },
+              "amount" : "$tilbakekreving.retttilytelser.motregning.ytelse[x].utbetalingperperiode.beloep"
+            },
+            "numberPeriodicUnits" : "$tilbakekreving.retttilytelser.motregning.ytelse[x].antallperiodeenheter",
+            "frequency" : {
+              "value" : [ "$tilbakekreving.retttilytelser.motregning.ytelse[x].hyppighet.type" ]
+            },
+            "PleaseFillInFollowingIfFrequencyOther" : {
+              "otherFrequency" : "$tilbakekreving.retttilytelser.motregning.ytelse[x].hyppighet.annen"
+            }
+          },
+          "FillInIfInstitutionCompetentFor" : {
+            "OtherInstitutionsCompetentForOngoingPayment" : {
+              "OtherInstitutionCompetentForOngoingPayment" : [ {
+                "institutionName" : "$tilbakekreving.retttilytelser.motregning.ytelse[x].annenkompetentinstitusjon[x].institusjonsnavn",
+                "institutionID" : "$tilbakekreving.retttilytelser.motregning.ytelse[x].annenkompetentinstitusjon[x].institusjonsid"
+              } ]
+            }
+          }
+        } ]
+      },
+      "deductionPossiblePeriodicRatesFromOngoingPaymentsIndicator" : {
+        "value" : [ "$tilbakekreving.retttilytelser.harretttilmotregningiloependeutbetalinger" ]
+      }
+    },
+    "FillInIfEntitlementBenefitsYes" : {
+      "FillInIfEntitlementArrears" : {
+        "amountArrearsCoversFullAmountProvisionalPaymentIndicator" : {
+          "value" : [ "$tilbakekreving.retttilytelser.etterbetaling.dekkerhelebeloepet" ]
+        },
+        "PayableArrearsPeriod" : {
+          "endDate" : "$tilbakekreving.retttilytelser.etterbetaling.periode.sluttdato",
+          "startDate" : "$tilbakekreving.retttilytelser.etterbetaling.periode.startdato"
+        },
+        "ArrearsTotalAmount" : {
+          "currency" : {
+            "value" : [ "$tilbakekreving.retttilytelser.etterbetaling.valuta" ]
+          },
+          "amount" : "$tilbakekreving.retttilytelser.etterbetaling.beloep"
+        }
+      },
+      "entitlementArrearsACorrespondingBenefitIndicator" : {
+        "value" : [ "$tilbakekreving.retttilytelser.harretttiletterbetalingfrasammenlignbareytelser" ]
+      }
+    },
+    "Persons" : {
+      "Debtor" : {
+        "ThirdParty" : {
+          "InsuredPersonDetails" : {
+            "PersonIdentification" : {
+              "forename" : "$nav.tredjepart.forsikret.bruker.person.fornavn",
+              "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+                "fatherFamilyNameAtBirth" : "$nav.tredjepart.forsikret.bruker.far.person.etternavnvedfoedsel",
+                "PlaceBirth" : {
+                  "town" : "$nav.tredjepart.forsikret.bruker.person.foedested.by",
+                  "country" : {
+                    "value" : [ "$nav.tredjepart.forsikret.bruker.person.foedested.land" ]
+                  },
+                  "region" : "$nav.tredjepart.forsikret.bruker.person.foedested.region"
+                },
+                "forenameMother" : "$nav.tredjepart.forsikret.bruker.mor.person.fornavn",
+                "motherFamilyNameAtBirth" : "$nav.tredjepart.forsikret.bruker.mor.person.etternavnvedfoedsel",
+                "forenameFather" : "$nav.tredjepart.forsikret.bruker.far.person.fornavn"
+              },
+              "PINPersonInEachInstitution" : {
+                "PersonalIdentificationNumber" : [ {
+                  "personalIdentificationNumber" : "$nav.tredjepart.forsikret.bruker.person.pin[x].identifikator",
+                  "Institution" : {
+                    "institutionName" : "$nav.tredjepart.forsikret.bruker.person.pin[x].institusjonsnavn",
+                    "institutionID" : "$nav.tredjepart.forsikret.bruker.person.pin[x].institusjonsid"
+                  },
+                  "country" : {
+                    "value" : [ "$nav.tredjepart.forsikret.bruker.person.pin[x].land" ]
+                  },
+                  "sector" : {
+                    "value" : [ "$nav.tredjepart.forsikret.bruker.person.pin[x].sektor" ]
+                  }
+                } ]
+              },
+              "sex" : {
+                "value" : [ "$nav.tredjepart.forsikret.bruker.person.kjoenn" ]
+              },
+              "familyNameAtBirth" : "$nav.tredjepart.forsikret.bruker.person.etternavnvedfoedsel",
+              "familyName" : "$nav.tredjepart.forsikret.bruker.person.etternavn",
+              "forenameAtBirth" : "$nav.tredjepart.forsikret.bruker.person.fornavnvedfoedsel",
+              "dateBirth" : "$nav.tredjepart.forsikret.bruker.person.foedselsdato"
+            },
+            "AdditionalInformationAboutPerson" : {
+              "PreviousFamilyName" : {
+                "PreviousFamilyName" : [ {
+                  "previousFamilyName" : "$nav.tredjepart.forsikret.bruker.person.tidligereetternavn[x].navn"
+                } ]
+              },
+              "currentFamilyStatus" : {
+                "value" : [ "$nav.tredjepart.forsikret.bruker.familiestatus.RFamilyStatusType" ]
+              },
+              "nationality" : {
+                "value" : [ "$nav.tredjepart.forsikret.bruker.statsborgerskap.land" ]
+              },
+              "PreviousForenames" : {
+                "PreviousForename" : [ {
+                  "previousForename" : "$nav.tredjepart.forsikret.bruker.person.tidligerefornavn[x].navn"
+                } ]
+              },
+              "dateDeath" : "$nav.tredjepart.forsikret.bruker.doedsdato"
+            }
+          },
+          "ThirdPartyDetails" : {
+            "ThirdPartyIdentification" : {
+              "PersonIdentification" : {
+                "familyNameAtBirth" : "$nav.tredjepart.bruker.person.etternavnvedfoedsel",
+                "dateBirth" : "$nav.tredjepart.bruker.person.foedselsdato",
+                "PINPersonInEachInstitution" : {
+                  "PersonalIdentificationNumber" : [ {
+                    "sector" : {
+                      "value" : [ "$nav.tredjepart.bruker.person.pin[x].sektor" ]
+                    },
+                    "Institution" : {
+                      "institutionName" : "$nav.tredjepart.bruker.person.pin[x].institusjonsnavn",
+                      "institutionID" : "$nav.tredjepart.bruker.person.pin[x].institusjonsid"
+                    },
+                    "personalIdentificationNumber" : "$nav.tredjepart.bruker.person.pin[x].identifikator",
+                    "country" : {
+                      "value" : [ "$nav.tredjepart.bruker.person.pin[x].land" ]
+                    }
+                  } ]
+                },
+                "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+                  "PlaceBirth" : {
+                    "region" : "$nav.tredjepart.bruker.person.foedested.region",
+                    "country" : {
+                      "value" : [ "$nav.tredjepart.bruker.person.foedested.land" ]
+                    },
+                    "town" : "$nav.tredjepart.bruker.person.foedested.by"
+                  },
+                  "motherFamilyNameAtBirth" : "$nav.tredjepart.bruker.mor.person.etternavnvedfoedsel",
+                  "fatherFamilyNameAtBirth" : "$nav.tredjepart.bruker.far.person.etternavnvedfoedsel",
+                  "forenameMother" : "$nav.tredjepart.bruker.mor.person.fornavn",
+                  "forenameFather" : "$nav.tredjepart.bruker.far.person.fornavn"
+                },
+                "forename" : "$nav.tredjepart.bruker.person.fornavn",
+                "forenameAtBirth" : "$nav.tredjepart.bruker.person.fornavnvedfoedsel",
+                "familyName" : "$nav.tredjepart.bruker.person.etternavn",
+                "sex" : {
+                  "value" : [ "$nav.tredjepart.bruker.person.kjoenn" ]
+                }
+              },
+              "AdditionalInformationAboutPerson" : {
+                "PreviousFamilyName" : {
+                  "PreviousFamilyName" : [ {
+                    "previousFamilyName" : "$nav.tredjepart.bruker.person.tidligereetternavn[x].navn"
+                  } ]
+                },
+                "nationality" : {
+                  "value" : [ "$nav.tredjepart.bruker.statsborgerskap.land" ]
+                },
+                "PreviousForenames" : {
+                  "PreviousForename" : [ {
+                    "previousForename" : "$nav.tredjepart.bruker.person.tidligerefornavn[x].navn"
+                  } ]
+                },
+                "currentFamilyStatus" : {
+                  "value" : [ "$nav.tredjepart.bruker.familiestatus.RFamilyStatusType" ]
+                },
+                "dateDeath" : "$nav.tredjepart.bruker.doedsdato"
+              }
+            },
+            "ThirdPartyStatus" : {
+              "StatusPersonThirdParty" : {
+                "value" : [ "$nav.tredjepart.bruker.personstatus.RStatusPersonThirdPartyType" ]
+              },
+              "PleaseFillInFollowingIfStatusPersonOther" : {
+                "otherStatusPerson" : "$nav.tredjepart.bruker.personstatus.annen"
+              }
+            }
+          },
+          "BeneficiaryDetails" : {
+            "BeneficiaryIdentification" : {
+              "PersonIdentification" : {
+                "PINPersonInEachInstitution" : {
+                  "PersonalIdentificationNumber" : [ {
+                    "country" : {
+                      "value" : [ "$nav.tredjepart.begunstiget.bruker.person.pin[x].land" ]
+                    },
+                    "sector" : {
+                      "value" : [ "$nav.tredjepart.begunstiget.bruker.person.pin[x].sektor" ]
+                    },
+                    "personalIdentificationNumber" : "$nav.tredjepart.begunstiget.bruker.person.pin[x].identifikator",
+                    "Institution" : {
+                      "institutionID" : "$nav.tredjepart.begunstiget.bruker.person.pin[x].institusjonsid",
+                      "institutionName" : "$nav.tredjepart.begunstiget.bruker.person.pin[x].institusjonsnavn"
+                    }
+                  } ]
+                },
+                "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+                  "forenameFather" : "$nav.tredjepart.begunstiget.bruker.far.person.fornavn",
+                  "PlaceBirth" : {
+                    "country" : {
+                      "value" : [ "$nav.tredjepart.begunstiget.bruker.person.foedested.land" ]
+                    },
+                    "town" : "$nav.tredjepart.begunstiget.bruker.person.foedested.by",
+                    "region" : "$nav.tredjepart.begunstiget.bruker.person.foedested.region"
+                  },
+                  "fatherFamilyNameAtBirth" : "$nav.tredjepart.begunstiget.bruker.far.person.etternavnvedfoedsel",
+                  "motherFamilyNameAtBirth" : "$nav.tredjepart.begunstiget.bruker.mor.person.etternavnvedfoedsel",
+                  "forenameMother" : "$nav.tredjepart.begunstiget.bruker.mor.person.fornavn"
+                },
+                "forenameAtBirth" : "$nav.tredjepart.begunstiget.bruker.person.fornavnvedfoedsel",
+                "familyName" : "$nav.tredjepart.begunstiget.bruker.person.etternavn",
+                "sex" : {
+                  "value" : [ "$nav.tredjepart.begunstiget.bruker.person.kjoenn" ]
+                },
+                "dateBirth" : "$nav.tredjepart.begunstiget.bruker.person.foedselsdato",
+                "forename" : "$nav.tredjepart.begunstiget.bruker.person.fornavn",
+                "familyNameAtBirth" : "$nav.tredjepart.begunstiget.bruker.person.etternavnvedfoedsel"
+              },
+              "AdditionalInformationAboutPerson" : {
+                "dateDeath" : "$nav.tredjepart.begunstiget.bruker.doedsdato",
+                "PreviousFamilyName" : {
+                  "PreviousFamilyName" : [ {
+                    "previousFamilyName" : "$nav.tredjepart.begunstiget.bruker.person.tidligereetternavn[x].navn"
+                  } ]
+                },
+                "currentFamilyStatus" : {
+                  "value" : [ "$nav.tredjepart.begunstiget.bruker.familiestatus.RFamilyStatusType" ]
+                },
+                "PreviousForenames" : {
+                  "PreviousForename" : [ {
+                    "previousForename" : "$nav.tredjepart.begunstiget.bruker.person.tidligerefornavn[x].navn"
+                  } ]
+                },
+                "nationality" : {
+                  "value" : [ "$nav.tredjepart.begunstiget.bruker.statsborgerskap.land" ]
+                }
+              }
+            },
+            "BeneficiaryStatus" : {
+              "StatusPersonBeneficiary" : {
+                "value" : [ "$nav.tredjepart.begunstiget.bruker.personstatus. RStatusPersonBeneficiaryType" ]
+              }
+            }
+          }
+        },
+        "InsuredPerson" : {
+          "InsuredPersonDetails" : {
+            "PersonIdentification" : {
+              "familyNameAtBirth" : "$nav.forsikret.bruker.person.etternavnvedfoedsel",
+              "PINPersonInEachInstitution" : {
+                "PersonalIdentificationNumber" : [ {
+                  "personalIdentificationNumber" : "$nav.forsikret.bruker.person.pin[x].identifikator",
+                  "Institution" : {
+                    "institutionID" : "$nav.forsikret.bruker.person.pin[x].institusjonsid",
+                    "institutionName" : "$nav.forsikret.bruker.person.pin[x].institusjonsnavn"
+                  },
+                  "country" : {
+                    "value" : [ "$nav.forsikret.bruker.person.pin[x].land" ]
+                  },
+                  "sector" : {
+                    "value" : [ "$nav.forsikret.bruker.person.pin[x].sektor" ]
+                  }
+                } ]
+              },
+              "dateBirth" : "$nav.forsikret.bruker.person.foedselsdato",
+              "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+                "motherFamilyNameAtBirth" : "$nav.forsikret.bruker.mor.person.etternavnvedfoedsel",
+                "forenameMother" : "$nav.forsikret.bruker.mor.person.fornavn",
+                "fatherFamilyNameAtBirth" : "$nav.forsikret.bruker.far.person.etternavnvedfoedsel",
+                "forenameFather" : "$nav.forsikret.bruker.far.person.fornavn",
+                "PlaceBirth" : {
+                  "town" : "$nav.forsikret.bruker.person.foedested.by",
+                  "country" : {
+                    "value" : [ "$nav.forsikret.bruker.person.foedested.land" ]
+                  },
+                  "region" : "$nav.forsikret.bruker.person.foedested.region"
+                }
+              },
+              "sex" : {
+                "value" : [ "$nav.forsikret.bruker.person.kjoenn" ]
+              },
+              "familyName" : "$nav.forsikret.bruker.person.etternavn",
+              "forenameAtBirth" : "$nav.forsikret.bruker.person.fornavnvedfoedsel",
+              "forename" : "$nav.forsikret.bruker.person.fornavn"
+            },
+            "AdditionalInformationAboutPerson" : {
+              "PreviousForenames" : {
+                "PreviousForename" : [ {
+                  "previousForename" : "$nav.forsikret.bruker.person.tidligerefornavn[x].navn"
+                } ]
+              },
+              "currentFamilyStatus" : {
+                "value" : [ "$nav.forsikret.bruker.familiestatus.RFamilyStatusType" ]
+              },
+              "dateDeath" : "$nav.forsikret.bruker.doedsdato",
+              "PreviousFamilyName" : {
+                "PreviousFamilyName" : [ {
+                  "previousFamilyName" : "$nav.forsikret.bruker.person.tidligereetternavn[x].navn"
+                } ]
+              },
+              "nationality" : {
+                "value" : [ "$nav.forsikret.bruker.statsborgerskap.land" ]
+              }
+            }
+          }
+        },
+        "Beneficiary" : {
+          "BeneficiaryDetails" : {
+            "BeneficiaryIdentification" : {
+              "PersonIdentification" : {
+                "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+                  "forenameMother" : "$nav.begunstiget.bruker.mor.person.fornavn",
+                  "PlaceBirth" : {
+                    "country" : {
+                      "value" : [ "$nav.begunstiget.bruker.person.foedested.land" ]
+                    },
+                    "town" : "$nav.begunstiget.bruker.person.foedested.by",
+                    "region" : "$nav.begunstiget.bruker.person.foedested.region"
+                  },
+                  "forenameFather" : "$nav.begunstiget.bruker.far.person.fornavn",
+                  "fatherFamilyNameAtBirth" : "$nav.begunstiget.bruker.far.person.etternavnvedfoedsel",
+                  "motherFamilyNameAtBirth" : "$nav.begunstiget.bruker.mor.person.etternavnvedfoedsel"
+                },
+                "PINPersonInEachInstitution" : {
+                  "PersonalIdentificationNumber" : [ {
+                    "sector" : {
+                      "value" : [ "$nav.begunstiget.bruker.person.pin[x].sektor" ]
+                    },
+                    "Institution" : {
+                      "institutionID" : "$nav.begunstiget.bruker.person.pin[x].institusjonsid",
+                      "institutionName" : "$nav.begunstiget.bruker.person.pin[x].institusjonsnavn"
+                    },
+                    "country" : {
+                      "value" : [ "$nav.begunstiget.bruker.person.pin[x].land" ]
+                    },
+                    "personalIdentificationNumber" : "$nav.begunstiget.bruker.person.pin[x].identifikator"
+                  } ]
+                },
+                "sex" : {
+                  "value" : [ "$nav.begunstiget.bruker.person.kjoenn" ]
+                },
+                "forenameAtBirth" : "$nav.begunstiget.bruker.person.fornavnvedfoedsel",
+                "familyName" : "$nav.begunstiget.bruker.person.etternavn",
+                "forename" : "$nav.begunstiget.bruker.person.fornavn",
+                "dateBirth" : "$nav.begunstiget.bruker.person.foedselsdato",
+                "familyNameAtBirth" : "$nav.begunstiget.bruker.person.etternavnvedfoedsel"
+              },
+              "AdditionalInformationAboutPerson" : {
+                "PreviousFamilyName" : {
+                  "PreviousFamilyName" : [ {
+                    "previousFamilyName" : "$nav.begunstiget.bruker.person.tidligereetternavn[x].navn"
+                  } ]
+                },
+                "currentFamilyStatus" : {
+                  "value" : [ "$nav.begunstiget.bruker.familiestatus.RFamilyStatusType" ]
+                },
+                "nationality" : {
+                  "value" : [ "$nav.begunstiget.bruker.statsborgerskap.land" ]
+                },
+                "PreviousForenames" : {
+                  "PreviousForename" : [ {
+                    "previousForename" : "$nav.begunstiget.bruker.person.tidligerefornavn[x].navn"
+                  } ]
+                },
+                "dateDeath" : "$nav.begunstiget.bruker.doedsdato"
+              }
+            },
+            "BeneficiaryStatus" : {
+              "statusBeneficiary" : {
+                "value" : [ "$nav.begunstiget.bruker.personstatus. RStatusPersonBeneficiaryNoDeceaseType" ]
+              }
+            }
+          },
+          "InsuredPersonDetails" : {
+            "AdditionalInformationAboutPerson" : {
+              "currentFamilyStatus" : {
+                "value" : [ "$nav.begunstiget.forsikret.bruker.familiestatus.RFamilyStatusType" ]
+              },
+              "PreviousFamilyName" : {
+                "PreviousFamilyName" : [ {
+                  "previousFamilyName" : "$nav.begunstiget.forsikret.bruker.person.tidligereetternavn[x].navn"
+                } ]
+              },
+              "nationality" : {
+                "value" : [ "$nav.begunstiget.forsikret.bruker.statsborgerskap.land" ]
+              },
+              "dateDeath" : "$nav.begunstiget.forsikret.bruker.doedsdato",
+              "PreviousForenames" : {
+                "PreviousForename" : [ {
+                  "previousForename" : "$nav.begunstiget.forsikret.bruker.person.tidligerefornavn[x].navn"
+                } ]
+              }
+            },
+            "PersonIdentification" : {
+              "sex" : {
+                "value" : [ "$nav.begunstiget.forsikret.bruker.person.kjoenn" ]
+              },
+              "PINPersonInEachInstitution" : {
+                "PersonalIdentificationNumber" : [ {
+                  "personalIdentificationNumber" : "$nav.begunstiget.forsikret.bruker.person.pin[x].identifikator",
+                  "Institution" : {
+                    "institutionID" : "$nav.begunstiget.forsikret.bruker.person.pin[x].institusjonsid",
+                    "institutionName" : "$nav.begunstiget.forsikret.bruker.person.pin[x].institusjonsnavn"
+                  },
+                  "country" : {
+                    "value" : [ "$nav.begunstiget.forsikret.bruker.person.pin[x].land" ]
+                  },
+                  "sector" : {
+                    "value" : [ "$nav.begunstiget.forsikret.bruker.person.pin[x].sektor" ]
+                  }
+                } ]
+              },
+              "familyName" : "$nav.begunstiget.forsikret.bruker.person.etternavn",
+              "familyNameAtBirth" : "$nav.begunstiget.forsikret.bruker.person.etternavnvedfoedsel",
+              "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+                "PlaceBirth" : {
+                  "country" : {
+                    "value" : [ "$nav.begunstiget.forsikret.bruker.person.foedested.land" ]
+                  },
+                  "region" : "$nav.begunstiget.forsikret.bruker.person.foedested.region",
+                  "town" : "$nav.begunstiget.forsikret.bruker.person.foedested.by"
+                },
+                "fatherFamilyNameAtBirth" : "$nav.begunstiget.forsikret.bruker.far.person.etternavnvedfoedsel",
+                "forenameFather" : "$nav.begunstiget.forsikret.bruker.far.person.fornavn",
+                "forenameMother" : "$nav.begunstiget.forsikret.bruker.mor.person.fornavn",
+                "motherFamilyNameAtBirth" : "$nav.begunstiget.forsikret.bruker.mor.person.etternavnvedfoedsel"
+              },
+              "dateBirth" : "$nav.begunstiget.forsikret.bruker.person.foedselsdato",
+              "forenameAtBirth" : "$nav.begunstiget.forsikret.bruker.person.fornavnvedfoedsel",
+              "forename" : "$nav.begunstiget.forsikret.bruker.person.fornavn"
+            }
+          }
+        }
+      },
+      "OtherPersons" : {
+        "ThirdPartyDetails" : [ {
+          "ThirdPartyIdentification" : {
+            "PersonIdentification" : {
+              "forenameAtBirth" : "$nav.andrepersoner[x].bruker.person.fornavnvedfoedsel",
+              "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+                "PlaceBirth" : {
+                  "country" : {
+                    "value" : [ "$nav.andrepersoner[x].bruker.person.foedested.land" ]
+                  },
+                  "town" : "$nav.andrepersoner[x].bruker.person.foedested.by",
+                  "region" : "$nav.andrepersoner[x].bruker.person.foedested.region"
+                },
+                "fatherFamilyNameAtBirth" : "$nav.andrepersoner[x].bruker.far.person.etternavnvedfoedsel",
+                "forenameFather" : "$nav.andrepersoner[x].bruker.far.person.fornavn",
+                "forenameMother" : "$nav.andrepersoner[x].bruker.mor.person.fornavn",
+                "motherFamilyNameAtBirth" : "$nav.andrepersoner[x].bruker.mor.person.etternavnvedfoedsel"
+              },
+              "PINPersonInEachInstitution" : {
+                "PersonalIdentificationNumber" : [ {
+                  "Institution" : {
+                    "institutionID" : "$nav.andrepersoner[x].bruker.person.pin[x].institusjonsid",
+                    "institutionName" : "$nav.andrepersoner[x].bruker.person.pin[x].institusjonsnavn"
+                  },
+                  "country" : {
+                    "value" : [ "$nav.andrepersoner[x].bruker.person.pin[x].land" ]
+                  },
+                  "personalIdentificationNumber" : "$nav.andrepersoner[x].bruker.person.pin[x].identifikator",
+                  "sector" : {
+                    "value" : [ "$nav.andrepersoner[x].bruker.person.pin[x].sektor" ]
+                  }
+                } ]
+              },
+              "familyNameAtBirth" : "$nav.andrepersoner[x].bruker.person.etternavnvedfoedsel",
+              "dateBirth" : "$nav.andrepersoner[x].bruker.person.foedselsdato",
+              "sex" : {
+                "value" : [ "$nav.andrepersoner[x].bruker.person.kjoenn" ]
+              },
+              "forename" : "$nav.andrepersoner[x].bruker.person.fornavn",
+              "familyName" : "$nav.andrepersoner[x].bruker.person.etternavn"
+            },
+            "AdditionalInformationAboutPerson" : {
+              "PreviousForenames" : {
+                "PreviousForename" : [ {
+                  "previousForename" : "$nav.andrepersoner[x].bruker.person.tidligerefornavn[x].navn"
+                } ]
+              },
+              "PreviousFamilyName" : {
+                "PreviousFamilyName" : [ {
+                  "previousFamilyName" : "$nav.andrepersoner[x].bruker.person.tidligereetternavn[x].navn"
+                } ]
+              },
+              "currentFamilyStatus" : {
+                "value" : [ "$nav.andrepersoner[x].bruker.familiestatus.RFamilyStatusType" ]
+              },
+              "dateDeath" : "$nav.andrepersoner[x].bruker.doedsdato",
+              "nationality" : {
+                "value" : [ "$nav.andrepersoner[x].bruker.statsborgerskap.land" ]
+              }
+            }
+          },
+          "ThirdPartyStatus" : {
+            "StatusPersonThirdParty" : {
+              "value" : [ "$nav.andrepersoner[x].bruker.personstatus.RStatusPersonThirdPartyType" ]
+            },
+            "PleaseFillInFollowingIfStatusPersonOther" : {
+              "otherStatusPerson" : "$nav.andrepersoner[x].bruker.personstatus.annen"
+            }
+          }
+        } ]
+      }
+    },
+    "EntitlementBenefits" : {
+      "entitlementBenefitsIndicator" : {
+        "value" : [ "$tilbakekreving.retttilytelser.harretttilytelser" ]
+      },
+      "requestHasBeenMadeWithin3MonthsPeriodIndicator" : {
+        "value" : [ "$tilbakekreving.retttilytelser.anmodning.erfremsattinnentremaaneder" ]
+      }
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer"
+      } ]
+    }
+  }
+}

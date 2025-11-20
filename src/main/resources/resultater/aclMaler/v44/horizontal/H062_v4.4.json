@@ -1,0 +1,85 @@
+{
+  "H062" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            }
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn"
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel"
+      },
+      "AdditionalInformationPerson" : {
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "previousForename" : "$nav.bruker.person.tidligerefornavn"
+      }
+    },
+    "InformationPersonalIdentificationNumberInSending" : {
+      "IdentificationSuccessful" : {
+        "identificationSuccessfulIndicator" : {
+          "value" : [ "$horisontal.meldinganmodning.pin.identifikasjon.vellykket" ]
+        },
+        "personIndentifiedSuccesfully" : {
+          "value" : [ "$horisontal.meldinganmodning.pin.identifikasjon.ervellykketja" ]
+        },
+        "stateDiscrepancy" : {
+          "value" : [ "$horisontal.meldinganmodning.pin.identifikasjon.uoverensstemmelse" ]
+        },
+        "previousPersonalIdentificationNumber" : "$horisontal.meldinganmodning.pin.identifikasjon.tidligerepin"
+      },
+      "IdentificationUnsuccessful" : {
+        "value" : [ "$horisontal.meldinganmodning.pin.identifikasjon.ervellykketnei" ]
+      }
+    },
+    "AddressPerson" : {
+      "AddressPerson" : [ {
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type" ]
+        },
+        "Address" : {
+          "region" : "$nav.bruker.adresse[x].region",
+          "postalCode" : "$nav.bruker.adresse[x].postnummer",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "town" : "$nav.bruker.adresse[x].by",
+          "buildingName" : "$nav.bruker.adresse[x].bygning"
+        }
+      } ]
+    }
+  }
+}
