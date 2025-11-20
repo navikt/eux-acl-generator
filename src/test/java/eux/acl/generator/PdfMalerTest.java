@@ -1,6 +1,7 @@
 package eux.acl.generator;
 
 import eux.acl.generator.facade.ResultaterFacade;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public class PdfMalerTest {
      *
      */
     @Test
+    @Disabled
     public void lager_pdfMal_v44() {
         // krever at kodeverk og euSedFundament er generert - og flyttet til main/../resources..
         ResultaterFacade pdfMalerFacade = new ResultaterFacade();
@@ -22,6 +24,7 @@ public class PdfMalerTest {
     }
 
     @Test
+    @Disabled
     public void lager_pdfMaler_v44() {
         // krever at kodeverk og euSedFundament er generert - og flyttet til main/../resources..
         ResultaterFacade pdfMalerFacade = new ResultaterFacade();
@@ -37,6 +40,7 @@ public class PdfMalerTest {
         pdfMalerFacade.lagPdfMaler(SEDTYPER_X, V44);
     }
     @Test
+    @Disabled
     public void lager_pdfMaler_v43() {
         // krever at kodeverk og euSedFundament er generert - og flyttet til main/../resources..
         ResultaterFacade pdfMalerFacade = new ResultaterFacade();

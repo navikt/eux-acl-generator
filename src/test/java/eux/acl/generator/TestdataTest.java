@@ -1,19 +1,17 @@
 package eux.acl.generator;
 
-import eux.acl.generator.facade.ResultaterFacade;
 import eux.acl.generator.facade.TestdataFacade;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static eux.acl.generator.modell.SedTyper.*;
-import static eux.acl.generator.service.FilService.*;
+import static eux.acl.generator.service.FilService.V44;
 
 public class TestdataTest {
 
 
-
     @Test
+    @Disabled
     public void lag_testdata_v44() {
         TestdataFacade testdataFacade = new TestdataFacade();
         testdataFacade.lagTestdata(SEDTYPER_F, V44, 0);
