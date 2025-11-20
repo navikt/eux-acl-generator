@@ -1,0 +1,56 @@
+{
+  "A012" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "town" : "$nav.bruker.person.foedested.by",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
+          } ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "CompetentInstitutionIfDiffersFromSending" : {
+      "institutionID" : "$nav.eessisak.institusjonsid",
+      "institutionName" : "$nav.eessisak.institusjonsnummer"
+    }
+  }
+}

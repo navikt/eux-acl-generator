@@ -1,0 +1,120 @@
+{
+  "U020" : {
+    "IndividualClaims" : {
+      "IndividualClaim" : [ {
+        "Person" : {
+          "PersonIdentification" : {
+            "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+              "PlaceBirth" : {
+                "country" : {
+                  "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.foedested.land" ]
+                },
+                "town" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.foedested.by",
+                "region" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.foedested.region"
+              },
+              "forenameFather" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.far.person.fornavn",
+              "motherFamilyNameAtBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.mor.person.etternavnvedfoedsel",
+              "forenameMother" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.mor.person.fornavn",
+              "fatherFamilyNameAtBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.far.person.etternavnvedfoedsel"
+            },
+            "PINPersonInEachInstitution" : {
+              "PersonalIdentificationNumber" : [ {
+                "Institution" : {
+                  "institutionID" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.pin[x].institusjonsid",
+                  "institutionName" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.pin[x].institusjonsnavn"
+                },
+                "sector" : {
+                  "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.pin[x].sektor" ]
+                },
+                "personalIdentificationNumber" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.pin[x].identifikator",
+                "country" : {
+                  "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.pin[x].land" ]
+                }
+              } ]
+            },
+            "sex" : {
+              "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.kjoenn" ]
+            },
+            "dateBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.foedselsdato",
+            "forename" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.fornavn",
+            "forenameAtBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.fornavnvedfoedsel",
+            "familyNameAtBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.etternavnvedfoedsel",
+            "familyName" : "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.etternavn"
+          },
+          "AdditionalInformationPerson" : {
+            "nationality" : {
+              "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].bruker.person.statsborgerskap[x].land" ]
+            }
+          }
+        },
+        "lastPaymentDate" : "$dagpenger.refusjonskrav.enkeltkrav[x].sisteutbetalingsdato",
+        "sequentialNumberIndividualClaim" : "$dagpenger.refusjonskrav.enkeltkrav[x].loepenummer",
+        "InstitutionWhichCertifiedInsuranceRecord" : {
+          "TheInstitutionDOESNOTExistInIR" : {
+            "institutionName" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.ukjentid.navn",
+            "InstitutionAddress" : {
+              "buildingName" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.ukjentid.adresse.bygning",
+              "country" : {
+                "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.ukjentid.adresse.land" ]
+              },
+              "postalCode" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.ukjentid.adresse.postnummer",
+              "street" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.ukjentid.adresse.gate",
+              "town" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.ukjentid.adresse.by",
+              "region" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.ukjentid.adresse.region"
+            }
+          },
+          "TheInstitutionEXISTSInIR" : {
+            "institutionName" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.navn",
+            "institutionID" : "$dagpenger.refusjonskrav.enkeltkrav[x].attestererhistorikk.institusjon.id"
+          }
+        },
+        "ReimbursementPeriod" : {
+          "startDate" : "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonsperiode.startdato",
+          "endDate" : "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonsperiode.sluttdato"
+        },
+        "RequestedAmountForReimbursement" : {
+          "amount" : "$dagpenger.refusjonskrav.enkeltkrav[x].anmodnetrefusjonsbeloep.beloep",
+          "currency" : {
+            "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].anmodnetrefusjonsbeloep.valuta" ]
+          }
+        },
+        "WorkingPeriodsConsidered" : {
+          "WorkingPeriodConsidered" : [ {
+            "startDate" : "$dagpenger.refusjonskrav.enkeltkrav[x].arbeidsperiode[x].startdato",
+            "endDate" : "$dagpenger.refusjonskrav.enkeltkrav[x].arbeidsperiode[x].sluttdato"
+          } ]
+        },
+        "reimbursementRequestID" : "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravid"
+      } ]
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "Institution" : {
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn",
+          "institutionID" : "$nav.eessisak[x].institusjonsid"
+        },
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "GeneralInformation" : {
+      "TotalAmountRequested" : {
+        "currency" : {
+          "value" : [ "$dagpenger.refusjonskrav.anmodnettotalbeloep.valuta" ]
+        },
+        "amount" : "$dagpenger.refusjonskrav.anmodnettotalbeloep.beloep"
+      },
+      "numberIndividualClaims" : "$dagpenger.refusjonskrav.antallkrav",
+      "BankInformation" : {
+        "SEPABankDetails" : {
+          "IBAN" : "$dagpenger.refusjonskrav.bank.konto.sepa.iban",
+          "BICSWIFT" : "$dagpenger.refusjonskrav.bank.konto.sepa.swift"
+        },
+        "bankTransferSubjectOrTransactionReference" : "$dagpenger.refusjonskrav.bank.overfoering.emneellerreferanse"
+      },
+      "reimbursementRequestID" : "$dagpenger.refusjonskrav.id"
+    }
+  }
+}

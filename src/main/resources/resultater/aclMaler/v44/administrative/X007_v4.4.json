@@ -1,0 +1,53 @@
+{
+  "X007" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            },
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id"
+          } ]
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn",
+        "Address" : {
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          },
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by",
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate"
+        }
+      },
+      "PersonContext" : {
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato"
+      },
+      "ReimbursementContext" : {
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav",
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id"
+      }
+    },
+    "ForwardInformation" : {
+      "AddedParticipant" : {
+        "institutionID" : "$nav.sak.videresend.leggtilinstitusjon.institusjon.id",
+        "institutionName" : "$nav.sak.videresend.leggtilinstitusjon.institusjon.navn"
+      },
+      "RemovedParticipant" : {
+        "institutionName" : "$nav.sak.videresend.fjerninstitusjon.institusjon.navn",
+        "institutionID" : "$nav.sak.videresend.fjerninstitusjon.institusjon.id"
+      },
+      "pleaseProvideMoreDetailsIf99OtherSelected" : "$nav.sak.videresend.grunn.annet",
+      "reason" : {
+        "value" : [ "$nav.sak.videresend.grunn.type" ]
+      }
+    }
+  }
+}

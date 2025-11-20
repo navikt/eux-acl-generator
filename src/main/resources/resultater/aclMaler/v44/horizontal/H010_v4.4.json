@@ -1,0 +1,72 @@
+{
+  "H010" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn"
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.bruker.person.fornavn"
+      },
+      "AdditionalInformationPerson" : {
+        "previousForename" : "$nav.bruker.person.tidligerefornavn",
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn"
+      }
+    },
+    "AddressPerson" : {
+      "AddressPerson" : [ {
+        "Address" : {
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "street" : "$nav.bruker.adresse[x].gate",
+          "region" : "$nav.bruker.adresse[x].region",
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "postalCode" : "$nav.bruker.adresse[x].postnummer",
+          "town" : "$nav.bruker.adresse[x].by"
+        },
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type" ]
+        }
+      } ]
+    },
+    "DateChangeLegislationApplicable" : {
+      "dateChangeLegislationApplicable" : "$medlemskap.endring.startdato",
+      "dateUntilWhichThisChangeApplies" : "$medlemskap.endring.sluttdato"
+    }
+  }
+}

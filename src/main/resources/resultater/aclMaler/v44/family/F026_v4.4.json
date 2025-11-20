@@ -1,0 +1,208 @@
+{
+  "F026" : {
+    "SchoolUniversityEstablishmentHigherEducation" : {
+      "Organisation" : {
+        "Address" : {
+          "region" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.adresse.region",
+          "street" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.adresse.gate",
+          "town" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.adresse.by",
+          "buildingName" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.adresse.bygning",
+          "postalCode" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.adresse.postnummer",
+          "country" : {
+            "value" : [ "$familie.anmodningommerinformasjon.utdanningsinstitusjon.adresse.land" ]
+          }
+        },
+        "name" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.identifikator[x].id",
+            "type" : {
+              "value" : [ "$familie.anmodningommerinformasjon.utdanningsinstitusjon.identifikator[x].type" ]
+            }
+          } ]
+        }
+      },
+      "additionalRequestInformation" : "$familie.anmodningommerinformasjon.utdanningsinstitusjon.ytterligereinformasjon"
+    },
+    "Person" : {
+      "CoverageBySocialSecurityScheme" : {
+        "PeriodsEntitlement" : {
+          "PeriodOfEntitlement" : [ {
+            "EntitlementFamilyBenefitsDoesNotExist" : {
+              "PeriodNoEntitlementFamilyBenefits" : {
+                "PeriodNoEntitlementToFamilyBenefit" : [ {
+                  "reason" : {
+                    "value" : [ "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].grunn.FReasonEntitlementType" ]
+                  },
+                  "otherReason" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].grunn.annen",
+                  "Period" : {
+                    "OpenPeriod" : {
+                      "typeOpenPeriod" : {
+                        "value" : [ "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.aapenperiode.type" ]
+                      },
+                      "startDate" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.aapenperiode.startdato"
+                    },
+                    "FixedPeriod" : {
+                      "startDate" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.fastperiode.startdato",
+                      "endDate" : "$bruker.periodermedretttilytelser[x].ikkeretttilfamilieytelser[x].periode.fastperiode.sluttdato"
+                    }
+                  }
+                } ]
+              }
+            },
+            "EntitlementFamilyBenefitsExists" : {
+              "PeriodEntitlementFamilyBenefits" : {
+                "PeriodEntitlementFamilyBenefit" : [ {
+                  "FixedPeriod" : {
+                    "endDate" : "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.fastperiode.sluttdato",
+                    "startDate" : "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.fastperiode.startdato"
+                  },
+                  "OpenPeriod" : {
+                    "startDate" : "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.startdato",
+                    "typeOpenPeriod" : {
+                      "value" : [ "$bruker.periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.type" ]
+                    }
+                  }
+                } ]
+              }
+            }
+          } ]
+        },
+        "PeriodsNotCovered" : {
+          "PeriodNotCovered" : [ {
+            "endDate" : "$bruker.perioderikkedekketavtrygdeordning.periode[x].sluttdato",
+            "startDate" : "$bruker.perioderikkedekketavtrygdeordning.periode[x].startdato"
+          } ]
+        },
+        "PeriodsCoveredBySecuritySchemeInSendingMember" : {
+          "Period" : [ {
+            "startDate" : "$bruker.perioderdekketavtrygdeordning.periode[x].startdato",
+            "endDate" : "$bruker.perioderdekketavtrygdeordning.periode[x].sluttdato"
+          } ]
+        }
+      },
+      "PersonIdentification" : {
+        "forenameAtBirth" : "$bruker.personinfo.pinmangler.fornavnvedfoedsel",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "motherFamilyNameAtBirth" : "$bruker.personinfo.pinmangler.mor.etternavnvedfoedsel",
+          "forenameMother" : "$bruker.personinfo.pinmangler.mor.fornavn",
+          "forenameFather" : "$bruker.personinfo.pinmangler.far.fornavn",
+          "PlaceBirth" : {
+            "town" : "$bruker.personinfo.pinmangler.foedested.by",
+            "country" : {
+              "value" : [ "$bruker.personinfo.pinmangler.foedested.land" ]
+            },
+            "region" : "$bruker.personinfo.pinmangler.foedested.region"
+          },
+          "fatherFamilyNameAtBirth" : "$bruker.personinfo.pinmangler.far.etternavnvedfoedsel"
+        },
+        "familyName" : "$bruker.personinfo.etternavn",
+        "dateBirth" : "$bruker.personinfo.foedselsdato",
+        "familyNameAtBirth" : "$bruker.personinfo.pinmangler.etternavnvedfoedsel",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$bruker.personinfo.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionName" : "$bruker.personinfo.pin[x].institusjonsnavn",
+              "institutionID" : "$bruker.personinfo.pin[x].institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$bruker.personinfo.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$bruker.personinfo.pin[x].identifikator"
+          } ]
+        },
+        "forename" : "$bruker.personinfo.fornavn",
+        "sex" : {
+          "value" : [ "$bruker.personinfo.kjoenn" ]
+        }
+      },
+      "AddressesPerson" : {
+        "AddressPerson" : [ {
+          "Address" : {
+            "buildingName" : "$bruker.personinfo.adresser[x].bygning",
+            "country" : {
+              "value" : [ "$bruker.personinfo.adresser[x].land" ]
+            },
+            "street" : "$bruker.personinfo.adresser[x].gate",
+            "region" : "$bruker.personinfo.adresser[x].region",
+            "town" : "$bruker.personinfo.adresser[x].by",
+            "postalCode" : "$bruker.personinfo.adresser[x].postnummer"
+          },
+          "typeAddress" : {
+            "value" : [ "$bruker.personinfo.adresser[x].type" ]
+          }
+        } ]
+      },
+      "AdditionalInformationAboutNationality" : {
+        "Nationalities" : [ {
+          "nationality" : {
+            "value" : [ "$bruker.personinfo.statsborgerskap[x].land" ]
+          },
+          "since" : "$bruker.personinfo.statsborgerskap[x].siden"
+        } ]
+      },
+      "ContactDetails" : {
+        "TelephoneNumbers" : {
+          "TelephoneNumber" : [ {
+            "type" : {
+              "value" : [ "$bruker.personinfo.telefoner[x].type" ]
+            },
+            "number" : "$bruker.personinfo.telefoner[x].nummer"
+          } ]
+        },
+        "EmailAddresses" : {
+          "EmailAddress" : [ {
+            "email" : "$bruker.personinfo.epostadresser[x]"
+          } ]
+        }
+      }
+    },
+    "AttendanceAtSchoolCollegeTrainingUnemployed" : {
+      "SpecifyDetailsAttendance" : {
+        "additionalRequestInformation" : "$familie.anmodningommerinformasjon.utdanning.ytterligereinformasjon",
+        "typeAttendance" : {
+          "value" : [ "$familie.anmodningommerinformasjon.utdanning.typedeltakelse" ]
+        },
+        "ActualAttendance" : {
+          "numberHours" : "$familie.anmodningommerinformasjon.utdanning.timer",
+          "hoursPer" : {
+            "value" : [ "$familie.anmodningommerinformasjon.utdanning.timerpr" ]
+          }
+        }
+      },
+      "isTheChildAttending" : {
+        "value" : [ "$familie.anmodningommerinformasjon.utdanning.type" ]
+      }
+    },
+    "OtherInformationRelatedChild" : {
+      "requestedInformation" : {
+        "value" : [ "$familie.anmodningommerinformasjon.anneninformasjonbarnet.etterspurtinformasjon.type[x]" ]
+      },
+      "additionalRequestInformation" : "$familie.anmodningommerinformasjon.anneninformasjonbarnet.ytterligereinformasjon"
+    },
+    "Income" : {
+      "additionalRequestInformation" : "$familie.anmodningommerinformasjon.inntekt.ytterligereinformasjon",
+      "requestedInformation" : {
+        "value" : [ "$familie.anmodningommerinformasjon.inntekt.etterspurtinformasjon.type[x]" ]
+      }
+    },
+    "InCaseAdoption" : {
+      "additionalRequestInformation" : "$familie.anmodningommerinformasjon.adopsjon.ytterligereinformasjon",
+      "requestedInformation" : {
+        "value" : [ "$familie.anmodningommerinformasjon.adopsjon.etterspurtinformasjon.type[x]" ]
+      }
+    },
+    "OrphansBenefits" : {
+      "requestedInformation" : {
+        "value" : [ "$familie.anmodningommerinformasjon.ytelsetilforeldreloese.etterspurtinformasjon.type[x]" ]
+      },
+      "additionalRequestInformation" : "$familie.anmodningommerinformasjon.ytelsetilforeldreloese.ytterligereinformasjon"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

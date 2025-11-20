@@ -1,0 +1,22 @@
+package eux.acl.generator.modell;
+
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class EuSedFundament {
+
+    private String ledetekst;
+    private String verdiType;
+    private String cdmType;
+    private String indeks;
+    private String enumNavn;
+    private String enumNavnId;
+    private String tekstlengde;
+}

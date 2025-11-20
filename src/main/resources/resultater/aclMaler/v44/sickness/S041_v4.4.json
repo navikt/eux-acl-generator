@@ -1,0 +1,109 @@
+{
+  "S041" : {
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
+          } ]
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel"
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "ReplyRequestForPeriods" : {
+      "ResidencePeriods" : {
+        "ResidencePeriod" : [ {
+          "endDate" : "$sykdom.bruker.bosted.periode[x].sluttdato",
+          "startDate" : "$sykdom.bruker.bosted.periode[x].startdato"
+        } ]
+      },
+      "SelfEmploymentPeriods" : {
+        "SelfEmploymentPeriod" : [ {
+          "startDate" : "$sykdom.selvstendig.arbeidsgiver.periode[x].startdato",
+          "endDate" : "$sykdom.selvstendig.arbeidsgiver.periode[x].sluttdato"
+        } ]
+      },
+      "EmploymentPeriods" : {
+        "EmploymentPeriod" : [ {
+          "startDate" : "$sykdom.arbeidsgiver.periode[x].startdato",
+          "endDate" : "$sykdom.arbeidsgiver.periode[x].sluttdato"
+        } ]
+      },
+      "InsurancePeriods" : {
+        "InsurancePeriod" : [ {
+          "Period" : {
+            "OpenPeriod" : {
+              "typeOpenPeriod" : {
+                "value" : [ "$sykdom.bruker.medlemskap.periode[x].aapenperiode.type" ]
+              },
+              "startDate" : "$sykdom.bruker.medlemskap.periode[x].aapenperiode.startdato"
+            },
+            "FixedPeriod" : {
+              "startDate" : "$sykdom.bruker.medlemskap.periode[x].fastperiode.startdato",
+              "endDate" : "$sykdom.bruker.medlemskap.periode[x].fastperiode.sluttdato"
+            }
+          },
+          "insurance" : {
+            "value" : [ "$sykdom.bruker.medlemskap.periode[x].forsikring.type" ]
+          }
+        } ]
+      }
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "Reply" : {
+      "inReplyS040" : {
+        "value" : [ "$sykdom.forespoerselomperioder.svar.type" ]
+      }
+    },
+    "PersonAddress" : {
+      "Address" : {
+        "town" : "$nav.bruker.bostedsadresse.by",
+        "region" : "$nav.bruker.bostedsadresse.region",
+        "buildingName" : "$nav.bruker.bostedsadresse.bygning",
+        "country" : {
+          "value" : [ "$nav.bruker.bostedsadresse.land" ]
+        },
+        "postalCode" : "$nav.bruker.bostedsadresse.postnummer",
+        "street" : "$nav.bruker.bostedsadresse.gate"
+      },
+      "residenceInThisCountrySince" : "$nav.bruker.botidilandet.startdato"
+    }
+  }
+}
