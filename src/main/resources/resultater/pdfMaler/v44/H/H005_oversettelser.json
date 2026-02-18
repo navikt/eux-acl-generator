@@ -1,0 +1,360 @@
+{
+  "H005.Person" : {
+    "index" : "1.",
+    "prompt" : "Person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.Person.PersonIdentification" : {
+    "index" : "1.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.Person.PersonIdentification.familyName" : {
+    "index" : "1.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.forename" : {
+    "index" : "1.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.dateBirth" : {
+    "index" : "1.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "H005.Person.PersonIdentification.sex" : {
+    "index" : "1.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "H005.Person.PersonIdentification.familyNameAtBirth" : {
+    "index" : "1.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.forenameAtBirth" : {
+    "index" : "1.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "1.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "1.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "1.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "1.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "1.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "1.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "1.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "1.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "1.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "1.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "1.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "1.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "1.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "1.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "1.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "1.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "1.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.Person.AdditionalInformationPerson" : {
+    "index" : "1.2.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.Person.AdditionalInformationPerson.nationality" : {
+    "index" : "1.2.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
+  },
+  "H005.RequestForInformation" : {
+    "index" : "2.",
+    "prompt" : "Anmodning om informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.RequestForInformation.detailsRequest" : {
+    "index" : "2.1.",
+    "prompt" : "Informasjon om anmodningen",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "H005.ElementsDetermineResidence" : {
+    "index" : "3.",
+    "prompt" : "Informasjon for å fastslå bosted",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0]" : {
+    "index" : "3.1",
+    "prompt" : "Adresser",
+    "valuetype" : "_rinaArray"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].typeAddress" : {
+    "index" : "3.1.1.",
+    "prompt" : "Type adresse",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Bostedsland",
+      "02" : "Oppholdsland",
+      "03" : "Personens kontaktadresse"
+    },
+    "enumName" : "EESSIAddressType"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].Address" : {
+    "index" : "3.1.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].Address.street" : {
+    "index" : "3.1.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].Address.buildingName" : {
+    "index" : "3.1.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].Address.town" : {
+    "index" : "3.1.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].Address.postalCode" : {
+    "index" : "3.1.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].Address.region" : {
+    "index" : "3.1.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].Address.country" : {
+    "index" : "3.1.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].durationPresence" : {
+    "index" : "3.1.3.",
+    "prompt" : "Oppholdets varighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.Addresses[0].continuityPresence" : {
+    "index" : "3.1.4.",
+    "prompt" : "Varighet på uavbrutt opphold",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.statusPerson" : {
+    "index" : "3.2.",
+    "prompt" : "Personens status",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Ansatt",
+      "02" : "Selvstendig næringsdrivende",
+      "03" : "Grensearbeider",
+      "04" : "Pensjonist",
+      "05" : "Person som krever pensjon",
+      "06" : "Arbeidsledig",
+      "07" : "Familiemedlem/forsørget",
+      "08" : "Student",
+      "99" : "Annet"
+    },
+    "enumName" : "PersonStatusPlusOtherType"
+  },
+  "H005.ElementsDetermineResidence.PleaseFillInIfStatusPersonOther" : {
+    "index" : "3.3.",
+    "prompt" : "Fyll ut hvis «Personens status» = «Annet»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.ElementsDetermineResidence.PleaseFillInIfStatusPersonOther.other" : {
+    "index" : "3.3.1.",
+    "prompt" : "Annet",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "H005.ElementsDetermineResidence.DescriptionNatureSpecificCharacteristicsActivity[0]" : {
+    "index" : "3.4",
+    "prompt" : "Beskrivelse av aktivitetens art og spesifikke karakteristikk",
+    "valuetype" : "_rinaArray"
+  },
+  "H005.ElementsDetermineResidence.DescriptionNatureSpecificCharacteristicsActivity[0].typeActivity" : {
+    "index" : "3.4.1.",
+    "prompt" : "Type aktivitet",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Inntektsgivende virksomhet",
+      "02" : "Ikke inntektsgivende virksomhet"
+    },
+    "enumName" : "HGainfulNonGainfulActivityType"
+  },
+  "H005.ElementsDetermineResidence.DescriptionNatureSpecificCharacteristicsActivity[0].descriptionActivity" : {
+    "index" : "3.4.2.",
+    "prompt" : "Beskrivelse av aktivitet",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.DescriptionNatureSpecificCharacteristicsActivity[0].locationActivity" : {
+    "index" : "3.4.3.",
+    "prompt" : "Aktivitetens sted",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.DescriptionNatureSpecificCharacteristicsActivity[0].durationActivity" : {
+    "index" : "3.4.4.",
+    "prompt" : "Aktivitetens varighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.DescriptionNatureSpecificCharacteristicsActivity[0].natureActivity" : {
+    "index" : "3.4.5.",
+    "prompt" : "Aktivitetens art",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "H005.ElementsDetermineResidence.sourceIncomeStudents" : {
+    "index" : "3.5.",
+    "prompt" : "Inntektskilde (studenter)",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.housingSituationInParticularHowPermanentItIs" : {
+    "index" : "3.6.",
+    "prompt" : "Bosituasjon, spesielt hvor permanent er den",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.residenceForTaxPurposes" : {
+    "index" : "3.7.",
+    "prompt" : "Permanent opphold av skattemessige årsaker",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.FamilyStatus" : {
+    "index" : "3.8.",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.ElementsDetermineResidence.FamilyStatus.familyMemberSpouse" : {
+    "index" : "3.8.1.",
+    "prompt" : "Familiemedlem - ektefelle",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.FamilyStatus.placeResidenceSpouse" : {
+    "index" : "3.8.2.",
+    "prompt" : "Bosted - ektefelle",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "H005.ElementsDetermineResidence.FamilyStatus.familyMemberChildren" : {
+    "index" : "3.8.3.",
+    "prompt" : "Familiemedlem - barn",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.ElementsDetermineResidence.FamilyStatus.placeResidenceChildren" : {
+    "index" : "3.8.4.",
+    "prompt" : "Bosted - barn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "H005.ElementsDetermineResidence.FamilyStatus.placeSchoolChildren" : {
+    "index" : "3.8.5.",
+    "prompt" : "Skolekrets - barn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "H005.ElementsDetermineResidence.intentionPersonConcernedReasonsMove" : {
+    "index" : "3.9.",
+    "prompt" : "Hensikten til berørte personen/grunn til å flytte",
+    "valuetype" : "_uxTextInput"
+  },
+  "H005.AdditionalInformation" : {
+    "index" : "4.",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "H005.AdditionalInformation.additionalInformation" : {
+    "index" : "4.1.",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "H005.sedTitle" : {
+    "index" : "H005",
+    "prompt" : "H005 - Anmodning om informasjon om bosted",
+    "valuetype" : "_rinaRoot"
+  }
+}

@@ -232,17 +232,17 @@
         "dateBirth" : "$bruker.personinfo.foedselsdato",
         "familyNameAtBirth" : "$bruker.personinfo.pinmangler.etternavnvedfoedsel"
       },
-      "AddressPerson" : {
+      "AddressesPerson" : {
         "AddressPerson" : [ {
           "Address" : {
-            "town" : "$bruker.personinfo.adresser[x].by",
-            "buildingName" : "$bruker.personinfo.adresser[x].bygning",
-            "street" : "$bruker.personinfo.adresser[x].gate",
-            "postalCode" : "$bruker.personinfo.adresser[x].postnummer",
             "region" : "$bruker.personinfo.adresser[x].region",
+            "town" : "$bruker.personinfo.adresser[x].by",
+            "street" : "$bruker.personinfo.adresser[x].gate",
             "country" : {
               "value" : [ "$bruker.personinfo.adresser[x].land" ]
-            }
+            },
+            "postalCode" : "$bruker.personinfo.adresser[x].postnummer",
+            "buildingName" : "$bruker.personinfo.adresser[x].bygning"
           },
           "typeAddress" : {
             "value" : [ "$bruker.personinfo.adresser[x].type" ]

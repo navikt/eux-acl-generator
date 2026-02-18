@@ -9,8 +9,6 @@ import static eux.acl.generator.modell.SedTyper.*;
 import static eux.acl.generator.service.FilService.*;
 
 public class FundamentTest {
-
-
     /**
      * Sammenlikner CDM og ACL versjoner
      * <p>
@@ -18,9 +16,7 @@ public class FundamentTest {
      * det som kun fins i v4.2 skrives til ei anna fil, og det som kun fins i v4.3 til ei tredje fil.
      * Filene som inneholder justeringer som er manuellt lagt inn ( ..adjustments.json) blir ikke overskrevet.
      * De genereres kun når disse filene ikke finnes fra tidligere.
-     */
 
-    /**
      * Trekker ut enum-er fra cdm-meta-filer og lager ei fil pr unike enum med info som seinere kan brukes til å
      * generere kodeverksfiler.
      */
@@ -28,7 +24,7 @@ public class FundamentTest {
     @Test
     public void lager_EttEuSedFundament_v44() {
         FundamentFacade aclMalFacade = new FundamentFacade();
-        aclMalFacade.trekkUtEuSedFundamentOgSkrivTilFil(List.of("U004"), V44);
+        aclMalFacade.trekkUtEuSedFundamentOgSkrivTilFil(List.of("A001"), V44);
     }
 
     @Test

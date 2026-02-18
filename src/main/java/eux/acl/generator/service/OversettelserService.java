@@ -1,7 +1,5 @@
 package eux.acl.generator.service;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -15,6 +13,7 @@ public class OversettelserService {
         oversatteLinjer.forEach(linje -> {
                     if (linje.contains("\"" + cdmVersjon)
                             && (linje.contains("_label\":") || linje.contains("_codeListEntry\":"))) {
+                        linje = linje.replace("\\\"", "'");
                         String[] tekstId_tekst = linje.split("\":");
                         String[] versjonTekstIdType = tekstId_tekst[0].split("_");
                         String tekstId = versjonTekstIdType[1].toLowerCase() + "_" + versjonTekstIdType[2];
