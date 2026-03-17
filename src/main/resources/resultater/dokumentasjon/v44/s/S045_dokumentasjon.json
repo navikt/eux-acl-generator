@@ -1,0 +1,4416 @@
+{
+  "S045.sedTitle": {
+    "indeks": "S045",
+    "ledetekst": "Dokumenter om rett til ytelser - midlertidig opphold",
+    "verdiType": "tittel",
+    "cdmType": "_rinaRoot",
+    "required": false
+  },
+  "S045.Person": {
+    "indeks": "1.",
+    "ledetekst": "Person",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "S045.Person.PersonIdentification": {
+    "indeks": "1.1.",
+    "ledetekst": "Personnummer",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "S045.Person.PersonIdentification.familyName": {
+    "aclSedSti": "$nav.bruker.person.etternavn",
+    "indeks": "1.1.1.",
+    "ledetekst": "Etternavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.forename": {
+    "aclSedSti": "$nav.bruker.person.fornavn",
+    "indeks": "1.1.2.",
+    "ledetekst": "Fornavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.dateBirth": {
+    "aclSedSti": "$nav.bruker.person.foedselsdato",
+    "indeks": "1.1.3.",
+    "ledetekst": "Fødselsdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "S045.Person.PersonIdentification.sex.value[0]": {
+    "aclSedSti": "$nav.bruker.person.kjoenn",
+    "indeks": "1.1.4.",
+    "ledetekst": "Kjønn",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "EESSISexType",
+    "kodefil": "kjoennkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Mann",
+        "enumkode": "M"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Kvinne",
+        "enumkode": "K"
+      },
+      {
+        "enumkodeId": "98",
+        "enumkodeBeskrivelse": "Ukjent",
+        "enumkode": "U"
+      }
+    ]
+  },
+  "S045.Person.PersonIdentification.familyNameAtBirth": {
+    "aclSedSti": "$nav.bruker.person.etternavnvedfoedsel",
+    "indeks": "1.1.5.",
+    "ledetekst": "Etternavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.forenameAtBirth": {
+    "aclSedSti": "$nav.bruker.person.fornavnvedfoedsel",
+    "indeks": "1.1.6.",
+    "ledetekst": "Fornavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution": {
+    "indeks": "1.1.7.",
+    "ledetekst": "PIN for personen i hver enkelt institusjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]": {
+    "indeks": "1.1.7.1",
+    "ledetekst": "Personnummer/-numre",
+    "verdiType": "tittel",
+    "cdmType": "_rinaArray",
+    "required": false
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]": {
+    "aclSedSti": "$nav.bruker.person.pin[x].land",
+    "indeks": "1.1.7.1.1.",
+    "ledetekst": "Land",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIEUEFTACountryType",
+    "kodefil": "landkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "AT",
+        "enumkodeBeskrivelse": "Østerrike",
+        "enumkode": "AT"
+      },
+      {
+        "enumkodeId": "BE",
+        "enumkodeBeskrivelse": "Belgia",
+        "enumkode": "BE"
+      },
+      {
+        "enumkodeId": "BG",
+        "enumkodeBeskrivelse": "Bulgaria",
+        "enumkode": "BG"
+      },
+      {
+        "enumkodeId": "HR",
+        "enumkodeBeskrivelse": "Kroatia",
+        "enumkode": "HR"
+      },
+      {
+        "enumkodeId": "CY",
+        "enumkodeBeskrivelse": "Kypros",
+        "enumkode": "CY"
+      },
+      {
+        "enumkodeId": "CZ",
+        "enumkodeBeskrivelse": "Tsjekkia",
+        "enumkode": "CZ"
+      },
+      {
+        "enumkodeId": "DK",
+        "enumkodeBeskrivelse": "Danmark",
+        "enumkode": "DK"
+      },
+      {
+        "enumkodeId": "EE",
+        "enumkodeBeskrivelse": "Estland",
+        "enumkode": "EE"
+      },
+      {
+        "enumkodeId": "FI",
+        "enumkodeBeskrivelse": "Finland",
+        "enumkode": "FI"
+      },
+      {
+        "enumkodeId": "FR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FR"
+      },
+      {
+        "enumkodeId": "DE",
+        "enumkodeBeskrivelse": "Tyskland",
+        "enumkode": "DE"
+      },
+      {
+        "enumkodeId": "EL",
+        "enumkodeBeskrivelse": "Hellas",
+        "enumkode": "GR"
+      },
+      {
+        "enumkodeId": "HU",
+        "enumkodeBeskrivelse": "Ungarn",
+        "enumkode": "HU"
+      },
+      {
+        "enumkodeId": "IS",
+        "enumkodeBeskrivelse": "Island",
+        "enumkode": "IS"
+      },
+      {
+        "enumkodeId": "IE",
+        "enumkodeBeskrivelse": "Irland",
+        "enumkode": "IE"
+      },
+      {
+        "enumkodeId": "IT",
+        "enumkodeBeskrivelse": "Italia",
+        "enumkode": "IT"
+      },
+      {
+        "enumkodeId": "LV",
+        "enumkodeBeskrivelse": "Latvia",
+        "enumkode": "LV"
+      },
+      {
+        "enumkodeId": "LI",
+        "enumkodeBeskrivelse": "Liechtenstein",
+        "enumkode": "LI"
+      },
+      {
+        "enumkodeId": "LT",
+        "enumkodeBeskrivelse": "Litauen",
+        "enumkode": "LT"
+      },
+      {
+        "enumkodeId": "LU",
+        "enumkodeBeskrivelse": "Luxembourg",
+        "enumkode": "LU"
+      },
+      {
+        "enumkodeId": "MT",
+        "enumkodeBeskrivelse": "Malta",
+        "enumkode": "MT"
+      },
+      {
+        "enumkodeId": "NL",
+        "enumkodeBeskrivelse": "Nederland",
+        "enumkode": "NL"
+      },
+      {
+        "enumkodeId": "NO",
+        "enumkodeBeskrivelse": "Norge",
+        "enumkode": "NO"
+      },
+      {
+        "enumkodeId": "PL",
+        "enumkodeBeskrivelse": "Polen",
+        "enumkode": "PL"
+      },
+      {
+        "enumkodeId": "PT",
+        "enumkodeBeskrivelse": "Portugal",
+        "enumkode": "PT"
+      },
+      {
+        "enumkodeId": "RO",
+        "enumkodeBeskrivelse": "Romania",
+        "enumkode": "RO"
+      },
+      {
+        "enumkodeId": "SK",
+        "enumkodeBeskrivelse": "Slovakia",
+        "enumkode": "SK"
+      },
+      {
+        "enumkodeId": "SI",
+        "enumkodeBeskrivelse": "Slovenia",
+        "enumkode": "SI"
+      },
+      {
+        "enumkodeId": "ES",
+        "enumkodeBeskrivelse": "Spania",
+        "enumkode": "ES"
+      },
+      {
+        "enumkodeId": "SE",
+        "enumkodeBeskrivelse": "Sverige",
+        "enumkode": "SE"
+      },
+      {
+        "enumkodeId": "CH",
+        "enumkodeBeskrivelse": "Sveits",
+        "enumkode": "CH"
+      },
+      {
+        "enumkodeId": "UK",
+        "enumkodeBeskrivelse": "Storbritannia",
+        "enumkode": "GB"
+      }
+    ]
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber": {
+    "aclSedSti": "$nav.bruker.person.pin[x].identifikator",
+    "indeks": "1.1.7.1.2.",
+    "ledetekst": "Personnummer (PIN)",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]": {
+    "aclSedSti": "$nav.bruker.person.pin[x].sektor",
+    "indeks": "1.1.7.1.3.",
+    "ledetekst": "Sektor",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": false,
+    "enumNavn": "EESSISectorsType",
+    "kodefil": "sektorkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Yrkesskade og yrkessykdom",
+        "enumkode": "yrkesskade_og_yrkessykdom"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Familieytelser",
+        "enumkode": "familieytelser"
+      },
+      {
+        "enumkodeId": "03",
+        "enumkodeBeskrivelse": "Alle",
+        "enumkode": "alle"
+      },
+      {
+        "enumkodeId": "04",
+        "enumkodeBeskrivelse": "Pensjoner",
+        "enumkode": "pensjoner"
+      },
+      {
+        "enumkodeId": "05",
+        "enumkodeBeskrivelse": "Tilbakekreving",
+        "enumkode": "tIlbakekreving"
+      },
+      {
+        "enumkodeId": "06",
+        "enumkodeBeskrivelse": "Sykdom",
+        "enumkode": "sykdom"
+      },
+      {
+        "enumkodeId": "07",
+        "enumkodeBeskrivelse": "Dagpenger",
+        "enumkode": "dagpenger"
+      }
+    ]
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution": {
+    "indeks": "1.1.7.1.4.",
+    "ledetekst": "Institusjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID": {
+    "aclSedSti": "$nav.bruker.person.pin[x].institusjonsid",
+    "indeks": "1.1.7.1.4.1.",
+    "ledetekst": "Institusjonens ID",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "S045.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName": {
+    "aclSedSti": "$nav.bruker.person.pin[x].institusjonsnavn",
+    "indeks": "1.1.7.1.4.2.",
+    "ledetekst": "Institusjonens navn",
+    "verdiType": "tekst",
+    "cdmType": "_rinaIRAutocomplete",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide": {
+    "indeks": "1.1.8.",
+    "ledetekst": "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth": {
+    "indeks": "1.1.8.1.",
+    "ledetekst": "Fødested",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town": {
+    "aclSedSti": "$nav.bruker.person.foedested.by",
+    "indeks": "1.1.8.1.1.",
+    "ledetekst": "By",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region": {
+    "aclSedSti": "$nav.bruker.person.foedested.region",
+    "indeks": "1.1.8.1.2.",
+    "ledetekst": "Region",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "65"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]": {
+    "aclSedSti": "$nav.bruker.person.foedested.land",
+    "indeks": "1.1.8.1.3.",
+    "ledetekst": "Land",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIWorldCountryHistoricType",
+    "kodefil": "landkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "AT",
+        "enumkodeBeskrivelse": "Østerrike",
+        "enumkode": "AT"
+      },
+      {
+        "enumkodeId": "BE",
+        "enumkodeBeskrivelse": "Belgia",
+        "enumkode": "BE"
+      },
+      {
+        "enumkodeId": "BG",
+        "enumkodeBeskrivelse": "Bulgaria",
+        "enumkode": "BG"
+      },
+      {
+        "enumkodeId": "HR",
+        "enumkodeBeskrivelse": "Kroatia",
+        "enumkode": "HR"
+      },
+      {
+        "enumkodeId": "CY",
+        "enumkodeBeskrivelse": "Kypros",
+        "enumkode": "CY"
+      },
+      {
+        "enumkodeId": "CZ",
+        "enumkodeBeskrivelse": "Tsjekkia",
+        "enumkode": "CZ"
+      },
+      {
+        "enumkodeId": "DK",
+        "enumkodeBeskrivelse": "Danmark",
+        "enumkode": "DK"
+      },
+      {
+        "enumkodeId": "EE",
+        "enumkodeBeskrivelse": "Estland",
+        "enumkode": "EE"
+      },
+      {
+        "enumkodeId": "FI",
+        "enumkodeBeskrivelse": "Finland",
+        "enumkode": "FI"
+      },
+      {
+        "enumkodeId": "FR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FR"
+      },
+      {
+        "enumkodeId": "DE",
+        "enumkodeBeskrivelse": "Tyskland",
+        "enumkode": "DE"
+      },
+      {
+        "enumkodeId": "EL",
+        "enumkodeBeskrivelse": "Hellas",
+        "enumkode": "GR"
+      },
+      {
+        "enumkodeId": "HU",
+        "enumkodeBeskrivelse": "Ungarn",
+        "enumkode": "HU"
+      },
+      {
+        "enumkodeId": "IS",
+        "enumkodeBeskrivelse": "Island",
+        "enumkode": "IS"
+      },
+      {
+        "enumkodeId": "IE",
+        "enumkodeBeskrivelse": "Irland",
+        "enumkode": "IE"
+      },
+      {
+        "enumkodeId": "IT",
+        "enumkodeBeskrivelse": "Italia",
+        "enumkode": "IT"
+      },
+      {
+        "enumkodeId": "LV",
+        "enumkodeBeskrivelse": "Latvia",
+        "enumkode": "LV"
+      },
+      {
+        "enumkodeId": "LI",
+        "enumkodeBeskrivelse": "Liechtenstein",
+        "enumkode": "LI"
+      },
+      {
+        "enumkodeId": "LT",
+        "enumkodeBeskrivelse": "Litauen",
+        "enumkode": "LT"
+      },
+      {
+        "enumkodeId": "LU",
+        "enumkodeBeskrivelse": "Luxembourg",
+        "enumkode": "LU"
+      },
+      {
+        "enumkodeId": "MT",
+        "enumkodeBeskrivelse": "Malta",
+        "enumkode": "MT"
+      },
+      {
+        "enumkodeId": "NL",
+        "enumkodeBeskrivelse": "Nederland",
+        "enumkode": "NL"
+      },
+      {
+        "enumkodeId": "NO",
+        "enumkodeBeskrivelse": "Norge",
+        "enumkode": "NO"
+      },
+      {
+        "enumkodeId": "PL",
+        "enumkodeBeskrivelse": "Polen",
+        "enumkode": "PL"
+      },
+      {
+        "enumkodeId": "PT",
+        "enumkodeBeskrivelse": "Portugal",
+        "enumkode": "PT"
+      },
+      {
+        "enumkodeId": "RO",
+        "enumkodeBeskrivelse": "Romania",
+        "enumkode": "RO"
+      },
+      {
+        "enumkodeId": "SK",
+        "enumkodeBeskrivelse": "Slovakia",
+        "enumkode": "SK"
+      },
+      {
+        "enumkodeId": "SI",
+        "enumkodeBeskrivelse": "Slovenia",
+        "enumkode": "SI"
+      },
+      {
+        "enumkodeId": "ES",
+        "enumkodeBeskrivelse": "Spania",
+        "enumkode": "ES"
+      },
+      {
+        "enumkodeId": "SE",
+        "enumkodeBeskrivelse": "Sverige",
+        "enumkode": "SE"
+      },
+      {
+        "enumkodeId": "CH",
+        "enumkodeBeskrivelse": "Sveits",
+        "enumkode": "CH"
+      },
+      {
+        "enumkodeId": "UK",
+        "enumkodeBeskrivelse": "Storbritannia",
+        "enumkode": "GB"
+      },
+      {
+        "enumkodeId": "AF",
+        "enumkodeBeskrivelse": "Afghanistan",
+        "enumkode": "AF"
+      },
+      {
+        "enumkodeId": "AX",
+        "enumkodeBeskrivelse": "Åland",
+        "enumkode": "AX"
+      },
+      {
+        "enumkodeId": "AL",
+        "enumkodeBeskrivelse": "Albania",
+        "enumkode": "AL"
+      },
+      {
+        "enumkodeId": "DZ",
+        "enumkodeBeskrivelse": "Algerie",
+        "enumkode": "DZ"
+      },
+      {
+        "enumkodeId": "AS",
+        "enumkodeBeskrivelse": "Amerikansk Samoa",
+        "enumkode": "AS"
+      },
+      {
+        "enumkodeId": "AD",
+        "enumkodeBeskrivelse": "Andorra",
+        "enumkode": "AD"
+      },
+      {
+        "enumkodeId": "AO",
+        "enumkodeBeskrivelse": "Angola",
+        "enumkode": "AO"
+      },
+      {
+        "enumkodeId": "AI",
+        "enumkodeBeskrivelse": "Anguilla",
+        "enumkode": "AI"
+      },
+      {
+        "enumkodeId": "AQ",
+        "enumkodeBeskrivelse": "Antarktis",
+        "enumkode": "AQ"
+      },
+      {
+        "enumkodeId": "AG",
+        "enumkodeBeskrivelse": "Antigua og Barbuda",
+        "enumkode": "AG"
+      },
+      {
+        "enumkodeId": "AR",
+        "enumkodeBeskrivelse": "Argentina",
+        "enumkode": "AR"
+      },
+      {
+        "enumkodeId": "AM",
+        "enumkodeBeskrivelse": "Armenia",
+        "enumkode": "AM"
+      },
+      {
+        "enumkodeId": "AW",
+        "enumkodeBeskrivelse": "Aruba",
+        "enumkode": "AW"
+      },
+      {
+        "enumkodeId": "AU",
+        "enumkodeBeskrivelse": "Australia",
+        "enumkode": "AU"
+      },
+      {
+        "enumkodeId": "AZ",
+        "enumkodeBeskrivelse": "Aserbajdsjan",
+        "enumkode": "AZ"
+      },
+      {
+        "enumkodeId": "BS",
+        "enumkodeBeskrivelse": "Bahamas",
+        "enumkode": "BS"
+      },
+      {
+        "enumkodeId": "BH",
+        "enumkodeBeskrivelse": "Bahrain",
+        "enumkode": "BH"
+      },
+      {
+        "enumkodeId": "BD",
+        "enumkodeBeskrivelse": "Bangladesh",
+        "enumkode": "BD"
+      },
+      {
+        "enumkodeId": "BB",
+        "enumkodeBeskrivelse": "Barbados",
+        "enumkode": "BB"
+      },
+      {
+        "enumkodeId": "BY",
+        "enumkodeBeskrivelse": "Hviterussland",
+        "enumkode": "BY"
+      },
+      {
+        "enumkodeId": "BZ",
+        "enumkodeBeskrivelse": "Belize",
+        "enumkode": "BZ"
+      },
+      {
+        "enumkodeId": "BJ",
+        "enumkodeBeskrivelse": "Benin",
+        "enumkode": "BJ"
+      },
+      {
+        "enumkodeId": "BM",
+        "enumkodeBeskrivelse": "Bermuda",
+        "enumkode": "BM"
+      },
+      {
+        "enumkodeId": "BT",
+        "enumkodeBeskrivelse": "Bhutan",
+        "enumkode": "BT"
+      },
+      {
+        "enumkodeId": "BO",
+        "enumkodeBeskrivelse": "Republikken Bolivia",
+        "enumkode": "BO"
+      },
+      {
+        "enumkodeId": "BQ",
+        "enumkodeBeskrivelse": "Bonaire, Saint Eustatius og Saba",
+        "enumkode": "BQ"
+      },
+      {
+        "enumkodeId": "BA",
+        "enumkodeBeskrivelse": "Bosnia-Hercegovina",
+        "enumkode": "BA"
+      },
+      {
+        "enumkodeId": "BW",
+        "enumkodeBeskrivelse": "Botswana",
+        "enumkode": "BW"
+      },
+      {
+        "enumkodeId": "BV",
+        "enumkodeBeskrivelse": "Bouvetøya",
+        "enumkode": "BV"
+      },
+      {
+        "enumkodeId": "BR",
+        "enumkodeBeskrivelse": "Brasil",
+        "enumkode": "BR"
+      },
+      {
+        "enumkodeId": "IO",
+        "enumkodeBeskrivelse": "Det britiske territoriet i Indiahavet",
+        "enumkode": "IO"
+      },
+      {
+        "enumkodeId": "BN",
+        "enumkodeBeskrivelse": "Brunei Darussalam",
+        "enumkode": "BN"
+      },
+      {
+        "enumkodeId": "BF",
+        "enumkodeBeskrivelse": "Burkina Faso",
+        "enumkode": "BF"
+      },
+      {
+        "enumkodeId": "BI",
+        "enumkodeBeskrivelse": "Burundi",
+        "enumkode": "BI"
+      },
+      {
+        "enumkodeId": "CV",
+        "enumkodeBeskrivelse": "Kapp Verde",
+        "enumkode": "CV"
+      },
+      {
+        "enumkodeId": "KH",
+        "enumkodeBeskrivelse": "Kambodsja",
+        "enumkode": "KH"
+      },
+      {
+        "enumkodeId": "CM",
+        "enumkodeBeskrivelse": "Kamerun",
+        "enumkode": "CM"
+      },
+      {
+        "enumkodeId": "CA",
+        "enumkodeBeskrivelse": "Canada",
+        "enumkode": "CA"
+      },
+      {
+        "enumkodeId": "KY",
+        "enumkodeBeskrivelse": "Caymanøyene",
+        "enumkode": "KY"
+      },
+      {
+        "enumkodeId": "CF",
+        "enumkodeBeskrivelse": "Den sentralafrikanske republikk",
+        "enumkode": "CF"
+      },
+      {
+        "enumkodeId": "TD",
+        "enumkodeBeskrivelse": "Tsjad",
+        "enumkode": "TD"
+      },
+      {
+        "enumkodeId": "CL",
+        "enumkodeBeskrivelse": "Chile",
+        "enumkode": "CL"
+      },
+      {
+        "enumkodeId": "CN",
+        "enumkodeBeskrivelse": "Kina",
+        "enumkode": "CN"
+      },
+      {
+        "enumkodeId": "CX",
+        "enumkodeBeskrivelse": "Christmasøya",
+        "enumkode": "CX"
+      },
+      {
+        "enumkodeId": "CC",
+        "enumkodeBeskrivelse": "Kokosøyene (Keeling)",
+        "enumkode": "CC"
+      },
+      {
+        "enumkodeId": "CO",
+        "enumkodeBeskrivelse": "Colombia",
+        "enumkode": "CO"
+      },
+      {
+        "enumkodeId": "KM",
+        "enumkodeBeskrivelse": "Komorene",
+        "enumkode": "KM"
+      },
+      {
+        "enumkodeId": "CG",
+        "enumkodeBeskrivelse": "Kongo",
+        "enumkode": "CG"
+      },
+      {
+        "enumkodeId": "CD",
+        "enumkodeBeskrivelse": "Den demokratiske republikken Kongo",
+        "enumkode": "CD"
+      },
+      {
+        "enumkodeId": "CK",
+        "enumkodeBeskrivelse": "Cookøyene",
+        "enumkode": "CK"
+      },
+      {
+        "enumkodeId": "CR",
+        "enumkodeBeskrivelse": "Costa Rica",
+        "enumkode": "CR"
+      },
+      {
+        "enumkodeId": "CI",
+        "enumkodeBeskrivelse": "Elfenbenskysten",
+        "enumkode": "CI"
+      },
+      {
+        "enumkodeId": "CU",
+        "enumkodeBeskrivelse": "Cuba",
+        "enumkode": "CU"
+      },
+      {
+        "enumkodeId": "CW",
+        "enumkodeBeskrivelse": "Curaçao",
+        "enumkode": "CW"
+      },
+      {
+        "enumkodeId": "DJ",
+        "enumkodeBeskrivelse": "Djibouti",
+        "enumkode": "DJ"
+      },
+      {
+        "enumkodeId": "DM",
+        "enumkodeBeskrivelse": "Dominica",
+        "enumkode": "DM"
+      },
+      {
+        "enumkodeId": "DO",
+        "enumkodeBeskrivelse": "Den dominikanske republikk",
+        "enumkode": "DO"
+      },
+      {
+        "enumkodeId": "EC",
+        "enumkodeBeskrivelse": "Ecuador",
+        "enumkode": "EC"
+      },
+      {
+        "enumkodeId": "EG",
+        "enumkodeBeskrivelse": "Egypt",
+        "enumkode": "EG"
+      },
+      {
+        "enumkodeId": "SV",
+        "enumkodeBeskrivelse": "El Salvador",
+        "enumkode": "SV"
+      },
+      {
+        "enumkodeId": "GQ",
+        "enumkodeBeskrivelse": "Ekvatorialguinea",
+        "enumkode": "GQ"
+      },
+      {
+        "enumkodeId": "ER",
+        "enumkodeBeskrivelse": "Eritrea",
+        "enumkode": "ER"
+      },
+      {
+        "enumkodeId": "ET",
+        "enumkodeBeskrivelse": "Etiopia",
+        "enumkode": "ET"
+      },
+      {
+        "enumkodeId": "FK",
+        "enumkodeBeskrivelse": "Falklandsøyene (Malvinas)",
+        "enumkode": "FK"
+      },
+      {
+        "enumkodeId": "FO",
+        "enumkodeBeskrivelse": "Færøyene",
+        "enumkode": "FO"
+      },
+      {
+        "enumkodeId": "FJ",
+        "enumkodeBeskrivelse": "Fiji",
+        "enumkode": "FJ"
+      },
+      {
+        "enumkodeId": "GF",
+        "enumkodeBeskrivelse": "Fransk Guyana",
+        "enumkode": "GF"
+      },
+      {
+        "enumkodeId": "PF",
+        "enumkodeBeskrivelse": "Fransk Polynesia",
+        "enumkode": "PF"
+      },
+      {
+        "enumkodeId": "TF",
+        "enumkodeBeskrivelse": "De franske sørterritorier",
+        "enumkode": "TF"
+      },
+      {
+        "enumkodeId": "GA",
+        "enumkodeBeskrivelse": "Gabon",
+        "enumkode": "GA"
+      },
+      {
+        "enumkodeId": "GM",
+        "enumkodeBeskrivelse": "Gambia",
+        "enumkode": "GM"
+      },
+      {
+        "enumkodeId": "GE",
+        "enumkodeBeskrivelse": "Georgia",
+        "enumkode": "GE"
+      },
+      {
+        "enumkodeId": "GH",
+        "enumkodeBeskrivelse": "Ghana",
+        "enumkode": "GH"
+      },
+      {
+        "enumkodeId": "GI",
+        "enumkodeBeskrivelse": "Gibraltar",
+        "enumkode": "GI"
+      },
+      {
+        "enumkodeId": "GL",
+        "enumkodeBeskrivelse": "Grønland",
+        "enumkode": "GL"
+      },
+      {
+        "enumkodeId": "GD",
+        "enumkodeBeskrivelse": "Grenada",
+        "enumkode": "GD"
+      },
+      {
+        "enumkodeId": "GP",
+        "enumkodeBeskrivelse": "Guadeloupe",
+        "enumkode": "GP"
+      },
+      {
+        "enumkodeId": "GU",
+        "enumkodeBeskrivelse": "Guam",
+        "enumkode": "GU"
+      },
+      {
+        "enumkodeId": "GT",
+        "enumkodeBeskrivelse": "Guatemala",
+        "enumkode": "GT"
+      },
+      {
+        "enumkodeId": "GG",
+        "enumkodeBeskrivelse": "Guernsey",
+        "enumkode": "GG"
+      },
+      {
+        "enumkodeId": "GN",
+        "enumkodeBeskrivelse": "Guinea",
+        "enumkode": "GN"
+      },
+      {
+        "enumkodeId": "GW",
+        "enumkodeBeskrivelse": "Guinea-Bissau",
+        "enumkode": "GW"
+      },
+      {
+        "enumkodeId": "GY",
+        "enumkodeBeskrivelse": "Guyana",
+        "enumkode": "GY"
+      },
+      {
+        "enumkodeId": "HT",
+        "enumkodeBeskrivelse": "Haiti",
+        "enumkode": "HT"
+      },
+      {
+        "enumkodeId": "HM",
+        "enumkodeBeskrivelse": "Heardøyene og Mcdonaldøyene",
+        "enumkode": "HM"
+      },
+      {
+        "enumkodeId": "VA",
+        "enumkodeBeskrivelse": "Den hellige stol",
+        "enumkode": "VA"
+      },
+      {
+        "enumkodeId": "HN",
+        "enumkodeBeskrivelse": "Honduras",
+        "enumkode": "HN"
+      },
+      {
+        "enumkodeId": "HK",
+        "enumkodeBeskrivelse": "Hong Kong",
+        "enumkode": "HK"
+      },
+      {
+        "enumkodeId": "IN",
+        "enumkodeBeskrivelse": "India",
+        "enumkode": "IN"
+      },
+      {
+        "enumkodeId": "ID",
+        "enumkodeBeskrivelse": "Indonesia",
+        "enumkode": "ID"
+      },
+      {
+        "enumkodeId": "IR",
+        "enumkodeBeskrivelse": "Den islamske republikken Iran",
+        "enumkode": "IR"
+      },
+      {
+        "enumkodeId": "IQ",
+        "enumkodeBeskrivelse": "Irak",
+        "enumkode": "IQ"
+      },
+      {
+        "enumkodeId": "IM",
+        "enumkodeBeskrivelse": "Isle of Man",
+        "enumkode": "IM"
+      },
+      {
+        "enumkodeId": "IL",
+        "enumkodeBeskrivelse": "Israel",
+        "enumkode": "IL"
+      },
+      {
+        "enumkodeId": "JM",
+        "enumkodeBeskrivelse": "Jamaica",
+        "enumkode": "JM"
+      },
+      {
+        "enumkodeId": "JP",
+        "enumkodeBeskrivelse": "Japan",
+        "enumkode": "JP"
+      },
+      {
+        "enumkodeId": "JE",
+        "enumkodeBeskrivelse": "Jersey",
+        "enumkode": "JE"
+      },
+      {
+        "enumkodeId": "JO",
+        "enumkodeBeskrivelse": "Jordan",
+        "enumkode": "JO"
+      },
+      {
+        "enumkodeId": "KZ",
+        "enumkodeBeskrivelse": "Kasakhstan",
+        "enumkode": "KZ"
+      },
+      {
+        "enumkodeId": "KE",
+        "enumkodeBeskrivelse": "Kenya",
+        "enumkode": "KE"
+      },
+      {
+        "enumkodeId": "KI",
+        "enumkodeBeskrivelse": "Kiribati",
+        "enumkode": "KI"
+      },
+      {
+        "enumkodeId": "KP",
+        "enumkodeBeskrivelse": "Den demokratiske folkerepublikken Korea",
+        "enumkode": "KP"
+      },
+      {
+        "enumkodeId": "KR",
+        "enumkodeBeskrivelse": "Republikken Korea",
+        "enumkode": "KR"
+      },
+      {
+        "enumkodeId": "XK",
+        "enumkodeBeskrivelse": "Kosovo",
+        "enumkode": "XK"
+      },
+      {
+        "enumkodeId": "KW",
+        "enumkodeBeskrivelse": "Kuwait",
+        "enumkode": "KW"
+      },
+      {
+        "enumkodeId": "KG",
+        "enumkodeBeskrivelse": "Kirgisistan",
+        "enumkode": "KG"
+      },
+      {
+        "enumkodeId": "LA",
+        "enumkodeBeskrivelse": "Laofolkets demokratiske folkerepublikk",
+        "enumkode": "LA"
+      },
+      {
+        "enumkodeId": "LB",
+        "enumkodeBeskrivelse": "Libanon",
+        "enumkode": "LB"
+      },
+      {
+        "enumkodeId": "LS",
+        "enumkodeBeskrivelse": "Lesotho",
+        "enumkode": "LS"
+      },
+      {
+        "enumkodeId": "LR",
+        "enumkodeBeskrivelse": "Liberia",
+        "enumkode": "LR"
+      },
+      {
+        "enumkodeId": "LY",
+        "enumkodeBeskrivelse": "Libya",
+        "enumkode": "LY"
+      },
+      {
+        "enumkodeId": "MO",
+        "enumkodeBeskrivelse": "Macao",
+        "enumkode": "MO"
+      },
+      {
+        "enumkodeId": "MK",
+        "enumkodeBeskrivelse": "Nord-Makedonia",
+        "enumkode": "MK"
+      },
+      {
+        "enumkodeId": "MG",
+        "enumkodeBeskrivelse": "Madagaskar",
+        "enumkode": "MG"
+      },
+      {
+        "enumkodeId": "MW",
+        "enumkodeBeskrivelse": "Malawi",
+        "enumkode": "MW"
+      },
+      {
+        "enumkodeId": "MY",
+        "enumkodeBeskrivelse": "Malaysia",
+        "enumkode": "MY"
+      },
+      {
+        "enumkodeId": "MV",
+        "enumkodeBeskrivelse": "Maldivene",
+        "enumkode": "MV"
+      },
+      {
+        "enumkodeId": "ML",
+        "enumkodeBeskrivelse": "Mali",
+        "enumkode": "ML"
+      },
+      {
+        "enumkodeId": "MH",
+        "enumkodeBeskrivelse": "Marshalløyene",
+        "enumkode": "MH"
+      },
+      {
+        "enumkodeId": "MQ",
+        "enumkodeBeskrivelse": "Martinique",
+        "enumkode": "MQ"
+      },
+      {
+        "enumkodeId": "MR",
+        "enumkodeBeskrivelse": "Mauritania",
+        "enumkode": "MR"
+      },
+      {
+        "enumkodeId": "MU",
+        "enumkodeBeskrivelse": "Mauritius",
+        "enumkode": "MU"
+      },
+      {
+        "enumkodeId": "YT",
+        "enumkodeBeskrivelse": "Mayotte",
+        "enumkode": "YT"
+      },
+      {
+        "enumkodeId": "MX",
+        "enumkodeBeskrivelse": "Mexico",
+        "enumkode": "MX"
+      },
+      {
+        "enumkodeId": "FM",
+        "enumkodeBeskrivelse": "Mikronesiaføderasjonen",
+        "enumkode": "FM"
+      },
+      {
+        "enumkodeId": "MD",
+        "enumkodeBeskrivelse": "Republikken Moldova",
+        "enumkode": "MD"
+      },
+      {
+        "enumkodeId": "MC",
+        "enumkodeBeskrivelse": "Monaco",
+        "enumkode": "MC"
+      },
+      {
+        "enumkodeId": "MN",
+        "enumkodeBeskrivelse": "Mongolia",
+        "enumkode": "MN"
+      },
+      {
+        "enumkodeId": "ME",
+        "enumkodeBeskrivelse": "Montenegro",
+        "enumkode": "ME"
+      },
+      {
+        "enumkodeId": "MS",
+        "enumkodeBeskrivelse": "Montserrat",
+        "enumkode": "MS"
+      },
+      {
+        "enumkodeId": "MA",
+        "enumkodeBeskrivelse": "Marokko",
+        "enumkode": "MA"
+      },
+      {
+        "enumkodeId": "MZ",
+        "enumkodeBeskrivelse": "Mosambik",
+        "enumkode": "MZ"
+      },
+      {
+        "enumkodeId": "MM",
+        "enumkodeBeskrivelse": "Myanmar",
+        "enumkode": "MM"
+      },
+      {
+        "enumkodeId": "NA",
+        "enumkodeBeskrivelse": "Namibia",
+        "enumkode": "NA"
+      },
+      {
+        "enumkodeId": "NR",
+        "enumkodeBeskrivelse": "Nauru",
+        "enumkode": "NR"
+      },
+      {
+        "enumkodeId": "NP",
+        "enumkodeBeskrivelse": "Nepal",
+        "enumkode": "NP"
+      },
+      {
+        "enumkodeId": "NC",
+        "enumkodeBeskrivelse": "Ny-Caledonia",
+        "enumkode": "NC"
+      },
+      {
+        "enumkodeId": "NZ",
+        "enumkodeBeskrivelse": "New Zealand",
+        "enumkode": "NZ"
+      },
+      {
+        "enumkodeId": "NI",
+        "enumkodeBeskrivelse": "Nicaragua",
+        "enumkode": "NI"
+      },
+      {
+        "enumkodeId": "NE",
+        "enumkodeBeskrivelse": "Niger",
+        "enumkode": "NE"
+      },
+      {
+        "enumkodeId": "NG",
+        "enumkodeBeskrivelse": "Nigeria",
+        "enumkode": "NG"
+      },
+      {
+        "enumkodeId": "NU",
+        "enumkodeBeskrivelse": "Niue",
+        "enumkode": "NU"
+      },
+      {
+        "enumkodeId": "NF",
+        "enumkodeBeskrivelse": "Norfolkøya",
+        "enumkode": "NF"
+      },
+      {
+        "enumkodeId": "MP",
+        "enumkodeBeskrivelse": "Nord-Marianene",
+        "enumkode": "MP"
+      },
+      {
+        "enumkodeId": "OM",
+        "enumkodeBeskrivelse": "Oman",
+        "enumkode": "OM"
+      },
+      {
+        "enumkodeId": "PK",
+        "enumkodeBeskrivelse": "Pakistan",
+        "enumkode": "PK"
+      },
+      {
+        "enumkodeId": "PW",
+        "enumkodeBeskrivelse": "Palau",
+        "enumkode": "PW"
+      },
+      {
+        "enumkodeId": "PS",
+        "enumkodeBeskrivelse": "Palestina",
+        "enumkode": "PS"
+      },
+      {
+        "enumkodeId": "PA",
+        "enumkodeBeskrivelse": "Panama",
+        "enumkode": "PA"
+      },
+      {
+        "enumkodeId": "PG",
+        "enumkodeBeskrivelse": "Papua Ny-Guinea",
+        "enumkode": "PG"
+      },
+      {
+        "enumkodeId": "PY",
+        "enumkodeBeskrivelse": "Paraguay",
+        "enumkode": "PY"
+      },
+      {
+        "enumkodeId": "PE",
+        "enumkodeBeskrivelse": "Peru",
+        "enumkode": "PE"
+      },
+      {
+        "enumkodeId": "PH",
+        "enumkodeBeskrivelse": "Filippinene",
+        "enumkode": "PH"
+      },
+      {
+        "enumkodeId": "PN",
+        "enumkodeBeskrivelse": "Pitcairn",
+        "enumkode": "PN"
+      },
+      {
+        "enumkodeId": "PR",
+        "enumkodeBeskrivelse": "Puerto Rico",
+        "enumkode": "PR"
+      },
+      {
+        "enumkodeId": "QA",
+        "enumkodeBeskrivelse": "Qatar",
+        "enumkode": "QA"
+      },
+      {
+        "enumkodeId": "RE",
+        "enumkodeBeskrivelse": "Reunion",
+        "enumkode": "RE"
+      },
+      {
+        "enumkodeId": "RU",
+        "enumkodeBeskrivelse": "Den russiske føderasjon",
+        "enumkode": "RU"
+      },
+      {
+        "enumkodeId": "RW",
+        "enumkodeBeskrivelse": "Rwanda",
+        "enumkode": "RW"
+      },
+      {
+        "enumkodeId": "BL",
+        "enumkodeBeskrivelse": "Saint Barthelemy",
+        "enumkode": "BL"
+      },
+      {
+        "enumkodeId": "SH",
+        "enumkodeBeskrivelse": "Saint Helena, Ascension og Tristan Da Cunha",
+        "enumkode": "SH"
+      },
+      {
+        "enumkodeId": "KN",
+        "enumkodeBeskrivelse": "Saint Kitts og Nevis",
+        "enumkode": "KN"
+      },
+      {
+        "enumkodeId": "LC",
+        "enumkodeBeskrivelse": "Saint Lucia",
+        "enumkode": "LC"
+      },
+      {
+        "enumkodeId": "MF",
+        "enumkodeBeskrivelse": "Saint Martin (fransk del)",
+        "enumkode": "MF"
+      },
+      {
+        "enumkodeId": "PM",
+        "enumkodeBeskrivelse": "Saint Pierre og Miquelon",
+        "enumkode": "PM"
+      },
+      {
+        "enumkodeId": "VC",
+        "enumkodeBeskrivelse": "Saint Vincent og Grenadinene",
+        "enumkode": "VC"
+      },
+      {
+        "enumkodeId": "WS",
+        "enumkodeBeskrivelse": "Samoa",
+        "enumkode": "WS"
+      },
+      {
+        "enumkodeId": "SM",
+        "enumkodeBeskrivelse": "San Marino",
+        "enumkode": "SM"
+      },
+      {
+        "enumkodeId": "ST",
+        "enumkodeBeskrivelse": "Sao Tome og Principe",
+        "enumkode": "ST"
+      },
+      {
+        "enumkodeId": "SA",
+        "enumkodeBeskrivelse": "Saudi-Arabia",
+        "enumkode": "SA"
+      },
+      {
+        "enumkodeId": "SN",
+        "enumkodeBeskrivelse": "Senegal",
+        "enumkode": "SN"
+      },
+      {
+        "enumkodeId": "RS",
+        "enumkodeBeskrivelse": "Serbia",
+        "enumkode": "RS"
+      },
+      {
+        "enumkodeId": "SC",
+        "enumkodeBeskrivelse": "Seychellene",
+        "enumkode": "SC"
+      },
+      {
+        "enumkodeId": "SL",
+        "enumkodeBeskrivelse": "Sierra Leone",
+        "enumkode": "SL"
+      },
+      {
+        "enumkodeId": "SG",
+        "enumkodeBeskrivelse": "Singapore",
+        "enumkode": "SG"
+      },
+      {
+        "enumkodeId": "SX",
+        "enumkodeBeskrivelse": "Sint Maarten (nederlandsk del)",
+        "enumkode": "SX"
+      },
+      {
+        "enumkodeId": "SB",
+        "enumkodeBeskrivelse": "Solomonøyene",
+        "enumkode": "SB"
+      },
+      {
+        "enumkodeId": "SO",
+        "enumkodeBeskrivelse": "Somalia",
+        "enumkode": "SO"
+      },
+      {
+        "enumkodeId": "ZA",
+        "enumkodeBeskrivelse": "Sør-Afrika",
+        "enumkode": "ZA"
+      },
+      {
+        "enumkodeId": "GS",
+        "enumkodeBeskrivelse": "Sør-Georgia og Sør-Sandwichøyene",
+        "enumkode": "GS"
+      },
+      {
+        "enumkodeId": "SS",
+        "enumkodeBeskrivelse": "Sør-Sudan",
+        "enumkode": "SS"
+      },
+      {
+        "enumkodeId": "LK",
+        "enumkodeBeskrivelse": "Sri Lanka",
+        "enumkode": "LK"
+      },
+      {
+        "enumkodeId": "SD",
+        "enumkodeBeskrivelse": "Sudan",
+        "enumkode": "SD"
+      },
+      {
+        "enumkodeId": "SR",
+        "enumkodeBeskrivelse": "Surinam",
+        "enumkode": "SR"
+      },
+      {
+        "enumkodeId": "SJ",
+        "enumkodeBeskrivelse": "Svalbard og Jan Mayen",
+        "enumkode": "SJ"
+      },
+      {
+        "enumkodeId": "SZ",
+        "enumkodeBeskrivelse": "Swaziland",
+        "enumkode": "SZ"
+      },
+      {
+        "enumkodeId": "SY",
+        "enumkodeBeskrivelse": "Den arabiske republikk Syria",
+        "enumkode": "SY"
+      },
+      {
+        "enumkodeId": "TW",
+        "enumkodeBeskrivelse": "Taiwan",
+        "enumkode": "TW"
+      },
+      {
+        "enumkodeId": "TJ",
+        "enumkodeBeskrivelse": "Tadsjikistan",
+        "enumkode": "TJ"
+      },
+      {
+        "enumkodeId": "TZ",
+        "enumkodeBeskrivelse": "Den forente republikken Tanzania",
+        "enumkode": "TZ"
+      },
+      {
+        "enumkodeId": "TH",
+        "enumkodeBeskrivelse": "Thailand",
+        "enumkode": "TH"
+      },
+      {
+        "enumkodeId": "TL",
+        "enumkodeBeskrivelse": "Timor-Leste",
+        "enumkode": "TL"
+      },
+      {
+        "enumkodeId": "TG",
+        "enumkodeBeskrivelse": "Togo",
+        "enumkode": "TG"
+      },
+      {
+        "enumkodeId": "TK",
+        "enumkodeBeskrivelse": "Tokelau",
+        "enumkode": "TK"
+      },
+      {
+        "enumkodeId": "TO",
+        "enumkodeBeskrivelse": "Tonga",
+        "enumkode": "TO"
+      },
+      {
+        "enumkodeId": "TT",
+        "enumkodeBeskrivelse": "Trinidad og Tobago",
+        "enumkode": "TT"
+      },
+      {
+        "enumkodeId": "TN",
+        "enumkodeBeskrivelse": "Tunis",
+        "enumkode": "TN"
+      },
+      {
+        "enumkodeId": "TR",
+        "enumkodeBeskrivelse": "Tyrkia",
+        "enumkode": "TR"
+      },
+      {
+        "enumkodeId": "TM",
+        "enumkodeBeskrivelse": "Turkmenistan",
+        "enumkode": "TM"
+      },
+      {
+        "enumkodeId": "TC",
+        "enumkodeBeskrivelse": "Turks- og Caicos-øyene",
+        "enumkode": "TC"
+      },
+      {
+        "enumkodeId": "TV",
+        "enumkodeBeskrivelse": "Tuvalu",
+        "enumkode": "TV"
+      },
+      {
+        "enumkodeId": "UG",
+        "enumkodeBeskrivelse": "Uganda",
+        "enumkode": "UG"
+      },
+      {
+        "enumkodeId": "UA",
+        "enumkodeBeskrivelse": "Ukraina",
+        "enumkode": "UA"
+      },
+      {
+        "enumkodeId": "AE",
+        "enumkodeBeskrivelse": "De forente arabiske emirater",
+        "enumkode": "AE"
+      },
+      {
+        "enumkodeId": "UM",
+        "enumkodeBeskrivelse": "USAs ytre småøyer",
+        "enumkode": "UM"
+      },
+      {
+        "enumkodeId": "US",
+        "enumkodeBeskrivelse": "USA",
+        "enumkode": "US"
+      },
+      {
+        "enumkodeId": "UY",
+        "enumkodeBeskrivelse": "Uruguay",
+        "enumkode": "UY"
+      },
+      {
+        "enumkodeId": "UZ",
+        "enumkodeBeskrivelse": "Usbekistan",
+        "enumkode": "UZ"
+      },
+      {
+        "enumkodeId": "VU",
+        "enumkodeBeskrivelse": "Vanuatu",
+        "enumkode": "VU"
+      },
+      {
+        "enumkodeId": "VE",
+        "enumkodeBeskrivelse": "Venezuela",
+        "enumkode": "VE"
+      },
+      {
+        "enumkodeId": "VN",
+        "enumkodeBeskrivelse": "Vietnam",
+        "enumkode": "VN"
+      },
+      {
+        "enumkodeId": "VG",
+        "enumkodeBeskrivelse": "De britiske Jomfruøyer",
+        "enumkode": "VG"
+      },
+      {
+        "enumkodeId": "VI",
+        "enumkodeBeskrivelse": "De amerikanske Jomfruøyer",
+        "enumkode": "VI"
+      },
+      {
+        "enumkodeId": "WF",
+        "enumkodeBeskrivelse": "Wallis og Futuna",
+        "enumkode": "WF"
+      },
+      {
+        "enumkodeId": "EH",
+        "enumkodeBeskrivelse": "Vest-Sahara",
+        "enumkode": "EH"
+      },
+      {
+        "enumkodeId": "YE",
+        "enumkodeBeskrivelse": "Jemen",
+        "enumkode": "YE"
+      },
+      {
+        "enumkodeId": "ZM",
+        "enumkodeBeskrivelse": "Zambia",
+        "enumkode": "ZM"
+      },
+      {
+        "enumkodeId": "ZW",
+        "enumkodeBeskrivelse": "Zimbabwe",
+        "enumkode": "ZW"
+      },
+      {
+        "enumkodeId": "BQAQ",
+        "enumkodeBeskrivelse": "Britisk Antarktis",
+        "enumkode": "BQAQ"
+      },
+      {
+        "enumkodeId": "BUMM",
+        "enumkodeBeskrivelse": "Burma",
+        "enumkode": "BUMM"
+      },
+      {
+        "enumkodeId": "BYAA",
+        "enumkodeBeskrivelse": "Den hviterussiske sosialistiske sovjetrepublikk",
+        "enumkode": "BYAA"
+      },
+      {
+        "enumkodeId": "CTKI",
+        "enumkodeBeskrivelse": "Canton- og Enderburyøyene",
+        "enumkode": "CTKI"
+      },
+      {
+        "enumkodeId": "CSHH",
+        "enumkodeBeskrivelse": "Tsjekkoslovakia",
+        "enumkode": "CSHH"
+      },
+      {
+        "enumkodeId": "DYBJ",
+        "enumkodeBeskrivelse": "Dahomey",
+        "enumkode": "DYBJ"
+      },
+      {
+        "enumkodeId": "NQAQ",
+        "enumkodeBeskrivelse": "Dronning Maud Land",
+        "enumkode": "NQAQ"
+      },
+      {
+        "enumkodeId": "TPTL",
+        "enumkodeBeskrivelse": "Øst-Timor",
+        "enumkode": "TPTL"
+      },
+      {
+        "enumkodeId": "FXFR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FXFR"
+      },
+      {
+        "enumkodeId": "AIDJ",
+        "enumkodeBeskrivelse": "Fransk Afar og Issa",
+        "enumkode": "AIDJ"
+      },
+      {
+        "enumkodeId": "FQHH",
+        "enumkodeBeskrivelse": "De franske sørterritorier",
+        "enumkode": "FQHH"
+      },
+      {
+        "enumkodeId": "DDDE",
+        "enumkodeBeskrivelse": "Den tyske demokratiske republikk",
+        "enumkode": "DDDE"
+      },
+      {
+        "enumkodeId": "GEHH",
+        "enumkodeBeskrivelse": "Gilbert- og Elliceøyene",
+        "enumkode": "GEHH"
+      },
+      {
+        "enumkodeId": "JTUM",
+        "enumkodeBeskrivelse": "Johnstonøya",
+        "enumkode": "JTUM"
+      },
+      {
+        "enumkodeId": "MIUM",
+        "enumkodeBeskrivelse": "Midwayøyene",
+        "enumkode": "MIUM"
+      },
+      {
+        "enumkodeId": "ANHH",
+        "enumkodeBeskrivelse": "De nederlandske Antiller",
+        "enumkode": "ANHH"
+      },
+      {
+        "enumkodeId": "NTHH",
+        "enumkodeBeskrivelse": "Nøytral sone",
+        "enumkode": "NTHH"
+      },
+      {
+        "enumkodeId": "NHVU",
+        "enumkodeBeskrivelse": "Ny-Hebridene",
+        "enumkode": "NHVU"
+      },
+      {
+        "enumkodeId": "PCHH",
+        "enumkodeBeskrivelse": "USAs tilsynsområde i Stillehavet",
+        "enumkode": "PCHH"
+      },
+      {
+        "enumkodeId": "PZPA",
+        "enumkodeBeskrivelse": "Panamakanalsonen",
+        "enumkode": "PZPA"
+      },
+      {
+        "enumkodeId": "CSXX",
+        "enumkodeBeskrivelse": "Serbia og Montenegro",
+        "enumkode": "CSXX"
+      },
+      {
+        "enumkodeId": "SKIN",
+        "enumkodeBeskrivelse": "Sikkim",
+        "enumkode": "SKIN"
+      },
+      {
+        "enumkodeId": "RHZW",
+        "enumkodeBeskrivelse": "Sør-Rhodesia",
+        "enumkode": "RHZW"
+      },
+      {
+        "enumkodeId": "HVBF",
+        "enumkodeBeskrivelse": "Øvre Volta",
+        "enumkode": "HVBF"
+      },
+      {
+        "enumkodeId": "PUUM",
+        "enumkodeBeskrivelse": "USAs stillehavsøyer",
+        "enumkode": "PUUM"
+      },
+      {
+        "enumkodeId": "SUHH",
+        "enumkodeBeskrivelse": "USSR",
+        "enumkode": "SUHH"
+      },
+      {
+        "enumkodeId": "VDVN",
+        "enumkodeBeskrivelse": "Den demokratiske republikken Vietnam",
+        "enumkode": "VDVN"
+      },
+      {
+        "enumkodeId": "WKUM",
+        "enumkodeBeskrivelse": "Wakeøya",
+        "enumkode": "WKUM"
+      },
+      {
+        "enumkodeId": "YDYE",
+        "enumkodeBeskrivelse": "Den demokratiske republikken Jemen",
+        "enumkode": "YDYE"
+      },
+      {
+        "enumkodeId": "YUCS",
+        "enumkodeBeskrivelse": "Jugoslavia",
+        "enumkode": "YUCS"
+      },
+      {
+        "enumkodeId": "ZRCD",
+        "enumkodeBeskrivelse": "Zaire",
+        "enumkode": "ZRCD"
+      }
+    ]
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth": {
+    "aclSedSti": "$nav.bruker.far.person.etternavnvedfoedsel",
+    "indeks": "1.1.8.2.",
+    "ledetekst": "Fars etternavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather": {
+    "aclSedSti": "$nav.bruker.far.person.fornavn",
+    "indeks": "1.1.8.3.",
+    "ledetekst": "Fars fornavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth": {
+    "aclSedSti": "$nav.bruker.mor.person.etternavnvedfoedsel",
+    "indeks": "1.1.8.4.",
+    "ledetekst": "Mors etternavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother": {
+    "aclSedSti": "$nav.bruker.mor.person.fornavn",
+    "indeks": "1.1.8.5.",
+    "ledetekst": "Mors fornavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.Person.AdditionalInformationPerson": {
+    "indeks": "1.2.",
+    "ledetekst": "Ytterligere informasjon om personen",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.Person.AdditionalInformationPerson.nationality.value[0]": {
+    "aclSedSti": "$nav.bruker.person.statsborgerskap[x].land",
+    "indeks": "1.2.1.",
+    "ledetekst": "Nasjonalitet",
+    "verdiType": "enum",
+    "cdmType": "_uxMultiSelect",
+    "required": false,
+    "enumNavn": "EESSINationalityMultipleType",
+    "kodefil": "landkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "AT",
+        "enumkodeBeskrivelse": "Østerrike",
+        "enumkode": "AT"
+      },
+      {
+        "enumkodeId": "BE",
+        "enumkodeBeskrivelse": "Belgia",
+        "enumkode": "BE"
+      },
+      {
+        "enumkodeId": "BG",
+        "enumkodeBeskrivelse": "Bulgaria",
+        "enumkode": "BG"
+      },
+      {
+        "enumkodeId": "HR",
+        "enumkodeBeskrivelse": "Kroatia",
+        "enumkode": "HR"
+      },
+      {
+        "enumkodeId": "CY",
+        "enumkodeBeskrivelse": "Kypros",
+        "enumkode": "CY"
+      },
+      {
+        "enumkodeId": "CZ",
+        "enumkodeBeskrivelse": "Tsjekkia",
+        "enumkode": "CZ"
+      },
+      {
+        "enumkodeId": "DK",
+        "enumkodeBeskrivelse": "Danmark",
+        "enumkode": "DK"
+      },
+      {
+        "enumkodeId": "EE",
+        "enumkodeBeskrivelse": "Estland",
+        "enumkode": "EE"
+      },
+      {
+        "enumkodeId": "FI",
+        "enumkodeBeskrivelse": "Finland",
+        "enumkode": "FI"
+      },
+      {
+        "enumkodeId": "FR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FR"
+      },
+      {
+        "enumkodeId": "DE",
+        "enumkodeBeskrivelse": "Tyskland",
+        "enumkode": "DE"
+      },
+      {
+        "enumkodeId": "EL",
+        "enumkodeBeskrivelse": "Hellas",
+        "enumkode": "GR"
+      },
+      {
+        "enumkodeId": "HU",
+        "enumkodeBeskrivelse": "Ungarn",
+        "enumkode": "HU"
+      },
+      {
+        "enumkodeId": "IS",
+        "enumkodeBeskrivelse": "Island",
+        "enumkode": "IS"
+      },
+      {
+        "enumkodeId": "IE",
+        "enumkodeBeskrivelse": "Irland",
+        "enumkode": "IE"
+      },
+      {
+        "enumkodeId": "IT",
+        "enumkodeBeskrivelse": "Italia",
+        "enumkode": "IT"
+      },
+      {
+        "enumkodeId": "XK",
+        "enumkodeBeskrivelse": "Kosovo",
+        "enumkode": "XK"
+      },
+      {
+        "enumkodeId": "LV",
+        "enumkodeBeskrivelse": "Latvia",
+        "enumkode": "LV"
+      },
+      {
+        "enumkodeId": "LI",
+        "enumkodeBeskrivelse": "Liechtenstein",
+        "enumkode": "LI"
+      },
+      {
+        "enumkodeId": "LT",
+        "enumkodeBeskrivelse": "Litauen",
+        "enumkode": "LT"
+      },
+      {
+        "enumkodeId": "LU",
+        "enumkodeBeskrivelse": "Luxembourg",
+        "enumkode": "LU"
+      },
+      {
+        "enumkodeId": "MT",
+        "enumkodeBeskrivelse": "Malta",
+        "enumkode": "MT"
+      },
+      {
+        "enumkodeId": "NL",
+        "enumkodeBeskrivelse": "Nederland",
+        "enumkode": "NL"
+      },
+      {
+        "enumkodeId": "NO",
+        "enumkodeBeskrivelse": "Norge",
+        "enumkode": "NO"
+      },
+      {
+        "enumkodeId": "PL",
+        "enumkodeBeskrivelse": "Polen",
+        "enumkode": "PL"
+      },
+      {
+        "enumkodeId": "PT",
+        "enumkodeBeskrivelse": "Portugal",
+        "enumkode": "PT"
+      },
+      {
+        "enumkodeId": "RO",
+        "enumkodeBeskrivelse": "Romania",
+        "enumkode": "RO"
+      },
+      {
+        "enumkodeId": "SK",
+        "enumkodeBeskrivelse": "Slovakia",
+        "enumkode": "SK"
+      },
+      {
+        "enumkodeId": "SI",
+        "enumkodeBeskrivelse": "Slovenia",
+        "enumkode": "SI"
+      },
+      {
+        "enumkodeId": "ES",
+        "enumkodeBeskrivelse": "Spania",
+        "enumkode": "ES"
+      },
+      {
+        "enumkodeId": "SE",
+        "enumkodeBeskrivelse": "Sverige",
+        "enumkode": "SE"
+      },
+      {
+        "enumkodeId": "CH",
+        "enumkodeBeskrivelse": "Sveits",
+        "enumkode": "CH"
+      },
+      {
+        "enumkodeId": "UK",
+        "enumkodeBeskrivelse": "Storbritannia",
+        "enumkode": "GB"
+      },
+      {
+        "enumkodeId": "XR",
+        "enumkodeBeskrivelse": "Flyktning",
+        "enumkode": "XR"
+      },
+      {
+        "enumkodeId": "XS",
+        "enumkodeBeskrivelse": "Statsløs person",
+        "enumkode": "XS"
+      },
+      {
+        "enumkodeId": "XU",
+        "enumkodeBeskrivelse": "Ukjent",
+        "enumkode": "XU"
+      },
+      {
+        "enumkodeId": "AF",
+        "enumkodeBeskrivelse": "Afghanistan",
+        "enumkode": "AF"
+      },
+      {
+        "enumkodeId": "AL",
+        "enumkodeBeskrivelse": "Albania",
+        "enumkode": "AL"
+      },
+      {
+        "enumkodeId": "DZ",
+        "enumkodeBeskrivelse": "Algerie",
+        "enumkode": "DZ"
+      },
+      {
+        "enumkodeId": "AD",
+        "enumkodeBeskrivelse": "Andorra",
+        "enumkode": "AD"
+      },
+      {
+        "enumkodeId": "AO",
+        "enumkodeBeskrivelse": "Angola",
+        "enumkode": "AO"
+      },
+      {
+        "enumkodeId": "AG",
+        "enumkodeBeskrivelse": "Antigua og Barbuda",
+        "enumkode": "AG"
+      },
+      {
+        "enumkodeId": "AR",
+        "enumkodeBeskrivelse": "Argentina",
+        "enumkode": "AR"
+      },
+      {
+        "enumkodeId": "AM",
+        "enumkodeBeskrivelse": "Armenia",
+        "enumkode": "AM"
+      },
+      {
+        "enumkodeId": "AU",
+        "enumkodeBeskrivelse": "Australia",
+        "enumkode": "AU"
+      },
+      {
+        "enumkodeId": "AZ",
+        "enumkodeBeskrivelse": "Aserbajdsjan",
+        "enumkode": "AZ"
+      },
+      {
+        "enumkodeId": "BS",
+        "enumkodeBeskrivelse": "Bahamas",
+        "enumkode": "BS"
+      },
+      {
+        "enumkodeId": "BH",
+        "enumkodeBeskrivelse": "Bahrain",
+        "enumkode": "BH"
+      },
+      {
+        "enumkodeId": "BD",
+        "enumkodeBeskrivelse": "Bangladesh",
+        "enumkode": "BD"
+      },
+      {
+        "enumkodeId": "BB",
+        "enumkodeBeskrivelse": "Barbados",
+        "enumkode": "BB"
+      },
+      {
+        "enumkodeId": "BY",
+        "enumkodeBeskrivelse": "Hviterussland",
+        "enumkode": "BY"
+      },
+      {
+        "enumkodeId": "BZ",
+        "enumkodeBeskrivelse": "Belize",
+        "enumkode": "BZ"
+      },
+      {
+        "enumkodeId": "BJ",
+        "enumkodeBeskrivelse": "Benin",
+        "enumkode": "BJ"
+      },
+      {
+        "enumkodeId": "BT",
+        "enumkodeBeskrivelse": "Bhutan",
+        "enumkode": "BT"
+      },
+      {
+        "enumkodeId": "BO",
+        "enumkodeBeskrivelse": "Republikken Bolivia",
+        "enumkode": "BO"
+      },
+      {
+        "enumkodeId": "BA",
+        "enumkodeBeskrivelse": "Bosnia-Hercegovina",
+        "enumkode": "BA"
+      },
+      {
+        "enumkodeId": "BW",
+        "enumkodeBeskrivelse": "Botswana",
+        "enumkode": "BW"
+      },
+      {
+        "enumkodeId": "BR",
+        "enumkodeBeskrivelse": "Brasil",
+        "enumkode": "BR"
+      },
+      {
+        "enumkodeId": "BN",
+        "enumkodeBeskrivelse": "Brunei Darussalam",
+        "enumkode": "BN"
+      },
+      {
+        "enumkodeId": "BF",
+        "enumkodeBeskrivelse": "Burkina Faso",
+        "enumkode": "BF"
+      },
+      {
+        "enumkodeId": "BI",
+        "enumkodeBeskrivelse": "Burundi",
+        "enumkode": "BI"
+      },
+      {
+        "enumkodeId": "KH",
+        "enumkodeBeskrivelse": "Kambodsja",
+        "enumkode": "KH"
+      },
+      {
+        "enumkodeId": "CM",
+        "enumkodeBeskrivelse": "Kamerun",
+        "enumkode": "CM"
+      },
+      {
+        "enumkodeId": "CA",
+        "enumkodeBeskrivelse": "Canada",
+        "enumkode": "CA"
+      },
+      {
+        "enumkodeId": "CV",
+        "enumkodeBeskrivelse": "Kapp Verde",
+        "enumkode": "CV"
+      },
+      {
+        "enumkodeId": "CF",
+        "enumkodeBeskrivelse": "Den sentralafrikanske republikk",
+        "enumkode": "CF"
+      },
+      {
+        "enumkodeId": "TD",
+        "enumkodeBeskrivelse": "Tsjad",
+        "enumkode": "TD"
+      },
+      {
+        "enumkodeId": "CL",
+        "enumkodeBeskrivelse": "Chile",
+        "enumkode": "CL"
+      },
+      {
+        "enumkodeId": "CN",
+        "enumkodeBeskrivelse": "Kina",
+        "enumkode": "CN"
+      },
+      {
+        "enumkodeId": "CO",
+        "enumkodeBeskrivelse": "Colombia",
+        "enumkode": "CO"
+      },
+      {
+        "enumkodeId": "KM",
+        "enumkodeBeskrivelse": "Komorene",
+        "enumkode": "KM"
+      },
+      {
+        "enumkodeId": "CG",
+        "enumkodeBeskrivelse": "Kongo",
+        "enumkode": "CG"
+      },
+      {
+        "enumkodeId": "CD",
+        "enumkodeBeskrivelse": "Den demokratiske republikken Kongo",
+        "enumkode": "CD"
+      },
+      {
+        "enumkodeId": "CR",
+        "enumkodeBeskrivelse": "Costa Rica",
+        "enumkode": "CR"
+      },
+      {
+        "enumkodeId": "CI",
+        "enumkodeBeskrivelse": "Elfenbenskysten",
+        "enumkode": "CI"
+      },
+      {
+        "enumkodeId": "CU",
+        "enumkodeBeskrivelse": "Cuba",
+        "enumkode": "CU"
+      },
+      {
+        "enumkodeId": "DJ",
+        "enumkodeBeskrivelse": "Djibouti",
+        "enumkode": "DJ"
+      },
+      {
+        "enumkodeId": "DM",
+        "enumkodeBeskrivelse": "Dominica",
+        "enumkode": "DM"
+      },
+      {
+        "enumkodeId": "DO",
+        "enumkodeBeskrivelse": "Den dominikanske republikk",
+        "enumkode": "DO"
+      },
+      {
+        "enumkodeId": "EC",
+        "enumkodeBeskrivelse": "Ecuador",
+        "enumkode": "EC"
+      },
+      {
+        "enumkodeId": "EG",
+        "enumkodeBeskrivelse": "Egypt",
+        "enumkode": "EG"
+      },
+      {
+        "enumkodeId": "SV",
+        "enumkodeBeskrivelse": "El Salvador",
+        "enumkode": "SV"
+      },
+      {
+        "enumkodeId": "GQ",
+        "enumkodeBeskrivelse": "Ekvatorialguinea",
+        "enumkode": "GQ"
+      },
+      {
+        "enumkodeId": "ER",
+        "enumkodeBeskrivelse": "Eritrea",
+        "enumkode": "ER"
+      },
+      {
+        "enumkodeId": "ET",
+        "enumkodeBeskrivelse": "Etiopia",
+        "enumkode": "ET"
+      },
+      {
+        "enumkodeId": "FJ",
+        "enumkodeBeskrivelse": "Fiji",
+        "enumkode": "FJ"
+      },
+      {
+        "enumkodeId": "GA",
+        "enumkodeBeskrivelse": "Gabon",
+        "enumkode": "GA"
+      },
+      {
+        "enumkodeId": "GM",
+        "enumkodeBeskrivelse": "Gambia",
+        "enumkode": "GM"
+      },
+      {
+        "enumkodeId": "GE",
+        "enumkodeBeskrivelse": "Georgia",
+        "enumkode": "GE"
+      },
+      {
+        "enumkodeId": "GH",
+        "enumkodeBeskrivelse": "Ghana",
+        "enumkode": "GH"
+      },
+      {
+        "enumkodeId": "GD",
+        "enumkodeBeskrivelse": "Grenada",
+        "enumkode": "GD"
+      },
+      {
+        "enumkodeId": "GT",
+        "enumkodeBeskrivelse": "Guatemala",
+        "enumkode": "GT"
+      },
+      {
+        "enumkodeId": "GN",
+        "enumkodeBeskrivelse": "Guinea",
+        "enumkode": "GN"
+      },
+      {
+        "enumkodeId": "GW",
+        "enumkodeBeskrivelse": "Guinea-Bissau",
+        "enumkode": "GW"
+      },
+      {
+        "enumkodeId": "GY",
+        "enumkodeBeskrivelse": "Guyana",
+        "enumkode": "GY"
+      },
+      {
+        "enumkodeId": "HT",
+        "enumkodeBeskrivelse": "Haiti",
+        "enumkode": "HT"
+      },
+      {
+        "enumkodeId": "VA",
+        "enumkodeBeskrivelse": "Den hellige stol",
+        "enumkode": "VA"
+      },
+      {
+        "enumkodeId": "HN",
+        "enumkodeBeskrivelse": "Honduras",
+        "enumkode": "HN"
+      },
+      {
+        "enumkodeId": "IN",
+        "enumkodeBeskrivelse": "India",
+        "enumkode": "IN"
+      },
+      {
+        "enumkodeId": "ID",
+        "enumkodeBeskrivelse": "Indonesia",
+        "enumkode": "ID"
+      },
+      {
+        "enumkodeId": "IR",
+        "enumkodeBeskrivelse": "Den islamske republikken Iran",
+        "enumkode": "IR"
+      },
+      {
+        "enumkodeId": "IQ",
+        "enumkodeBeskrivelse": "Irak",
+        "enumkode": "IQ"
+      },
+      {
+        "enumkodeId": "IL",
+        "enumkodeBeskrivelse": "Israel",
+        "enumkode": "IL"
+      },
+      {
+        "enumkodeId": "JM",
+        "enumkodeBeskrivelse": "Jamaica",
+        "enumkode": "JM"
+      },
+      {
+        "enumkodeId": "JP",
+        "enumkodeBeskrivelse": "Japan",
+        "enumkode": "JP"
+      },
+      {
+        "enumkodeId": "JO",
+        "enumkodeBeskrivelse": "Jordan",
+        "enumkode": "JO"
+      },
+      {
+        "enumkodeId": "KZ",
+        "enumkodeBeskrivelse": "Kasakhstan",
+        "enumkode": "KZ"
+      },
+      {
+        "enumkodeId": "KE",
+        "enumkodeBeskrivelse": "Kenya",
+        "enumkode": "KE"
+      },
+      {
+        "enumkodeId": "KI",
+        "enumkodeBeskrivelse": "Kiribati",
+        "enumkode": "KI"
+      },
+      {
+        "enumkodeId": "KP",
+        "enumkodeBeskrivelse": "Den demokratiske folkerepublikken Korea",
+        "enumkode": "KP"
+      },
+      {
+        "enumkodeId": "KR",
+        "enumkodeBeskrivelse": "Republikken Korea",
+        "enumkode": "KR"
+      },
+      {
+        "enumkodeId": "KW",
+        "enumkodeBeskrivelse": "Kuwait",
+        "enumkode": "KW"
+      },
+      {
+        "enumkodeId": "KG",
+        "enumkodeBeskrivelse": "Kirgisistan",
+        "enumkode": "KG"
+      },
+      {
+        "enumkodeId": "LA",
+        "enumkodeBeskrivelse": "Laofolkets demokratiske folkerepublikk",
+        "enumkode": "LA"
+      },
+      {
+        "enumkodeId": "LB",
+        "enumkodeBeskrivelse": "Libanon",
+        "enumkode": "LB"
+      },
+      {
+        "enumkodeId": "LS",
+        "enumkodeBeskrivelse": "Lesotho",
+        "enumkode": "LS"
+      },
+      {
+        "enumkodeId": "LR",
+        "enumkodeBeskrivelse": "Liberia",
+        "enumkode": "LR"
+      },
+      {
+        "enumkodeId": "LY",
+        "enumkodeBeskrivelse": "Libya",
+        "enumkode": "LY"
+      },
+      {
+        "enumkodeId": "MK",
+        "enumkodeBeskrivelse": "Nord-Makedonia",
+        "enumkode": "MK"
+      },
+      {
+        "enumkodeId": "MG",
+        "enumkodeBeskrivelse": "Madagaskar",
+        "enumkode": "MG"
+      },
+      {
+        "enumkodeId": "MW",
+        "enumkodeBeskrivelse": "Malawi",
+        "enumkode": "MW"
+      },
+      {
+        "enumkodeId": "MY",
+        "enumkodeBeskrivelse": "Malaysia",
+        "enumkode": "MY"
+      },
+      {
+        "enumkodeId": "MV",
+        "enumkodeBeskrivelse": "Maldivene",
+        "enumkode": "MV"
+      },
+      {
+        "enumkodeId": "ML",
+        "enumkodeBeskrivelse": "Mali",
+        "enumkode": "ML"
+      },
+      {
+        "enumkodeId": "MH",
+        "enumkodeBeskrivelse": "Marshalløyene",
+        "enumkode": "MH"
+      },
+      {
+        "enumkodeId": "MR",
+        "enumkodeBeskrivelse": "Mauritania",
+        "enumkode": "MR"
+      },
+      {
+        "enumkodeId": "MU",
+        "enumkodeBeskrivelse": "Mauritius",
+        "enumkode": "MU"
+      },
+      {
+        "enumkodeId": "MX",
+        "enumkodeBeskrivelse": "Mexico",
+        "enumkode": "MX"
+      },
+      {
+        "enumkodeId": "FM",
+        "enumkodeBeskrivelse": "Mikronesiaføderasjonen",
+        "enumkode": "FM"
+      },
+      {
+        "enumkodeId": "MD",
+        "enumkodeBeskrivelse": "Republikken Moldova",
+        "enumkode": "MD"
+      },
+      {
+        "enumkodeId": "MC",
+        "enumkodeBeskrivelse": "Monaco",
+        "enumkode": "MC"
+      },
+      {
+        "enumkodeId": "MN",
+        "enumkodeBeskrivelse": "Mongolia",
+        "enumkode": "MN"
+      },
+      {
+        "enumkodeId": "ME",
+        "enumkodeBeskrivelse": "Montenegro",
+        "enumkode": "ME"
+      },
+      {
+        "enumkodeId": "MA",
+        "enumkodeBeskrivelse": "Marokko",
+        "enumkode": "MA"
+      },
+      {
+        "enumkodeId": "MZ",
+        "enumkodeBeskrivelse": "Mosambik",
+        "enumkode": "MZ"
+      },
+      {
+        "enumkodeId": "MM",
+        "enumkodeBeskrivelse": "Myanmar",
+        "enumkode": "MM"
+      },
+      {
+        "enumkodeId": "NA",
+        "enumkodeBeskrivelse": "Namibia",
+        "enumkode": "NA"
+      },
+      {
+        "enumkodeId": "NR",
+        "enumkodeBeskrivelse": "Nauru",
+        "enumkode": "NR"
+      },
+      {
+        "enumkodeId": "NP",
+        "enumkodeBeskrivelse": "Nepal",
+        "enumkode": "NP"
+      },
+      {
+        "enumkodeId": "NZ",
+        "enumkodeBeskrivelse": "New Zealand",
+        "enumkode": "NZ"
+      },
+      {
+        "enumkodeId": "NI",
+        "enumkodeBeskrivelse": "Nicaragua",
+        "enumkode": "NI"
+      },
+      {
+        "enumkodeId": "NE",
+        "enumkodeBeskrivelse": "Niger",
+        "enumkode": "NE"
+      },
+      {
+        "enumkodeId": "NG",
+        "enumkodeBeskrivelse": "Nigeria",
+        "enumkode": "NG"
+      },
+      {
+        "enumkodeId": "OM",
+        "enumkodeBeskrivelse": "Oman",
+        "enumkode": "OM"
+      },
+      {
+        "enumkodeId": "PK",
+        "enumkodeBeskrivelse": "Pakistan",
+        "enumkode": "PK"
+      },
+      {
+        "enumkodeId": "PW",
+        "enumkodeBeskrivelse": "Palau",
+        "enumkode": "PW"
+      },
+      {
+        "enumkodeId": "PS",
+        "enumkodeBeskrivelse": "Palestina",
+        "enumkode": "PS"
+      },
+      {
+        "enumkodeId": "PA",
+        "enumkodeBeskrivelse": "Panama",
+        "enumkode": "PA"
+      },
+      {
+        "enumkodeId": "PG",
+        "enumkodeBeskrivelse": "Papua Ny-Guinea",
+        "enumkode": "PG"
+      },
+      {
+        "enumkodeId": "PY",
+        "enumkodeBeskrivelse": "Paraguay",
+        "enumkode": "PY"
+      },
+      {
+        "enumkodeId": "PE",
+        "enumkodeBeskrivelse": "Peru",
+        "enumkode": "PE"
+      },
+      {
+        "enumkodeId": "PH",
+        "enumkodeBeskrivelse": "Filippinene",
+        "enumkode": "PH"
+      },
+      {
+        "enumkodeId": "QA",
+        "enumkodeBeskrivelse": "Qatar",
+        "enumkode": "QA"
+      },
+      {
+        "enumkodeId": "RU",
+        "enumkodeBeskrivelse": "Den russiske føderasjon",
+        "enumkode": "RU"
+      },
+      {
+        "enumkodeId": "RW",
+        "enumkodeBeskrivelse": "Rwanda",
+        "enumkode": "RW"
+      },
+      {
+        "enumkodeId": "KN",
+        "enumkodeBeskrivelse": "Saint Kitts og Nevis",
+        "enumkode": "KN"
+      },
+      {
+        "enumkodeId": "LC",
+        "enumkodeBeskrivelse": "Saint Lucia",
+        "enumkode": "LC"
+      },
+      {
+        "enumkodeId": "VC",
+        "enumkodeBeskrivelse": "Saint Vincent og Grenadinene",
+        "enumkode": "VC"
+      },
+      {
+        "enumkodeId": "WS",
+        "enumkodeBeskrivelse": "Samoa",
+        "enumkode": "WS"
+      },
+      {
+        "enumkodeId": "SM",
+        "enumkodeBeskrivelse": "San Marino",
+        "enumkode": "SM"
+      },
+      {
+        "enumkodeId": "ST",
+        "enumkodeBeskrivelse": "Sao Tome og Principe",
+        "enumkode": "ST"
+      },
+      {
+        "enumkodeId": "SA",
+        "enumkodeBeskrivelse": "Saudi-Arabia",
+        "enumkode": "SA"
+      },
+      {
+        "enumkodeId": "SN",
+        "enumkodeBeskrivelse": "Senegal",
+        "enumkode": "SN"
+      },
+      {
+        "enumkodeId": "RS",
+        "enumkodeBeskrivelse": "Serbia",
+        "enumkode": "RS"
+      },
+      {
+        "enumkodeId": "SC",
+        "enumkodeBeskrivelse": "Seychellene",
+        "enumkode": "SC"
+      },
+      {
+        "enumkodeId": "SL",
+        "enumkodeBeskrivelse": "Sierra Leone",
+        "enumkode": "SL"
+      },
+      {
+        "enumkodeId": "SG",
+        "enumkodeBeskrivelse": "Singapore",
+        "enumkode": "SG"
+      },
+      {
+        "enumkodeId": "SB",
+        "enumkodeBeskrivelse": "Solomonøyene",
+        "enumkode": "SB"
+      },
+      {
+        "enumkodeId": "SO",
+        "enumkodeBeskrivelse": "Somalia",
+        "enumkode": "SO"
+      },
+      {
+        "enumkodeId": "ZA",
+        "enumkodeBeskrivelse": "Sør-Afrika",
+        "enumkode": "ZA"
+      },
+      {
+        "enumkodeId": "SS",
+        "enumkodeBeskrivelse": "Sør-Sudan",
+        "enumkode": "SS"
+      },
+      {
+        "enumkodeId": "LK",
+        "enumkodeBeskrivelse": "Sri Lanka",
+        "enumkode": "LK"
+      },
+      {
+        "enumkodeId": "SD",
+        "enumkodeBeskrivelse": "Sudan",
+        "enumkode": "SD"
+      },
+      {
+        "enumkodeId": "SR",
+        "enumkodeBeskrivelse": "Surinam",
+        "enumkode": "SR"
+      },
+      {
+        "enumkodeId": "SZ",
+        "enumkodeBeskrivelse": "Swaziland",
+        "enumkode": "SZ"
+      },
+      {
+        "enumkodeId": "SY",
+        "enumkodeBeskrivelse": "Den arabiske republikk Syria",
+        "enumkode": "SY"
+      },
+      {
+        "enumkodeId": "TJ",
+        "enumkodeBeskrivelse": "Tadsjikistan",
+        "enumkode": "TJ"
+      },
+      {
+        "enumkodeId": "TZ",
+        "enumkodeBeskrivelse": "Den forente republikken Tanzania",
+        "enumkode": "TZ"
+      },
+      {
+        "enumkodeId": "TH",
+        "enumkodeBeskrivelse": "Thailand",
+        "enumkode": "TH"
+      },
+      {
+        "enumkodeId": "TL",
+        "enumkodeBeskrivelse": "Timor-Leste",
+        "enumkode": "TL"
+      },
+      {
+        "enumkodeId": "TG",
+        "enumkodeBeskrivelse": "Togo",
+        "enumkode": "TG"
+      },
+      {
+        "enumkodeId": "TO",
+        "enumkodeBeskrivelse": "Tonga",
+        "enumkode": "TO"
+      },
+      {
+        "enumkodeId": "TT",
+        "enumkodeBeskrivelse": "Trinidad og Tobago",
+        "enumkode": "TT"
+      },
+      {
+        "enumkodeId": "TN",
+        "enumkodeBeskrivelse": "Tunis",
+        "enumkode": "TN"
+      },
+      {
+        "enumkodeId": "TR",
+        "enumkodeBeskrivelse": "Tyrkia",
+        "enumkode": "TR"
+      },
+      {
+        "enumkodeId": "TM",
+        "enumkodeBeskrivelse": "Turkmenistan",
+        "enumkode": "TM"
+      },
+      {
+        "enumkodeId": "TV",
+        "enumkodeBeskrivelse": "Tuvalu",
+        "enumkode": "TV"
+      },
+      {
+        "enumkodeId": "UG",
+        "enumkodeBeskrivelse": "Uganda",
+        "enumkode": "UG"
+      },
+      {
+        "enumkodeId": "UA",
+        "enumkodeBeskrivelse": "Ukraina",
+        "enumkode": "UA"
+      },
+      {
+        "enumkodeId": "AE",
+        "enumkodeBeskrivelse": "De forente arabiske emirater",
+        "enumkode": "AE"
+      },
+      {
+        "enumkodeId": "US",
+        "enumkodeBeskrivelse": "USA",
+        "enumkode": "US"
+      },
+      {
+        "enumkodeId": "UY",
+        "enumkodeBeskrivelse": "Uruguay",
+        "enumkode": "UY"
+      },
+      {
+        "enumkodeId": "UZ",
+        "enumkodeBeskrivelse": "Usbekistan",
+        "enumkode": "UZ"
+      },
+      {
+        "enumkodeId": "VU",
+        "enumkodeBeskrivelse": "Vanuatu",
+        "enumkode": "VU"
+      },
+      {
+        "enumkodeId": "VE",
+        "enumkodeBeskrivelse": "Venezuela",
+        "enumkode": "VE"
+      },
+      {
+        "enumkodeId": "VN",
+        "enumkodeBeskrivelse": "Vietnam",
+        "enumkode": "VN"
+      },
+      {
+        "enumkodeId": "YE",
+        "enumkodeBeskrivelse": "Jemen",
+        "enumkode": "YE"
+      },
+      {
+        "enumkodeId": "ZM",
+        "enumkodeBeskrivelse": "Zambia",
+        "enumkode": "ZM"
+      },
+      {
+        "enumkodeId": "ZW",
+        "enumkodeBeskrivelse": "Zimbabwe",
+        "enumkode": "ZW"
+      },
+      {
+        "enumkodeId": "BQAQ",
+        "enumkodeBeskrivelse": "Britisk Antarktis",
+        "enumkode": "BQAQ"
+      },
+      {
+        "enumkodeId": "BUMM",
+        "enumkodeBeskrivelse": "Burma",
+        "enumkode": "BUMM"
+      },
+      {
+        "enumkodeId": "BYAA",
+        "enumkodeBeskrivelse": "Den hviterussiske sosialistiske sovjetrepublikk",
+        "enumkode": "BYAA"
+      },
+      {
+        "enumkodeId": "CTKI",
+        "enumkodeBeskrivelse": "Canton- og Enderburyøyene",
+        "enumkode": "CTKI"
+      },
+      {
+        "enumkodeId": "CSHH",
+        "enumkodeBeskrivelse": "Tsjekkoslovakia",
+        "enumkode": "CSHH"
+      },
+      {
+        "enumkodeId": "DYBJ",
+        "enumkodeBeskrivelse": "Dahomey",
+        "enumkode": "DYBJ"
+      },
+      {
+        "enumkodeId": "NQAQ",
+        "enumkodeBeskrivelse": "Dronning Maud Land",
+        "enumkode": "NQAQ"
+      },
+      {
+        "enumkodeId": "TPTL",
+        "enumkodeBeskrivelse": "Øst-Timor",
+        "enumkode": "TPTL"
+      },
+      {
+        "enumkodeId": "FXFR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FXFR"
+      },
+      {
+        "enumkodeId": "AIDJ",
+        "enumkodeBeskrivelse": "Fransk Afar og Issa",
+        "enumkode": "AIDJ"
+      },
+      {
+        "enumkodeId": "FQHH",
+        "enumkodeBeskrivelse": "De franske sørterritorier",
+        "enumkode": "FQHH"
+      },
+      {
+        "enumkodeId": "DDDE",
+        "enumkodeBeskrivelse": "Den tyske demokratiske republikk",
+        "enumkode": "DDDE"
+      },
+      {
+        "enumkodeId": "GEHH",
+        "enumkodeBeskrivelse": "Gilbert- og Elliceøyene",
+        "enumkode": "GEHH"
+      },
+      {
+        "enumkodeId": "JTUM",
+        "enumkodeBeskrivelse": "Johnstonøya",
+        "enumkode": "JTUM"
+      },
+      {
+        "enumkodeId": "MIUM",
+        "enumkodeBeskrivelse": "Midwayøyene",
+        "enumkode": "MIUM"
+      },
+      {
+        "enumkodeId": "ANHH",
+        "enumkodeBeskrivelse": "De nederlandske Antiller",
+        "enumkode": "ANHH"
+      },
+      {
+        "enumkodeId": "NTHH",
+        "enumkodeBeskrivelse": "Nøytral sone",
+        "enumkode": "NTHH"
+      },
+      {
+        "enumkodeId": "NHVU",
+        "enumkodeBeskrivelse": "Ny-Hebridene",
+        "enumkode": "NHVU"
+      },
+      {
+        "enumkodeId": "PCHH",
+        "enumkodeBeskrivelse": "USAs tilsynsområde i Stillehavet",
+        "enumkode": "PCHH"
+      },
+      {
+        "enumkodeId": "PZPA",
+        "enumkodeBeskrivelse": "Panamakanalsonen",
+        "enumkode": "PZPA"
+      },
+      {
+        "enumkodeId": "CSXX",
+        "enumkodeBeskrivelse": "Serbia og Montenegro",
+        "enumkode": "CSXX"
+      },
+      {
+        "enumkodeId": "SKIN",
+        "enumkodeBeskrivelse": "Sikkim",
+        "enumkode": "SKIN"
+      },
+      {
+        "enumkodeId": "RHZW",
+        "enumkodeBeskrivelse": "Sør-Rhodesia",
+        "enumkode": "RHZW"
+      },
+      {
+        "enumkodeId": "HVBF",
+        "enumkodeBeskrivelse": "Øvre Volta",
+        "enumkode": "HVBF"
+      },
+      {
+        "enumkodeId": "PUUM",
+        "enumkodeBeskrivelse": "USAs stillehavsøyer",
+        "enumkode": "PUUM"
+      },
+      {
+        "enumkodeId": "SUHH",
+        "enumkodeBeskrivelse": "USSR",
+        "enumkode": "SUHH"
+      },
+      {
+        "enumkodeId": "VDVN",
+        "enumkodeBeskrivelse": "Den demokratiske republikken Vietnam",
+        "enumkode": "VDVN"
+      },
+      {
+        "enumkodeId": "WKUM",
+        "enumkodeBeskrivelse": "Wakeøya",
+        "enumkode": "WKUM"
+      },
+      {
+        "enumkodeId": "YDYE",
+        "enumkodeBeskrivelse": "Den demokratiske republikken Jemen",
+        "enumkode": "YDYE"
+      },
+      {
+        "enumkodeId": "YUCS",
+        "enumkodeBeskrivelse": "Jugoslavia",
+        "enumkode": "YUCS"
+      },
+      {
+        "enumkodeId": "ZRCD",
+        "enumkodeBeskrivelse": "Zaire",
+        "enumkode": "ZRCD"
+      }
+    ]
+  },
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued": {
+    "indeks": "2.",
+    "ledetekst": "Adresse (personen som dokumenter om rett til ytelser er utstedt til)",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.street": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.personensadresse.gate",
+    "indeks": "2.1.",
+    "ledetekst": "Gate",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.buildingName": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.personensadresse.bygning",
+    "indeks": "2.2.",
+    "ledetekst": "Bygningens navn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.town": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.personensadresse.by",
+    "indeks": "2.3.",
+    "ledetekst": "By",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.postalCode": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.personensadresse.postnummer",
+    "indeks": "2.4.",
+    "ledetekst": "Postnummer",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "25"
+  },
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.region": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.personensadresse.region",
+    "indeks": "2.5.",
+    "ledetekst": "Region",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "65"
+  },
+  "S045.AddressOfPersonForWhomAnEntitlementDocumentIssued.country.value[0]": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.personensadresse.land",
+    "indeks": "2.6.",
+    "ledetekst": "Land",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIWorldCountryType",
+    "kodefil": "landkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "AT",
+        "enumkodeBeskrivelse": "Østerrike",
+        "enumkode": "AT"
+      },
+      {
+        "enumkodeId": "BE",
+        "enumkodeBeskrivelse": "Belgia",
+        "enumkode": "BE"
+      },
+      {
+        "enumkodeId": "BG",
+        "enumkodeBeskrivelse": "Bulgaria",
+        "enumkode": "BG"
+      },
+      {
+        "enumkodeId": "HR",
+        "enumkodeBeskrivelse": "Kroatia",
+        "enumkode": "HR"
+      },
+      {
+        "enumkodeId": "CY",
+        "enumkodeBeskrivelse": "Kypros",
+        "enumkode": "CY"
+      },
+      {
+        "enumkodeId": "CZ",
+        "enumkodeBeskrivelse": "Tsjekkia",
+        "enumkode": "CZ"
+      },
+      {
+        "enumkodeId": "DK",
+        "enumkodeBeskrivelse": "Danmark",
+        "enumkode": "DK"
+      },
+      {
+        "enumkodeId": "EE",
+        "enumkodeBeskrivelse": "Estland",
+        "enumkode": "EE"
+      },
+      {
+        "enumkodeId": "FI",
+        "enumkodeBeskrivelse": "Finland",
+        "enumkode": "FI"
+      },
+      {
+        "enumkodeId": "FR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FR"
+      },
+      {
+        "enumkodeId": "DE",
+        "enumkodeBeskrivelse": "Tyskland",
+        "enumkode": "DE"
+      },
+      {
+        "enumkodeId": "EL",
+        "enumkodeBeskrivelse": "Hellas",
+        "enumkode": "GR"
+      },
+      {
+        "enumkodeId": "HU",
+        "enumkodeBeskrivelse": "Ungarn",
+        "enumkode": "HU"
+      },
+      {
+        "enumkodeId": "IS",
+        "enumkodeBeskrivelse": "Island",
+        "enumkode": "IS"
+      },
+      {
+        "enumkodeId": "IE",
+        "enumkodeBeskrivelse": "Irland",
+        "enumkode": "IE"
+      },
+      {
+        "enumkodeId": "IT",
+        "enumkodeBeskrivelse": "Italia",
+        "enumkode": "IT"
+      },
+      {
+        "enumkodeId": "LV",
+        "enumkodeBeskrivelse": "Latvia",
+        "enumkode": "LV"
+      },
+      {
+        "enumkodeId": "LI",
+        "enumkodeBeskrivelse": "Liechtenstein",
+        "enumkode": "LI"
+      },
+      {
+        "enumkodeId": "LT",
+        "enumkodeBeskrivelse": "Litauen",
+        "enumkode": "LT"
+      },
+      {
+        "enumkodeId": "LU",
+        "enumkodeBeskrivelse": "Luxembourg",
+        "enumkode": "LU"
+      },
+      {
+        "enumkodeId": "MT",
+        "enumkodeBeskrivelse": "Malta",
+        "enumkode": "MT"
+      },
+      {
+        "enumkodeId": "NL",
+        "enumkodeBeskrivelse": "Nederland",
+        "enumkode": "NL"
+      },
+      {
+        "enumkodeId": "NO",
+        "enumkodeBeskrivelse": "Norge",
+        "enumkode": "NO"
+      },
+      {
+        "enumkodeId": "PL",
+        "enumkodeBeskrivelse": "Polen",
+        "enumkode": "PL"
+      },
+      {
+        "enumkodeId": "PT",
+        "enumkodeBeskrivelse": "Portugal",
+        "enumkode": "PT"
+      },
+      {
+        "enumkodeId": "RO",
+        "enumkodeBeskrivelse": "Romania",
+        "enumkode": "RO"
+      },
+      {
+        "enumkodeId": "SK",
+        "enumkodeBeskrivelse": "Slovakia",
+        "enumkode": "SK"
+      },
+      {
+        "enumkodeId": "SI",
+        "enumkodeBeskrivelse": "Slovenia",
+        "enumkode": "SI"
+      },
+      {
+        "enumkodeId": "ES",
+        "enumkodeBeskrivelse": "Spania",
+        "enumkode": "ES"
+      },
+      {
+        "enumkodeId": "SE",
+        "enumkodeBeskrivelse": "Sverige",
+        "enumkode": "SE"
+      },
+      {
+        "enumkodeId": "CH",
+        "enumkodeBeskrivelse": "Sveits",
+        "enumkode": "CH"
+      },
+      {
+        "enumkodeId": "UK",
+        "enumkodeBeskrivelse": "Storbritannia",
+        "enumkode": "GB"
+      },
+      {
+        "enumkodeId": "AF",
+        "enumkodeBeskrivelse": "Afghanistan",
+        "enumkode": "AF"
+      },
+      {
+        "enumkodeId": "AX",
+        "enumkodeBeskrivelse": "Åland",
+        "enumkode": "AX"
+      },
+      {
+        "enumkodeId": "AL",
+        "enumkodeBeskrivelse": "Albania",
+        "enumkode": "AL"
+      },
+      {
+        "enumkodeId": "DZ",
+        "enumkodeBeskrivelse": "Algerie",
+        "enumkode": "DZ"
+      },
+      {
+        "enumkodeId": "AS",
+        "enumkodeBeskrivelse": "Amerikansk Samoa",
+        "enumkode": "AS"
+      },
+      {
+        "enumkodeId": "AD",
+        "enumkodeBeskrivelse": "Andorra",
+        "enumkode": "AD"
+      },
+      {
+        "enumkodeId": "AO",
+        "enumkodeBeskrivelse": "Angola",
+        "enumkode": "AO"
+      },
+      {
+        "enumkodeId": "AI",
+        "enumkodeBeskrivelse": "Anguilla",
+        "enumkode": "AI"
+      },
+      {
+        "enumkodeId": "AQ",
+        "enumkodeBeskrivelse": "Antarktis",
+        "enumkode": "AQ"
+      },
+      {
+        "enumkodeId": "AG",
+        "enumkodeBeskrivelse": "Antigua og Barbuda",
+        "enumkode": "AG"
+      },
+      {
+        "enumkodeId": "AR",
+        "enumkodeBeskrivelse": "Argentina",
+        "enumkode": "AR"
+      },
+      {
+        "enumkodeId": "AM",
+        "enumkodeBeskrivelse": "Armenia",
+        "enumkode": "AM"
+      },
+      {
+        "enumkodeId": "AW",
+        "enumkodeBeskrivelse": "Aruba",
+        "enumkode": "AW"
+      },
+      {
+        "enumkodeId": "AU",
+        "enumkodeBeskrivelse": "Australia",
+        "enumkode": "AU"
+      },
+      {
+        "enumkodeId": "AZ",
+        "enumkodeBeskrivelse": "Aserbajdsjan",
+        "enumkode": "AZ"
+      },
+      {
+        "enumkodeId": "BS",
+        "enumkodeBeskrivelse": "Bahamas",
+        "enumkode": "BS"
+      },
+      {
+        "enumkodeId": "BH",
+        "enumkodeBeskrivelse": "Bahrain",
+        "enumkode": "BH"
+      },
+      {
+        "enumkodeId": "BD",
+        "enumkodeBeskrivelse": "Bangladesh",
+        "enumkode": "BD"
+      },
+      {
+        "enumkodeId": "BB",
+        "enumkodeBeskrivelse": "Barbados",
+        "enumkode": "BB"
+      },
+      {
+        "enumkodeId": "BY",
+        "enumkodeBeskrivelse": "Hviterussland",
+        "enumkode": "BY"
+      },
+      {
+        "enumkodeId": "BZ",
+        "enumkodeBeskrivelse": "Belize",
+        "enumkode": "BZ"
+      },
+      {
+        "enumkodeId": "BJ",
+        "enumkodeBeskrivelse": "Benin",
+        "enumkode": "BJ"
+      },
+      {
+        "enumkodeId": "BM",
+        "enumkodeBeskrivelse": "Bermuda",
+        "enumkode": "BM"
+      },
+      {
+        "enumkodeId": "BT",
+        "enumkodeBeskrivelse": "Bhutan",
+        "enumkode": "BT"
+      },
+      {
+        "enumkodeId": "BO",
+        "enumkodeBeskrivelse": "Republikken Bolivia",
+        "enumkode": "BO"
+      },
+      {
+        "enumkodeId": "BQ",
+        "enumkodeBeskrivelse": "Bonaire, Saint Eustatius og Saba",
+        "enumkode": "BQ"
+      },
+      {
+        "enumkodeId": "BA",
+        "enumkodeBeskrivelse": "Bosnia-Hercegovina",
+        "enumkode": "BA"
+      },
+      {
+        "enumkodeId": "BW",
+        "enumkodeBeskrivelse": "Botswana",
+        "enumkode": "BW"
+      },
+      {
+        "enumkodeId": "BV",
+        "enumkodeBeskrivelse": "Bouvetøya",
+        "enumkode": "BV"
+      },
+      {
+        "enumkodeId": "BR",
+        "enumkodeBeskrivelse": "Brasil",
+        "enumkode": "BR"
+      },
+      {
+        "enumkodeId": "IO",
+        "enumkodeBeskrivelse": "Det britiske territoriet i Indiahavet",
+        "enumkode": "IO"
+      },
+      {
+        "enumkodeId": "BN",
+        "enumkodeBeskrivelse": "Brunei Darussalam",
+        "enumkode": "BN"
+      },
+      {
+        "enumkodeId": "BF",
+        "enumkodeBeskrivelse": "Burkina Faso",
+        "enumkode": "BF"
+      },
+      {
+        "enumkodeId": "BI",
+        "enumkodeBeskrivelse": "Burundi",
+        "enumkode": "BI"
+      },
+      {
+        "enumkodeId": "CV",
+        "enumkodeBeskrivelse": "Kapp Verde",
+        "enumkode": "CV"
+      },
+      {
+        "enumkodeId": "KH",
+        "enumkodeBeskrivelse": "Kambodsja",
+        "enumkode": "KH"
+      },
+      {
+        "enumkodeId": "CM",
+        "enumkodeBeskrivelse": "Kamerun",
+        "enumkode": "CM"
+      },
+      {
+        "enumkodeId": "CA",
+        "enumkodeBeskrivelse": "Canada",
+        "enumkode": "CA"
+      },
+      {
+        "enumkodeId": "KY",
+        "enumkodeBeskrivelse": "Caymanøyene",
+        "enumkode": "KY"
+      },
+      {
+        "enumkodeId": "CF",
+        "enumkodeBeskrivelse": "Den sentralafrikanske republikk",
+        "enumkode": "CF"
+      },
+      {
+        "enumkodeId": "TD",
+        "enumkodeBeskrivelse": "Tsjad",
+        "enumkode": "TD"
+      },
+      {
+        "enumkodeId": "CL",
+        "enumkodeBeskrivelse": "Chile",
+        "enumkode": "CL"
+      },
+      {
+        "enumkodeId": "CN",
+        "enumkodeBeskrivelse": "Kina",
+        "enumkode": "CN"
+      },
+      {
+        "enumkodeId": "CX",
+        "enumkodeBeskrivelse": "Christmasøya",
+        "enumkode": "CX"
+      },
+      {
+        "enumkodeId": "CC",
+        "enumkodeBeskrivelse": "Kokosøyene (Keeling)",
+        "enumkode": "CC"
+      },
+      {
+        "enumkodeId": "CO",
+        "enumkodeBeskrivelse": "Colombia",
+        "enumkode": "CO"
+      },
+      {
+        "enumkodeId": "KM",
+        "enumkodeBeskrivelse": "Komorene",
+        "enumkode": "KM"
+      },
+      {
+        "enumkodeId": "CG",
+        "enumkodeBeskrivelse": "Kongo",
+        "enumkode": "CG"
+      },
+      {
+        "enumkodeId": "CD",
+        "enumkodeBeskrivelse": "Den demokratiske republikken Kongo",
+        "enumkode": "CD"
+      },
+      {
+        "enumkodeId": "CK",
+        "enumkodeBeskrivelse": "Cookøyene",
+        "enumkode": "CK"
+      },
+      {
+        "enumkodeId": "CR",
+        "enumkodeBeskrivelse": "Costa Rica",
+        "enumkode": "CR"
+      },
+      {
+        "enumkodeId": "CI",
+        "enumkodeBeskrivelse": "Elfenbenskysten",
+        "enumkode": "CI"
+      },
+      {
+        "enumkodeId": "CU",
+        "enumkodeBeskrivelse": "Cuba",
+        "enumkode": "CU"
+      },
+      {
+        "enumkodeId": "CW",
+        "enumkodeBeskrivelse": "Curaçao",
+        "enumkode": "CW"
+      },
+      {
+        "enumkodeId": "DJ",
+        "enumkodeBeskrivelse": "Djibouti",
+        "enumkode": "DJ"
+      },
+      {
+        "enumkodeId": "DM",
+        "enumkodeBeskrivelse": "Dominica",
+        "enumkode": "DM"
+      },
+      {
+        "enumkodeId": "DO",
+        "enumkodeBeskrivelse": "Den dominikanske republikk",
+        "enumkode": "DO"
+      },
+      {
+        "enumkodeId": "EC",
+        "enumkodeBeskrivelse": "Ecuador",
+        "enumkode": "EC"
+      },
+      {
+        "enumkodeId": "EG",
+        "enumkodeBeskrivelse": "Egypt",
+        "enumkode": "EG"
+      },
+      {
+        "enumkodeId": "SV",
+        "enumkodeBeskrivelse": "El Salvador",
+        "enumkode": "SV"
+      },
+      {
+        "enumkodeId": "GQ",
+        "enumkodeBeskrivelse": "Ekvatorialguinea",
+        "enumkode": "GQ"
+      },
+      {
+        "enumkodeId": "ER",
+        "enumkodeBeskrivelse": "Eritrea",
+        "enumkode": "ER"
+      },
+      {
+        "enumkodeId": "ET",
+        "enumkodeBeskrivelse": "Etiopia",
+        "enumkode": "ET"
+      },
+      {
+        "enumkodeId": "FK",
+        "enumkodeBeskrivelse": "Falklandsøyene (Malvinas)",
+        "enumkode": "FK"
+      },
+      {
+        "enumkodeId": "FO",
+        "enumkodeBeskrivelse": "Færøyene",
+        "enumkode": "FO"
+      },
+      {
+        "enumkodeId": "FJ",
+        "enumkodeBeskrivelse": "Fiji",
+        "enumkode": "FJ"
+      },
+      {
+        "enumkodeId": "GF",
+        "enumkodeBeskrivelse": "Fransk Guyana",
+        "enumkode": "GF"
+      },
+      {
+        "enumkodeId": "PF",
+        "enumkodeBeskrivelse": "Fransk Polynesia",
+        "enumkode": "PF"
+      },
+      {
+        "enumkodeId": "TF",
+        "enumkodeBeskrivelse": "De franske sørterritorier",
+        "enumkode": "TF"
+      },
+      {
+        "enumkodeId": "GA",
+        "enumkodeBeskrivelse": "Gabon",
+        "enumkode": "GA"
+      },
+      {
+        "enumkodeId": "GM",
+        "enumkodeBeskrivelse": "Gambia",
+        "enumkode": "GM"
+      },
+      {
+        "enumkodeId": "GE",
+        "enumkodeBeskrivelse": "Georgia",
+        "enumkode": "GE"
+      },
+      {
+        "enumkodeId": "GH",
+        "enumkodeBeskrivelse": "Ghana",
+        "enumkode": "GH"
+      },
+      {
+        "enumkodeId": "GI",
+        "enumkodeBeskrivelse": "Gibraltar",
+        "enumkode": "GI"
+      },
+      {
+        "enumkodeId": "GL",
+        "enumkodeBeskrivelse": "Grønland",
+        "enumkode": "GL"
+      },
+      {
+        "enumkodeId": "GD",
+        "enumkodeBeskrivelse": "Grenada",
+        "enumkode": "GD"
+      },
+      {
+        "enumkodeId": "GP",
+        "enumkodeBeskrivelse": "Guadeloupe",
+        "enumkode": "GP"
+      },
+      {
+        "enumkodeId": "GU",
+        "enumkodeBeskrivelse": "Guam",
+        "enumkode": "GU"
+      },
+      {
+        "enumkodeId": "GT",
+        "enumkodeBeskrivelse": "Guatemala",
+        "enumkode": "GT"
+      },
+      {
+        "enumkodeId": "GG",
+        "enumkodeBeskrivelse": "Guernsey",
+        "enumkode": "GG"
+      },
+      {
+        "enumkodeId": "GN",
+        "enumkodeBeskrivelse": "Guinea",
+        "enumkode": "GN"
+      },
+      {
+        "enumkodeId": "GW",
+        "enumkodeBeskrivelse": "Guinea-Bissau",
+        "enumkode": "GW"
+      },
+      {
+        "enumkodeId": "GY",
+        "enumkodeBeskrivelse": "Guyana",
+        "enumkode": "GY"
+      },
+      {
+        "enumkodeId": "HT",
+        "enumkodeBeskrivelse": "Haiti",
+        "enumkode": "HT"
+      },
+      {
+        "enumkodeId": "HM",
+        "enumkodeBeskrivelse": "Heardøyene og Mcdonaldøyene",
+        "enumkode": "HM"
+      },
+      {
+        "enumkodeId": "VA",
+        "enumkodeBeskrivelse": "Den hellige stol",
+        "enumkode": "VA"
+      },
+      {
+        "enumkodeId": "HN",
+        "enumkodeBeskrivelse": "Honduras",
+        "enumkode": "HN"
+      },
+      {
+        "enumkodeId": "HK",
+        "enumkodeBeskrivelse": "Hong Kong",
+        "enumkode": "HK"
+      },
+      {
+        "enumkodeId": "IN",
+        "enumkodeBeskrivelse": "India",
+        "enumkode": "IN"
+      },
+      {
+        "enumkodeId": "ID",
+        "enumkodeBeskrivelse": "Indonesia",
+        "enumkode": "ID"
+      },
+      {
+        "enumkodeId": "IR",
+        "enumkodeBeskrivelse": "Den islamske republikken Iran",
+        "enumkode": "IR"
+      },
+      {
+        "enumkodeId": "IQ",
+        "enumkodeBeskrivelse": "Irak",
+        "enumkode": "IQ"
+      },
+      {
+        "enumkodeId": "IM",
+        "enumkodeBeskrivelse": "Isle of Man",
+        "enumkode": "IM"
+      },
+      {
+        "enumkodeId": "IL",
+        "enumkodeBeskrivelse": "Israel",
+        "enumkode": "IL"
+      },
+      {
+        "enumkodeId": "JM",
+        "enumkodeBeskrivelse": "Jamaica",
+        "enumkode": "JM"
+      },
+      {
+        "enumkodeId": "JP",
+        "enumkodeBeskrivelse": "Japan",
+        "enumkode": "JP"
+      },
+      {
+        "enumkodeId": "JE",
+        "enumkodeBeskrivelse": "Jersey",
+        "enumkode": "JE"
+      },
+      {
+        "enumkodeId": "JO",
+        "enumkodeBeskrivelse": "Jordan",
+        "enumkode": "JO"
+      },
+      {
+        "enumkodeId": "KZ",
+        "enumkodeBeskrivelse": "Kasakhstan",
+        "enumkode": "KZ"
+      },
+      {
+        "enumkodeId": "KE",
+        "enumkodeBeskrivelse": "Kenya",
+        "enumkode": "KE"
+      },
+      {
+        "enumkodeId": "KI",
+        "enumkodeBeskrivelse": "Kiribati",
+        "enumkode": "KI"
+      },
+      {
+        "enumkodeId": "KP",
+        "enumkodeBeskrivelse": "Den demokratiske folkerepublikken Korea",
+        "enumkode": "KP"
+      },
+      {
+        "enumkodeId": "KR",
+        "enumkodeBeskrivelse": "Republikken Korea",
+        "enumkode": "KR"
+      },
+      {
+        "enumkodeId": "XK",
+        "enumkodeBeskrivelse": "Kosovo",
+        "enumkode": "XK"
+      },
+      {
+        "enumkodeId": "KW",
+        "enumkodeBeskrivelse": "Kuwait",
+        "enumkode": "KW"
+      },
+      {
+        "enumkodeId": "KG",
+        "enumkodeBeskrivelse": "Kirgisistan",
+        "enumkode": "KG"
+      },
+      {
+        "enumkodeId": "LA",
+        "enumkodeBeskrivelse": "Laofolkets demokratiske folkerepublikk",
+        "enumkode": "LA"
+      },
+      {
+        "enumkodeId": "LB",
+        "enumkodeBeskrivelse": "Libanon",
+        "enumkode": "LB"
+      },
+      {
+        "enumkodeId": "LS",
+        "enumkodeBeskrivelse": "Lesotho",
+        "enumkode": "LS"
+      },
+      {
+        "enumkodeId": "LR",
+        "enumkodeBeskrivelse": "Liberia",
+        "enumkode": "LR"
+      },
+      {
+        "enumkodeId": "LY",
+        "enumkodeBeskrivelse": "Libya",
+        "enumkode": "LY"
+      },
+      {
+        "enumkodeId": "MO",
+        "enumkodeBeskrivelse": "Macao",
+        "enumkode": "MO"
+      },
+      {
+        "enumkodeId": "MK",
+        "enumkodeBeskrivelse": "Nord-Makedonia",
+        "enumkode": "MK"
+      },
+      {
+        "enumkodeId": "MG",
+        "enumkodeBeskrivelse": "Madagaskar",
+        "enumkode": "MG"
+      },
+      {
+        "enumkodeId": "MW",
+        "enumkodeBeskrivelse": "Malawi",
+        "enumkode": "MW"
+      },
+      {
+        "enumkodeId": "MY",
+        "enumkodeBeskrivelse": "Malaysia",
+        "enumkode": "MY"
+      },
+      {
+        "enumkodeId": "MV",
+        "enumkodeBeskrivelse": "Maldivene",
+        "enumkode": "MV"
+      },
+      {
+        "enumkodeId": "ML",
+        "enumkodeBeskrivelse": "Mali",
+        "enumkode": "ML"
+      },
+      {
+        "enumkodeId": "MH",
+        "enumkodeBeskrivelse": "Marshalløyene",
+        "enumkode": "MH"
+      },
+      {
+        "enumkodeId": "MQ",
+        "enumkodeBeskrivelse": "Martinique",
+        "enumkode": "MQ"
+      },
+      {
+        "enumkodeId": "MR",
+        "enumkodeBeskrivelse": "Mauritania",
+        "enumkode": "MR"
+      },
+      {
+        "enumkodeId": "MU",
+        "enumkodeBeskrivelse": "Mauritius",
+        "enumkode": "MU"
+      },
+      {
+        "enumkodeId": "YT",
+        "enumkodeBeskrivelse": "Mayotte",
+        "enumkode": "YT"
+      },
+      {
+        "enumkodeId": "MX",
+        "enumkodeBeskrivelse": "Mexico",
+        "enumkode": "MX"
+      },
+      {
+        "enumkodeId": "FM",
+        "enumkodeBeskrivelse": "Mikronesiaføderasjonen",
+        "enumkode": "FM"
+      },
+      {
+        "enumkodeId": "MD",
+        "enumkodeBeskrivelse": "Republikken Moldova",
+        "enumkode": "MD"
+      },
+      {
+        "enumkodeId": "MC",
+        "enumkodeBeskrivelse": "Monaco",
+        "enumkode": "MC"
+      },
+      {
+        "enumkodeId": "MN",
+        "enumkodeBeskrivelse": "Mongolia",
+        "enumkode": "MN"
+      },
+      {
+        "enumkodeId": "ME",
+        "enumkodeBeskrivelse": "Montenegro",
+        "enumkode": "ME"
+      },
+      {
+        "enumkodeId": "MS",
+        "enumkodeBeskrivelse": "Montserrat",
+        "enumkode": "MS"
+      },
+      {
+        "enumkodeId": "MA",
+        "enumkodeBeskrivelse": "Marokko",
+        "enumkode": "MA"
+      },
+      {
+        "enumkodeId": "MZ",
+        "enumkodeBeskrivelse": "Mosambik",
+        "enumkode": "MZ"
+      },
+      {
+        "enumkodeId": "MM",
+        "enumkodeBeskrivelse": "Myanmar",
+        "enumkode": "MM"
+      },
+      {
+        "enumkodeId": "NA",
+        "enumkodeBeskrivelse": "Namibia",
+        "enumkode": "NA"
+      },
+      {
+        "enumkodeId": "NR",
+        "enumkodeBeskrivelse": "Nauru",
+        "enumkode": "NR"
+      },
+      {
+        "enumkodeId": "NP",
+        "enumkodeBeskrivelse": "Nepal",
+        "enumkode": "NP"
+      },
+      {
+        "enumkodeId": "NC",
+        "enumkodeBeskrivelse": "Ny-Caledonia",
+        "enumkode": "NC"
+      },
+      {
+        "enumkodeId": "NZ",
+        "enumkodeBeskrivelse": "New Zealand",
+        "enumkode": "NZ"
+      },
+      {
+        "enumkodeId": "NI",
+        "enumkodeBeskrivelse": "Nicaragua",
+        "enumkode": "NI"
+      },
+      {
+        "enumkodeId": "NE",
+        "enumkodeBeskrivelse": "Niger",
+        "enumkode": "NE"
+      },
+      {
+        "enumkodeId": "NG",
+        "enumkodeBeskrivelse": "Nigeria",
+        "enumkode": "NG"
+      },
+      {
+        "enumkodeId": "NU",
+        "enumkodeBeskrivelse": "Niue",
+        "enumkode": "NU"
+      },
+      {
+        "enumkodeId": "NF",
+        "enumkodeBeskrivelse": "Norfolkøya",
+        "enumkode": "NF"
+      },
+      {
+        "enumkodeId": "MP",
+        "enumkodeBeskrivelse": "Nord-Marianene",
+        "enumkode": "MP"
+      },
+      {
+        "enumkodeId": "OM",
+        "enumkodeBeskrivelse": "Oman",
+        "enumkode": "OM"
+      },
+      {
+        "enumkodeId": "PK",
+        "enumkodeBeskrivelse": "Pakistan",
+        "enumkode": "PK"
+      },
+      {
+        "enumkodeId": "PW",
+        "enumkodeBeskrivelse": "Palau",
+        "enumkode": "PW"
+      },
+      {
+        "enumkodeId": "PS",
+        "enumkodeBeskrivelse": "Palestina",
+        "enumkode": "PS"
+      },
+      {
+        "enumkodeId": "PA",
+        "enumkodeBeskrivelse": "Panama",
+        "enumkode": "PA"
+      },
+      {
+        "enumkodeId": "PG",
+        "enumkodeBeskrivelse": "Papua Ny-Guinea",
+        "enumkode": "PG"
+      },
+      {
+        "enumkodeId": "PY",
+        "enumkodeBeskrivelse": "Paraguay",
+        "enumkode": "PY"
+      },
+      {
+        "enumkodeId": "PE",
+        "enumkodeBeskrivelse": "Peru",
+        "enumkode": "PE"
+      },
+      {
+        "enumkodeId": "PH",
+        "enumkodeBeskrivelse": "Filippinene",
+        "enumkode": "PH"
+      },
+      {
+        "enumkodeId": "PN",
+        "enumkodeBeskrivelse": "Pitcairn",
+        "enumkode": "PN"
+      },
+      {
+        "enumkodeId": "PR",
+        "enumkodeBeskrivelse": "Puerto Rico",
+        "enumkode": "PR"
+      },
+      {
+        "enumkodeId": "QA",
+        "enumkodeBeskrivelse": "Qatar",
+        "enumkode": "QA"
+      },
+      {
+        "enumkodeId": "RE",
+        "enumkodeBeskrivelse": "Reunion",
+        "enumkode": "RE"
+      },
+      {
+        "enumkodeId": "RU",
+        "enumkodeBeskrivelse": "Den russiske føderasjon",
+        "enumkode": "RU"
+      },
+      {
+        "enumkodeId": "RW",
+        "enumkodeBeskrivelse": "Rwanda",
+        "enumkode": "RW"
+      },
+      {
+        "enumkodeId": "BL",
+        "enumkodeBeskrivelse": "Saint Barthelemy",
+        "enumkode": "BL"
+      },
+      {
+        "enumkodeId": "SH",
+        "enumkodeBeskrivelse": "Saint Helena, Ascension og Tristan Da Cunha",
+        "enumkode": "SH"
+      },
+      {
+        "enumkodeId": "KN",
+        "enumkodeBeskrivelse": "Saint Kitts og Nevis",
+        "enumkode": "KN"
+      },
+      {
+        "enumkodeId": "LC",
+        "enumkodeBeskrivelse": "Saint Lucia",
+        "enumkode": "LC"
+      },
+      {
+        "enumkodeId": "MF",
+        "enumkodeBeskrivelse": "Saint Martin (fransk del)",
+        "enumkode": "MF"
+      },
+      {
+        "enumkodeId": "PM",
+        "enumkodeBeskrivelse": "Saint Pierre og Miquelon",
+        "enumkode": "PM"
+      },
+      {
+        "enumkodeId": "VC",
+        "enumkodeBeskrivelse": "Saint Vincent og Grenadinene",
+        "enumkode": "VC"
+      },
+      {
+        "enumkodeId": "WS",
+        "enumkodeBeskrivelse": "Samoa",
+        "enumkode": "WS"
+      },
+      {
+        "enumkodeId": "SM",
+        "enumkodeBeskrivelse": "San Marino",
+        "enumkode": "SM"
+      },
+      {
+        "enumkodeId": "ST",
+        "enumkodeBeskrivelse": "Sao Tome og Principe",
+        "enumkode": "ST"
+      },
+      {
+        "enumkodeId": "SA",
+        "enumkodeBeskrivelse": "Saudi-Arabia",
+        "enumkode": "SA"
+      },
+      {
+        "enumkodeId": "SN",
+        "enumkodeBeskrivelse": "Senegal",
+        "enumkode": "SN"
+      },
+      {
+        "enumkodeId": "RS",
+        "enumkodeBeskrivelse": "Serbia",
+        "enumkode": "RS"
+      },
+      {
+        "enumkodeId": "SC",
+        "enumkodeBeskrivelse": "Seychellene",
+        "enumkode": "SC"
+      },
+      {
+        "enumkodeId": "SL",
+        "enumkodeBeskrivelse": "Sierra Leone",
+        "enumkode": "SL"
+      },
+      {
+        "enumkodeId": "SG",
+        "enumkodeBeskrivelse": "Singapore",
+        "enumkode": "SG"
+      },
+      {
+        "enumkodeId": "SX",
+        "enumkodeBeskrivelse": "Sint Maarten (nederlandsk del)",
+        "enumkode": "SX"
+      },
+      {
+        "enumkodeId": "SB",
+        "enumkodeBeskrivelse": "Solomonøyene",
+        "enumkode": "SB"
+      },
+      {
+        "enumkodeId": "SO",
+        "enumkodeBeskrivelse": "Somalia",
+        "enumkode": "SO"
+      },
+      {
+        "enumkodeId": "ZA",
+        "enumkodeBeskrivelse": "Sør-Afrika",
+        "enumkode": "ZA"
+      },
+      {
+        "enumkodeId": "GS",
+        "enumkodeBeskrivelse": "Sør-Georgia og Sør-Sandwichøyene",
+        "enumkode": "GS"
+      },
+      {
+        "enumkodeId": "SS",
+        "enumkodeBeskrivelse": "Sør-Sudan",
+        "enumkode": "SS"
+      },
+      {
+        "enumkodeId": "LK",
+        "enumkodeBeskrivelse": "Sri Lanka",
+        "enumkode": "LK"
+      },
+      {
+        "enumkodeId": "SD",
+        "enumkodeBeskrivelse": "Sudan",
+        "enumkode": "SD"
+      },
+      {
+        "enumkodeId": "SR",
+        "enumkodeBeskrivelse": "Surinam",
+        "enumkode": "SR"
+      },
+      {
+        "enumkodeId": "SJ",
+        "enumkodeBeskrivelse": "Svalbard og Jan Mayen",
+        "enumkode": "SJ"
+      },
+      {
+        "enumkodeId": "SZ",
+        "enumkodeBeskrivelse": "Swaziland",
+        "enumkode": "SZ"
+      },
+      {
+        "enumkodeId": "SY",
+        "enumkodeBeskrivelse": "Den arabiske republikk Syria",
+        "enumkode": "SY"
+      },
+      {
+        "enumkodeId": "TW",
+        "enumkodeBeskrivelse": "Taiwan",
+        "enumkode": "TW"
+      },
+      {
+        "enumkodeId": "TJ",
+        "enumkodeBeskrivelse": "Tadsjikistan",
+        "enumkode": "TJ"
+      },
+      {
+        "enumkodeId": "TZ",
+        "enumkodeBeskrivelse": "Den forente republikken Tanzania",
+        "enumkode": "TZ"
+      },
+      {
+        "enumkodeId": "TH",
+        "enumkodeBeskrivelse": "Thailand",
+        "enumkode": "TH"
+      },
+      {
+        "enumkodeId": "TL",
+        "enumkodeBeskrivelse": "Timor-Leste",
+        "enumkode": "TL"
+      },
+      {
+        "enumkodeId": "TG",
+        "enumkodeBeskrivelse": "Togo",
+        "enumkode": "TG"
+      },
+      {
+        "enumkodeId": "TK",
+        "enumkodeBeskrivelse": "Tokelau",
+        "enumkode": "TK"
+      },
+      {
+        "enumkodeId": "TO",
+        "enumkodeBeskrivelse": "Tonga",
+        "enumkode": "TO"
+      },
+      {
+        "enumkodeId": "TT",
+        "enumkodeBeskrivelse": "Trinidad og Tobago",
+        "enumkode": "TT"
+      },
+      {
+        "enumkodeId": "TN",
+        "enumkodeBeskrivelse": "Tunis",
+        "enumkode": "TN"
+      },
+      {
+        "enumkodeId": "TR",
+        "enumkodeBeskrivelse": "Tyrkia",
+        "enumkode": "TR"
+      },
+      {
+        "enumkodeId": "TM",
+        "enumkodeBeskrivelse": "Turkmenistan",
+        "enumkode": "TM"
+      },
+      {
+        "enumkodeId": "TC",
+        "enumkodeBeskrivelse": "Turks- og Caicos-øyene",
+        "enumkode": "TC"
+      },
+      {
+        "enumkodeId": "TV",
+        "enumkodeBeskrivelse": "Tuvalu",
+        "enumkode": "TV"
+      },
+      {
+        "enumkodeId": "UG",
+        "enumkodeBeskrivelse": "Uganda",
+        "enumkode": "UG"
+      },
+      {
+        "enumkodeId": "UA",
+        "enumkodeBeskrivelse": "Ukraina",
+        "enumkode": "UA"
+      },
+      {
+        "enumkodeId": "AE",
+        "enumkodeBeskrivelse": "De forente arabiske emirater",
+        "enumkode": "AE"
+      },
+      {
+        "enumkodeId": "UM",
+        "enumkodeBeskrivelse": "USAs ytre småøyer",
+        "enumkode": "UM"
+      },
+      {
+        "enumkodeId": "US",
+        "enumkodeBeskrivelse": "USA",
+        "enumkode": "US"
+      },
+      {
+        "enumkodeId": "UY",
+        "enumkodeBeskrivelse": "Uruguay",
+        "enumkode": "UY"
+      },
+      {
+        "enumkodeId": "UZ",
+        "enumkodeBeskrivelse": "Usbekistan",
+        "enumkode": "UZ"
+      },
+      {
+        "enumkodeId": "VU",
+        "enumkodeBeskrivelse": "Vanuatu",
+        "enumkode": "VU"
+      },
+      {
+        "enumkodeId": "VE",
+        "enumkodeBeskrivelse": "Venezuela",
+        "enumkode": "VE"
+      },
+      {
+        "enumkodeId": "VN",
+        "enumkodeBeskrivelse": "Vietnam",
+        "enumkode": "VN"
+      },
+      {
+        "enumkodeId": "VG",
+        "enumkodeBeskrivelse": "De britiske Jomfruøyer",
+        "enumkode": "VG"
+      },
+      {
+        "enumkodeId": "VI",
+        "enumkodeBeskrivelse": "De amerikanske Jomfruøyer",
+        "enumkode": "VI"
+      },
+      {
+        "enumkodeId": "WF",
+        "enumkodeBeskrivelse": "Wallis og Futuna",
+        "enumkode": "WF"
+      },
+      {
+        "enumkodeId": "EH",
+        "enumkodeBeskrivelse": "Vest-Sahara",
+        "enumkode": "EH"
+      },
+      {
+        "enumkodeId": "YE",
+        "enumkodeBeskrivelse": "Jemen",
+        "enumkode": "YE"
+      },
+      {
+        "enumkodeId": "ZM",
+        "enumkodeBeskrivelse": "Zambia",
+        "enumkode": "ZM"
+      },
+      {
+        "enumkodeId": "ZW",
+        "enumkodeBeskrivelse": "Zimbabwe",
+        "enumkode": "ZW"
+      }
+    ]
+  },
+  "S045.InfoEntitlement": {
+    "indeks": "3.",
+    "ledetekst": "Informasjon om rett til ytelser",
+    "verdiType": "tittel",
+    "cdmType": "_uxHiddenGroupContainer",
+    "required": false
+  },
+  "S045.InfoEntitlement.PeriodEntitlement": {
+    "indeks": "3.1.",
+    "ledetekst": "Periode med rett til ytelser",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "S045.InfoEntitlement.PeriodEntitlement.startDate": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.retttilytelser.periode.startdato",
+    "indeks": "3.1.1.",
+    "ledetekst": "Startdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "S045.InfoEntitlement.PeriodEntitlement.endDate": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.retttilytelser.periode.sluttdato",
+    "indeks": "3.1.2.",
+    "ledetekst": "Sluttdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "S045.InfoNonEntitlement.infoNonEntitlement.value[0]": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.ikkrretttilytelser.grunn.type",
+    "indeks": "4.1.",
+    "ledetekst": "Informasjon om manglende rett til ytelser",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": false,
+    "enumNavn": "ReasonForSicknessNoEntitlementType",
+    "kodefil": "sykdomanmodningomdokumentersvarikkrretttilytelsergrunntypekoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Har ikke rett til sykepenger fra dette medlemslandet i anmodet periode",
+        "enumkode": "har_ikke_rett_til_sykepenger_fra_dette_medlemslandet_i_anmodet_periode"
+      },
+      {
+        "enumkodeId": "98",
+        "enumkodeBeskrivelse": "Ukjent i denne situasjonen",
+        "enumkode": "ukjent_i_denne_situasjonen"
+      },
+      {
+        "enumkodeId": "99",
+        "enumkodeBeskrivelse": "Annen grunn",
+        "enumkode": "annen_grunn"
+      }
+    ]
+  },
+  "S045.InfoNonEntitlement.FillInIfInfoNonEntitlementOther": {
+    "indeks": "4.2.",
+    "ledetekst": "Fyll ut hvis «Informasjon om manglende rett» = «Annen grunn»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.InfoNonEntitlement.FillInIfInfoNonEntitlementOther.reason": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.ikkrretttilytelser.grunn.annen",
+    "indeks": "4.2.1.",
+    "ledetekst": "Grunn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextAreaInput",
+    "required": false,
+    "tekstlengde": "500"
+  },
+  "S045.EHICEuropeanHealthInsuranceCard": {
+    "indeks": "5.",
+    "ledetekst": "EHIC - Europeisk helsetrygdkort",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "S045.EHICEuropeanHealthInsuranceCard.eHICNumber": {
+    "aclSedSti": "$sykdom.anmodningomdokumenter.svar.ehicnummer",
+    "indeks": "5.1.",
+    "ledetekst": "EHIC-nummer",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false
+  }
+}

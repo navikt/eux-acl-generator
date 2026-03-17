@@ -1,0 +1,480 @@
+{
+  "H020.sedTitle": {
+    "indeks": "H020",
+    "ledetekst": "Krav om - refusjon - administrativ kontroll / medisinsk informasjon",
+    "verdiType": "tittel",
+    "cdmType": "_rinaRoot",
+    "required": false
+  },
+  "H020.GlobalClaim": {
+    "indeks": "1.",
+    "ledetekst": "Globalt krav",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.GlobalClaim.CreditorInstitution": {
+    "indeks": "1.1.",
+    "ledetekst": "Kreditorinstitusjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.GlobalClaim.CreditorInstitution.institutionID": {
+    "aclSedSti": "$horisontal.refusjonskrav.kreditorinstitusjon.id",
+    "indeks": "1.1.1.",
+    "ledetekst": "Institusjonens ID",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "H020.GlobalClaim.CreditorInstitution.institutionName": {
+    "aclSedSti": "$horisontal.refusjonskrav.kreditorinstitusjon.navn",
+    "indeks": "1.1.2.",
+    "ledetekst": "Institusjonens navn",
+    "verdiType": "tekst",
+    "cdmType": "_rinaIRAutocomplete",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "H020.GlobalClaim.globalReferenceSetByCreditorInstitution": {
+    "aclSedSti": "$horisontal.refusjonskrav.kreditorinstitusjon.globalreferanse",
+    "indeks": "1.2.",
+    "ledetekst": "Global RPY_COC_CLA_IMO-referanse til kreditorinstitusjonens forbindelsesorgan",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "25"
+  },
+  "H020.GlobalClaim.totalNumberInvoices": {
+    "aclSedSti": "$horisontal.refusjonskrav.totaltantallfakturaer",
+    "indeks": "1.3.",
+    "ledetekst": "Totalt antall fakturaer",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution": {
+    "indeks": "1.4.",
+    "ledetekst": "Kravets totalbeløp i kreditorinstitusjonens valuta",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.amount": {
+    "aclSedSti": "$horisontal.refusjonskrav.kreditorinstitusjon.krav.totalbeloep",
+    "indeks": "1.4.1.",
+    "ledetekst": "Beløp",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.currency.value[0]": {
+    "aclSedSti": "$horisontal.refusjonskrav.kreditorinstitusjon.krav.valuta",
+    "indeks": "1.4.2.",
+    "ledetekst": "Valuta",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIEUEFTACurrencyType",
+    "kodefil": "valutakoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "EUR",
+        "enumkodeBeskrivelse": "Euro",
+        "enumkode": "EUR"
+      },
+      {
+        "enumkodeId": "BGN",
+        "enumkodeBeskrivelse": "Bulgarsk lev",
+        "enumkode": "BGN"
+      },
+      {
+        "enumkodeId": "CZK",
+        "enumkodeBeskrivelse": "Tsjekkisk koruna",
+        "enumkode": "CZK"
+      },
+      {
+        "enumkodeId": "DKK",
+        "enumkodeBeskrivelse": "Dansk krone",
+        "enumkode": "DKK"
+      },
+      {
+        "enumkodeId": "GBP",
+        "enumkodeBeskrivelse": "Britisk pund",
+        "enumkode": "GBP"
+      },
+      {
+        "enumkodeId": "HRK",
+        "enumkodeBeskrivelse": "Kroatisk kuna",
+        "enumkode": "HRK"
+      },
+      {
+        "enumkodeId": "HUF",
+        "enumkodeBeskrivelse": "Ungarsk forint",
+        "enumkode": "HUF"
+      },
+      {
+        "enumkodeId": "PLN",
+        "enumkodeBeskrivelse": "Polsk zloty",
+        "enumkode": "PLN"
+      },
+      {
+        "enumkodeId": "RON",
+        "enumkodeBeskrivelse": "Rumensk ny leu",
+        "enumkode": "RON"
+      },
+      {
+        "enumkodeId": "SEK",
+        "enumkodeBeskrivelse": "Svenske kroner",
+        "enumkode": "SEK"
+      },
+      {
+        "enumkodeId": "CHF",
+        "enumkodeBeskrivelse": "Sveitsiske franc",
+        "enumkode": "CHF"
+      },
+      {
+        "enumkodeId": "ISK",
+        "enumkodeBeskrivelse": "Islandsk krone",
+        "enumkode": "ISK"
+      },
+      {
+        "enumkodeId": "NOK",
+        "enumkodeBeskrivelse": "Norsk krone",
+        "enumkode": "NOK"
+      },
+      {
+        "enumkodeId": "LTL",
+        "enumkodeBeskrivelse": "Litauisk litas",
+        "enumkode": "LTL"
+      },
+      {
+        "enumkodeId": "LVL",
+        "enumkodeBeskrivelse": "Latvisk lats",
+        "enumkode": "LVL"
+      }
+    ]
+  },
+  "H020.GlobalClaim.TotalClaimAmountInCurrencyCreditorInstitution.paymentDueOn": {
+    "aclSedSti": "$horisontal.refusjonskrav.kreditorinstitusjon.krav.forfallsdato",
+    "indeks": "1.4.3.",
+    "ledetekst": "Betalingen forfaller",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": false
+  },
+  "H020.GlobalClaim.DebtorInstitution": {
+    "indeks": "1.5.",
+    "ledetekst": "Debitorinstitusjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "H020.GlobalClaim.DebtorInstitution.institutionID": {
+    "aclSedSti": "$horisontal.refusjonskrav.debitorinstitusjon.id",
+    "indeks": "1.5.1.",
+    "ledetekst": "Institusjonens ID",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "H020.GlobalClaim.DebtorInstitution.institutionName": {
+    "aclSedSti": "$horisontal.refusjonskrav.debitorinstitusjon.navn",
+    "indeks": "1.5.2.",
+    "ledetekst": "Institusjonens navn",
+    "verdiType": "tekst",
+    "cdmType": "_rinaIRAutocomplete",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "H020.GlobalClaim.BankDetails": {
+    "indeks": "1.6.",
+    "ledetekst": "Bankinformasjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "H020.GlobalClaim.BankDetails.IBAN": {
+    "aclSedSti": "$horisontal.refusjonskrav.bank.konto.sepa.iban",
+    "indeks": "1.6.1.",
+    "ledetekst": "IBAN",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "H020.GlobalClaim.BankDetails.BICSWIFT": {
+    "aclSedSti": "$horisontal.refusjonskrav.bank.konto.sepa.swift",
+    "indeks": "1.6.2.",
+    "ledetekst": "BIC-SWIFT",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "11"
+  },
+  "H020.Claim": {
+    "indeks": "2.",
+    "ledetekst": "Krav",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.Claim.Person": {
+    "indeks": "2.1.",
+    "ledetekst": "Person",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.Claim.Person.PersonInformation": {
+    "indeks": "2.1.1.",
+    "ledetekst": "Personopplysninger",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.Claim.Person.PersonInformation.familyName": {
+    "aclSedSti": "$nav.bruker.person.etternavn",
+    "indeks": "2.1.1.1.",
+    "ledetekst": "Etternavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "H020.Claim.Person.PersonInformation.forename": {
+    "aclSedSti": "$nav.bruker.person.fornavn",
+    "indeks": "2.1.1.2.",
+    "ledetekst": "Fornavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "H020.Claim.Person.PersonInformation.dateBirth": {
+    "aclSedSti": "$nav.bruker.person.foedselsdato",
+    "indeks": "2.1.1.3.",
+    "ledetekst": "Fødselsdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "H020.Claim.Person.PersonInformation.sex.value[0]": {
+    "aclSedSti": "$nav.bruker.person.kjoenn",
+    "indeks": "2.1.1.4.",
+    "ledetekst": "Kjønn",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "EESSISexType",
+    "kodefil": "kjoennkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Mann",
+        "enumkode": "M"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Kvinne",
+        "enumkode": "K"
+      },
+      {
+        "enumkodeId": "98",
+        "enumkodeBeskrivelse": "Ukjent",
+        "enumkode": "U"
+      }
+    ]
+  },
+  "H020.Claim.Person.familyNameAtBirth": {
+    "aclSedSti": "$nav.bruker.person.etternavnvedfoedsel",
+    "indeks": "2.1.2.",
+    "ledetekst": "Etternavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "H020.Claim.Person.forenameAtBirth": {
+    "aclSedSti": "$nav.bruker.person.fornavnvedfoedsel",
+    "indeks": "2.1.3.",
+    "ledetekst": "Fornavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "H020.Claim.Person.PersonIdentificationNumber": {
+    "indeks": "2.1.4.",
+    "ledetekst": "Personnummer",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.Claim.Person.PersonIdentificationNumber.pINPersonInCompetentMemberState": {
+    "aclSedSti": "$nav.bruker.person.pin.identifikator",
+    "indeks": "2.1.4.1.",
+    "ledetekst": "Personens PIN i kompetent EU-land",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "H020.Claim.Person.PersonIdentificationNumber.pINPersonInMemberStateStayOrResidence": {
+    "aclSedSti": "$nav.bruker.person.oppholdsland.pin",
+    "indeks": "2.1.4.2.",
+    "ledetekst": "Personens PIN i oppholds- eller bostedslandet i EU",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "65"
+  },
+  "H020.Claim.Reimbursement[0]": {
+    "indeks": "2.2",
+    "ledetekst": "Refusjon",
+    "verdiType": "tittel",
+    "cdmType": "_rinaArray",
+    "required": false
+  },
+  "H020.Claim.Reimbursement[0].inReferenceYour.value[0]": {
+    "aclSedSti": "$horisontal.refusjonskrav.refusjon[x].henvisningtil",
+    "indeks": "2.2.1.",
+    "ledetekst": "Med henvisning til deres",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "HReferenceListType",
+    "kodefil": "horisontalrefusjonskravrefusjonhenvisningtilkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Anmodning om administrativ kontroll",
+        "enumkode": "anmodning_om_administrativ_kontroll"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Anmodning om legeundersøkelse",
+        "enumkode": "anmodning_om_legeundersøkels"
+      }
+    ]
+  },
+  "H020.Claim.Reimbursement[0].issuedOn": {
+    "aclSedSti": "$horisontal.refusjonskrav.refusjon[x].utstedelsesdato",
+    "indeks": "2.2.2.",
+    "ledetekst": "Utstedelsesdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "H020.Claim.Reimbursement[0].invoiceNumberCreditorInstitution": {
+    "aclSedSti": "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.fakturanummer",
+    "indeks": "2.2.3.",
+    "ledetekst": "Kredittinstitusjonens fakturanummer",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution": {
+    "indeks": "2.2.4.",
+    "ledetekst": "Fakturabeløp i kredittinstitusjonens valuta",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution.amount": {
+    "aclSedSti": "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.beloep",
+    "indeks": "2.2.4.1.",
+    "ledetekst": "Beløp",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "H020.Claim.Reimbursement[0].InvoiceAmountInCurrencyCreditorInstitution.currency.value[0]": {
+    "aclSedSti": "$horisontal.refusjonskrav.refusjon[x].kreditorinstitusjon.valuta",
+    "indeks": "2.2.4.2.",
+    "ledetekst": "Valuta",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIEUEFTACurrencyType",
+    "kodefil": "valutakoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "EUR",
+        "enumkodeBeskrivelse": "Euro",
+        "enumkode": "EUR"
+      },
+      {
+        "enumkodeId": "BGN",
+        "enumkodeBeskrivelse": "Bulgarsk lev",
+        "enumkode": "BGN"
+      },
+      {
+        "enumkodeId": "CZK",
+        "enumkodeBeskrivelse": "Tsjekkisk koruna",
+        "enumkode": "CZK"
+      },
+      {
+        "enumkodeId": "DKK",
+        "enumkodeBeskrivelse": "Dansk krone",
+        "enumkode": "DKK"
+      },
+      {
+        "enumkodeId": "GBP",
+        "enumkodeBeskrivelse": "Britisk pund",
+        "enumkode": "GBP"
+      },
+      {
+        "enumkodeId": "HRK",
+        "enumkodeBeskrivelse": "Kroatisk kuna",
+        "enumkode": "HRK"
+      },
+      {
+        "enumkodeId": "HUF",
+        "enumkodeBeskrivelse": "Ungarsk forint",
+        "enumkode": "HUF"
+      },
+      {
+        "enumkodeId": "PLN",
+        "enumkodeBeskrivelse": "Polsk zloty",
+        "enumkode": "PLN"
+      },
+      {
+        "enumkodeId": "RON",
+        "enumkodeBeskrivelse": "Rumensk ny leu",
+        "enumkode": "RON"
+      },
+      {
+        "enumkodeId": "SEK",
+        "enumkodeBeskrivelse": "Svenske kroner",
+        "enumkode": "SEK"
+      },
+      {
+        "enumkodeId": "CHF",
+        "enumkodeBeskrivelse": "Sveitsiske franc",
+        "enumkode": "CHF"
+      },
+      {
+        "enumkodeId": "ISK",
+        "enumkodeBeskrivelse": "Islandsk krone",
+        "enumkode": "ISK"
+      },
+      {
+        "enumkodeId": "NOK",
+        "enumkodeBeskrivelse": "Norsk krone",
+        "enumkode": "NOK"
+      },
+      {
+        "enumkodeId": "LTL",
+        "enumkodeBeskrivelse": "Litauisk litas",
+        "enumkode": "LTL"
+      },
+      {
+        "enumkodeId": "LVL",
+        "enumkodeBeskrivelse": "Latvisk lats",
+        "enumkode": "LVL"
+      }
+    ]
+  }
+}

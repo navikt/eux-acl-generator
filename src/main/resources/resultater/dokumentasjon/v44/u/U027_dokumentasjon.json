@@ -1,0 +1,457 @@
+{
+  "U027.sedTitle": {
+    "indeks": "U027",
+    "ledetekst": "Svar angående renter",
+    "verdiType": "tittel",
+    "cdmType": "_rinaRoot",
+    "required": false
+  },
+  "U027.LocalCaseNumbers": {
+    "indeks": "1.",
+    "ledetekst": "Lokale saksnumre",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0]": {
+    "indeks": "1.1",
+    "ledetekst": "Lokalt saksnummer",
+    "verdiType": "tittel",
+    "cdmType": "_rinaArray",
+    "required": false
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]": {
+    "aclSedSti": "$nav.eessisak[x].land",
+    "indeks": "1.1.1.",
+    "ledetekst": "Land",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIEUEFTACountryType",
+    "kodefil": "landkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "AT",
+        "enumkodeBeskrivelse": "Østerrike",
+        "enumkode": "AT"
+      },
+      {
+        "enumkodeId": "BE",
+        "enumkodeBeskrivelse": "Belgia",
+        "enumkode": "BE"
+      },
+      {
+        "enumkodeId": "BG",
+        "enumkodeBeskrivelse": "Bulgaria",
+        "enumkode": "BG"
+      },
+      {
+        "enumkodeId": "HR",
+        "enumkodeBeskrivelse": "Kroatia",
+        "enumkode": "HR"
+      },
+      {
+        "enumkodeId": "CY",
+        "enumkodeBeskrivelse": "Kypros",
+        "enumkode": "CY"
+      },
+      {
+        "enumkodeId": "CZ",
+        "enumkodeBeskrivelse": "Tsjekkia",
+        "enumkode": "CZ"
+      },
+      {
+        "enumkodeId": "DK",
+        "enumkodeBeskrivelse": "Danmark",
+        "enumkode": "DK"
+      },
+      {
+        "enumkodeId": "EE",
+        "enumkodeBeskrivelse": "Estland",
+        "enumkode": "EE"
+      },
+      {
+        "enumkodeId": "FI",
+        "enumkodeBeskrivelse": "Finland",
+        "enumkode": "FI"
+      },
+      {
+        "enumkodeId": "FR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FR"
+      },
+      {
+        "enumkodeId": "DE",
+        "enumkodeBeskrivelse": "Tyskland",
+        "enumkode": "DE"
+      },
+      {
+        "enumkodeId": "EL",
+        "enumkodeBeskrivelse": "Hellas",
+        "enumkode": "GR"
+      },
+      {
+        "enumkodeId": "HU",
+        "enumkodeBeskrivelse": "Ungarn",
+        "enumkode": "HU"
+      },
+      {
+        "enumkodeId": "IS",
+        "enumkodeBeskrivelse": "Island",
+        "enumkode": "IS"
+      },
+      {
+        "enumkodeId": "IE",
+        "enumkodeBeskrivelse": "Irland",
+        "enumkode": "IE"
+      },
+      {
+        "enumkodeId": "IT",
+        "enumkodeBeskrivelse": "Italia",
+        "enumkode": "IT"
+      },
+      {
+        "enumkodeId": "LV",
+        "enumkodeBeskrivelse": "Latvia",
+        "enumkode": "LV"
+      },
+      {
+        "enumkodeId": "LI",
+        "enumkodeBeskrivelse": "Liechtenstein",
+        "enumkode": "LI"
+      },
+      {
+        "enumkodeId": "LT",
+        "enumkodeBeskrivelse": "Litauen",
+        "enumkode": "LT"
+      },
+      {
+        "enumkodeId": "LU",
+        "enumkodeBeskrivelse": "Luxembourg",
+        "enumkode": "LU"
+      },
+      {
+        "enumkodeId": "MT",
+        "enumkodeBeskrivelse": "Malta",
+        "enumkode": "MT"
+      },
+      {
+        "enumkodeId": "NL",
+        "enumkodeBeskrivelse": "Nederland",
+        "enumkode": "NL"
+      },
+      {
+        "enumkodeId": "NO",
+        "enumkodeBeskrivelse": "Norge",
+        "enumkode": "NO"
+      },
+      {
+        "enumkodeId": "PL",
+        "enumkodeBeskrivelse": "Polen",
+        "enumkode": "PL"
+      },
+      {
+        "enumkodeId": "PT",
+        "enumkodeBeskrivelse": "Portugal",
+        "enumkode": "PT"
+      },
+      {
+        "enumkodeId": "RO",
+        "enumkodeBeskrivelse": "Romania",
+        "enumkode": "RO"
+      },
+      {
+        "enumkodeId": "SK",
+        "enumkodeBeskrivelse": "Slovakia",
+        "enumkode": "SK"
+      },
+      {
+        "enumkodeId": "SI",
+        "enumkodeBeskrivelse": "Slovenia",
+        "enumkode": "SI"
+      },
+      {
+        "enumkodeId": "ES",
+        "enumkodeBeskrivelse": "Spania",
+        "enumkode": "ES"
+      },
+      {
+        "enumkodeId": "SE",
+        "enumkodeBeskrivelse": "Sverige",
+        "enumkode": "SE"
+      },
+      {
+        "enumkodeId": "CH",
+        "enumkodeBeskrivelse": "Sveits",
+        "enumkode": "CH"
+      },
+      {
+        "enumkodeId": "UK",
+        "enumkodeBeskrivelse": "Storbritannia",
+        "enumkode": "GB"
+      }
+    ]
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].caseNumber": {
+    "aclSedSti": "$nav.eessisak[x].saksnummer",
+    "indeks": "1.1.2.",
+    "ledetekst": "Saksnummer",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution": {
+    "indeks": "1.1.3.",
+    "ledetekst": "Institusjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID": {
+    "aclSedSti": "$nav.eessisak[x].institusjonsid",
+    "indeks": "1.1.3.1.",
+    "ledetekst": "Institusjonens ID",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U027.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName": {
+    "aclSedSti": "$nav.eessisak[x].institusjonsnavn",
+    "indeks": "1.1.3.2.",
+    "ledetekst": "Institusjonens navn",
+    "verdiType": "tekst",
+    "cdmType": "_rinaIRAutocomplete",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "U027.InformationChargingInterest": {
+    "indeks": "2.",
+    "ledetekst": "Informasjon om rentebelastning",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "U027.InformationChargingInterest.reimbursementRequestID": {
+    "aclSedSti": "$dagpenger.refusjonskrav.id",
+    "indeks": "2.1.",
+    "ledetekst": "ID-nummer for krav om refusjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U027.ChargingInterestAccepted": {
+    "indeks": "3.",
+    "ledetekst": "Rentebelastningen godkjennes",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "U027.ChargingInterestAccepted.chargingInterestAccepted.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.rentebetaling.erakseptert.type",
+    "indeks": "3.1.",
+    "ledetekst": "Rentebelastningen godkjennes",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "InterestAcceptedType",
+    "kodefil": "dagpengerrefusjonskravsvarrentebetalingeraksepterttypekoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Fullt ut akseptert",
+        "enumkode": "fullt_ut_akseptert"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Delvis akseptert",
+        "enumkode": "delvis_akseptert"
+      },
+      {
+        "enumkodeId": "03",
+        "enumkodeBeskrivelse": "Ikke akseptert",
+        "enumkode": "ikke_akseptert"
+      }
+    ]
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo": {
+    "indeks": "3.2.",
+    "ledetekst": "Fyll ut hvis «Rentebelastning godkjennes» = «03 - Ikke akseptert»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.specifyReasonForNonAcceptance.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.rentebetaling.ikkeakseptert.grunn.type[x]",
+    "indeks": "3.2.1.",
+    "ledetekst": "Spesifiser grunnen til manglende aksept",
+    "verdiType": "enum",
+    "cdmType": "_uxMultiCheckbox",
+    "required": false,
+    "enumNavn": "InterestNonAcceptanceMultipleType",
+    "kodefil": "dagpengerrefusjonskravrentebetalingikkeakseptertgrunntype.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Feilaktig forfallsdato",
+        "enumkode": "feilaktig_forfallsdato"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Feilaktig rentesats",
+        "enumkode": "feilaktig_rentesats"
+      },
+      {
+        "enumkodeId": "03",
+        "enumkodeBeskrivelse": "Feilaktig totalbeløp for utestående krav",
+        "enumkode": "feilaktig_totalbeløp_for_utestående_krav"
+      },
+      {
+        "enumkodeId": "99",
+        "enumkodeBeskrivelse": "Annet",
+        "enumkode": "annet"
+      }
+    ]
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.PleaseFillInFollowingIfChargingInterestAccepted": {
+    "indeks": "3.2.2.",
+    "ledetekst": "Fyll ut hvis «Rentebelastning godkjennes» = «03 - Ikke akseptert» OG «Spesifiser årsaken til manglende aksept» = «99 - Annet»",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U027.ChargingInterestAccepted.PleaseFillInFollowingIfChargingInterestAcceptedNo.PleaseFillInFollowingIfChargingInterestAccepted.additionalInformation": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.rentebetaling.ikkeakseptert.grunn.annen",
+    "indeks": "3.2.2.1.",
+    "ledetekst": "Ytterligere informasjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextAreaInput",
+    "required": false,
+    "tekstlengde": "500"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2": {
+    "indeks": "4.",
+    "ledetekst": "Fyll ut hvis «Rentebelastning aksepteres» = «02 - Delvis akseptert»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0]": {
+    "indeks": "4.1",
+    "ledetekst": "Enkelkrav som ikke kan rentebelastes",
+    "verdiType": "tittel",
+    "cdmType": "_rinaArray",
+    "required": false
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].sequentialNumberIndividualClaim": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.loepenummer",
+    "indeks": "4.1.1.",
+    "ledetekst": "Løpenummer for enkeltkrav",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person": {
+    "indeks": "4.1.2.",
+    "ledetekst": "Person",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.familyName": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.etternavn",
+    "indeks": "4.1.2.1.",
+    "ledetekst": "Etternavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.forename": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.fornavn",
+    "indeks": "4.1.2.2.",
+    "ledetekst": "Fornavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.dateBirth": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.foedselsdato",
+    "indeks": "4.1.2.3.",
+    "ledetekst": "Fødselsdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].Person.sex.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.bruker.person.kjoenn",
+    "indeks": "4.1.2.4.",
+    "ledetekst": "Kjønn",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "EESSISexType",
+    "kodefil": "kjoennkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Mann",
+        "enumkode": "M"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Kvinne",
+        "enumkode": "K"
+      },
+      {
+        "enumkodeId": "98",
+        "enumkodeBeskrivelse": "Ukjent",
+        "enumkode": "U"
+      }
+    ]
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].specifyReason.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.grunn.type",
+    "indeks": "4.1.3.",
+    "ledetekst": "Oppgi årsak",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "NoInterestIndividualClaimType",
+    "kodefil": "dagpengerrefusjonskravenkeltkravrentebetalingkanikkebelastesgrunntype.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Enkeltkrav ble bestridt innen 18 måneder",
+        "enumkode": "enkeltkrav_ble_bestridt_innen_18_måneder"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Enkeltkrav ble betalt innen 18 måneder",
+        "enumkode": "enkeltkrav_ble_betalt_innen_18_måneder"
+      },
+      {
+        "enumkodeId": "99",
+        "enumkodeBeskrivelse": "Annet",
+        "enumkode": "annet"
+      }
+    ]
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].PleaseFillInFollowingIfSpecifyReason3Other": {
+    "indeks": "4.1.4.",
+    "ledetekst": "Fyll ut hvis «Spesifiser grunn» = «99 - Annet»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U027.PleaseFillInFollowingIfChargingInterest2.IndividualClaimWhichCannotSubjectedInterest[0].PleaseFillInFollowingIfSpecifyReason3Other.pleaseSpecifyOther": {
+    "aclSedSti": "$dagpenger.refusjonskrav.svar.enkeltkrav[x].rentebetaling.kanikkebelastes.grunn.annen",
+    "indeks": "4.1.4.1.",
+    "ledetekst": "Vennligst spesifiser annet",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextAreaInput",
+    "required": false,
+    "tekstlengde": "500"
+  }
+}

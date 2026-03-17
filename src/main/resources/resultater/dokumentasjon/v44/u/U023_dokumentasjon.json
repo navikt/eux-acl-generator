@@ -1,0 +1,594 @@
+{
+  "U023.sedTitle": {
+    "indeks": "U023",
+    "ledetekst": "Bestridelse av refusjon",
+    "verdiType": "tittel",
+    "cdmType": "_rinaRoot",
+    "required": false
+  },
+  "U023.LocalCaseNumbers": {
+    "indeks": "1.",
+    "ledetekst": "Lokale saksnumre",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U023.LocalCaseNumbers.LocalCaseNumber[0]": {
+    "indeks": "1.1",
+    "ledetekst": "Lokalt saksnummer",
+    "verdiType": "tittel",
+    "cdmType": "_rinaArray",
+    "required": false
+  },
+  "U023.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]": {
+    "aclSedSti": "$nav.eessisak[x].land",
+    "indeks": "1.1.1.",
+    "ledetekst": "Land",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIEUEFTACountryType",
+    "kodefil": "landkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "AT",
+        "enumkodeBeskrivelse": "Østerrike",
+        "enumkode": "AT"
+      },
+      {
+        "enumkodeId": "BE",
+        "enumkodeBeskrivelse": "Belgia",
+        "enumkode": "BE"
+      },
+      {
+        "enumkodeId": "BG",
+        "enumkodeBeskrivelse": "Bulgaria",
+        "enumkode": "BG"
+      },
+      {
+        "enumkodeId": "HR",
+        "enumkodeBeskrivelse": "Kroatia",
+        "enumkode": "HR"
+      },
+      {
+        "enumkodeId": "CY",
+        "enumkodeBeskrivelse": "Kypros",
+        "enumkode": "CY"
+      },
+      {
+        "enumkodeId": "CZ",
+        "enumkodeBeskrivelse": "Tsjekkia",
+        "enumkode": "CZ"
+      },
+      {
+        "enumkodeId": "DK",
+        "enumkodeBeskrivelse": "Danmark",
+        "enumkode": "DK"
+      },
+      {
+        "enumkodeId": "EE",
+        "enumkodeBeskrivelse": "Estland",
+        "enumkode": "EE"
+      },
+      {
+        "enumkodeId": "FI",
+        "enumkodeBeskrivelse": "Finland",
+        "enumkode": "FI"
+      },
+      {
+        "enumkodeId": "FR",
+        "enumkodeBeskrivelse": "Frankrike",
+        "enumkode": "FR"
+      },
+      {
+        "enumkodeId": "DE",
+        "enumkodeBeskrivelse": "Tyskland",
+        "enumkode": "DE"
+      },
+      {
+        "enumkodeId": "EL",
+        "enumkodeBeskrivelse": "Hellas",
+        "enumkode": "GR"
+      },
+      {
+        "enumkodeId": "HU",
+        "enumkodeBeskrivelse": "Ungarn",
+        "enumkode": "HU"
+      },
+      {
+        "enumkodeId": "IS",
+        "enumkodeBeskrivelse": "Island",
+        "enumkode": "IS"
+      },
+      {
+        "enumkodeId": "IE",
+        "enumkodeBeskrivelse": "Irland",
+        "enumkode": "IE"
+      },
+      {
+        "enumkodeId": "IT",
+        "enumkodeBeskrivelse": "Italia",
+        "enumkode": "IT"
+      },
+      {
+        "enumkodeId": "LV",
+        "enumkodeBeskrivelse": "Latvia",
+        "enumkode": "LV"
+      },
+      {
+        "enumkodeId": "LI",
+        "enumkodeBeskrivelse": "Liechtenstein",
+        "enumkode": "LI"
+      },
+      {
+        "enumkodeId": "LT",
+        "enumkodeBeskrivelse": "Litauen",
+        "enumkode": "LT"
+      },
+      {
+        "enumkodeId": "LU",
+        "enumkodeBeskrivelse": "Luxembourg",
+        "enumkode": "LU"
+      },
+      {
+        "enumkodeId": "MT",
+        "enumkodeBeskrivelse": "Malta",
+        "enumkode": "MT"
+      },
+      {
+        "enumkodeId": "NL",
+        "enumkodeBeskrivelse": "Nederland",
+        "enumkode": "NL"
+      },
+      {
+        "enumkodeId": "NO",
+        "enumkodeBeskrivelse": "Norge",
+        "enumkode": "NO"
+      },
+      {
+        "enumkodeId": "PL",
+        "enumkodeBeskrivelse": "Polen",
+        "enumkode": "PL"
+      },
+      {
+        "enumkodeId": "PT",
+        "enumkodeBeskrivelse": "Portugal",
+        "enumkode": "PT"
+      },
+      {
+        "enumkodeId": "RO",
+        "enumkodeBeskrivelse": "Romania",
+        "enumkode": "RO"
+      },
+      {
+        "enumkodeId": "SK",
+        "enumkodeBeskrivelse": "Slovakia",
+        "enumkode": "SK"
+      },
+      {
+        "enumkodeId": "SI",
+        "enumkodeBeskrivelse": "Slovenia",
+        "enumkode": "SI"
+      },
+      {
+        "enumkodeId": "ES",
+        "enumkodeBeskrivelse": "Spania",
+        "enumkode": "ES"
+      },
+      {
+        "enumkodeId": "SE",
+        "enumkodeBeskrivelse": "Sverige",
+        "enumkode": "SE"
+      },
+      {
+        "enumkodeId": "CH",
+        "enumkodeBeskrivelse": "Sveits",
+        "enumkode": "CH"
+      },
+      {
+        "enumkodeId": "UK",
+        "enumkodeBeskrivelse": "Storbritannia",
+        "enumkode": "GB"
+      }
+    ]
+  },
+  "U023.LocalCaseNumbers.LocalCaseNumber[0].caseNumber": {
+    "aclSedSti": "$nav.eessisak[x].saksnummer",
+    "indeks": "1.1.2.",
+    "ledetekst": "Saksnummer",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "U023.LocalCaseNumbers.LocalCaseNumber[0].Institution": {
+    "indeks": "1.1.3.",
+    "ledetekst": "Institusjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U023.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID": {
+    "aclSedSti": "$nav.eessisak[x].institusjonsid",
+    "indeks": "1.1.3.1.",
+    "ledetekst": "Institusjonens ID",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U023.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName": {
+    "aclSedSti": "$nav.eessisak[x].institusjonsnavn",
+    "indeks": "1.1.3.2.",
+    "ledetekst": "Institusjonens navn",
+    "verdiType": "tekst",
+    "cdmType": "_rinaIRAutocomplete",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "U023.GeneralInformation": {
+    "indeks": "2.",
+    "ledetekst": "Generell informasjon",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "U023.GeneralInformation.reimbursementRequestID": {
+    "aclSedSti": "$dagpenger.refusjonskrav.id",
+    "indeks": "2.1.",
+    "ledetekst": "ID-nummer for krav om refusjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U023.GeneralInformation.reimbursementContestationID": {
+    "aclSedSti": "$dagpenger.refusjonskrav.bestridelse.id",
+    "indeks": "2.2.",
+    "ledetekst": "ID bestridelse av refusjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U023.IndividualClaimsContested": {
+    "indeks": "3.",
+    "ledetekst": "Bestridte enkeltkrav",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0]": {
+    "indeks": "3.1",
+    "ledetekst": "Bestridte enkeltkrav",
+    "verdiType": "tittel",
+    "cdmType": "_rinaArray",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].reimbursementRequestID": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravid",
+    "indeks": "3.1.1.",
+    "ledetekst": "ID-nummer for krav om refusjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].reimbursementContestationID": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravbestridelseid",
+    "indeks": "3.1.2.",
+    "ledetekst": "ID bestridelse av refusjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].sequentialNumberIndividualClaim": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].loepenummer",
+    "indeks": "3.1.3.",
+    "ledetekst": "Løpenummer for enkeltkrav",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].contestedIndividualClaimID": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.id",
+    "indeks": "3.1.4.",
+    "ledetekst": "ID bestridelse av enkeltkrav",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].Person": {
+    "indeks": "3.1.5.",
+    "ledetekst": "Person",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.familyName": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.etternavn",
+    "indeks": "3.1.5.1.",
+    "ledetekst": "Etternavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.forename": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.fornavn",
+    "indeks": "3.1.5.2.",
+    "ledetekst": "Fornavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.dateBirth": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.foedselsdato",
+    "indeks": "3.1.5.3.",
+    "ledetekst": "Fødselsdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].Person.sex.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.bruker.person.kjoenn",
+    "indeks": "3.1.5.4.",
+    "ledetekst": "Kjønn",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "EESSISexType",
+    "kodefil": "kjoennkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Mann",
+        "enumkode": "M"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Kvinne",
+        "enumkode": "K"
+      },
+      {
+        "enumkodeId": "98",
+        "enumkodeBeskrivelse": "Ukjent",
+        "enumkode": "U"
+      }
+    ]
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType": {
+    "indeks": "3.1.6.",
+    "ledetekst": "Type bestridelse",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.NonAcceptanceIndividualClaim": {
+    "indeks": "3.1.6.1.",
+    "ledetekst": "Manglende for enkeltkrav",
+    "verdiType": "tittel",
+    "cdmType": "_uxHiddenGroupContainer",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.NonAcceptanceIndividualClaim.reasonForNonAcceptance.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.manglendeaksept.grunn.type[x]",
+    "indeks": "3.1.6.1.1.",
+    "ledetekst": "Grunn til manglende aksept",
+    "verdiType": "enum",
+    "cdmType": "_uxMultiCheckbox",
+    "required": true,
+    "enumNavn": "ReasonForNonAcceptanceLateClaimMultipleType",
+    "kodefil": "dagpengerrefusjonskravbestridelsemanglendeakseptgrunntypekoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Fremsatt etter tidsfristen",
+        "enumkode": "fremsatt_etter_tidsfristen"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Ingen periode godkjent",
+        "enumkode": "ingen_periode_godkjent"
+      },
+      {
+        "enumkodeId": "99",
+        "enumkodeBeskrivelse": "Annen årsak eller tilleggsinformasjon",
+        "enumkode": "annen_årsak_eller_tilleggsinformasjon"
+      }
+    ]
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.NonAcceptanceIndividualClaim.FillInIfReasonForNonAcceptance": {
+    "indeks": "3.1.6.1.2.",
+    "ledetekst": "Fyll ut hvis «Årsak til manglende aksept» = «99 - Annen årsak eller tilleggsinformasjon»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.NonAcceptanceIndividualClaim.FillInIfReasonForNonAcceptance.informationAboutOtherReasonOrAdditionalInformation": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.manglendeaksept.grunn.annen",
+    "indeks": "3.1.6.1.2.1.",
+    "ledetekst": "Informasjon om andre årsaker eller tilleggsinformasjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextAreaInput",
+    "required": false,
+    "tekstlengde": "500"
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim": {
+    "indeks": "3.1.6.2.",
+    "ledetekst": "Delvis aksept for enkeltkrav",
+    "verdiType": "tittel",
+    "cdmType": "_uxHiddenGroupContainer",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.reasonForPartialNonAcceptance.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.grunn.type[x]",
+    "indeks": "3.1.6.2.1.",
+    "ledetekst": "Grunn til delvis manglende aksept",
+    "verdiType": "enum",
+    "cdmType": "_uxMultiCheckbox",
+    "required": false,
+    "enumNavn": "ReasonForPartialNonAcceptanceMultipleType",
+    "kodefil": "dagpengerrefusjonskravbestridelsedelvismanglendeakseptgrunntypekoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Delvis aksept på grunn av tak i nasjonal lovgivning",
+        "enumkode": "delvis_aksept_på_grunn_av_tak_i_nasjonal_lovgivning"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Periode ikke berettiget",
+        "enumkode": "periode_ikke_berettiget"
+      },
+      {
+        "enumkodeId": "03",
+        "enumkodeBeskrivelse": "Ufullstendig refusjonskrav",
+        "enumkode": "ufullstendig_refusjonskrav"
+      },
+      {
+        "enumkodeId": "99",
+        "enumkodeBeskrivelse": "Annen årsak eller tilleggsinformasjon",
+        "enumkode": "annen_årsak_eller_tilleggsinformasjon"
+      }
+    ]
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialAcceptanceDueCeiling": {
+    "indeks": "3.1.6.2.2.",
+    "ledetekst": "Fyll ut hvis «Årsak til delvis manglende aksept» = «01 - Delvis aksept på grunn av tak etter nasjonal lovgivning»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialAcceptanceDueCeiling.AmountIntendedReimbursed": {
+    "indeks": "3.1.6.2.2.1.",
+    "ledetekst": "Tiltenkt refusjonsbeløp",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialAcceptanceDueCeiling.AmountIntendedReimbursed.amount": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.tiltenkt.refusjon.beloep",
+    "indeks": "3.1.6.2.2.1.1.",
+    "ledetekst": "Beløp",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialAcceptanceDueCeiling.AmountIntendedReimbursed.currency.value[0]": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.tiltenkt.refusjon.valuta",
+    "indeks": "3.1.6.2.2.1.2.",
+    "ledetekst": "Valuta",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": false,
+    "enumNavn": "EESSIEUEFTACurrencyType",
+    "kodefil": "valutakoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "EUR",
+        "enumkodeBeskrivelse": "Euro",
+        "enumkode": "EUR"
+      },
+      {
+        "enumkodeId": "BGN",
+        "enumkodeBeskrivelse": "Bulgarsk lev",
+        "enumkode": "BGN"
+      },
+      {
+        "enumkodeId": "CZK",
+        "enumkodeBeskrivelse": "Tsjekkisk koruna",
+        "enumkode": "CZK"
+      },
+      {
+        "enumkodeId": "DKK",
+        "enumkodeBeskrivelse": "Dansk krone",
+        "enumkode": "DKK"
+      },
+      {
+        "enumkodeId": "GBP",
+        "enumkodeBeskrivelse": "Britisk pund",
+        "enumkode": "GBP"
+      },
+      {
+        "enumkodeId": "HRK",
+        "enumkodeBeskrivelse": "Kroatisk kuna",
+        "enumkode": "HRK"
+      },
+      {
+        "enumkodeId": "HUF",
+        "enumkodeBeskrivelse": "Ungarsk forint",
+        "enumkode": "HUF"
+      },
+      {
+        "enumkodeId": "PLN",
+        "enumkodeBeskrivelse": "Polsk zloty",
+        "enumkode": "PLN"
+      },
+      {
+        "enumkodeId": "RON",
+        "enumkodeBeskrivelse": "Rumensk ny leu",
+        "enumkode": "RON"
+      },
+      {
+        "enumkodeId": "SEK",
+        "enumkodeBeskrivelse": "Svenske kroner",
+        "enumkode": "SEK"
+      },
+      {
+        "enumkodeId": "CHF",
+        "enumkodeBeskrivelse": "Sveitsiske franc",
+        "enumkode": "CHF"
+      },
+      {
+        "enumkodeId": "ISK",
+        "enumkodeBeskrivelse": "Islandsk krone",
+        "enumkode": "ISK"
+      },
+      {
+        "enumkodeId": "NOK",
+        "enumkodeBeskrivelse": "Norsk krone",
+        "enumkode": "NOK"
+      },
+      {
+        "enumkodeId": "LTL",
+        "enumkodeBeskrivelse": "Litauisk litas",
+        "enumkode": "LTL"
+      },
+      {
+        "enumkodeId": "LVL",
+        "enumkodeBeskrivelse": "Latvisk lats",
+        "enumkode": "LVL"
+      }
+    ]
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialNonAcceptanceReimbursementIncomplete": {
+    "indeks": "3.1.6.2.3.",
+    "ledetekst": "Fyll ut hvis «Årsak til delvis manglende aksept» = «03 - Ufullstendig refusjonskrav»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialNonAcceptanceReimbursementIncomplete.informationMissingData": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.manglendeinformasjon",
+    "indeks": "3.1.6.2.3.1.",
+    "ledetekst": "Informasjon om manglende informasjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextAreaInput",
+    "required": false,
+    "tekstlengde": "255"
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialNonAcceptanceOtherReason": {
+    "indeks": "3.1.6.2.4.",
+    "ledetekst": "Fyll ut hvis «Årsak til delvis manglende aksept» = «99 - Annen årsak eller tilleggsinformasjon»:",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "U023.IndividualClaimsContested.IndividualClaimContested[0].ContestationType.PartialAcceptanceIndividualClaim.PartialNonAcceptanceOtherReason.additionalInformation": {
+    "aclSedSti": "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.delvismanglendeaksept.ytterligereinformasjon",
+    "indeks": "3.1.6.2.4.1.",
+    "ledetekst": "Ytterligere informasjon",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextAreaInput",
+    "required": false,
+    "tekstlengde": "500"
+  }
+}

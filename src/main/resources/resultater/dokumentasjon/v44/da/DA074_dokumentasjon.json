@@ -1,0 +1,583 @@
+{
+  "DA074.sedTitle": {
+    "indeks": "DA074",
+    "ledetekst": "Vedtak om tilbakebetaling av feilutbetaling (IRO_IO)",
+    "verdiType": "tittel",
+    "cdmType": "_rinaRoot",
+    "required": false
+  },
+  "DA074.GlobalNoteDecisionIROIO": {
+    "indeks": "1.",
+    "ledetekst": "Global Note om vedtak IRO_IO",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.globalIOReferenceLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.avsenderinstitusjon.globalioreferanse",
+    "indeks": "1.1.",
+    "ledetekst": "Global IO referanse til forbindelsesorganet",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.globalACPIOReferenceLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.referanser.mottakerland.forbindelsesorgan.globalacpioreferanse",
+    "indeks": "1.2.",
+    "ledetekst": "Global ACP_IO referanse til forbindelsesorganet",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.globalDecisionIOReferenceDebtorLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.mottakerinstitusjon.globalioreferanse",
+    "indeks": "1.3.",
+    "ledetekst": "Global beslutnings IO-referanse til debitorinstitusjonens forbindelsesorgan",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.totalNumberIndividualDecisionIO": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.total.antall",
+    "indeks": "1.4.",
+    "ledetekst": "Totalt antall enkeltkrav IO-er",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.TotalAmountIndividualOverpayments": {
+    "indeks": "1.5.",
+    "ledetekst": "Totalbeløp for feilutbetaling på enkeltkrav",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.TotalAmountIndividualOverpayments.amount": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.total.beloep",
+    "indeks": "1.5.1.",
+    "ledetekst": "Beløp",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.TotalAmountIndividualOverpayments.currency.value[0]": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.total.valuta",
+    "indeks": "1.5.2.",
+    "ledetekst": "Valuta",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIEUEFTACurrencyType",
+    "kodefil": "valutakoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "EUR",
+        "enumkodeBeskrivelse": "Euro",
+        "enumkode": "EUR"
+      },
+      {
+        "enumkodeId": "BGN",
+        "enumkodeBeskrivelse": "Bulgarsk lev",
+        "enumkode": "BGN"
+      },
+      {
+        "enumkodeId": "CZK",
+        "enumkodeBeskrivelse": "Tsjekkisk koruna",
+        "enumkode": "CZK"
+      },
+      {
+        "enumkodeId": "DKK",
+        "enumkodeBeskrivelse": "Dansk krone",
+        "enumkode": "DKK"
+      },
+      {
+        "enumkodeId": "GBP",
+        "enumkodeBeskrivelse": "Britisk pund",
+        "enumkode": "GBP"
+      },
+      {
+        "enumkodeId": "HRK",
+        "enumkodeBeskrivelse": "Kroatisk kuna",
+        "enumkode": "HRK"
+      },
+      {
+        "enumkodeId": "HUF",
+        "enumkodeBeskrivelse": "Ungarsk forint",
+        "enumkode": "HUF"
+      },
+      {
+        "enumkodeId": "PLN",
+        "enumkodeBeskrivelse": "Polsk zloty",
+        "enumkode": "PLN"
+      },
+      {
+        "enumkodeId": "RON",
+        "enumkodeBeskrivelse": "Rumensk ny leu",
+        "enumkode": "RON"
+      },
+      {
+        "enumkodeId": "SEK",
+        "enumkodeBeskrivelse": "Svenske kroner",
+        "enumkode": "SEK"
+      },
+      {
+        "enumkodeId": "CHF",
+        "enumkodeBeskrivelse": "Sveitsiske franc",
+        "enumkode": "CHF"
+      },
+      {
+        "enumkodeId": "ISK",
+        "enumkodeBeskrivelse": "Islandsk krone",
+        "enumkode": "ISK"
+      },
+      {
+        "enumkodeId": "NOK",
+        "enumkodeBeskrivelse": "Norsk krone",
+        "enumkode": "NOK"
+      },
+      {
+        "enumkodeId": "LTL",
+        "enumkodeBeskrivelse": "Litauisk litas",
+        "enumkode": "LTL"
+      },
+      {
+        "enumkodeId": "LVL",
+        "enumkodeBeskrivelse": "Latvisk lats",
+        "enumkode": "LVL"
+      }
+    ]
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund": {
+    "indeks": "1.6.",
+    "ledetekst": "Refusjonsmåte",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.methodRefund.value[0]": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.type",
+    "indeks": "1.6.1.",
+    "ledetekst": "Refusjonsmåte",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "RefundMethodType",
+    "kodefil": "arbeidsulykkeyrkessykdomtilbakebetalingfeilutbetalingvedtakglobalnoteacpiorefusjontypekoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Bankoverføring",
+        "enumkode": "bankoverføring"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Motregning mot nåværende krav om refusjon",
+        "enumkode": "motregning_mot_nåværende_krav_om_refusjon"
+      },
+      {
+        "enumkodeId": "03",
+        "enumkodeBeskrivelse": "Motregning mot framtidig krav om refusjon",
+        "enumkode": "motregning_mot_framtidig_krav_om_refusjon"
+      }
+    ]
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundBankTransfer.BankAccountDebtorLiaisonBody": {
+    "indeks": "1.6.2.1.",
+    "ledetekst": "Bankkonto til debitorinstitusjonens samarbeidsorgan",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundBankTransfer.BankAccountDebtorLiaisonBody.IBAN": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.bank.konto.sepa.iban",
+    "indeks": "1.6.2.1.1.",
+    "ledetekst": "IBAN",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundBankTransfer.BankAccountDebtorLiaisonBody.BICSWIFT": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.bank.konto.sepa.swift",
+    "indeks": "1.6.2.1.2.",
+    "ledetekst": "BIC-SWIFT",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "11"
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundOffset": {
+    "indeks": "1.6.3.",
+    "ledetekst": "Fyll ut hvis «Refusjonsmåte» = «Motregning mot refusjonskrav som fremdeles pågår»",
+    "verdiType": "tittel",
+    "cdmType": "_uxHiddenGroupContainer",
+    "required": false
+  },
+  "DA074.GlobalNoteDecisionIROIO.MethodRefund.PleaseFillInFollowingIfMethodRefundOffset.globalCLAReferenceCreditorLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.motregning",
+    "indeks": "1.6.3.1.",
+    "ledetekst": "Global CLA-referanse til kreditorinstitusjonens samarbeidsorgan",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false
+  },
+  "DA074.GlobalNoteDecisionIROIO.dateSubmission": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.leveringsdato",
+    "indeks": "1.7.",
+    "ledetekst": "Leveringsdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs": {
+    "indeks": "2.",
+    "ledetekst": "Individuell beslutning IO",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0]": {
+    "indeks": "2.1",
+    "ledetekst": "Enkeltvedtak IO",
+    "verdiType": "tittel",
+    "cdmType": "_rinaArray",
+    "required": false
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDCreditorInstitution": {
+    "indeks": "2.1.1.",
+    "ledetekst": "ID-nummeret til kreditorinstitusjonen",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDCreditorInstitution.institutionID": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].kreditorinstitusjon.institusjonsid",
+    "indeks": "2.1.1.1.",
+    "ledetekst": "Institusjonens ID",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDCreditorInstitution.institutionName": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].kreditorinstitusjon.institusjonsnavn",
+    "indeks": "2.1.1.2.",
+    "ledetekst": "Institusjonens navn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDDebtorInstitution": {
+    "indeks": "2.1.2.",
+    "ledetekst": "ID-nummeret til debitorinstitusjonen",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDDebtorInstitution.institutionID": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].debitorinstitusjon.institusjonsid",
+    "indeks": "2.1.2.1.",
+    "ledetekst": "Institusjonens ID",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].IDDebtorInstitution.institutionName": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].debitorinstitusjon.institusjonsnavn",
+    "indeks": "2.1.2.2.",
+    "ledetekst": "Institusjonens navn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References": {
+    "indeks": "2.1.3.",
+    "ledetekst": "Referanser",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.globalIOReferenceLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.avsenderinstitusjon.samarbeidsorgan.globalioreferanse",
+    "indeks": "2.1.3.1.",
+    "ledetekst": "Global IO referanse til forbindelsesorganet",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.globalACPIOReferenceLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.mottakerland.forbindelsesorgan.globalacpioreferanse",
+    "indeks": "2.1.3.2.",
+    "ledetekst": "Global ACP_IO referanse til forbindelsesorganet",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.globalDecisionIOReferenceDebtorLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].mottakerinstitusjon.globalioreferanse",
+    "indeks": "2.1.3.3.",
+    "ledetekst": "Global beslutnings IO-referanse til debitorinstitusjonens forbindelsesorgan",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.individualIONumberLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.avsenderinstitusjon.samarbeidsorgan.individuellioreferanse",
+    "indeks": "2.1.3.4.",
+    "ledetekst": "Individuelt IO nummer til forbindelsesorganet",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.individualACPIONumberLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.mottakerland.forbindelsesorgan.individuellacpioreferanse",
+    "indeks": "2.1.3.5.",
+    "ledetekst": "Individuelt ACP_IO nummer til forbindelsesorganet",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].References.individualIODecisionNumberDebtorLiaisonBody": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.mottakerland.forbindelsesorgan.individuellioreferanse",
+    "indeks": "2.1.3.6.",
+    "ledetekst": "Individuelt IO-beslutningsnummer til debitorinstitusjonens samarbeidsorgan",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits": {
+    "indeks": "2.1.4.",
+    "ledetekst": "Mottaker av ytelser",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation": {
+    "indeks": "2.1.4.1.",
+    "ledetekst": "Personopplysninger",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation.familyName": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.etternavn",
+    "indeks": "2.1.4.1.1.",
+    "ledetekst": "Etternavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation.forename": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.fornavn",
+    "indeks": "2.1.4.1.2.",
+    "ledetekst": "Fornavn",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "155"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation.dateBirth": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.foedselsdato",
+    "indeks": "2.1.4.1.3.",
+    "ledetekst": "Fødselsdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonInformation.sex.value[0]": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.kjoenn",
+    "indeks": "2.1.4.1.4.",
+    "ledetekst": "Kjønn",
+    "verdiType": "enum",
+    "cdmType": "_uxRadioButton",
+    "required": true,
+    "enumNavn": "EESSISexType",
+    "kodefil": "kjoennkoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "01",
+        "enumkodeBeskrivelse": "Mann",
+        "enumkode": "M"
+      },
+      {
+        "enumkodeId": "02",
+        "enumkodeBeskrivelse": "Kvinne",
+        "enumkode": "K"
+      },
+      {
+        "enumkodeId": "98",
+        "enumkodeBeskrivelse": "Ukjent",
+        "enumkode": "U"
+      }
+    ]
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.familyNameAtBirth": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.etternavnvedfoedsel",
+    "indeks": "2.1.4.2.",
+    "ledetekst": "Etternavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.forenameAtBirth": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.fornavnvedfoedsel",
+    "indeks": "2.1.4.3.",
+    "ledetekst": "Fornavn ved fødsel",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "155"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonIdentificationNumber": {
+    "indeks": "2.1.4.4.",
+    "ledetekst": "Personnummer",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInCompetentMemberState": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.pin.kompetenteuland",
+    "indeks": "2.1.4.4.1.",
+    "ledetekst": "Personens PIN i kompetent EU-land",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true,
+    "tekstlengde": "65"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].PersonReceivingBenefits.PersonIdentificationNumber.pINPersonInMemberStateStayOrResidence": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.pin.oppholdsland",
+    "indeks": "2.1.4.4.2.",
+    "ledetekst": "Personens PIN i oppholds- eller bostedslandet i EU",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": false,
+    "tekstlengde": "65"
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundPeriod": {
+    "indeks": "2.1.5.",
+    "ledetekst": "Refusjonsperiode",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": false
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundPeriod.startDate": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon.periode.startdato",
+    "indeks": "2.1.5.1.",
+    "ledetekst": "Startdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundPeriod.endDate": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon.periode.sluttdato",
+    "indeks": "2.1.5.2.",
+    "ledetekst": "Sluttdato",
+    "verdiType": "dato",
+    "cdmType": "_uxDateInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundAmount": {
+    "indeks": "2.1.6.",
+    "ledetekst": "Refusjonsbeløp",
+    "verdiType": "tittel",
+    "cdmType": "_uxFieldSetContainer",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundAmount.amount": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon,beloep",
+    "indeks": "2.1.6.1.",
+    "ledetekst": "Beløp",
+    "verdiType": "tekst",
+    "cdmType": "_uxTextInput",
+    "required": true
+  },
+  "DA074.IndividualDecisionIOs.IndividualDecisionIO[0].RefundAmount.currency.value[0]": {
+    "aclSedSti": "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon.valuta",
+    "indeks": "2.1.6.2.",
+    "ledetekst": "Valuta",
+    "verdiType": "enum",
+    "cdmType": "_uxSelectAutoCompleteInput",
+    "required": true,
+    "enumNavn": "EESSIEUEFTACurrencyType",
+    "kodefil": "valutakoder.properties",
+    "enumVerdier": [
+      {
+        "enumkodeId": "EUR",
+        "enumkodeBeskrivelse": "Euro",
+        "enumkode": "EUR"
+      },
+      {
+        "enumkodeId": "BGN",
+        "enumkodeBeskrivelse": "Bulgarsk lev",
+        "enumkode": "BGN"
+      },
+      {
+        "enumkodeId": "CZK",
+        "enumkodeBeskrivelse": "Tsjekkisk koruna",
+        "enumkode": "CZK"
+      },
+      {
+        "enumkodeId": "DKK",
+        "enumkodeBeskrivelse": "Dansk krone",
+        "enumkode": "DKK"
+      },
+      {
+        "enumkodeId": "GBP",
+        "enumkodeBeskrivelse": "Britisk pund",
+        "enumkode": "GBP"
+      },
+      {
+        "enumkodeId": "HRK",
+        "enumkodeBeskrivelse": "Kroatisk kuna",
+        "enumkode": "HRK"
+      },
+      {
+        "enumkodeId": "HUF",
+        "enumkodeBeskrivelse": "Ungarsk forint",
+        "enumkode": "HUF"
+      },
+      {
+        "enumkodeId": "PLN",
+        "enumkodeBeskrivelse": "Polsk zloty",
+        "enumkode": "PLN"
+      },
+      {
+        "enumkodeId": "RON",
+        "enumkodeBeskrivelse": "Rumensk ny leu",
+        "enumkode": "RON"
+      },
+      {
+        "enumkodeId": "SEK",
+        "enumkodeBeskrivelse": "Svenske kroner",
+        "enumkode": "SEK"
+      },
+      {
+        "enumkodeId": "CHF",
+        "enumkodeBeskrivelse": "Sveitsiske franc",
+        "enumkode": "CHF"
+      },
+      {
+        "enumkodeId": "ISK",
+        "enumkodeBeskrivelse": "Islandsk krone",
+        "enumkode": "ISK"
+      },
+      {
+        "enumkodeId": "NOK",
+        "enumkodeBeskrivelse": "Norsk krone",
+        "enumkode": "NOK"
+      },
+      {
+        "enumkodeId": "LTL",
+        "enumkodeBeskrivelse": "Litauisk litas",
+        "enumkode": "LTL"
+      },
+      {
+        "enumkodeId": "LVL",
+        "enumkodeBeskrivelse": "Latvisk lats",
+        "enumkode": "LVL"
+      }
+    ]
+  }
+}
