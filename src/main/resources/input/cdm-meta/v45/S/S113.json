@@ -1,0 +1,424 @@
+{
+  "fieldType": "container",
+  "fieldId": "1",
+  "layout": {
+    "class": "col-12"
+  },
+  "context": {
+    "type": "_rinaRoot",
+    "inputs": {
+      "sedPackage": "Sector Components/Sickness/S113",
+      "sedGVer": "4",
+      "sedVer": "5",
+      "sedName": "S113",
+      "sedTitle": "forms.4.5_64FCF16B-45DF-E511-80BF-000D3A22E8CD_label",
+      "sedApiVersion": "0.16.3 build preview 1",
+      "sedPatchVer": "0"
+    }
+  },
+  "children": [
+    {
+      "fieldType": "formGroup",
+      "fieldId": "2",
+      "layout": {
+        "class": "col-12"
+      },
+      "context": {
+        "type": "_uxHiddenGroupContainer",
+        "key": "S113"
+      },
+      "children": [
+        {
+          "fieldType": "formGroup",
+          "fieldId": "3",
+          "layout": {
+            "class": "col-12"
+          },
+          "context": {
+            "type": "_uxFieldSetContainer",
+            "inputs": {
+              "label": [
+                {
+                  "string": "forms.4.5_FF9B4596-7C9F-E611-80D1-000D3A22E8CD_label",
+                  "prefix": "1. ",
+                  "translate": true
+                }
+              ],
+              "required": true
+            },
+            "key": "GlobalNoteRPYCOCCLAIMO",
+            "validators": {
+              "validatorFn": [
+                {
+                  "valFnId": "advRequired",
+                  "severity": "warning"
+                },
+                {
+                  "valFnId": "groupLevelRequired"
+                }
+              ]
+            }
+          },
+          "children": [
+            {
+              "fieldType": "formControl",
+              "fieldId": "4",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_EB9B4596-7C9F-E611-80D1-000D3A22E8CD_label",
+                      "prefix": "1.1. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_EB9B4596-7C9F-E611-80D1-000D3A22E8CD_explanatoryNotes",
+                  "required": true,
+                  "disabled": true
+                },
+                "key": "globalIMOReferenceCreditorLiaisonBody",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "minLength",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "maxLength",
+                      "params": [65],
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "5",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_EC9B4596-7C9F-E611-80D1-000D3A22E8CD_label",
+                      "prefix": "1.2. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_EC9B4596-7C9F-E611-80D1-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "globalCLAIMOReferenceCreditorLiaisonBody",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "minLength",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "maxLength",
+                      "params": [65],
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "6",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_ED9B4596-7C9F-E611-80D1-000D3A22E8CD_label",
+                      "prefix": "1.3. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_ED9B4596-7C9F-E611-80D1-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "globalCOCCLAIMOReferenceDebtorLiaisonBody",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "minLength",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "maxLength",
+                      "params": [65],
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "7",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_BD8020FE-C53B-E711-80D5-000D3A22E8CD_label",
+                      "prefix": "1.4. ",
+                      "translate": true
+                    }
+                  ],
+                  "required": true
+                },
+                "key": "globalRPYCOCCLAIMOReferenceCreditorLiaisonBody",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "minLength",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "maxLength",
+                      "params": [65],
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formGroup",
+              "fieldId": "8",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxHiddenGroupContainer",
+                "inputs": {
+                  "rinaHideError": true
+                },
+                "key": "replyCode",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "groupLevelRequired",
+                      "severity": "warning"
+                    }
+                  ]
+                }
+              },
+              "children": [
+                {
+                  "fieldType": "formArray",
+                  "fieldId": "9",
+                  "layout": {
+                    "class": "col-12"
+                  },
+                  "context": {
+                    "type": "_uxHiddenArrayContainer",
+                    "inputs": {
+                      "rinaHideError": true
+                    },
+                    "key": "value",
+                    "validators": {
+                      "validatorFn": [
+                        {
+                          "valFnId": "groupRequired",
+                          "severity": "warning"
+                        },
+                        {
+                          "valFnId": "groupLevelRequired",
+                          "severity": "warning"
+                        }
+                      ]
+                    }
+                  },
+                  "children": [
+                    {
+                      "fieldType": "formControl",
+                      "fieldId": "10",
+                      "layout": {
+                        "class": "col-12"
+                      },
+                      "context": {
+                        "type": "_uxRadioButton",
+                        "inputs": {
+                          "label": [
+                            {
+                              "string": "forms.4.5_F89B4596-7C9F-E611-80D1-000D3A22E8CD_label",
+                              "prefix": "1.5. ",
+                              "translate": true
+                            }
+                          ],
+                          "required": true,
+                          "options": [
+                            {
+                              "label": [
+                                {
+                                  "string": "forms.4.5_39727A1D-DC27-E611-80C8-000D3A22E8CD_codeListEntry",
+                                  "prefix": "[01] ",
+                                  "translate": true
+                                }
+                              ],
+                              "val": "01"
+                            },
+                            {
+                              "label": [
+                                {
+                                  "string": "forms.4.5_3DDA1925-DC27-E611-80C8-000D3A22E8CD_codeListEntry",
+                                  "prefix": "[02] ",
+                                  "translate": true
+                                }
+                              ],
+                              "val": "02"
+                            }
+                          ],
+                          "deselect": true
+                        },
+                        "validators": {
+                          "validatorFn": [
+                            {
+                              "valFnId": "groupRequired",
+                              "severity": "warning"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "fieldType": "formGroup",
+              "fieldId": "11",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxFieldSetContainer",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_F61763B4-832A-E711-80D4-000D3A22E8CD_label",
+                      "prefix": "1.6. ",
+                      "translate": true
+                    }
+                  ]
+                },
+                "key": "PleaseFillInFollowingIfReplyCode02"
+              },
+              "children": [
+                {
+                  "fieldType": "formControl",
+                  "fieldId": "12",
+                  "layout": {
+                    "class": "col-12"
+                  },
+                  "context": {
+                    "type": "_uxTextInput",
+                    "inputs": {
+                      "label": [
+                        {
+                          "string": "forms.4.5_F51763B4-832A-E711-80D4-000D3A22E8CD_label",
+                          "prefix": "1.6.1. ",
+                          "translate": true
+                        }
+                      ]
+                    },
+                    "key": "reasonNonAcceptance",
+                    "validators": {
+                      "validatorFn": [
+                        {
+                          "valFnId": "minLength",
+                          "params": [1],
+                          "severity": "danger"
+                        },
+                        {
+                          "valFnId": "maxLength",
+                          "params": [155],
+                          "severity": "danger"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "13",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxDateInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_FC9B4596-7C9F-E611-80D1-000D3A22E8CD_label",
+                      "prefix": "1.7. ",
+                      "translate": true
+                    }
+                  ],
+                  "yearRange": "2001:2020",
+                  "dateOutputFormat": "YYYY-MM-DD",
+                  "clearable": true,
+                  "tooltip": "forms.4.5_FC9B4596-7C9F-E611-80D1-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "dateSubmission",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

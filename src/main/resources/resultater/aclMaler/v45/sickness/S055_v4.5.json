@@ -1,0 +1,111 @@
+{
+  "S055" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
+          } ]
+        },
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "CertificateIncapacityWork" : {
+      "AccordingDocumentMentionedAbovePersonIncapable" : {
+        "FixedPeriod" : {
+          "endDate" : "$sykdom.soeknad.kontantytelse.ytelse.periode.fastperiode.sluttdato",
+          "startDate" : "$sykdom.soeknad.kontantytelse.ytelse.periode.fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "typeOpenPeriod" : {
+            "value" : [ "$sykdom.soeknad.kontantytelse.ytelse.periode.aapenperiode.type" ]
+          },
+          "startDate" : "$sykdom.soeknad.kontantytelse.ytelse.periode.aapenperiode.startdato"
+        }
+      },
+      "ChildBirth" : {
+        "expectedDateDelivery" : "$sykdom.soeknad.kontantytelse.barn.foedsel.termindato",
+        "dateChildBirth" : "$sykdom.soeknad.kontantytelse.barn.foedsel.dato"
+      },
+      "pleaseFindAttached" : {
+        "value" : [ "$sykdom.soeknad.kontantytelse.vedlegg.type" ]
+      },
+      "FillInIfPleaseFindAttachedOther" : {
+        "otherDocument" : "$sykdom.soeknad.kontantytelse.vedlegg.annen"
+      },
+      "typeBenefit" : {
+        "value" : [ "$sykdom.soeknad.kontantytelse.ytelse.type" ]
+      },
+      "thePersonMentionedAboveAppliedForCashBenefitsOn" : "$sykdom.soeknad.kontantytelse.soeknadsdato"
+    },
+    "PersonAddress" : {
+      "region" : "$nav.bruker.bostedsadresse.region",
+      "street" : "$nav.bruker.bostedsadresse.gate",
+      "postalCode" : "$nav.bruker.bostedsadresse.postnummer",
+      "country" : {
+        "value" : [ "$nav.bruker.bostedsadresse.land" ]
+      },
+      "town" : "$nav.bruker.bostedsadresse.by",
+      "buildingName" : "$nav.bruker.bostedsadresse.bygning"
+    },
+    "Employer" : {
+      "Address" : {
+        "region" : "$nav.arbeidsgiver.adresse.region",
+        "country" : {
+          "value" : [ "$nav.arbeidsgiver.adresse.land" ]
+        },
+        "postalCode" : "$nav.arbeidsgiver.adresse.postnummer",
+        "town" : "$nav.arbeidsgiver.adresse.by",
+        "buildingName" : "$nav.arbeidsgiver.adresse.bygning",
+        "street" : "$nav.arbeidsgiver.adresse.gate"
+      },
+      "IdentificationNumbers" : {
+        "IdentificationNumber" : [ {
+          "type" : {
+            "value" : [ "$nav.arbeidsgiver.identifikator[x].type" ]
+          },
+          "number" : "$nav.arbeidsgiver.identifikator[x].id"
+        } ]
+      },
+      "name" : "$nav.arbeidsgiver.navn"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

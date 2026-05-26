@@ -1,0 +1,54 @@
+{
+  "X013" : {
+    "RepliesRequestForClarification" : {
+      "WeCannotProvideClarificationRequestForFollowing" : [ {
+        "reason" : {
+          "value" : [ "$nav.sak.klargjoerinnhold.kanikkeklargjoere[x].grunn.type" ]
+        },
+        "section" : "$nav.sak.klargjoerinnhold.kanikkeklargjoere[x].del",
+        "item" : "$nav.sak.klargjoerinnhold.kanikkeklargjoere[x].punkt",
+        "pleaseProvideMoreDetailsIf99OtherSelected" : "$nav.sak.klargjoerinnhold.kanikkeklargjoere[x].grunn.annet"
+      } ],
+      "TheFollowingClarificationProvided" : [ {
+        "item" : "$nav.sak.klargjoerinnhold.svar[x].punkt",
+        "clarification" : "$nav.sak.klargjoerinnhold.svar[x].klargjoering",
+        "section" : "$nav.sak.klargjoerinnhold.svar[x].del"
+      } ]
+    },
+    "CaseContext" : {
+      "PersonContext" : {
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato",
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn"
+      },
+      "EmployerContext" : {
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        },
+        "Address" : {
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          }
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn"
+      },
+      "ReimbursementContext" : {
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav",
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id"
+      }
+    }
+  }
+}

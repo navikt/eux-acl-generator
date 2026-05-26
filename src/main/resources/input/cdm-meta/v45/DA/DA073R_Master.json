@@ -1,0 +1,576 @@
+{
+  "fieldType": "container",
+  "fieldId": "1",
+  "layout": {
+    "class": "col-12"
+  },
+  "context": {
+    "type": "_rinaRoot",
+    "inputs": {
+      "sedPackage": "Sector Components/AWOD/DA073R_Master",
+      "sedGVer": "4",
+      "sedVer": "5",
+      "sedName": "DA073R_Master",
+      "sedTitle": "forms.4.5_1566C9A1-5CC5-E711-80DB-000D3A22E8CD_label",
+      "sedApiVersion": "0.16.3 build preview 1",
+      "sedPatchVer": "1"
+    }
+  },
+  "children": [
+    {
+      "fieldType": "formGroup",
+      "fieldId": "2",
+      "layout": {
+        "class": "col-12"
+      },
+      "context": {
+        "type": "_uxHiddenGroupContainer",
+        "key": "DA073R_Master"
+      },
+      "children": [
+        {
+          "fieldType": "formGroup",
+          "fieldId": "3",
+          "layout": {
+            "class": "col-12"
+          },
+          "context": {
+            "type": "_uxFieldSetContainer",
+            "inputs": {
+              "label": [
+                {
+                  "string": "forms.4.5_E6E5AB64-ECC5-E711-80DB-000D3A22E8CD_label",
+                  "prefix": "1. ",
+                  "translate": true
+                }
+              ],
+              "required": true
+            },
+            "key": "GlobalNoteRPYCOCIO",
+            "validators": {
+              "validatorFn": [
+                {
+                  "valFnId": "advRequired",
+                  "severity": "warning"
+                },
+                {
+                  "valFnId": "groupLevelRequired"
+                }
+              ]
+            }
+          },
+          "children": [
+            {
+              "fieldType": "formControl",
+              "fieldId": "4",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_803D8CED-6DC5-E711-80DB-000D3A22E8CD_label",
+                      "prefix": "1.1. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_803D8CED-6DC5-E711-80DB-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "globalIOReferenceLiaisonBody",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "minLength",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "maxLength",
+                      "params": [65],
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "5",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_813D8CED-6DC5-E711-80DB-000D3A22E8CD_label",
+                      "prefix": "1.2. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_813D8CED-6DC5-E711-80DB-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "globalCOCIOReferenceLiaisonBody",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "minLength",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "maxLength",
+                      "params": [65],
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "6",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_823D8CED-6DC5-E711-80DB-000D3A22E8CD_label",
+                      "prefix": "1.3. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_823D8CED-6DC5-E711-80DB-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "globalRPYCOCIOReferenceLiaisonBody",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "minLength",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "maxLength",
+                      "params": [65],
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "7",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxTextInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_853D8CED-6DC5-E711-80DB-000D3A22E8CD_label",
+                      "prefix": "1.4. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_853D8CED-6DC5-E711-80DB-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "totalNumberIndividualContestationRepliesIO",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "rinaMinInclusive",
+                      "params": [1],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "rinaMaxInclusive",
+                      "params": [200000],
+                      "severity": "danger"
+                    },
+                    {
+                      "valFnId": "rinaIsInteger",
+                      "severity": "danger"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "fieldType": "formGroup",
+              "fieldId": "8",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxFieldSetContainer",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_8B3D8CED-6DC5-E711-80DB-000D3A22E8CD_label",
+                      "prefix": "1.5. ",
+                      "translate": true
+                    }
+                  ],
+                  "tooltip": "forms.4.5_8B3D8CED-6DC5-E711-80DB-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "TotalAmountAcceptedContestations",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    },
+                    {
+                      "valFnId": "groupLevelRequired"
+                    }
+                  ]
+                }
+              },
+              "children": [
+                {
+                  "fieldType": "formControl",
+                  "fieldId": "9",
+                  "layout": {
+                    "class": "col-12"
+                  },
+                  "context": {
+                    "type": "_uxTextInput",
+                    "inputs": {
+                      "label": [
+                        {
+                          "string": "forms.4.5_2A3E7DCE-9218-E611-80EA-000C292ED0D7_label",
+                          "prefix": "1.5.1. ",
+                          "translate": true
+                        }
+                      ],
+                      "required": true
+                    },
+                    "key": "amount",
+                    "validators": {
+                      "validatorFn": [
+                        {
+                          "valFnId": "groupRequired",
+                          "severity": "danger"
+                        },
+                        {
+                          "valFnId": "pattern",
+                          "params": [
+                            "(([1-9][0-9]{0,9})(\\.\\d{2,2})?|([0]{1})(\\.\\d{2,2})?)"
+                          ],
+                          "severity": "danger"
+                        },
+                        {
+                          "valFnId": "rinaIsDouble",
+                          "severity": "danger"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "fieldType": "formGroup",
+                  "fieldId": "10",
+                  "layout": {
+                    "class": "col-12"
+                  },
+                  "context": {
+                    "type": "_uxHiddenGroupContainer",
+                    "inputs": {
+                      "rinaHideError": true
+                    },
+                    "key": "currency",
+                    "validators": {
+                      "validatorFn": [
+                        {
+                          "valFnId": "groupRequired",
+                          "severity": "danger"
+                        },
+                        {
+                          "valFnId": "groupLevelRequired",
+                          "severity": "danger"
+                        }
+                      ]
+                    }
+                  },
+                  "children": [
+                    {
+                      "fieldType": "formArray",
+                      "fieldId": "11",
+                      "layout": {
+                        "class": "col-12"
+                      },
+                      "context": {
+                        "type": "_uxHiddenArrayContainer",
+                        "inputs": {
+                          "rinaHideError": true
+                        },
+                        "key": "value",
+                        "validators": {
+                          "validatorFn": [
+                            {
+                              "valFnId": "groupRequired",
+                              "severity": "danger"
+                            },
+                            {
+                              "valFnId": "groupLevelRequired",
+                              "severity": "danger"
+                            }
+                          ]
+                        }
+                      },
+                      "children": [
+                        {
+                          "fieldType": "formControl",
+                          "fieldId": "12",
+                          "layout": {
+                            "class": "col-12"
+                          },
+                          "context": {
+                            "type": "_uxSelectAutoCompleteInput",
+                            "inputs": {
+                              "label": [
+                                {
+                                  "string": "forms.4.5_2B3E7DCE-9218-E611-80EA-000C292ED0D7_label",
+                                  "prefix": "1.5.2. ",
+                                  "translate": true
+                                }
+                              ],
+                              "required": true,
+                              "selectOptions": [
+                                {
+                                  "id": "EUR",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B03712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[EUR] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "BGN",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B13712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[BGN] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "CZK",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B23712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[CZK] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "DKK",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B33712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[DKK] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "GBP",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B43712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[GBP] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "HRK",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B53712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[HRK] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "HUF",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B63712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[HUF] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "PLN",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B73712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[PLN] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "RON",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B83712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[RON] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "SEK",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_B93712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[SEK] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "CHF",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_BA3712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[CHF] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "ISK",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_BB3712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[ISK] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "NOK",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_BC3712C1-9EEA-E511-80C1-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[NOK] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "LTL",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_12090942-FAAC-E711-80DB-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[LTL] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "LVL",
+                                  "label": [
+                                    {
+                                      "string": "forms.4.5_13090942-FAAC-E711-80DB-000D3A22E8CD_codeListEntry",
+                                      "prefix": "[LVL] ",
+                                      "translate": true
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "validators": {
+                              "validatorFn": [
+                                {
+                                  "valFnId": "groupRequired",
+                                  "severity": "danger"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "fieldType": "formControl",
+              "fieldId": "13",
+              "layout": {
+                "class": "col-12"
+              },
+              "context": {
+                "type": "_uxDateInput",
+                "inputs": {
+                  "label": [
+                    {
+                      "string": "forms.4.5_863D8CED-6DC5-E711-80DB-000D3A22E8CD_label",
+                      "prefix": "1.6. ",
+                      "translate": true
+                    }
+                  ],
+                  "yearRange": "2001:2020",
+                  "dateOutputFormat": "YYYY-MM-DD",
+                  "clearable": true,
+                  "tooltip": "forms.4.5_863D8CED-6DC5-E711-80DB-000D3A22E8CD_explanatoryNotes",
+                  "required": true
+                },
+                "key": "dateSubmission",
+                "validators": {
+                  "validatorFn": [
+                    {
+                      "valFnId": "groupRequired",
+                      "severity": "warning"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

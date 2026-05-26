@@ -1,0 +1,49 @@
+{
+  "X005" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "Address" : {
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          },
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate"
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        }
+      },
+      "PersonContext" : {
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn"
+      },
+      "ReimbursementContext" : {
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id",
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav"
+      }
+    },
+    "AddedParticipant" : {
+      "pleaseProvideMoreDetailsIf99OtherSelected" : "$nav.sak.leggtilinstitusjon.grunn.annet",
+      "AddParticipant" : {
+        "institutionID" : "$nav.sak.leggtilinstitusjon.institusjon.id",
+        "institutionName" : "$nav.sak.leggtilinstitusjon.institusjon.navn"
+      },
+      "reason" : {
+        "value" : [ "$nav.sak.leggtilinstitusjon.grunn.type" ]
+      }
+    }
+  }
+}

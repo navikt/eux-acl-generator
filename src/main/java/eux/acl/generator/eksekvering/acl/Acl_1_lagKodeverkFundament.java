@@ -1,11 +1,11 @@
 package eux.acl.generator.eksekvering.acl;
 
-import static eux.acl.generator.eksekvering.kodeverk.Kodeverk_1_lagKodeverkFundament.lagKodeverkFundament;
-import static eux.acl.generator.service.FilService.*;
+import eux.acl.generator.eksekvering.Versjoner;
 
-public class Acl_1_lagKodeverkFundament {
-    public static void main(String[] args) {
-        lagKodeverkFundament(V43);
-        lagKodeverkFundament(V44);
-    }
+import static eux.acl.generator.eksekvering.kodeverk.Kodeverk_1_lagKodeverkFundament.lagKodeverkFundament;
+
+public class Acl_1_lagKodeverkFundament extends Versjoner {
+	public static void main(String[] args) {
+		lagKodeverkFundament(NY_VERSJON);
+	}
 }

@@ -1,0 +1,209 @@
+{
+  "P13000" : {
+    "RecipientSurvivorPension" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "fatherFamilyNameAtBirth" : "$pensjon.gjenlevende.far.person.etternavnvedfoedsel",
+          "motherFamilyNameAtBirth" : "$pensjon.gjenlevende.mor.person.etternavnvedfoedsel",
+          "forenameMother" : "$pensjon.gjenlevende.mor.person.fornavn",
+          "PlaceBirth" : {
+            "town" : "$pensjon.gjenlevende.person.foedested.by",
+            "region" : "$pensjon.gjenlevende.person.foedested.region",
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.foedested.land" ]
+            }
+          },
+          "forenameFather" : "$pensjon.gjenlevende.far.person.fornavn"
+        },
+        "sex" : {
+          "value" : [ "$pensjon.gjenlevende.person.kjoenn" ]
+        },
+        "forenameAtBirth" : "$pensjon.gjenlevende.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].land" ]
+            },
+            "Institution" : {
+              "institutionName" : "$pensjon.gjenlevende.person.pin[x].institusjonsnavn",
+              "institutionID" : "$pensjon.gjenlevende.person.pin[x].institusjonsid"
+            },
+            "sector" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].sektor" ]
+            },
+            "personalIdentificationNumber" : "$pensjon.gjenlevende.person.pin[x].identifikator"
+          } ]
+        },
+        "familyName" : "$pensjon.gjenlevende.person.etternavn",
+        "forename" : "$pensjon.gjenlevende.person.fornavn",
+        "dateBirth" : "$pensjon.gjenlevende.person.foedselsdato",
+        "familyNameAtBirth" : "$pensjon.gjenlevende.person.etternavnvedfoedsel"
+      },
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "buildingName" : "$pensjon.gjenlevende.adresse.bygning",
+          "street" : "$pensjon.gjenlevende.adresse.gate",
+          "town" : "$pensjon.gjenlevende.adresse.by",
+          "postalCode" : "$pensjon.gjenlevende.adresse.postnummer",
+          "country" : {
+            "value" : [ "$pensjon.gjenlevende.adresse.land" ]
+          },
+          "region" : "$pensjon.gjenlevende.adresse.region"
+        },
+        "AdditionalInformationPerson" : {
+          "nationality" : {
+            "value" : [ "$pensjon.gjenlevende.person.statsborgerskap[x].land" ]
+          },
+          "previousForename" : "$pensjon.gjenlevende.person.tidligerefornavn",
+          "previousFamilyName" : "$pensjon.gjenlevende.person.tidligereetternavn"
+        },
+        "ContactInformationPerson" : {
+          "EmailAddresses" : {
+            "EmailAddress" : [ {
+              "email" : "$pensjon.gjenlevende.person.kontakt.email[x].adresse"
+            } ]
+          },
+          "TelephoneNumbers" : {
+            "TelephoneNumber" : [ {
+              "type" : {
+                "value" : [ "$pensjon.gjenlevende.person.kontakt.telefon[x].type" ]
+              },
+              "number" : "$pensjon.gjenlevende.person.kontakt.telefon[x].nummer"
+            } ]
+          }
+        }
+      }
+    },
+    "InsuredPerson" : {
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "region" : "$nav.bruker.adresse.region",
+          "town" : "$nav.bruker.adresse.by",
+          "street" : "$nav.bruker.adresse.gate",
+          "postalCode" : "$nav.bruker.adresse.postnummer",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse.land" ]
+          },
+          "buildingName" : "$nav.bruker.adresse.bygning"
+        },
+        "ContactInformationPerson" : {
+          "EmailAddresses" : {
+            "EmailAddress" : [ {
+              "email" : "$nav.bruker.person.kontakt.email[x].adresse"
+            } ]
+          },
+          "TelephoneNumbers" : {
+            "TelephoneNumber" : [ {
+              "type" : {
+                "value" : [ "$nav.bruker.person.kontakt.telefon[x].type" ]
+              },
+              "number" : "$nav.bruker.person.kontakt.telefon[x].nummer"
+            } ]
+          }
+        },
+        "AdditionalInformationPerson" : {
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          },
+          "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+          "previousForename" : "$nav.bruker.person.tidligerefornavn"
+        }
+      },
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            }
+          } ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region"
+          },
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato"
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn",
+          "institutionID" : "$nav.eessisak[x].institusjonsid"
+        },
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer"
+      } ]
+    },
+    "InformationSupplement" : {
+      "DetailsAwardedSupplement" : [ {
+        "AmountSupplement" : {
+          "paymentFrequency" : {
+            "value" : [ "$pensjon.pensjoninfo[x].tillegg.utbetalingshyppighet" ]
+          },
+          "amount" : "$pensjon.pensjoninfo[x].tillegg.belop",
+          "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+            "otherPaymentFrequency" : "$pensjon.pensjoninfo[x].tillegg.annenutbetalingshyppighet"
+          },
+          "amountEffectiveSince" : "$pensjon.pensjoninfo[x].tillegg.effektuertfradato",
+          "currency" : {
+            "value" : [ "$pensjon.pensjoninfo[x].tillegg.valuta" ]
+          }
+        },
+        "PaymentSupplement" : {
+          "supplementPayableFrom" : "$pensjon.pensjoninfo[x].tillegg.betalingsfradato",
+          "supplementPayableTo" : "$pensjon.pensjoninfo[x].tillegg.betalingstildato"
+        }
+      } ],
+      "reasonsForNotAwardingSupplement" : "$pensjon.pensjoninfotillegg.avslagsgrunn",
+      "InformationAmountChangeInSupplement" : [ {
+        "amountAfterChange" : "$pensjon.pensjoninfotillegg.endret[x].belopetterendring",
+        "dateChangeAmountSupplement" : "$pensjon.pensjoninfotillegg.endret[x].endringsdato",
+        "amountBeforeChange" : "$pensjon.pensjoninfotillegg.endret[x].belopforendring"
+      } ],
+      "SuspensionSupplement" : {
+        "reasonForSupplementSuspension" : "$pensjon.pensjoninfotillegg.opphoraarsak",
+        "dateSuspension" : "$pensjon.pensjoninfotillegg.opphorsdato"
+      },
+      "endDateEntitlementSupplement" : "$pensjon.pensjoninfotillegg.sluttdato"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$pensjon.ytterligeinformasjon"
+    },
+    "ReferencePerson" : {
+      "thisReplyMadeWithReferencePersonNamedIn" : {
+        "value" : [ "$pensjon.foresporsel.referanseTilPerson" ]
+      }
+    },
+    "TypePensionInSendingInstitution" : {
+      "typePensionInSendingInstitution" : {
+        "value" : [ "$nav.krav.type" ]
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "P5000" : {
+    "CertificationInsuranceResidencePeriodsInsured" : {
+      "InsuranceResidencePeriods" : {
+        "Periods" : {
+          "PeriodWithStartEndDate" : [ {
+            "Period" : {
+              "endDate" : "$pensjon.medlemskapboarbeid.medlemskap[x].periode.tom",
+              "startDate" : "$pensjon.medlemskapboarbeid.medlemskap[x].periode.fom"
+            },
+            "TotalNumber" : {
+              "months" : "$pensjon.medlemskapboarbeid.medlemskap[x].sum.maaneder",
+              "Days" : {
+                "no" : "$pensjon.medlemskapboarbeid.medlemskap[x].sum.dager.nr",
+                "unit" : {
+                  "value" : [ "$pensjon.medlemskapboarbeid.medlemskap[x].sum.dager.type" ]
+                }
+              },
+              "years" : "$pensjon.medlemskapboarbeid.medlemskap[x].sum.aar",
+              "weeks" : "$pensjon.medlemskapboarbeid.medlemskap[x].sum.uker",
+              "quarters" : "$pensjon.medlemskapboarbeid.medlemskap[x].sum.kvartal"
+            },
+            "scheme" : {
+              "value" : [ "$pensjon.medlemskapboarbeid.medlemskap[x].ordning" ]
+            },
+            "type" : {
+              "value" : [ "$pensjon.medlemskapboarbeid.medlemskap[x].type" ]
+            },
+            "country" : {
+              "value" : [ "$pensjon.medlemskapboarbeid.medlemskap[x].land" ]
+            },
+            "contingencyRelevance" : {
+              "value" : [ "$pensjon.medlemskapboarbeid.medlemskap[x].relevans" ]
+            },
+            "informationCalculation" : {
+              "value" : [ "$pensjon.medlemskapboarbeid.medlemskap[x].beregning" ]
+            },
+            "occupation" : {
+              "value" : [ "$pensjon.medlemskapboarbeid.medlemskap[x].yrke" ]
+            }
+          } ]
+        },
+        "AdditionalPeriodsWithoutStartEndDate" : {
+          "AdditionalPeriod" : [ {
+            "contingencyRelevance" : {
+              "value" : [ "$pensjon.medlemskapAnnen[x].relevans" ]
+            },
+            "TotalNumber" : {
+              "Days" : {
+                "no" : "$pensjon.medlemskapAnnen[x].sum.dager.nr",
+                "unit" : {
+                  "value" : [ "$pensjon.medlemskapAnnen[x].sum.dager.type" ]
+                }
+              },
+              "weeks" : "$pensjon.medlemskapAnnen[x].sum.uker",
+              "quarters" : "$pensjon.medlemskapAnnen[x].sum.kvartal",
+              "years" : "$pensjon.medlemskapAnnen[x].sum.aar",
+              "months" : "$pensjon.medlemskapAnnen[x].sum.maaneder"
+            },
+            "country" : {
+              "value" : [ "$pensjon.medlemskapAnnen[x].land" ]
+            },
+            "type" : {
+              "value" : [ "$pensjon.medlemskapAnnen[x].type" ]
+            },
+            "scheme" : {
+              "value" : [ "$pensjon.medlemskapAnnen[x].ordning" ]
+            },
+            "informationCalculation" : {
+              "value" : [ "$pensjon.medlemskapAnnen[x].beregning" ]
+            },
+            "occupation" : {
+              "value" : [ "$pensjon.medlemskapAnnen[x].yrke" ]
+            }
+          } ]
+        }
+      },
+      "contextTransmission" : {
+        "value" : [ "$pensjon.medlemskapboarbeid.enkeltkrav.krav" ]
+      },
+      "insuranceResidencePeriodsIndicator" : {
+        "value" : [ "$pensjon.medlemskapboarbeid.gyldigperiode" ]
+      }
+    },
+    "InsuredPerson" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator"
+          } ]
+        },
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato"
+      },
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "buildingName" : "$nav.bruker.adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse.land" ]
+          },
+          "street" : "$nav.bruker.adresse.gate",
+          "postalCode" : "$nav.bruker.adresse.postnummer",
+          "town" : "$nav.bruker.adresse.by",
+          "region" : "$nav.bruker.adresse.region"
+        },
+        "AdditionalInformationPerson" : {
+          "previousForename" : "$nav.bruker.person.tidligerefornavn",
+          "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          }
+        }
+      }
+    },
+    "InformationFurtherP5000" : {
+      "p5000WillSendByOtherInstitutionFurtherInsuranceIndicator" : {
+        "value" : [ "$pensjon.separatP5000sendes" ]
+      }
+    },
+    "TotalLengthPeriodsInsuranceResidence" : {
+      "InformationCalculation" : {
+        "InformationCalculation" : [ {
+          "TotalNumber" : {
+            "Days" : {
+              "no" : "$pensjon.trygdetid[x].sum.dager.nr",
+              "unit" : {
+                "value" : [ "$pensjon.trygdetid[x].sum.dager.type" ]
+              }
+            },
+            "weeks" : "$pensjon.trygdetid[x].sum.uker",
+            "years" : "$pensjon.trygdetid[x].sum.aar",
+            "months" : "$pensjon.trygdetid[x].sum.maaneder",
+            "quarters" : "$pensjon.trygdetid[x].sum.kvartal"
+          },
+          "informationCalculation" : {
+            "value" : [ "$pensjon.trygdetid[x].beregning" ]
+          },
+          "type" : {
+            "value" : [ "$pensjon.trygdetid[x].type" ]
+          }
+        } ]
+      },
+      "ContingencyRelevance" : {
+        "ContingencyRelevance" : [ {
+          "type" : {
+            "value" : [ "$pensjon.medlemskapTotal[x].type" ]
+          },
+          "TotalNumber" : {
+            "months" : "$pensjon.medlemskapTotal[x].sum.maaneder",
+            "Days" : {
+              "unit" : {
+                "value" : [ "$pensjon.medlemskapTotal[x].sum.dager.type" ]
+              },
+              "no" : "$pensjon.medlemskapTotal[x].sum.dager.nr"
+            },
+            "quarters" : "$pensjon.medlemskapTotal[x].sum.kvartal",
+            "weeks" : "$pensjon.medlemskapTotal[x].sum.uker",
+            "years" : "$pensjon.medlemskapTotal[x].sum.aar"
+          },
+          "contingencyRelevance" : {
+            "value" : [ "$pensjon.medlemskapTotal[x].relevans" ]
+          }
+        } ]
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn",
+          "institutionID" : "$nav.eessisak[x].institusjonsid"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "ClaimantSurvivorPension" : {
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "region" : "$pensjon.gjenlevende.adresse.region",
+          "postalCode" : "$pensjon.gjenlevende.adresse.postnummer",
+          "buildingName" : "$pensjon.gjenlevende.adresse.bygning",
+          "town" : "$pensjon.gjenlevende.adresse.by",
+          "country" : {
+            "value" : [ "$pensjon.gjenlevende.adresse.land" ]
+          },
+          "street" : "$pensjon.gjenlevende.adresse.gate"
+        },
+        "AdditionalInformationPerson" : {
+          "previousForename" : "$pensjon.gjenlevende.person.tidligerefornavn",
+          "nationality" : {
+            "value" : [ "$pensjon.gjenlevende.person.statsborgerskap[x].land" ]
+          },
+          "previousFamilyName" : "$pensjon.gjenlevende.person.tidligereetternavn"
+        }
+      },
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].land" ]
+            },
+            "sector" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].sektor" ]
+            },
+            "Institution" : {
+              "institutionID" : "$pensjon.gjenlevende.person.pin[x].institusjonsid",
+              "institutionName" : "$pensjon.gjenlevende.person.pin[x].institusjonsnavn"
+            },
+            "personalIdentificationNumber" : "$pensjon.gjenlevende.person.pin[x].identifikator"
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "fatherFamilyNameAtBirth" : "$pensjon.gjenlevende.far.person.etternavnvedfoedsel",
+          "forenameMother" : "$pensjon.gjenlevende.mor.person.fornavn",
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.foedested.land" ]
+            },
+            "town" : "$pensjon.gjenlevende.person.foedested.by",
+            "region" : "$pensjon.gjenlevende.person.foedested.region"
+          },
+          "motherFamilyNameAtBirth" : "$pensjon.gjenlevende.mor.person.etternavnvedfoedsel",
+          "forenameFather" : "$pensjon.gjenlevende.far.person.fornavn"
+        },
+        "dateBirth" : "$pensjon.gjenlevende.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$pensjon.gjenlevende.person.kjoenn" ]
+        },
+        "familyNameAtBirth" : "$pensjon.gjenlevende.person.etternavnvedfoedsel",
+        "familyName" : "$pensjon.gjenlevende.person.etternavn",
+        "forename" : "$pensjon.gjenlevende.person.fornavn",
+        "forenameAtBirth" : "$pensjon.gjenlevende.person.forrnavnvedfoedsel"
+      }
+    },
+    "AnInsuredPersonShowingProofHeSheHasCompletedAn" : {
+      "insuredLessThan1YearReceivePensionUnderNationalLawIndicator" : {
+        "value" : [ "$pensjon.art57_883_2004.ignore" ]
+      }
+    }
+  }
+}

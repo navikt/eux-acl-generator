@@ -1,0 +1,168 @@
+{
+  "X100.CaseContext" : {
+    "index" : "1.",
+    "prompt" : "Sakens kontekst",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X100.CaseContext.PersonContext.familyName" : {
+    "index" : "1.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.PersonContext.forename" : {
+    "index" : "1.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.PersonContext.dateBirth" : {
+    "index" : "1.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "X100.CaseContext.PersonContext.sex" : {
+    "index" : "1.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "X100.CaseContext.EmployerContext.name" : {
+    "index" : "1.2.1.",
+    "prompt" : "Navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.EmployerContext.IdentificationNumbers" : {
+    "index" : "1.2.2.",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X100.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0]" : {
+    "index" : "1.2.2.1",
+    "prompt" : "Identifikasjonsnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "X100.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].number" : {
+    "index" : "1.2.2.1.1.",
+    "prompt" : "Nummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.EmployerContext.IdentificationNumbers.IdentificationNumber[0].type" : {
+    "index" : "1.2.2.1.2.",
+    "prompt" : "Type",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Identifikasjonsnummer",
+      "02" : "Trygd",
+      "03" : "Skattemessig",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSIOrganisationIdentificationNumberType"
+  },
+  "X100.CaseContext.EmployerContext.Address" : {
+    "index" : "1.2.3.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X100.CaseContext.EmployerContext.Address.street" : {
+    "index" : "1.2.3.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.EmployerContext.Address.buildingName" : {
+    "index" : "1.2.3.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.EmployerContext.Address.town" : {
+    "index" : "1.2.3.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.EmployerContext.Address.postalCode" : {
+    "index" : "1.2.3.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.EmployerContext.Address.region" : {
+    "index" : "1.2.3.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.EmployerContext.Address.country" : {
+    "index" : "1.2.3.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "X100.CaseContext.ReimbursementContext.reimbursementRequestID" : {
+    "index" : "1.3.1.",
+    "prompt" : "ID-nummer for krav om refusjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.CaseContext.ReimbursementContext.totalNumberIndividualClaims" : {
+    "index" : "1.3.2.",
+    "prompt" : "Totalt antall enkeltkrav",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.ChangeParticipant" : {
+    "index" : "2.",
+    "prompt" : "Endring av institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X100.ChangeParticipant.AddParticipant" : {
+    "index" : "2.1.",
+    "prompt" : "Legg til deltaker",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X100.ChangeParticipant.AddParticipant.institutionID" : {
+    "index" : "2.1.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.ChangeParticipant.AddParticipant.institutionName" : {
+    "index" : "2.1.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "X100.ChangeParticipant.RemoveParticipant" : {
+    "index" : "2.2.",
+    "prompt" : "Fjern institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "X100.ChangeParticipant.RemoveParticipant.institutionID" : {
+    "index" : "2.2.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "X100.ChangeParticipant.RemoveParticipant.institutionName" : {
+    "index" : "2.2.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "X100.ChangeParticipant.reason" : {
+    "index" : "2.3.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Institusjonen er ikke kompetent institusjon i saken",
+      "02" : "Institusjonen er ikke lenger kompetent institusjon i saken",
+      "03" : "Videresendt av samarbeidsorgan til kompetent institusjon",
+      "99" : "Annet"
+    },
+    "enumName" : "ReasonChangeParticipantType"
+  },
+  "X100.ChangeParticipant.pleaseProvideMoreDetailsIf99OtherSelected" : {
+    "index" : "2.4.",
+    "prompt" : "Gi nærmere opplysninger hvis du velger '99- Annet'.",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "X100.sedTitle" : {
+    "index" : "X100",
+    "prompt" : "X100 - Endring av institusjon",
+    "valuetype" : "_rinaRoot"
+  }
+}

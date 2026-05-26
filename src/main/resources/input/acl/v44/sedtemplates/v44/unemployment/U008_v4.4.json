@@ -1,0 +1,86 @@
+{
+  "U008" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "PlaceBirth" : {
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.bruker.person.fornavn"
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "Entitlement" : {
+      "PleaseFillInFollowingIfEntitlementExportYes" : {
+        "ExportPeriodDetails" : {
+          "EstimatedEndEntitlement" : {
+            "date" : "$dagpenger.bruker.retttilytelser.eksportperiode.estimertsluttdato"
+          },
+          "LastDayMaximumPeriod" : {
+            "date" : "$dagpenger.bruker.retttilytelser.eksportperiode.makssluttdato"
+          }
+        },
+        "CircumstancesLikelyAffectEntitlementUnemployment" : {
+          "OtherCircumstancesSpecifications" : {
+            "OtherCircumstancesSpecification" : [ {
+              "circumstance" : "$dagpenger.bruker.retttilytelser.andreomstendigheter[x]"
+            } ]
+          },
+          "circumstancesLikelyAffectEntitlementUnemploymentBenefit" : {
+            "value" : [ "$dagpenger.bruker.retttilytelser.relevanteomstendigheter" ]
+          }
+        }
+      },
+      "entitlementExportIndicator" : {
+        "value" : [ "$dagpenger.bruker.retttilytelser.finnesrettileksport" ]
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        }
+      } ]
+    }
+  }
+}

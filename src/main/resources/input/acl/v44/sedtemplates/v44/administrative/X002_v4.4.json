@@ -1,0 +1,45 @@
+{
+  "X002" : {
+    "RequestReopen" : {
+      "reasonThisRequest" : {
+        "value" : [ "$nav.sak.admodning.gjenaapning.aarsak.type" ]
+      },
+      "pleaseProvideMoreDetailsIf99OtherSelected" : "$nav.sak.admodning.gjenaapning.aarsak.annet"
+    },
+    "CaseContext" : {
+      "PersonContext" : {
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn",
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato"
+      },
+      "EmployerContext" : {
+        "Address" : {
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          },
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate"
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        }
+      },
+      "ReimbursementContext" : {
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id",
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav"
+      }
+    }
+  }
+}

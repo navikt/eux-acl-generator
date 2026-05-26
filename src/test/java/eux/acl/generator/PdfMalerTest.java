@@ -1,5 +1,6 @@
 package eux.acl.generator;
 
+import eux.acl.generator.eksekvering.Versjoner;
 import eux.acl.generator.facade.ResultaterFacade;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -7,9 +8,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static eux.acl.generator.modell.SedTyper.*;
-import static eux.acl.generator.service.FilService.*;
 
-public class PdfMalerTest {
+public class PdfMalerTest extends Versjoner {
 
     /**
      * Leser sed-fundament-filer og genererer mal-filer som Pdf-generatoren så bruker.

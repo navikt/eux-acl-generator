@@ -1,0 +1,60 @@
+{
+  "DA073A" : {
+    "IndividualACPIOs" : {
+      "IndividualACPIO" : [ {
+        "IDCreditorInstitution" : {
+          "institutionID" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].kreditorinstitusjon.institusjonsid",
+          "institutionName" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].kreditorinstitusjon.institusjonsnavn"
+        },
+        "IDDebtorInstitution" : {
+          "institutionName" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].debitorinstitusjon.institusjonsnavn",
+          "institutionID" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].debitorinstitusjon.institusjonsid"
+        },
+        "References" : {
+          "individualACPIONumberLiaisonBody" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.mottakerland.forbindelsesorgan.individuellioreferanse",
+          "individualIONumberLiaisonBody" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.avsenderinstitusjon.samarbeidsorgan.individuellioreferanse",
+          "globalACPIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.mottakerland.forbindelsesorgan.globalioreferanse",
+          "globalIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].referanser.avsenderinstitusjon.samarbeidsorgan.globalioreferanse"
+        },
+        "RefundAmount" : {
+          "currency" : {
+            "value" : [ "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon.valuta" ]
+          },
+          "amount" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon,beloep"
+        },
+        "PersonReceivingBenefits" : {
+          "PersonIdentificationNumber" : {
+            "pINPersonInCompetentMemberState" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.pin.kompetenteuland",
+            "pINPersonInMemberStateStayOrResidence" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.pin.oppholdsland"
+          },
+          "forenameAtBirth" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.fornavnvedfoedsel",
+          "PersonInformation" : {
+            "familyName" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.etternavn",
+            "sex" : {
+              "value" : [ "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.kjoenn" ]
+            },
+            "dateBirth" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.foedselsdato",
+            "forename" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.fornavn"
+          },
+          "familyNameAtBirth" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].bruker.person.etternavnvedfoedsel"
+        },
+        "RefundPeriod" : {
+          "endDate" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon.periode.sluttdato",
+          "startDate" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.individuellacpio[x].refusjon.periode.startdato"
+        }
+      } ]
+    },
+    "GlobalNoteACPIO" : {
+      "totalNumberIndividualACPIO" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.total.antall",
+      "TotalAmountAcceptedIndividualOverpayments" : {
+        "currency" : {
+          "value" : [ "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.total.valuta" ]
+        },
+        "amount" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.total.beloep"
+      },
+      "globalIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.avsenderinstitusjon.samarbeidsorgan.globalioreferanse",
+      "globalACPIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.mottakerland.forbindelsesorgan.globalioreferanse",
+      "dateSubmission" : "$arbeidsulykkeyrkessykdom.akseptfeilutbetaling.globalnoteacpio.leveringsdato"
+    }
+  }
+}

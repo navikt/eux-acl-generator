@@ -47,6 +47,7 @@ public class DiffFacade {
 
     public void sammenliknerToAclVersjonerOgSkriverDiffTilFil(List<String> sedTyper, String aclVersjonForrrige, String aclNyVersjon) {
         sedTyper.forEach(sedType -> {
+
             List<String> navSedForrige = aclService.lagNavSedFraAclMal(sedType, MAPPE_EKSISTERENDE_ACL, aclVersjonForrrige);
             List<String> navSedNy = aclService.lagNavSedFraAclMal(sedType, MAPPE_RESULTATER_ACL, aclNyVersjon);
             List<String> uendredeLinjer = navSedNy.stream().filter(navSedForrige::contains).toList();

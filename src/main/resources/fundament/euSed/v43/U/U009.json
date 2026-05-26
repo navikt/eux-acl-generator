@@ -1,0 +1,355 @@
+{
+  "U009.DateRegistration" : {
+    "ledetekst" : "Registreringsdato",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3."
+  },
+  "U009.DateRegistration.date" : {
+    "ledetekst" : "Dato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "3.1."
+  },
+  "U009.LocalCaseNumbers" : {
+    "ledetekst" : "Lokale saksnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1."
+  },
+  "U009.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "ledetekst" : "Lokalt saksnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1"
+  },
+  "U009.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.3."
+  },
+  "U009.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.3.1."
+  },
+  "U009.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_rinaIRAutocomplete",
+    "indeks" : "1.1.3.2.",
+    "tekstlengde" : "155"
+  },
+  "U009.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "ledetekst" : "Saksnummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.2.",
+    "tekstlengde" : "65"
+  },
+  "U009.LocalCaseNumbers.LocalCaseNumber[0].country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "1.1.1.",
+    "enumNavn" : "EESSIEUEFTACountryType",
+    "enumNavnId" : "cd64de24-529c-e611-80d1-000d3a22e8cd"
+  },
+  "U009.Person" : {
+    "ledetekst" : "Person",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2."
+  },
+  "U009.Person.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2."
+  },
+  "U009.Person.AdditionalInformationPerson.nationality.value[0]" : {
+    "ledetekst" : "Nasjonalitet",
+    "verdiType" : "enum",
+    "cdmType" : "_uxMultiSelect",
+    "indeks" : "2.2.1.",
+    "enumNavn" : "EESSINationalityMultipleType",
+    "enumNavnId" : "c25cdaab-2553-e611-80ca-000d3a22e8cd"
+  },
+  "U009.Person.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1."
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.8."
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.8.1."
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.1.8.1.3.",
+    "enumNavn" : "EESSIWorldCountryHistoricType",
+    "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.8.1.2.",
+    "tekstlengde" : "65"
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.8.1.1.",
+    "tekstlengde" : "65"
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.8.2.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.8.3.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.8.5.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.8.4.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7."
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1.7.1"
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7.1.4."
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.7.1.4.1."
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_rinaIRAutocomplete",
+    "indeks" : "2.1.7.1.4.2.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.1.7.1.1.",
+    "enumNavn" : "EESSIEUEFTACountryType",
+    "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.7.1.2.",
+    "tekstlengde" : "65"
+  },
+  "U009.Person.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+    "ledetekst" : "Sektor",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.1.7.1.3.",
+    "enumNavn" : "EESSISectorsType",
+    "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
+  },
+  "U009.Person.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.1.3."
+  },
+  "U009.Person.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.1.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.5.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.2.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.1.6.",
+    "tekstlengde" : "155"
+  },
+  "U009.Person.PersonIdentification.sex.value[0]" : {
+    "ledetekst" : "Kjønn",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.1.4.",
+    "enumNavn" : "EESSISexType",
+    "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
+  },
+  "U009.PersonCurrentAddress" : {
+    "ledetekst" : "Personens nåværende adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4."
+  },
+  "U009.PersonCurrentAddress.AddressDetails" : {
+    "ledetekst" : "Opplysning om adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.1."
+  },
+  "U009.PersonCurrentAddress.AddressDetails.buildingName" : {
+    "ledetekst" : "Bygningens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.1.2.",
+    "tekstlengde" : "155"
+  },
+  "U009.PersonCurrentAddress.AddressDetails.country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "4.1.6.",
+    "enumNavn" : "EESSIEUEFTACountryType",
+    "enumNavnId" : "e50c0a5f-47f4-e611-80d3-000d3a22e8cd"
+  },
+  "U009.PersonCurrentAddress.AddressDetails.postalCode" : {
+    "ledetekst" : "Postnummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.1.4.",
+    "tekstlengde" : "25"
+  },
+  "U009.PersonCurrentAddress.AddressDetails.region" : {
+    "ledetekst" : "Region",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.1.5.",
+    "tekstlengde" : "65"
+  },
+  "U009.PersonCurrentAddress.AddressDetails.street" : {
+    "ledetekst" : "Gate",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.1.1.",
+    "tekstlengde" : "155"
+  },
+  "U009.PersonCurrentAddress.AddressDetails.town" : {
+    "ledetekst" : "By",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.1.3.",
+    "tekstlengde" : "65"
+  },
+  "U009.PersonCurrentAddress.ContactInformation" : {
+    "ledetekst" : "Kontaktinformasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.2."
+  },
+  "U009.PersonCurrentAddress.ContactInformation.EmailAddresses" : {
+    "ledetekst" : "E-postadresser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.2.2."
+  },
+  "U009.PersonCurrentAddress.ContactInformation.EmailAddresses.EmailAddress[0]" : {
+    "ledetekst" : "E-postadresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "4.2.2.1"
+  },
+  "U009.PersonCurrentAddress.ContactInformation.EmailAddresses.EmailAddress[0].email" : {
+    "ledetekst" : "E-postadresse",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.2.2.1.1."
+  },
+  "U009.PersonCurrentAddress.ContactInformation.TelephoneNumbers" : {
+    "ledetekst" : "Telefonnumre",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.2.1."
+  },
+  "U009.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0]" : {
+    "ledetekst" : "Telefonnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "4.2.1.1"
+  },
+  "U009.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].number" : {
+    "ledetekst" : "Nummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.2.1.1.2."
+  },
+  "U009.PersonCurrentAddress.ContactInformation.TelephoneNumbers.TelephoneNumber[0].type.value[0]" : {
+    "ledetekst" : "Type",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "4.2.1.1.1.",
+    "enumNavn" : "EESSITelephoneNumberType",
+    "enumNavnId" : "2e684f61-9218-e611-80ea-000c292ed0d7"
+  },
+  "U009.sedTitle" : {
+    "ledetekst" : "Melding om registrering - eksport",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "U009"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "X004" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "Address" : {
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate",
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by",
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          }
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn",
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            },
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id"
+          } ]
+        }
+      },
+      "PersonContext" : {
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato",
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn"
+      },
+      "ReimbursementContext" : {
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id",
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav"
+      }
+    },
+    "DecisionReopenCase" : {
+      "decisionReopenCaseIndicator" : {
+        "value" : [ "$nav.sak.gjenaapning.skalgjenaapnes" ]
+      },
+      "reason" : {
+        "value" : [ "$nav.sak.gjenaapning.grunn.type" ]
+      }
+    }
+  }
+}

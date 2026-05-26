@@ -1,0 +1,124 @@
+{
+  "DA040" : {
+    "PaymentOrNotCashBenefits" : {
+      "weNotifiedPersonOurDecisionTo" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.informasjonomutbetaling.kontantytelse.vedtak.type" ]
+      },
+      "PeriodConcerned" : {
+        "FixedPeriod" : {
+          "endDate" : "$arbeidsulykkeyrkessykdom.informasjonomutbetaling.kontantytelse.periode.fastperiode.sluttdato",
+          "startDate" : "$arbeidsulykkeyrkessykdom.informasjonomutbetaling.kontantytelse.periode.fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "typeOpenPeriod" : {
+            "value" : [ "$arbeidsulykkeyrkessykdom.informasjonomutbetaling.kontantytelse.periode.aapenperiode.type" ]
+          },
+          "startDate" : "$arbeidsulykkeyrkessykdom.informasjonomutbetaling.kontantytelse.periode.aapenperiode.startdato"
+        }
+      }
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "forename" : "$nav.bruker.person.fornavn",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato"
+      },
+      "AdditionalInformationPerson" : {
+        "previousForename" : "$nav.bruker.person.tidligerefornavn",
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "AddressesPerson" : {
+      "AddressPerson" : [ {
+        "Address" : {
+          "postalCode" : "$nav.bruker.adresse[x].postnummer",
+          "town" : "$nav.bruker.adresse[x].by",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "region" : "$nav.bruker.adresse[x].region",
+          "street" : "$nav.bruker.adresse[x].gate"
+        },
+        "typeAddress" : {
+          "value" : [ "$nav.bruker.adresse[x].type[x]" ]
+        }
+      } ]
+    },
+    "ThisSEDRelatedTo" : {
+      "PleaseFillInFollowingIfStatusPersonOther" : {
+        "statusPersonIfOther" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.annet"
+      },
+      "code" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kode",
+      "typeOfSED" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.sedtype" ]
+      },
+      "description" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.konsekvensellerbeskrivelse",
+      "date" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.dato",
+      "statusPerson" : {
+        "value" : [ "$arbeidsulykkeyrkessykdom.sedrelaterttil.aktivitet.status.id" ]
+      },
+      "codingSystem" : "$arbeidsulykkeyrkessykdom.sedrelaterttil.sykdom.kodingssystem"
+    },
+    "Employer" : {
+      "Address" : {
+        "region" : "$nav.arbeidsgiver.adresse.region",
+        "postalCode" : "$nav.arbeidsgiver.adresse.postnummer",
+        "country" : {
+          "value" : [ "$nav.arbeidsgiver.adresse.land" ]
+        },
+        "buildingName" : "$nav.arbeidsgiver.adresse.bygning",
+        "street" : "$nav.arbeidsgiver.adresse.gate",
+        "town" : "$nav.arbeidsgiver.adresse.by"
+      },
+      "IdentificationNumbers" : {
+        "IdentificationNumber" : [ {
+          "number" : "$nav.arbeidsgiver.identifikator[x].id",
+          "type" : {
+            "value" : [ "$nav.arbeidsgiver.identifikator[x].type" ]
+          }
+        } ]
+      },
+      "name" : "$nav.arbeidsgiver.navn"
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}

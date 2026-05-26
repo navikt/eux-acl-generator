@@ -1,14 +1,13 @@
 package eux.acl.generator.eksekvering.acl;
 
+import eux.acl.generator.eksekvering.Versjoner;
 import eux.acl.generator.facade.FundamentFacade;
 
-import static eux.acl.generator.service.FilService.*;
 import static eux.acl.generator.modell.SedTyper.*;
 
-public class Acl_1_lagEuSedFundament {
+public class Acl_1_lagEuSedFundament extends Versjoner {
     public static void main(String[] args) {
-        lagEuSedFundament(V43);
-        lagEuSedFundament(V44);
+        lagEuSedFundament(NY_VERSJON);
     }
 
     public static void lagEuSedFundament(String cdmVersjon) {

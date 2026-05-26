@@ -1,0 +1,156 @@
+{
+  "H120" : {
+    "Person" : {
+      "PersonIdentification" : {
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            }
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "forename" : "$nav.bruker.person.fornavn"
+      },
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "postalCode" : "$nav.bruker.bostedsadresse.postnummer",
+          "region" : "$nav.bruker.bostedsadresse.region",
+          "country" : {
+            "value" : [ "$nav.bruker.bostedsadresse.land" ]
+          },
+          "town" : "$nav.bruker.bostedsadresse.by",
+          "buildingName" : "$nav.bruker.bostedsadresse.bygning",
+          "street" : "$nav.bruker.bostedsadresse.gate"
+        },
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "ContactInformationPerson" : {
+          "TelephoneNumbers" : {
+            "TelephoneNumber" : [ {
+              "type" : {
+                "value" : [ "$nav.bruker.person.kontakt.telefon[x].type" ]
+              },
+              "number" : "$nav.bruker.person.kontakt.telefon[x].nummer"
+            } ]
+          },
+          "EmailAddresses" : {
+            "EmailAddress" : [ {
+              "email" : "$nav.bruker.person.kontakt.email[x].adresse"
+            } ]
+          }
+        },
+        "previousForename" : "$nav.bruker.person.tidligerefornavn",
+        "previousFamilyName" : "$nav.bruker.person.tidligereetternavn"
+      }
+    },
+    "QuestionsForAWODOnly" : {
+      "FillInSectionOnlyIfRequestConcerns" : {
+        "thisSEDRelatedTo" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.type" ]
+        },
+        "Employer" : {
+          "Address" : {
+            "postalCode" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.adresse.postnummer",
+            "town" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.adresse.by",
+            "street" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.adresse.gate",
+            "region" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.adresse.region",
+            "country" : {
+              "value" : [ "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.adresse.land" ]
+            },
+            "buildingName" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.adresse.bygning"
+          },
+          "IdentificationNumbers" : {
+            "IdentificationNumber" : [ {
+              "number" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.identifikator[x].id",
+              "type" : {
+                "value" : [ "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.identifikator[x].type" ]
+              }
+            } ]
+          },
+          "name" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.arbeidsgiver.navn"
+        },
+        "accidentDiseaseCode" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.sykdom.kode",
+        "PleaseFillInFollowingIfStatusPersonOther" : {
+          "statusPersonIfOther" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.status.annet"
+        },
+        "accidentDiseaseCodingSystem" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.sykdom.kodingssystem",
+        "statusPerson" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.bruker.status.id" ]
+        },
+        "consequencesAccidentKindOrShortDescriptionDisease" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.konsekvensellerbeskrivelse",
+        "date" : "$horisontal.anmodningmedisinskinformasjon.arbeidsulykkeyrkessykdom.dato"
+      }
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "DetailsRequest" : {
+      "TheRequestDoesNotConcernIncapacityForWork" : {
+        "weAgreeCoverCostsMedicalEvidenceExamination" : {
+          "value" : [ "$horisontal.anmodning_ikkemedisinskinformasjon.samtykke.dekningkostnader" ]
+        }
+      },
+      "TheRequestConcernsIncapacityForWork" : {
+        "TheRequestedMedicalEvidenceExaminationConcern" : {
+          "startDate" : "$horisontal.anmodningmedisinskinformasjon.relevantperiode.startdato",
+          "endDate" : "$horisontal.anmodningmedisinskinformasjon.relevantperiode.sluttdato"
+        },
+        "weAgreeCoverCostsMedicalEvidenceExamination" : {
+          "value" : [ "$horisontal.anmodningmedisinskinformasjon.samtykke.dekningkostnader" ]
+        }
+      }
+    },
+    "QuestionsForFamilyBenefitsOnly" : {
+      "requestedInformation" : {
+        "value" : [ "$horisontal.anmodningmedisinskinformasjon.familie.etterspurtdokumentasjon[x]" ]
+      },
+      "additionalInformationMedicalReport" : "$horisontal.anmodningmedisinskinformasjon.familie.annendokumentasjon"
+    },
+    "NatureRequest" : {
+      "pleaseProvide" : {
+        "value" : [ "$horisontal.anmodningmedisinskinformasjon.etterspurtdokumentasjon[x]" ]
+      },
+      "weAskTo" : {
+        "value" : [ "$horisontal.anmodningmedisinskinformasjon.etterspurthandling[x]" ]
+      },
+      "FillInIfPleaseProvideOtherMedical" : {
+        "otherMedicalEvidence" : "$horisontal.anmodningmedisinskinformasjon.annendokumentasjon"
+      },
+      "specialRequirementsPointsCoveredFromMedicalExamination" : "$horisontal.anmodningmedisinskinformasjon.spesiellekravtildokumentasjon"
+    },
+    "TheBenefitConcerned" : {
+      "typeBenefitInReferWhichMedicalInformationRequested" : {
+        "value" : [ "$horisontal.anmodningmedisinskinformasjon.beroertytelse" ]
+      }
+    }
+  }
+}

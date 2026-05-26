@@ -1,0 +1,48 @@
+{
+  "X050" : {
+    "CaseContext" : {
+      "EmployerContext" : {
+        "Address" : {
+          "town" : "$nav.sak.kontekst.arbeidsgiver.adresse.by",
+          "street" : "$nav.sak.kontekst.arbeidsgiver.adresse.gate",
+          "region" : "$nav.sak.kontekst.arbeidsgiver.adresse.region",
+          "buildingName" : "$nav.sak.kontekst.arbeidsgiver.adresse.bygning",
+          "postalCode" : "$nav.sak.kontekst.arbeidsgiver.adresse.postnummer",
+          "country" : {
+            "value" : [ "$nav.sak.kontekst.arbeidsgiver.adresse.land" ]
+          }
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.sak.kontekst.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.sak.kontekst.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.sak.kontekst.arbeidsgiver.navn"
+      },
+      "PersonContext" : {
+        "familyName" : "$nav.sak.kontekst.bruker.person.etternavn",
+        "sex" : {
+          "value" : [ "$nav.sak.kontekst.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.sak.kontekst.bruker.person.fornavn",
+        "dateBirth" : "$nav.sak.kontekst.bruker.person.foedselsdato"
+      },
+      "ReimbursementContext" : {
+        "reimbursementRequestID" : "$nav.sak.kontekst.refusjonskrav.id",
+        "totalNumberIndividualClaims" : "$nav.sak.kontekst.refusjonskrav.antallkrav"
+      }
+    },
+    "WhileReceivingFollowingSED" : {
+      "SEDVersion" : "$nav.sak.fagligfeil.mottak.sed.versjon",
+      "SEDCode" : "$nav.sak.fagligfeil.mottak.sed.kode"
+    },
+    "TheFollowingBusinessExceptionHasOccurred" : {
+      "businessException" : {
+        "value" : [ "$nav.sak.fagligfeil.type[x]" ]
+      }
+    }
+  }
+}

@@ -1,0 +1,860 @@
+{
+  "M040.AdditionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "7."
+  },
+  "M040.AdditionalInformation.additionalInformation" : {
+    "ledetekst" : "Ytterligere informasjon",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextAreaInput",
+    "indeks" : "7.1.",
+    "tekstlengde" : "500"
+  },
+  "M040.Claimant" : {
+    "ledetekst" : "Søker",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1."
+  },
+  "M040.Claimant.AdditionalInformationPerson" : {
+    "ledetekst" : "Ytterligere informasjon om personen",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2."
+  },
+  "M040.Claimant.AdditionalInformationPerson.PreviousName" : {
+    "ledetekst" : "Tidligere navn",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.2.2."
+  },
+  "M040.Claimant.AdditionalInformationPerson.PreviousName.previousFamilyName" : {
+    "ledetekst" : "Tidligere etternavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.2.2.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.AdditionalInformationPerson.PreviousName.previousForename" : {
+    "ledetekst" : "Tidligere fornavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.2.2.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.AdditionalInformationPerson.nationality.value[0]" : {
+    "ledetekst" : "Nasjonalitet",
+    "verdiType" : "enum",
+    "cdmType" : "_uxMultiSelect",
+    "indeks" : "1.2.1.",
+    "enumNavn" : "EESSINationalityMultipleType",
+    "enumNavnId" : "50b5c17b-d595-e611-80d1-000d3a22e8cd"
+  },
+  "M040.Claimant.PersonIdentification" : {
+    "ledetekst" : "Personnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1."
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "ledetekst" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8."
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "ledetekst" : "Fødested",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.8.1."
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "1.1.8.1.3.",
+    "enumNavn" : "EESSIWorldCountryHistoricType",
+    "enumNavnId" : "5b7740c2-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "ledetekst" : "Region",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.8.1.2.",
+    "tekstlengde" : "65"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "ledetekst" : "By",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.8.1.1.",
+    "tekstlengde" : "65"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "ledetekst" : "Fars etternavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.8.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "ledetekst" : "Fars fornavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.8.3.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "ledetekst" : "Mors fornavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.8.5.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "ledetekst" : "Mors etternavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.8.4.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution" : {
+    "ledetekst" : "PIN for personen i hver enkelt institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.7."
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "ledetekst" : "Personnummer/-numre",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "1.1.7.1"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "1.1.7.1.4."
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.7.1.4.1."
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_rinaIRAutocomplete",
+    "indeks" : "1.1.7.1.4.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "1.1.7.1.1.",
+    "enumNavn" : "EESSIEUEFTACountryType",
+    "enumNavnId" : "35684f61-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "ledetekst" : "Personnummer (PIN)",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.7.1.2.",
+    "tekstlengde" : "65"
+  },
+  "M040.Claimant.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector.value[0]" : {
+    "ledetekst" : "Sektor",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "1.1.7.1.3.",
+    "enumNavn" : "EESSISectorsType",
+    "enumNavnId" : "36684f61-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.Claimant.PersonIdentification.dateBirth" : {
+    "ledetekst" : "Fødselsdato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "1.1.3."
+  },
+  "M040.Claimant.PersonIdentification.familyName" : {
+    "ledetekst" : "Etternavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.familyNameAtBirth" : {
+    "ledetekst" : "Etternavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.5.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.forename" : {
+    "ledetekst" : "Fornavn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.forenameAtBirth" : {
+    "ledetekst" : "Fornavn ved fødsel",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "1.1.6.",
+    "tekstlengde" : "155"
+  },
+  "M040.Claimant.PersonIdentification.sex.value[0]" : {
+    "ledetekst" : "Kjønn",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "1.1.4.",
+    "enumNavn" : "EESSISexType",
+    "enumNavnId" : "4b65465b-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.InformationPayment" : {
+    "ledetekst" : "Informasjon om betaling",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5."
+  },
+  "M040.InformationPayment.BankDetails" : {
+    "ledetekst" : "Bankinformasjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.2."
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount" : {
+    "ledetekst" : "Ikke-SEPA-konto",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "5.2.2."
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BICSWIFT" : {
+    "ledetekst" : "BIC-SWIFT",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.2.",
+    "tekstlengde" : "11"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress" : {
+    "ledetekst" : "Bankens adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "5.2.2.4."
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.buildingName" : {
+    "ledetekst" : "Bygningens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.4.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "5.2.2.4.6.",
+    "enumNavn" : "EESSIWorldCountryType",
+    "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.postalCode" : {
+    "ledetekst" : "Postnummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.4.4.",
+    "tekstlengde" : "25"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.region" : {
+    "ledetekst" : "Region",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.4.5.",
+    "tekstlengde" : "65"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.street" : {
+    "ledetekst" : "Gate",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.4.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.BankAddress.town" : {
+    "ledetekst" : "By",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.4.3.",
+    "tekstlengde" : "65"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.accountNumber" : {
+    "ledetekst" : "Kontonummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.1.",
+    "tekstlengde" : "65"
+  },
+  "M040.InformationPayment.BankDetails.NonSEPAAccount.bankName" : {
+    "ledetekst" : "Bankens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.2.3.",
+    "tekstlengde" : "65"
+  },
+  "M040.InformationPayment.BankDetails.SEPAAccount" : {
+    "ledetekst" : "SEPA-konto",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "5.2.1."
+  },
+  "M040.InformationPayment.BankDetails.SEPAAccount.BICSWIFT" : {
+    "ledetekst" : "BIC-SWIFT",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.1.2.",
+    "tekstlengde" : "11"
+  },
+  "M040.InformationPayment.BankDetails.SEPAAccount.IBAN" : {
+    "ledetekst" : "IBAN",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "5.2.1.1."
+  },
+  "M040.InformationPayment.paymentTo.value[0]" : {
+    "ledetekst" : "Utbetaling til",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "5.1.",
+    "enumNavn" : "EESSIClaimantRepresentativeType",
+    "enumNavnId" : "2da372af-2d95-e611-80d1-000d3a22e8cd"
+  },
+  "M040.InformationRepresentativeLegalGuardian" : {
+    "ledetekst" : "Informasjon om representant/verge",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4."
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian" : {
+    "ledetekst" : "Informasjon om representant/verge",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.2."
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "4.2.2."
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.2.2.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "4.2.2.6.",
+    "enumNavn" : "EESSIWorldCountryType",
+    "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.postalCode" : {
+    "ledetekst" : "Postnummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.2.2.4.",
+    "tekstlengde" : "25"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.region" : {
+    "ledetekst" : "Region",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.2.2.5.",
+    "tekstlengde" : "65"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.street" : {
+    "ledetekst" : "Gate",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.2.2.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.Address.town" : {
+    "ledetekst" : "By",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "4.2.2.3.",
+    "tekstlengde" : "65"
+  },
+  "M040.InformationRepresentativeLegalGuardian.InformationRepresentativeLegalGuardian.name" : {
+    "ledetekst" : "Navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextAreaInput",
+    "indeks" : "4.2.1.",
+    "tekstlengde" : "255"
+  },
+  "M040.InformationRepresentativeLegalGuardian.status.value[0]" : {
+    "ledetekst" : "Status",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "4.1.",
+    "enumNavn" : "MRepresentativeLegalGuardianType",
+    "enumNavnId" : "fe2ae214-3995-e611-80d1-000d3a22e8cd"
+  },
+  "M040.Miscellaneous" : {
+    "ledetekst" : "Diverse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "6."
+  },
+  "M040.Miscellaneous.dateClaim" : {
+    "ledetekst" : "Dato for krav",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "6.1."
+  },
+  "M040.Miscellaneous.remarks" : {
+    "ledetekst" : "Merknader",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextAreaInput",
+    "indeks" : "6.2.",
+    "tekstlengde" : "500"
+  },
+  "M040.PersonBenefitDetails" : {
+    "ledetekst" : "Informasjon om ytelser personen mottar",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0]" : {
+    "ledetekst" : "Informasjon om ytelser personen mottar",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "3.1"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].Institution" : {
+    "ledetekst" : "Institusjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.4."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].Institution.institutionID" : {
+    "ledetekst" : "Institusjonens ID",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "3.1.4.1."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].Institution.institutionName" : {
+    "ledetekst" : "Institusjonens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_rinaIRAutocomplete",
+    "indeks" : "3.1.4.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment" : {
+    "ledetekst" : "Utbetalingsperiode for ytelser",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.5."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.FixedPeriod" : {
+    "ledetekst" : "Fastsatt periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "3.1.5.1."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.FixedPeriod.endDate" : {
+    "ledetekst" : "Sluttdato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "3.1.5.1.2."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.FixedPeriod.startDate" : {
+    "ledetekst" : "Startdato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "3.1.5.1.1."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.OpenPeriod" : {
+    "ledetekst" : "Åpen periode",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxHiddenGroupContainer",
+    "indeks" : "3.1.5.2."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.OpenPeriod.startDate" : {
+    "ledetekst" : "Startdato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "3.1.5.2.2."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PeriodBenefitsPayment.OpenPeriod.typeOpenPeriod.value[0]" : {
+    "ledetekst" : "Type åpen periode",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "3.1.5.2.1.",
+    "enumNavn" : "EESSIOpenPeriodType",
+    "enumNavnId" : "a8fbff38-4ff4-e611-80d3-000d3a22e8cd"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PleaseFillInFollowingIfBenefitsOtherBenefit" : {
+    "ledetekst" : "Fyll ut hvis «Ytelser» = «Andre ytelser»:",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "3.1.2."
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].PleaseFillInFollowingIfBenefitsOtherBenefit.otherBenefit" : {
+    "ledetekst" : "Annen ytelse",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "3.1.2.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].benefits.value[0]" : {
+    "ledetekst" : "Ytelser",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "3.1.1.",
+    "enumNavn" : "MBenefitTypePlusEarlyRetirementType",
+    "enumNavnId" : "5c77a35d-0f96-e611-80d1-000d3a22e8cd"
+  },
+  "M040.PersonBenefitDetails.PersonBenefitDetails[0].status.value[0]" : {
+    "ledetekst" : "Status",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "3.1.3.",
+    "enumNavn" : "EESSIAppliedGrantedDeniedProvisionalType",
+    "enumNavnId" : "51b5c17b-d595-e611-80d1-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails" : {
+    "ledetekst" : "Informasjon om personens ansettelsesforhold eller selvstendige næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.IfPersonStillPursuingOrIntendsTakeUpEmployment" : {
+    "ledetekst" : "Hvis personen fortsatt driver eller skal påbegynne ansettelsesforhold eller starte selvstendig næringsvirksomhet, oppgi månedlig inntektsbeløp fra aktuelt ansettelsesforhold/selvstendig næringsvirksomhet.",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.IfPersonStillPursuingOrIntendsTakeUpEmployment.amount" : {
+    "ledetekst" : "Beløp",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.2.1."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.IfPersonStillPursuingOrIntendsTakeUpEmployment.currency.value[0]" : {
+    "ledetekst" : "Valuta",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.2.2.",
+    "enumNavn" : "EESSIWorldCurrencyType",
+    "enumNavnId" : "be7a5f67-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0]" : {
+    "ledetekst" : "Informasjon om siste arbeidsgiver",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.5"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address" : {
+    "ledetekst" : "Adresse",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.5.3."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.buildingName" : {
+    "ledetekst" : "Bygningens navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.5.3.2.",
+    "tekstlengde" : "155"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.5.3.6.",
+    "enumNavn" : "EESSIWorldCountryType",
+    "enumNavnId" : "5c7740c2-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.postalCode" : {
+    "ledetekst" : "Postnummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.5.3.4.",
+    "tekstlengde" : "25"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.region" : {
+    "ledetekst" : "Region",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.5.3.5.",
+    "tekstlengde" : "65"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.street" : {
+    "ledetekst" : "Gate",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.5.3.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].Address.town" : {
+    "ledetekst" : "By",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.5.3.3.",
+    "tekstlengde" : "65"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.5.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers.IdentificationNumber[0]" : {
+    "ledetekst" : "Identifikasjonsnummer",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.5.2.1"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers.IdentificationNumber[0].number" : {
+    "ledetekst" : "Nummer",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.5.2.1.1.",
+    "tekstlengde" : "25"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].IdentificationNumbers.IdentificationNumber[0].type.value[0]" : {
+    "ledetekst" : "Type",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.5.2.1.2.",
+    "enumNavn" : "EESSIOrganisationIdentificationNumberType",
+    "enumNavnId" : "9e7a5f67-9218-e611-80ea-000c292ed0d7"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.LastEmployerDetails[0].name" : {
+    "ledetekst" : "Navn",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.5.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment" : {
+    "ledetekst" : "Grunn til opphør i siste arbeidsforhold / selvstendige næringsvirksomhet",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.6."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.FillInIfTerminationReason" : {
+    "ledetekst" : "Fyll ut hvis «Grunn til avsluttet arbeidsforhold» = «Annen»",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.6.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.FillInIfTerminationReason.otherTermination" : {
+    "ledetekst" : "Annet opphør",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextInput",
+    "indeks" : "2.6.2.1.",
+    "tekstlengde" : "155"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.terminationReasonEmployment.value[0]" : {
+    "ledetekst" : "Årsak til avslutning av arbeidsforhold",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.6.1.",
+    "enumNavn" : "ReasonEmploymentTerminationType",
+    "enumNavnId" : "5e77a35d-0f96-e611-80d1-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.ReasonForTerminationLastEmploymentSelfEmployment.terminationReasonSelfEmployment" : {
+    "ledetekst" : "Årsak til avslutning av selvstending næringsvirksomhet",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextAreaInput",
+    "indeks" : "2.6.3.",
+    "tekstlengde" : "255"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0]" : {
+    "ledetekst" : "Yrkesaktivitetens status",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaArray",
+    "indeks" : "2.1"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonCeasedPursue" : {
+    "ledetekst" : "Personen arbeider ikke lenger med",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.3."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonCeasedPursue.date" : {
+    "ledetekst" : "Dato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.1.3.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonCeasedPursue.personCeasedPursue.value[0]" : {
+    "ledetekst" : "Personen arbeider ikke lenger med",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.1.3.1.",
+    "enumNavn" : "EESSIEmploymentType",
+    "enumNavnId" : "cabc2a65-fb4c-e711-80d5-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsRetireFrom" : {
+    "ledetekst" : "Personen skal pensjonere seg fra",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.6."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsRetireFrom.date" : {
+    "ledetekst" : "Dato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.1.6.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsRetireFrom.personIntendsRetireFrom.value[0]" : {
+    "ledetekst" : "Personen skal pensjonere seg fra",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.1.6.1.",
+    "enumNavn" : "EESSIEmploymentType",
+    "enumNavnId" : "cebc2a65-fb4c-e711-80d5-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsTakeUp" : {
+    "ledetekst" : "Personen ønsker å arbeide med",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.7."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsTakeUp.date" : {
+    "ledetekst" : "Dato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.1.7.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonIntendsTakeUp.personIntendsTakeUp.value[0]" : {
+    "ledetekst" : "Personen ønsker å arbeide med",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.1.7.1.",
+    "enumNavn" : "EESSIEmploymentType",
+    "enumNavnId" : "ccbc2a65-fb4c-e711-80d5-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonReduced" : {
+    "ledetekst" : "Personen har redusert omfanget av",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.4."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonReduced.date" : {
+    "ledetekst" : "Dato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.1.4.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonReduced.personReduced.value[0]" : {
+    "ledetekst" : "Personen har redusert omfanget av",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.1.4.1.",
+    "enumNavn" : "EESSIEmploymentType",
+    "enumNavnId" : "d0bc2a65-fb4c-e711-80d5-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonSuspended" : {
+    "ledetekst" : "Personen er i permisjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "2.1.5."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonSuspended.date" : {
+    "ledetekst" : "Dato",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.1.5.2."
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].PersonSuspended.personSuspended.value[0]" : {
+    "ledetekst" : "Personen er i permisjon",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.1.5.1.",
+    "enumNavn" : "EESSIEmploymentType",
+    "enumNavnId" : "d2bc2a65-fb4c-e711-80d5-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].country.value[0]" : {
+    "ledetekst" : "Land",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.1.1.",
+    "enumNavn" : "EESSIEUEFTACountryType",
+    "enumNavnId" : "7077a35d-0f96-e611-80d1-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.StatusActivity[0].personStillPursuing.value[0]" : {
+    "ledetekst" : "Personen arbeider ennå med",
+    "verdiType" : "enum",
+    "cdmType" : "_uxRadioButton",
+    "indeks" : "2.1.2.",
+    "enumNavn" : "EESSIEmploymentType",
+    "enumNavnId" : "cdbc2a65-fb4c-e711-80d5-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.countryLastEmploymentOrSelfEmploymentActivity.value[0]" : {
+    "ledetekst" : "Land for siste ansettelsesforhold eller selvstendige næringsvirksomhet",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.3.",
+    "enumNavn" : "EESSIWorldCountryType",
+    "enumNavnId" : "6277a35d-0f96-e611-80d1-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.countryWhichLegislationApplicableDuringLast.value[0]" : {
+    "ledetekst" : "Land hvor lovgivning gjaldt under siste ansettelsesforhold eller selvstendige næringsvirksomhet",
+    "verdiType" : "enum",
+    "cdmType" : "_uxSelectAutoCompleteInput",
+    "indeks" : "2.4.",
+    "enumNavn" : "EESSIWorldCountryType",
+    "enumNavnId" : "6177a35d-0f96-e611-80d1-000d3a22e8cd"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.otherInformationEmploymentOrSelfEmployment" : {
+    "ledetekst" : "Annen informasjon om arbeidsforhold eller selvstendig næringsvirksomhet",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextAreaInput",
+    "indeks" : "2.7.",
+    "tekstlengde" : "255"
+  },
+  "M040.PersonEmploymentSelfEmploymentDetails.theDateTerminationLastEmploymentOrSelfEmployment" : {
+    "ledetekst" : "Sluttdato for forrige arbeidsforhold / selvstendige næringsvirksomhet",
+    "verdiType" : "dato",
+    "cdmType" : "_uxDateInput",
+    "indeks" : "2.8."
+  },
+  "M040.PleaseFindAttachedFollowingDocument" : {
+    "ledetekst" : "Følgende dokument(er) er vedlagt",
+    "verdiType" : "tittel",
+    "cdmType" : "_uxFieldSetContainer",
+    "indeks" : "8."
+  },
+  "M040.PleaseFindAttachedFollowingDocument.attachedDocument.value[0]" : {
+    "ledetekst" : "Vedlagte dokument(er)",
+    "verdiType" : "enum",
+    "cdmType" : "_uxMultiCheckbox",
+    "indeks" : "8.1.",
+    "enumNavn" : "AttachedDocsM040MultipleType",
+    "enumNavnId" : "c87b52b8-e445-e711-80d5-000d3a22e8cd"
+  },
+  "M040.PleaseFindAttachedFollowingDocument.otherDocument" : {
+    "ledetekst" : "Annet/andre dokument(er)",
+    "verdiType" : "tekst",
+    "cdmType" : "_uxTextAreaInput",
+    "indeks" : "8.2.",
+    "tekstlengde" : "500"
+  },
+  "M040.sedTitle" : {
+    "ledetekst" : "Krav om førtidspensjon",
+    "verdiType" : "tittel",
+    "cdmType" : "_rinaRoot",
+    "indeks" : "M040"
+  }
+}

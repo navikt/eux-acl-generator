@@ -21,16 +21,19 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 
 @Slf4j
 public class FilService {
-    public static final String MAPPE_VERSJON_v44 = "v44";
-    public static final String MAPPE_VERSJON_v43 = "v43";
-    public static final String V43 = "4.3";
-    public static final String V44 = "4.4";
+//    public static final String MAPPE_VERSJON_v43 = "v43";
+//    public static final String MAPPE_VERSJON_v44 = "v44";
+//    public static final String MAPPE_VERSJON_v45 = "v45";
+//    public static final String V43 = "4.3";
+//    public static final String V44 = "4.4";
+//    public static final String V45 = "4.5";
     public static final String MAPPE_CDM_LOGISK_MODELL = "src/main/resources/input/cdm-logisk-modell";
     public static final String FIL_CDM_LOGISK_MODELL = "CDM_LM.xml";
     public static final String MAPPE_CDM_META = "src/main/resources/input/cdm-meta";
     public static final String MAPPE_OVERSETTELSER = "src/main/resources/input/cdm-oversettelser";
     public static final String FIL_OVERSETTELSER = "no.json";
     public static final String MAPPE_EKSISTERENDE_ACL = "src/main/resources/input/acl/v43/sedtemplates";
+    public static final String MAPPE_INPUT_ACL = "src/main/resources/input/acl";
 
     public static final String MAPPE_FUNDAMENT_KODEVERK = "src/main/resources/fundament/kodeverk";
     public static final String MAPPE_FUNDAMENT_KODEVERK_TARGET = "target/fundament/kodeverk";
@@ -146,7 +149,7 @@ public class FilService {
         String cdmSektor = StringUtils.splitByCharacterType(sedType)[0];
         String cdmVersjonTilpasset = "v" + cdmVersjon.replace(".", "");
         String aclFilnavn = sedType + "_v" + cdmVersjon + ".json";
-        String aclMalFilSti = MAPPE_EKSISTERENDE_ACL + "/" + cdmVersjonTilpasset + "/" + aclSektor(cdmSektor) + "/" + aclFilnavn;
+        String aclMalFilSti = MAPPE_INPUT_ACL + "/" + cdmVersjonTilpasset + "/sedtemplates/" + aclSektor(cdmSektor) + "/" + aclFilnavn;
         try {
             String aclmalJson = FileUtils.readFileToString(new File(aclMalFilSti), UTF_8);
             return JsonFlattener.flattenAsMap(aclmalJson);

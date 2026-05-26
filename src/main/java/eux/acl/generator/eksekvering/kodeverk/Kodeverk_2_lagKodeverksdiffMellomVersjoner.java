@@ -1,14 +1,12 @@
 package eux.acl.generator.eksekvering.kodeverk;
 
+import eux.acl.generator.eksekvering.Versjoner;
 import eux.acl.generator.facade.DiffFacade;
 
-import static eux.acl.generator.service.FilService.V43;
-import static eux.acl.generator.service.FilService.V44;
+public class Kodeverk_2_lagKodeverksdiffMellomVersjoner extends Versjoner {
 
-public class Kodeverk_2_lagKodeverksdiffMellomVersjoner {
-
-    public static void main(String[] args) {
-        new DiffFacade().sammenliknerEnumeneForToCdmVersjonerOgKopiererEnumFundamentFilene(V43, V44);
-    }
+	public static void main(String[] args) {
+		new DiffFacade().sammenliknerEnumeneForToCdmVersjonerOgKopiererEnumFundamentFilene(FORRIGE_VERSJON, NY_VERSJON);
+	}
 
 }

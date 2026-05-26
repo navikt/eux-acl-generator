@@ -1,0 +1,75 @@
+{
+  "H070" : {
+    "NotificationDeath" : {
+      "dateDeath" : "$nav.bruker.doedsfall.doedsdato",
+      "PlaceDeath" : {
+        "postalCode" : "$nav.bruker.doedsfall.sted.adresse.postnummer",
+        "buildingName" : "$nav.bruker.doedsfall.sted.adresse.bygning",
+        "town" : "$nav.bruker.doedsfall.sted.adresse.by",
+        "street" : "$nav.bruker.doedsfall.sted.adresse.gate",
+        "country" : {
+          "value" : [ "$nav.bruker.doedsfall.sted.adresse.land" ]
+        },
+        "region" : "$nav.bruker.doedsfall.sted.adresse.region"
+      }
+    },
+    "Person" : {
+      "PersonIdentification" : {
+        "forename" : "$nav.bruker.person.fornavn",
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      },
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      }
+    },
+    "PleaseFindAttachedDocumentsConfirmingDeath" : {
+      "OtherDocumentsAttached" : {
+        "OtherDocument" : [ {
+          "document" : "$nav.bruker.doedsfall.dokumentervedlagt.annet[x]"
+        } ]
+      },
+      "predefinedDocuments" : {
+        "value" : [ "$nav.bruker.doedsfall.dokumentervedlagt.type[x]" ]
+      }
+    },
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    }
+  }
+}
