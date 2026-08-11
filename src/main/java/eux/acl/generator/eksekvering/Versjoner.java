@@ -10,7 +10,7 @@ public class Versjoner {
 	protected static final String MAPPE_VERSJON_v45 = "v45";
 
 	// Versjoner som brukes av koden:
-	protected static final String FORRIGE_VERSJON = V44;
-	protected static final String NY_VERSJON = V45;
-	protected static final String NY_MAPPE_VERSJON = MAPPE_VERSJON_v45;
+	protected static final String FORRIGE_VERSJON = V43;
+	protected static final String NY_VERSJON = V44;
+	protected static final String NY_MAPPE_VERSJON = MAPPE_VERSJON_v44;
 }
