@@ -1,10 +1,5 @@
 package eux.acl.generator.service;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.github.wnameless.json.flattener.JsonFlattener;
 import eux.acl.generator.modell.EnumkodeFundament;
 import eux.acl.generator.modell.EuSedFundament;
@@ -12,6 +7,11 @@ import eux.acl.generator.modell.pdf.PdfSedElement;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.boot.json.JsonParseException;
+import tools.jackson.core.JacksonException;
+import tools.jackson.core.type.TypeReference;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.json.JsonMapper;
 
 import java.io.File;
 import java.io.IOException;
@@ -138,7 +138,7 @@ public class FilService {
             String euSedJson = new JsonMapper().convertValue(euSedFundament, JsonNode.class).toPrettyString();
             FileUtils.writeStringToFile(new File(cdmSedFilSti), euSedJson, "UTF-8");
             log.info("{}, v{}: euSedFundament opprettet", sedType, cdmVersjon);
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             log.error("kunne ikke konvertere euSedFundament til Json. sedType={} ", sedType);
         } catch (IOException e) {
             log.error("Kunne ikke skrive til fil. fil={}", cdmSedFilSti);
@@ -328,7 +328,7 @@ public class FilService {
             String euSedFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
             return new JsonMapper().readValue(euSedFundamentJson, new TypeReference<>() {
             });
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
         } catch (IOException e) {
             log.error("Fant ikke fil. filsti={}", filsti);
@@ -372,7 +372,7 @@ public class FilService {
             String euSedFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
             return new JsonMapper().readValue(euSedFundamentJson, new TypeReference<>() {
             });
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
         } catch (IOException e) {
             log.error("Fant ikke enum-fil. filsti={}", filsti);
@@ -417,7 +417,7 @@ public class FilService {
             String enumFundamentJson = FileUtils.readFileToString(new File(filsti), UTF_8);
             return new JsonMapper().readValue(enumFundamentJson, new TypeReference<>() {
             });
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             log.error("Kunne ikke konvertere json-fil til Java-objekt. filsti={}", filsti);
         } catch (IOException e) {
             log.error("Fant ikke enum-fil. filsti={}", filsti);

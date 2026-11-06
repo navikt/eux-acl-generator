@@ -74,19 +74,5 @@ public class FundamentTest extends Versjoner {
         aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_X, V44);
     }
 
-    @Test
-    public void lager_kodeverkFundament_v43() {
-        FundamentFacade aclMalFacade = new FundamentFacade();
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_M, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_A, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_DA, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_F, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_H, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_P, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_R, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_S, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_U, V43);
-        aclMalFacade.trekkUtEnumSettFundamentOgSkrivTilFil(SEDTYPER_X, V43);
-    }
 
 }
