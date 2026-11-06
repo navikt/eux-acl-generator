@@ -35,6 +35,24 @@ F002:InformationOtherPersons.InformationOtherPerson[0].AdditionalInformationAbou
 
 ACL-en fungerer selv om den har 2 liste-nivåer, mens vi her har 3.
 
+---
+Feil 4:
+Tre stier for andrePersoner inneholder leddet .typeOpenPeriod, som er feil.   
+Følgende er feil:
+> OpenPeriod.typeOpenPeriod.startDate
+
+Dette er korrekt:
+> OpenPeriod.startDate
+
+Gjelder følgende tre (ukorrigerte) stier:
+
+> F002:InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].NoInformationAboutActivityPerson.PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod.startDate: 
+
+> F002:InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.Employments.Employment[0].PeriodsEmployment.Period[0].OpenPeriod.typeOpenPeriod.startDate: 
+
+> F002:InformationOtherPersons.InformationOtherPerson[0].StatusPerson.Statuses.Status[0].PersonRegardedAnActivePerson.TypesNonActivity.TypeNoActivity[0].PeriodsNonActivity.Period[0].OpenPeriod.typeOpenPeriod.startDate:
+
+
 # F002 / v45
 Feil 2 i v4.4 er ikke rettet. 
 

@@ -1,0 +1,108 @@
+{
+  "M052" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "AddressPerson" : {
+          "Address" : {
+            "buildingName" : "$nav.bruker.bostedsadresse.bygning",
+            "country" : {
+              "value" : [ "$nav.bruker.bostedsadresse.land" ]
+            },
+            "postalCode" : "$nav.bruker.bostedsadresse.postnummer",
+            "region" : "$nav.bruker.bostedsadresse.region",
+            "street" : "$nav.bruker.bostedsadresse.gate",
+            "town" : "$nav.bruker.bostedsadresse.by"
+          },
+          "typeAddress" : {
+            "value" : [ "$nav.bruker.bostedsadresse.type" ]
+          }
+        },
+        "PleaseFillInFollowingIfStatusPersonOther" : {
+          "otherStatus" : "$diverse.bruker.status.annet"
+        },
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        },
+        "pursuesAProfessionalOrTradeActivityIndicator" : {
+          "value" : [ "$nav.bruker.utoeverprofesjonellforretningsvirksomhet" ]
+        },
+        "statusPerson" : {
+          "value" : [ "$diverse.bruker.status.id" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "PleaseFindAttachedFollowingDocument" : {
+      "attachedDocument" : {
+        "value" : [ "$diverse.overfoeringinfo.dokumentervedlagt.type[x]" ]
+      },
+      "otherDocument" : "$diverse.overfoeringinfo.dokumentervedlagt.annentype"
+    },
+    "SendPersonInformationPeriod" : {
+      "AddressesResidenceInCountryReceivingInstitution" : [ {
+        "buildingName" : "$nav.bruker.bosted.mottakerland.adresse[x].bygning",
+        "country" : {
+          "value" : [ "$nav.bruker.bosted.mottakerland.adresse[x].land" ]
+        },
+        "postalCode" : "$nav.bruker.bosted.mottakerland.adresse[x].postnummer",
+        "region" : "$nav.bruker.bosted.mottakerland.adresse[x].region",
+        "street" : "$nav.bruker.bosted.mottakerland.adresse[x].gate",
+        "town" : "$nav.bruker.bosted.mottakerland.adresse[x].by"
+      } ],
+      "PeriodsEmployment" : [ {
+        "endDate" : "$nav.bruker.aktivitet.ansettelse.periode[x].sluttdato",
+        "startDate" : "$nav.bruker.aktivitet.ansettelse.periode[x].startdato"
+      } ],
+      "PeriodsResidence" : [ {
+        "endDate" : "$nav.bruker.bosted.periode[x].sluttdato",
+        "startDate" : "$nav.bruker.bosted.periode[x].startdato"
+      } ],
+      "PeriodsSelfEmployment" : [ {
+        "endDate" : "$nav.bruker.aktivitet.selvstendig.periode[x].sluttdato",
+        "startDate" : "$nav.bruker.aktivitet.selvstendig.periode[x].startdato"
+      } ]
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

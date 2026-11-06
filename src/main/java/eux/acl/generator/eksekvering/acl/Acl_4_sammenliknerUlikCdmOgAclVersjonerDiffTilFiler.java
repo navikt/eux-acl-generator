@@ -21,6 +21,7 @@ public class Acl_4_sammenliknerUlikCdmOgAclVersjonerDiffTilFiler extends Versjon
 		diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_H, dagensVersjon, nyVersjon);
 		diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_M, dagensVersjon, nyVersjon);
 		diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_P, dagensVersjon, nyVersjon);
+		diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_P3000, dagensVersjon, nyVersjon);
 		diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_R, dagensVersjon, nyVersjon);
 		diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_S, dagensVersjon, nyVersjon);
 		diffFacade.sammenliknerGammelAclMalMedNyCdmSedOgSkriverNyAclMalBasisTilFiler(SEDTYPER_U, dagensVersjon, nyVersjon);

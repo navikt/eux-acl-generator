@@ -1,0 +1,281 @@
+{
+  "U017" : {
+    "ElementsConcerningLastEmploymentOrSelfEmployment" : {
+      "TypeAmounts" : [ {
+        "FillInIfTypeAmountCompensation" : {
+          "numberDays" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.utbetaling[x].feriepengerikketattut.antalldager"
+        },
+        "FillInIfTypeAmountWagesReceived" : {
+          "receivedForPeriodUntil" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.utbetaling[x].loennetteransettelse.fremtil"
+        },
+        "TypeAmount" : {
+          "Payment" : {
+            "amount" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.utbetaling[x].beloep",
+            "currency" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.utbetaling[x].valuta" ]
+            }
+          },
+          "typeAmount" : {
+            "value" : [ "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.utbetaling[x].typebeloep" ]
+          }
+        }
+      } ],
+      "WaivedRight" : {
+        "reason" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.avkallrettigheter.grunn",
+        "waivedRights" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.avkallrettigheter.rettigheter"
+      },
+      "otherBenefits" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.ytterligereinformasjon.andreytelser"
+    },
+    "EntitledBenefits" : {
+      "PleaseFillInFollowingIfEntitledNo" : {
+        "reason" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.svar.ikkeretttilytelser.grunn.type" ]
+        }
+      },
+      "PleaseFillInFollowingIfEntitledYes" : {
+        "EntitlementPeriod" : {
+          "FixedPeriod" : {
+            "endDate" : "$dagpenger.anmodningominformasjon.svar.retttilytelser.periode.fastperiode.sluttdato",
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.retttilytelser.periode.fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.retttilytelser.periode.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.retttilytelser.periode.aapenperiode.type" ]
+            }
+          }
+        },
+        "articleNumber" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.svar.retttilytelser.artikkelnummer" ]
+        }
+      },
+      "entitledIndicator" : {
+        "value" : [ "$dagpenger.anmodningominformasjon.svar.harretttilytelser" ]
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "PeriodsInsuranceEmploymentOrSelfEmployment" : {
+      "InsuranceOrEmploymentOrSelfEmploymentPeriod" : [ {
+        "FillInIfTypePeriodEmployment" : {
+          "EmployerOrSelfEmploymentDetails" : {
+            "Address" : {
+              "buildingName" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.adresse.bygning",
+              "country" : {
+                "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.adresse.land" ]
+              },
+              "postalCode" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.adresse.postnummer",
+              "region" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.adresse.region",
+              "street" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.adresse.gate",
+              "town" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.adresse.by"
+            },
+            "IdentificationNumbers" : {
+              "IdentificationNumber" : [ {
+                "number" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.identifikator[x].id",
+                "type" : {
+                  "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.identifikator[x].type42" ]
+                }
+              } ]
+            },
+            "name" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattmedforsikring.arbeidsgiver.navn"
+          }
+        },
+        "FillInIfTypePeriodEmploymentNot" : {
+          "EmployerOrSelfEmploymentDetails" : {
+            "Address" : {
+              "buildingName" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.adresse.bygning",
+              "country" : {
+                "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.adresse.land" ]
+              },
+              "postalCode" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.adresse.postnummer",
+              "region" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.adresse.region",
+              "street" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.adresse.gate",
+              "town" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.adresse.by"
+            },
+            "IdentificationNumbers" : {
+              "IdentificationNumber" : [ {
+                "number" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.identifikator[x].id",
+                "type" : {
+                  "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.identifikator[x].type42" ]
+                }
+              } ]
+            },
+            "name" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.arbeidsgiver.navn"
+          },
+          "RequestedAdditionalDetails" : {
+            "EarningsOrHours" : {
+              "EarningsOrHours" : [ {
+                "GrossEarnings" : {
+                  "amount" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.timerellerinntekt[x].bruttoinntekt",
+                  "currency" : {
+                    "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.timerellerinntekt[x].valuta" ]
+                  }
+                },
+                "Period" : {
+                  "FixedPeriod" : {
+                    "endDate" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.timerellerinntekt[x].fastperiode.sluttdato",
+                    "startDate" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.timerellerinntekt[x].fastperiode.startdato"
+                  },
+                  "OpenPeriod" : {
+                    "startDate" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.timerellerinntekt[x].aapenperiode.startdato",
+                    "typeOpenPeriod" : {
+                      "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.timerellerinntekt[x].aapenperiode.type" ]
+                    }
+                  }
+                },
+                "numberWorkingHours" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.timerellerinntekt[x].antallarbeidstimer"
+              } ]
+            },
+            "employmentOrSelfEmploymentNature" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].ansattutenforsikring.ertimerellerinntekt"
+          }
+        },
+        "FillInIfTypePeriodOtherPeriod" : {
+          "FillInIfTypeCompensation" : {
+            "VacationNotTaken" : {
+              "Amount" : {
+                "amount" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periodeannenforsikring.feriepengerikketattut.beloep",
+                "currency" : {
+                  "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periodeannenforsikring.feriepengerikketattut.valuta" ]
+                }
+              }
+            }
+          },
+          "FillInIfTypeOtherPeriodTreated" : {
+            "typeOtherPeriod" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periodeannenforsikring.behandlessomtrygdeperiode"
+          },
+          "type" : {
+            "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periodeannenforsikring.type42" ]
+          }
+        },
+        "Period" : {
+          "FixedPeriod" : {
+            "endDate" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periode.fastperiode.sluttdato",
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periode.fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periode.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].periode.aapenperiode.type" ]
+            }
+          }
+        },
+        "typePeriod" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.svar.trygdehistorikk[x].typeperiode42" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "ReasonForTerminationLastEmploymentOrSelf" : {
+      "FillInIfTerminationReason" : {
+        "otherTermination" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.informasjonomopphoer.ansettelse.annen"
+      },
+      "terminationReasonEmployment" : {
+        "value" : [ "$dagpenger.anmodningominformasjon.svar.sisteansettelse.informasjonomopphoer.ansettelse.aarsak" ]
+      },
+      "terminationReasonSelfEmployment" : "$dagpenger.anmodningominformasjon.svar.sisteansettelse.informasjonomopphoer.selvstendig.aarsak"
+    },
+    "ReferencePeriod" : {
+      "FixedPeriod" : {
+        "endDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.fastperiode.sluttdato",
+        "startDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.fastperiode.startdato"
+      },
+      "OpenPeriod" : {
+        "startDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.aapenperiode.startdato",
+        "typeOpenPeriod" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.anmodningsperiode.aapenperiode.type" ]
+        }
+      }
+    },
+    "UnemploymentBenefitsPeriods" : {
+      "UnemploymentBenefitsPeriod" : [ {
+        "LocalInstitution" : {
+          "TheInstitutionDOESNOTExistInIR" : {
+            "InstitutionAddress" : {
+              "buildingName" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.ukjentid.adresse.bygning",
+              "country" : {
+                "value" : [ "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.ukjentid.adresse.land" ]
+              },
+              "postalCode" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.ukjentid.adresse.postnummer",
+              "region" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.ukjentid.adresse.region",
+              "street" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.ukjentid.adresse.gate",
+              "town" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.ukjentid.adresse.by"
+            },
+            "institutionName" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.ukjentid.navn"
+          },
+          "TheInstitutionEXISTSInIR" : {
+            "institutionID" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.id",
+            "institutionName" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].institusjon.navn"
+          }
+        },
+        "Period" : {
+          "FixedPeriod" : {
+            "endDate" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].periode.fastperiode.sluttdato",
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].periode.fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].periode.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.svar.dagpengeperioder[x].periode.aapenperiode.type" ]
+            }
+          }
+        }
+      } ]
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

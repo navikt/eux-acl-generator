@@ -1,0 +1,114 @@
+{
+  "R006" : {
+    "InformationThereAreArrears" : {
+      "FillInFollowingIfInformationThereAreArrears" : {
+        "FillInFollowingIfEntitlementCorresponding" : {
+          "PleaseFillInFollowingIfArrearsHaveAlreadyBeenPaid" : {
+            "ArrearsDetails" : {
+              "ArrearsPeriod" : {
+                "endDate" : "$tilbakekreving.restskatt.utbetalt.enddato",
+                "startDate" : "$tilbakekreving.restskatt.utbetalt.startdato"
+              },
+              "ArrearsTotalAmount" : {
+                "amount" : "$tilbakekreving.restskatt.beløp",
+                "currency" : {
+                  "value" : [ "$tilbakekreving.restskatt.valuta" ]
+                }
+              }
+            }
+          },
+          "arrearsHaveAlreadyBeenPaidOutIndicator" : {
+            "value" : [ "$tilbakekreving.restskatt.utbetalt.indikator" ]
+          }
+        },
+        "entitlementCorrespondingBenefitIndicator" : {
+          "value" : [ "$tilbakekreving.restskatt.tilsvarende.retttilytelser.indikator" ]
+        }
+      },
+      "informationThereAreArrearsIndicator" : {
+        "value" : [ "$tilbakekreving.restskatt.indikator" ]
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "Persons" : {
+      "Person" : [ {
+        "AdditionalInformationAboutPerson" : {
+          "PleaseFillInFollowingIfStatusPersonOther" : {
+            "otherStatusPerson" : "$nav.brukere[x].tilbakekreving.status.annen"
+          },
+          "PreviousFamilyNames" : {
+            "PreviousFamilyName" : [ {
+              "previousFamilyName" : "$tilbakekreving.bruker[x].person.tidligereetternavn[x].navn"
+            } ]
+          },
+          "PreviousForenames" : {
+            "PreviousForename" : [ {
+              "previousForename" : "$tilbakekreving.bruker[x].person.tidligerefornavn[x].navn"
+            } ]
+          },
+          "currentFamilyStatus" : {
+            "value" : [ "$tilbakekreving.bruker[x].person.tilbakekrevingsivilstand.status" ]
+          },
+          "dateDeath" : "$nav.brukere[x].person.doedsdato",
+          "nationality" : {
+            "value" : [ "$nav.brukere[x].person.statsborgerskap[x].land" ]
+          },
+          "statusPerson" : {
+            "value" : [ "$nav.brukere[x].tilbakekreving.status.type" ]
+          }
+        },
+        "PersonIdentification" : {
+          "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+            "PlaceBirth" : {
+              "country" : {
+                "value" : [ "$nav.brukere[x].person.foedested.land" ]
+              },
+              "region" : "$nav.brukere[x].person.foedested.region",
+              "town" : "$nav.brukere[x].person.foedested.by"
+            },
+            "fatherFamilyNameAtBirth" : "$nav.brukere[x].far.person.etternavnvedfoedsel",
+            "forenameFather" : "$nav.brukere[x].far.person.fornavn",
+            "forenameMother" : "$nav.brukere[x].mor.person.fornavn",
+            "motherFamilyNameAtBirth" : "$nav.brukere[x].mor.person.etternavnvedfoedsel"
+          },
+          "PINPersonInEachInstitution" : {
+            "PersonalIdentificationNumber" : [ {
+              "Institution" : {
+                "institutionID" : "$nav.brukere[x].person.pin[x].institusjonsid",
+                "institutionName" : "$nav.brukere[x].person.pin[x].institusjonsnavn"
+              },
+              "country" : {
+                "value" : [ "$nav.brukere[x].person.pin[x].land" ]
+              },
+              "personalIdentificationNumber" : "$nav.brukere[x].person.pin[x].identifikator",
+              "sector" : {
+                "value" : [ "$nav.brukere[x].person.pin[x].sektor" ]
+              }
+            } ]
+          },
+          "dateBirth" : "$nav.brukere[x].person.foedselsdato",
+          "familyName" : "$nav.brukere[x].person.etternavn",
+          "familyNameAtBirth" : "$nav.brukere[x].person.etternavnvedfoedsel",
+          "forename" : "$nav.brukere[x].person.fornavn",
+          "forenameAtBirth" : "$nav.brukere[x].person.fornavnvedfoedsel",
+          "sex" : {
+            "value" : [ "$nav.brukere[x].person.kjoenn" ]
+          }
+        }
+      } ]
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

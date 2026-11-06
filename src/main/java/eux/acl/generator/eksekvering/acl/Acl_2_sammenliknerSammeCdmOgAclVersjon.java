@@ -20,6 +20,7 @@ public class Acl_2_sammenliknerSammeCdmOgAclVersjon extends Versjoner {
 		diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_H, forrigeCdmVersjon);
 		diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_M, forrigeCdmVersjon);
 		diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_P, forrigeCdmVersjon);
+		diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_P3000, forrigeCdmVersjon);
 		diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_R, forrigeCdmVersjon);
 		diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_S, forrigeCdmVersjon);
 		diffFacade.sammenliknerCdmEuSedMedAclEuSed(SEDTYPER_U, forrigeCdmVersjon);

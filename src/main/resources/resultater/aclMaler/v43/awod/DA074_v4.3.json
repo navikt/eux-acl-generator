@@ -1,0 +1,79 @@
+{
+  "DA074" : {
+    "GlobalNoteDecisionIROIO" : {
+      "MethodRefund" : {
+        "PleaseFillInFollowingIfMethodRefundBankTransfer" : {
+          "BankAccountDebtorLiaisonBody" : {
+            "BICSWIFT" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.bank.konto.sepa.swift",
+            "IBAN" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.bank.konto.sepa.iban"
+          }
+        },
+        "PleaseFillInFollowingIfMethodRefundOffset" : {
+          "globalCLAReferenceCreditorLiaisonBody" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.motregning"
+        },
+        "methodRefund" : {
+          "value" : [ "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.refusjon.type" ]
+        }
+      },
+      "TotalAmountIndividualOverpayments" : {
+        "amount" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.total.beloep",
+        "currency" : {
+          "value" : [ "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.total.valuta" ]
+        }
+      },
+      "dateSubmission" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.leveringsdato",
+      "globalACPIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.referanser.mottakerland.forbindelsesorgan.globalacpioreferanse",
+      "globalDecisionIOReferenceDebtorLiaisonBody" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.mottakerinstitusjon.globalioreferanse",
+      "globalIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.avsenderinstitusjon.globalioreferanse",
+      "totalNumberIndividualDecisionIO" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.globalnoteiroio.total.antall"
+    },
+    "IndividualDecisionIOs" : {
+      "IndividualDecisionIO" : [ {
+        "IDCreditorInstitution" : {
+          "institutionID" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].kreditorinstitusjon.institusjonsid",
+          "institutionName" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].kreditorinstitusjon.institusjonsnavn"
+        },
+        "IDDebtorInstitution" : {
+          "institutionID" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].debitorinstitusjon.institusjonsid",
+          "institutionName" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].debitorinstitusjon.institusjonsnavn"
+        },
+        "PersonReceivingBenefits" : {
+          "PersonIdentificationNumber" : {
+            "pINPersonInCompetentMemberState" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.pin.kompetenteuland",
+            "pINPersonInMemberStateStayOrResidence" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.pin.oppholdsland"
+          },
+          "PersonInformation" : {
+            "dateBirth" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.foedselsdato",
+            "familyName" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.etternavn",
+            "forename" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.fornavn",
+            "sex" : {
+              "value" : [ "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.kjoenn" ]
+            }
+          },
+          "familyNameAtBirth" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.etternavnvedfoedsel",
+          "forenameAtBirth" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].bruker.person.fornavnvedfoedsel"
+        },
+        "References" : {
+          "globalACPIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.mottakerland.forbindelsesorgan.globalacpioreferanse",
+          "globalDecisionIOReferenceDebtorLiaisonBody" : "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].mottakerinstitusjon.globalioreferanse",
+          "globalIOReferenceLiaisonBody" : "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.avsenderinstitusjon.samarbeidsorgan.globalioreferanse",
+          "individualACPIONumberLiaisonBody" : "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.mottakerland.forbindelsesorgan.individuellacpioreferanse",
+          "individualIODecisionNumberDebtorLiaisonBody" : "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.mottakerland.forbindelsesorgan.individuellioreferanse",
+          "individualIONumberLiaisonBody" : "$arbeidsulykkeyrkessykdom.innsigelsefeilutbetaling.svar.individuelliroio[x].referanser.avsenderinstitusjon.samarbeidsorgan.individuellioreferanse"
+        },
+        "RefundAmount" : {
+          "amount" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon,beloep",
+          "currency" : {
+            "value" : [ "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon.valuta" ]
+          }
+        },
+        "RefundPeriod" : {
+          "endDate" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon.periode.sluttdato",
+          "startDate" : "$arbeidsulykkeyrkessykdom.tilbakebetalingfeilutbetaling.vedtak.individuelliroio[x].refusjon.periode.startdato"
+        }
+      } ]
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

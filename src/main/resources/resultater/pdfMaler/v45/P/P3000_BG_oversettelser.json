@@ -1,0 +1,584 @@
+{
+  "P3000_BG.LocalCaseNumbers" : {
+    "index" : "1.",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_BG.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "index" : "1.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_BG.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "index" : "1.1.2.",
+    "prompt" : "Saksnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "index" : "1.1.3.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "index" : "1.1.3.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_BG.InsuredPerson" : {
+    "index" : "2.",
+    "prompt" : "Forsikret person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification" : {
+    "index" : "2.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.familyName" : {
+    "index" : "2.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.forename" : {
+    "index" : "2.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.dateBirth" : {
+    "index" : "2.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.sex" : {
+    "index" : "2.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.familyNameAtBirth" : {
+    "index" : "2.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.forenameAtBirth" : {
+    "index" : "2.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "2.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "2.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "2.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "2.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "2.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "2.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "2.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "2.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "2.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "2.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "2.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "2.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.1.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "index" : "2.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "index" : "2.2.1.2.",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "index" : "2.2.1.3.",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "index" : "2.2.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.Address.street" : {
+    "index" : "2.2.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
+    "index" : "2.2.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.Address.town" : {
+    "index" : "2.2.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
+    "index" : "2.2.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.Address.region" : {
+    "index" : "2.2.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.InsuredPerson.AdditionalInformationPerson.Address.country" : {
+    "index" : "2.2.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P3000_BG.ClaimantSurvivorPension" : {
+    "index" : "3.",
+    "prompt" : "Søker (etterlattepensjon)",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification" : {
+    "index" : "3.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.familyName" : {
+    "index" : "3.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.forename" : {
+    "index" : "3.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.dateBirth" : {
+    "index" : "3.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.sex" : {
+    "index" : "3.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.familyNameAtBirth" : {
+    "index" : "3.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.forenameAtBirth" : {
+    "index" : "3.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "3.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "3.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "3.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "3.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "3.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "3.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "3.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "3.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "3.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "3.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "3.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "3.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson" : {
+    "index" : "3.2.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "3.2.1.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "index" : "3.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "index" : "3.2.1.2.",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "index" : "3.2.1.3.",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.Address" : {
+    "index" : "3.2.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.Address.street" : {
+    "index" : "3.2.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.Address.buildingName" : {
+    "index" : "3.2.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.Address.town" : {
+    "index" : "3.2.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.Address.postalCode" : {
+    "index" : "3.2.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.Address.region" : {
+    "index" : "3.2.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_BG.ClaimantSurvivorPension.AdditionalInformationPerson.Address.country" : {
+    "index" : "3.2.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P3000_BG.AdditionalInformationForOldAgePensionClaim" : {
+    "index" : "4.",
+    "prompt" : "Ytterligere informasjon om krav om alderspensjon.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPerson" : {
+    "index" : "4.1.",
+    "prompt" : "Ytterligere informasjon om forsikrede",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPerson.sameHouseholdSpouseOrPartnerIndicator" : {
+    "index" : "4.1.1.",
+    "prompt" : "Bor i samme husholdning som ektefellen eller partneren",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_BG.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection" : {
+    "index" : "4.2.",
+    "prompt" : "Ikke i stand til å gi etterspurt informasjon i denne delen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection.isRequestedInformationAvailableIndicator" : {
+    "index" : "4.2.1.",
+    "prompt" : "Er etterspurt informasjon tilgjengelig?",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_BG.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo" : {
+    "index" : "4.2.2.",
+    "prompt" : "Fyll ut hvis svaret på ovenstående er «Nei».",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo.reason" : {
+    "index" : "4.2.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim" : {
+    "index" : "5.",
+    "prompt" : "Ytterligere informasjon om krav om etterlattepensjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimant" : {
+    "index" : "5.1.",
+    "prompt" : "Ytterligere informasjon om søkeren",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimant.fitForWorkDeclarationClaimant" : {
+    "index" : "5.1.1.",
+    "prompt" : "Søkerens erklæring om arbeidsførhet",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Arbeidsfør",
+      "02" : "Arbeidsufør (se vedlagt legeerklæring)"
+    },
+    "enumName" : "PFitForWorkDeclarationClaimantType"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit" : {
+    "index" : "5.2.",
+    "prompt" : "Ytterligere informasjon om ytelser avdøde forsikrede mottok",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.pensionBasedPeriodOf" : {
+    "index" : "5.2.1.",
+    "prompt" : "Pensjon basert på perioden",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Forsikret person",
+      "02" : "Ektefelle"
+    },
+    "enumName" : "PInsuredPersonSpouseType"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.postponedPensionPaymentIndicator" : {
+    "index" : "5.2.2.",
+    "prompt" : "Utsatt pensjonsutbetaling",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.Deferment[0]" : {
+    "index" : "5.2.3",
+    "prompt" : "Utsettelse",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.Deferment[0].defermentCountry" : {
+    "index" : "5.2.3.1.",
+    "prompt" : "Utsettelsesland",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.Deferment[0].defermentTimeUntilWhichDate" : {
+    "index" : "5.2.3.2.",
+    "prompt" : "Utsettelsesdato (fram til dato)",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection" : {
+    "index" : "5.3.",
+    "prompt" : "Ikke i stand til å gi etterspurt informasjon i denne delen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection.isRequestedInformationAvailableIndicator" : {
+    "index" : "5.3.1.",
+    "prompt" : "Er etterspurt informasjon tilgjengelig?",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo" : {
+    "index" : "5.3.2.",
+    "prompt" : "Fyll ut hvis svaret på ovenstående er «Nei».",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_BG.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo.reason" : {
+    "index" : "5.3.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P3000_BG.sedTitle" : {
+    "index" : "P3000_BG",
+    "prompt" : "P3000_BG - Landsspesifikk informasjon - Bulgaria",
+    "valuetype" : "_rinaRoot"
+  }
+}

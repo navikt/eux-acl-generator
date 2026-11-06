@@ -1,0 +1,233 @@
+{
+  "H002" : {
+    "ReplyRequestForInformation" : {
+      "Employer" : {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$horisontal.arbeidsgiver.ytterligereinfo"
+        },
+        "Employer" : {
+          "Address" : {
+            "buildingName" : "$nav.arbeidsgiver.adresse.bygning",
+            "country" : {
+              "value" : [ "$nav.arbeidsgiver.adresse.land" ]
+            },
+            "postalCode" : "$nav.arbeidsgiver.adresse.postnummer",
+            "region" : "$nav.arbeidsgiver.adresse.region",
+            "street" : "$nav.arbeidsgiver.adresse.gate",
+            "town" : "$nav.arbeidsgiver.adresse.by"
+          },
+          "IdentificationNumbers" : {
+            "IdentificationNumber" : [ {
+              "number" : "$nav.arbeidsgiver.identifikator[x].id",
+              "type" : {
+                "value" : [ "$nav.arbeidsgiver.identifikator[x].type42" ]
+              }
+            } ]
+          },
+          "name" : "$nav.arbeidsgiver.navn"
+        },
+        "NegativeReplyRequestedInformation" : {
+          "InformationOnInabilityToSend" : [ {
+            "reasons" : "$horisontal.arbeidsgiver.negativtsvar[x].grunn",
+            "theFollowingDocument" : "$horisontal.arbeidsgiver.negativtsvar[x].dokument",
+            "theFollowingInformation" : "$horisontal.arbeidsgiver.negativtsvar[x].informasjon",
+            "theFollowingSED" : "$horisontal.arbeidsgiver.negativtsvar[x].sed"
+          } ]
+        },
+        "PleaseFindAttachedFollowingDocuments" : {
+          "OtherDocumentsAttached" : {
+            "OtherDocument" : [ {
+              "document" : "$horisontal.arbeidsgiver.vedlegg.andredokumenttyper[x]"
+            } ]
+          },
+          "predefinedDocuments" : {
+            "value" : [ "$horisontal.arbeidsgiver.vedlegg.dokumenttyper[x]" ]
+          }
+        },
+        "PositiveReplyRequestedInformation" : {
+          "WeAreEnclosing" : {
+            "theFollowingDocument" : "$horisontal.arbeidsgiver.positivtsvar.dokument",
+            "theFollowingInformation" : "$horisontal.arbeidsgiver.positivtsvar.informasjon",
+            "theFollowingSED" : "$horisontal.arbeidsgiver.positivtsvar.sed"
+          }
+        }
+      },
+      "Person" : {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$horisontal.bruker.ytterligereinfo"
+        },
+        "AddressPerson" : {
+          "AddressPerson" : [ {
+            "Address" : {
+              "buildingName" : "$nav.bruker.adresse[x].bygning",
+              "country" : {
+                "value" : [ "$nav.bruker.adresse[x].land" ]
+              },
+              "postalCode" : "$nav.bruker.adresse[x].postnummer",
+              "region" : "$nav.bruker.adresse[x].region",
+              "street" : "$nav.bruker.adresse[x].gate",
+              "town" : "$nav.bruker.adresse[x].by"
+            },
+            "typeAddress" : {
+              "value" : [ "$nav.bruker.adresse[x].type" ]
+            }
+          } ]
+        },
+        "InformationForIdentificationPerson" : {
+          "Person" : {
+            "PlaceBirth" : {
+              "country" : {
+                "value" : [ "$horisontal.bruker.identifisering.personinfo.foedested.land" ]
+              },
+              "region" : "$horisontal.bruker.identifisering.personinfo.foedested.region",
+              "town" : "$horisontal.bruker.identifisering.personinfo.foedested.by"
+            },
+            "birthDate" : "$horisontal.bruker.identifisering.personinfo.foedselsdato",
+            "familyName" : "$horisontal.bruker.identifisering.personinfo.etternavn",
+            "familyNameAtBirth" : "$horisontal.bruker.identifisering.personinfo.etternavnvedfoedsel",
+            "fatherFamilyNameAtBirth" : "$horisontal.bruker.identifisering.far.person.etternavnvedfoedsel",
+            "forename" : "$horisontal.bruker.identifisering.personinfo.fornavn",
+            "forenameAtBirth" : "$horisontal.bruker.identifisering.personinfo.fornavnvedfoedsel",
+            "forenameFather" : "$horisontal.bruker.identifisering.far.person.fornavn",
+            "forenameMother" : "$horisontal.bruker.identifisering.mor.person.fornavn",
+            "motherFamilyNameAtBirth" : "$horisontal.bruker.identifisering.mor.person.etternavnvedfoedsel",
+            "previousFamilyName" : "$horisontal.bruker.identifisering.personinfo.tidligereetternavn",
+            "previousForename" : "$horisontal.bruker.identifisering.personinfo.tidligerefornavn",
+            "sex" : {
+              "value" : [ "$horisontal.bruker.identifisering.personinfo.kjoenn" ]
+            }
+          }
+        },
+        "NegativeReplyRequestedInformation" : {
+          "InformationOnInabilityToSend" : [ {
+            "reasons" : "$horisontal.bruker.negativesvar[x].grunn",
+            "theFollowingDocument" : "$horisontal.bruker.negativesvar[x].dokument",
+            "theFollowingInformation" : "$horisontal.bruker.negativesvar[x].informasjon",
+            "theFollowingSED" : "$horisontal.bruker.negativesvar[x].sed"
+          } ]
+        },
+        "PersonIdentification" : {
+          "AdditionalInformationPerson" : {
+            "PleaseFillInIfStatusPersonOther" : {
+              "other" : "$horisontal.bruker.status.annet"
+            },
+            "nationality" : {
+              "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+            },
+            "statusPerson" : {
+              "value" : [ "$horisontal.bruker.status.id[x]" ]
+            }
+          },
+          "PersonIdentification" : {
+            "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+              "PlaceBirth" : {
+                "country" : {
+                  "value" : [ "$nav.bruker.person.foedested.land" ]
+                },
+                "region" : "$nav.bruker.person.foedested.region",
+                "town" : "$nav.bruker.person.foedested.by"
+              },
+              "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+              "forenameFather" : "$nav.bruker.far.person.fornavn",
+              "forenameMother" : "$nav.bruker.mor.person.fornavn",
+              "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+            },
+            "PINPersonInEachInstitution" : {
+              "PersonalIdentificationNumber" : [ {
+                "Institution" : {
+                  "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+                  "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+                },
+                "country" : {
+                  "value" : [ "$nav.bruker.person.pin[x].land" ]
+                },
+                "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+                "sector" : {
+                  "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+                }
+              } ]
+            },
+            "dateBirth" : "$nav.bruker.person.foedselsdato",
+            "familyName" : "$nav.bruker.person.etternavn",
+            "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+            "forename" : "$nav.bruker.person.fornavn",
+            "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+            "sex" : {
+              "value" : [ "$nav.bruker.person.kjoenn" ]
+            }
+          }
+        },
+        "PleaseFindAttachedFollowingDocuments" : {
+          "OtherDocumentsAttached" : {
+            "OtherDocument" : [ {
+              "document" : "$horisontal.bruker.vedlegg.andredokumenttyper[x]"
+            } ]
+          },
+          "predefinedDocuments" : {
+            "value" : [ "$horisontal.bruker.vedlegg.dokumenttyper[x]" ]
+          }
+        },
+        "PositiveReplyRequestedInformation" : {
+          "WeAreEnclosing" : {
+            "theFollowingDocument" : "$horisontal.bruker.positivtsvar.dokument",
+            "theFollowingInformation" : "$horisontal.bruker.positivtsvar.informasjon",
+            "theFollowingSED" : "$horisontal.bruker.positivtsvar.sed"
+          }
+        },
+        "SectorPINPersonalIdentificationNumberSending" : {
+          "PleaseFillInFollowingIfSectorPINOtherSectorPIN" : {
+            "descriptionOtherSector" : "$horisontal.bruker.identifisering.personinfo.pin.annensektor.beskrivelse"
+          },
+          "SectorPINPersonalIdentificationNumberSending" : {
+            "all" : "$horisontal.bruker.identifisering.personinfo.pin.alle",
+            "familyBenefits" : "$horisontal.bruker.identifisering.personinfo.pin.familieytelser",
+            "nationalTaxNumber" : "$horisontal.bruker.identifisering.personinfo.nasjonaltskattenummer",
+            "occupationalDiseaseAccidentAtWorkBenefitsInCash" : "$horisontal.bruker.identifisering.personinfo.pin.yrkessykdomkontant",
+            "occupationalDiseaseAccidentAtWorkBenefitsInKind" : "$horisontal.bruker.identifisering.personinfo.pin.yrkessykdomgodtgjoerelse",
+            "otherSectorPIN" : "$horisontal.bruker.identifisering.personinfo.pin.annet",
+            "pension" : "$horisontal.bruker.identifisering.personinfo.pin.pensjon",
+            "recovery" : "$horisontal.bruker.identifisering.personinfo.pin.tilbakebetaling",
+            "sicknessInCash" : "$horisontal.bruker.identifisering.personinfo.pin.sykepengerkontakt",
+            "sicknessInKind" : "$horisontal.bruker.identifisering.personinfo.pin.sykepengergodtgjoerelse",
+            "unemployment" : "$horisontal.bruker.identifisering.personinfo.pin.arbeidsledighet"
+          }
+        }
+      },
+      "ReimbursementBulkSED" : {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$horisontal.tilbakebetaling.ytterligereinfo"
+        },
+        "NegativeReplyRequestedInformation" : {
+          "InformationOnInabilityToSend" : [ {
+            "reasons" : "$horisontal.tilbakebetaling.negativtsvar[x].grunn",
+            "theFollowingDocument" : "$horisontal.tilbakebetaling.negativtsvar[x].dokument",
+            "theFollowingInformation" : "$horisontal.tilbakebetaling.negativtsvar[x].informasjon",
+            "theFollowingSED" : "$horisontal.tilbakebetaling.negativtsvar[x].sed"
+          } ]
+        },
+        "PleaseFindAttachedFollowingDocuments" : {
+          "OtherDocumentsAttached" : {
+            "OtherDocument" : [ {
+              "document" : "$horisontal.tilbakebetaling.vedlegg.andredokumenttyper[x]"
+            } ]
+          },
+          "predefinedDocuments" : {
+            "value" : [ "$horisontal.tilbakebetaling.vedlegg.dokumenttyper[x]" ]
+          }
+        },
+        "PositiveReplyRequestedInformation" : {
+          "WeAreEnclosing" : {
+            "theFollowingDocument" : "$horisontal.tilbakebetaling.positivtsvar.dokument",
+            "theFollowingInformation" : "$horisontal.tilbakebetaling.positivtsvar.informasjon",
+            "theFollowingSED" : "$horisontal.tilbakebetaling.positivtsvar.sed"
+          }
+        },
+        "ReimbursementIdentification" : {
+          "reimbursementRequestID" : "$nav.tilbakebetaling.identifikasjon"
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

@@ -19,6 +19,7 @@ public class Acl_3_sammenliknerUlikeCdmVersjonerDiffTilFiler extends Versjoner {
 		diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_H, eldreVersjon, nyereVersjon);
 		diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_M, eldreVersjon, nyereVersjon);
 		diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_P, eldreVersjon, nyereVersjon);
+		diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_P3000, eldreVersjon, nyereVersjon);
 		diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_R, eldreVersjon, nyereVersjon);
 		diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_S, eldreVersjon, nyereVersjon);
 		diffFacade.sammenliknerCdmSedVersjonerOgSkriverDiffTilFiler(SEDTYPER_U, eldreVersjon, nyereVersjon);

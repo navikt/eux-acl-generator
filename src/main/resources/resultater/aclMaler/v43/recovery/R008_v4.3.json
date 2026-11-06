@@ -1,0 +1,148 @@
+{
+  "R008" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "BankDetails" : {
+      "ReceivingBankAddress" : {
+        "buildingName" : "$tilbakekreving.anmodningommotregning.bank.adresse.bygning",
+        "country" : {
+          "value" : [ "$tilbakekreving.anmodningommotregning.bank.adresse.land" ]
+        },
+        "postalCode" : "$tilbakekreving.anmodningommotregning.bank.adresse.postkode",
+        "region" : "$tilbakekreving.anmodningommotregning.bank.adresse.region",
+        "street" : "$tilbakekreving.anmodningommotregning.bank.adresse.gate",
+        "town" : "$tilbakekreving.anmodningommotregning.bank.adresse.by"
+      },
+      "SEPABankDetails" : {
+        "BICSWIFT" : "$tilbakekreving.anmodningommotregning.bank.konto.sepa.swift",
+        "IBAN" : "$tilbakekreving.anmodningommotregning.bank.konto.sepa.iban"
+      },
+      "accountHolderName" : "$tilbakekreving.anmodningommotregning.bank.konto.innehaver.navn",
+      "paymentReference" : "$tilbakekreving.anmodningommotregning.bank.konto.betalingsreferanse"
+    },
+    "DecisionCompetentInstitution" : {
+      "dateByWhichThisRequestMustMade" : "$tilbakekreving.refusjonskrav.anmodning.framsettelse.frist.dato",
+      "dateCompetenceDetermined" : "$tilbakekreving.refusjonskrav.vedtak.kompetentinstitusjon.dato"
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "Persons" : {
+      "Person" : [ {
+        "AdditionalInformationAboutPerson" : {
+          "PleaseFillInFollowingIfStatusPersonOther" : {
+            "otherStatusPerson" : "$nav.brukere[x].tilbakekreving.status.annen"
+          },
+          "PreviousFamilyNames" : {
+            "PreviousFamilyName" : [ {
+              "previousFamilyName" : "$nav.brukere[x].person.tidligereetternavn[x].navn"
+            } ]
+          },
+          "PreviousForenames" : {
+            "PreviousForename" : [ {
+              "previousForename" : "$nav.brukere[x].person.tidligerefornavn[x].navn"
+            } ]
+          },
+          "currentFamilyStatus" : {
+            "value" : [ "$nav.brukere[x].person.sivilstand.status" ]
+          },
+          "dateDeath" : "$nav.brukere[x].person.doedsdato",
+          "nationality" : {
+            "value" : [ "$nav.brukere[x].person.statsborgerskap[x].land" ]
+          },
+          "statusPerson" : {
+            "value" : [ "$nav.brukere[x].tilbakekreving.status.type" ]
+          }
+        },
+        "PersonIdentification" : {
+          "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+            "PlaceBirth" : {
+              "country" : {
+                "value" : [ "$nav.brukere[x].person.foedested.land" ]
+              },
+              "region" : "$nav.brukere[x].person.foedested.region",
+              "town" : "$nav.brukere[x].person.foedested.by"
+            },
+            "fatherFamilyNameAtBirth" : "$nav.brukere[x].far.person.etternavnvedfoedsel",
+            "forenameFather" : "$nav.brukere[x].far.person.fornavn",
+            "forenameMother" : "$nav.brukere[x].mor.person.fornavn",
+            "motherFamilyNameAtBirth" : "$nav.brukere[x].mor.person.etternavnvedfoedsel"
+          },
+          "PINPersonInEachInstitution" : {
+            "PersonalIdentificationNumber" : [ {
+              "Institution" : {
+                "institutionID" : "$nav.brukere[x].person.pin[x].institusjonsid",
+                "institutionName" : "$nav.brukere[x].person.pin[x].institusjonsnavn"
+              },
+              "country" : {
+                "value" : [ "$nav.brukere[x].person.pin[x].land" ]
+              },
+              "personalIdentificationNumber" : "$nav.brukere[x].person.pin[x].identifikator",
+              "sector" : {
+                "value" : [ "$nav.brukere[x].person.pin[x].sektor" ]
+              }
+            } ]
+          },
+          "dateBirth" : "$nav.brukere[x].person.foedselsdato",
+          "familyName" : "$nav.brukere[x].person.etternavn",
+          "familyNameAtBirth" : "$nav.brukere[x].person.etternavnvedfoedsel",
+          "forename" : "$nav.brukere[x].person.fornavn",
+          "forenameAtBirth" : "$nav.brukere[x].person.fornavnvedfoedsel",
+          "sex" : {
+            "value" : [ "$nav.brukere[x].person.kjoenn" ]
+          }
+        },
+        "PersonLastKnownAddresses" : {
+          "PersonLastKnownAddressDetails" : [ {
+            "AddressDetail" : {
+              "buildingName" : "$nav.brukere[x].adresse[x].bygning",
+              "country" : {
+                "value" : [ "$nav.brukere[x].adresse[x].land" ]
+              },
+              "postalCode" : "$nav.brukere[x].adresse[x].postkode",
+              "region" : "$nav.brukere[x].adresse[x].region",
+              "street" : "$nav.brukere[x].adresse[x].gate",
+              "town" : "$nav.brukere[x].adresse[x].by"
+            },
+            "PleaseFillInFollowingIfTypeAddressOther" : {
+              "specifyOtherType" : "$nav.brukere[x].adresse[x].annen"
+            },
+            "typeAddress" : {
+              "value" : [ "$nav.brukere[x].adresse[x].type43" ]
+            }
+          } ]
+        }
+      } ]
+    },
+    "ProvisionalPaymentPeriod" : {
+      "endDate" : "$tilbakekreving.refusjonskrav.foreloepigutbetalt.periode.sluttdato",
+      "startDate" : "$tilbakekreving.refusjonskrav.foreloepigutbetalt.periode.startdato"
+    },
+    "ProvisionalPaymentTotalAmount" : {
+      "amount" : "$tilbakekreving.refusjonskrav.foreloepigutbetalt.beloep",
+      "currency" : {
+        "value" : [ "$tilbakekreving.refusjonskrav.foreloepigutbetalt.valuta" ]
+      }
+    },
+    "ProvisionallyPaidBenefit" : {
+      "PleaseFillInFollowingIfTypeBenefitOtherBenefit" : {
+        "typeOtherBenefit" : "$tilbakekreving.refusjonskrav.foreloepigutbetalt.ytelse.annen"
+      },
+      "typeBenefit" : {
+        "value" : [ "$tilbakekreving.refusjonskrav.foreloepigutbetalt.ytelse.type43" ]
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

@@ -1,0 +1,2679 @@
+{
+  "P3000_IS.LocalCaseNumbers" : {
+    "index" : "1.",
+    "prompt" : "Lokale saksnumre",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.LocalCaseNumbers.LocalCaseNumber[0]" : {
+    "index" : "1.1",
+    "prompt" : "Lokalt saksnummer",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.LocalCaseNumbers.LocalCaseNumber[0].country" : {
+    "index" : "1.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_IS.LocalCaseNumbers.LocalCaseNumber[0].caseNumber" : {
+    "index" : "1.1.2.",
+    "prompt" : "Saksnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.LocalCaseNumbers.LocalCaseNumber[0].Institution" : {
+    "index" : "1.1.3.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionID" : {
+    "index" : "1.1.3.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.LocalCaseNumbers.LocalCaseNumber[0].Institution.institutionName" : {
+    "index" : "1.1.3.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_IS.InsuredPerson" : {
+    "index" : "2.",
+    "prompt" : "Forsikret person",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification" : {
+    "index" : "2.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.familyName" : {
+    "index" : "2.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.forename" : {
+    "index" : "2.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.dateBirth" : {
+    "index" : "2.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.sex" : {
+    "index" : "2.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.familyNameAtBirth" : {
+    "index" : "2.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.forenameAtBirth" : {
+    "index" : "2.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "2.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "2.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "2.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "2.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "2.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "2.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "2.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "2.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "2.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "2.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "2.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "2.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "2.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "2.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "2.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "2.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "2.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "2.2.1.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "index" : "2.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "index" : "2.2.1.2.",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "index" : "2.2.1.3.",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.Address" : {
+    "index" : "2.2.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.Address.street" : {
+    "index" : "2.2.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.Address.buildingName" : {
+    "index" : "2.2.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.Address.town" : {
+    "index" : "2.2.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.Address.postalCode" : {
+    "index" : "2.2.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.Address.region" : {
+    "index" : "2.2.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.InsuredPerson.AdditionalInformationPerson.Address.country" : {
+    "index" : "2.2.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P3000_IS.ClaimantSurvivorPension" : {
+    "index" : "3.",
+    "prompt" : "Søkers etterlattepensjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification" : {
+    "index" : "3.1.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.familyName" : {
+    "index" : "3.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.forename" : {
+    "index" : "3.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.dateBirth" : {
+    "index" : "3.1.3.",
+    "prompt" : "Fødselsdato",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.sex" : {
+    "index" : "3.1.4.",
+    "prompt" : "Kjønn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Mann",
+      "02" : "Kvinne",
+      "98" : "Ukjent"
+    },
+    "enumName" : "EESSISexType"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.familyNameAtBirth" : {
+    "index" : "3.1.5.",
+    "prompt" : "Etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.forenameAtBirth" : {
+    "index" : "3.1.6.",
+    "prompt" : "Fornavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution" : {
+    "index" : "3.1.7.",
+    "prompt" : "PIN for personen i hver enkelt institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0]" : {
+    "index" : "3.1.7.1",
+    "prompt" : "Personnummer/-numre",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].country" : {
+    "index" : "3.1.7.1.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].personalIdentificationNumber" : {
+    "index" : "3.1.7.1.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].sector" : {
+    "index" : "3.1.7.1.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution" : {
+    "index" : "3.1.7.1.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionID" : {
+    "index" : "3.1.7.1.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.PINPersonInEachInstitution.PersonalIdentificationNumber[0].Institution.institutionName" : {
+    "index" : "3.1.7.1.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+    "index" : "3.1.8.",
+    "prompt" : "Oppgi PIN for alle institusjoner hvis disse ikke er oppgitt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth" : {
+    "index" : "3.1.8.1.",
+    "prompt" : "Fødested",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.town" : {
+    "index" : "3.1.8.1.1.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.region" : {
+    "index" : "3.1.8.1.2.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.PlaceBirth.country" : {
+    "index" : "3.1.8.1.3.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryHistoricType"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.fatherFamilyNameAtBirth" : {
+    "index" : "3.1.8.2.",
+    "prompt" : "Fars etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameFather" : {
+    "index" : "3.1.8.3.",
+    "prompt" : "Fars fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.motherFamilyNameAtBirth" : {
+    "index" : "3.1.8.4.",
+    "prompt" : "Mors etternavn ved fødsel",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.PersonIdentification.IfPINNotProvidedForEveryInstitutionPleaseProvide.forenameMother" : {
+    "index" : "3.1.8.5.",
+    "prompt" : "Mors fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson" : {
+    "index" : "3.2.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson" : {
+    "index" : "3.2.1.",
+    "prompt" : "Ytterligere informasjon om personen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.nationality" : {
+    "index" : "3.2.1.1.",
+    "prompt" : "Nasjonalitet",
+    "valuetype" : "_uxMultiSelect",
+    "enumName" : "EESSINationalityMultipleType"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.previousFamilyName" : {
+    "index" : "3.2.1.2.",
+    "prompt" : "Tidligere etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.AdditionalInformationPerson.previousForename" : {
+    "index" : "3.2.1.3.",
+    "prompt" : "Tidligere fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.Address" : {
+    "index" : "3.2.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.Address.street" : {
+    "index" : "3.2.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.Address.buildingName" : {
+    "index" : "3.2.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.Address.town" : {
+    "index" : "3.2.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.Address.postalCode" : {
+    "index" : "3.2.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.Address.region" : {
+    "index" : "3.2.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.ClaimantSurvivorPension.AdditionalInformationPerson.Address.country" : {
+    "index" : "3.2.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim" : {
+    "index" : "4.",
+    "prompt" : "Ytterligere informasjon om krav om alderspensjon.",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPerson" : {
+    "index" : "4.1.",
+    "prompt" : "Ytterligere informasjon om forsikrede",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPerson.sameHouseholdSpouseOrPartnerIndicator" : {
+    "index" : "4.1.1.",
+    "prompt" : "Bor i samme husholdning som ektefellen eller partneren",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPerson.FillInIfSameHouseholdSpouse" : {
+    "index" : "4.1.2.",
+    "prompt" : "Fyll ut hvis «Samme husholdning som ektefellen eller partneren» = «Ja»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPerson.FillInIfSameHouseholdSpouse.startDateLivingTogether" : {
+    "index" : "4.1.2.1.",
+    "prompt" : "Startdato for samboerskap",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment" : {
+    "index" : "4.2.",
+    "prompt" : "Ytterligere informasjon om forsikredes ansettelsesforhold eller selvstendige næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails" : {
+    "index" : "4.2.1.",
+    "prompt" : "Informasjon om ansettelsesforhold og selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0]" : {
+    "index" : "4.2.1.1",
+    "prompt" : "Informasjon om ansettelsesforhold og selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].employment" : {
+    "index" : "4.2.1.1.1.",
+    "prompt" : "Type ansettelsesforhold",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Arbeidstaker",
+      "02" : "Selvstendig næringsdrivende",
+      "03" : "Yrkesutøver",
+      "04" : "Offentlig ansatt"
+    },
+    "enumName" : "PEmploymentTypeLongType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts" : {
+    "index" : "4.2.1.1.2.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts.Amount[0]" : {
+    "index" : "4.2.1.1.2.1",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts.Amount[0].amount" : {
+    "index" : "4.2.1.1.2.1.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts.Amount[0].currency" : {
+    "index" : "4.2.1.1.2.1.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts.Amount[0].amountEffectiveSince" : {
+    "index" : "4.2.1.1.2.1.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts.Amount[0].paymentFrequency" : {
+    "index" : "4.2.1.1.2.1.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.2.1.1.2.1.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.2.1.1.2.1.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome" : {
+    "index" : "4.2.1.1.3.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.otherResourcesSourcesIncomeIndicator" : {
+    "index" : "4.2.1.1.3.1.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.typeOtherResourcesSourcesIncome" : {
+    "index" : "4.2.1.1.3.2.",
+    "prompt" : "Type andre ressurser - inntektskilder",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts" : {
+    "index" : "4.2.1.1.3.3.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0]" : {
+    "index" : "4.2.1.1.3.3.1",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].amount" : {
+    "index" : "4.2.1.1.3.3.1.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].currency" : {
+    "index" : "4.2.1.1.3.3.1.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].amountEffectiveSince" : {
+    "index" : "4.2.1.1.3.3.1.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].paymentFrequency" : {
+    "index" : "4.2.1.1.3.3.1.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.2.1.1.3.3.1.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.2.1.1.3.3.1.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.insuredPersonStatesNoIncomeIndicator" : {
+    "index" : "4.2.1.1.3.4.",
+    "prompt" : "Forsikrede oppgir ingen inntekt.",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.compulsoryPensionInsuranceCoverEntailedIndicator" : {
+    "index" : "4.2.1.1.3.5.",
+    "prompt" : "Medfører obligatorisk dekning av pensjonsforsikring",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.retirementIntendedIndicator" : {
+    "index" : "4.2.1.1.3.6.",
+    "prompt" : "Planlagt pensjonering",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.gainfulEmploymentIntendedIndicator" : {
+    "index" : "4.2.1.1.3.7.",
+    "prompt" : "Planlagt inntektsgivende arbeid",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.income" : {
+    "index" : "4.2.1.1.3.8.",
+    "prompt" : "Inntektstype",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Lønn",
+      "02" : "Godtgjørelse for profesjonsutøver",
+      "99" : "Andre inntektskilder"
+    },
+    "enumName" : "PIncomeTypeSalaryProfessionalFeesOthersType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails" : {
+    "index" : "4.3.",
+    "prompt" : "Ytterligere informasjon om ytelser den forsikrede mottar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits" : {
+    "index" : "4.3.1.",
+    "prompt" : "Ytelser",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.BenefitsAmount" : {
+    "index" : "4.3.1.1.",
+    "prompt" : "Ytelsesbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.BenefitsAmount.thePensionReceivedBasedOn" : {
+    "index" : "4.3.1.1.1.",
+    "prompt" : "Pensjonen mottas basert på",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Botid",
+      "02" : "I arbeid"
+    },
+    "enumName" : "PResidenceWorkingType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.BenefitsAmount.totalGrossAmountResidenceBasedPension" : {
+    "index" : "4.3.1.1.2.",
+    "prompt" : "Totalt bruttobeløp for bostedsbasert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.BenefitsAmount.totalGrossAmountWorkRelatedPension" : {
+    "index" : "4.3.1.1.3.",
+    "prompt" : "Totalt bruttobeløp for arbeidsrelatert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.Amount" : {
+    "index" : "4.3.1.2.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.Amount.amount" : {
+    "index" : "4.3.1.2.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.Amount.currency" : {
+    "index" : "4.3.1.2.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.Amount.amountEffectiveSince" : {
+    "index" : "4.3.1.2.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.Amount.paymentFrequency" : {
+    "index" : "4.3.1.2.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.Amount.PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.3.1.2.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.Amount.PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.3.1.2.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.startDatePensionPayment" : {
+    "index" : "4.3.1.3.",
+    "prompt" : "Startdato for pensjonsutbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.Benefits.endDatePensionPayment" : {
+    "index" : "4.3.1.4.",
+    "prompt" : "Sluttdato for pensjonsutbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.receivingOrApplyingBasicBenefitOrAssistanceBenefitIndicator" : {
+    "index" : "4.3.2.",
+    "prompt" : "Mottar eller søker om grunnleggende ytelser eller stønad til assistanse",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.entitlementSicknessBenefitsInKind" : {
+    "index" : "4.3.3.",
+    "prompt" : "Rett til kontantytelser ved sykdom",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja",
+      "2" : "Ikke fastsatt"
+    },
+    "enumName" : "PYesNoNotYetDeterminedType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationInsuredPersonBenefitDetails.constantAttendanceDeclarationInsuredPerson" : {
+    "index" : "4.3.4.",
+    "prompt" : "Forsikredes erklæring om kontinuerlig tilsyn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Trenger ikke kontinuerlig tilsyn",
+      "02" : "Trenger kontinuerlig tilsyn (se vedlagt legeattest)"
+    },
+    "enumName" : "PIsThereNeedForConstantAttendanceType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse" : {
+    "index" : "4.4.",
+    "prompt" : "Ytterligere informasjon om ektefellen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.FamilyStatus" : {
+    "index" : "4.4.1.",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.FamilyStatus.familyStatus" : {
+    "index" : "4.4.1.1.",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Enslig",
+      "02" : "Gift",
+      "03" : "Samboer",
+      "04" : "Registrert partnerskap",
+      "05" : "Skilt",
+      "06" : "Skilt fra registrert partnerskap",
+      "07" : "Separert",
+      "08" : "Enke/enkemann"
+    },
+    "enumName" : "PFamilyStatusType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.FamilyStatus.familyStatusDate" : {
+    "index" : "4.4.1.2.",
+    "prompt" : "Dato for familiestatus",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment" : {
+    "index" : "4.4.2.",
+    "prompt" : "Inntektsgivende arbeid",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.gainfulEmploymentIndicator" : {
+    "index" : "4.4.2.1.",
+    "prompt" : "Inntektsgivende arbeid",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0]" : {
+    "index" : "4.4.2.2",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].amount" : {
+    "index" : "4.4.2.2.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].currency" : {
+    "index" : "4.4.2.2.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].amountEffectiveSince" : {
+    "index" : "4.4.2.2.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].paymentFrequency" : {
+    "index" : "4.4.2.2.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.4.2.2.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.4.2.2.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.fitForWork" : {
+    "index" : "4.4.3.",
+    "prompt" : "Arbeidsfør",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Arbeidsfør",
+      "02" : "Arbeidsufør"
+    },
+    "enumName" : "PFitUnfitForWorkType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0]" : {
+    "index" : "4.4.4",
+    "prompt" : "Pensjonsmottaker",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient" : {
+    "index" : "4.4.4.1.",
+    "prompt" : "Pensjonsmottaker",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient.pensionRecipient" : {
+    "index" : "4.4.4.1.1.",
+    "prompt" : "Pensjonsmottaker",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja",
+      "2" : "Har søkt om"
+    },
+    "enumName" : "PYesNoHasAppliedForType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient.pension" : {
+    "index" : "4.4.4.1.2.",
+    "prompt" : "Pensjonstype",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Alderspensjon",
+      "02" : "Uførhet",
+      "03" : "Enkepensjon/enkemannspensjon",
+      "04" : "Barnepensjon",
+      "05" : "Etterlattepensjon (andre mottakere)"
+    },
+    "enumName" : "EESSIPensionType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient.pensionNumber" : {
+    "index" : "4.4.4.1.3.",
+    "prompt" : "Pensjonsnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution" : {
+    "index" : "4.4.4.2.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.country" : {
+    "index" : "4.4.4.2.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.personalIdentificationNumber" : {
+    "index" : "4.4.4.2.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.sector" : {
+    "index" : "4.4.4.2.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.Institution" : {
+    "index" : "4.4.4.2.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.Institution.institutionID" : {
+    "index" : "4.4.4.2.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.Institution.institutionName" : {
+    "index" : "4.4.4.2.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts" : {
+    "index" : "4.4.4.3.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts.Amount[0]" : {
+    "index" : "4.4.4.3.1",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts.Amount[0].amount" : {
+    "index" : "4.4.4.3.1.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts.Amount[0].currency" : {
+    "index" : "4.4.4.3.1.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts.Amount[0].amountEffectiveSince" : {
+    "index" : "4.4.4.3.1.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts.Amount[0].paymentFrequency" : {
+    "index" : "4.4.4.3.1.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.4.4.3.1.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.4.4.3.1.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].startDateBenefitsPayment" : {
+    "index" : "4.4.4.4.",
+    "prompt" : "Startdato for utbetaling av ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].endDateBenefitsPayment" : {
+    "index" : "4.4.4.5.",
+    "prompt" : "Sluttdato for utbetaling av ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.PensionRecipient[0].pensionBasedPeriodInsuranceThe" : {
+    "index" : "4.4.4.6.",
+    "prompt" : "Pensjon basert på forsikringsperioden til",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Forsikret person",
+      "02" : "Ektefelle"
+    },
+    "enumName" : "PInsuredPersonSpouseType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.ThePensionReceivedBasedOn[0]" : {
+    "index" : "4.4.5",
+    "prompt" : "Pensjonen mottas basert på",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.ThePensionReceivedBasedOn[0].thePensionReceivedBasedOn" : {
+    "index" : "4.4.5.1.",
+    "prompt" : "Pensjonen mottas basert på",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Botid",
+      "02" : "I arbeid"
+    },
+    "enumName" : "PResidenceWorkingType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.ThePensionReceivedBasedOn[0].totalGrossAmountResidenceBasedPension" : {
+    "index" : "4.4.5.2.",
+    "prompt" : "Totalt bruttobeløp for bostedsbasert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.ThePensionReceivedBasedOn[0].totalGrossAmountWorkRelatedPension" : {
+    "index" : "4.4.5.3.",
+    "prompt" : "Totalt bruttobeløp for arbeidsrelatert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.pensionNonWorkingPerson" : {
+    "index" : "4.4.6.",
+    "prompt" : "Pensjon som ikke-yrkesaktiv",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja",
+      "2" : "Har søkt om"
+    },
+    "enumName" : "PYesNoHasAppliedForType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse" : {
+    "index" : "4.4.7.",
+    "prompt" : "Andre ytelser ektefellen mottar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.otherBenefitsReceivedBySpouseIndicator" : {
+    "index" : "4.4.7.1.",
+    "prompt" : "Andre ytelser ektefellen mottar",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.typeOtherBenefits" : {
+    "index" : "4.4.7.2.",
+    "prompt" : "Type andre ytelser",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0]" : {
+    "index" : "4.4.7.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].amount" : {
+    "index" : "4.4.7.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].currency" : {
+    "index" : "4.4.7.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].amountEffectiveSince" : {
+    "index" : "4.4.7.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].paymentFrequency" : {
+    "index" : "4.4.7.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.4.7.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.4.7.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome" : {
+    "index" : "4.4.8.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.otherResourcesSourcesIncomeIndicator" : {
+    "index" : "4.4.8.1.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.typeOtherResourcesSourcesIncome" : {
+    "index" : "4.4.8.2.",
+    "prompt" : "Type andre ressurser - inntektskilder",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0]" : {
+    "index" : "4.4.8.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].amount" : {
+    "index" : "4.4.8.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].currency" : {
+    "index" : "4.4.8.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].amountEffectiveSince" : {
+    "index" : "4.4.8.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].paymentFrequency" : {
+    "index" : "4.4.8.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.4.8.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.4.8.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0]" : {
+    "index" : "4.5",
+    "prompt" : "Ytterligere informasjon om barna",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].AdditionalInformationChildren" : {
+    "index" : "4.5.1.",
+    "prompt" : "Ytterligere informasjon om barna",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].AdditionalInformationChildren.familyName" : {
+    "index" : "4.5.1.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].AdditionalInformationChildren.forename" : {
+    "index" : "4.5.1.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].AdditionalInformationChildren.FamilyStatus[0]" : {
+    "index" : "4.5.1.3",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].AdditionalInformationChildren.FamilyStatus[0].familyStatus" : {
+    "index" : "4.5.1.3.1.",
+    "prompt" : "Familiestatus",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Enslig",
+      "02" : "Gift",
+      "03" : "Samboer",
+      "04" : "Registrert partnerskap",
+      "05" : "Skilt",
+      "06" : "Skilt fra registrert partnerskap",
+      "07" : "Separert",
+      "08" : "Enke/enkemann"
+    },
+    "enumName" : "PFamilyStatusType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].AdditionalInformationChildren.FamilyStatus[0].familyStatusDate" : {
+    "index" : "4.5.1.3.2.",
+    "prompt" : "Dato for familiestatus",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild" : {
+    "index" : "4.5.2.",
+    "prompt" : "Barnetrygd",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.benefitsForChild" : {
+    "index" : "4.5.2.1.",
+    "prompt" : "Barnetrygd",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.typeBenefit" : {
+    "index" : "4.5.2.2.",
+    "prompt" : "Type ytelse",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0]" : {
+    "index" : "4.5.2.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].amount" : {
+    "index" : "4.5.2.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].currency" : {
+    "index" : "4.5.2.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].amountEffectiveSince" : {
+    "index" : "4.5.2.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].paymentFrequency" : {
+    "index" : "4.5.2.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "4.5.2.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "4.5.2.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].Address" : {
+    "index" : "4.5.3.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].Address.street" : {
+    "index" : "4.5.3.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].Address.buildingName" : {
+    "index" : "4.5.3.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].Address.town" : {
+    "index" : "4.5.3.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].Address.postalCode" : {
+    "index" : "4.5.3.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].Address.region" : {
+    "index" : "4.5.3.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].Address.country" : {
+    "index" : "4.5.3.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].childLivesTogetherWithBothParentsIndicator" : {
+    "index" : "4.5.4.",
+    "prompt" : "Barnet bor sammen med begge foreldrene",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].FillInIfChildLivesTogetherWithBoth" : {
+    "index" : "4.5.5.",
+    "prompt" : "Fyll ut hvis «Barnet bor sammen med begge foreldrene» = «Nei»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].FillInIfChildLivesTogetherWithBoth.AdditionalInformation" : {
+    "index" : "4.5.5.1.",
+    "prompt" : "Ytterligere informasjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].FillInIfChildLivesTogetherWithBoth.AdditionalInformation.theInsuredPersonSupportsChildIndicator" : {
+    "index" : "4.5.5.1.1.",
+    "prompt" : "Forsikredes forsørger barnet",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.AdditionalInformationChildren[0].FillInIfChildLivesTogetherWithBoth.AdditionalInformation.theChildLivesWithInsuredPersonIndicator" : {
+    "index" : "4.5.5.1.2.",
+    "prompt" : "Barnet bor hos forsikrede",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection" : {
+    "index" : "4.6.",
+    "prompt" : "Ikke i stand til å gi etterspurt informasjon i denne delen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection.isRequestedInformationAvailableIndicator" : {
+    "index" : "4.6.1.",
+    "prompt" : "Er etterspurt informasjon tilgjengelig?",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo" : {
+    "index" : "4.6.2.",
+    "prompt" : "Fyll ut hvis svaret på ovenstående er «Nei».",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForOldAgePensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo.reason" : {
+    "index" : "4.6.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim" : {
+    "index" : "5.",
+    "prompt" : "Ytterligere informasjon om krav om etterlattepensjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimant" : {
+    "index" : "5.1.",
+    "prompt" : "Ytterligere informasjon om søkeren",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimant.dependentFromDeceasedInsuredPersonIndicator" : {
+    "index" : "5.1.1.",
+    "prompt" : "Forsørges av den avdøde forsikrede",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment" : {
+    "index" : "5.2.",
+    "prompt" : "Ytterligere informasjon om søkerens ansettelsesforhold eller selvstendige næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails" : {
+    "index" : "5.2.1.",
+    "prompt" : "Informasjon om ansettelsesforhold og selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0]" : {
+    "index" : "5.2.1.1",
+    "prompt" : "Informasjon om ansettelsesforhold og selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].employment" : {
+    "index" : "5.2.1.1.1.",
+    "prompt" : "Type ansettelsesforhold",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Arbeidstaker",
+      "02" : "Selvstendig næringsdrivende",
+      "03" : "Yrkesutøver",
+      "04" : "Offentlig ansatt"
+    },
+    "enumName" : "PEmploymentTypeLongType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome" : {
+    "index" : "5.2.1.1.2.",
+    "prompt" : "Lønnsinntekt",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts" : {
+    "index" : "5.2.1.1.2.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts.Amount[0]" : {
+    "index" : "5.2.1.1.2.1.1",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts.Amount[0].amount" : {
+    "index" : "5.2.1.1.2.1.1.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts.Amount[0].currency" : {
+    "index" : "5.2.1.1.2.1.1.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts.Amount[0].amountEffectiveSince" : {
+    "index" : "5.2.1.1.2.1.1.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts.Amount[0].paymentFrequency" : {
+    "index" : "5.2.1.1.2.1.1.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "5.2.1.1.2.1.1.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].EmploymentIncome.Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "5.2.1.1.2.1.1.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome" : {
+    "index" : "5.2.1.1.3.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.otherResourcesSourcesIncomeIndicator" : {
+    "index" : "5.2.1.1.3.1.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.typeOtherResourcesSourcesIncome" : {
+    "index" : "5.2.1.1.3.2.",
+    "prompt" : "Type andre ressurser - inntektskilder",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amount[0]" : {
+    "index" : "5.2.1.1.3.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amount[0].amount" : {
+    "index" : "5.2.1.1.3.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amount[0].currency" : {
+    "index" : "5.2.1.1.3.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amount[0].amountEffectiveSince" : {
+    "index" : "5.2.1.1.3.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amount[0].paymentFrequency" : {
+    "index" : "5.2.1.1.3.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "5.2.1.1.3.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantEmployment.EmploymentSelfEmploymentDetails.EmploymentSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "5.2.1.1.3.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails" : {
+    "index" : "5.3.",
+    "prompt" : "Ytterligere informasjon om ytelser søkeren mottar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails.fitForWorkDeclarationClaimant" : {
+    "index" : "5.3.1.",
+    "prompt" : "Søkerens erklæring om arbeidsførhet",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Arbeidsfør",
+      "02" : "Arbeidsufør (se vedlagt legeerklæring)"
+    },
+    "enumName" : "PFitForWorkDeclarationClaimantType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails.theClaimantUnfitForWork" : {
+    "index" : "5.3.2.",
+    "prompt" : "Søkeren er arbeidsufør.",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Permanent",
+      "02" : "Midlertidig"
+    },
+    "enumName" : "PPermanentlyTemporarilyType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails.constantAttendanceDeclarationClaimant" : {
+    "index" : "5.3.3.",
+    "prompt" : "Søkers erklæring om kontinuerlig tilsyn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Trenger ikke kontinuerlig tilsyn",
+      "02" : "Trenger kontinuerlig tilsyn (se vedlagt legeattest)"
+    },
+    "enumName" : "PIsThereNeedForConstantAttendanceType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails.basicBenefit" : {
+    "index" : "5.3.4.",
+    "prompt" : "Grunnleggende ytelser",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails.assistanceBenefit" : {
+    "index" : "5.3.5.",
+    "prompt" : "Hjelpestønad",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails.educationalTrainingBenefit" : {
+    "index" : "5.3.6.",
+    "prompt" : "Ytelser til utdanning",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationClaimantBenefitDetails.benefitCoveringExpensesCareForChildren" : {
+    "index" : "5.3.7.",
+    "prompt" : "Ytelser som dekker utgifter til forsørgelse av barn",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit" : {
+    "index" : "5.4.",
+    "prompt" : "Ytterligere informasjon om ytelser avdøde forsikrede mottok",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.typePensionScheme" : {
+    "index" : "5.4.1.",
+    "prompt" : "Type pensjonsordning",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Ansettelsesforhold",
+      "02" : "Selvstendig næringsvirksomhet",
+      "03" : "Spesialordning for offentlig ansatte",
+      "04" : "Botid"
+    },
+    "enumName" : "PSchemeType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.endDatePensionPayment" : {
+    "index" : "5.4.2.",
+    "prompt" : "Sluttdato for pensjonsutbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPersonBenefit.pensionBasedPeriodOf" : {
+    "index" : "5.4.3.",
+    "prompt" : "Pensjon basert på perioden",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Forsikret person",
+      "02" : "Ektefelle"
+    },
+    "enumName" : "PInsuredPersonSpouseType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPerson" : {
+    "index" : "5.5.",
+    "prompt" : "Ytterligere informasjon om ansettelsesforhold til avdøde forsikrede",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.AdditionalInformationDeceasedInsuredPerson.gainfulEmploymentIndicator" : {
+    "index" : "5.5.1.",
+    "prompt" : "Inntektsgivende arbeid",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection" : {
+    "index" : "5.6.",
+    "prompt" : "Ikke i stand til å gi etterspurt informasjon i denne delen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection.isRequestedInformationAvailableIndicator" : {
+    "index" : "5.6.1.",
+    "prompt" : "Er etterspurt informasjon tilgjengelig?",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo" : {
+    "index" : "5.6.2.",
+    "prompt" : "Fyll ut hvis svaret på ovenstående er «Nei».",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForSurvivorPensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo.reason" : {
+    "index" : "5.6.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim" : {
+    "index" : "6.",
+    "prompt" : "Ytterligere informasjon om krav på uførepensjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson" : {
+    "index" : "6.1.",
+    "prompt" : "Ytterligere informasjon om forsikrede",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.insuranceAgainstInvalidityIndicator" : {
+    "index" : "6.1.1.",
+    "prompt" : "Uføreforsikring",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.RehabilitationCourses" : {
+    "index" : "6.1.2.",
+    "prompt" : "Arbeidsavklaringskurs",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.RehabilitationCourses.rehabilitationCourses" : {
+    "index" : "6.1.2.1.",
+    "prompt" : "Arbeidsavklaringskurs",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Medisinsk",
+      "02" : "Yrkesrelatert"
+    },
+    "enumName" : "PRehabilitationCoursesType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.RehabilitationCourses.FillInIfRehabilitationCourses" : {
+    "index" : "6.1.2.2.",
+    "prompt" : "Fyll ut hvis «Arbeidsavklaringskurs» = «Yrkesrettet»:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.RehabilitationCourses.FillInIfRehabilitationCourses.occupation" : {
+    "index" : "6.1.2.2.1.",
+    "prompt" : "Yrke",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0]" : {
+    "index" : "6.1.3",
+    "prompt" : "Arbeidsgiver",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn" : {
+    "index" : "6.1.3.1.",
+    "prompt" : "Hvis du har informasjon fra arbeidstakeren, fyller du ut følgende:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.identificationEmployerByEmployeeIndicator" : {
+    "index" : "6.1.3.1.1.",
+    "prompt" : "Den ansattes identifikasjon av arbeidsgiver",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee" : {
+    "index" : "6.1.3.1.2.",
+    "prompt" : "Den ansattes identifikasjon av arbeidsgiver",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.name" : {
+    "index" : "6.1.3.1.2.1.",
+    "prompt" : "Navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.Address" : {
+    "index" : "6.1.3.1.2.2.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.Address.street" : {
+    "index" : "6.1.3.1.2.2.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.Address.buildingName" : {
+    "index" : "6.1.3.1.2.2.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.Address.town" : {
+    "index" : "6.1.3.1.2.2.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.Address.postalCode" : {
+    "index" : "6.1.3.1.2.2.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.Address.region" : {
+    "index" : "6.1.3.1.2.2.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployeePleaseFillIn.IdentificationEmployerByEmployee.Address.country" : {
+    "index" : "6.1.3.1.2.2.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployerPleaseFillIn" : {
+    "index" : "6.1.3.2.",
+    "prompt" : "Hvis du har informasjon fra arbeidsgiveren, fyller du ut følgende:",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployerPleaseFillIn.identificationEmployerByEmployerIndicator" : {
+    "index" : "6.1.3.2.1.",
+    "prompt" : "Arbeidsgiverens identifikasjon av arbeidsgiver",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployerPleaseFillIn.IdentificationEmployerByEmployer" : {
+    "index" : "6.1.3.2.2.",
+    "prompt" : "Arbeidsgiverens identifikasjon av arbeidsgiver",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployerPleaseFillIn.IdentificationEmployerByEmployer.registrationNumber" : {
+    "index" : "6.1.3.2.2.1.",
+    "prompt" : "Registreringsnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployerPleaseFillIn.IdentificationEmployerByEmployer.socialSecurityNumber" : {
+    "index" : "6.1.3.2.2.2.",
+    "prompt" : "Personnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployerPleaseFillIn.IdentificationEmployerByEmployer.fiscalNumber" : {
+    "index" : "6.1.3.2.2.3.",
+    "prompt" : "Skattenummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPerson.Employer[0].IfHaveInformationFromEmployerPleaseFillIn.IdentificationEmployerByEmployer.businessRegister" : {
+    "index" : "6.1.3.2.2.4.",
+    "prompt" : "Bedriftsregister",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment" : {
+    "index" : "6.2.",
+    "prompt" : "Ytterligere informasjon om forsikredes ansettelsesforhold eller selvstendige næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails" : {
+    "index" : "6.2.1.",
+    "prompt" : "Informasjon om ansettelsesforhold og selvstendig næringsvirksomhet",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0]" : {
+    "index" : "6.2.1.1",
+    "prompt" : "Informasjon om ansettelsesforhold eller selvstendig næringsvirksomhet",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome" : {
+    "index" : "6.2.1.1.1.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.otherResourceSourcesIncomeIndicator" : {
+    "index" : "6.2.1.1.1.1.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.typeOtherResourcesSourcesIncome" : {
+    "index" : "6.2.1.1.1.2.",
+    "prompt" : "Type andre ressurser - inntektskilder",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts" : {
+    "index" : "6.2.1.1.1.3.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0]" : {
+    "index" : "6.2.1.1.1.3.1",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].amount" : {
+    "index" : "6.2.1.1.1.3.1.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].currency" : {
+    "index" : "6.2.1.1.1.3.1.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].amountEffectiveSince" : {
+    "index" : "6.2.1.1.1.3.1.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].paymentFrequency" : {
+    "index" : "6.2.1.1.1.3.1.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "6.2.1.1.1.3.1.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].OtherResourcesSourcesIncome.Amounts.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "6.2.1.1.1.3.1.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonEmployment.EmploymentSelfEmploymentDetails.EmploymentOrSelfEmploymentDetails[0].theInsuredPersonStatesNoIncomeIndicator" : {
+    "index" : "6.2.1.1.2.",
+    "prompt" : "Forsikrede oppgir ingen inntekt.",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails" : {
+    "index" : "6.3.",
+    "prompt" : "Ytterligere informasjon om ytelser den forsikrede mottar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount" : {
+    "index" : "6.3.1.",
+    "prompt" : "Ytelsesbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.BenefitsAmount" : {
+    "index" : "6.3.1.1.",
+    "prompt" : "Ytelsesbeløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.BenefitsAmount.thePensionReceivedBasedOn" : {
+    "index" : "6.3.1.1.1.",
+    "prompt" : "Pensjonen mottas basert på",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Botid",
+      "02" : "I arbeid"
+    },
+    "enumName" : "PResidenceWorkingType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.BenefitsAmount.totalGrossAmountResidenceBasedPension" : {
+    "index" : "6.3.1.1.2.",
+    "prompt" : "Totalt bruttobeløp for bostedsbasert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.BenefitsAmount.totalGrossAmountWorkRelatedPension" : {
+    "index" : "6.3.1.1.3.",
+    "prompt" : "Totalt bruttobeløp for arbeidsrelatert pensjon",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.Amount" : {
+    "index" : "6.3.1.2.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.Amount.amount" : {
+    "index" : "6.3.1.2.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.Amount.currency" : {
+    "index" : "6.3.1.2.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.Amount.amountEffectiveSince" : {
+    "index" : "6.3.1.2.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.Amount.paymentFrequency" : {
+    "index" : "6.3.1.2.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.Amount.PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "6.3.1.2.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.Amount.PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "6.3.1.2.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.startDatePensionPayment" : {
+    "index" : "6.3.1.3.",
+    "prompt" : "Startdato for pensjonsutbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.BenefitsAmount.endDatePensionPayment" : {
+    "index" : "6.3.1.4.",
+    "prompt" : "Sluttdato for pensjonsutbetaling",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.basicBenefit" : {
+    "index" : "6.3.2.",
+    "prompt" : "Grunnleggende ytelser",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.voluntaryBasedContributionsIndicator" : {
+    "index" : "6.3.3.",
+    "prompt" : "Frivillige innskudd",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.entitlementSicknessBenefitsInKind" : {
+    "index" : "6.3.4.",
+    "prompt" : "Rett til kontantytelser ved sykdom",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja",
+      "2" : "Har søkt om"
+    },
+    "enumName" : "PYesNoHasAppliedForType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationInsuredPersonBenefitDetails.assistanceBenefit" : {
+    "index" : "6.3.5.",
+    "prompt" : "Hjelpestønad",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse" : {
+    "index" : "6.4.",
+    "prompt" : "Ytterligere informasjon om ektefellen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment" : {
+    "index" : "6.4.1.",
+    "prompt" : "Inntektsgivende arbeid",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.gainfulEmploymentIndicator" : {
+    "index" : "6.4.1.1.",
+    "prompt" : "Inntektsgivende arbeid",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0]" : {
+    "index" : "6.4.1.2",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].amount" : {
+    "index" : "6.4.1.2.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].currency" : {
+    "index" : "6.4.1.2.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].amountEffectiveSince" : {
+    "index" : "6.4.1.2.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].paymentFrequency" : {
+    "index" : "6.4.1.2.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "6.4.1.2.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.GainfulEmployment.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "6.4.1.2.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.fitForWork" : {
+    "index" : "6.4.2.",
+    "prompt" : "Arbeidsfør",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Arbeidsfør",
+      "02" : "Arbeidsufør"
+    },
+    "enumName" : "PFitUnfitForWorkType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0]" : {
+    "index" : "6.4.3",
+    "prompt" : "Pensjonsmottaker",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient" : {
+    "index" : "6.4.3.1.",
+    "prompt" : "Pensjonsmottaker",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient.pensionRecipient" : {
+    "index" : "6.4.3.1.1.",
+    "prompt" : "Pensjonsmottaker",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja",
+      "2" : "Har søkt om"
+    },
+    "enumName" : "PYesNoHasAppliedForType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient.pension" : {
+    "index" : "6.4.3.1.2.",
+    "prompt" : "Pensjonstype",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Alderspensjon",
+      "02" : "Uførhet",
+      "03" : "Enkepensjon/enkemannspensjon",
+      "04" : "Barnepensjon",
+      "05" : "Etterlattepensjon (andre mottakere)"
+    },
+    "enumName" : "EESSIPensionType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].PensionRecipient.pensionNumber" : {
+    "index" : "6.4.3.1.3.",
+    "prompt" : "Pensjonsnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution" : {
+    "index" : "6.4.3.2.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.country" : {
+    "index" : "6.4.3.2.1.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIEUEFTACountryType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.personalIdentificationNumber" : {
+    "index" : "6.4.3.2.2.",
+    "prompt" : "Personnummer (PIN)",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.sector" : {
+    "index" : "6.4.3.2.3.",
+    "prompt" : "Sektor",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Yrkesskade og yrkessykdom",
+      "02" : "Familieytelser",
+      "03" : "Alle",
+      "04" : "Pensjoner",
+      "05" : "Tilbakekreving",
+      "06" : "Sykdom",
+      "07" : "Dagpenger"
+    },
+    "enumName" : "EESSISectorsType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.Institution" : {
+    "index" : "6.4.3.2.4.",
+    "prompt" : "Institusjon",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.Institution.institutionID" : {
+    "index" : "6.4.3.2.4.1.",
+    "prompt" : "Institusjonens ID",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Institution.Institution.institutionName" : {
+    "index" : "6.4.3.2.4.2.",
+    "prompt" : "Institusjonens navn",
+    "valuetype" : "_rinaIRAutocomplete"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amount[0]" : {
+    "index" : "6.4.3.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amount[0].amount" : {
+    "index" : "6.4.3.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amount[0].currency" : {
+    "index" : "6.4.3.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amount[0].amountEffectiveSince" : {
+    "index" : "6.4.3.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amount[0].paymentFrequency" : {
+    "index" : "6.4.3.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "6.4.3.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "6.4.3.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].startDateBenefitsPayment" : {
+    "index" : "6.4.3.4.",
+    "prompt" : "Startdato for utbetaling av ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].endDateBenefitsPayment" : {
+    "index" : "6.4.3.5.",
+    "prompt" : "Sluttdato for utbetaling av ytelse",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.PensionRecipient[0].pensionBasedPeriodInsuranceThe" : {
+    "index" : "6.4.3.6.",
+    "prompt" : "Pensjon basert på forsikringsperioden til",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Forsikret person",
+      "02" : "Ektefelle"
+    },
+    "enumName" : "PInsuredPersonSpouseType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.residencyBasedPensionIndicator" : {
+    "index" : "6.4.4.",
+    "prompt" : "Pensjon basert på bosted",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.workRelatedPensionIndicator" : {
+    "index" : "6.4.5.",
+    "prompt" : "Arbeidsrelatert pensjon",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.pensionNonWorkingPerson" : {
+    "index" : "6.4.6.",
+    "prompt" : "Pensjon som ikke-yrkesaktiv",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja",
+      "2" : "Har søkt om"
+    },
+    "enumName" : "PYesNoHasAppliedForType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse" : {
+    "index" : "6.4.7.",
+    "prompt" : "Andre ytelser ektefellen mottar",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.otherBenefitsReceivedBySpouseIndicator" : {
+    "index" : "6.4.7.1.",
+    "prompt" : "Andre ytelser ektefellen mottar",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.typeOtherBenefits" : {
+    "index" : "6.4.7.2.",
+    "prompt" : "Type andre ytelser",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0]" : {
+    "index" : "6.4.7.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].amount" : {
+    "index" : "6.4.7.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].currency" : {
+    "index" : "6.4.7.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].amountEffectiveSince" : {
+    "index" : "6.4.7.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].paymentFrequency" : {
+    "index" : "6.4.7.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "6.4.7.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherBenefitsReceivedBySpouse.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "6.4.7.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome" : {
+    "index" : "6.4.8.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.otherResourcesSourcesIncomeIndicator" : {
+    "index" : "6.4.8.1.",
+    "prompt" : "Andre ressurser - inntektskilder",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.typeOtherResourcesSourcesIncome" : {
+    "index" : "6.4.8.2.",
+    "prompt" : "Type andre ressurser - inntektskilder",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0]" : {
+    "index" : "6.4.8.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].amount" : {
+    "index" : "6.4.8.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].currency" : {
+    "index" : "6.4.8.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].amountEffectiveSince" : {
+    "index" : "6.4.8.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].paymentFrequency" : {
+    "index" : "6.4.8.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "6.4.8.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationSpouse.OtherResourcesSourcesIncome.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "6.4.8.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0]" : {
+    "index" : "6.5",
+    "prompt" : "Ytterligere informasjon om barna",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].familyName" : {
+    "index" : "6.5.1.",
+    "prompt" : "Etternavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].forename" : {
+    "index" : "6.5.2.",
+    "prompt" : "Fornavn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild" : {
+    "index" : "6.5.3.",
+    "prompt" : "Barnetrygd",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.benefitsForChild" : {
+    "index" : "6.5.3.1.",
+    "prompt" : "Barnetrygd",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "01" : "Søkt",
+      "02" : "Innvilget",
+      "03" : "Avslått"
+    },
+    "enumName" : "PBenefitStatusShortType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.typeBenefit" : {
+    "index" : "6.5.3.2.",
+    "prompt" : "Type ytelse",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0]" : {
+    "index" : "6.5.3.3",
+    "prompt" : "Beløp",
+    "valuetype" : "_rinaArray"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].amount" : {
+    "index" : "6.5.3.3.1.",
+    "prompt" : "Beløp",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].currency" : {
+    "index" : "6.5.3.3.2.",
+    "prompt" : "Valuta",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCurrencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].amountEffectiveSince" : {
+    "index" : "6.5.3.3.3.",
+    "prompt" : "Beløp gjeldende siden",
+    "valuetype" : "_uxDateInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].paymentFrequency" : {
+    "index" : "6.5.3.3.4.",
+    "prompt" : "Betalingshyppighet",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "codework" : {
+      "01" : "Årlig",
+      "02" : "Kvartalsvis",
+      "03" : "Måned (12 / år)",
+      "04" : "Måned (13 / år)",
+      "05" : "Måned (14 / år)",
+      "06" : "Ukentlig",
+      "99" : "Annet"
+    },
+    "enumName" : "PPaymentFrequencyType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther" : {
+    "index" : "6.5.3.3.5.",
+    "prompt" : "Fyll ut hvis «Betalingshyppighet» = «Annet»",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].BenefitsForChild.Amount[0].PleaseFillInFollowingIfPaymentFrequencyOther.otherPaymentFrequency" : {
+    "index" : "6.5.3.3.5.1.",
+    "prompt" : "Annen betalingshyppighet",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].Address" : {
+    "index" : "6.5.4.",
+    "prompt" : "Adresse",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].Address.street" : {
+    "index" : "6.5.4.1.",
+    "prompt" : "Gate",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].Address.buildingName" : {
+    "index" : "6.5.4.2.",
+    "prompt" : "Bygningens navn",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].Address.town" : {
+    "index" : "6.5.4.3.",
+    "prompt" : "By",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].Address.postalCode" : {
+    "index" : "6.5.4.4.",
+    "prompt" : "Postnummer",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].Address.region" : {
+    "index" : "6.5.4.5.",
+    "prompt" : "Region",
+    "valuetype" : "_uxTextInput"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.AdditionalInformationChildren[0].Address.country" : {
+    "index" : "6.5.4.6.",
+    "prompt" : "Land",
+    "valuetype" : "_uxSelectAutoCompleteInput",
+    "enumName" : "EESSIWorldCountryType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.UnableProvideRequestedInformationInThisSection" : {
+    "index" : "6.6.",
+    "prompt" : "Ikke i stand til å gi etterspurt informasjon i denne delen",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.UnableProvideRequestedInformationInThisSection.isRequestedInformationAvailableIndicator" : {
+    "index" : "6.6.1.",
+    "prompt" : "Er etterspurt informasjon tilgjengelig?",
+    "valuetype" : "_uxRadioButton",
+    "codework" : {
+      "0" : "Nei",
+      "1" : "Ja"
+    },
+    "enumName" : "EESSIYesNoType"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo" : {
+    "index" : "6.6.2.",
+    "prompt" : "Fyll ut hvis svaret på ovenstående er «Nei».",
+    "valuetype" : "_uxFieldSetContainer"
+  },
+  "P3000_IS.AdditionalInformationForInvalidityPensionClaim.UnableProvideRequestedInformationInThisSection.PleaseFillInFollowingIfAboveAnsweredNo.reason" : {
+    "index" : "6.6.2.1.",
+    "prompt" : "Grunn",
+    "valuetype" : "_uxTextAreaInput"
+  },
+  "P3000_IS.sedTitle" : {
+    "index" : "P3000_IS",
+    "prompt" : "P3000_IS - Landsspesifikk informasjon - Island",
+    "valuetype" : "_rinaRoot"
+  }
+}

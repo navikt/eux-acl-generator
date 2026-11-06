@@ -1,0 +1,56 @@
+{
+  "U024" : {
+    "AmountReimbursed" : {
+      "Amount" : {
+        "amount" : "$dagpenger.refusjonskrav.tilbakebetaling.beloep",
+        "currency" : {
+          "value" : [ "$dagpenger.refusjonskrav.tilbakebetaling.valuta" ]
+        }
+      },
+      "datePayment" : "$dagpenger.refusjonskrav.tilbakebetaling.utbetalingsdato"
+    },
+    "BankInformation" : {
+      "SEPABankDetails" : {
+        "BICSWIFT" : "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.swift",
+        "IBAN" : "$dagpenger.refusjonskrav.tilbakebetaling.bank.konto.sepa.iban"
+      },
+      "bankTransferSubjectOrTransactionReference" : "$dagpenger.refusjonskrav.tilbakebetaling.bank.overfoering.emneellerreferanse"
+    },
+    "GeneralInformation" : {
+      "reimbursementPaymentNotificationID" : "$dagpenger.refusjonskrav.tilbakebetaling.id",
+      "reimbursementRequestID" : "$dagpenger.refusjonskrav.id"
+    },
+    "IndividualClaimsWhichPaymentRelates" : {
+      "IndividualClaimWhichPaymentRelates" : [ {
+        "Person" : {
+          "dateBirth" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.foedselsdato",
+          "familyName" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.etternavn",
+          "forename" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.fornavn",
+          "sex" : {
+            "value" : [ "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.bruker.person.kjoenn" ]
+          }
+        },
+        "amendedContestedIndividualClaimID" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.endret.id",
+        "contestedIndividualClaimID" : "$dagpenger.refusjonskrav.enkeltkrav[x].bestridelse.id",
+        "individualClaimPaymentNotificationID" : "$dagpenger.refusjonskrav.enkeltkrav[x].tilbakebetaling.melding.id",
+        "reimbursementPaymentNotificationID" : "$dagpenger.refusjonskrav.enkeltkrav[x].refusjonskravtilbakebetalingid",
+        "reimbursementRequestID" : "$dagpenger.refusjonskrav.enkeltkrav[x].id",
+        "sequentialNumberIndividualClaim" : "$dagpenger.refusjonskrav.enkeltkrav[x].loepenummer"
+      } ]
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

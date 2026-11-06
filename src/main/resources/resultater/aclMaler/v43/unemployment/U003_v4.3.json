@@ -1,0 +1,163 @@
+{
+  "U003" : {
+    "EmploymentOrSelfEmploymentInformation" : {
+      "EmploymentOrSelfEmploymentInformation" : [ {
+        "AdditionalDetailsRequested" : {
+          "numberDaysWorkedIndicator" : {
+            "value" : [ "$dagpenger.anmodningominformasjon.loennsopplysninger[x].kreverinformasjonomantalldageriarbeid" ]
+          },
+          "numberWorkingHoursIndicator" : {
+            "value" : [ "$dagpenger.anmodningominformasjon.loennsopplysninger[x].kreverinformasjonomantallarbeidstimer" ]
+          }
+        },
+        "EmployerOrSelfEmploymentDetails" : {
+          "Address" : {
+            "buildingName" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.adresse.bygning",
+            "country" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.adresse.land" ]
+            },
+            "postalCode" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.adresse.postnummer",
+            "region" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.adresse.region",
+            "street" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.adresse.gate",
+            "town" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.adresse.by"
+          },
+          "IdentificationNumbers" : {
+            "IdentificationNumber" : [ {
+              "number" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.identifikator[x].id",
+              "type" : {
+                "value" : [ "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.identifikator[x].type42" ]
+              }
+            } ]
+          },
+          "name" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].arbeidsgiver.navn"
+        },
+        "Period" : {
+          "FixedPeriod" : {
+            "endDate" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].periode.fastperiode.sluttdato",
+            "startDate" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].periode.fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$dagpenger.anmodningominformasjon.loennsopplysninger[x].periode.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$dagpenger.anmodningominformasjon.loennsopplysninger[x].periode.aapenperiode.type" ]
+            }
+          }
+        },
+        "earnings" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.loennsopplysninger[x].bruttonettoinntektstype" ]
+        },
+        "employmentOrSelfEmployment" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.loennsopplysninger[x].ansettelsestype" ]
+        }
+      } ]
+    },
+    "LastAddressInStateFormerInsurance" : {
+      "buildingName" : "$dagpenger.bruker.tidligereforsikring.sisteadresse.bygning",
+      "country" : {
+        "value" : [ "$dagpenger.bruker.tidligereforsikring.sisteadresse.land" ]
+      },
+      "postalCode" : "$dagpenger.bruker.tidligereforsikring.sisteadresse.postnummer",
+      "region" : "$dagpenger.bruker.tidligereforsikring.sisteadresse.region",
+      "street" : "$dagpenger.bruker.tidligereforsikring.sisteadresse.gate",
+      "town" : "$dagpenger.bruker.tidligereforsikring.sisteadresse.by"
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        },
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        }
+      } ]
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "PersonCurrentAddress" : {
+      "AddressDetails" : {
+        "buildingName" : "$nav.bruker.bostedsadresse.bygning",
+        "country" : {
+          "value" : [ "$nav.bruker.bostedsadresse.land" ]
+        },
+        "postalCode" : "$nav.bruker.bostedsadresse.postnummer",
+        "region" : "$nav.bruker.bostedsadresse.region",
+        "street" : "$nav.bruker.bostedsadresse.gate",
+        "town" : "$nav.bruker.bostedsadresse.by"
+      },
+      "ContactInformation" : {
+        "EmailAddresses" : {
+          "EmailAddress" : [ {
+            "email" : "$nav.bruker.person.kontakt.email[x].adresse"
+          } ]
+        },
+        "TelephoneNumbers" : {
+          "TelephoneNumber" : [ {
+            "number" : "$nav.bruker.person.kontakt.telefon[x].nummer",
+            "type" : {
+              "value" : [ "$nav.bruker.person.kontakt.telefon[x].type" ]
+            }
+          } ]
+        }
+      }
+    },
+    "ReferencePeriod" : {
+      "FixedPeriod" : {
+        "endDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.fastperiode.sluttdato",
+        "startDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.fastperiode.startdato"
+      },
+      "OpenPeriod" : {
+        "startDate" : "$dagpenger.anmodningominformasjon.anmodningsperiode.aapenperiode.startdato",
+        "typeOpenPeriod" : {
+          "value" : [ "$dagpenger.anmodningominformasjon.anmodningsperiode.aapenperiode.type" ]
+        }
+      }
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

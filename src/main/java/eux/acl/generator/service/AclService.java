@@ -25,7 +25,7 @@ public class AclService {
                 .sorted().toList();
     }
 
-    public List<String> lagNavSedFraAclMal(String sedType, String mappe, String cdmVersjon) {
+    public List<String> ekstraherNavSedFraAclMal(String sedType, String mappe, String cdmVersjon) {
         Map<String, Object> aclMal = filService.lesAclMal(sedType, mappe, cdmVersjon);
         return aclMal.keySet().stream()
                 .filter(k -> !k.contains("sedGVer") && !k.contains("sedVer"))

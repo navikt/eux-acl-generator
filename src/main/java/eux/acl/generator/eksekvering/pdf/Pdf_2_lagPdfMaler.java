@@ -14,16 +14,16 @@ public class Pdf_2_lagPdfMaler extends Versjoner {
 
 	public static void lagPdfMaler(String cdmVersjon) {
 		ResultaterFacade pdfMalerFacade = new ResultaterFacade();
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_A, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_DA, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_F, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_H, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_M, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_P, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_R, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_S, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_U, cdmVersjon);
-		pdfMalerFacade.lagPdfMaler(SEDTYPER_X, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_A, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_DA, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_F, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_H, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_M, cdmVersjon);
+		pdfMalerFacade.lagPdfMaler(SEDTYPER_P3000, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_R, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_S, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_U, cdmVersjon);
+//		pdfMalerFacade.lagPdfMaler(SEDTYPER_X, cdmVersjon);
 	}
 
 }

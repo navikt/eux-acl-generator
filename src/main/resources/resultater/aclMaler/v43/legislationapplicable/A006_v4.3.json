@@ -1,0 +1,258 @@
+{
+  "A006" : {
+    "MoreInformationFor112" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.artikkel112.ytterligereinformasjon"
+      },
+      "KindBenefitsPaid" : [ {
+        "benefitsPaid" : "$medlemskap.artikkel112.ytelserutbetalt[x]"
+      } ],
+      "PeriodPayment" : {
+        "FixedPeriod" : {
+          "endDate" : "$medlemskap.artikkel112.periodeutbetalt.fastperiode.sluttdato",
+          "startDate" : "$medlemskap.artikkel112.periodeutbetalt.fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "startDate" : "$medlemskap.artikkel112.periodeutbetalt.aapenperiode.startdato",
+          "typeOpenPeriod" : {
+            "value" : [ "$medlemskap.artikkel112.periodeutbetalt.aapenperiode.type" ]
+          }
+        }
+      }
+    },
+    "MoreInformationFor113a" : {
+      "MoreInformationFor113a" : [ {
+        "AdditionalInformation" : {
+          "additionalInformation" : "$medlemskap.artikkel113a[x].ytterligereinformasjon"
+        },
+        "ApplicableLegislationPeriod" : {
+          "FixedPeriod" : {
+            "endDate" : "$medlemskap.artikkel113a[x].gjeldendelovgigning.fastperiode.sluttdato",
+            "startDate" : "$medlemskap.artikkel113a[x].gjeldendelovgigning.fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$medlemskap.artikkel113a[x].gjeldendelovgigning.aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$medlemskap.artikkel113a[x].gjeldendelovgigning.aapenperiode.type" ]
+            }
+          }
+        },
+        "StatusPerson" : [ {
+          "statusPerson" : "$medlemskap.artikkel113a[x].personensstatus[x]"
+        } ]
+      } ]
+    },
+    "MoreInformationFor114115" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.artikkel14eller115.ytterligereinformasjon"
+      },
+      "PlaceRegisteredOfficePlaceBusinessAllInformation" : {
+        "buildingName" : "$medlemskap.artikkel14eller115.hovedkontor.adresse.bygning",
+        "country" : {
+          "value" : [ "$medlemskap.artikkel14eller115.hovedkontor.adresse.land" ]
+        },
+        "postalCode" : "$medlemskap.artikkel14eller115.hovedkontor.adresse.postkode",
+        "region" : "$medlemskap.artikkel14eller115.hovedkontor.adresse.region",
+        "street" : "$medlemskap.artikkel14eller115.hovedkontor.adresse.gate",
+        "town" : "$medlemskap.artikkel14eller115.hovedkontor.adresse.by"
+      },
+      "PlaceResidencePersonConcerned" : {
+        "buildingName" : "$medlemskap.artikkel14eller115.oppholdssted.adresse.bygning",
+        "country" : {
+          "value" : [ "$medlemskap.artikkel14eller115.oppholdssted.adresse.land" ]
+        },
+        "postalCode" : "$medlemskap.artikkel14eller115.oppholdssted.adresse.postkode",
+        "region" : "$medlemskap.artikkel14eller115.oppholdssted.adresse.region",
+        "street" : "$medlemskap.artikkel14eller115.oppholdssted.adresse.gate",
+        "town" : "$medlemskap.artikkel14eller115.oppholdssted.adresse.by"
+      },
+      "flagStateHomeBase" : {
+        "value" : [ "$medlemskap.artikkel14eller115.flaggstathjemmebase.land" ]
+      }
+    },
+    "MoreInformationFor121" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.artikkel121.ytterligereinformasjon"
+      },
+      "EmployerPostingUndertaking" : {
+        "Address" : {
+          "buildingName" : "$medlemskap.artikkel121.oppholdssted.adresse.bygning",
+          "country" : {
+            "value" : [ "$medlemskap.artikkel121.oppholdssted.adresse.land" ]
+          },
+          "postalCode" : "$medlemskap.artikkel121.oppholdssted.adresse.postkode",
+          "region" : "$medlemskap.artikkel121.oppholdssted.adresse.region",
+          "street" : "$medlemskap.artikkel121.oppholdssted.adresse.gate",
+          "town" : "$medlemskap.artikkel121.oppholdssted.adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$medlemskap.artikkel121.arbeidsgiver.identifikator[x].id",
+            "type" : {
+              "value" : [ "$medlemskap.artikkel121.arbeidsgiver.identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$medlemskap.artikkel121.arbeidsgiver.navn"
+      },
+      "actualNatureActivitiesInStateReceivingInstitution" : "$medlemskap.artikkel121.yrkesaktivitettype",
+      "actualPlaceActivitiesEmployeeStateReceivingInstitution" : "$medlemskap.artikkel121.faktiskarbeidssted",
+      "applicableLegislationStartingDate" : "$medlemskap.artikkel121.lovgigning.startdato",
+      "doesWorkerReplaceAnotherPostedWorkerIndicator" : {
+        "value" : [ "$medlemskap.artikkel121.erstattermedarbeider" ]
+      },
+      "numberContractsExecutedInPostingStateInStateEmployment" : "$medlemskap.artikkel121.kontrakter.antallutsendingogarbeidslandet",
+      "numberInternalManagementStaffInPostingState" : "$medlemskap.artikkel121.utsendingslandet.antallansatteinternadmin",
+      "numberManagementStaffInStateEmployment" : "$medlemskap.artikkel121.arbeidslandet.antalladminansatte",
+      "numberManagementStaffInStatePosting" : "$medlemskap.artikkel121.utsendingslandet.antalladminansatte",
+      "numberPostedWorkersAllMemberStates" : "$medlemskap.artikkel121.antallutplasserteansatte",
+      "placeMajorityContractsSignedByPostingUndertaking" : "$medlemskap.artikkel121.kontrakter.stedflertall",
+      "placeRecruitmentPostedWorker" : "$medlemskap.artikkel121.arbeidslandet.arbeidssted",
+      "totalNumberStaffInPostingState" : "$medlemskap.artikkel121.utsendingslandet.totalantallansatte",
+      "turnoverAchievedInStatePostingEmploymentDuringPeriod" : "$medlemskap.artikkel121.utsendingslandet.omsetning"
+    },
+    "MoreInformationFor122" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.artikkel122.ytterligereinformasjon"
+      },
+      "AddressOfficeKeptDuringPostingPeriod" : {
+        "buildingName" : "$medlemskap.artikkel122.arbeidssted.adresse.bygning",
+        "country" : {
+          "value" : [ "$medlemskap.artikkel122.arbeidssted.adresse.land" ]
+        },
+        "postalCode" : "$medlemskap.artikkel122.arbeidssted.adresse.postkode",
+        "region" : "$medlemskap.artikkel122.arbeidssted.adresse.region",
+        "street" : "$medlemskap.artikkel122.arbeidssted.adresse.gate",
+        "town" : "$medlemskap.artikkel122.arbeidssted.adresse.by"
+      },
+      "actualNatureActivitiesInPostingState" : "$medlemskap.artikkel122.arbeidsaktivitet.type.utsendingslandet",
+      "actualNatureActivitiesInStateEmployment" : "$medlemskap.artikkel122.arbeidsaktivitet.type.arbeidslandet",
+      "actualPlaceActivitiesInStateEmployment" : "$medlemskap.artikkel122.arbeidslandet.arbeidssted",
+      "informationWhetherContributionsArePaidInPostingState" : "$medlemskap.artikkel122.utsendingslandet.informasjonominskuddbetalt",
+      "informationWhetherTaxesArePaidInPostingState" : "$medlemskap.artikkel122.utsendingslandet.informasjonomskattbetalt",
+      "maintenanceRequisiteMeans" : "$medlemskap.artikkel122.opprettholdelseavmidler",
+      "startingDateActivities" : "$medlemskap.artikkel122.arbeidsaktivitet.startdato",
+      "subscriptionChamberCommerceInPostingState" : "$medlemskap.artikkel122.utsendingslandet.medlemihandelskammer",
+      "subscriptionProfessionalAssociationsInPostingState" : "$medlemskap.artikkel122.utsendingslandet.medlemiyrkesorganisasjoner",
+      "vATNumberInPostingState" : "$medlemskap.artikkel122.utsendingslandet.mvanummer"
+    },
+    "MoreInformationFor131" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.artikkel131.ytterligereinformasjon"
+      },
+      "DurationActivities" : {
+        "FixedPeriod" : {
+          "endDate" : "$medlemskap.artikkel131.arbeidenesvarighet.fastperiode.sluttdato",
+          "startDate" : "$medlemskap.artikkel131.arbeidenesvarighet.fastperiode.startdato"
+        },
+        "OpenPeriod" : {
+          "startDate" : "$medlemskap.artikkel131.arbeidenesvarighet.aapenperiode.startdato",
+          "typeOpenPeriod" : {
+            "value" : [ "$medlemskap.artikkel131.arbeidenesvarighet.aapenperiode.type" ]
+          }
+        }
+      },
+      "placesActivities" : "$medlemskap.artikkel131.arbeidssteder",
+      "remunerationInEuro" : "$medlemskap.artikkel131.godtgjoerelseieuro",
+      "workingTime" : "$medlemskap.artikkel131.arbeidstid"
+    },
+    "MoreInformationFor132" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.artikkel132.ytterligereinformasjon"
+      },
+      "centreInterest" : {
+        "value" : [ "$medlemskap.artikkel132.senterforlivsinteresser.land" ]
+      },
+      "durationActivities" : "$medlemskap.artikkel132.arbeid.varighet",
+      "incomeInEuro" : "$medlemskap.artikkel132.inntektieuro",
+      "natureActivities" : "$medlemskap.artikkel132.arbeid.art",
+      "numberServices" : "$medlemskap.artikkel132.antalltjenester",
+      "placeActivities" : "$medlemskap.artikkel132.arbeid.sted",
+      "placeBusiness" : "$medlemskap.artikkel132.virksomhetssted",
+      "turnoverInEuro" : "$medlemskap.artikkel132.omsetningieuro",
+      "workingTime" : "$medlemskap.artikkel132.arbeid.arbeidstid"
+    },
+    "MoreInformationFor133" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.artikkel133.ytterligereinformasjon"
+      },
+      "centreInterest" : {
+        "value" : [ "$medlemskap.artikkel133.senterforlivsinteresser.land" ]
+      },
+      "durationActivities" : "$medlemskap.artikkel133.arbeid.varighet",
+      "incomeInEuro" : "$medlemskap.artikkel133.inntektieuro",
+      "natureActivities" : "$medlemskap.artikkel133.arbeid.art",
+      "numberServices" : "$medlemskap.artikkel133.antalltjenester",
+      "placeActivities" : "$medlemskap.artikkel133.arbeid.sted",
+      "placeBusiness" : "$medlemskap.artikkel133.virksomhetssted",
+      "turnoverInEuro" : "$medlemskap.artikkel133.omsetningieuro",
+      "workingTime" : "$medlemskap.artikkel133.arbeid.arbeidstid"
+    },
+    "MoreInformationRequestedForSituationsCovered" : {
+      "moreInformationRequestedForSituationsCoveredByArticle" : {
+        "value" : [ "$medlemskap.artikkelmedbehovformerinformasjon.artikkel.id" ]
+      },
+      "other" : "$medlemskap.artikkelmedbehovformerinformasjon.artikkel.annet"
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "RequestedForSituationsCoveredByArti8832004" : {
+      "AdditionalInformation" : {
+        "additionalInformation" : "$medlemskap.forordning8832004.ytterligereinformasjon"
+      },
+      "article" : {
+        "value" : [ "$medlemskap.forordning8832004.artikkel.id" ]
+      },
+      "other" : "$medlemskap.forordning8832004.annet"
+    },
+    "RequestedInformationCannotProvided" : {
+      "reason" : "$medlemskap.kanikkefremleggeinformasjon.grunn",
+      "specificationInformation" : "$medlemskap.kanikkefremleggeinformasjon.spesifiseringavinformasjon"
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

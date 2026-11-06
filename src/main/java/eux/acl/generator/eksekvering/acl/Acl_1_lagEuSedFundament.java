@@ -18,6 +18,7 @@ public class Acl_1_lagEuSedFundament extends Versjoner {
         fundamentFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_H, cdmVersjon);
         fundamentFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_M, cdmVersjon);
         fundamentFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_P, cdmVersjon);
+			  fundamentFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_P3000, cdmVersjon);
         fundamentFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_R, cdmVersjon);
         fundamentFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_S, cdmVersjon);
         fundamentFacade.trekkUtEuSedFundamentOgSkrivTilFil(SEDTYPER_U, cdmVersjon);

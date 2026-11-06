@@ -1,0 +1,215 @@
+{
+  "A001" : {
+    "AdditionalInformation" : {
+      "additionalInformation" : "$nav.ytterligereinformasjon"
+    },
+    "Addresses" : {
+      "Address" : [ {
+        "Address" : {
+          "buildingName" : "$nav.bruker.adresse[x].bygning",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse[x].land" ]
+          },
+          "postalCode" : "$nav.bruker.adresse[x].postnummer",
+          "region" : "$nav.bruker.adresse[x].region",
+          "street" : "$nav.bruker.adresse[x].gate",
+          "town" : "$nav.bruker.adresse[x].by"
+        },
+        "type" : {
+          "value" : [ "$nav.bruker.adresse[x].type" ]
+        }
+      } ]
+    },
+    "ApplicableLegislation" : {
+      "applicableLegislationCurrentSituation" : {
+        "value" : [ "$medlemskap.naavaerendemedlemskap[x].land" ]
+      },
+      "applicableLegislationRequestedSituation" : {
+        "value" : [ "$medlemskap.forespurtmedlemskap[x].land" ]
+      }
+    },
+    "EmployerInHostCountryIfRelevant" : {
+      "Address" : {
+        "buildingName" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.bygning",
+        "country" : {
+          "value" : [ "$medlemskap.vertsland.arbeidsgiver[x].adresse.land" ]
+        },
+        "postalCode" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.postnummer",
+        "region" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.region",
+        "street" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.gate",
+        "town" : "$medlemskap.vertsland.arbeidsgiver[x].adresse.by"
+      },
+      "IdentificationNumbers" : {
+        "IdentificationNumber" : [ {
+          "number" : "$medlemskap.vertsland.arbeidsgiver[x].identifikator[x].id",
+          "type" : {
+            "value" : [ "$medlemskap.vertsland.arbeidsgiver[x].identifikator[x].type" ]
+          }
+        } ]
+      },
+      "name" : "$medlemskap.vertsland.arbeidsgiver[x].navn"
+    },
+    "IdentificationEmployer" : {
+      "Employer" : [ {
+        "Address" : {
+          "buildingName" : "$nav.arbeidsgiver[x].adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.arbeidsgiver[x].adresse.land" ]
+          },
+          "postalCode" : "$nav.arbeidsgiver[x].adresse.postnummer",
+          "region" : "$nav.arbeidsgiver[x].adresse.region",
+          "street" : "$nav.arbeidsgiver[x].adresse.gate",
+          "town" : "$nav.arbeidsgiver[x].adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.arbeidsgiver[x].identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.arbeidsgiver[x].identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.arbeidsgiver[x].navn"
+      } ]
+    },
+    "IdentificationSelfEmployment" : {
+      "SelfEmployment" : [ {
+        "Address" : {
+          "buildingName" : "$nav.selvstendig.arbeidsgiver[x].adresse.bygning",
+          "country" : {
+            "value" : [ "$nav.selvstendig.arbeidsgiver[x].adresse.land" ]
+          },
+          "postalCode" : "$nav.selvstendig.arbeidsgiver[x].adresse.postnummer",
+          "region" : "$nav.selvstendig.arbeidsgiver[x].adresse.region",
+          "street" : "$nav.selvstendig.arbeidsgiver[x].adresse.gate",
+          "town" : "$nav.selvstendig.arbeidsgiver[x].adresse.by"
+        },
+        "IdentificationNumbers" : {
+          "IdentificationNumber" : [ {
+            "number" : "$nav.selvstendig.arbeidsgiver[x].identifikator[x].id",
+            "type" : {
+              "value" : [ "$nav.selvstendig.arbeidsgiver[x].identifikator[x].type" ]
+            }
+          } ]
+        },
+        "name" : "$nav.selvstendig.arbeidsgiver[x].navn"
+      } ]
+    },
+    "MoreInformation" : {
+      "DatesPreviousRequest" : {
+        "DatePreviousRequest" : [ {
+          "date" : "$medlemskap.forrigesoeknad[x].dato"
+        } ]
+      },
+      "PreviousPeriods" : {
+        "Period" : [ {
+          "FixedPeriod" : {
+            "endDate" : "$medlemskap.tidligereperiode[x].fastperiode.sluttdato",
+            "startDate" : "$medlemskap.tidligereperiode[x].fastperiode.startdato"
+          },
+          "OpenPeriod" : {
+            "startDate" : "$medlemskap.tidligereperiode[x].aapenperiode.startdato",
+            "typeOpenPeriod" : {
+              "value" : [ "$medlemskap.tidligereperiode[x].aapenperiode.type" ]
+            }
+          }
+        } ]
+      },
+      "TypeRequest" : {
+        "amendmentIndicator" : {
+          "value" : [ "$medlemskap.anmodning.erendring" ]
+        }
+      },
+      "dateWhichContractWithSendingEmployerStarted" : "$medlemskap.unntak.startdatokontraktansettelse",
+      "dateWhichEmployeeFirstInsuredInSendingCountry" : "$medlemskap.unntak.startdatoansattforsikret",
+      "descriptionOtherSituation" : "$medlemskap.unntak.spesielleomstendigheter.beskrivelseannensituasjon",
+      "justification" : "$medlemskap.unntak.begrunnelse",
+      "pDA1IssuedBasisArticle" : {
+        "value" : [ "$medlemskap.unntak.a1grunnlag" ]
+      },
+      "specialCircumstances" : {
+        "value" : [ "$medlemskap.unntak.spesielleomstendigheter.type" ]
+      }
+    },
+    "Person" : {
+      "AdditionalInformationPerson" : {
+        "nationality" : {
+          "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "region" : "$nav.bruker.person.foedested.region",
+            "town" : "$nav.bruker.person.foedested.by"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        }
+      }
+    },
+    "PlaceWork" : {
+      "CountriesWork" : [ {
+        "PlaceWork" : {
+          "PlaceWork" : [ {
+            "Address" : {
+              "buildingName" : "$nav.arbeidsland[x].arbeidssted[x].adresse.bygning",
+              "postalCode" : "$nav.arbeidsland[x].arbeidssted[x].adresse.postnummer",
+              "region" : "$nav.arbeidsland[x].arbeidssted[x].adresse.region",
+              "street" : "$nav.arbeidsland[x].arbeidssted[x].adresse.gate",
+              "town" : "$nav.arbeidsland[x].arbeidssted[x].adresse.by"
+            },
+            "companyNameVesselName" : "$nav.arbeidsland[x].arbeidssted[x].navn",
+            "flagStatehomeBase" : "$nav.arbeidsland[x].arbeidssted[x].hjemmebase"
+          } ]
+        },
+        "countryWork" : {
+          "value" : [ "$nav.arbeidsland[x].land" ]
+        }
+      } ],
+      "aFixedPlaceWorkExistsIndicator" : {
+        "value" : [ "$nav.harfastarbeidssted" ]
+      }
+    },
+    "RequestedForSituationsCoveredByArti8832004" : {
+      "other" : "$medlemskap.unntak.grunnlag.annet",
+      "regulationArticlesSituationAgreementExceptionProposed" : {
+        "value" : [ "$medlemskap.unntak.grunnlag.artikkel" ]
+      }
+    },
+    "RequestedPeriod" : {
+      "endDate" : "$medlemskap.soeknadsperiode.sluttdato",
+      "startDate" : "$medlemskap.soeknadsperiode.startdato"
+    },
+    "sedGVer" : "$sedGVer",
+    "sedVer" : "$sedVer"
+  }
+}

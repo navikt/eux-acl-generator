@@ -33,7 +33,7 @@ public class FilService {
     public static final String MAPPE_OVERSETTELSER = "src/main/resources/input/cdm-oversettelser";
     public static final String FIL_OVERSETTELSER = "no.json";
     public static final String MAPPE_EKSISTERENDE_ACL = "src/main/resources/input/acl/v43/sedtemplates";
-    public static final String MAPPE_INPUT_ACL = "src/main/resources/input/acl";
+    public static final String MAPPE_INPUT_ACL = "src/main/resources/input/acl/";
 
     public static final String MAPPE_FUNDAMENT_KODEVERK = "src/main/resources/fundament/kodeverk";
     public static final String MAPPE_FUNDAMENT_KODEVERK_TARGET = "target/fundament/kodeverk";

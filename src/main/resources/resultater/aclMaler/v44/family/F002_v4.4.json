@@ -748,124 +748,6 @@
             "value" : [ "$andrepersoner[x].personinfo.kjoenn" ]
           }
         },
-        "StatusPerson" : {
-          "Statuses" : {
-            "Status" : [ {
-              "PersonRegardedAnActivePerson" : {
-                "Employments" : {
-                  "Employment" : [ {
-                    "PeriodsEmployment" : {
-                      "Period" : [ {
-                        "OpenPeriod" : {
-                          "typeOpenPeriod" : {
-                            "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].aapenperiode.startdato",
-                            "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].aapenperiode.type" ]
-                          }
-                        },
-                        "FixedPeriod" : {
-                          "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].fastperiode.startdato",
-                          "endDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].fastperiode.sluttdato"
-                        }
-                      } ]
-                    },
-                    "typeEmployment" : {
-                      "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].type.FTypeEmploymentType" ]
-                    }
-                  } ]
-                },
-                "TypesNonActivity" : {
-                  "TypeNoActivity" : [ {
-                    "PeriodsNonActivity" : {
-                      "Period" : [ {
-                        "FixedPeriod" : {
-                          "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].fastperiode.startdato",
-                          "endDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].fastperiode.sluttdato"
-                        },
-                        "OpenPeriod" : {
-                          "typeOpenPeriod" : {
-                            "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].aapenperiode.type" ],
-                            "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].aapenperiode.startdato"
-                          }
-                        }
-                      } ]
-                    },
-                    "typeNonActivePerson" : {
-                      "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].type.FActivePersonType" ]
-                    }
-                  } ]
-                }
-              },
-              "NoInformationAboutActivityPerson" : {
-                "PeriodsNonActivity" : {
-                  "Period" : [ {
-                    "FixedPeriod" : {
-                      "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].fastperiode.startdato",
-                      "endDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].fastperiode.sluttdato"
-                    },
-                    "OpenPeriod" : {
-                      "typeOpenPeriod" : {
-                        "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].aapenperiode.startdato",
-                        "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].aapenperiode.type" ]
-                      }
-                    }
-                  } ]
-                }
-              }
-            } ]
-          },
-          "InsurancePeriodsInSendingMemberState" : {
-            "InsurancePeriod" : [ {
-              "OpenPeriod" : {
-                "typeOpenPeriod" : {
-                  "value" : [ "$andrepersoner[x].trygdeperiode[x].aapenperiode.type" ]
-                },
-                "startDate" : "$andrepersoner[x].trygdeperiode[x].aapenperiode.startdato"
-              },
-              "FixedPeriod" : {
-                "endDate" : "$andrepersoner[x].trygdeperiode[x].fastperiode.sluttdato",
-                "startDate" : "$andrepersoner[x].trygdeperiode[x].fastperiode.startdato"
-              }
-            } ]
-          },
-          "GroundsForResidence" : {
-            "movingDateIntoReceivingMemberState" : "$andrepersoner[x].grunnforbosetting.flyttedato.til.mottakerlandet",
-            "DurationsTerritory" : {
-              "DurationTerritory" : [ {
-                "OpenPeriod" : {
-                  "typeOpenPeriod" : {
-                    "value" : [ "$andrepersoner[x].grunnforbosetting.periode[x].aapenperiode.type" ]
-                  },
-                  "startDate" : "$andrepersoner[x].grunnforbosetting.periode[x].aapenperiode.startdato"
-                },
-                "FixedPeriod" : {
-                  "startDate" : "$andrepersoner[x].grunnforbosetting.periode[x].fastperiode.startdato",
-                  "endDate" : "$andrepersoner[x].grunnforbosetting.periode[x].fastperiode.sluttdato"
-                }
-              } ]
-            },
-            "movingDateIntoSendingMemberState" : "$andrepersoner[x].grunnforbosetting.flyttedato.til.avsenderlandet",
-            "personalSituationElementsArticle11RegulationECNo9872009" : "$andrepersoner[x].grunnforbosetting.personligsituasjon.artikkel11"
-          },
-          "PeriodsPensionReceivedInSendingMemberState" : {
-            "PeriodPensionReceivedInSendingMemberState" : [ {
-              "Period" : {
-                "FixedPeriod" : {
-                  "endDate" : "$andrepersoner[x].pensjon[x].periode.fastperiode.sluttdato",
-                  "startDate" : "$andrepersoner[x].pensjon[x].periode.fastperiode.startdato"
-                },
-                "OpenPeriod" : {
-                  "startDate" : "$andrepersoner[x].pensjon[x].periode.aapenperiode.startdato",
-                  "typeOpenPeriod" : {
-                    "value" : [ "$andrepersoner[x].pensjon[x].periode.aapenperiode.type" ]
-                  }
-                }
-              },
-              "typePension" : {
-                "value" : [ "$andrepersoner[x].pensjon[x].type" ]
-              }
-            } ]
-          }
-        },
         "CoverageBySocialSecurityScheme" : {
           "PeriodsEntitlement" : {
             "PeriodOfEntitlement" : [ {
@@ -894,15 +776,15 @@
               "EntitlementFamilyBenefitsExists" : {
                 "PeriodEntitlementFamilyBenefits" : {
                   "PeriodEntitlementFamilyBenefit" : [ {
-                    "OpenPeriod" : {
-                      "typeOpenPeriod" : {
-                        "startDate" : "$andrepersoner[x].periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.startdato",
-                        "value" : [ "$andrepersoner[x].periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.type" ]
-                      }
-                    },
                     "FixedPeriod" : {
                       "endDate" : "$andrepersoner[x].periodermedretttilytelser[x].retttilfamilieytelser[x].periode.fastperiode.sluttdato",
                       "startDate" : "$andrepersoner[x].periodermedretttilytelser[x].retttilfamilieytelser[x].periode.fastperiode.startdato"
+                    },
+                    "OpenPeriod" : {
+                      "startDate" : "$andrepersoner[x].periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.startdato",
+                      "typeOpenPeriod" : {
+                        "value" : [ "$andrepersoner[x].periodermedretttilytelser[x].retttilfamilieytelser[x].periode.aapenperiode.type" ]
+                      }
                     }
                   } ]
                 }
@@ -947,6 +829,126 @@
               },
               "otherRelationship" : "$andrepersoner[x].familierelasjoner[x].annenfamilierelasjon",
               "other" : "$andrepersoner[x].familierelasjoner[x].annentype"
+            } ]
+          }
+        },
+        "StatusPerson" : {
+          "InsurancePeriodsInSendingMemberState" : {
+            "InsurancePeriod" : [ {
+              "OpenPeriod" : {
+                "typeOpenPeriod" : {
+                  "value" : [ "$andrepersoner[x].trygdeperiode[x].aapenperiode.type" ]
+                },
+                "startDate" : "$andrepersoner[x].trygdeperiode[x].aapenperiode.startdato"
+              },
+              "FixedPeriod" : {
+                "endDate" : "$andrepersoner[x].trygdeperiode[x].fastperiode.sluttdato",
+                "startDate" : "$andrepersoner[x].trygdeperiode[x].fastperiode.startdato"
+              }
+            } ]
+          },
+          "GroundsForResidence" : {
+            "movingDateIntoReceivingMemberState" : "$andrepersoner[x].grunnforbosetting.flyttedato.til.mottakerlandet",
+            "DurationsTerritory" : {
+              "DurationTerritory" : [ {
+                "OpenPeriod" : {
+                  "typeOpenPeriod" : {
+                    "value" : [ "$andrepersoner[x].grunnforbosetting.periode[x].aapenperiode.type" ]
+                  },
+                  "startDate" : "$andrepersoner[x].grunnforbosetting.periode[x].aapenperiode.startdato"
+                },
+                "FixedPeriod" : {
+                  "startDate" : "$andrepersoner[x].grunnforbosetting.periode[x].fastperiode.startdato",
+                  "endDate" : "$andrepersoner[x].grunnforbosetting.periode[x].fastperiode.sluttdato"
+                }
+              } ]
+            },
+            "movingDateIntoSendingMemberState" : "$andrepersoner[x].grunnforbosetting.flyttedato.til.avsenderlandet",
+            "personalSituationElementsArticle11RegulationECNo9872009" : "$andrepersoner[x].grunnforbosetting.personligsituasjon.artikkel11"
+          },
+          "Statuses" : {
+            "Status" : [ {
+              "PersonRegardedANonActivePerson" : {
+                "TypesNonActivity" : {
+                  "TypeNoActivity" : [ {
+                    "PeriodsNonActivity" : {
+                      "Period" : [ {
+                        "FixedPeriod" : {
+                          "endDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].fastperiode.sluttdato",
+                          "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].fastperiode.startdato"
+                        },
+                        "OpenPeriod" : {
+                          "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].aapenperiode.startdato",
+                          "typeOpenPeriod" : {
+                            "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].periode[x].aapenperiode.type" ]
+                          }
+                        }
+                      } ]
+                    },
+                    "typeNonActivePerson" : {
+                      "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].inaktiveperioder[x].type.FActivePersonType" ]
+                    }
+                  } ]
+                }
+              },
+              "PersonRegardedAnActivePerson" : {
+                "Employments" : {
+                  "Employment" : [ {
+                    "PeriodsEmployment" : {
+                      "Period" : [ {
+                        "FixedPeriod" : {
+                          "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].fastperiode.startdato",
+                          "endDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].fastperiode.sluttdato"
+                        },
+                        "OpenPeriod" : {
+                          "typeOpenPeriod" : {
+                            "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].aapenperiode.type" ]
+                          },
+                          "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].periode[x].aapenperiode.startdato"
+                        }
+                      } ]
+                    },
+                    "typeEmployment" : {
+                      "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].aktiveperioder[x].type.FTypeEmploymentType" ]
+                    }
+                  } ]
+                }
+              },
+              "NoInformationAboutActivityPerson" : {
+                "PeriodsNonActivity" : {
+                  "Period" : [ {
+                    "FixedPeriod" : {
+                      "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].fastperiode.startdato",
+                      "endDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].fastperiode.sluttdato"
+                    },
+                    "OpenPeriod" : {
+                      "typeOpenPeriod" : {
+                        "value" : [ "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].aapenperiode.type" ]
+                      },
+                      "startDate" : "$andrepersoner[x].aktivitetsstatusforperioder[x].ingeninformasjon.periode[x].aapenperiode.startdato"
+                    }
+                  } ]
+                }
+              }
+            } ]
+          },
+          "PeriodsPensionReceivedInSendingMemberState" : {
+            "PeriodPensionReceivedInSendingMemberState" : [ {
+              "Period" : {
+                "FixedPeriod" : {
+                  "endDate" : "$andrepersoner[x].pensjon[x].periode.fastperiode.sluttdato",
+                  "startDate" : "$andrepersoner[x].pensjon[x].periode.fastperiode.startdato"
+                },
+                "OpenPeriod" : {
+                  "startDate" : "$andrepersoner[x].pensjon[x].periode.aapenperiode.startdato",
+                  "typeOpenPeriod" : {
+                    "value" : [ "$andrepersoner[x].pensjon[x].periode.aapenperiode.type" ]
+                  }
+                }
+              },
+              "typePension" : {
+                "value" : [ "$andrepersoner[x].pensjon[x].type" ]
+              }
             } ]
           }
         },

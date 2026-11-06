@@ -16,8 +16,8 @@ public class Acl_1a__kopierInnEuSedOgKodeverkFundament extends Versjoner {
 
 	public static void main(String[] args) {
 
-		kopierInnKodeverkFundament(MAPPE_VERSJON_v45);
-		kopierInnEuSedFundament(MAPPE_VERSJON_v45);
+		kopierInnKodeverkFundament(NY_MAPPE_VERSJON);
+		kopierInnEuSedFundament(NY_MAPPE_VERSJON);
 	}
 
 	public static void kopierInnEuSedFundament(String versjon) {

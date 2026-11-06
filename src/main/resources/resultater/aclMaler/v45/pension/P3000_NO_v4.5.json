@@ -1,0 +1,775 @@
+{
+  "P3000_NO" : {
+    "AdditionalInformationForOldAgePensionClaim" : {
+      "AdditionalInformationSpouse" : {
+        "OtherResourcesSourcesIncome" : {
+          "otherResourcesSourcesIncomeIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreRessurserInntektskilder.andreRessurserInntektskilder" ]
+          },
+          "typeOtherResourcesSourcesIncome" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreRessurserInntektskilder.typeAndreRessurserInntektskilder",
+          "Amount" : [ {
+            "amount" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreRessurserInntektskilder.belop[x].belop",
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreRessurserInntektskilder.belop[x].belopGjelderFra",
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreRessurserInntektskilder.belop[x].valuta" ]
+            },
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreRessurserInntektskilder.belop[x].betalingshyppighet" ]
+            },
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreRessurserInntektskilder.belop[x].annenBetalingshyppighet"
+            }
+          } ]
+        },
+        "PensionRecipient" : [ {
+          "Amount" : [ {
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].belopGjelderFra",
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].valuta" ]
+            },
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].annenBetalingshyppighet"
+            },
+            "amount" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].belop",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].betalingshyppighet" ]
+            }
+          } ],
+          "Institution" : {
+            "personalIdentificationNumber" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.personNummer",
+            "Institution" : {
+              "institutionName" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.institusjon.institusjonsnavn",
+              "institutionID" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.institusjon.institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.land" ]
+            },
+            "sector" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.sektor" ]
+            }
+          },
+          "startDateBenefitsPayment" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].startDatoYtelse",
+          "PensionRecipient" : {
+            "pension" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].typePensjon" ]
+            },
+            "pensionNumber" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].pensjonsnummer",
+            "pensionRecipient" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].erPensjonsmottaker" ]
+            }
+          },
+          "endDateBenefitsPayment" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].sluttDatoYtelse",
+          "pensionBasedPeriodInsuranceThe" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.pensjonsmottaker[x].pensjonBasertPa" ]
+          }
+        } ],
+        "GainfulEmployment" : {
+          "Amount" : [ {
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.inntektsgivedeArbeid.belop[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.inntektsgivedeArbeid.belop[x].belopGjelderFra",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.inntektsgivedeArbeid.belop[x].betalingshyppighet" ]
+            },
+            "amount" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.inntektsgivedeArbeid.belop[x].belop",
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.inntektsgivedeArbeid.belop[x].valuta" ]
+            }
+          } ],
+          "gainfulEmploymentIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.inntektsgivedeArbeid.inntektsgivendeArbeid" ]
+          }
+        },
+        "OtherBenefitsReceivedBySpouse" : {
+          "Amount" : [ {
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreYtelser.belop[x].valuta" ]
+            },
+            "amount" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreYtelser.belop[x].belop",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreYtelser.belop[x].betalingshyppighet" ]
+            },
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreYtelser.belop[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreYtelser.belop[x].belopGjelderFra"
+          } ],
+          "otherBenefitsReceivedBySpouseIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreYtelser.andreYtelser" ]
+          },
+          "typeOtherBenefits" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.andreYtelser.andreYtelserType"
+        },
+        "pensionNonWorkingPerson" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.ikkeYrkesaktiv" ]
+        },
+        "fitForWork" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.arbeidsfor" ]
+        },
+        "FamilyStatus" : {
+          "familyStatusDate" : "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.familiestatus.datoFamilieStatus",
+          "familyStatus" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.familiestatus.familiestatus" ]
+          }
+        },
+        "previousNationalities" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ektefelleInfo.nasjonalitet[x].nasjonalitet" ]
+        }
+      },
+      "AdditionalMiscellaneousInformation" : {
+        "percentageFullPensionDesiredByInsuredPerson" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.pensjonsgrad" ]
+        }
+      },
+      "AdditionalInformationChildrenInsuredPerson" : [ {
+        "Address" : {
+          "town" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].adresse.by",
+          "postalCode" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].adresse.postnummer",
+          "street" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].adresse.gate",
+          "region" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].adresse.region",
+          "country" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].adresse.land" ]
+          },
+          "buildingName" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].adresse.bygning"
+        },
+        "BenefitsForChild" : {
+          "Amount" : [ {
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetrygd.belop[x].belopGjelderFra",
+            "amount" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetrygd.belop[x].belop",
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetrygd.belop[x].annenBetalingshyppighet"
+            },
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetrygd.belop[x].valuta" ]
+            },
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetrygd.belop[x].betalingshyppighet" ]
+            }
+          } ],
+          "benefitsForChild" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetrygd.barnetrygd" ]
+          },
+          "typeBenefit" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetrygd.typeBarnetrygd"
+        },
+        "childLivesTogetherWithBothParentsIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].borMedBeggeForeldre" ]
+        },
+        "AdditionalInformation" : {
+          "theInsuredPersonSupportsChildIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].forsikredeForsorgerBarnet" ]
+          },
+          "theChildLivesWithInsuredPersonIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].barnetBorHosForsikrede" ]
+          }
+        },
+        "AdditionalInformationChildInsuredPerson" : {
+          "FamilyStatus" : [ {
+            "familyStatus" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].familiestatus[x].familiestatus" ]
+            },
+            "familyStatusDate" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].familiestatus[x].datoFamilieStatus"
+          } ],
+          "familyName" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].etternavn",
+          "forename" : "$pensjon.landspesifikk.norge.alderspensjon.barnInfo[x].fornavn"
+        }
+      } ],
+      "AdditionalInformationInsuredPersonEmploymentSelf" : {
+        "EmploymentIncome" : {
+          "Amount" : [ {
+            "amount" : "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.lonnsInntekt[x].belop",
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.lonnsInntekt[x].annenBetalingshyppighet"
+            },
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.lonnsInntekt[x].valuta" ]
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.lonnsInntekt[x].belopGjelderFra",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.lonnsInntekt[x].betalingshyppighet" ]
+            }
+          } ]
+        },
+        "OtherResourcesSourcesIncome" : {
+          "typeOtherResourcesSourcesIncome" : "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.andreInntektskilder.typeAndreInntektskilder",
+          "Amount" : [ {
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].annenBetalingshyppighet"
+            },
+            "amount" : "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].belop",
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].valuta" ]
+            },
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].betalingshyppighet" ]
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].belopGjelderFra"
+          } ],
+          "otherResourcesSourcesIncomeIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.andreInntektskilder.andreInntektskilderIndikator" ]
+          }
+        },
+        "insuredPersonStatesNoIncomeIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.ingenInntektOppgitt" ]
+        },
+        "incomeType" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.inntektsType" ]
+        },
+        "compulsoryPensionInsuranceCoverEntailedIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ansettelsesforhold.obligatoriskPensjonsDekning" ]
+        }
+      },
+      "AdditionalInformationInsuredPersonBenefitDetails" : {
+        "entitlementSicknessBenefitsInKind" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ytelseInfo.kontantYtelserSykdom" ]
+        },
+        "attendanceBenefitIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ytelseInfo.hjelpestonad" ]
+        },
+        "basicBenefit" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.ytelseInfo.grunnleggendeYtelser" ]
+        }
+      },
+      "AdditionalInformationInsuredPerson" : {
+        "FillInFollowingIfSameHouseHoldSpouse" : {
+          "sinceWhenLivingApart" : "$pensjon.landspesifikk.norge.alderspensjon.brukerInfo.boddFrahverandreSiden"
+        },
+        "Cohabiting" : {
+          "haveInsuredPersonOrHasInsuredPersonHadChildrenIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.brukerInfo.samboer.barnMedSamboer" ]
+          },
+          "previousNationalities" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.brukerInfo.samboer.nasjonaliteter[x].nasjonalitet" ]
+          },
+          "sinceWhenLivingTogether" : "$pensjon.landspesifikk.norge.alderspensjon.brukerInfo.samboer.boddSammenSiden",
+          "hasInsuredPersonPreviouslyBeenMarriedCohabitingIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.brukerInfo.samboer.tidligereGiftMedSamboer" ]
+          }
+        },
+        "sameHouseholdSpouseOrPartnerIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.brukerInfo.borMedEktefelleEllerPartner" ]
+        }
+      },
+      "UnableProvideRequestedInformationInThisSection" : {
+        "PleaseFillInFollowingIfAboveAnsweredNo" : {
+          "reason" : "$pensjon.landspesifikk.norge.alderspensjon.grunn"
+        },
+        "isRequestedInformationAvailableIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.alderspensjon.tilgjengeligInfo" ]
+        }
+      }
+    },
+    "AdditionalInformationForInvalidityPensionClaim" : {
+      "AdditionalInformationChildrenInsuredPerson" : [ {
+        "DoesChildLiveTogetherWithBothParents" : {
+          "FillInFollowingIfDoesChildLiveTogether" : {
+            "doesChildLiveWithInsuredPersonIndicator" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetBorHosForsikrede" ]
+            },
+            "doesInsuredPersonSupportChildIndicator" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.barnInfo[x].forsikredeForsorgerBarnet" ]
+            }
+          },
+          "doesChildLiveTogetherWithBothParentsIndicator" : {
+            "value" : [ "" ]
+          }
+        },
+        "BenefitsForChild" : {
+          "Amount" : [ {
+            "amount" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetrygd.belop[x].belop",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetrygd.belop[x].betalingshyppighet" ]
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetrygd.belop[x].belopGjelderFra",
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetrygd.belop[x].annenBetalingshyppighet"
+            },
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetrygd.belop[x].valuta" ]
+            }
+          } ],
+          "typeBenefit" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetrygd.typeBarnetrygd",
+          "benefitsForChild" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.barnInfo[x].barnetrygd.barnetrygd" ]
+          }
+        },
+        "AdditionalInformationChildInsuredPerson" : {
+          "FamilyStatus" : [ {
+            "familyStatusDate" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].familiestatus[x].datoFamilieStatus",
+            "familyStatus" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.barnInfo[x].familiestatus[x].familiestatus" ]
+            }
+          } ],
+          "familyName" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].etternavn",
+          "forename" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].fornavn"
+        },
+        "Address" : {
+          "street" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].adresse.gate",
+          "town" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].adresse.by",
+          "postalCode" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].adresse.postnummer",
+          "country" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.barnInfo[x].adresse.land" ]
+          },
+          "region" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].adresse.region",
+          "buildingName" : "$pensjon.landspesifikk.norge.ufore.barnInfo[x].adresse.bygning"
+        }
+      } ],
+      "AdditionalInformationSpouse" : {
+        "PensionRecipient" : [ {
+          "Amount" : [ {
+            "amount" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].belop",
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].belopGjelderFra",
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].valuta" ]
+            },
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].annenBetalingshyppighet"
+            },
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.belop[x].betalingshyppighet" ]
+            }
+          } ],
+          "endDateBenefitsPayment" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].sluttDatoYtelse",
+          "startDateBenefitsPayment" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].startDatoYtelse",
+          "Institution" : {
+            "country" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.land" ]
+            },
+            "Institution" : {
+              "institutionName" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.institusjon.institusjonsnavn",
+              "institutionID" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.institusjon.institusjonsid"
+            },
+            "sector" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.sektor" ]
+            },
+            "personalIdentificationNumber" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].institusjonsopphold.personNummer"
+          },
+          "PensionRecipient" : {
+            "pensionRecipient" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].erPensjonsmottaker" ]
+            },
+            "pension" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].typePensjon" ]
+            },
+            "pensionNumber" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].pensjonsnummer"
+          },
+          "pensionBasedPeriodInsuranceThe" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.pensjonsmottaker[x].pensjonBasertPa" ]
+          }
+        } ],
+        "GainfulEmployment" : {
+          "gainfulEmploymentIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.inntektsgivedeArbeid.inntektsgivendeArbeid" ]
+          },
+          "Amount" : [ {
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.inntektsgivedeArbeid.belop[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.inntektsgivedeArbeid.belop[x].belopGjelderFra",
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.inntektsgivedeArbeid.belop[x].valuta" ]
+            },
+            "amount" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.inntektsgivedeArbeid.belop[x].belop",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.inntektsgivedeArbeid.belop[x].betalingshyppighet" ]
+            }
+          } ]
+        },
+        "OtherResourcesSourcesIncome" : {
+          "typeOtherResourcesSourcesIncome" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreRessurserInntektskilder.typeAndreRessurserInntektskilder",
+          "Amount" : [ {
+            "amount" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreRessurserInntektskilder.belop[x].belop",
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreRessurserInntektskilder.belop[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreRessurserInntektskilder.belop[x].belopGjelderFra",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreRessurserInntektskilder.belop[x].betalingshyppighet" ]
+            },
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreRessurserInntektskilder.belop[x].valuta" ]
+            }
+          } ],
+          "otherResourcesSourcesIncomeIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreRessurserInntektskilder.andreRessurserInntektskilder" ]
+          }
+        },
+        "OtherBenefitsReceivedBySpouse" : {
+          "Amount" : [ {
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreYtelser.belop[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreYtelser.belop[x].belopGjelderFra",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreYtelser.belop[x].betalingshyppighet" ]
+            },
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreYtelser.belop[x].valuta" ]
+            },
+            "amount" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreYtelser.belop[x].belop"
+          } ],
+          "otherBenefitsReceivedBySpouseIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreYtelser.andreYtelser" ]
+          },
+          "typeOtherBenefits" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.andreYtelser.andreYtelserType"
+        },
+        "FamilyStatus" : {
+          "familyStatus" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.familiestatus.familiestatus" ]
+          },
+          "familyStatusDate" : "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.familiestatus.datoFamilieStatus"
+        },
+        "previousNationalities" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.nasjonalitet[x].nasjonalitet" ]
+        },
+        "pensionNonWorkingPerson" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.ikkeYrkesaktiv" ]
+        },
+        "fitForWork" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.ektefelleInfo.arbeidsfor" ]
+        }
+      },
+      "AdditionalInformationInsuredPersonEmployment" : {
+        "Employer" : [ {
+          "IfHaveInformationFromEmployerPleaseFillIn" : {
+            "identificationEmployerByEmployerIndicator" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.arbeidsgiver[x].ansattIdentifikasjonAvArbeidsgiver.ansattIndikator" ]
+            },
+            "IdentificationEmployerByEmployer" : {
+              "socialSecurityNumber" : "--- ACL-sti mangler ---",
+              "fiscalNumber" : "--- ACL-sti mangler ---",
+              "registrationNumber" : "--- ACL-sti mangler ---",
+              "businessRegister" : "--- ACL-sti mangler ---"
+            }
+          },
+          "IfHaveInformationFromEmployeePleaseFillIn" : {
+            "IdentificationEmployerByEmployee" : {
+              "name" : "--- ACL-sti mangler ---",
+              "Address" : {
+                "region" : "--- ACL-sti mangler ---",
+                "postalCode" : "--- ACL-sti mangler ---",
+                "buildingName" : "--- ACL-sti mangler ---",
+                "country" : {
+                  "value" : [ "" ]
+                },
+                "town" : "--- ACL-sti mangler ---",
+                "street" : "--- ACL-sti mangler ---"
+              }
+            },
+            "identificationEmployerByEmployeeIndicator" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.arbeidsgiver[x].arbeidsgiverIdentifikasjonAvArbeidsgiver.arbeidsgiverIndikator" ]
+            }
+          }
+        } ],
+        "startDateEmployment" : "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.startDatoAnsettelse",
+        "insuredPersonStatesNoIncomeIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.oppgirIngenInntekt" ]
+        },
+        "OtherResourcesSourcesIncome" : {
+          "typeOtherResourcesSourcesIncome" : "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.typeAndreRessurserInntektskilder",
+          "Amount" : [ {
+            "amount" : "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.belop[x].belop",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.belop[x].betalingshyppighet" ]
+            },
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.belop[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.belop[x].belopGjelderFra",
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.belop[x].valuta" ]
+            }
+          } ],
+          "otherResourcesSourcesIncomeIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.andreRessurserInntektskilder.andreRessurserInntektskilder" ]
+          }
+        }
+      },
+      "UnableProvideRequestedInformationInThisSection" : {
+        "PleaseFillInFollowingIfAboveAnsweredNo" : {
+          "reason" : "$pensjon.landspesifikk.norge.ufore.grunn"
+        },
+        "isRequestedInformationAvailableIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.tilgjengeligInfo" ]
+        }
+      },
+      "AdditionalInformationInsuredPerson" : {
+        "Cohabiting" : {
+          "hasInsuredPersonPreviouslyBeenMarriedCohabitingIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.brukerInfo.samboer.tidligereGiftMedSamboer" ]
+          },
+          "haveInsuredPersonOrHasInsuredPersonHadChildrenIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.brukerInfo.samboer.barnMedSamboer" ]
+          },
+          "sinceWhenLivingTogether" : "$pensjon.landspesifikk.norge.ufore.brukerInfo.samboer.boddSammenSiden"
+        },
+        "previousNationalities" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.nasjonaliteter[x].nasjonalitet" ]
+        },
+        "sameHouseholdSpouseOrPartnerIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.brukerInfo.borMedEktefelleEllerPartner" ]
+        },
+        "insuranceAgainstWorkIncapacityIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.brukerInfo.samboer.forsikringMotArbeidsuforhet" ]
+        },
+        "RehabilitationCourses" : {
+          "FillInIfRehabilitationCourses" : {
+            "occupation" : "$pensjon.landspesifikk.norge.ufore.brukerInfo.yrke"
+          },
+          "rehabilitationCourses" : {
+            "value" : [ "$pensjon.landspesifikk.norge.ufore.brukerInfo.arbeidsAvklaringskurs" ]
+          }
+        },
+        "FillInFollowingIfSameHouseHoldSpouseOrPartner" : {
+          "sinceWhenLivingApart" : "$pensjon.landspesifikk.norge.ufore.brukerInfo.boddFrahverandreSiden"
+        }
+      },
+      "AdditionalInformationInsuredPersonBenefitDetails" : {
+        "assistanceBenefit" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.ytelseInfo.hjelpestonad" ]
+        },
+        "entitlementSicknessBenefitsInKind" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.ytelseInfo.kontantYtelserSykdom" ]
+        },
+        "voluntaryBasedContributionsIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.ytelseInfo.frivilligInnskudd" ]
+        },
+        "basicBenefit" : {
+          "value" : [ "$pensjon.landspesifikk.norge.ufore.ytelseInfo.grunnleggendeYtelser" ]
+        }
+      }
+    },
+    "InsuredPerson" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region",
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            }
+          },
+          "forenameMother" : "$nav.bruker.mor.person.fornavn",
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionID" : "$nav.bruker.person.pin[x].institusjon.institusjonsid",
+              "institutionName" : "$nav.bruker.person.pin[x].institusjon.institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel",
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "forename" : "$nav.bruker.person.fornavn",
+        "familyName" : "$nav.bruker.person.etternavn"
+      },
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "region" : "$nav.bruker.adresse.region",
+          "buildingName" : "$nav.bruker.adresse.bygning",
+          "street" : "$nav.bruker.adresse.gate",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse.land" ]
+          },
+          "town" : "$nav.bruker.adresse.by",
+          "postalCode" : "$nav.bruker.adresse.postnummer"
+        },
+        "AdditionalInformationPerson" : {
+          "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+          "previousForename" : "$nav.bruker.person.tidligerefornavn",
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          }
+        }
+      }
+    },
+    "AdditionalInformationForSurvivorPensionClaim" : {
+      "AdditionalInformationDeceasedInsuredPerson" : {
+        "gainfulEmploymentAtTimeDeathIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.avdod.inntektsgivendeArbeid" ]
+        }
+      },
+      "AdditionalInformationClaimantBenefitDetails" : {
+        "basicBenefit" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sokersYtelser.grunnleggendeYtelser" ]
+        },
+        "benefitCoveringExpensesCareForChildren" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sokersYtelser.forsorgelseBarn" ]
+        },
+        "educationalTrainingBenefit" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sokersYtelser.ytelserTilUtdanning" ]
+        },
+        "attendanceBenefitIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sokersYtelser.hjelpestonad" ]
+        }
+      },
+      "AdditionalInformationClaimant" : {
+        "personDependencyIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sosken.forsorgelsesplikt" ]
+        },
+        "theClaimantUnfitForWork" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sosken.arbeidsufor" ]
+        },
+        "NamesSiblingsFullSiblingsIfClaimantDeceased" : [ {
+          "nameSibling" : "$pensjon.landspesifikk.norge.etterlatte.sosken.soskenNavn[x].navn",
+          "theSiblingLivesWithClaimantIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sosken.soskenNavn[x].borMedSosken" ]
+          },
+          "personalIdentificationNumberPINSibling" : "$pensjon.landspesifikk.norge.etterlatte.sosken.soskenNavn[x].personnummer"
+        } ],
+        "previousNationalities" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sosken.nasjonaliteter[x].nasjonalitet" ]
+        },
+        "fitForWorkDeclarationClaimant" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.sosken.arbeidsforhet" ]
+        }
+      },
+      "AdditionalInformationDeceasedInsured" : {
+        "endDatePensionPayment" : "$pensjon.landspesifikk.norge.etterlatte.avdod.pensjonsMottaker.sluttDatoYtelse",
+        "typePensionScheme" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.avdod.pensjonsMottaker.typePensjon" ]
+        },
+        "pensionBasedPeriodOf" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.avdod.pensjonsMottaker.pensjonBasertPa" ]
+        }
+      },
+      "AdditionalInformationClaimantEmploymentSelf" : {
+        "EmploymentIncome" : {
+          "Amount" : [ {
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.lonnsInntekt[x].valuta" ]
+            },
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.lonnsInntekt[x].betalingshyppighet" ]
+            },
+            "amount" : "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.lonnsInntekt[x].belop",
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.lonnsInntekt[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.lonnsInntekt[x].belopGjelderFra"
+          } ]
+        },
+        "OtherResourcesSourcesIncome" : {
+          "Amount" : [ {
+            "currency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].valuta" ]
+            },
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].annenBetalingshyppighet"
+            },
+            "amountEffectiveSince" : "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].belopGjelderFra",
+            "amount" : "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].belop",
+            "paymentFrequency" : {
+              "value" : [ "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.andreInntektskilder.andreInntektskilderBelop[x].betalingshyppighet" ]
+            }
+          } ],
+          "typeOtherResourcesSourcesIncome" : "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.andreInntektskilder.typeAndreInntektskilder",
+          "otherResourcesSourcesIncomeIndicator" : {
+            "value" : [ "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.andreInntektskilder.andreInntektskilderIndikator" ]
+          }
+        },
+        "employmentType" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.ansettelsesforhold.ansettelsesforholdType" ]
+        }
+      },
+      "UnableProvideRequestedInformationInThisSection" : {
+        "isRequestedInformationAvailableIndicator" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.tilgjengeligInfo" ]
+        },
+        "PleaseFillInFollowingIfAboveAnsweredNo" : {
+          "reason" : "$pensjon.landspesifikk.norge.etterlatte.grunn"
+        }
+      },
+      "AdditionalInformationDeceasedPerson" : {
+        "previousNationalities" : {
+          "value" : [ "$pensjon.landspesifikk.norge.etterlatte.avdod.nasjonaliteter[x].nasjonalitet" ]
+        }
+      }
+    },
+    "ClaimantSurvivorPension" : {
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "motherFamilyNameAtBirth" : "$pensjon.gjenlevende.mor.person.etternavnvedfoedsel",
+          "forenameFather" : "$pensjon.gjenlevende.far.person.fornavnvedfoedsel",
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.foedested.land" ]
+            },
+            "town" : "$pensjon.gjenlevende.person.foedested.by",
+            "region" : "$pensjon.gjenlevende.person.foedested.region"
+          },
+          "forenameMother" : "$pensjon.gjenlevende.mor.person.fornavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$pensjon.gjenlevende.far.person.etternavnvedfoedsel"
+        },
+        "forenameAtBirth" : "$pensjon.gjenlevende.person.fornavnvedfoedsel",
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "personalIdentificationNumber" : "$pensjon.gjenlevende.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionName" : "$pensjon.gjenlevende.person.pin[x].institusjon.institusjonsnavn",
+              "institutionID" : "$pensjon.gjenlevende.person.pin[x].institusjon.institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].land" ]
+            },
+            "sector" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "sex" : {
+          "value" : [ "$pensjon.gjenlevende.person.kjoenn" ]
+        },
+        "forename" : "$pensjon.gjenlevende.person.fornavn",
+        "familyName" : "$pensjon.gjenlevende.person.etternavn",
+        "familyNameAtBirth" : "$pensjon.gjenlevende.person.etternavnvedfoedsel",
+        "dateBirth" : "$pensjon.gjenlevende.person.foedselsdato"
+      },
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "street" : "$pensjon.gjenlevende.adresse.gate",
+          "town" : "$pensjon.gjenlevende.adresse.by",
+          "buildingName" : "$pensjon.gjenlevende.adresse.bygning",
+          "country" : {
+            "value" : [ "$pensjon.gjenlevende.adresse.land" ]
+          },
+          "region" : "$pensjon.gjenlevende.adresse.region",
+          "postalCode" : "$pensjon.gjenlevende.adresse.postnummer"
+        },
+        "AdditionalInformationPerson" : {
+          "previousFamilyName" : "$pensjon.gjenlevende.person.tidligereetternavn",
+          "previousForename" : "$pensjon.gjenlevende.person.tidligerefornavn",
+          "nationality" : {
+            "value" : [ "$pensjon.gjenlevende.person.statsborgerskap[x].land" ]
+          }
+        }
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        },
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        }
+      } ]
+    }
+  }
+}

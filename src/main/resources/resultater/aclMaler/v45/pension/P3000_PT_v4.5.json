@@ -1,0 +1,290 @@
+{
+  "P3000_PT" : {
+    "AdditionalInformationForSurvivorPensionClaim" : {
+      "AdditionalInformationDeceasedInsuredPerson" : {
+        "gainfulEmploymentAtTimeDeathIndicator" : {
+          "value" : [ "" ]
+        }
+      },
+      "AdditionalInformationClaimantBenefitDetails" : {
+        "voluntaryBasedContributionsIndicator" : {
+          "value" : [ "" ]
+        }
+      },
+      "AdditionalInformationDeceasedInsuredPersonBenefit" : {
+        "ReceiverAPensionAtDateMarriage" : {
+          "typePensionScheme" : {
+            "value" : [ "" ]
+          },
+          "claim" : {
+            "value" : [ "" ]
+          },
+          "receiverAPensionAtDateMarriageIndicator" : {
+            "value" : [ "" ]
+          }
+        }
+      },
+      "AdditionalInformationClaimant" : {
+        "codeTaxDistrict" : "--- ACL-sti mangler ---",
+        "taxPayerNumber" : "--- ACL-sti mangler ---"
+      },
+      "UnableProvideRequestedInformationInThisSection" : {
+        "PleaseFillInFollowingIfAboveAnsweredNo" : {
+          "reason" : "--- ACL-sti mangler ---"
+        },
+        "isRequestedInformationAvailableIndicator" : {
+          "value" : [ "" ]
+        }
+      },
+      "AdditionalInformationClaimantEmployment" : {
+        "EmploymentIncome" : {
+          "Amount" : [ {
+            "amountEffectiveSince" : "--- ACL-sti mangler ---",
+            "amount" : "--- ACL-sti mangler ---",
+            "PleaseFillInFollowingIfPaymentFrequencyOther" : {
+              "otherPaymentFrequency" : "--- ACL-sti mangler ---"
+            },
+            "currency" : {
+              "value" : [ "" ]
+            },
+            "paymentFrequency" : {
+              "value" : [ "" ]
+            }
+          } ]
+        }
+      }
+    },
+    "ClaimantSurvivorPension" : {
+      "PersonIdentification" : {
+        "sex" : {
+          "value" : [ "$pensjon.gjenlevende.person.kjoenn" ]
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "sector" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].sektor" ]
+            },
+            "personalIdentificationNumber" : "$pensjon.gjenlevende.person.pin[x].identifikator",
+            "Institution" : {
+              "institutionID" : "$pensjon.gjenlevende.person.pin[x].institusjon.institusjonsid",
+              "institutionName" : "$pensjon.gjenlevende.person.pin[x].institusjon.institusjonsnavn"
+            },
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.pin[x].land" ]
+            }
+          } ]
+        },
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$pensjon.gjenlevende.person.foedested.land" ]
+            },
+            "region" : "$pensjon.gjenlevende.person.foedested.region",
+            "town" : "$pensjon.gjenlevende.person.foedested.by"
+          },
+          "motherFamilyNameAtBirth" : "$pensjon.gjenlevende.mor.person.etternavnvedfoedsel",
+          "fatherFamilyNameAtBirth" : "$pensjon.gjenlevende.far.person.etternavnvedfoedsel",
+          "forenameMother" : "$pensjon.gjenlevende.mor.person.fornavnvedfoedsel",
+          "forenameFather" : "$pensjon.gjenlevende.far.person.fornavnvedfoedsel"
+        },
+        "familyNameAtBirth" : "$pensjon.gjenlevende.person.etternavnvedfoedsel",
+        "familyName" : "$pensjon.gjenlevende.person.etternavn",
+        "forenameAtBirth" : "$pensjon.gjenlevende.person.fornavnvedfoedsel",
+        "forename" : "$pensjon.gjenlevende.person.fornavn",
+        "dateBirth" : "$pensjon.gjenlevende.person.foedselsdato"
+      },
+      "AdditionalInformationPerson" : {
+        "AdditionalInformationPerson" : {
+          "nationality" : {
+            "value" : [ "$pensjon.gjenlevende.person.statsborgerskap[x].land" ]
+          },
+          "previousForename" : "$pensjon.gjenlevende.person.tidligerefornavn",
+          "previousFamilyName" : "$pensjon.gjenlevende.person.tidligereetternavn"
+        },
+        "Address" : {
+          "region" : "$pensjon.gjenlevende.adresse.region",
+          "town" : "$pensjon.gjenlevende.adresse.by",
+          "buildingName" : "$pensjon.gjenlevende.adresse.bygning",
+          "country" : {
+            "value" : [ "$pensjon.gjenlevende.adresse.land" ]
+          },
+          "postalCode" : "$pensjon.gjenlevende.adresse.postnummer",
+          "street" : "$pensjon.gjenlevende.adresse.gate"
+        }
+      }
+    },
+    "AdditionalInformationForInvalidityPensionClaim" : {
+      "AdditionalInformationInsuredPerson" : {
+        "codeTaxDistrict" : "--- ACL-sti mangler ---",
+        "invalidityCausedByLiableThirdPartyIndicator" : {
+          "value" : [ "" ]
+        },
+        "noWorkAccidentAndNoOccupationalDiseaseInvalidityIndicator" : {
+          "value" : [ "" ]
+        },
+        "taxPayerNumber" : "--- ACL-sti mangler ---",
+        "insuranceAgainstWorkIncapacityIndicator" : {
+          "value" : [ "" ]
+        }
+      },
+      "AdditionalInformationChildrenInsuredPerson" : {
+        "Address" : {
+          "postalCode" : "--- ACL-sti mangler ---",
+          "buildingName" : "--- ACL-sti mangler ---",
+          "street" : "--- ACL-sti mangler ---",
+          "country" : {
+            "value" : [ "" ]
+          },
+          "town" : "--- ACL-sti mangler ---",
+          "region" : "--- ACL-sti mangler ---"
+        },
+        "additionalInformationChildrenInsuredPerson" : "--- ACL-sti mangler ---"
+      },
+      "AdditionalInformationAscendantsOtherFamilyMembers" : [ {
+        "Address" : {
+          "street" : "--- ACL-sti mangler ---",
+          "postalCode" : "--- ACL-sti mangler ---",
+          "town" : "--- ACL-sti mangler ---",
+          "region" : "--- ACL-sti mangler ---",
+          "buildingName" : "--- ACL-sti mangler ---",
+          "country" : {
+            "value" : [ "" ]
+          }
+        },
+        "relationship" : "--- ACL-sti mangler ---",
+        "birthDate" : "--- ACL-sti mangler ---",
+        "surname" : "--- ACL-sti mangler ---",
+        "forenames" : "--- ACL-sti mangler ---"
+      } ],
+      "AdditionalInformationInsuredPersonBenefitDetails" : {
+        "voluntaryBasedContributionsIndicator" : {
+          "value" : [ "" ]
+        },
+        "entitlementSicknessBenefitsInKind" : {
+          "value" : [ "" ]
+        },
+        "assistanceBenefit" : {
+          "value" : [ "" ]
+        }
+      },
+      "UnableProvideRequestedInformationInThisSection" : {
+        "PleaseFillInFollowingIfAboveAnsweredNo" : {
+          "reason" : "--- ACL-sti mangler ---"
+        },
+        "isRequestedInformationAvailableIndicator" : {
+          "value" : [ "" ]
+        }
+      }
+    },
+    "AdditionalInformationForOldAgePensionClaim" : {
+      "AdditionalInformationInsuredPersonBenefitDetails" : {
+        "benefitsWithAdditionalBenefitsIndicator" : {
+          "value" : [ "" ]
+        },
+        "assistanceBenefit" : {
+          "value" : [ "" ]
+        },
+        "voluntaryBasedContributionsIndicator" : {
+          "value" : [ "" ]
+        },
+        "entitlementSicknessBenefitsInKind" : {
+          "value" : [ "" ]
+        }
+      },
+      "AdditionalInformationInsuredPerson" : {
+        "sameHouseholdSpouseOrPartnerIndicator" : {
+          "value" : [ "" ]
+        },
+        "codeTaxDistrict" : "--- ACL-sti mangler ---",
+        "taxPayerNumber" : "--- ACL-sti mangler ---",
+        "FillInFollowingIfSameHouseholdSpouseOrPartner" : {
+          "startDateLivingTogether" : "--- ACL-sti mangler ---"
+        }
+      },
+      "AdditionalInformationInsuredPersonEmployment" : {
+        "compulsoryPensionInsuranceCoverEntailedIndicator" : {
+          "value" : [ "" ]
+        }
+      },
+      "UnableProvideRequestedInformationInThisSection" : {
+        "isRequestedInformationAvailableIndicator" : {
+          "value" : [ "" ]
+        },
+        "PleaseFillInFollowingIfAboveAnsweredNo" : {
+          "reason" : "--- ACL-sti mangler ---"
+        }
+      }
+    },
+    "InsuredPerson" : {
+      "AdditionalInformationPerson" : {
+        "Address" : {
+          "postalCode" : "$nav.bruker.adresse.postnummer",
+          "country" : {
+            "value" : [ "$nav.bruker.adresse.land" ]
+          },
+          "town" : "$nav.bruker.adresse.by",
+          "street" : "$nav.bruker.adresse.gate",
+          "buildingName" : "$nav.bruker.adresse.bygning",
+          "region" : "$nav.bruker.adresse.region"
+        },
+        "AdditionalInformationPerson" : {
+          "nationality" : {
+            "value" : [ "$nav.bruker.person.statsborgerskap[x].land" ]
+          },
+          "previousFamilyName" : "$nav.bruker.person.tidligereetternavn",
+          "previousForename" : "$nav.bruker.person.tidligerefornavn"
+        }
+      },
+      "PersonIdentification" : {
+        "IfPINNotProvidedForEveryInstitutionPleaseProvide" : {
+          "motherFamilyNameAtBirth" : "$nav.bruker.mor.person.etternavnvedfoedsel",
+          "PlaceBirth" : {
+            "country" : {
+              "value" : [ "$nav.bruker.person.foedested.land" ]
+            },
+            "town" : "$nav.bruker.person.foedested.by",
+            "region" : "$nav.bruker.person.foedested.region"
+          },
+          "fatherFamilyNameAtBirth" : "$nav.bruker.far.person.etternavnvedfoedsel",
+          "forenameFather" : "$nav.bruker.far.person.fornavn",
+          "forenameMother" : "$nav.bruker.mor.person.fornavn"
+        },
+        "PINPersonInEachInstitution" : {
+          "PersonalIdentificationNumber" : [ {
+            "Institution" : {
+              "institutionName" : "$nav.bruker.person.pin[x].institusjon.institusjonsnavn",
+              "institutionID" : "$nav.bruker.person.pin[x].institusjon.institusjonsid"
+            },
+            "country" : {
+              "value" : [ "$nav.bruker.person.pin[x].land" ]
+            },
+            "personalIdentificationNumber" : "$nav.bruker.person.pin[x].identifikator",
+            "sector" : {
+              "value" : [ "$nav.bruker.person.pin[x].sektor" ]
+            }
+          } ]
+        },
+        "familyNameAtBirth" : "$nav.bruker.person.etternavnvedfoedsel",
+        "familyName" : "$nav.bruker.person.etternavn",
+        "dateBirth" : "$nav.bruker.person.foedselsdato",
+        "sex" : {
+          "value" : [ "$nav.bruker.person.kjoenn" ]
+        },
+        "forename" : "$nav.bruker.person.fornavn",
+        "forenameAtBirth" : "$nav.bruker.person.fornavnvedfoedsel"
+      }
+    },
+    "LocalCaseNumbers" : {
+      "LocalCaseNumber" : [ {
+        "caseNumber" : "$nav.eessisak[x].saksnummer",
+        "country" : {
+          "value" : [ "$nav.eessisak[x].land" ]
+        },
+        "Institution" : {
+          "institutionID" : "$nav.eessisak[x].institusjonsid",
+          "institutionName" : "$nav.eessisak[x].institusjonsnavn"
+        }
+      } ]
+    }
+  }
+}

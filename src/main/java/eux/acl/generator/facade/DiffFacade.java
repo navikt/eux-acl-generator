@@ -45,18 +45,17 @@ public class DiffFacade {
         });
     }
 
-    public void sammenliknerToAclVersjonerOgSkriverDiffTilFil(List<String> sedTyper, String aclVersjonForrrige, String aclNyVersjon) {
+    public void sammenliknerToAclVersjonerOgSkriverDiffTilFil(List<String> sedTyper, String forrigeAclVersjon, String nyAclVersjon) {
         sedTyper.forEach(sedType -> {
-
-            List<String> navSedForrige = aclService.lagNavSedFraAclMal(sedType, MAPPE_EKSISTERENDE_ACL, aclVersjonForrrige);
-            List<String> navSedNy = aclService.lagNavSedFraAclMal(sedType, MAPPE_RESULTATER_ACL, aclNyVersjon);
+            List<String> navSedForrige = aclService.ekstraherNavSedFraAclMal(sedType, MAPPE_RESULTATER_ACL, forrigeAclVersjon);
+            List<String> navSedNy = aclService.ekstraherNavSedFraAclMal(sedType, MAPPE_RESULTATER_ACL, nyAclVersjon);
             List<String> uendredeLinjer = navSedNy.stream().filter(navSedForrige::contains).toList();
             List<String> nyeLinjer = navSedNy.stream().filter(linje -> !navSedForrige.contains(linje)).toList();
             List<String> utgaatteLinjer = navSedForrige.stream().filter(linje -> !navSedNy.contains(linje)).toList();
             int antallEndringer = nyeLinjer.size();
-            filService.skrivAclVsAclDiffTilFil(uendredeLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FilService.FIL_MED_UENDREDE_STIER);
-            filService.skrivAclVsAclDiffTilFil(nyeLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FIL_MED_ENDREDE_STIER);
-            filService.skrivAclVsAclDiffTilFil(utgaatteLinjer, sedType + "_" + antallEndringer, aclNyVersjon, FIL_MED_UTGAATTE_STIER);
+            filService.skrivAclVsAclDiffTilFil(uendredeLinjer, sedType + "_" + antallEndringer, nyAclVersjon, FilService.FIL_MED_UENDREDE_STIER);
+            filService.skrivAclVsAclDiffTilFil(nyeLinjer, sedType + "_" + antallEndringer, nyAclVersjon, FIL_MED_ENDREDE_STIER);
+            filService.skrivAclVsAclDiffTilFil(utgaatteLinjer, sedType + "_" + antallEndringer, nyAclVersjon, FIL_MED_UTGAATTE_STIER);
             log.info("Diff mellom ny og gammel Acl-versjon skrevet til filer. Sedtype: {}", sedType);
         });
     }
